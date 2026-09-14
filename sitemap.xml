@@ -39,5 +39,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- المقال الثاني: دليل المساعدات المالية Studiefinanciering -->
+  <url>
+    <loc>https://a-alzoubi-07-11.github.io/articles/student-finance.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
