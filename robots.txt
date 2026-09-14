@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-alzoubi-07-11.github.io/sitemap.xml
