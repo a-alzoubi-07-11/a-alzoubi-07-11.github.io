@@ -32,5 +32,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+<!-- المقال الجديد: شروط ومستويات MBO -->
+  <url>
+    <loc>https://a-alzoubi-07-11.github.io/articles/mbo-conditions.html</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
