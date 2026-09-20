@@ -124,7 +124,28 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+<url>
+    <loc>https://a-alzoubi-07-11.github.io/articles/dutch-school-system-basisschool.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://a-alzoubi-07-11.github.io/articles/childcare-allowance-kinderopvangtoeslag.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://a-alzoubi-07-11.github.io/articles/municipal-taxes-exemption-kwijtschelding.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
+
+
+  
   
 
 
