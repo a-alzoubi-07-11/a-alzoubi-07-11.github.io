@@ -1,176 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- الصفحة الرئيسية -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- صفحة من نحن -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/about.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- صفحة سياسة الخصوصية -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/privacy.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- رابط قسم فروع الـ MBO التفصيلي -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/mbo_netherlands_branches_overview/</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<!-- المقال الجديد: شروط ومستويات MBO -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/mbo-conditions.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <!-- المقال الثاني: دليل المساعدات المالية Studiefinanciering -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/student-finance.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<!-- المقال الثالث: معادلة الشهادات SBB -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/diploma-evaluation-sbb.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<!-- مقال امتحان NT2 -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/nt2-b1-exam-guide.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<!-- مقال ترند الوظائف 2026 -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/trending-jobs-2026.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<!-- مقال ترند يوم الأمير 2026 -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/prinsjesdag-2026-changes.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-<!-- مقال التأمين الصحي 2027 -->
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/health-insurance-2027.html</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-    <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/housing-rent-allowance-2026.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/energy-contracts-saving-2026.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/kvk-zzp-business-netherlands.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/digid-registration-guide.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/employment-contracts-labor-law-2026.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/family-reunification-mvv-ind.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/annual-tax-return-2026.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/dutch-school-system-basisschool.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/childcare-allowance-kinderopvangtoeslag.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/municipal-taxes-exemption-kwijtschelding.html</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://a-alzoubi-07-11.github.io/articles/eu-permanent-residence-netherlands.html</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
+  <url><loc>https://a-alzoubi-07-11.github.io/</loc><lastmod>2026-09-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/about.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/privacy.html</loc><lastmod>2026-09-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/mbo_netherlands_branches_overview/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/mbo-conditions.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/student-finance.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/diploma-evaluation-sbb.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/nt2-b1-exam-guide.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/trending-jobs-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/prinsjesdag-2026-changes.html</loc><lastmod>2026-09-26</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/health-insurance-2027.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/housing-rent-allowance-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/energy-contracts-saving-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/kvk-zzp-business-netherlands.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/digid-registration-guide.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/cbr-driving-license-netherlands.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/inburgering-integration-law-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/employment-contracts-labor-law-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/family-reunification-mvv-ind.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/annual-tax-return-2026.html</loc><lastmod>2026-09-26</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/dutch-school-system-basisschool.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/childcare-allowance-kinderopvangtoeslag.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/municipal-taxes-exemption-kwijtschelding.html</loc><lastmod>2026-09-26</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://a-alzoubi-07-11.github.io/articles/eu-permanent-residence-netherlands.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>
