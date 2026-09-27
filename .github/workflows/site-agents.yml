@@ -1,0 +1,68 @@
+name: Site code and SEO agents
+
+on:
+  push:
+    branches: ['**']
+    paths-ignore:
+      - 'reports/**'
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-agents-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout the branch being audited
+        uses: actions/checkout@v4
+        with:
+          path: site
+      - name: Checkout shared audit scripts
+        uses: actions/checkout@v4
+        with:
+          repository: a-alzoubi-07-11/a-alzoubi-07-11.github.io
+          ref: main
+          path: audit-engine
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit pages, links and SEO
+        env:
+          # Only the default branch can use the optional AI credential.
+          AI_API_KEY: ${{ github.ref == 'refs/heads/main' && secrets.AI_API_KEY || '' }}
+          AI_API_BASE: ${{ vars.AI_API_BASE }}
+          AI_MODEL: ${{ vars.AI_MODEL }}
+          SITE_OWNER: a-alzoubi-07-11
+        run: |
+          python audit-engine/.github/scripts/code_agent.py --site-dir site --live
+          python audit-engine/.github/scripts/seo_agent.py --site-dir site --live
+      - name: Upload report from every branch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-audit-${{ github.run_id }}
+          path: site/reports/*.md
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Save daily reports on primary site's main branch
+        if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io' && github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        run: |
+          cd site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/*.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily site audit reports"
+            git push
+          fi
