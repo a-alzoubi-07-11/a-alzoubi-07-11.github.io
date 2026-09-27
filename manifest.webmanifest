@@ -1,0 +1,16 @@
+{
+  "name":"MBO Netherlands — Onderwijs & Leven in Nederland",
+  "short_name":"MBO Netherlands",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f5f5f7",
+  "theme_color":"#0071e3",
+  "lang":"nl",
+  "description":"Arabisch en Nederlands informatieplatform over onderwijs, werk en het dagelijks leven in Nederland.",
+  "icons":[],
+  "shortcuts":[
+    {"name":"Artikelen / Artikelen","url":"./articles.html"},
+    {"name":"Home / الرئيسية","url":"./index.html"}
+  ]
+}

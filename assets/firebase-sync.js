@@ -1,0 +1,21 @@
+/* Optional Firebase checklist sync. The SDK is fetched only after the visitor chooses Google sign-in. */
+(()=>{"use strict";
+const config={apiKey:"AIzaSyA8BvN3NA9J-veNqB7evBcfodomhkLJjQNo",authDomain:"gidsnederland-35a81.firebaseapp.com",projectId:"gidsnederland-35a81",storageBucket:"gidsnederland-35a81.firebasestorage.app",messagingSenderId:"725015257496",appId:"1:725015257496:web:78285f637492c27be74bed"};
+const allowed=["id","insurance","tax","study","work","family","residence"];
+let sdk=null,auth=null,db=null,authUser=null,loading=null,authReady=null;
+const version="12.19.0";
+async function init(){if(sdk){if(authReady)await authReady;return sdk}if(loading)return loading;loading=(async()=>{const base=`https://www.gstatic.com/firebasejs/${version}`;const [appMod,authMod,storeMod]=await Promise.all([import(`${base}/firebase-app.js`),import(`${base}/firebase-auth.js`),import(`${base}/firebase-firestore.js`)]);const app=appMod.initializeApp(config);auth=authMod.getAuth(app);db=storeMod.getFirestore(app);sdk={...authMod,...storeMod};authReady=new Promise(resolve=>{authMod.onAuthStateChanged(auth,u=>{authUser=u;renderAuth();resolve(u)})});await authReady;return sdk})();try{return await loading}finally{loading=null}}
+function copy(){return window.MboPhase3?.copy()||{error:"تعذر إكمال العملية."}}
+function status(key){const el=document.getElementById("p3-cloud-status");if(el)el.textContent=copy()[key]||key}
+function renderAuth(){const signed=!!authUser;document.querySelectorAll("[data-cloud-action]").forEach(b=>{b.hidden=signed?b.dataset.cloudAction==="connect":b.dataset.cloudAction!=="connect"});if(signed)status("signin")}
+function cleanChecks(value){const out={};for(const id of allowed)if(typeof value?.[id]==="boolean")out[id]=value[id];return out}
+function checklistRef(){return sdk.doc(db,"users",authUser.uid,"checklist","current")}
+function handleError(e){console.error("Cloud checklist action failed",e);status("error")}
+async function connect(){await init();if(!authUser){const result=await sdk.signInWithPopup(auth,new sdk.GoogleAuthProvider());authUser=result.user}renderAuth();status("signin")}
+async function upload(){await init();if(!authUser)throw new Error("Not signed in");if(!window.confirm(copy().confirmUpload))return status("cancelled");status("working");const ref=checklistRef(),snap=await sdk.getDoc(ref),remote=snap.exists()?cleanChecks(snap.data().checks):{},local=cleanChecks(window.MboData.readChecklistState().checks),merged={...remote};for(const id of allowed)merged[id]=remote[id]===true||local[id]===true;await sdk.setDoc(ref,{checks:merged,updatedAt:sdk.serverTimestamp()});window.MboData.writeChecklistState({checks:merged});status("doneUpload")}
+async function download(){await init();if(!authUser)throw new Error("Not signed in");if(!window.confirm(copy().confirmDownload))return status("cancelled");status("working");const snap=await sdk.getDoc(checklistRef());if(!snap.exists()){status("cancelled");return}window.MboData.writeChecklistState({checks:cleanChecks(snap.data().checks)});status("doneDownload")}
+async function removeAccount(){await init();if(!authUser)throw new Error("Not signed in");if(!window.confirm(copy().confirmDelete))return status("cancelled");status("working");const user=authUser;await sdk.deleteDoc(checklistRef());try{await sdk.deleteUser(user)}catch(e){if(e.code!=="auth/requires-recent-login")throw e;await sdk.reauthenticateWithPopup(user,new sdk.GoogleAuthProvider());await sdk.deleteUser(user)}authUser=null;renderAuth();status("doneDelete")}
+async function logout(){await init();if(!authUser)return status("cancelled");if(!window.confirm(copy().confirmSignout))return status("cancelled");await sdk.signOut(auth);authUser=null;renderAuth();status("doneSignout")}
+document.addEventListener("click",async e=>{const button=e.target.closest("[data-cloud-action]");if(!button)return;button.disabled=true;try{const action=button.dataset.cloudAction;if(action==="connect")await connect();else if(action==="upload")await upload();else if(action==="download")await download();else if(action==="delete")await removeAccount();else if(action==="signout")await logout()}catch(err){handleError(err)}finally{document.querySelectorAll("[data-cloud-action]").forEach(b=>b.disabled=false)}});
+window.addEventListener("mbo:cloud-ui-render",renderAuth);
+})();
