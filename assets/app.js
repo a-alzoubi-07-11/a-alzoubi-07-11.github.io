@@ -23,7 +23,7 @@ const num = s => `<span class="num">${s}</span>`;
 const I18N = {
   ar: {
     "topbar.tag": "دليل التعليم الهولندي","brand.title":"دليل التعليم الهولندي","brand.updated":"محدَّث 2026",
-    "nav.articles":"📰 المقالات","nav.about":"ℹ️ من نحن","nav.privacy":"🔒 الخصوصية","nav.contact":"✉️ تواصل",
+    "nav.jobs":"💼 وظائف","nav.articles":"📰 المقالات","nav.about":"ℹ️ من نحن","nav.privacy":"🔒 الخصوصية","nav.contact":"✉️ تواصل",
     "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة",
     "newcomers.kicker":"أحمد الزعبي · هولندا","newcomers.title":"دليل العرب الجدد في هولندا","newcomers.open":"فتح الدليل ←","newcomers.sub":"من الدراسة والعمل إلى السكن والضرائب والإقامة: محتوى عربي عملي، مرتب ومترابط، يساعدك على فهم النظام الهولندي خطوة بخطوة.",
     "newcomers.education.title":"التعليم والدراسة","newcomers.education.text":"فهم MBO وHBO والجامعة، اختيار التخصص، مستويات اللغة والانتقال بين المسارات.","newcomers.work.title":"العمل والراتب","newcomers.work.text":"عقود العمل، الراتب، vakantiegeld، التدريب، البحث عن وظيفة وبناء المسار المهني.","newcomers.life.title":"الحياة اليومية","newcomers.life.text":"السكن، التأمين، المواصلات، الخدمات الحكومية والقرارات التي تؤثر على الحياة اليومية.","newcomers.money.title":"المال والضرائب","newcomers.money.text":"Belastingdienst، aangifte، toeslagen، Kinderbijslag وKindgebonden budget بأسلوب مبسط.",
@@ -92,7 +92,7 @@ const I18N = {
   },
   nl: {
     "topbar.tag": "Gids Nederlands Onderwijs","brand.title":"Nederlandse Onderwijsgids","brand.updated":"Bijgewerkt 2026",
-    "nav.articles":"📰 Artikelen","nav.about":"ℹ️ Over ons","nav.privacy":"🔒 Privacy","nav.contact":"✉️ Contact",
+    "nav.jobs":"💼 Vacatures","nav.articles":"📰 Artikelen","nav.about":"ℹ️ Over ons","nav.privacy":"🔒 Privacy","nav.contact":"✉️ Contact",
     "smart.kicker":"Slimme tools","smart.title":"Alles op één plek","smart.sub":"Eén interface om te zoeken, vergelijken, salaris te berekenen en onderwijsroutes te ontdekken.","smart.search":"🔎 Zoeken","smart.theme":"◐ Weergave","smart.share":"↗ Delen",
     "newcomers.kicker":"Ahmad Alzoubi · Nederland","newcomers.title":"Gids voor Arabischtalige nieuwkomers in Nederland","newcomers.open":"Gids openen →","newcomers.sub":"Van studie en werk tot wonen, belastingen en verblijf: praktische, verbonden informatie om het Nederlandse systeem stap voor stap te begrijpen.",
     "newcomers.education.title":"Onderwijs & studie","newcomers.education.text":"MBO, HBO en universiteit begrijpen, een opleiding kiezen, taalniveaus en overstappen tussen routes.","newcomers.work.title":"Werk & salaris","newcomers.work.text":"Arbeidscontracten, salaris, vakantiegeld, stages, werk zoeken en je loopbaan opbouwen.","newcomers.life.title":"Dagelijks leven","newcomers.life.text":"Wonen, verzekering, vervoer, overheidsdiensten en beslissingen die het dagelijks leven beïnvloeden.","newcomers.money.title":"Geld & belastingen","newcomers.money.text":"Belastingdienst, aangifte, toeslagen, Kinderbijslag en Kindgebonden budget eenvoudig uitgelegd.",

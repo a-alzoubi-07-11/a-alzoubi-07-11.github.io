@@ -1,0 +1,49 @@
+name: 💼 Job Agent — تحديث الشواغر كل ساعة
+
+on:
+  schedule:
+    # كل ساعة في الدقيقة 7 ( offset عن نصف الساعة لتجنب زحمة GitHub)
+    - cron: '7 * * * *'
+  workflow_dispatch: # تشغيل يدوي بضغطة زر
+
+concurrency:
+  group: job-agent
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-jobs:
+    name: Fetch & dedupe vacancies
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Job Agent
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+        run: python .github/scripts/jobs_agent.py
+
+      # يرفع التحديث فقط إذا تغيّر شيء فعلاً (لا commit فارغ كل ساعة)
+      - name: Commit Updated Vacancies
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "💼 [Job Agent] hourly vacancies update"
+          branch: main
+          file_pattern: "jobs/*.json"
