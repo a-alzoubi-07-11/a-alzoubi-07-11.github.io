@@ -81,6 +81,17 @@ details summary::-webkit-details-marker{display:none}
 <main class="max-w-6xl mx-auto px-4 py-10">
   <div class="flex flex-col md:flex-row gap-3 mb-8">
     <input id="q" type="search" placeholder="🔍 ابحث: مستودع، سائق، خدمة عملاء…" class="flex-1 bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-orange" oninput="render()">
+    <select id="cat" class="bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm font-bold outline-none" onchange="render()">
+      <option value="">كل الفئات</option>
+      <option value="migrant">🤝 للمهاجرين واللاجئين</option>
+      <option value="logistics">📦 لوجستيات</option>
+      <option value="hospitality">🍽️ ضيافة</option>
+      <option value="customer_service">🎧 خدمة العملاء</option>
+      <option value="it">💻 تقنية</option>
+      <option value="healthcare">🩺 رعاية صحية</option>
+      <option value="technical">🔧 فنية</option>
+      <option value="other">💼 أخرى</option>
+    </select>
     <select id="src" class="bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm font-bold outline-none" onchange="render()">
       <option value="">كل المصادر</option>
       <option value="smartrecruiters">🏢 شركات هولندية رسمية</option>
@@ -112,6 +123,7 @@ details summary::-webkit-details-marker{display:none}
       <div class="rounded-2xl border border-slate-200 p-6"><div class="text-2xl mb-2">4️⃣</div><h3 class="font-black mb-2">سجّل مع وكالات التوظيف</h3><p class="text-sm text-slate-500 leading-relaxed">Randstad وAdecco وTempo-Team يقبلون التسجيل بالإنجليزية ويوفرون وظائف مؤقتة تفتح لك الباب بسرعة.</p></div>
       <div class="rounded-2xl border border-slate-200 p-6"><div class="text-2xl mb-2">5️⃣</div><h3 class="font-black mb-2">جهّز أوراقك الرسمية</h3><p class="text-sm text-slate-500 leading-relaxed">BSN (رقم المواطن) وDigiD ضروريان للعمل الرسمي. موقع werk.nl الرسمي يتطلب DigiD للتوظيف، أو استخدم <a class="text-orange font-bold" href="https://europa.eu/eures/eures-searchengine/page/main?lang=en" target="_blank" rel="noopener">EURES الأوروبي</a> بدون تسجيل.</p></div>
       <div class="rounded-2xl border-2 border-orange bg-orange-50 p-6"><div class="text-2xl mb-2">⚠️</div><h3 class="font-black mb-2 text-orangedark">احذر النصب</h3><p class="text-sm text-slate-600 leading-relaxed">لا تدفع أي مبلغ مقابل وظيفة أبداً. لا ترسل جوازك أو بياناتك البنكية قبل عقد رسمي. الوظائف الحقيقية مجانية التقديم دائماً.</p></div>
+      <div class="rounded-2xl border-2 border-emerald-300 bg-emerald-50 p-6"><div class="text-2xl mb-2">🤝</div><h3 class="font-black mb-2 text-emerald-700">منظمات تدعم المهاجرين واللاجئين</h3><p class="text-sm text-slate-600 leading-relaxed"><b>UAF</b> (uaf.nl) — دعم عمل ودراسة للاجئين · <b>VluchtelingenWerk</b> — إرشاد وظيفي مجاني · <b>جمعيتك (gemeente)</b> — برامج inburgering مع تدريب مهني · <b>EURES</b> — وظائف رسمية بدون تسجيل.</p></div>
     </div>
   </div>
 </section>
@@ -130,6 +142,7 @@ details summary::-webkit-details-marker{display:none}
 
 <script>
 const CATS = {
+  migrant:        { ar:'🤝 مناسبة للمهاجرين واللاجئين', icon:'🤝' },
   logistics:      { ar:'📦 لوجستيات',       icon:'📦' },
   hospitality:    { ar:'🍽️ ضيافة',          icon:'🍽️' },
   customer_service:{ ar:'🎧 خدمة العملاء',  icon:'🎧' },
@@ -162,10 +175,12 @@ function esc(s){ const d=document.createElement('div'); d.textContent=s||''; ret
 function render() {
   const q = document.getElementById('q').value.trim().toLowerCase();
   const src = document.getElementById('src').value;
+  const cat = document.getElementById('cat').value;
   const grid = document.getElementById('grid');
   const empty = document.getElementById('empty');
   const jobs = DATA.jobs.filter(j =>
     (!src || j.source === src) &&
+    (!cat || j.category === cat) &&
     (!q || `${j.title} ${j.company} ${j.location} ${j.snippet}`.toLowerCase().includes(q))
   );
   empty.classList.toggle('hidden', jobs.length > 0);

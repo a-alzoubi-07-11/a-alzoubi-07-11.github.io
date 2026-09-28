@@ -57,6 +57,15 @@ OTHER_LANG_RE = re.compile(
     re.I,
 )
 
+# 🤝 وظائف مخصصة للمهاجرين واللاجئين والمبتدئين (أولوية في التصنيف)
+MIGRANT_RE = re.compile(
+    r"(vluchteling|statushouder|nieuwkomer|gevlucht|inburgering|migrant|refugee|newcomer"
+    r"|geen\s+nederlands\s+vereist|no\s+dutch\s+(required|needed)"
+    r"|taal\s+niet\s+nodig|werken\s+zonder\s+nederlands"
+    r"|uaf\.nl|stichting\s+uaf)",
+    re.I,
+)
+
 CATEGORIES = {
     "logistics": ["warehouse", "order picker", "logistic", "driver", "chauffeur", "forklift", "picker", "packer"],
     "hospitality": ["waiter", "chef", "cook", "kitchen", "barista", "housekeeping", "horeca", "hotel"],
@@ -80,8 +89,14 @@ def clean_text(html_text, limit=600):
 
 def classify(title, snippet):
     text = f"{title} {snippet}".lower()
+    # 🤝 الأولوية لوظائف المهاجرين واللاجئين
+    if MIGRANT_RE.search(text):
+        return "migrant"
+    # "it" بكلمة كاملة فقط (وإلا التقطت داخل كلمات أخرى مثل edit/unit)
+    if re.search(r"\b(it|ict)\b", text):
+        return "it"
     for cat, keys in CATEGORIES.items():
-        if cat == "other":
+        if cat in ("other", "it"):
             continue
         if any(k in text for k in keys):
             return cat
@@ -126,7 +141,8 @@ def fetch_adzuna():
         print("[Job Agent] adzuna: skipped (no keys in Secrets)")
         return []
     out = []
-    queries = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "packer"]
+    queries = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "packer",
+               "statushouder", "vluchteling", "refugee newcomer"]
     for q in queries:
         try:
             r = requests.get(
@@ -270,7 +286,11 @@ def fetch_smartrecruiters():
     return out
 
 
-LI_KEYWORDS = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "logistics", "packer", "store employee"]
+LI_KEYWORDS = [
+    "warehouse", "order picker", "cleaner", "kitchen", "driver", "logistics", "packer", "store employee",
+    # 🤝 مخصصة للمهاجرين واللاجئين
+    "statushouder", "vluchteling", "refugee", "nieuwkomer", "migrant friendly", "no dutch required",
+]
 
 
 def fetch_linkedin():
@@ -278,7 +298,11 @@ def fetch_linkedin():
     يُجرب 3 كلمات بحث تتبدل كل ساعة (حماية من تحديد المعدل)."""
     out = []
     hour = datetime.datetime.now(datetime.timezone.utc).hour
-    kws = [LI_KEYWORDS[(hour * 3 + i) % len(LI_KEYWORDS)] for i in range(3)]
+    general = LI_KEYWORDS[:8]
+    migrant = LI_KEYWORDS[8:]
+    # استعلامان عامان + استعلام مخصص دائم للمهاجرين واللاجئين كل ساعة 🤝
+    kws = [general[(hour * 2 + i) % len(general)] for i in range(2)]
+    kws.append(migrant[hour % len(migrant)])
     for kw in kws:
         try:
             r = requests.get(
@@ -307,6 +331,9 @@ def fetch_linkedin():
                 if not location or "netherlands" not in location.lower():
                     location = location or "Netherlands"  # 🇳🇱 السوق الهولندي فقط
                 snippet = clean_text(chunk, 220)
+                # استعلامات المهاجرين: نقبل فقط الوظائف المخصصة لهم فعلاً (ضد النتائج الضبابية)
+                if kw in LI_KEYWORDS[8:] and classify(title, snippet) != "migrant":
+                    continue
                 out.append({
                     "title": title,
                     "company": company,
@@ -339,9 +366,14 @@ def fetch_google_cse():
         print("[Job Agent] google: skipped (no keys in Secrets)")
         return []
     out = []
-    keywords = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "productiemedewerker"]
-    for i, q in enumerate(keywords):
-        site = OFFICIAL_SITES[i % len(OFFICIAL_SITES)]
+    # 4 استعلامات لكل تشغيل (96/يوم — ضمن الحصة المجانية 100)
+    keywords = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "productiemedewerker",
+                "statushouder vacature", "vluchteling werk", "vacature nieuwkomer"]
+    hour = datetime.datetime.now(datetime.timezone.utc).hour
+    # أول استعلام دائماً مخصص للمهاجرين واللاجئين 🤝 + 3 عامة تتبدل
+    picked = [keywords[6 + (hour % 3)]] + [keywords[i % 6] for i in range(hour, hour + 3)]
+    for i, q in enumerate(picked):
+        site = OFFICIAL_SITES[(hour + i) % len(OFFICIAL_SITES)]
         try:
             r = requests.get(
                 "https://www.googleapis.com/customsearch/v1",
