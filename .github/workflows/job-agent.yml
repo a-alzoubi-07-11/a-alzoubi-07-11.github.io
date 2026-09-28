@@ -32,6 +32,11 @@ jobs:
         run: pip install requests
 
       - name: Run Job Agent
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_API_KEY: ${{ secrets.ADZUNA_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
         run: python .github/scripts/jobs_agent.py
 
       # يرفع التحديث فقط إذا تغيّر شيء فعلاً (لا commit فارغ كل ساعة)

@@ -109,6 +109,9 @@ def excluded_by_language(title, snippet):
         return True
     if len(GERMAN_WORDS_RE.findall(text)) >= 4:
         return True
+    # نسخة وظيفة مخصصة للناطقين بالهولندية صراحةً مثل "... (Nederlands)"
+    if re.search(r"[(]\s*(nederlands|dutch|nl[- ]?talig)\s*[)]", title, re.I):
+        return True
     return False
 
 
@@ -192,7 +195,7 @@ def fetch_themuse():
 
 
 def fetch_remotive():
-    """وظائف عن بعد يمكن العمل بها من هولندا (بدون مفتاح API)."""
+    """وظائف عن بعد في هولندا حصراً (بدون مفتاح API)."""
     out = []
     try:
         r = requests.get(
@@ -203,8 +206,8 @@ def fetch_remotive():
         r.raise_for_status()
         for j in r.json().get("jobs", []):
             loc = (j.get("candidate_required_location") or "").strip()
-            # نُبقي العالمية/أوروبا/هولندا فقط
-            if not re.search(r"worldwide|anywhere|europe|emea|netherlands", loc, re.I):
+            # 🇳🇱 السوق الهولندي فقط — لا worldwide ولا Europe
+            if "netherlands" not in loc.lower():
                 continue
             snippet = clean_text(j.get("description", ""))
             title = (j.get("title") or "").strip()
@@ -225,6 +228,94 @@ def fetch_remotive():
 
 
 # ────────────────────────── الحفظ ومنع التكرار ──────────────────────────
+
+# شركات هولندية توظف عبر SmartRecruiters (توسيع القائمة سهل — أضف المعرف هنا)
+SR_COMPANIES = ["Coolblue", "KPN", "Picnic", "Uber"]
+
+
+def fetch_smartrecruiters():
+    """وظائف حقيقية من مواقع التوظيف الرسمية لشركات هولندية (بدون مفتاح API).
+    المنصة: SmartRecruiters — بيانات مهيكلة: المدينة، التاريخ، الشركة، رابط التقديم."""
+    out = []
+    for comp in SR_COMPANIES:
+        try:
+            r = requests.get(
+                f"https://api.smartrecruiters.com/v1/companies/{comp}/postings",
+                params={"limit": 100},
+                timeout=TIMEOUT, headers=UA,
+            )
+            r.raise_for_status()
+            for j in r.json().get("content", []):
+                loc = j.get("location") or {}
+                if (loc.get("country") or "").lower() != "nl":
+                    continue  # 🇳🇱 السوق الهولندي فقط
+                title = (j.get("name") or "").strip()
+                industry = ((j.get("industry") or {}).get("label") or "").strip()
+                dept = ((j.get("department") or {}).get("label") or "").strip()
+                snippet = clean_text(f"{industry} {dept}")
+                out.append({
+                    "title": title,
+                    "company": ((j.get("company") or {}).get("name") or comp).strip(),
+                    "location": f"{loc.get('city') or 'Netherlands'}, Netherlands",
+                    "url": f"https://jobs.smartrecruiters.com/{comp}/{j.get('id', '')}",
+                    "source": "smartrecruiters",
+                    "published": (j.get("releasedDate") or "")[:10],
+                    "category": classify(title, snippet),
+                    "snippet": snippet[:220],
+                })
+        except Exception as exc:  # noqa: BLE001
+            print(f"[Job Agent] smartrecruiters '{comp}' failed: {type(exc).__name__}")
+    print(f"[Job Agent] smartrecruiters: {len(out)} jobs fetched")
+    return out
+
+
+OFFICIAL_SITES = [
+    "werk.nl", "randstad.nl", "tempo-team.nl", "adecco.nl",
+    "youngcapital.nl", "indeed.com", "jobbird.com", "uwv.nl",
+]
+
+
+def fetch_google_cse():
+    """بحث غوغل موجّه نحو المواقع الرسمية للتوظيف في هولندا.
+    يُتفعل عند إضافة GOOGLE_API_KEY و GOOGLE_CSE_ID في Secrets
+    (مجاني: 100 استعلام يومياً — Programmable Search JSON API)."""
+    key = os.environ.get("GOOGLE_API_KEY", "").strip()
+    cse = os.environ.get("GOOGLE_CSE_ID", "").strip()
+    if not (key and cse):
+        print("[Job Agent] google: skipped (no keys in Secrets)")
+        return []
+    out = []
+    keywords = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "productiemedewerker"]
+    for i, q in enumerate(keywords):
+        site = OFFICIAL_SITES[i % len(OFFICIAL_SITES)]
+        try:
+            r = requests.get(
+                "https://www.googleapis.com/customsearch/v1",
+                params={"key": key, "cx": cse, "q": q, "num": 10,
+                        "siteSearch": site, "siteSearchFilter": "i",
+                        "cr": "countryNL"},
+                timeout=TIMEOUT, headers=UA,
+            )
+            r.raise_for_status()
+            for item in r.json().get("items", []):
+                link = (item.get("link") or "").strip()
+                title = re.sub(r"[-|–]" + re.escape(site) + r"$", "", item.get("title", "")).strip()
+                snippet = clean_text(item.get("snippet", ""))
+                out.append({
+                    "title": title,
+                    "company": "",
+                    "location": "Netherlands",
+                    "url": link,
+                    "source": "google",
+                    "published": "",
+                    "category": classify(title, snippet),
+                    "snippet": snippet[:220],
+                })
+        except Exception as exc:  # noqa: BLE001
+            print(f"[Job Agent] google '{q}' failed: {type(exc).__name__}")
+    print(f"[Job Agent] google: {len(out)} jobs fetched")
+    return out
+
 
 def load_json(path, default):
     if os.path.exists(path):
@@ -250,7 +341,7 @@ def main():
     seen = load_json(SEEN_FILE, {})
 
     current_by_id = {j["id"]: j for j in existing.get("jobs", [])}
-    fetched = fetch_themuse() + fetch_remotive() + fetch_adzuna()
+    fetched = fetch_smartrecruiters() + fetch_themuse() + fetch_remotive() + fetch_adzuna() + fetch_google_cse()
 
     new_count = 0
     for j in fetched:

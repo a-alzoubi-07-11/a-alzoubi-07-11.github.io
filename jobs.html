@@ -68,7 +68,9 @@ details summary::-webkit-details-marker{display:none}
     </span>
     <h1 class="text-3xl md:text-4xl font-black mb-4">وظائف في هولندا <span class="text-orange">بدون اشتراط اللغة</span></h1>
     <p class="text-blue-100 max-w-2xl mx-auto leading-relaxed mb-6">
-      شواغر حقيقية من مصادر دولية موثوقة، نُخلي تلقائياً أي وظيفة تشترط الهولندية.
+      شواغر من <b class="text-white">السوق الهولندي فقط 🇳🇱</b> — من مواقع التوظيف الرسمية
+      (werk.nl، Randstad، Tempo-Team وغيرها) عبر البحث الآلي في غوغل وواجهات رسمية،
+      مع استبعاد تلقائي لأي وظيفة تشترط الهولندية.
       كل وظيفة معها <b class="text-white">دليل التقديم خطوة بخطوة</b>.
     </p>
     <div id="stats" class="flex flex-wrap justify-center gap-3 text-sm"></div>
@@ -81,8 +83,11 @@ details summary::-webkit-details-marker{display:none}
     <input id="q" type="search" placeholder="🔍 ابحث: مستودع، سائق، خدمة عملاء…" class="flex-1 bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-orange" oninput="render()">
     <select id="src" class="bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm font-bold outline-none" onchange="render()">
       <option value="">كل المصادر</option>
-      <option value="themuse">Themuse (داخل هولندا)</option>
-      <option value="remotive">Remotive (عن بعد)</option>
+      <option value="smartrecruiters">🏢 شركات هولندية رسمية</option>
+      <option value="adzuna">🔍 Adzuna — السوق الهولندي</option>
+      <option value="google">🌐 غوغل — مواقع رسمية</option>
+      <option value="remotive">🌍 وظائف هولندية عن بعد</option>
+      <option value="themuse">🏛️ Themuse — هولندا</option>
     </select>
   </div>
 
@@ -165,9 +170,14 @@ function render() {
   empty.classList.toggle('hidden', jobs.length > 0);
   grid.innerHTML = jobs.map(j => {
     const cat = CATS[j.category] || CATS.other;
-    const badge = j.source === 'remotive'
-      ? '<span class="text-[11px] font-black bg-violet-100 text-violet-700 rounded-full px-2.5 py-1">🌍 عن بعد</span>'
-      : '<span class="text-[11px] font-black bg-blue-100 text-dutch rounded-full px-2.5 py-1">🇳🇱 داخل هولندا</span>';
+    const SRC_LABELS = {
+      smartrecruiters: '<span class="text-[11px] font-black bg-green-100 text-green-700 rounded-full px-2.5 py-1">🏢 شركة هولندية</span>',
+      adzuna: '<span class="text-[11px] font-black bg-blue-100 text-dutch rounded-full px-2.5 py-1">🇳🇱 السوق الهولندي</span>',
+      google: '<span class="text-[11px] font-black bg-emerald-100 text-emerald-700 rounded-full px-2.5 py-1">🌐 موقع رسمي</span>',
+      remotive: '<span class="text-[11px] font-black bg-violet-100 text-violet-700 rounded-full px-2.5 py-1">🌍 هولندا عن بعد</span>',
+      themuse: '<span class="text-[11px] font-black bg-amber-100 text-amber-700 rounded-full px-2.5 py-1">🏛️ Themuse</span>',
+    };
+    const badge = SRC_LABELS[j.source] || '<span class="text-[11px] font-black bg-slate-100 text-slate-600 rounded-full px-2.5 py-1">🇳🇱 هولندا</span>';
     return `
     <article class="job-card bg-white rounded-2xl border border-slate-200 p-6 flex flex-col">
       <div class="flex items-start justify-between gap-3 mb-3">
