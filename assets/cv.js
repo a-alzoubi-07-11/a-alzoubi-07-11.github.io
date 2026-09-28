@@ -1,113 +1,253 @@
-(()=>{"use strict";
-const t={ar:{back:"العودة للرئيسية",language:"Nederlands",title:"أنشئ سيرتك الذاتية",intro:"أسئلة قصيرة. اختر ما تعرفه، واترك ما لا ينطبق عليك فارغاً.",privacy:"تُحفظ المسودة على هذا الجهاز فقط. لا تكتب رقم BSN أو بيانات الإقامة.",privacyLink:"سياسة الخصوصية",steps:["بياناتك","العمل والخبرة","المهارات واللغات","مراجعة السيرة"],next:"التالي",previous:"السابق",print:"حفظ PDF أو طباعة",clear:"حذف المسودة",confirm:"هل تريد حذف المسودة من هذا الجهاز؟",listen:"استمع للسؤال",dictate:"أملِ الإجابة",speechPrivacy:"قد يرسل المتصفح الكلام إلى خدمة التعرف الصوتي. لا تستخدمها لبيانات حساسة.",unsupported:"الإملاء الصوتي غير متاح هنا. يمكنك استخدام ميكروفون لوحة مفاتيح الهاتف.",required:"اكتب اسمك أولاً.",name:"اسمك الكامل",city:"مدينتك في هولندا",cityHint:"اكتب اسم المدينة بالعربية أو الهولندية. الأسماء المعروفة ستظهر بالهولندية في السيرة.",phone:"رقم الهاتف",email:"البريد الإلكتروني",role:"ما نوع العمل الذي تبحث عنه؟",experience:"ما العمل الذي قمت به؟",education:"دراسة أو دورة تدريبية",languages:"اللغات التي تتحدثها",skills:"اختر مهاراتك",optional:"اختياري",example:"يمكنك ذكر العمل خارج هولندا، التدريب أو التطوع.",output:"هذا النموذج بالهولندية. راجع الأسماء والتواريخ قبل إرساله.",preset:"اختر مثالاً جاهزاً أو اكتب بالهولندية",contactWarning:"أضف رقم هاتف أو بريداً إلكترونياً حتى يتمكن صاحب العمل من التواصل معك.",foreign:"قوالب الوظائف والخبرات المعروفة وأسماء المدن المعروفة تظهر بالهولندية. النص العربي الحر غير المعروف يبقى كما كتبته؛ اكتبه بالهولندية أو راجعه قبل التقديم.",noExperience:"لا تحتاج إلى اختراع خبرة. اترك هذا السؤال فارغاً إذا لم تعمل من قبل.",help:"مثال",skillNames:["أعمل بأمان","أحب العمل الجماعي","ألتزم بالمواعيد","تنظيف","مستودعات وتوصيل","مساعدة الزبائن","استخدام الكمبيوتر","قيادة"],placeholders:{name:"مثال: أحمد الزعبي",city:"مثال: Rotterdam",phone:"مثال: 06 12345678",email:"مثال: naam@example.com",role:"مثال: مساعد مستودع",experience:"مثال: عملت سنة في متجر في سوريا",education:"مثال: دورة لغة هولندية",languages:"مثال: العربية، الهولندية A2"}},nl:{back:"Terug naar home",language:"العربية",title:"Maak eenvoudig je cv",intro:"Korte vragen. Kies wat bij je past en sla vragen over als ze niet van toepassing zijn.",privacy:"Je concept blijft alleen op dit apparaat. Vul geen BSN of verblijfsgegevens in.",privacyLink:"Privacybeleid",steps:["Jouw gegevens","Werk en ervaring","Vaardigheden en talen","Bekijk je cv"],next:"Volgende",previous:"Vorige",print:"Opslaan als pdf of afdrukken",clear:"Concept verwijderen",confirm:"Wil je dit concept van dit apparaat verwijderen?",listen:"Lees de vraag voor",dictate:"Spreek het antwoord in",speechPrivacy:"De browser kan spraak naar een herkenningsdienst sturen. Gebruik dit niet voor gevoelige gegevens.",unsupported:"Spraakherkenning is hier niet beschikbaar. Gebruik de microfoon van het toetsenbord van je telefoon.",required:"Vul eerst je naam in.",name:"Volledige naam",city:"Woonplaats in Nederland",cityHint:"Typ de plaats in het Arabisch of Nederlands. Herkende plaatsnamen verschijnen in het Nederlands op je cv.",phone:"Telefoonnummer",email:"E-mailadres",role:"Welk werk zoek je?",experience:"Welk werk heb je gedaan?",education:"Opleiding of cursus",languages:"Welke talen spreek je?",skills:"Kies je vaardigheden",optional:"Optioneel",example:"Ook werk buiten Nederland, stage of vrijwilligerswerk telt mee.",output:"Controleer namen en data voordat je dit cv verstuurt.",preset:"Kies een voorbeeld of schrijf zelf in het Nederlands",contactWarning:"Voeg een telefoonnummer of e-mailadres toe zodat een werkgever je kan bereiken.",foreign:"Bekende functie- en ervaringstermen en plaatsnamen worden in het Nederlands getoond. Onbekende Arabische vrije tekst blijft ongewijzigd; schrijf die in het Nederlands of laat de vertaling controleren.",noExperience:"Je hoeft geen ervaring te verzinnen. Laat dit leeg als je nog niet hebt gewerkt.",help:"Voorbeeld",skillNames:["Veilig werken","Samenwerken","Op tijd komen","Schoonmaken","Magazijn en bezorgen","Klanten helpen","Computer gebruiken","Autorijden"],placeholders:{name:"Bijvoorbeeld: Ahmad Alzoubi",city:"Bijvoorbeeld: Rotterdam",phone:"Bijvoorbeeld: 06 12345678",email:"Bijvoorbeeld: naam@example.com",role:"Bijvoorbeeld: magazijnmedewerker",experience:"Bijvoorbeeld: een jaar in een winkel in Syrië",education:"Bijvoorbeeld: cursus Nederlands",languages:"Bijvoorbeeld: Arabisch, Nederlands A2"}}};
-const S=window.CvSuggestions;
-const skillIds=['safety','team','punctual','cleaning','logistics','service','computer','driving'];
-const nlSkills=['Veilig werken','Samenwerken','Op tijd komen','Schoonmaken','Magazijn en bezorgen','Klanten helpen','Computer gebruiken','Autorijden'];
-Object.assign(t.ar,{
- intro:'أربع خطوات بسيطة. اكتب بالعربية أو اختر اقتراحاً جاهزاً، ثم راجع سيرتك بالهولندية.',
- privacy:'المسودة والصورة تبقيان على هذا الجهاز. ترجمة النص الحر اختيارية وترسل نص الحقل فقط إلى MyMemory. لا تدخل رقم BSN أو بيانات حساسة.',
- foreign:'راجع كل معلومة وترجمة قبل الإرسال. الاقتراحات أمثلة؛ اختر فقط ما ينطبق عليك.',
- preset:'اختر اقتراحاً أو اكتب بنفسك. الاختيار يضيف النص بالهولندية.',
- category:'مجال العمل',browse:'عرض الاقتراحات',hide:'إخفاء الاقتراحات',noResults:'لم نجد اقتراحاً. يمكنك كتابة النص وترجمته.',
- suggestions:'اقتراحات',translate:'ترجم إلى الهولندية',translating:'جارٍ الترجمة…',translationNote:'بالضغط على «ترجم»، ترسل نص هذا الحقل فقط إلى MyMemory. تجنب الأسماء وأرقام الاتصال هنا. للخدمة حد استخدام وقد تتوقف مؤقتاً.',
- translationReview:'راجع الترجمة الهولندية وعدّلها إن لزم',useTranslation:'اعتمد الترجمة',cancel:'إلغاء',savedTranslation:'ترجمة معتمدة — ستظهر في السيرة',editTranslation:'تعديل الترجمة',translationError:'تعذّرت الترجمة الآن أو انتهى حد الخدمة. النص محفوظ؛ جرّب لاحقاً أو استخدم الاقتراحات الجاهزة.',
- emptyTranslation:'اكتب نصاً أولاً.',alreadyDutch:'النص مكتوب بأحرف لاتينية ويمكنك استخدامه مباشرة.',stale:'تغيّر النص. ترجم النسخة الجديدة.',
- photo:'الصورة الشخصية',photoHint:'اختيارية تماماً. اختر صورة واضحة؛ لن نقصّ الرأس أو نرسل الصورة لخدمة الترجمة.',choosePhoto:'اختيار صورة',removePhoto:'حذف الصورة',photoError:'تعذّر فتح الصورة. اختر JPG أو PNG أو WebP بحجم أقل من 10 ميغابايت.',photoLoading:'جارٍ تجهيز الصورة…',photoReady:'الصورة جاهزة ومحفوظة على هذا الجهاز.',
- nameLatin:'اسمك بالأحرف اللاتينية',nameHint:'اكتبه كما يظهر في وثائقك، مثلاً Ahmad Alzoubi. سيُستخدم في السيرة الهولندية.',
- saveError:'تعذّر حفظ المسودة على الجهاز. تبقى البيانات في هذه الصفحة؛ احفظ PDF قبل إغلاقها.',saved:'تُحفظ التغييرات تلقائياً على هذا الجهاز.',
- reviewWarning:'يوجد نص عربي لم يُترجم بعد. ارجع إلى الخطوة المناسبة أو عدّل الترجمة قبل إرسال السيرة.',editStep:'تعديل',jobHint:'هذه أسماء مهن للاختيار، وليست وظائف شاغرة. بعض المهن تحتاج شهادات أو ترخيصاً؛ اذكر مؤهلاتك الفعلية فقط.',
- experienceHint:'اكتب اسم جهة العمل والمدة والمهام. يمكنك إضافة أكثر من جملة من الاقتراحات.',educationHint:'اذكر الدراسة أو الدورة، الجهة والسنة. لا نغيّر مستوى شهادتك إلى مستوى هولندي.',languagesHint:'اختر اللغة والمستوى الذي يعكس قدرتك الفعلية. يمكنك اختيار أكثر من لغة.',
- nameRequired:'اكتب اسمك بالأحرف اللاتينية ليظهر في السيرة الهولندية.',emailInvalid:'تأكد من صيغة البريد الإلكتروني.',photoAlt:'الصورة الشخصية للسيرة الذاتية',progress:'الخطوة',of:'من',printHint:'في نافذة الطباعة اختر «حفظ كـ PDF». على iPhone افتح معاينة الطباعة ثم المشاركة لحفظها في الملفات.'
-});
-Object.assign(t.nl,{
- intro:'Vier eenvoudige stappen. Typ in het Arabisch of kies een voorbeeld. Bekijk daarna je Nederlandse cv.',
- privacy:'Je concept en foto blijven op dit apparaat. Vrije tekst vertalen is optioneel: alleen de tekst van dat veld gaat naar MyMemory. Vul geen BSN of gevoelige gegevens in.',
- foreign:'Controleer alle gegevens en vertalingen. Voorbeelden zijn geen feiten over jou; kies alleen wat bij je past.',preset:'Kies een suggestie of schrijf zelf. De gekozen tekst wordt in het Nederlands toegevoegd.',
- category:'Vakgebied',browse:'Suggesties bekijken',hide:'Suggesties sluiten',noResults:'Geen suggestie gevonden. Je kunt zelf tekst schrijven en vertalen.',suggestions:'Suggesties',
- translate:'Vertaal naar Nederlands',translating:'Vertalen…',translationNote:'Met “Vertaal” stuur je alleen de tekst van dit veld naar MyMemory. Vermijd hier namen en contactgegevens. De dienst heeft een gebruikslimiet en kan tijdelijk niet beschikbaar zijn.',
- translationReview:'Controleer en bewerk de Nederlandse vertaling',useTranslation:'Vertaling gebruiken',cancel:'Annuleren',savedTranslation:'Goedgekeurde vertaling — verschijnt op je cv',editTranslation:'Vertaling bewerken',translationError:'Vertalen lukt nu niet of de gebruikslimiet is bereikt. Je tekst blijft bewaard. Probeer later opnieuw of kies een suggestie.',
- emptyTranslation:'Vul eerst tekst in.',alreadyDutch:'Je tekst gebruikt Latijnse letters en kan direct worden gebruikt.',stale:'De tekst is gewijzigd. Vertaal de nieuwe versie.',
- photo:'Profielfoto',photoHint:'Helemaal optioneel. Kies een duidelijke foto. We snijden je hoofd niet af en sturen de foto niet naar de vertaaldienst.',choosePhoto:'Foto kiezen',removePhoto:'Foto verwijderen',photoError:'Foto openen lukt niet. Kies JPG, PNG of WebP kleiner dan 10 MB.',photoLoading:'Foto voorbereiden…',photoReady:'De foto is gereed en op dit apparaat bewaard.',
- nameLatin:'Je naam in Latijnse letters',nameHint:'Schrijf je naam zoals op je documenten, bijvoorbeeld Ahmad Alzoubi. Deze naam verschijnt op je Nederlandse cv.',saveError:'Opslaan op dit apparaat lukt niet. Je gegevens blijven in deze pagina; bewaar een pdf voordat je afsluit.',saved:'Wijzigingen worden automatisch op dit apparaat bewaard.',
- reviewWarning:'Er staat nog Arabische tekst in je cv. Ga terug naar de juiste stap of bewerk de vertaling voordat je het cv verstuurt.',editStep:'Bewerken',jobHint:'Dit zijn functienamen, geen vacatures. Sommige beroepen vereisen een diploma of registratie. Vermeld alleen je eigen kwalificaties.',
- experienceHint:'Vermeld werkgever, periode en taken. Je kunt meerdere voorbeeldzinnen toevoegen.',educationHint:'Noem opleiding of cursus, instelling en jaar. We zetten je diploma niet om naar een Nederlands niveau.',languagesHint:'Kies talen en niveaus die bij je passen. Je kunt meerdere talen toevoegen.',
- nameRequired:'Vul je naam in Latijnse letters in voor je Nederlandse cv.',emailInvalid:'Controleer je e-mailadres.',photoAlt:'Profielfoto voor het cv',progress:'Stap',of:'van',printHint:'Kies “Opslaan als pdf” in het afdrukvenster. Op een iPhone open je het afdrukvoorbeeld en gebruik je Delen om het in Bestanden te bewaren.'
-});
-const arabic=/[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]/;
-const translatable=['city','role','experience','education','languages'];
-let lang='ar';try{lang=localStorage.getItem('mbo_site_lang')==='nl'?'nl':'ar'}catch{}
-let step=0,data=window.MboData.readCvDraft(),category='all',pending=null,saveFailed=false,photoVersion=0;
-if(!Array.isArray(data.skills))data.skills=[];
-if(!data.translations||typeof data.translations!=='object')data.translations={};
-for(const k of ['name','nameLatin','city','phone','email','role','experience','education','languages'])data[k]=typeof data[k]==='string'?data[k]:'';
-if(!/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(data.photo||''))delete data.photo;
-function text(){return t[lang]}
-function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function norm(v){return String(v||'').toLocaleLowerCase().normalize('NFKD').replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').trim()}
-function known(k,v){const row=(S[k]||[]).find(r=>norm(r[0])===norm(v)||norm(r[1])===norm(v));return row?row[1]:v}
-function output(k){const saved=data.translations[k];return saved&&saved.source===data[k]&&typeof saved.value==='string'?saved.value:known(k,data[k]||'')}
-function save(){saveFailed=!window.MboData.writeCvDraft(data);const el=document.querySelector('#save-state');if(el){el.textContent=text()[saveFailed?'saveError':'saved'];el.className=saveFailed?'warning':'hint'}}
-function cancelPending(){if(pending){pending.abort();pending=null}}
-function shell(){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';for(const id of ['back','language','title','intro','privacy','privacyLink'])document.getElementById(id).textContent=text()[id];render()}
-function field(k,type='text',multiline=false){
- const x=text(),suggest=!!S[k],ac={name:'name',city:'address-level2',phone:'tel',email:'email'};
- const attrs=`id="field-${k}" data-field="${k}" dir="auto" maxlength="${multiline?1600:160}" ${suggest?`aria-controls="suggest-${k}" aria-expanded="false" aria-autocomplete="list" ${multiline?'':'role="combobox"'}`:''} autocomplete="${ac[k]||'off'}"`;
- const label=x[k]||x.nameLatin;
- return `<div class="field-group"><label class="question" for="field-${k}"><strong>${esc(label)}${k==='name'?'':` <small>${x.optional}</small>`}</strong>${multiline?`<textarea ${attrs} rows="4" placeholder="${esc(x.placeholders[k]||'')}">${esc(data[k])}</textarea>`:`<input ${attrs} type="${type}" ${type==='tel'?'inputmode="tel"':type==='email'?'inputmode="email" autocapitalize="none"':''} value="${esc(data[k])}" placeholder="${esc(x.placeholders[k]||'Ahmad Alzoubi')}">`}</label>
- ${suggest?`<button type="button" class="small" data-browse="${k}" aria-controls="suggest-${k}" aria-expanded="false">${x.browse} ▾</button><div class="suggestions" id="suggest-${k}" role="listbox" aria-label="${x.suggestions}: ${esc(label)}" hidden></div>`:''}
- ${translatable.includes(k)?`<div class="translation-actions"><button type="button" class="small translate" data-translate="${k}">${x.translate} · MyMemory</button><button type="button" class="small mic" data-speech="${k}">🎙 ${x.dictate}</button></div><div id="translation-${k}" class="translation-slot" aria-live="polite"></div>`:''}</div>`;
-}
-function photoSection(){const x=text();return `<section class="photo-section"><h3>${x.photo} <small>${x.optional}</small></h3><p class="hint">${x.photoHint}</p><div class="photo-controls">${data.photo?`<img class="photo-thumb" src="${data.photo}" alt="${x.photoAlt}">`:''}<label class="upload-button" for="photo-input">＋ ${x.choosePhoto}<input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif"></label>${data.photo?`<button type="button" class="small" id="remove-photo">${x.removePhoto}</button>`:''}</div><p id="photo-status" role="status"></p></section>`}
-function section(){const x=text();if(step===0)return field('name')+`<p class="hint">${x.nameHint}</p>`+field('nameLatin')+field('city')+field('phone','tel')+field('email','email')+photoSection();
- if(step===1)return `<label class="question" for="job-category"><strong>${x.category}</strong><select id="job-category">${S.categories.map(r=>`<option value="${r[0]}" ${category===r[0]?'selected':''}>${esc(r[lang==='ar'?1:2])}</option>`).join('')}</select></label>`+field('role')+`<p class="hint">${x.jobHint}</p>`+field('experience','text',true)+`<p class="hint">${x.experienceHint} ${x.noExperience}</p>`+field('education','text',true)+`<p class="hint">${x.educationHint}</p>`;
- if(step===2)return `<fieldset><legend>${x.skills}</legend><div class="choices">${skillIds.map((s,i)=>`<label class="choice"><input type="checkbox" data-skill="${s}" ${data.skills.includes(s)?'checked':''}><span>${x.skillNames[i]}</span></label>`).join('')}</div></fieldset>`+field('languages','text',true)+`<p class="hint">${x.languagesHint}</p>`;
- const untranslated=translatable.some(k=>arabic.test(output(k)))||arabic.test(data.nameLatin||data.name);
- return `<p class="hint">${x.output} ${x.foreign}</p>${untranslated?`<p class="warning">${x.reviewWarning}</p>`:''}${data.phone||data.email?'':`<p class="warning">${x.contactWarning}</p>`}<div class="review-edit">${x.steps.slice(0,3).map((s,i)=>`<button class="small" type="button" data-step="${i}">${x.editStep}: ${s}</button>`).join('')}</div><article id="cv-preview" class="paper" lang="nl" dir="ltr">${preview()}</article><p class="hint">${x.printHint}</p>`;
-}
-function line(label,value){return value?`<section class="cv-block"><h3>${label}</h3><p dir="auto">${esc(value).replace(/\n/g,'<br>')}</p></section>`:''}
-function preview(){const chosen=skillIds.filter(s=>data.skills.includes(s)).map(s=>nlSkills[skillIds.indexOf(s)]);return `<header class="cv-heading"><div><h2>${esc(data.nameLatin||data.name)||'Naam'}</h2><p class="contact">${[output('city'),data.phone,data.email].filter(Boolean).map(esc).join(' · ')}</p></div>${data.photo?`<img class="cv-photo" src="${data.photo}" alt="Profielfoto">`:''}</header>${line('Gewenste functie',output('role'))}${line('Werkervaring',output('experience'))}${line('Opleiding en cursussen',output('education'))}${line('Vaardigheden',chosen.join(' · '))}${line('Talen',output('languages'))}`}
-function changeStep(next){step=next;render();document.getElementById('step-heading').focus({preventScroll:true});document.querySelector('#wizard').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
-function render(){cancelPending();photoVersion++;const x=text(),host=document.getElementById('wizard');host.innerHTML=`<p class="step-count">${x.progress} ${step+1} ${x.of} 4</p><nav class="step-list" aria-label="${x.title}">${x.steps.map((s,i)=>`<span class="step ${i===step?'current':''}" ${i===step?'aria-current="step"':''}>${i+1}. ${s}</span>`).join('')}</nav><div class="form-card"><div class="step-head"><h2 id="step-heading" tabindex="-1">${x.steps[step]}</h2><button type="button" id="listen" class="small">🔊 ${x.listen}</button></div>${step<3?`<p class="hint translation-disclosure">${lang==='ar'?'زر الترجمة يرسل نص الحقل إلى MyMemory. اختر اقتراحاً جاهزاً إذا أردت العمل دون اتصال.':'De vertaalknop stuurt de veldtekst naar MyMemory. Kies een vaste suggestie om offline te werken.'}</p><details class="translation-info"><summary>${x.translate} · MyMemory</summary><p>${x.translationNote}</p><a href="https://mymemory.translated.net/doc/en/tos.php" target="_blank" rel="noopener noreferrer">MyMemory</a></details>`:''}${section()}<p id="error" role="alert"></p><div class="actions">${step?`<button type="button" id="prev" class="secondary">${x.previous}</button>`:''}${step<3?`<button type="button" id="next">${x.next} ${step+2}/4</button>`:`<button type="button" id="print">${x.print}</button>`}</div></div><p id="save-state" class="${saveFailed?'warning':'hint'}" role="status">${x[saveFailed?'saveError':'saved']}</p><button type="button" id="clear" class="small danger">${x.clear}</button>`;
- host.querySelectorAll('[data-field]').forEach(el=>{
-  const k=el.dataset.field;
-  el.addEventListener('input',()=>{data[k]=el.value;delete data.translations[k];save();updateTranslation(k);if(S[k])showSuggestions(k,false)});
-  if(S[k]){el.addEventListener('focus',()=>showSuggestions(k,false));el.addEventListener('keydown',e=>suggestionKeys(e,k));}
- });
- host.querySelectorAll('[data-browse]').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.browse,box=document.getElementById('suggest-'+k);if(box.hidden)showSuggestions(k,true);else hideSuggestions(k)}));
- host.querySelectorAll('[data-translate]').forEach(b=>b.addEventListener('click',()=>translate(b.dataset.translate)));
- host.querySelectorAll('[data-speech]').forEach(b=>b.addEventListener('click',()=>dictate(b.dataset.speech)));
- host.querySelectorAll('[data-skill]').forEach(el=>el.addEventListener('change',()=>{data.skills=skillIds.filter(s=>host.querySelector(`[data-skill="${s}"]`).checked);save()}));
- host.querySelector('#job-category')?.addEventListener('change',e=>{category=e.target.value;showSuggestions('role',true)});
- host.querySelector('#next')?.addEventListener('click',()=>{if(step===0){if(!String(data.name||'').trim()&&!String(data.nameLatin||'').trim()){host.querySelector('#error').textContent=x.required;document.getElementById('field-name').focus();return}if(arabic.test(data.nameLatin||data.name)){host.querySelector('#error').textContent=x.nameRequired;document.getElementById('field-nameLatin').focus();return}if(data.email&&!document.getElementById('field-email').checkValidity()){host.querySelector('#error').textContent=x.emailInvalid;document.getElementById('field-email').focus();return}}changeStep(step+1)});
- host.querySelector('#prev')?.addEventListener('click',()=>changeStep(step-1));host.querySelector('#print')?.addEventListener('click',()=>window.print());
- host.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>changeStep(Number(b.dataset.step))));
- host.querySelector('#clear').addEventListener('click',()=>{if(confirm(x.confirm)){cancelPending();window.MboData.clearCvDraft();data={skills:[],translations:{}};step=0;save();render()}});
- host.querySelector('#listen').addEventListener('click',()=>{if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(x.steps[step]);u.lang=lang==='ar'?'ar-SA':'nl-NL';speechSynthesis.speak(u)});
- host.querySelector('#photo-input')?.addEventListener('change',uploadPhoto);host.querySelector('#remove-photo')?.addEventListener('click',()=>{delete data.photo;save();render()});
- translatable.forEach(updateTranslation);
-}
-function hideSuggestions(k){const el=document.getElementById('field-'+k),box=document.getElementById('suggest-'+k);if(!box)return;box.hidden=true;el.setAttribute('aria-expanded','false');el.removeAttribute('aria-activedescendant');document.querySelector(`[data-browse="${k}"]`).setAttribute('aria-expanded','false')}
-function showSuggestions(k,all){
- const el=document.getElementById('field-'+k),box=document.getElementById('suggest-'+k),q=all?'':norm(el.value.split('\n').at(-1));
- let rows=S[k].filter(r=>(k!=='role'||category==='all'||r[2]===category)&&(!q||norm(r[0]+' '+r[1]).includes(q)));
- // Keep the whole category available for touch scrolling; typed results stay compact.
- rows=rows.slice(0,all?80:8);box.innerHTML=rows.length?rows.map((r,i)=>`<button type="button" role="option" aria-selected="false" id="suggest-${k}-${i}" data-suggestion="${esc(r[1])}"><strong lang="nl" dir="ltr">${esc(r[1])}</strong>${lang==='ar'?`<span lang="ar" dir="rtl">${esc(r[0])}</span>`:''}</button>`).join(''):`<p>${text().noResults}</p>`;
- box.hidden=false;el.setAttribute('aria-expanded','true');el.removeAttribute('aria-activedescendant');document.querySelector(`[data-browse="${k}"]`).setAttribute('aria-expanded','true');
- box.querySelectorAll('[data-suggestion]').forEach(b=>{b.addEventListener('click',()=>{const value=b.dataset.suggestion;let current=String(data[k]||'').trim();if(['experience','education','languages'].includes(k)&&current){if(all){if(!current.split('\n').includes(value))current+='\n'+value}else{const lines=current.split('\n');lines[lines.length-1]=value;current=lines.join('\n')}}else current=value;el.value=current;data[k]=current;delete data.translations[k];save();updateTranslation(k);hideSuggestions(k)});b.addEventListener('keydown',e=>{if(e.key==='Escape'){hideSuggestions(k);el.focus()}else if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();const options=[...box.querySelectorAll('[data-suggestion]')],i=options.indexOf(b);options[(i+(e.key==='ArrowDown'?1:options.length-1))%options.length]?.focus()}})});
-}
-function suggestionKeys(e,k){const box=document.getElementById('suggest-'+k);if(e.key==='Escape'){hideSuggestions(k);return}if(!['ArrowDown','ArrowUp','Enter'].includes(e.key))return;if(box.hidden){if(e.key==='Enter')return;showSuggestions(k,false)}const options=[...box.querySelectorAll('[data-suggestion]')];if(!options.length)return;let i=options.findIndex(x=>x.getAttribute('aria-selected')==='true');if(e.key==='Enter'){if(i>=0){e.preventDefault();options[i].click()}return}e.preventDefault();i=(i+(e.key==='ArrowDown'?1:options.length-1)+options.length)%options.length;options.forEach((b,j)=>b.setAttribute('aria-selected',String(i===j)));e.target.setAttribute('aria-activedescendant',options[i].id);options[i].scrollIntoView({block:'nearest'})}
-document.addEventListener('click',e=>{for(const k of translatable){const el=document.getElementById('field-'+k);if(el&&!el.closest('.field-group').contains(e.target))hideSuggestions(k)}});
-function updateTranslation(k){const box=document.getElementById('translation-'+k);if(!box)return;const v=data.translations[k];box.innerHTML=v&&v.source===data[k]?`<p class="translation-saved">✓ ${text().savedTranslation}</p><p class="translated-copy" lang="nl" dir="ltr">${esc(v.value)}</p><button type="button" class="small" data-edit-translation="${k}">${text().editTranslation}</button>`:'';box.querySelector('button')?.addEventListener('click',()=>translationEditor(k,data[k],v.value));}
-function translationEditor(k,source,value){const box=document.getElementById('translation-'+k);if(!box||source!==data[k])return;box.innerHTML=`<label class="question" for="translated-${k}"><strong>${text().translationReview}</strong><textarea id="translated-${k}" lang="nl" dir="ltr" rows="4" maxlength="4000">${esc(value)}</textarea></label><div class="translation-actions"><button type="button" data-apply>${text().useTranslation}</button><button type="button" class="small" data-cancel>${text().cancel}</button></div>`;box.querySelector('[data-apply]').addEventListener('click',()=>{const value=box.querySelector('textarea').value.trim();if(!value)return;if(source!==data[k]){box.textContent=text().stale;return}data.translations[k]={source,value};save();updateTranslation(k)});box.querySelector('[data-cancel]').addEventListener('click',()=>updateTranslation(k))}
-function splitTranslation(value){const chunks=[];for(const line of value.split('\n')){if(!line.trim()){chunks.push('');continue}let chunk='';for(const token of line.split(/(\s+)/)){if(new TextEncoder().encode(chunk+token).length<=480){chunk+=token;continue}if(chunk.trim())chunks.push(chunk.trim());chunk='';for(const char of token){if(new TextEncoder().encode(chunk+char).length>480){chunks.push(chunk);chunk=''}chunk+=char}}if(chunk.trim())chunks.push(chunk.trim())}return chunks}
-async function translate(k){if(pending)return;const box=document.getElementById('translation-'+k),source=String(data[k]||'').trim();if(!source){box.textContent=text().emptyTranslation;return}if(!arabic.test(source)){box.textContent=text().alreadyDutch;return}
- const local=known(k,source);if(!arabic.test(local)){translationEditor(k,data[k],local);return}
- // Explicit, per-field action. No name, contact or image fields are sent.
- const original=data[k],controller=new AbortController();pending=controller;const button=document.querySelector(`[data-translate="${k}"]`);button.disabled=true;button.textContent=text().translating;box.textContent=text().translationNote;const timeout=setTimeout(()=>controller.abort(),60000);
- try{const result=[];for(const chunk of splitTranslation(source)){if(!arabic.test(chunk)){result.push(chunk);continue}const url=new URL('https://api.mymemory.translated.net/get');url.search=new URLSearchParams({q:chunk,langpair:'ar|nl'}).toString();const response=await fetch(url,{signal:controller.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});const body=await response.json();if(!response.ok||Number(body.responseStatus)!==200||body.quotaFinished||typeof body.responseData?.translatedText!=='string')throw Error('Translation unavailable');const translated=body.responseData.translatedText.trim();if(!translated||arabic.test(translated)||/MYMEMORY WARNING|QUERY LENGTH LIMIT|INVALID LANGUAGE/i.test(translated))throw Error('Invalid translation');result.push(translated)}if(pending!==controller)return;if(original!==data[k]){box.textContent=text().stale;return}translationEditor(k,original,result.join('\n'));
- }catch{if(pending===controller&&box.isConnected)box.textContent=text().translationError}finally{clearTimeout(timeout);if(pending===controller)pending=null;if(button.isConnected){button.disabled=false;button.textContent=text().translate+' · MyMemory'}}}
-async function uploadPhoto(e){const file=e.target.files[0];if(!file)return;const version=++photoVersion,status=document.getElementById('photo-status');if(file.size>10*1024*1024||!/^image\/(jpeg|png|webp|heic|heif)$/.test(file.type)){status.textContent=text().photoError;return}status.textContent=text().photoLoading;const url=URL.createObjectURL(file);try{const img=new Image();img.src=url;await img.decode();if(version!==photoVersion)return;if(!img.naturalWidth||!img.naturalHeight)throw Error('Invalid image');const scale=Math.min(1,600/Math.max(img.naturalWidth,img.naturalHeight)),canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));canvas.height=Math.max(1,Math.round(img.naturalHeight*scale));const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);data.photo=canvas.toDataURL('image/jpeg',.85);save();render();document.getElementById('photo-status').textContent=text()[saveFailed?'saveError':'photoReady']}catch{if(status.isConnected)status.textContent=text().photoError}finally{URL.revokeObjectURL(url)}}
-function dictate(k){const Speech=window.SpeechRecognition||window.webkitSpeechRecognition;if(!Speech){alert(text().unsupported);return}if(!confirm(text().speechPrivacy))return;const recognition=new Speech();recognition.lang=lang==='ar'?'ar-SA':'nl-NL';recognition.interimResults=false;recognition.onresult=e=>{const el=document.getElementById('field-'+k);if(!el)return;el.value=(el.value?el.value+' ':'')+e.results[0][0].transcript;el.dispatchEvent(new Event('input',{bubbles:true}))};try{recognition.start()}catch{alert(text().unsupported)}}
-document.getElementById('language').addEventListener('click',()=>{lang=lang==='ar'?'nl':'ar';try{localStorage.setItem('mbo_site_lang',lang)}catch{}shell()});shell();
-
+(() => {
+  'use strict';
+  const S = window.CvSuggestions, T = window.CvTranslate;
+  const fields = ['city', 'role', 'experience', 'education', 'languages'];
+  const skillIds = ['safety', 'team', 'punctual', 'cleaning', 'logistics', 'service', 'computer', 'driving'];
+  const nlSkills = ['Veilig werken', 'Samenwerken', 'Op tijd komen', 'Schoonmaken', 'Magazijn en bezorgen', 'Klanten helpen', 'Computer gebruiken', 'Autorijden'];
+  const copy = {
+    ar: {
+      back: 'الرئيسية', language: 'Nederlands', title: 'أنشئ سيرتك الذاتية CV',
+      intro: 'اكتب بالعربية أو اختر من الاقتراحات. سيرتك جاهزة بالهولندية في 4 خطوات.',
+      privacy: 'المسودة والصورة على جهازك. النصوص العربية تُرسل تلقائياً لخدمة الترجمة؛ التفاصيل في سياسة الخصوصية.', privacyLink: 'سياسة الخصوصية',
+      steps: ['بياناتك', 'الخبرة والدراسة', 'المهارات واللغات', 'السيرة جاهزة'],
+      name: 'الاسم الكامل بالأحرف اللاتينية', nameHint: 'كما في وثائقك، مثلاً Ahmad Alzoubi.', city: 'المدينة', phone: 'الهاتف', email: 'البريد الإلكتروني',
+      category: 'مجال العمل', role: 'الوظيفة المطلوبة', experience: 'الخبرة العملية', education: 'الدراسة والدورات', languages: 'اللغات ومستواك', skills: 'المهارات',
+      workHint: 'أضف العمل والمدة والمهام. اترك الحقل فارغاً إذا لم تكن لديك خبرة.',
+      optional: 'اختياري', browse: 'اقتراحات', noResults: 'يمكنك متابعة الكتابة؛ الترجمة تلقائية.', next: 'التالي', previous: 'السابق', print: 'حفظ CV بصيغة PDF',
+      step: 'الخطوة', of: 'من', translated: 'بالهولندية', edit: 'تعديل', done: 'تم', translating: 'جارٍ الترجمة إلى الهولندية…',
+      translationError: 'تعذّرت الترجمة. أعد المحاولة أو اكتب الترجمة يدوياً.', retry: 'إعادة المحاولة', manual: 'كتابة الترجمة',
+      review: 'راجع معلوماتك ثم احفظ السيرة.', reviewPending: 'جارٍ تجهيز الترجمة… يمكنك متابعة المعاينة.', reviewError: 'توجد ترجمة غير مكتملة. أعد المحاولة أو عدّل النص قبل حفظ PDF.',
+      contactHint: 'أضف هاتفاً أو بريداً إلكترونياً للتواصل.', required: 'أدخل اسمك بالأحرف اللاتينية كما في وثائقك.', emailInvalid: 'تحقق من البريد الإلكتروني.',
+      photo: 'صورة شخصية', choosePhoto: 'إضافة صورة', removePhoto: 'حذف الصورة', photoAlt: 'صورة السيرة الذاتية', photoLoading: 'جارٍ تجهيز الصورة…',
+      photoError: 'اختر صورة JPG أو PNG أو WebP، أقل من 10 ميغابايت.', photoReady: 'تمت إضافة الصورة.',
+      saved: 'محفوظة على جهازك تلقائياً', saveError: 'تعذّر الحفظ على الجهاز. احفظ PDF قبل إغلاق الصفحة.', clear: 'مسح البيانات', undo: 'استعادة البيانات',
+      printHint: 'اختر «حفظ كـ PDF» في نافذة الطباعة. على iPhone يمكنك مشاركة معاينة الطباعة إلى «الملفات».',
+      skillNames: ['العمل بأمان', 'العمل الجماعي', 'الالتزام بالمواعيد', 'التنظيف', 'المستودعات والتوصيل', 'خدمة الزبائن', 'الكمبيوتر', 'القيادة'],
+      placeholders: { name: 'Ahmad Alzoubi', city: 'روتردام / Rotterdam', phone: '06 12345678', email: 'naam@example.com', role: 'مثال: كهربائي', experience: 'مثال: عملت سنة في متجر، وساعدت الزبائن ورتبت المنتجات.', education: 'مثال: دورة لغة هولندية — 2025', languages: 'مثال: العربية لغة أم، الهولندية A2' }
+    },
+    nl: {
+      back: 'Home', language: 'العربية', title: 'Maak je cv',
+      intro: 'Schrijf in het Arabisch of kies suggesties. Je Nederlandse cv in 4 stappen.',
+      privacy: 'Je concept en foto blijven op dit apparaat. Arabische tekst gaat automatisch naar een vertaaldienst; zie het privacybeleid.', privacyLink: 'Privacybeleid',
+      steps: ['Je gegevens', 'Werk en opleiding', 'Vaardigheden en talen', 'Je cv'],
+      name: 'Volledige naam in Latijnse letters', nameHint: 'Zoals op je documenten, bijvoorbeeld Ahmad Alzoubi.', city: 'Woonplaats', phone: 'Telefoon', email: 'E-mail',
+      category: 'Vakgebied', role: 'Gewenste functie', experience: 'Werkervaring', education: 'Opleiding en cursussen', languages: 'Talen en niveau', skills: 'Vaardigheden',
+      workHint: 'Vermeld werk, periode en taken. Laat dit leeg als je nog geen ervaring hebt.',
+      optional: 'Optioneel', browse: 'Suggesties', noResults: 'Schrijf gerust verder; vertalen gaat automatisch.', next: 'Volgende', previous: 'Vorige', print: 'Cv opslaan als pdf',
+      step: 'Stap', of: 'van', translated: 'In het Nederlands', edit: 'Bewerken', done: 'Klaar', translating: 'Vertalen naar het Nederlands…',
+      translationError: 'Vertalen lukt niet. Probeer opnieuw of vul de vertaling zelf in.', retry: 'Opnieuw proberen', manual: 'Vertaling invullen',
+      review: 'Controleer je gegevens en sla je cv op.', reviewPending: 'De vertaling wordt voorbereid… Je kunt je cv alvast bekijken.', reviewError: 'Een vertaling is nog niet klaar. Probeer opnieuw of bewerk de tekst voordat je de pdf bewaart.',
+      contactHint: 'Voeg een telefoonnummer of e-mailadres toe.', required: 'Vul je naam in Latijnse letters in zoals op je documenten.', emailInvalid: 'Controleer je e-mailadres.',
+      photo: 'Profielfoto', choosePhoto: 'Foto toevoegen', removePhoto: 'Foto verwijderen', photoAlt: 'Profielfoto voor het cv', photoLoading: 'Foto voorbereiden…',
+      photoError: 'Kies JPG, PNG of WebP, kleiner dan 10 MB.', photoReady: 'Foto toegevoegd.',
+      saved: 'Automatisch op dit apparaat bewaard', saveError: 'Opslaan lukt niet. Bewaar een pdf voordat je deze pagina sluit.', clear: 'Gegevens wissen', undo: 'Gegevens herstellen',
+      printHint: 'Kies “Opslaan als pdf” in het afdrukvenster. Op een iPhone kun je het afdrukvoorbeeld delen naar Bestanden.',
+      skillNames: nlSkills,
+      placeholders: { name: 'Ahmad Alzoubi', city: 'Rotterdam', phone: '06 12345678', email: 'naam@example.com', role: 'Bijvoorbeeld: elektricien', experience: 'Bijvoorbeeld: een jaar in een winkel gewerkt, klanten geholpen en producten aangevuld.', education: 'Bijvoorbeeld: cursus Nederlands — 2025', languages: 'Bijvoorbeeld: Arabisch — moedertaal, Nederlands — A2' }
+    }
+  };
+  let lang = 'ar'; try { lang = localStorage.getItem('mbo_site_lang') === 'nl' ? 'nl' : 'ar'; } catch {}
+  function sanitize(draft) {
+    const d = { ...draft };
+    for (const k of ['name', 'nameLatin', 'city', 'phone', 'email', 'role', 'experience', 'education', 'languages']) d[k] = typeof d[k] === 'string' ? d[k] : '';
+    d.name = d.nameLatin || d.name;
+    d.skills = Array.isArray(d.skills) ? d.skills.filter(k => skillIds.includes(k)) : [];
+    d.translations = d.translations && typeof d.translations === 'object' && !Array.isArray(d.translations) ? d.translations : {};
+    if (!/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(d.photo || '')) delete d.photo;
+    return d;
+  }
+  let data = sanitize(window.MboData.readCvDraft()), step = 0, category = 'all', photoVersion = 0, saveFailed = false, undoDraft = null;
+  const timers = new Map(), requests = new Map(), states = new Map();
+  const text = () => copy[lang];
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  function translated(k) { const v = data.translations[k]; return v && v.source === data[k] && typeof v.value === 'string' && v.value.trim() && !T.hasArabic(v.value) ? v.value : null; }
+  function output(k) { return translated(k) ?? T.known(k, data[k]); }
+  function unresolved() { return fields.filter(k => T.hasArabic(output(k))); }
+  function save() {
+    saveFailed = !window.MboData.writeCvDraft(data);
+    const el = document.getElementById('save-state');
+    if (el) { el.textContent = text()[saveFailed ? 'saveError' : 'saved']; el.className = saveFailed ? 'warning' : 'hint'; }
+  }
+  function cancel(k) {
+    clearTimeout(timers.get(k)); timers.delete(k);
+    const request = requests.get(k); if (request) { request.abort(); requests.delete(k); }
+    states.delete(k);
+  }
+  function updateField(k, value, immediate = false) {
+    cancel(k); data[k] = value; if (k === 'name') data.nameLatin = value;
+    delete data.translations[k]; save();
+    if (fields.includes(k)) schedule(k, immediate ? 0 : 1400);
+  }
+  function schedule(k, delay = 1400) {
+    clearTimeout(timers.get(k)); timers.delete(k);
+    if (!fields.includes(k) || !T.hasArabic(output(k))) { paintTranslation(k); refreshPreview(); return; }
+    if (requests.has(k)) return;
+    states.set(k, 'waiting'); paintTranslation(k); refreshPreview();
+    timers.set(k, setTimeout(() => { timers.delete(k); runTranslation(k); }, delay));
+  }
+  async function runTranslation(k) {
+    if (!fields.includes(k) || !T.hasArabic(output(k)) || requests.has(k)) return;
+    const source = data[k], controller = new AbortController(); requests.set(k, controller); states.set(k, 'pending');
+    paintTranslation(k); refreshPreview();
+    const timeout = setTimeout(() => controller.abort(), 45000);
+    try {
+      const value = await T.translate(k, source, controller.signal);
+      if (requests.get(k) !== controller || data[k] !== source) return;
+      data.translations[k] = { source, value }; states.delete(k); save();
+    } catch {
+      if (requests.get(k) === controller && data[k] === source) states.set(k, 'error');
+    } finally {
+      clearTimeout(timeout);
+      if (requests.get(k) === controller) { requests.delete(k); paintTranslation(k); refreshPreview(); }
+    }
+  }
+  function shell() {
+    document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    for (const id of ['back', 'language', 'title', 'intro', 'privacy', 'privacyLink']) document.getElementById(id).textContent = text()[id];
+    document.title = text().title; render();
+  }
+  function field(k, type = 'text', multiline = false) {
+    const x = text(), suggest = Boolean(S[k]), ac = { name: 'name', city: 'address-level2', phone: 'tel', email: 'email' };
+    const attrs = `id="field-${k}" data-field="${k}" dir="${['name','email','phone'].includes(k) ? 'ltr' : 'auto'}" maxlength="${multiline ? 1600 : 160}" autocomplete="${ac[k] || 'off'}" ${suggest ? `aria-controls="suggest-${k}" aria-expanded="false" aria-autocomplete="list" ${multiline ? '' : 'role="combobox"'}` : ''}`;
+    return `<div class="field-group"><label class="question" for="field-${k}"><strong>${x[k]}</strong>${multiline ? `<textarea ${attrs} rows="3" placeholder="${esc(x.placeholders[k])}">${esc(data[k])}</textarea>` : `<input ${attrs} type="${type}" ${type === 'tel' ? 'inputmode="tel"' : type === 'email' ? 'inputmode="email" autocapitalize="none"' : ''} value="${esc(data[k])}" placeholder="${esc(x.placeholders[k])}">`}</label>${suggest ? `<button type="button" class="suggest-toggle" data-browse="${k}" aria-expanded="false" aria-controls="suggest-${k}">${x.browse} ▾</button><div id="suggest-${k}" class="suggestions" role="listbox" aria-label="${x.browse}: ${x[k]}" hidden></div>` : ''}${fields.includes(k) ? `<div id="translation-${k}" class="translation-slot" aria-live="polite"></div>` : ''}</div>`;
+  }
+  function photoSection() {
+    const x = text(); return `<section class="photo-section"><div>${data.photo ? `<img class="photo-thumb" src="${data.photo}" alt="${x.photoAlt}">` : '<span class="photo-placeholder" aria-hidden="true">＋</span>'}</div><div><strong>${x.photo} <small>(${x.optional})</small></strong><div class="photo-controls"><label class="upload-button" for="photo-input">${data.photo ? x.edit : x.choosePhoto}<input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif"></label>${data.photo ? `<button type="button" class="small" id="remove-photo">${x.removePhoto}</button>` : ''}</div></div><p id="photo-status" role="status"></p></section>`;
+  }
+  function section() {
+    const x = text();
+    if (step === 0) return field('name') + `<p class="hint name-hint">${x.nameHint}</p>` + `<div class="contact-grid">${field('city')}${field('phone', 'tel')}${field('email', 'email')}</div>` + photoSection();
+    if (step === 1) return `<label class="question" for="job-category"><strong>${x.category}</strong><select id="job-category">${S.categories.map(r => `<option value="${r[0]}" ${category === r[0] ? 'selected' : ''}>${esc(r[lang === 'ar' ? 1 : 2])}</option>`).join('')}</select></label>` + field('role') + field('experience', 'text', true) + `<p class="hint">${x.workHint}</p>` + field('education', 'text', true);
+    if (step === 2) return `<fieldset><legend>${x.skills}</legend><div class="choices">${skillIds.map((s, i) => `<label class="choice"><input type="checkbox" data-skill="${s}" ${data.skills.includes(s) ? 'checked' : ''}><span>${x.skillNames[i]}</span></label>`).join('')}</div></fieldset>` + field('languages', 'text', true);
+    return `<p class="hint">${x.review}</p><div id="translation-summary" role="status"></div>${data.phone || data.email ? '' : `<p class="hint">${x.contactHint}</p>`}<div class="review-edit">${x.steps.slice(0, 3).map((s, i) => `<button type="button" class="small" data-step="${i}">${x.edit}: ${s}</button>`).join('')}</div><article id="cv-preview" class="paper" lang="nl" dir="ltr">${preview()}</article><p class="hint">${x.printHint}</p>`;
+  }
+  function line(label, value) { return value ? `<section class="cv-block"><h3>${label}</h3><p>${esc(value).replace(/\n/g, '<br>')}</p></section>` : ''; }
+  function preview() {
+    const value = k => T.hasArabic(output(k)) ? 'Vertaling wordt voorbereid…' : output(k);
+    const chosen = skillIds.filter(s => data.skills.includes(s)).map(s => nlSkills[skillIds.indexOf(s)]);
+    return `<header class="cv-heading"><div><h2>${esc(data.name) || 'Naam'}</h2><p class="contact">${[value('city'), data.phone, data.email].filter(Boolean).map(esc).join(' · ')}</p></div>${data.photo ? `<img class="cv-photo" src="${data.photo}" alt="Profielfoto">` : ''}</header>${line('Gewenste functie', value('role'))}${line('Werkervaring', value('experience'))}${line('Opleiding en cursussen', value('education'))}${line('Vaardigheden', chosen.join(' · '))}${line('Talen', value('languages'))}`;
+  }
+  function refreshPreview() {
+    if (step !== 3) return;
+    const paper = document.getElementById('cv-preview'), status = document.getElementById('translation-summary'), button = document.getElementById('print');
+    if (!paper || !status || !button) return;
+    paper.innerHTML = preview();
+    const missing = unresolved(), failed = missing.some(k => states.get(k) === 'error');
+    button.disabled = missing.length > 0;
+    document.body.classList.toggle('translation-incomplete', missing.length > 0);
+    status.innerHTML = missing.length ? `<p class="${failed ? 'warning' : 'hint'}">${text()[failed ? 'reviewError' : 'reviewPending']}</p>${failed ? `<button type="button" class="small" id="retry-all">${text().retry}</button>` : ''}` : '';
+    document.getElementById('retry-all')?.addEventListener('click', () => missing.forEach(k => schedule(k, 0)));
+  }
+  function validStep() {
+    if (step !== 0) return true;
+    const error = document.getElementById('error');
+    if (!data.name.trim() || T.hasArabic(data.name)) { error.textContent = text().required; document.getElementById('field-name').focus(); return false; }
+    if (data.email && !document.getElementById('field-email').checkValidity()) { error.textContent = text().emailInvalid; document.getElementById('field-email').focus(); return false; }
+    return true;
+  }
+  function changeStep(next) {
+    if (next > step && !validStep()) return;
+    fields.forEach(k => { if (timers.has(k)) schedule(k, 0); });
+    step = next; render();
+    document.getElementById('step-heading').focus({ preventScroll: true });
+    document.getElementById('wizard').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  }
+  function render() {
+    photoVersion++; document.body.classList.remove('translation-incomplete');
+    const x = text(), host = document.getElementById('wizard');
+    host.innerHTML = `<nav class="step-list" aria-label="${x.title}">${x.steps.map((s, i) => `<span class="step ${i === step ? 'current' : ''}" ${i === step ? 'aria-current="step"' : ''}><span class="step-number">${i + 1}</span><span>${s}</span></span>`).join('')}</nav><div class="form-card"><div class="step-head"><h2 id="step-heading" tabindex="-1">${x.steps[step]}</h2><span class="step-count">${step + 1} / 4</span></div>${section()}<p id="error" role="alert"></p><div class="actions">${step ? `<button id="prev" type="button" class="secondary">${x.previous}</button>` : ''}${step < 3 ? `<button id="next" type="button">${x.next}</button>` : `<button id="print" type="button">${x.print}</button>`}</div></div><div class="draft-footer"><p id="save-state" class="${saveFailed ? 'warning' : 'hint'}" role="status">${x[saveFailed ? 'saveError' : 'saved']}</p><button type="button" id="clear" class="text-button">${x[undoDraft ? 'undo' : 'clear']}</button></div>`;
+    host.querySelectorAll('[data-field]').forEach(el => {
+      const k = el.dataset.field;
+      el.addEventListener('input', () => { updateField(k, el.value); if (S[k]) showSuggestions(k, false); });
+      el.addEventListener('blur', () => { if (timers.has(k)) schedule(k, 250); });
+      if (S[k]) { el.addEventListener('focus', () => { if (el.value.trim()) showSuggestions(k, false); }); el.addEventListener('keydown', e => suggestionKeys(e, k)); }
+    });
+    host.querySelectorAll('[data-browse]').forEach(b => b.addEventListener('click', () => { const k = b.dataset.browse; if (document.getElementById('suggest-' + k).hidden) showSuggestions(k, true); else hideSuggestions(k); }));
+    host.querySelectorAll('[data-skill]').forEach(el => el.addEventListener('change', () => { data.skills = skillIds.filter(k => host.querySelector(`[data-skill="${k}"]`).checked); save(); }));
+    host.querySelector('#job-category')?.addEventListener('change', e => { category = e.target.value; showSuggestions('role', true); });
+    host.querySelector('#next')?.addEventListener('click', () => changeStep(step + 1));
+    host.querySelector('#prev')?.addEventListener('click', () => changeStep(step - 1));
+    host.querySelector('#print')?.addEventListener('click', () => { if (!unresolved().length) window.print(); });
+    host.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => changeStep(Number(b.dataset.step))));
+    host.querySelector('#clear').addEventListener('click', () => { fields.forEach(cancel); if (undoDraft) { data = undoDraft; undoDraft = null; } else { undoDraft = data; data = sanitize({}); } step = 0; save(); render(); });
+    host.querySelector('#photo-input')?.addEventListener('change', uploadPhoto);
+    host.querySelector('#remove-photo')?.addEventListener('click', () => { delete data.photo; save(); render(); });
+    fields.forEach(k => { paintTranslation(k); if (T.hasArabic(output(k)) && !states.has(k)) schedule(k); });
+    refreshPreview();
+  }
+  function hideSuggestions(k) {
+    const el = document.getElementById('field-' + k), box = document.getElementById('suggest-' + k);
+    if (!box) return;
+    box.hidden = true; el.setAttribute('aria-expanded', 'false'); el.removeAttribute('aria-activedescendant');
+    document.querySelector(`[data-browse="${k}"]`).setAttribute('aria-expanded', 'false');
+  }
+  function showSuggestions(k, all) {
+    const el = document.getElementById('field-' + k), box = document.getElementById('suggest-' + k), q = all ? '' : T.normalize(el.value.split('\n').at(-1));
+    const rows = S[k].filter(r => (k !== 'role' || category === 'all' || r[2] === category) && (!q || T.normalize(r[0] + ' ' + r[1]).includes(q))).slice(0, all ? 80 : 6);
+    if (!rows.length && !all) { hideSuggestions(k); return; }
+    box.innerHTML = rows.length ? rows.map((r, i) => `<button type="button" role="option" aria-selected="false" id="suggest-${k}-${i}" data-suggestion="${esc(r[1])}"><strong lang="nl" dir="ltr">${esc(r[1])}</strong>${lang === 'ar' ? `<span lang="ar" dir="rtl">${esc(r[0])}</span>` : ''}</button>`).join('') : `<p>${text().noResults}</p>`;
+    box.hidden = false; el.setAttribute('aria-expanded', 'true'); el.removeAttribute('aria-activedescendant'); document.querySelector(`[data-browse="${k}"]`).setAttribute('aria-expanded', 'true');
+    box.querySelectorAll('[data-suggestion]').forEach(b => {
+      b.addEventListener('click', () => {
+        const value = b.dataset.suggestion; let current = data[k].trim();
+        if (['experience', 'education', 'languages'].includes(k) && current) {
+          if (all) { if (!current.split('\n').includes(value)) current += '\n' + value; }
+          else { const lines = current.split('\n'); lines[lines.length - 1] = value; current = lines.join('\n'); }
+        } else current = value;
+        el.value = current; updateField(k, current, true); hideSuggestions(k);
+      });
+      b.addEventListener('keydown', e => {
+        if (e.key === 'Escape') { el.focus(); hideSuggestions(k); }
+        else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); const options = [...box.querySelectorAll('[data-suggestion]')], i = options.indexOf(b); options[(i + (e.key === 'ArrowDown' ? 1 : options.length - 1)) % options.length].focus(); }
+      });
+    });
+  }
+  function suggestionKeys(e, k) {
+    const box = document.getElementById('suggest-' + k);
+    if (e.key === 'Escape') { hideSuggestions(k); return; }
+    if (!['ArrowDown', 'ArrowUp', 'Enter'].includes(e.key)) return;
+    if (box.hidden) { if (e.key === 'Enter') return; showSuggestions(k, false); }
+    const options = [...box.querySelectorAll('[data-suggestion]')]; if (!options.length) return;
+    let i = options.findIndex(x => x.getAttribute('aria-selected') === 'true');
+    if (e.key === 'Enter') { if (i >= 0) { e.preventDefault(); options[i].click(); } return; }
+    e.preventDefault(); i = i < 0 ? (e.key === 'ArrowDown' ? 0 : options.length - 1) : (i + (e.key === 'ArrowDown' ? 1 : options.length - 1)) % options.length;
+    options.forEach((b, j) => b.setAttribute('aria-selected', String(i === j))); e.target.setAttribute('aria-activedescendant', options[i].id); options[i].scrollIntoView({ block: 'nearest' });
+  }
+  function paintTranslation(k) {
+    const box = document.getElementById('translation-' + k); if (!box) return;
+    const x = text(), value = output(k), sourceArabic = T.hasArabic(data[k]);
+    if (!sourceArabic) { box.innerHTML = ''; return; }
+    if (!T.hasArabic(value)) {
+      box.innerHTML = `<div class="translation-caption"><span>${x.translated}</span><button type="button" class="text-button" data-edit>${x.edit}</button></div><p lang="nl" dir="ltr">${esc(value)}</p>`;
+      box.querySelector('[data-edit]').addEventListener('click', () => editTranslation(k));
+    } else if (states.get(k) === 'error') {
+      box.innerHTML = `<p class="warning">${x.translationError}</p><button type="button" class="small" data-retry>${x.retry}</button> <button type="button" class="text-button" data-edit>${x.manual}</button>`;
+      box.querySelector('[data-retry]').addEventListener('click', () => schedule(k, 0)); box.querySelector('[data-edit]').addEventListener('click', () => editTranslation(k));
+    } else box.innerHTML = `<p class="hint">${x.translating}</p>`;
+  }
+  function editTranslation(k) {
+    cancel(k);
+    const source = data[k], box = document.getElementById('translation-' + k), value = translated(k) || (T.hasArabic(output(k)) ? '' : output(k));
+    box.innerHTML = `<label class="question" for="translated-${k}"><strong>${text().translated}</strong><textarea id="translated-${k}" lang="nl" dir="ltr" rows="3" maxlength="4000">${esc(value)}</textarea></label><button type="button" class="small" data-done>${text().done}</button>`;
+    box.querySelector('textarea').addEventListener('input', e => { if (data[k] !== source) return; data.translations[k] = { source, value: e.target.value }; states.set(k, T.hasArabic(e.target.value) || !e.target.value.trim() ? 'error' : 'edited'); save(); refreshPreview(); });
+    box.querySelector('[data-done]').addEventListener('click', () => { if (T.hasArabic(output(k))) states.set(k, 'error'); paintTranslation(k); });
+  }
+  async function uploadPhoto(event) {
+    const file = event.target.files[0]; if (!file) return;
+    const version = ++photoVersion, status = document.getElementById('photo-status');
+    if (file.size > 10 * 1024 * 1024 || !/^image\/(jpeg|png|webp|heic|heif)$/.test(file.type)) { status.textContent = text().photoError; return; }
+    status.textContent = text().photoLoading; const url = URL.createObjectURL(file);
+    try {
+      const img = new Image(); img.src = url; await img.decode(); if (version !== photoVersion) return;
+      if (!img.naturalWidth || !img.naturalHeight) throw Error('Invalid photo');
+      const scale = Math.min(1, 600 / Math.max(img.naturalWidth, img.naturalHeight)), canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, Math.round(img.naturalWidth * scale)); canvas.height = Math.max(1, Math.round(img.naturalHeight * scale));
+      const ctx = canvas.getContext('2d'); ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      data.photo = canvas.toDataURL('image/jpeg', .85); save(); render(); document.getElementById('photo-status').textContent = text()[saveFailed ? 'saveError' : 'photoReady'];
+    } catch { if (status.isConnected) status.textContent = text().photoError; }
+    finally { URL.revokeObjectURL(url); }
+  }
+  document.addEventListener('click', e => fields.forEach(k => { const el = document.getElementById('field-' + k); if (el && !el.closest('.field-group').contains(e.target)) hideSuggestions(k); }));
+  document.getElementById('language').addEventListener('click', () => { lang = lang === 'ar' ? 'nl' : 'ar'; try { localStorage.setItem('mbo_site_lang', lang); } catch {} shell(); });
+  shell();
 })();

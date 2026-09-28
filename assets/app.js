@@ -24,7 +24,7 @@ const I18N = {
   ar: {
     "topbar.tag": "دليل التعليم الهولندي","brand.title":"دليل التعليم الهولندي","brand.updated":"محدَّث 2026",
     "nav.articles":"📰 المقالات","nav.about":"ℹ️ من نحن","nav.privacy":"🔒 الخصوصية","nav.contact":"✉️ تواصل",
-    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة","smart.cv":"📄 أنشئ سيرة ذاتية",
+    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة","smart.cv":"📄 أنشئ سيرتك الذاتية CV",
     "newcomers.kicker":"أحمد الزعبي · هولندا","newcomers.title":"دليل العرب الجدد في هولندا","newcomers.open":"فتح الدليل ←","newcomers.sub":"من الدراسة والعمل إلى السكن والضرائب والإقامة: محتوى عربي عملي، مرتب ومترابط، يساعدك على فهم النظام الهولندي خطوة بخطوة.",
     "newcomers.education.title":"التعليم والدراسة","newcomers.education.text":"فهم MBO وHBO والجامعة، اختيار التخصص، مستويات اللغة والانتقال بين المسارات.","newcomers.work.title":"العمل والراتب","newcomers.work.text":"عقود العمل، الراتب، vakantiegeld، التدريب، البحث عن وظيفة وبناء المسار المهني.","newcomers.life.title":"الحياة اليومية","newcomers.life.text":"السكن، التأمين، المواصلات، الخدمات الحكومية والقرارات التي تؤثر على الحياة اليومية.","newcomers.money.title":"المال والضرائب","newcomers.money.text":"Belastingdienst، aangifte، toeslagen، Kinderbijslag وKindgebonden budget بأسلوب مبسط.",
     "gids.sources":"مصادر رسمية مرتبطة بالدليل","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"دليل الإقامة الدائمة","gids.01.label":"الدليل 01","gids.02.label":"الدليل 02","gids.03.label":"الدليل 03","gids.04.label":"الدليل 04","gids.05.label":"الدليل 05","gids.06.label":"الدليل 06","gids.06.permits":"🛂 IND · الإقامات ↗","gids.01.title":"كيف تبدأ حياتك في هولندا؟","gids.01.text":"خريطة عملية للخطوات الأولى: البلدية، BSN، DigiD، التأمين، السكن، العمل والتعليم، وما الذي يجب ترتيبه أولاً.","gids.01.guide":"📘 دليل DigiD ←",
@@ -5445,3 +5445,4 @@ if (document.readyState === "loading") {
 }
 
 /* V3 marker — 2026-09-26 */
+

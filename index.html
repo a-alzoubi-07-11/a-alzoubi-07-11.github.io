@@ -119,7 +119,7 @@
 </section><section class="mbo-modern-shell"><div class="mbo-modern-card"><div class="mbo-modern-kicker" data-i18n="smart.kicker">SMART TOOLS</div><h2 class="mbo-section-title" style="font-size:32px" data-i18n="smart.title">كل شيء في مكان واحد</h2><p class="mbo-section-sub" data-i18n="smart.sub">واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.</p><div class="mbo-tools">
  <button class="mbo-tool" type="button" onclick="document.getElementById('searchInput')?.focus()" data-i18n="smart.search">🔎 بحث</button>
  <button class="mbo-tool" type="button" onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';localStorage.setItem('mbo-theme',document.documentElement.dataset.theme)" data-i18n="smart.theme">◐ المظهر</button>
- <a class="mbo-tool" href="./cv.html" data-i18n="smart.cv">📄 أنشئ سيرة ذاتية</a>
+ <a class="mbo-tool" href="./cv.html" data-i18n="smart.cv">📄 أنشئ سيرتك الذاتية CV</a>
  <button class="mbo-tool" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard?.writeText(location.href)" data-i18n="smart.share">↗ مشاركة</button>
  </div></div></section><section id="newcomers-hub" class="mbo-modern-shell mbo-articles" aria-label="دليل العرب الجدد في هولندا">
  <div class="mbo-modern-kicker" data-i18n="newcomers.kicker">AHMAD ALZOUBI · NEDERLAND</div><h2 class="mbo-section-title" data-i18n="newcomers.title">دليل العرب الجدد في هولندا</h2>
@@ -212,10 +212,11 @@
 </footer>
 
 
-<script src="./assets/app.js?v=2" defer></script>
+<script src="./assets/app.js?v=3" defer></script>
 <script src="./assets/data-store.js?v=12" defer></script><script src="./assets/phase1.js?v=13" defer></script>
 <script id="ahmad-modern-engine">(()=>{const t=localStorage.getItem("mbo-theme");if(t)document.documentElement.dataset.theme=t;if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));})();</script>
 <script src="./assets/news-ticker.js?v=1" defer></script>
 <script src="/assets/chatbot.js?v=3" defer></script>
 </body>
 </html>
+
