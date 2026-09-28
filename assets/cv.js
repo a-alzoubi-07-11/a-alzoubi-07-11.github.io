@@ -20,7 +20,7 @@
       contactHint: 'أضف هاتفاً أو بريداً إلكترونياً للتواصل.', required: 'أدخل اسمك بالأحرف اللاتينية كما في وثائقك.', emailInvalid: 'تحقق من البريد الإلكتروني.',
       photo: 'صورة شخصية', choosePhoto: 'إضافة صورة', removePhoto: 'حذف الصورة', photoAlt: 'صورة السيرة الذاتية', photoLoading: 'جارٍ تجهيز الصورة…',
       photoError: 'اختر صورة JPG أو PNG أو WebP، أقل من 10 ميغابايت.', photoReady: 'تمت إضافة الصورة.',
-      saved: 'محفوظة على جهازك تلقائياً', saveError: 'تعذّر الحفظ على الجهاز. احفظ PDF قبل إغلاق الصفحة.', clear: 'مسح البيانات', undo: 'استعادة البيانات',
+      saved: 'محفوظة على جهازك تلقائياً', saveError: 'تعذّر الحفظ على الجهاز. احفظ PDF قبل إغلاق الصفحة.', clear: 'مسح البيانات', undo: 'استعادة البيانات', restore: 'استعادة المسودة المحفوظة', emptyHint: 'الأمثلة الباهتة للتوضيح فقط؛ اكتب بياناتك للبدء.',
       printHint: 'اختر «حفظ كـ PDF» في نافذة الطباعة. على iPhone يمكنك مشاركة معاينة الطباعة إلى «الملفات».',
       skillNames: ['العمل بأمان', 'العمل الجماعي', 'الالتزام بالمواعيد', 'التنظيف', 'المستودعات والتوصيل', 'خدمة الزبائن', 'الكمبيوتر', 'القيادة'],
       placeholders: { name: 'Jan de Vries', city: 'روتردام / Rotterdam', phone: '06 00000000', email: 'naam@example.com', role: 'مثال: كهربائي', experience: 'مثال: عملت سنة في متجر، وساعدت الزبائن ورتبت المنتجات.', education: 'مثال: دورة لغة هولندية — 2025', languages: 'مثال: العربية لغة أم، الهولندية A2' }
@@ -40,7 +40,7 @@
       contactHint: 'Voeg een telefoonnummer of e-mailadres toe.', required: 'Vul je naam in Latijnse letters in zoals op je documenten.', emailInvalid: 'Controleer je e-mailadres.',
       photo: 'Profielfoto', choosePhoto: 'Foto toevoegen', removePhoto: 'Foto verwijderen', photoAlt: 'Profielfoto voor het cv', photoLoading: 'Foto voorbereiden…',
       photoError: 'Kies JPG, PNG of WebP, kleiner dan 10 MB.', photoReady: 'Foto toegevoegd.',
-      saved: 'Automatisch op dit apparaat bewaard', saveError: 'Opslaan lukt niet. Bewaar een pdf voordat je deze pagina sluit.', clear: 'Gegevens wissen', undo: 'Gegevens herstellen',
+      saved: 'Automatisch op dit apparaat bewaard', saveError: 'Opslaan lukt niet. Bewaar een pdf voordat je deze pagina sluit.', clear: 'Gegevens wissen', undo: 'Gegevens herstellen', restore: 'Opgeslagen concept herstellen', emptyHint: 'De lichte voorbeelden zijn alleen ter uitleg. Vul je eigen gegevens in.',
       printHint: 'Kies “Opslaan als pdf” in het afdrukvenster. Op een iPhone kun je het afdrukvoorbeeld delen naar Bestanden.',
       skillNames: nlSkills,
       placeholders: { name: 'Jan de Vries', city: 'Rotterdam', phone: '06 00000000', email: 'naam@example.com', role: 'Bijvoorbeeld: elektricien', experience: 'Bijvoorbeeld: een jaar in een winkel gewerkt, klanten geholpen en producten aangevuld.', education: 'Bijvoorbeeld: cursus Nederlands — 2025', languages: 'Bijvoorbeeld: Arabisch — moedertaal, Nederlands — A2' }
@@ -56,7 +56,11 @@
     if (!/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(d.photo || '')) delete d.photo;
     return d;
   }
-  let data = sanitize(window.MboData.readCvDraft()), step = 0, category = 'all', photoVersion = 0, saveFailed = false, undoDraft = null;
+  // A new page always starts blank. A stored CV is restored only by an explicit click.
+  const storedDraft = sanitize(window.MboData.readCvDraft());
+  let draftAvailable = ['name', ...fields, 'phone', 'email'].some(k => Boolean(storedDraft[k].trim())) || storedDraft.skills.length > 0 || Boolean(storedDraft.photo);
+  let draftStarted = false;
+  let data = sanitize({}), step = 0, category = 'all', photoVersion = 0, saveFailed = false, undoDraft = null;
   const timers = new Map(), requests = new Map(), states = new Map();
   const text = () => copy[lang];
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -64,6 +68,8 @@
   function output(k) { return translated(k) ?? T.known(k, data[k]); }
   function unresolved() { return fields.filter(k => T.hasArabic(output(k))); }
   function save() {
+    draftStarted = true; draftAvailable = false;
+    document.getElementById('restore-draft')?.remove();
     saveFailed = !window.MboData.writeCvDraft(data);
     const el = document.getElementById('save-state');
     if (el) { el.textContent = text()[saveFailed ? 'saveError' : 'saved']; el.className = saveFailed ? 'warning' : 'hint'; }
@@ -107,8 +113,8 @@
     document.title = text().title; render();
   }
   function field(k, type = 'text', multiline = false) {
-    const x = text(), suggest = Boolean(S[k]), ac = { name: 'name', city: 'address-level2', phone: 'tel', email: 'email' };
-    const attrs = `id="field-${k}" data-field="${k}" dir="${['name','email','phone'].includes(k) ? 'ltr' : 'auto'}" maxlength="${multiline ? 1600 : 160}" autocomplete="${ac[k] || 'off'}" ${suggest ? `aria-controls="suggest-${k}" aria-expanded="false" aria-autocomplete="list" ${multiline ? '' : 'role="combobox"'}` : ''}`;
+    const x = text(), suggest = Boolean(S[k]);
+    const attrs = `id="field-${k}" data-field="${k}" dir="${['name','email','phone'].includes(k) ? 'ltr' : 'auto'}" maxlength="${multiline ? 1600 : 160}" autocomplete="off" ${suggest ? `aria-controls="suggest-${k}" aria-expanded="false" aria-autocomplete="list" ${multiline ? '' : 'role="combobox"'}` : ''}`;
     return `<div class="field-group"><label class="question" for="field-${k}"><strong>${x[k]}</strong>${multiline ? `<textarea ${attrs} rows="3" placeholder="${esc(x.placeholders[k])}">${esc(data[k])}</textarea>` : `<input ${attrs} type="${type}" ${type === 'tel' ? 'inputmode="tel"' : type === 'email' ? 'inputmode="email" autocapitalize="none"' : ''} value="${esc(data[k])}" placeholder="${esc(x.placeholders[k])}">`}</label>${suggest ? `<button type="button" class="suggest-toggle" data-browse="${k}" aria-expanded="false" aria-controls="suggest-${k}">${x.browse} ▾</button><div id="suggest-${k}" class="suggestions" role="listbox" aria-label="${x.browse}: ${x[k]}" hidden></div>` : ''}${fields.includes(k) ? `<div id="translation-${k}" class="translation-slot" aria-live="polite"></div>` : ''}</div>`;
   }
   function photoSection() {
@@ -152,10 +158,17 @@
     document.getElementById('step-heading').focus({ preventScroll: true });
     document.getElementById('wizard').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
   }
+  function restoreDraft() {
+    if (!draftAvailable) return;
+    fields.forEach(cancel);
+    data = sanitize(storedDraft); draftAvailable = false; draftStarted = true; step = 0;
+    render();
+  }
   function render() {
     photoVersion++; document.body.classList.remove('translation-incomplete');
     const x = text(), host = document.getElementById('wizard');
-    host.innerHTML = `<nav class="step-list" aria-label="${x.title}">${x.steps.map((s, i) => `<span class="step ${i === step ? 'current' : ''}" ${i === step ? 'aria-current="step"' : ''}><span class="step-number">${i + 1}</span><span>${s}</span></span>`).join('')}</nav><div class="form-card"><div class="step-head"><h2 id="step-heading" tabindex="-1">${x.steps[step]}</h2><span class="step-count">${step + 1} / 4</span></div>${section()}<p id="error" role="alert"></p><div class="actions">${step ? `<button id="prev" type="button" class="secondary">${x.previous}</button>` : ''}${step < 3 ? `<button id="next" type="button">${x.next}</button>` : `<button id="print" type="button">${x.print}</button>`}</div></div><div class="draft-footer"><p id="save-state" class="${saveFailed ? 'warning' : 'hint'}" role="status">${x[saveFailed ? 'saveError' : 'saved']}</p><button type="button" id="clear" class="text-button">${x[undoDraft ? 'undo' : 'clear']}</button></div>`;
+    host.innerHTML = `<nav class="step-list" aria-label="${x.title}">${x.steps.map((s, i) => `<span class="step ${i === step ? 'current' : ''}" ${i === step ? 'aria-current="step"' : ''}><span class="step-number">${i + 1}</span><span>${s}</span></span>`).join('')}</nav><div class="form-card"><div class="step-head"><h2 id="step-heading" tabindex="-1">${x.steps[step]}</h2><span class="step-count">${step + 1} / 4</span></div>${draftAvailable ? `<button type="button" id="restore-draft" class="small restore-draft">${x.restore}</button>` : ''}${section()}<p id="error" role="alert"></p><div class="actions">${step ? `<button id="prev" type="button" class="secondary">${x.previous}</button>` : ''}${step < 3 ? `<button id="next" type="button">${x.next}</button>` : `<button id="print" type="button">${x.print}</button>`}</div></div><div class="draft-footer"><p id="save-state" class="${saveFailed ? 'warning' : 'hint'}" role="status">${x[saveFailed ? 'saveError' : draftStarted ? 'saved' : 'emptyHint']}</p><button type="button" id="clear" class="text-button">${x[undoDraft ? 'undo' : 'clear']}</button></div>`;
+    host.querySelector('#restore-draft')?.addEventListener('click', restoreDraft);
     host.querySelectorAll('[data-field]').forEach(el => {
       const k = el.dataset.field;
       el.addEventListener('input', () => { updateField(k, el.value); if (S[k]) showSuggestions(k, false); });

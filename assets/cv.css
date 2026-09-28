@@ -2,3 +2,5 @@
 
 /* Examples are placeholders only; entered text keeps its normal contrast. */
 input::placeholder,textarea::placeholder{color:#757d87;opacity:1;font-weight:400}
+
+.restore-draft{margin:0 0 1rem;font-weight:500}
