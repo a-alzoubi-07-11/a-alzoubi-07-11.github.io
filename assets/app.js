@@ -24,7 +24,7 @@ const I18N = {
   ar: {
     "topbar.tag": "دليل التعليم الهولندي","brand.title":"دليل التعليم الهولندي","brand.updated":"محدَّث 2026",
     "nav.articles":"📰 المقالات","nav.about":"ℹ️ من نحن","nav.privacy":"🔒 الخصوصية","nav.contact":"✉️ تواصل",
-    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة",
+    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة","smart.cv":"📄 أنشئ سيرة ذاتية",
     "newcomers.kicker":"أحمد الزعبي · هولندا","newcomers.title":"دليل العرب الجدد في هولندا","newcomers.open":"فتح الدليل ←","newcomers.sub":"من الدراسة والعمل إلى السكن والضرائب والإقامة: محتوى عربي عملي، مرتب ومترابط، يساعدك على فهم النظام الهولندي خطوة بخطوة.",
     "newcomers.education.title":"التعليم والدراسة","newcomers.education.text":"فهم MBO وHBO والجامعة، اختيار التخصص، مستويات اللغة والانتقال بين المسارات.","newcomers.work.title":"العمل والراتب","newcomers.work.text":"عقود العمل، الراتب، vakantiegeld، التدريب، البحث عن وظيفة وبناء المسار المهني.","newcomers.life.title":"الحياة اليومية","newcomers.life.text":"السكن، التأمين، المواصلات، الخدمات الحكومية والقرارات التي تؤثر على الحياة اليومية.","newcomers.money.title":"المال والضرائب","newcomers.money.text":"Belastingdienst، aangifte، toeslagen، Kinderbijslag وKindgebonden budget بأسلوب مبسط.",
     "gids.sources":"مصادر رسمية مرتبطة بالدليل","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"دليل الإقامة الدائمة","gids.01.label":"الدليل 01","gids.02.label":"الدليل 02","gids.03.label":"الدليل 03","gids.04.label":"الدليل 04","gids.05.label":"الدليل 05","gids.06.label":"الدليل 06","gids.06.permits":"🛂 IND · الإقامات ↗","gids.01.title":"كيف تبدأ حياتك في هولندا؟","gids.01.text":"خريطة عملية للخطوات الأولى: البلدية، BSN، DigiD، التأمين، السكن، العمل والتعليم، وما الذي يجب ترتيبه أولاً.","gids.01.guide":"📘 دليل DigiD ←",
@@ -93,7 +93,7 @@ const I18N = {
   nl: {
     "topbar.tag": "Gids Nederlands Onderwijs","brand.title":"Nederlandse Onderwijsgids","brand.updated":"Bijgewerkt 2026",
     "nav.articles":"📰 Artikelen","nav.about":"ℹ️ Over ons","nav.privacy":"🔒 Privacy","nav.contact":"✉️ Contact",
-    "smart.kicker":"Slimme tools","smart.title":"Alles op één plek","smart.sub":"Eén interface om te zoeken, vergelijken, salaris te berekenen en onderwijsroutes te ontdekken.","smart.search":"🔎 Zoeken","smart.theme":"◐ Weergave","smart.share":"↗ Delen",
+    "smart.kicker":"Slimme tools","smart.title":"Alles op één plek","smart.sub":"Eén interface om te zoeken, vergelijken, salaris te berekenen en onderwijsroutes te ontdekken.","smart.search":"🔎 Zoeken","smart.theme":"◐ Weergave","smart.share":"↗ Delen","smart.cv":"📄 Maak je cv",
     "newcomers.kicker":"Ahmad Alzoubi · Nederland","newcomers.title":"Gids voor Arabischtalige nieuwkomers in Nederland","newcomers.open":"Gids openen →","newcomers.sub":"Van studie en werk tot wonen, belastingen en verblijf: praktische, verbonden informatie om het Nederlandse systeem stap voor stap te begrijpen.",
     "newcomers.education.title":"Onderwijs & studie","newcomers.education.text":"MBO, HBO en universiteit begrijpen, een opleiding kiezen, taalniveaus en overstappen tussen routes.","newcomers.work.title":"Werk & salaris","newcomers.work.text":"Arbeidscontracten, salaris, vakantiegeld, stages, werk zoeken en je loopbaan opbouwen.","newcomers.life.title":"Dagelijks leven","newcomers.life.text":"Wonen, verzekering, vervoer, overheidsdiensten en beslissingen die het dagelijks leven beïnvloeden.","newcomers.money.title":"Geld & belastingen","newcomers.money.text":"Belastingdienst, aangifte, toeslagen, Kinderbijslag en Kindgebonden budget eenvoudig uitgelegd.",
     "gids.sources":"Gekoppelde officiële bronnen","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"Gids permanent verblijf","gids.01.label":"Gids 01","gids.02.label":"Gids 02","gids.03.label":"Gids 03","gids.04.label":"Gids 04","gids.05.label":"Gids 05","gids.06.label":"Gids 06","gids.06.permits":"🛂 IND · Verblijfsvergunningen ↗","gids.01.title":"Hoe begin je je leven in Nederland?","gids.01.text":"Een praktische routekaart voor de eerste stappen: gemeente, BSN, DigiD, verzekering, wonen, werk en onderwijs.","gids.01.guide":"📘 DigiD-gids →",
@@ -1289,7 +1289,7 @@ function applyI18n() {
   if (label) label.textContent = state.lang === "ar" ? "العربية" : "Nederlands";
   if (flag) flag.textContent = state.lang === "ar" ? "🇸🇦" : "🇳🇱";
   const si = $("#searchInput");
-  if (si) si.placeholder = t("search.ph");
+  if (si) { si.placeholder = t("search.ph"); si.setAttribute("aria-label", t("search.ph")); }
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -4998,6 +4998,21 @@ const TRENDING_QUERIES = {
   nl: ["HBO","MBO","elektromonteur","verpleeg","software","lasser","salaris","VMBO","zonnepanelen"]
 };
 
+function placeSearchResults() {
+  const box = $("#searchResults"), input = $("#searchInput");
+  if (!box || !input) return;
+  if (window.innerWidth > 760) {
+    box.style.top = "";
+    box.style.maxHeight = "";
+    return;
+  }
+  const rect = input.getBoundingClientRect();
+  const viewport = window.visualViewport;
+  const bottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+  box.style.top = Math.round(rect.bottom + 7) + "px";
+  box.style.maxHeight = Math.max(110, Math.floor(bottom - rect.bottom - 20)) + "px";
+}
+
 function renderSearchResults() {
   const box = $("#searchResults");
   const input = $("#searchInput");
@@ -5012,6 +5027,7 @@ function renderSearchResults() {
   }
 
   box.hidden = false;
+  placeSearchResults();
   input.setAttribute("aria-expanded", "true");
   box.innerHTML = "";
 
@@ -5200,6 +5216,7 @@ function wireSearch() {
   if (!input || !clear) return;
 
   input.placeholder = t("search.ph");
+  input.setAttribute("aria-label", t("search.ph"));
 
   // Debounced search: 80ms feels instant but avoids running per keystroke
   let _searchTimer = null;
@@ -5275,6 +5292,11 @@ function wireSearch() {
     if (!e.target.closest("#searchWrap")) closeSearch();
   });
 
+  window.addEventListener("resize", () => { if (searchState.open) placeSearchResults(); });
+  window.visualViewport?.addEventListener("resize", () => { if (searchState.open) placeSearchResults(); });
+  window.visualViewport?.addEventListener("scroll", () => { if (searchState.open) placeSearchResults(); });
+  window.addEventListener("scroll", () => { if (searchState.open) placeSearchResults(); }, { passive:true });
+
   // Global "/" shortcut
   document.addEventListener("keydown", (e) => {
     if (e.key === "/" && document.activeElement !== input) {
@@ -5323,8 +5345,6 @@ function observeReveal() {
    INITIALIZATION
 ═══════════════════════════════════════════════════════════ */
 function init() {
-  const savedLang = safeStore.get("lang");
-  if (savedLang && I18N[savedLang]) state.lang = savedLang;
   const hash = (location.hash || "").replace(/^#/, "");
   if (hash && ALL_PAGE_IDS.includes(hash)) state.page = hash;
 

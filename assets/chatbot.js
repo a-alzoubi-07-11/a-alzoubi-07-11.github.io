@@ -9,7 +9,7 @@
   const root = document.createElement("div");
   root.id = "gids-chat-root";
   root.innerHTML = `
-    <button id="gids-chat-launcher" type="button" aria-expanded="false">
+    <button id="gids-chat-launcher" type="button" aria-expanded="false" aria-controls="gids-chat-panel">
       <span aria-hidden="true">✦</span><span class="gids-chat-launch-label"></span>
     </button>
     <section id="gids-chat-panel" role="dialog" aria-label="Gids Nederland chat" hidden>
@@ -50,7 +50,23 @@
     #gids-chat-input:focus{border-color:var(--gc)}
     #gids-chat-send{border:0;border-radius:11px;background:var(--gc);color:#fff;padding:10px 13px;font:700 13px inherit;cursor:pointer;min-height:40px}
     #gids-chat-send:disabled{opacity:.55;cursor:wait}
-    @media(max-width:480px){#gids-chat-root{inset-inline-end:12px;inset-block-end:calc(12px + env(safe-area-inset-bottom))}#gids-chat-panel{inset-inline-end:-4px;width:calc(100vw - 24px);height:min(560px,calc(100dvh - 90px))}}
+    #gids-chat-launcher{font-family:inherit;font-weight:700;font-size:14px;min-height:48px}
+    #gids-chat-close{min-width:44px;min-height:44px}
+    #gids-chat-input{min-width:0}
+    #gids-chat-send{font-family:inherit;font-weight:700;font-size:13px}
+    @media(max-width:700px){
+      #gids-chat-root{inset-inline-end:12px;inset-block-end:calc(12px + env(safe-area-inset-bottom))}
+      #gids-chat-launcher{width:54px;height:54px;min-height:54px;padding:0;justify-content:center;border-radius:50%;box-shadow:0 8px 26px #0f172a40}
+      #gids-chat-launcher .gids-chat-launch-label{display:none}
+      #gids-chat-launcher span:first-child{font-size:23px}
+      #gids-chat-root[data-open="true"] #gids-chat-launcher{visibility:hidden}
+      #gids-chat-panel{position:fixed;inset:auto 0 var(--gc-keyboard,0px) 0;width:100vw;max-width:100vw;height:min(650px,calc(var(--gc-viewport-height,100dvh) - 8px));max-height:calc(var(--gc-viewport-height,100dvh) - 8px);border-radius:22px 22px 0 0;box-shadow:0 -12px 44px #0f172a30}
+      .gids-chat-head{padding:12px 16px}
+      #gids-chat-messages{min-height:0}
+      #gids-chat-form{padding:10px 12px calc(12px + env(safe-area-inset-bottom))}
+      #gids-chat-input{font-size:16px;min-height:44px}
+      #gids-chat-send{min-height:44px;font-size:14px}
+    }
   `;
   document.head.appendChild(style);
 
@@ -65,11 +81,19 @@
 
   function isDutch() {
     const stored = (() => { try { return localStorage.getItem("mbo_site_lang"); } catch (_) { return ""; } })();
-    return (stored || document.documentElement.lang || "ar").toLowerCase().startsWith("nl");
+    return (document.documentElement.lang || stored || "ar").toLowerCase().startsWith("nl");
   }
 
   function localize() {
     const nl = isDutch();
+    root.lang = nl ? "nl" : "ar";
+    root.dir = nl ? "ltr" : "rtl";
+    panel.setAttribute("aria-label", nl ? "Gids Nederland chat" : "محادثة مساعد Gids Nederland");
+    launcher.setAttribute("aria-label", nl ? "Chat openen" : "افتح المحادثة");
+    const welcome = feed.querySelector("[data-gids-welcome]");
+    if (welcome) welcome.textContent = nl
+      ? "Welkom! Stel je vraag in het Nederlands of Arabisch. Controleer belangrijke informatie altijd bij de officiële bron."
+      : "أهلاً بك! اسأل بالعربية أو الهولندية. تحقّق من المعلومات المهمة دائماً عبر المصدر الرسمي.";
     $(".gids-chat-launch-label").textContent = nl ? "Chat met ons" : "اسأل المساعد";
     $(".gids-chat-title").textContent = nl ? "Gids Nederland assistent" : "مساعد Gids Nederland";
     $(".gids-chat-subtitle").textContent = nl ? "Vragen over Nederland? Stel ze hier." : "اسأل عن الدراسة والحياة في هولندا";
@@ -97,6 +121,7 @@
     "bot"
   );
 
+  feed.firstElementChild?.setAttribute("data-gids-welcome", "");
   const langObserver = new MutationObserver(localize);
   langObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 
@@ -104,11 +129,13 @@
     const open = panel.hidden;
     panel.hidden = !open;
     launcher.setAttribute("aria-expanded", String(open));
-    if (open) input.focus();
+    root.dataset.open = String(open);
+    if (open && window.innerWidth > 700) input.focus();
   });
   $("#gids-chat-close").addEventListener("click", () => {
     panel.hidden = true;
     launcher.setAttribute("aria-expanded", "false");
+    root.dataset.open = "false";
     launcher.focus();
   });
 
@@ -150,6 +177,19 @@
       input.focus();
     }
   });
+
+  function updateViewport() {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    const occluded = Math.max(0, Math.round(window.innerHeight - viewport.height - viewport.offsetTop));
+    root.style.setProperty("--gc-keyboard", (occluded > 150 ? occluded : 0) + "px");
+    root.style.setProperty("--gc-viewport-height", Math.round(viewport.height) + "px");
+  }
+  window.visualViewport?.addEventListener("resize", updateViewport);
+  window.visualViewport?.addEventListener("scroll", updateViewport);
+  updateViewport();
+
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !panel.hidden) $("#gids-chat-close").click(); });
 
   input.addEventListener("input", () => {
     input.style.height = "auto";
