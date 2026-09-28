@@ -1,4 +1,8 @@
 (() => {
+  const visitorLoader = document.createElement('script');
+  visitorLoader.src = '/assets/visitor-counter.js?v=1';
+  visitorLoader.defer = true;
+  document.head.appendChild(visitorLoader);
   if (document.getElementById("gids-chat-root")) return;
 
   const endpoint = "https://gidsnederland.a-alzoubi-07-11.workers.dev/chat";
