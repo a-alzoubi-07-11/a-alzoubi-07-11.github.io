@@ -10,7 +10,7 @@
       intro: 'اكتب بالعربية أو اختر من الاقتراحات. سيرتك جاهزة بالهولندية في 4 خطوات.',
       privacy: 'المسودة والصورة على جهازك. النصوص العربية تُرسل تلقائياً لخدمة الترجمة؛ التفاصيل في سياسة الخصوصية.', privacyLink: 'سياسة الخصوصية',
       steps: ['بياناتك', 'الخبرة والدراسة', 'المهارات واللغات', 'السيرة جاهزة'],
-      name: 'الاسم الكامل بالأحرف اللاتينية', nameHint: 'كما في وثائقك، مثلاً Ahmad Alzoubi.', city: 'المدينة', phone: 'الهاتف', email: 'البريد الإلكتروني',
+      name: 'الاسم الكامل بالأحرف اللاتينية', nameHint: 'اكتب اسمك كما يظهر في وثائقك.', city: 'المدينة', phone: 'الهاتف', email: 'البريد الإلكتروني',
       category: 'مجال العمل', role: 'الوظيفة المطلوبة', experience: 'الخبرة العملية', education: 'الدراسة والدورات', languages: 'اللغات ومستواك', skills: 'المهارات',
       workHint: 'أضف العمل والمدة والمهام. اترك الحقل فارغاً إذا لم تكن لديك خبرة.',
       optional: 'اختياري', browse: 'اقتراحات', noResults: 'يمكنك متابعة الكتابة؛ الترجمة تلقائية.', next: 'التالي', previous: 'السابق', print: 'حفظ CV بصيغة PDF',
@@ -23,14 +23,14 @@
       saved: 'محفوظة على جهازك تلقائياً', saveError: 'تعذّر الحفظ على الجهاز. احفظ PDF قبل إغلاق الصفحة.', clear: 'مسح البيانات', undo: 'استعادة البيانات',
       printHint: 'اختر «حفظ كـ PDF» في نافذة الطباعة. على iPhone يمكنك مشاركة معاينة الطباعة إلى «الملفات».',
       skillNames: ['العمل بأمان', 'العمل الجماعي', 'الالتزام بالمواعيد', 'التنظيف', 'المستودعات والتوصيل', 'خدمة الزبائن', 'الكمبيوتر', 'القيادة'],
-      placeholders: { name: 'Ahmad Alzoubi', city: 'روتردام / Rotterdam', phone: '06 12345678', email: 'naam@example.com', role: 'مثال: كهربائي', experience: 'مثال: عملت سنة في متجر، وساعدت الزبائن ورتبت المنتجات.', education: 'مثال: دورة لغة هولندية — 2025', languages: 'مثال: العربية لغة أم، الهولندية A2' }
+      placeholders: { name: 'Jan de Vries', city: 'روتردام / Rotterdam', phone: '06 00000000', email: 'naam@example.com', role: 'مثال: كهربائي', experience: 'مثال: عملت سنة في متجر، وساعدت الزبائن ورتبت المنتجات.', education: 'مثال: دورة لغة هولندية — 2025', languages: 'مثال: العربية لغة أم، الهولندية A2' }
     },
     nl: {
       back: 'Home', language: 'العربية', title: 'Maak je cv',
       intro: 'Schrijf in het Arabisch of kies suggesties. Je Nederlandse cv in 4 stappen.',
       privacy: 'Je concept en foto blijven op dit apparaat. Arabische tekst gaat automatisch naar een vertaaldienst; zie het privacybeleid.', privacyLink: 'Privacybeleid',
       steps: ['Je gegevens', 'Werk en opleiding', 'Vaardigheden en talen', 'Je cv'],
-      name: 'Volledige naam in Latijnse letters', nameHint: 'Zoals op je documenten, bijvoorbeeld Ahmad Alzoubi.', city: 'Woonplaats', phone: 'Telefoon', email: 'E-mail',
+      name: 'Volledige naam in Latijnse letters', nameHint: 'Schrijf je naam zoals op je documenten.', city: 'Woonplaats', phone: 'Telefoon', email: 'E-mail',
       category: 'Vakgebied', role: 'Gewenste functie', experience: 'Werkervaring', education: 'Opleiding en cursussen', languages: 'Talen en niveau', skills: 'Vaardigheden',
       workHint: 'Vermeld werk, periode en taken. Laat dit leeg als je nog geen ervaring hebt.',
       optional: 'Optioneel', browse: 'Suggesties', noResults: 'Schrijf gerust verder; vertalen gaat automatisch.', next: 'Volgende', previous: 'Vorige', print: 'Cv opslaan als pdf',
@@ -43,7 +43,7 @@
       saved: 'Automatisch op dit apparaat bewaard', saveError: 'Opslaan lukt niet. Bewaar een pdf voordat je deze pagina sluit.', clear: 'Gegevens wissen', undo: 'Gegevens herstellen',
       printHint: 'Kies “Opslaan als pdf” in het afdrukvenster. Op een iPhone kun je het afdrukvoorbeeld delen naar Bestanden.',
       skillNames: nlSkills,
-      placeholders: { name: 'Ahmad Alzoubi', city: 'Rotterdam', phone: '06 12345678', email: 'naam@example.com', role: 'Bijvoorbeeld: elektricien', experience: 'Bijvoorbeeld: een jaar in een winkel gewerkt, klanten geholpen en producten aangevuld.', education: 'Bijvoorbeeld: cursus Nederlands — 2025', languages: 'Bijvoorbeeld: Arabisch — moedertaal, Nederlands — A2' }
+      placeholders: { name: 'Jan de Vries', city: 'Rotterdam', phone: '06 00000000', email: 'naam@example.com', role: 'Bijvoorbeeld: elektricien', experience: 'Bijvoorbeeld: een jaar in een winkel gewerkt, klanten geholpen en producten aangevuld.', education: 'Bijvoorbeeld: cursus Nederlands — 2025', languages: 'Bijvoorbeeld: Arabisch — moedertaal, Nederlands — A2' }
     }
   };
   let lang = 'ar'; try { lang = localStorage.getItem('mbo_site_lang') === 'nl' ? 'nl' : 'ar'; } catch {}
