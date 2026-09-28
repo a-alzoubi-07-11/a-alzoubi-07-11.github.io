@@ -73,4 +73,5 @@ function apply(){const l=localStorage.getItem("mbo_site_lang")||"ar";document.do
 const articleSearch=document.getElementById("articleSearch"),topicFilter=document.getElementById("topicFilter"),emptyState=document.getElementById("emptyState");function filterArticles(){const q=articleSearch.value.trim().toLocaleLowerCase(),topic=topicFilter.value;let shown=0;document.querySelectorAll(".card[data-topic]").forEach(card=>{const matchesText=card.textContent.toLocaleLowerCase().includes(q),matchesTopic=topic==="all"||card.dataset.topic===topic;card.style.display=matchesText&&matchesTopic?"":"none";if(matchesText&&matchesTopic)shown++});emptyState.style.display=shown?"none":"block"}articleSearch.addEventListener("input",filterArticles);topicFilter.addEventListener("change",filterArticles);
 </script>
 <script src="./assets/news-ticker.js?v=1" defer></script>
+<script src="/assets/chatbot.js?v=1" defer></script>
 </body></html>
