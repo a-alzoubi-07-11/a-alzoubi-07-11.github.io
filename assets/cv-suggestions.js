@@ -1,0 +1,33 @@
+/* Bilingual suggestions are examples, not claims about the applicant. */
+window.CvSuggestions = {
+  categories: [
+    ['all','كل المجالات','Alle vakgebieden'],['logistics','المستودعات والتوصيل','Magazijn en vervoer'],
+    ['shop','المتاجر وخدمة الزبائن','Winkel en klantenservice'],['food','المطاعم والفنادق','Horeca'],
+    ['clean','التنظيف والإنتاج','Schoonmaak en productie'],['build','البناء والحرف','Bouw en techniek'],
+    ['care','الرعاية والتعليم','Zorg en onderwijs'],['office','الإدارة والمكاتب','Administratie'],
+    ['ict','الكمبيوتر والتقنية','ICT'],['green','الزراعة والحدائق','Landbouw en groen']
+  ],
+  role: [
+    ['عامل مستودع','Magazijnmedewerker','logistics'],['جامع طلبات','Orderpicker','logistics'],['عامل تعبئة وتغليف','Inpakmedewerker','logistics'],['موظف لوجستيات','Logistiek medewerker','logistics'],['سائق رافعة شوكية','Heftruckchauffeur','logistics'],['سائق توصيل','Bezorger','logistics'],['سائق شاحنة','Vrachtwagenchauffeur','logistics'],['سائق حافلة','Buschauffeur','logistics'],['سائق سيارة أجرة','Taxichauffeur','logistics'],['عامل تحميل وتفريغ','Lader en losser','logistics'],
+    ['موظف متجر بائع','Winkelmedewerker','shop'],['أمين صندوق كاشير','Kassamedewerker','shop'],['موظف ترتيب رفوف','Vakkenvuller','shop'],['موظف مبيعات','Verkoopmedewerker','shop'],['موظف خدمة زبائن','Klantenservicemedewerker','shop'],['مدير متجر','Winkelmanager','shop'],['مصفف شعر حلاق','Kapper','shop'],['موظف محل زهور','Bloemist','shop'],
+    ['مساعد مطبخ','Keukenhulp','food'],['طباخ','Kok','food'],['غاسل صحون','Afwasser','food'],['نادل خدمة مطعم','Medewerker bediening','food'],['باريستا محضر قهوة','Barista','food'],['موظف استقبال فندق','Hotelreceptionist','food'],['عامل تنظيف غرف فندق','Housekeepingmedewerker','food'],['خباز','Bakker','food'],
+    ['عامل تنظيف','Schoonmaker','clean'],['عامل إنتاج مصنع','Productiemedewerker','clean'],['مشغل آلة','Machineoperator','clean'],['عامل غسيل ملابس','Wasserijmedewerker','clean'],['موظف فرز','Sorteermedewerker','clean'],
+    ['عامل بناء','Bouwmedewerker','build'],['نجار','Timmerman','build'],['دهان','Schilder','build'],['كهربائي','Elektricien','build'],['سباك','Loodgieter','build'],['لحام','Lasser','build'],['ميكانيكي سيارات','Automonteur','build'],['فني تركيب','Installatiemonteur','build'],['فني صيانة','Onderhoudsmonteur','build'],['مبلط','Tegelzetter','build'],['عامل جص','Stukadoor','build'],['بناء طوب','Metselaar','build'],
+    ['مساعد منزلي','Huishoudelijk hulp','care'],['مساعد رعاية','Helpende zorg en welzijn','care'],['ممرض','Verpleegkundige','care'],['موظف رعاية أطفال','Pedagogisch medewerker','care'],['مساعد تدريس','Onderwijsassistent','care'],['معلم','Docent','care'],
+    ['موظف إداري','Administratief medewerker','office'],['موظف استقبال','Receptionist','office'],['محاسب','Boekhouder','office'],['مساعد موارد بشرية','HR-medewerker','office'],['مساعد مالي','Financieel administratief medewerker','office'],
+    ['مهندس برمجيات','Software engineer','ict'],['مطور برامج مبرمج','Softwareontwikkelaar','ict'],['مطور مواقع','Webdeveloper','ict'],['موظف دعم تقني','ICT-servicedeskmedewerker','ict'],['مسؤول أنظمة','Systeembeheerder','ict'],['مختبر برامج','Softwaretester','ict'],['محلل بيانات','Data-analist','ict'],
+    ['عامل زراعي','Agrarisch medewerker','green'],['عامل بيوت زجاجية','Kasmedewerker','green'],['بستاني','Hovenier','green'],['عامل حصاد','Oogstmedewerker','green']
+  ],
+  city: [
+    ['أمستردام','Amsterdam'],['روتردام','Rotterdam'],['لاهاي دنهاخ','Den Haag'],['أوترخت','Utrecht'],['أيندهوفن','Eindhoven'],['خرونينغن','Groningen'],['تيلبورخ','Tilburg'],['ألميره','Almere'],['بريدا','Breda'],['نايميخن نيميخن','Nijmegen'],['أرنهيم','Arnhem'],['هارلم','Haarlem'],['لايدن ليدن','Leiden'],['دلفت','Delft'],['ماستريخت','Maastricht'],['إنسخيده','Enschede'],['أمرسفورت','Amersfoort'],['زفوله','Zwolle'],['فينلو','Venlo'],['دن بوش','Den Bosch'],['هيلفوتسلاوس هيلفوتسلايس','Hellevoetsluis'],['سبايكنيسه','Spijkenisse'],['دوردريخت','Dordrecht'],['خاودا جودة','Gouda'],['زوتيرمير','Zoetermeer'],['شيدام','Schiedam'],['فلاردينغن','Vlaardingen'],['ألكمار','Alkmaar'],['آبلدورن','Apeldoorn'],['ليواردن','Leeuwarden'],['إيده','Ede'],['أسن','Assen'],['إمين','Emmen'],['ألميلو','Almelo'],['هينجيلو','Hengelo'],['هيلموند','Helmond'],['هولست','Hulst'],['ميدلبورخ','Middelburg'],['هارلمرمير','Haarlemmermeer'],['بيرخن أوب زوم','Bergen op Zoom']
+  ],
+  experience: [
+    ['تجهيز الطلبات وتغليف المنتجات','Bestellingen verzameld en producten ingepakt.'],['تحميل البضائع وتفريغها','Goederen geladen en gelost.'],['استقبال الزبائن ومساعدتهم','Klanten ontvangen en geholpen.'],['ترتيب الرفوف ومتابعة المخزون','Schappen aangevuld en voorraad bijgehouden.'],['العمل على صندوق الدفع','Aan de kassa gewerkt.'],['تنظيف الغرف والمرافق','Kamers en voorzieningen schoongemaakt.'],['تحضير مكونات الطعام','Ingrediënten voor maaltijden voorbereid.'],['تقديم الطعام والمشروبات','Eten en drinken geserveerd.'],['توصيل الطلبات إلى الزبائن','Bestellingen bij klanten bezorgd.'],['إدخال البيانات وتنظيم الملفات','Gegevens ingevoerd en dossiers geordend.'],['حل مشكلات الكمبيوتر','Computerproblemen opgelost.'],['تطوير مواقع إلكترونية','Websites ontwikkeld.'],['المشاركة في أعمال تطوعية','Vrijwilligerswerk gedaan.'],['عملت في متجر','Werkervaring in een winkel'],['عملت في مطعم','Werkervaring in een restaurant'],['عملت في مستودع','Werkervaring in een magazijn'],['عملت في التنظيف','Werkervaring in de schoonmaak'],['عملت في البناء','Werkervaring in de bouw'],['عملت متطوعاً','Vrijwilligerswerk']
+  ],
+  education: [
+    ['دورة لغة هولندية','Cursus Nederlands'],['دورة كمبيوتر','Computercursus'],['دراسة هندسة البرمجيات','Studie software engineering'],['دراسة إدارة الأعمال','Studie bedrijfskunde'],['دراسة محاسبة','Studie boekhouding'],['تعليم ثانوي','Middelbaar onderwijs'],['تدريب مهني','Beroepsopleiding'],['تدريب عملي','Stage'],['دورة إسعافات أولية','EHBO-cursus'],['شهادة سلامة VCA','VCA-certificaat'],['شهادة رافعة شوكية','Heftruckcertificaat'],['تعليم مهني MBO','MBO-opleiding']
+  ],
+  languages: [
+    ['العربية لغة أم','Arabisch — moedertaal'],['الهولندية مبتدئ A1','Nederlands — A1'],['الهولندية أساسي A2','Nederlands — A2'],['الهولندية متوسط B1','Nederlands — B1'],['الهولندية فوق المتوسط B2','Nederlands — B2'],['الهولندية متقدم C1','Nederlands — C1'],['الإنجليزية مبتدئ','Engels — basiskennis'],['الإنجليزية جيد','Engels — goede beheersing'],['الإنجليزية بطلاقة','Engels — vloeiend'],['الكردية لغة أم','Koerdisch — moedertaal'],['التركية جيد','Turks — goede beheersing'],['الألمانية مبتدئ','Duits — basiskennis'],['الفرنسية مبتدئ','Frans — basiskennis'],['العربية','Arabisch'],['الهولندية','Nederlands'],['الإنجليزية','Engels']
+  ]
+};
