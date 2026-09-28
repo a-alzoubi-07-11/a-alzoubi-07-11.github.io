@@ -1,8 +1,20 @@
 {
- "updated_at": "2026-09-28 00:49 UTC",
- "count": 102,
- "new_today": 102,
+ "updated_at": "2026-09-28 00:55 UTC",
+ "count": 89,
+ "new_today": 132,
  "jobs": [
+  {
+   "title": "Magazijnmedewerker",
+   "company": "VNOM | We get the job done",
+   "location": "Numansdorp, South Holland, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/magazijnmedewerker-at-vnom-we-get-the-job-done-4472223441",
+   "source": "linkedin",
+   "published": "2026-09-26",
+   "category": "it",
+   "snippet": "4472223441\" data-impression-id=\"jobs-search-result-2\" data-reference-id=\"C0uzgdLaqSiuJ4ZovHYHzA==\" data-tracking-id=\"xmhYoxdsg2+5NGCgpAa0Xw==\" data-column=\"1\" data-row=\"3\"> Magazijnmedewerker Magazijnmedewerker VNOM | We",
+   "id": "cb416596bb18392a",
+   "added": "2026-09-28"
+  },
   {
    "title": "Magazijnspecialist Winkels Geleen",
    "company": "Coolblue",
@@ -25,6 +37,30 @@
    "category": "it",
    "snippet": "Information Technology And Services",
    "id": "ee046cff12010e95",
+   "added": "2026-09-28"
+  },
+  {
+   "title": "Orderpicker - Attract",
+   "company": "Jobster",
+   "location": "Ede, Gelderland, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/orderpicker-attract-at-jobster-4470358737",
+   "source": "linkedin",
+   "published": "2026-09-25",
+   "category": "logistics",
+   "snippet": "4470358737\" data-impression-id=\"jobs-search-result-0\" data-reference-id=\"OtqC+fCc3U7MvSnzhEDtwA==\" data-tracking-id=\"V7HimyZ81rYq7tiRIuiPPw==\" data-column=\"1\" data-row=\"1\"> Orderpicker - Attract Orderpicker - Attract Job",
+   "id": "b40435ca08bcb3b8",
+   "added": "2026-09-28"
+  },
+  {
+   "title": "Orderpicker - Attract",
+   "company": "Jobster",
+   "location": "Barneveld, Gelderland, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/orderpicker-attract-at-jobster-4470351316",
+   "source": "linkedin",
+   "published": "2026-09-25",
+   "category": "logistics",
+   "snippet": "4470351316\" data-impression-id=\"jobs-search-result-2\" data-reference-id=\"OtqC+fCc3U7MvSnzhEDtwA==\" data-tracking-id=\"UC4gaAhlGnMPir0qjwkWrA==\" data-column=\"1\" data-row=\"3\"> Orderpicker - Attract Orderpicker - Attract Job",
+   "id": "4cd4f8e9c192ed86",
    "added": "2026-09-28"
   },
   {
@@ -172,6 +208,18 @@
    "added": "2026-09-28"
   },
   {
+   "title": "Housekeeper Cleaner Room Attendant Schoonmaker",
+   "company": "Beds and Bars Group",
+   "location": "Amsterdam, North Holland, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/housekeeper-cleaner-room-attendant-schoonmaker-at-beds-and-bars-group-4468999184",
+   "source": "linkedin",
+   "published": "2026-09-23",
+   "category": "it",
+   "snippet": "4468999184\" data-impression-id=\"jobs-search-result-1\" data-reference-id=\"uDwDK4f0e9M3v+5P9ZPypA==\" data-tracking-id=\"E64JfUH/p9tTL/CqqEci6w==\" data-column=\"1\" data-row=\"2\"> Housekeeper Cleaner Room Attendant Schoonmaker ",
+   "id": "3918d084e922d157",
+   "added": "2026-09-28"
+  },
+  {
    "title": "Monteur Texel",
    "company": "KPN",
    "location": "Den Burg, Netherlands",
@@ -229,6 +277,18 @@
    "category": "other",
    "snippet": "Internet",
    "id": "e1ac6cbfb895be5e",
+   "added": "2026-09-28"
+  },
+  {
+   "title": "Warehouse Operator",
+   "company": "Trinamics",
+   "location": "Eindhoven, North Brabant, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/warehouse-operator-at-trinamics-4469874526",
+   "source": "linkedin",
+   "published": "2026-09-21",
+   "category": "logistics",
+   "snippet": "4469874526\" data-impression-id=\"jobs-search-result-3\" data-reference-id=\"C0uzgdLaqSiuJ4ZovHYHzA==\" data-tracking-id=\"hxilez5CEGrutdp3Xh4tfw==\" data-column=\"1\" data-row=\"4\"> Warehouse Operator Warehouse Operator Trinamics",
+   "id": "0c3e66e4cc5fde4c",
    "added": "2026-09-28"
   },
   {
@@ -880,6 +940,18 @@
    "added": "2026-09-28"
   },
   {
+   "title": "Orderpicker distributioncenter Almere.",
+   "company": "Lidl Nederland",
+   "location": "Almere, Flevoland, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/orderpicker-distributioncenter-almere-at-lidl-nederland-4467186332",
+   "source": "linkedin",
+   "published": "2026-09-17",
+   "category": "logistics",
+   "snippet": "4467186332\" data-impression-id=\"jobs-search-result-3\" data-reference-id=\"OtqC+fCc3U7MvSnzhEDtwA==\" data-tracking-id=\"jcTmdhLSP2IrzH1Qj8YJ1A==\" data-column=\"1\" data-row=\"4\"> Orderpicker distributioncenter Almere. Orderpic",
+   "id": "719fc787f5808cf0",
+   "added": "2026-09-28"
+  },
+  {
    "title": "Customer Journey Specialist",
    "company": "Coolblue",
    "location": "Rotterdam, Netherlands",
@@ -952,6 +1024,18 @@
    "added": "2026-09-28"
   },
   {
+   "title": "Allround Warehouse Medewerker",
+   "company": "Vos Logistics",
+   "location": "Kerkrade, Limburg, Netherlands",
+   "url": "https://nl.linkedin.com/jobs/view/allround-warehouse-medewerker-at-vos-logistics-4465515544",
+   "source": "linkedin",
+   "published": "2026-09-15",
+   "category": "logistics",
+   "snippet": "4465515544\" data-impression-id=\"jobs-search-result-8\" data-reference-id=\"C0uzgdLaqSiuJ4ZovHYHzA==\" data-tracking-id=\"+hYL5H5Zw59Y/XGJ+qy5+w==\" data-column=\"1\" data-row=\"9\"> Allround Warehouse Medewerker Allround Warehous",
+   "id": "95c36c81dcd85b2d",
+   "added": "2026-09-28"
+  },
+  {
    "title": "HR Adviseur Winkels",
    "company": "Coolblue",
    "location": "Rotterdam, Netherlands",
@@ -985,246 +1069,6 @@
    "category": "other",
    "snippet": "Telecommunications",
    "id": "bac7ccb199305ea6",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Assistent Storemanager Arnhem",
-   "company": "Coolblue",
-   "location": "Arnhem, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000149019244",
-   "source": "smartrecruiters",
-   "published": "2026-09-11",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "95063118ef76bd87",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Accounts Payable Specialist",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000149002759",
-   "source": "smartrecruiters",
-   "published": "2026-09-11",
-   "category": "other",
-   "snippet": "Financial Services",
-   "id": "587443978aec2623",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Fulltime Teamleider Retouren",
-   "company": "Coolblue",
-   "location": "Tilburg, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148958119",
-   "source": "smartrecruiters",
-   "published": "2026-09-11",
-   "category": "logistics",
-   "snippet": "Logistics And Supply Chain",
-   "id": "34a6eca8b4a5e880",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "International IOT Sales Executive",
-   "company": "KPN",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/KPN/744000149076249",
-   "source": "smartrecruiters",
-   "published": "2026-09-11",
-   "category": "other",
-   "snippet": "Information Technology And Services",
-   "id": "23fbda2a259b6d9a",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Owner Marketplaces",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148689470",
-   "source": "smartrecruiters",
-   "published": "2026-09-10",
-   "category": "other",
-   "snippet": "Internet",
-   "id": "c0f959cefce1385c",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Logistiek Teamleider Bezorging Almere",
-   "company": "Coolblue",
-   "location": "Almere, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148494729",
-   "source": "smartrecruiters",
-   "published": "2026-09-09",
-   "category": "logistics",
-   "snippet": "Logistics And Supply Chain",
-   "id": "b1b32d8038d8529e",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Media Plans Specialist",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148186799",
-   "source": "smartrecruiters",
-   "published": "2026-09-08",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "f93a3fb328382b80",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Medewerker Organisatie Ontwikkeling",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148171410",
-   "source": "smartrecruiters",
-   "published": "2026-09-08",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "d1b36d233bef2af9",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "HR Adviseur Hoofdkantoor",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000148147715",
-   "source": "smartrecruiters",
-   "published": "2026-09-08",
-   "category": "logistics",
-   "snippet": "Logistics And Supply Chain",
-   "id": "7c5a445c420d1d4b",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Winkelmedewerker Ekkersrijt (16 uur)",
-   "company": "Coolblue",
-   "location": "Son, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000147517059",
-   "source": "smartrecruiters",
-   "published": "2026-09-04",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "8208c79da0aa64c3",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Manager Transport Planning",
-   "company": "Coolblue",
-   "location": "Tilburg, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000147494584",
-   "source": "smartrecruiters",
-   "published": "2026-09-04",
-   "category": "other",
-   "snippet": "Consumer Services",
-   "id": "8cf53bb1c9e4ae45",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Winkelmedewerker Nijmegen (28 uur)",
-   "company": "Coolblue",
-   "location": "Nijmegen, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000147435761",
-   "source": "smartrecruiters",
-   "published": "2026-09-04",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "31ee3db9fcc813a5",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Vendor Portfolio Manager",
-   "company": "KPN",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/KPN/744000147512999",
-   "source": "smartrecruiters",
-   "published": "2026-09-04",
-   "category": "other",
-   "snippet": "Telecommunications",
-   "id": "85ef6f5d6e0b8ce0",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Bezorger Bijbaan Rijbewijs B Rotterdam",
-   "company": "Coolblue",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000147205659",
-   "source": "smartrecruiters",
-   "published": "2026-09-03",
-   "category": "healthcare",
-   "snippet": "Retail",
-   "id": "ae33accca41646fa",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Fietskoerier Amsterdam",
-   "company": "Coolblue",
-   "location": "Amsterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Coolblue/744000147174580",
-   "source": "smartrecruiters",
-   "published": "2026-09-03",
-   "category": "other",
-   "snippet": "Retail",
-   "id": "106c9cc3fff2327f",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Special Sales Security",
-   "company": "KPN",
-   "location": "Rotterdam, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/KPN/744000144785425",
-   "source": "smartrecruiters",
-   "published": "2026-08-21",
-   "category": "other",
-   "snippet": "Information Technology And Services",
-   "id": "4833910fdd2a7011",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Meewerkstage KPN winkel Gouda",
-   "company": "KPN",
-   "location": "Gouda, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/KPN/744000136255529",
-   "source": "smartrecruiters",
-   "published": "2026-07-07",
-   "category": "other",
-   "snippet": "Telecommunications",
-   "id": "eee7a46dd16fa424",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "Meewerkstage KPN winkel Zoetermeer",
-   "company": "KPN",
-   "location": "Zoetermeer, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/KPN/744000136254160",
-   "source": "smartrecruiters",
-   "published": "2026-07-07",
-   "category": "other",
-   "snippet": "Telecommunications",
-   "id": "302721606385649c",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "HR adviseur (junior)",
-   "company": "Picnic",
-   "location": "Eindhoven, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Picnic/743999933299493",
-   "source": "smartrecruiters",
-   "published": "2023-09-27",
-   "category": "other",
-   "snippet": "Supermarkets",
-   "id": "c482c1c5a4f1398a",
-   "added": "2026-09-28"
-  },
-  {
-   "title": "HR People Partner",
-   "company": "Picnic",
-   "location": "Eindhoven, Netherlands",
-   "url": "https://jobs.smartrecruiters.com/Picnic/743999927397613",
-   "source": "smartrecruiters",
-   "published": "2023-08-30",
-   "category": "other",
-   "snippet": "Supermarkets",
-   "id": "f754d7be018e5070",
    "added": "2026-09-28"
   }
  ]

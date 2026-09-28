@@ -33,8 +33,9 @@ for _stream in (sys.stdout, sys.stderr):
 JOBS_DIR = "jobs"
 JOBS_FILE = os.path.join(JOBS_DIR, "jobs.json")
 SEEN_FILE = os.path.join(JOBS_DIR, "seen.json")
-MAX_ACTIVE = 120          # أقصى عدد وظائف معروضة في الصفحة
+MAX_ACTIVE = 100          # 🎯 القائمة تعرض أحدث 100 وظيفة (تتجدد يومياً)
 MAX_SEEN = 5000           # ذاكرة منع التكرار
+EXPIRY_DAYS = int(os.environ.get("JOB_EXPIRY_DAYS", "14"))  # حذف الوظائف الأقدم من كذا يوم (عدّل من إعدادات الـ Workflow)
 TIMEOUT = 30
 UA = {"User-Agent": "MBO-JobAgent/1.0 (github.com/a-alzoubi-07-11)"}
 
@@ -269,6 +270,59 @@ def fetch_smartrecruiters():
     return out
 
 
+LI_KEYWORDS = ["warehouse", "order picker", "cleaner", "kitchen", "driver", "logistics", "packer", "store employee"]
+
+
+def fetch_linkedin():
+    """LinkedIn Jobs (واجهة الضيوف العامة) — هولندا فقط.
+    يُجرب 3 كلمات بحث تتبدل كل ساعة (حماية من تحديد المعدل)."""
+    out = []
+    hour = datetime.datetime.now(datetime.timezone.utc).hour
+    kws = [LI_KEYWORDS[(hour * 3 + i) % len(LI_KEYWORDS)] for i in range(3)]
+    for kw in kws:
+        try:
+            r = requests.get(
+                "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+                params={"keywords": kw, "location": "Netherlands", "start": 0},
+                timeout=TIMEOUT,
+                headers={**UA, "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+                         "Accept-Language": "en-US,en;q=0.9"},
+            )
+            if r.status_code != 200:
+                print(f"[Job Agent] linkedin '{kw}': HTTP {r.status_code} (rate-limited? skipping)")
+                continue
+            html = r.text
+            # التقسيم على معرف الوظيفة الفريد (وليس أسماء الكلاسات — بعضها يحتوي الكلمة نفسها!)
+            for chunk in html.split('data-entity-urn="urn:li:jobPosting:')[1:]:
+                mu = re.search(r'href="(https://[^"]*linkedin\.com/jobs/view/[^"]+)"', chunk)
+                mt = re.search(r"base-search-card__title[^>]*>([\s\S]*?)</h3>", chunk)
+                mc = re.search(r"base-search-card__subtitle[^>]*>([\s\S]*?)</h4>", chunk)
+                ml = re.search(r"job-search-card__location[^>]*>([\s\S]*?)</span>", chunk)
+                md = re.search(r'datetime="([0-9-]{10})', chunk)
+                if not (mu and mt):
+                    continue
+                title = clean_text(mt.group(1), 200)
+                company = clean_text(mc.group(1) if mc else "", 100)
+                location = clean_text(ml.group(1) if ml else "Netherlands", 100)
+                if not location or "netherlands" not in location.lower():
+                    location = location or "Netherlands"  # 🇳🇱 السوق الهولندي فقط
+                snippet = clean_text(chunk, 220)
+                out.append({
+                    "title": title,
+                    "company": company,
+                    "location": location,
+                    "url": mu.group(1).split("?")[0],
+                    "source": "linkedin",
+                    "published": md.group(1) if md else "",
+                    "category": classify(title, snippet),
+                    "snippet": snippet[:220],
+                })
+        except Exception as exc:  # noqa: BLE001
+            print(f"[Job Agent] linkedin '{kw}' failed: {type(exc).__name__}")
+    print(f"[Job Agent] linkedin: {len(out)} jobs fetched")
+    return out
+
+
 OFFICIAL_SITES = [
     "werk.nl", "randstad.nl", "tempo-team.nl", "adecco.nl",
     "youngcapital.nl", "indeed.com", "jobbird.com", "uwv.nl",
@@ -341,7 +395,8 @@ def main():
     seen = load_json(SEEN_FILE, {})
 
     current_by_id = {j["id"]: j for j in existing.get("jobs", [])}
-    fetched = fetch_smartrecruiters() + fetch_themuse() + fetch_remotive() + fetch_adzuna() + fetch_google_cse()
+    fetched = (fetch_smartrecruiters() + fetch_linkedin() + fetch_themuse()
+               + fetch_remotive() + fetch_adzuna() + fetch_google_cse())
 
     new_count = 0
     for j in fetched:
@@ -362,8 +417,18 @@ def main():
         current_by_id[jid] = j
         new_count += 1
 
-    # ترتيب: الأحدث أولاً، ثم قص القائمة للحد الأقصى
-    jobs = sorted(current_by_id.values(), key=lambda x: (x.get("added", ""), x.get("published", "")), reverse=True)
+    # 🧹 تنظيف الوظائف القديمة بالتاريخ (أقدم من EXPIRY_DAYS أيام → تُحذف)
+    cutoff = (datetime.date.today() - datetime.timedelta(days=EXPIRY_DAYS)).isoformat()
+    def effective_date(j):
+        return (j.get("published") or j.get("added") or "")[:10]
+    expired = [j for j in current_by_id.values() if effective_date(j) and effective_date(j) < cutoff]
+    for j in expired:
+        current_by_id.pop(j["id"], None)
+    if expired:
+        print(f"[Job Agent] 🧹 expired & removed: {len(expired)} jobs older than {EXPIRY_DAYS} days")
+
+    # ترتيب: الأحدث أولاً، ثم قص القائمة لأحدث 100 وظيفة
+    jobs = sorted(current_by_id.values(), key=lambda x: (effective_date(x), x.get("added", "")), reverse=True)
     jobs = jobs[:MAX_ACTIVE]
 
     # تقليم ذاكرة منع التكرار إذا كبرت جداً (الأقدم يُحذف)

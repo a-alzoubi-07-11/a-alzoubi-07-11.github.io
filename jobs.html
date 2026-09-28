@@ -64,7 +64,7 @@ details summary::-webkit-details-marker{display:none}
 <section class="bg-gradient-to-b from-dutchdark via-dutch to-dutch text-white">
   <div class="max-w-6xl mx-auto px-4 py-14 text-center">
     <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1 text-xs font-bold mb-5">
-      <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> تحديث تلقائي كل ساعة
+      <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> تحديث كل ساعة · أحدث 100 وظيفة · تنظيف تلقائي للقديم
     </span>
     <h1 class="text-3xl md:text-4xl font-black mb-4">وظائف في هولندا <span class="text-orange">بدون اشتراط اللغة</span></h1>
     <p class="text-blue-100 max-w-2xl mx-auto leading-relaxed mb-6">
@@ -84,6 +84,7 @@ details summary::-webkit-details-marker{display:none}
     <select id="src" class="bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm font-bold outline-none" onchange="render()">
       <option value="">كل المصادر</option>
       <option value="smartrecruiters">🏢 شركات هولندية رسمية</option>
+      <option value="linkedin">💼 LinkedIn — هولندا</option>
       <option value="adzuna">🔍 Adzuna — السوق الهولندي</option>
       <option value="google">🌐 غوغل — مواقع رسمية</option>
       <option value="remotive">🌍 وظائف هولندية عن بعد</option>
@@ -171,6 +172,7 @@ function render() {
   grid.innerHTML = jobs.map(j => {
     const cat = CATS[j.category] || CATS.other;
     const SRC_LABELS = {
+      linkedin: '<span class="text-[11px] font-black bg-sky-100 text-sky-700 rounded-full px-2.5 py-1">💼 LinkedIn</span>',
       smartrecruiters: '<span class="text-[11px] font-black bg-green-100 text-green-700 rounded-full px-2.5 py-1">🏢 شركة هولندية</span>',
       adzuna: '<span class="text-[11px] font-black bg-blue-100 text-dutch rounded-full px-2.5 py-1">🇳🇱 السوق الهولندي</span>',
       google: '<span class="text-[11px] font-black bg-emerald-100 text-emerald-700 rounded-full px-2.5 py-1">🌐 موقع رسمي</span>',
