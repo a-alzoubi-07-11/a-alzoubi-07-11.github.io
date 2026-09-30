@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[عنوان المقال] | دليل هولندا بالعربية</title>
+  <meta name="description" content="[وصف حقيقي موجز يوضح ما يجيب عنه المقال]">
+  <!-- احذف noindex بعد مراجعة المقال واستبدال جميع الحقول. -->
+  <meta name="robots" content="noindex,follow">
+  <meta name="color-scheme" content="light dark">
+  <!-- فعّل هذه الوسوم بعد وضع عنوان الصفحة الفعلي؛ لا تنشر الحقول كما هي.
+  <link rel="canonical" href="[عنوان URL الفعلي]">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:site_name" content="دليل هولندا بالعربية">
+  <meta property="og:title" content="[عنوان المقال]">
+  <meta property="og:description" content="[الوصف نفسه]">
+  <meta property="og:url" content="[عنوان URL الفعلي]">
+  -->
+  <style>
+    /* تصميم ثابت يعمل دون مكتبات أو تحميل خطوط خارجية. */
+    :root { color-scheme:light dark; --bg:#f5f7f9; --card:#fff; --text:#18242d; --muted:#49596a; --line:#c7d1da; --accent:#075f51; --soft:#eaf5f1; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,"Segoe UI",Tahoma,Arial,sans-serif; font-size:1.0625rem; line-height:1.95; }
+    a { color:var(--accent); text-underline-offset:.22em; overflow-wrap:anywhere; }
+    a:hover { text-decoration-thickness:2px; }
+    :focus-visible { outline:3px solid #b95600; outline-offset:4px; }
+    .skip { position:absolute; inset-block-start:-10rem; inset-inline-start:1rem; padding:.6rem; background:var(--card); z-index:2; }
+    .skip:focus { inset-block-start:.5rem; }
+    .wrap { width:min(100% - 2rem,52rem); margin-inline:auto; }
+    header,footer { padding-block:1.1rem; }
+    header { border-block-end:1px solid var(--line); background:var(--card); }
+    .brand { font-weight:750; text-decoration:none; }
+    nav ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.35rem 1rem; }
+    nav a { display:inline-flex; align-items:center; min-height:44px; }
+    .breadcrumbs { font-size:.94rem; color:var(--muted); margin-block:1rem; }
+    .breadcrumbs ol { display:flex; flex-wrap:wrap; list-style:none; gap:.4rem; padding:0; }
+    .breadcrumbs li+li::before { content:"/"; margin-inline-end:.4rem; }
+    article { padding:clamp(1rem,4vw,2.5rem); background:var(--card); border:1px solid var(--line); border-radius:1.1rem; }
+    h1 { font-size:clamp(1.8rem,5vw,2.5rem); line-height:1.5; margin-block:.2rem 1rem; }
+    h2 { font-size:1.4rem; margin-block:2rem .7rem; }
+    h3 { font-size:1.15rem; }
+    p { margin-block:.7rem; }
+    li { margin-block:.45rem; }
+    .summary,.notice { background:var(--soft); padding:1rem; border-inline-start:4px solid var(--accent); border-radius:.5rem; }
+    .meta { color:var(--muted); font-size:.95rem; padding-block:1rem; border-block-end:1px solid var(--line); }
+    .toc ul { display:block; padding-inline-start:1.2rem; list-style:disc; }
+    section { scroll-margin-block-start:1rem; }
+    .table-scroll { overflow-x:auto; max-width:100%; }
+    table { width:100%; border-collapse:collapse; font-size:.98rem; }
+    th,td { text-align:start; vertical-align:top; border:1px solid var(--line); padding:.65rem; }
+    details { border:1px solid var(--line); border-radius:.5rem; padding:.8rem; margin-block:.7rem; }
+    summary { cursor:pointer; font-weight:650; min-height:44px; }
+    img { max-width:100%; height:auto; display:block; }
+    .muted { color:var(--muted); }
+    @media (max-width:480px) { .wrap { width:calc(100% - 1rem); } article { padding:1rem; } nav ul { gap:.25rem .8rem; } }
+    @media (prefers-color-scheme:dark) { :root { --bg:#10191e; --card:#19262d; --text:#f0f5f7; --muted:#c0ced7; --line:#607481; --accent:#8ce1c7; --soft:#203d36; } }
+    @media print { body,article { background:white; color:black; } header,.breadcrumbs,.toc,footer,.skip { display:none; } article { border:0; padding:0; } .wrap { width:100%; } a { color:black; } details { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">انتقل إلى محتوى المقال</a>
+  <header><div class="wrap">
+    <a class="brand" href="../index.html">دليل هولندا بالعربية</a>
+    <nav aria-label="التنقل الرئيسي"><ul>
+      <li><a href="../articles.html">المقالات</a></li>
+      <li><a href="../cv.html">أنشئ سيرتك الذاتية</a></li>
+      <li><a href="../about.html">من نحن</a></li>
+    </ul></nav>
+  </div></header>
+  <main id="content" class="wrap">
+    <nav class="breadcrumbs" aria-label="مسار التنقل"><ol>
+      <li><a href="../index.html">الرئيسية</a></li>
+      <li><a href="../articles.html">المقالات</a></li>
+      <li aria-current="page">[عنوان مختصر]</li>
+    </ol></nav>
+    <article aria-labelledby="article-title">
+      <h1 id="article-title">[عنوان يجيب عن سؤال محدد]</h1>
+      <div class="summary" aria-labelledby="summary-title">
+        <strong id="summary-title">الخلاصة العملية</strong>
+        <p>[خلاصة من 60–100 كلمة: لمن الدليل، ما الإجراء، وأهم حدّ أو استثناء. لا تعد بأهلية أو قبول مضمون.]</p>
+      </div>
+      <div class="meta">
+        <!-- أضف datetime بصيغة YYYY-MM-DD بعد التحقق من التواريخ الفعلية. -->
+        <p>نُشر: <time>[تاريخ النشر الفعلي]</time> · آخر مراجعة للمعلومات: <time>[تاريخ المراجعة الفعلية]</time></p>
+        <p>كتابة: [الاسم الحقيقي] · المراجعة: [اسم من راجع فعلاً، أو «لم تُجرَ مراجعة مستقلة»]</p>
+        <p>نطاق الدليل: [الحالة التي يغطيها، والسنة عند الحاجة]. <a href="../editorial-policy.html">كيف نراجع المحتوى؟</a></p>
+      </div>
+      <nav class="toc" aria-label="فهرس المقال"><h2>في هذا الدليل</h2><ul>
+        <li><a href="#scope">لمن ينطبق هذا الدليل؟</a></li>
+        <li><a href="#steps">الخطوات والوثائق</a></li>
+        <li><a href="#limits">الحالات والاستثناءات</a></li>
+        <li><a href="#faq">أسئلة شائعة</a></li>
+        <li><a href="#sources">المصادر الرسمية</a></li>
+      </ul></nav>
+      <section id="scope"><h2>لمن ينطبق هذا الدليل؟</h2>
+        <p>[عرّف الفئة والإجراء والمصطلح الهولندي مثل <bdi lang="nl">toetsingsinkomen</bdi>. ضع رابط المصدر بجوار الشرط الذي يستند إليه.]</p>
+      </section>
+      <section id="steps"><h2>الخطوات والوثائق</h2>
+        <ol>
+          <li><strong>[الخطوة الأولى]</strong><p>[ماذا يفعل القارئ؟ وما المرجع الذي يتحقق منه؟]</p></li>
+          <li><strong>[الخطوة الثانية]</strong><p>[وثائق أو معلومات يحتاجها، دون جمع معلومات حساسة داخل الموقع.]</p></li>
+          <li><strong>[الخطوة الثالثة]</strong><p>[كيفية متابعة الإجراء والتعامل مع رسالة أو خطأ شائع.]</p></li>
+        </ol>
+        <h3>مثال توضيحي</h3><p>[مثال افتراضي واضح، لا يتضمن بيانات شخصية حقيقية ولا يثبت أهلية حالة بعينها.]</p>
+      </section>
+      <section id="limits"><h2>الحالات التي تحتاج تحققاً إضافياً</h2>
+        <p>[اذكر الاستثناءات المهمة والجهة المناسبة للتحقق. إذا لم تُراجع معلومة، اكتب «يحتاج تحقق» واحذف الجزم بها.]</p>
+      </section>
+      <section id="faq"><h2>أسئلة شائعة</h2>
+        <!-- عناصر details تعمل باللمس ولوحة المفاتيح دون JavaScript. -->
+        <details open><summary>[سؤال حقيقي شائع]</summary><p>[جواب مباشر مدعوم بمصدر؛ لا تكرر كامل المقال.]</p></details>
+        <details open><summary>[سؤال عن حالة أو استثناء]</summary><p>[جواب حذر يوضح حدود الدليل.]</p></details>
+      </section>
+      <section id="sources"><h2>المصادر الرسمية</h2>
+        <p class="muted">تاريخ الاطلاع على المصادر: [تاريخ التحقق الفعلي]. قد تتغير الشروط بعد هذا التاريخ.</p>
+        <ul><li>[اسم الجهة وعنوان الصفحة — أضف رابط المصدر المحدد بعد قراءته]</li></ul>
+        <p>[عند وجود رقم: المصدر، تاريخ سريانه، ووحدة القياس. احذف هذه الفقرة إذا لم توجد أرقام.]</p>
+      </section>
+      <section aria-labelledby="related-title"><h2 id="related-title">أدلة مرتبطة</h2>
+        <ul><li>[أضف 2–4 روابط إلى مقالات منشورة ذات صلة؛ لا تضع روابط إلى مسودات غير موجودة.]</li></ul>
+      </section>
+      <aside class="notice" aria-label="حدود المعلومات">
+        هذا الدليل للتوعية ولا يقدّم استشارة قانونية أو مالية شخصية. تحقّق من الجهة الرسمية قبل تقديم طلب أو اتخاذ قرار يتعلق بحالتك.
+      </aside>
+      <p>وجدت خطأ؟ <a href="../contact.html">أبلغنا بعنوان المقال والفقرة والمصدر الذي يوضح التصحيح</a>.</p>
+    </article>
+  </main>
+  <footer class="wrap"><nav aria-label="روابط الموقع"><ul>
+    <li><a href="../privacy.html">الخصوصية</a></li>
+    <li><a href="../editorial-policy.html">سياسة المحتوى</a></li>
+    <li><a href="../contact.html">تواصل</a></li>
+  </ul></nav></footer>
+  <!-- مثال غير نشط: فعّله بعد استبدال الحقول والتحقق من مطابقة البيانات للمحتوى.
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Article",
+        "@id":"[عنوان URL الفعلي]#article",
+        "headline":"[العنوان الحقيقي]",
+        "description":"[الوصف الحقيقي]",
+        "inLanguage":"ar",
+        "mainEntityOfPage":"[عنوان URL الفعلي]",
+        "datePublished":"[تاريخ النشر بصيغة ISO]",
+        "dateModified":"[تاريخ التعديل بصيغة ISO]",
+        "author":{"@type":"Person","name":"[اسم الكاتب الحقيقي]"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://a-alzoubi-07-11.github.io/"},
+          {"@type":"ListItem","position":2,"name":"المقالات","item":"https://a-alzoubi-07-11.github.io/articles.html"},
+          {"@type":"ListItem","position":3,"name":"[العنوان الحقيقي]","item":"[عنوان URL الفعلي]"}
+        ]
+      }
+    ]
+  }
+  </script>
+  -->
+</body>
+</html>
