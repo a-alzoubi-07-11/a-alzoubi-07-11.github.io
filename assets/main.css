@@ -1012,3 +1012,12 @@ html[data-theme="dark"] body:before{background:radial-gradient(circle at 10% 0%,
  .mbo-modern-card .mbo-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;gap:10px}
  .mbo-modern-card .mbo-tool{white-space:normal;min-width:0;text-align:center;padding:10px}
 }
+
+/* Stage 2: readable static content, SVG icons and keyboard entry. */
+.site-icon{width:26px;height:26px;color:#0071e3;display:inline-block;flex-shrink:0;margin-bottom:12px}
+.home-intro{max-width:920px;font-size:17px;line-height:1.95;color:var(--apple-text);padding:8px 22px}
+.home-intro p{margin:0 0 18px}.home-reviewed{font-size:14px;color:var(--apple-muted);line-height:1.8}.home-reviewed a{color:var(--apple-blue)}
+#education-guides,#smart-tools{scroll-margin-top:150px;margin-block:32px}#education-guides .mbo-modern-grid,#smart-tools .mbo-modern-grid{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#smart-tools .mbo-modern-card,#education-guides .mbo-modern-card{display:flex;flex-direction:column}#smart-tools .mbo-article-link,#education-guides .mbo-article-link{margin-top:auto;padding-top:18px}
+.skip-link{position:fixed;top:8px;inset-inline-start:12px;transform:translateY(-150%);z-index:10000;background:#fff;color:#0059b3;padding:12px;border-radius:10px}.skip-link:focus{transform:none}
+@media(max-width:620px){#education-guides .mbo-modern-grid,#smart-tools .mbo-modern-grid{grid-template-columns:1fr}.home-intro{font-size:16px;padding-inline:18px}.hero-inner h1{font-size:clamp(36px,10vw,62px)}}

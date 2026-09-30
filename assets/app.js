@@ -42,7 +42,7 @@ const I18N = {
     "hero.b1": "🇳🇱 رسمي", "hero.b2": "📚 مصادر موثوقة", "hero.b3": "🔄 انتقالات كاملة",
     "modal.close": "إغلاق", "modal.goto": "عرض الصفحة الكاملة ←",
     "footer.logo": "دليل التعليم",
-    "footer.tag": "الدليل الأشمل والأدق باللغة العربية للنظام التعليمي في هولندا.",
+    "footer.tag": "دليل مستقل للتعليم والعمل والحياة اليومية، مع روابط للمصادر الرسمية.",
     "footer.follow": "تابعنا للجديد:",
     "footer.levels": "المستويات", "footer.tools": "الأدوات", "footer.official": "مصادر رسمية",
     "footer.compare": "⚖️ مقارنة المسارات", "footer.calc": "🧮 حاسبة الراتب", "footer.sources": "🔗 المصادر الرسمية",
@@ -1260,6 +1260,12 @@ const ALL_PAGE_IDS = [...PAGES, ...SECONDARY_PAGES].map(p => p.id);
 /* ═══════════════════════════════════════════════════════════
    STATE
 ═══════════════════════════════════════════════════════════ */
+
+// Stage 2: one identity and a static bilingual introduction.
+Object.assign(I18N.ar,{"home.intro.title": "معلومات واضحة وخطوات عملية", "home.review": "آخر تحديث لهذه الصفحة: 1 أكتوبر 2026", "home.review.policy": "كيف نراجع المعلومات؟", "home.education": "ابدأ بفهم مسارك التعليمي", "home.education.sub": "هذه روابط إلى الأدلة والمصادر؛ شروط القبول تحددها المؤسسة التعليمية والجهة المختصة.", "home.tools": "أدوات تساعدك على ترتيب خطواتك", "home.tools.sub": "الأدوات مساعدة وتقديرية؛ راجع المصادر الرسمية قبل اتخاذ قرار.", "home.cv": "أنشئ سيرتك الذاتية CV", "home.cv.text": "أربع خطوات، اقتراحات هولندية، وترجمة المدخلات العربية مع صورة اختيارية.", "home.compare": "مقارنة المسارات", "home.compare.text": "قارن مسارات التعليم في الواجهة التفاعلية. يتطلب تشغيل المقارنة JavaScript.", "home.salary": "تقدير الراتب", "home.salary.text": "حساب توضيحي يحتاج مراجعة؛ الصافي الفعلي يتأثر بالضرائب والخصومات وظروفك.", "home.toeslagen": "الحساب الرسمي للبدلات", "home.toeslagen.text": "انتقل إلى Proefberekening لدى Dienst Toeslagen لمعرفة التقدير وشروط استخدام الأداة.", "home.school": "المدرسة والمسارات الثانوية", "home.school.text": "ابدأ بفهم التعليم الأساسي ومسارات VMBO وHAVO وVWO.", "home.mbo": "التسجيل وشروط MBO", "home.mbo.text": "اعرف ما تحتاج سؤاله للمدرسة ومواعيد التسجيل وشروط الالتحاق.", "home.hbo": "اختيار HBO أو الجامعة", "home.hbo.text": "راجع شروط اختيار الدراسة والقبول لدى Rijksoverheid.", "home.finance": "تمويل الدراسة", "home.finance.text": "افهم المصطلحات، ثم تحقّق من استحقاقك لدى DUO.", "home.open": "افتح الدليل", "home.interactive": "التعليم والأدوات التفاعلية", "home.interactive.note": "اختر أداة أو مساراً من الروابط. تبقى الأدلة الأساسية متاحة إذا لم يعمل JavaScript.", "home.independent": "دليل مستقل؛ المعلومات توعوية وليست استشارة قانونية أو مالية شخصية.", "home.intro.0": "هذا الموقع موجّه للعرب المقيمين في هولندا، ولمن يستعد للقدوم إليها ويبحث عن بداية واضحة. قد تكون المصطلحات الهولندية والإجراءات الجديدة مربكة، خصوصاً عندما ترتبط بالدراسة أو العمل أو شؤون الأسرة. نهدف إلى شرح هذه الموضوعات بلغة بسيطة، مع إبقاء أسماء الخدمات والمصطلحات الهولندية التي تحتاجها عند التواصل مع الجهات المختصة.", "home.intro.1": "تجد هنا أدلة عن التعليم ومسارات MBO وHBO والجامعة، ومقالات عن عقود العمل والراتب والضرائب والبدلات. كما تجد شروحات عن DigiD والسكن والتأمين والإقامة ولمّ الشمل. تساعدك الروابط الداخلية على الانتقال من الفكرة العامة إلى الدليل المناسب، ثم إلى المصدر الرسمي للتحقق من التفاصيل التي تنطبق على حالتك.", "home.intro.2": "يوفّر الموقع أيضاً أدوات مساعدة، منها منشئ سيرة ذاتية هولندية ومقارنة المسارات التعليمية. استخدمها لتنظيم معلوماتك وفهم الخيارات، وراجع النتائج قبل الاعتماد عليها. الحاسبات تقديرية ولا تحدد استحقاقك لبدل أو تصريح، وقد تختلف الشروط حسب السنة ونوع الإقامة أو الدخل أو المؤسسة التعليمية.", "home.intro.3": "يدير الموقع أحمد الزعبي، وهو مشروع مستقل وليس جهة حكومية أو مكتب استشارات. نربط الشروحات بالمصادر المختصة، ونوضّح حدود المعلومات والأدوات. إذا وجدت خطأ أو رابطاً قديماً، يمكنك إبلاغنا عبر صفحة التواصل. وتجد في سياسة المحتوى طريقة التعامل مع المصادر والتصحيحات؛ راجع الجهة الرسمية دائماً قبل تقديم طلب أو اتخاذ قرار مالي أو قانوني.", "topbar.tag": "دليل هولندا بالعربية", "brand.title": "دليل هولندا بالعربية", "brand.updated": "معلومات ومصادر", "hero.title.pre": "دليل هولندا", "hero.title.em": "بالعربية", "hero.title.post": "", "footer.logo": "دليل هولندا بالعربية", "footer.tag": "دليل مستقل للتعليم والعمل والحياة اليومية، مع روابط للمصادر الرسمية.", "gids.05.calc": "الحساب الرسمي للبدلات", "nav.articles": "المقالات", "nav.about": "من نحن", "nav.privacy": "الخصوصية", "nav.contact": "تواصل", "footer.compare": "مقارنة المسارات", "footer.calc": "تقدير الراتب", "footer.sources": "المصادر الرسمية"});
+Object.assign(I18N.nl,{"home.intro.title": "Duidelijke informatie en praktische stappen", "home.review": "Deze pagina bijgewerkt: 1 oktober 2026", "home.review.policy": "Hoe controleren we informatie?", "home.education": "Begin met je onderwijsroute", "home.education.sub": "Links naar uitleg en bronnen; de opleiding en bevoegde organisatie bepalen de voorwaarden.", "home.tools": "Hulpmiddelen voor je volgende stap", "home.tools.sub": "Hulpmiddelen en schattingen; controleer officiële bronnen voordat je beslist.", "home.cv": "Maak je cv", "home.cv.text": "Vier stappen, Nederlandse suggesties, vertaling van Arabische invoer en een optionele foto.", "home.compare": "Onderwijsroutes vergelijken", "home.compare.text": "Vergelijk routes in de interactieve weergave. Hiervoor is JavaScript nodig.", "home.salary": "Salarisindicatie", "home.salary.text": "Een vereenvoudigde berekening die controle nodig heeft; het echte nettoloon hangt af van je situatie.", "home.toeslagen": "Officiële proefberekening toeslagen", "home.toeslagen.text": "Open de Proefberekening van Dienst Toeslagen en lees de gebruiksvoorwaarden.", "home.school": "School en voortgezet onderwijs", "home.school.text": "Uitleg over basisonderwijs, VMBO, HAVO en VWO.", "home.mbo": "Aanmelden en toelating MBO", "home.mbo.text": "Lees over aanmelden, voorwaarden en vragen aan de school.", "home.hbo": "HBO of universiteit kiezen", "home.hbo.text": "Controleer studiekeuze en toelating bij Rijksoverheid.", "home.finance": "Studiefinanciering", "home.finance.text": "Lees de uitleg en controleer je mogelijkheden bij DUO.", "home.open": "Open de uitleg", "home.interactive": "Interactief onderwijs en hulpmiddelen", "home.interactive.note": "Kies een hulpmiddel of route. De basisgidsen blijven bereikbaar zonder JavaScript.", "home.independent": "Onafhankelijke gids; algemene informatie, geen persoonlijk juridisch of financieel advies.", "home.intro.0": "Deze onafhankelijke gids helpt Arabischtalige inwoners van Nederland en mensen die hun komst voorbereiden. Nederlandse termen en nieuwe procedures kunnen lastig zijn, vooral bij onderwijs, werk en gezinszaken. We leggen onderwerpen eenvoudig uit en behouden de Nederlandse namen die je nodig hebt wanneer je contact opneemt met een organisatie.", "home.intro.1": "Je vindt uitleg over MBO, HBO en universitair onderwijs, arbeidscontracten, salaris, belastingen en toeslagen. Daarnaast zijn er artikelen over DigiD, wonen, verzekeringen, verblijf en gezinshereniging. Links brengen je van een overzicht naar een passende uitleg en daarna naar de officiële organisatie. Controleer daar de voorwaarden voor jouw situatie.", "home.intro.2": "De hulpmiddelen, zoals de cv-maker en de vergelijking van onderwijsroutes, helpen je om informatie te ordenen. Controleer de uitkomst voordat je die gebruikt. Berekeningen zijn indicatief en bepalen geen recht op een toeslag of vergunning. Voorwaarden kunnen verschillen per jaar, verblijfsstatus, inkomen en opleiding.", "home.intro.3": "Ahmad Alzoubi beheert dit project. Het is geen overheidswebsite of adviesbureau. Meld onjuiste informatie of een verouderde link via de contactpagina. Het redactionele beleid legt uit hoe bronnen en correcties worden behandeld. Raadpleeg altijd de bevoegde organisatie voordat je een aanvraag doet of een financiële of juridische beslissing neemt.", "topbar.tag": "Gids Nederland", "brand.title": "Gids Nederland", "brand.updated": "Uitleg en bronnen", "hero.title.pre": "Gids Nederland", "hero.title.em": "in het Arabisch", "hero.title.post": "", "footer.logo": "Gids Nederland", "footer.tag": "Onafhankelijke uitleg over onderwijs, werk en het dagelijks leven, met officiële bronnen.", "gids.05.calc": "Officiële proefberekening toeslagen", "nav.articles": "Artikelen", "nav.about": "Over ons", "nav.privacy": "Privacy", "nav.contact": "Contact", "footer.compare": "Routes vergelijken", "footer.calc": "Salarisindicatie", "footer.sources": "Officiële bronnen"});
+const homeOverviewHtml = document.getElementById("mainContent")?.innerHTML || "";
+
 const safeStore = {
   get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
   set(k,v){ try { localStorage.setItem(k,v); } catch(e){} },
@@ -1279,7 +1285,7 @@ function applyI18n() {
   $$("[data-i18n]").forEach(n => {
     const k = n.getAttribute("data-i18n");
     const v = I18N[state.lang] && I18N[state.lang][k];
-    if (v !== undefined) n.textContent = v;
+    if (v !== undefined) n.textContent = String(v).replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\uFE0F\u200D]/gu, "").trim();
   });
   document.documentElement.lang = state.lang;
   document.documentElement.dir = state.lang === "ar" ? "rtl" : "ltr";
@@ -1287,7 +1293,7 @@ function applyI18n() {
   const label = $("#langLabel");
   const flag = $("#langFlag");
   if (label) label.textContent = state.lang === "ar" ? "العربية" : "Nederlands";
-  if (flag) flag.textContent = state.lang === "ar" ? "🇸🇦" : "🇳🇱";
+  if (flag) flag.textContent = "";
   const si = $("#searchInput");
   if (si) { si.placeholder = t("search.ph"); si.setAttribute("aria-label", t("search.ph")); }
 }
@@ -1322,18 +1328,7 @@ function renderNav() {
 }
 
 function renderFooterLinks() {
-  const ul = $("#footerLinks");
-  ul.innerHTML = "";
-  const allPages = [...PAGES, ...SECONDARY_PAGES];
-  ["overview","vmbo","havovwo","mbo","mbo-beroepen","hbo","wo"].forEach(id => {
-    const page = allPages.find(p => p.id === id);
-    if (!page) return;
-    const li = el("li");
-    const btn = el("button", { "data-page": id, onclick: () => setPage(id) });
-    btn.innerHTML = `${page.icon} ${page.label[state.lang]}`;
-    li.append(btn);
-    ul.append(li);
-  });
+  // Static guide links remain available without JavaScript.
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -1352,6 +1347,12 @@ function renderMain() {
   const main = $("#mainContent");
   if (!main) return;
   main.innerHTML = "";
+  if (state.page === "overview") {
+    main.innerHTML = homeOverviewHtml;
+    applyI18n();
+    window.dispatchEvent(new Event("mbo:pagechange"));
+    return;
+  }
   const renderer = RENDERERS[state.page] || RENDERERS.overview;
   try {
     main.append(renderer());
