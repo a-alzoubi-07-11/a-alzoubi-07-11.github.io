@@ -4,7 +4,7 @@ const cfg=window.GuideConfig||{},denied={ad_storage:'denied',ad_user_data:'denie
 let analytics=false,ads=false,gaLoaded=false,tc=null,apiReady=false,revision=0;
 const fc=window.googlefc=window.googlefc||{};fc.callbackQueue=fc.callbackQueue||[];
 const emit=()=>window.dispatchEvent(new CustomEvent('mbo:consentchange',{detail:{analytics,ads}}));
-function apply(values){window.gtag?.('consent','update',values);analytics=values.analytics_storage==='granted';ads=values.ad_storage==='granted'&&values.ad_user_data==='granted';emit();}
+function apply(values){document.documentElement.dataset.analyticsConsent=values.analytics_storage;document.documentElement.dataset.adsConsent=values.ad_storage;window.gtag?.('consent','update',values);analytics=values.analytics_storage==='granted';ads=values.ad_storage==='granted'&&values.ad_user_data==='granted';emit();}
 function stop(){revision++;if(cfg.measurementId)window['ga-disable-'+cfg.measurementId]=true;apply({...denied});}
 function activateAnalytics(){
  if(analytics&&cfg.measurementId)window['ga-disable-'+cfg.measurementId]=false;
@@ -27,21 +27,21 @@ function notice(){
  box.querySelector('[data-retry]').addEventListener('click',open);box.querySelector('[data-dismiss]').addEventListener('click',()=>box.remove());document.body.append(box);
 }
 function open(){
- stop();if(!cfg.cmpReady){notice();return;}
- fc.callbackQueue.push({CONSENT_API_READY:()=>{if(typeof fc.showRevocationMessage==='function'){document.getElementById('mbo-consent')?.remove();fc.showRevocationMessage();}else notice();}});
- if(!apiReady)notice();
+ stop();notice();if(!cfg.cmpReady)return;
+ fc.callbackQueue.push({CONSENT_API_READY:()=>{if(typeof fc.showRevocationMessage==='function'){fc.showRevocationMessage();}else notice();}});
+ 
 }
 Object.defineProperty(window,'MboConsent',{value:Object.freeze({allowed:kind=>kind==='analytics'?analytics:kind==='ads'?ads:false,open}),configurable:false});
 // No legacy localStorage consent is reused as a TCF decision.
 fc.callbackQueue.push({CONSENT_API_READY:()=>{
- apiReady=true;if(typeof window.__tcfapi!=='function')return;
+ apiReady=true;document.documentElement.dataset.cmpApi='ready';if(typeof window.__tcfapi!=='function')return;
  window.__tcfapi('addEventListener',2,(data,success)=>{
   if(!success||!data){tc=null;stop();return;}tc=data;
-  if(data.eventStatus==='cmpuishown'){stop();return;}
+  document.documentElement.dataset.cmpEvent=data.eventStatus||'unknown';if(data.eventStatus==='cmpuishown'){document.getElementById('mbo-consent')?.remove();stop();return;}
   const current=++revision;update();[100,500].forEach(delay=>setTimeout(()=>{if(revision===current)update();},delay));
  });
 }});
 fc.callbackQueue.push({CONSENT_MODE_DATA_READY:update});
-function init(){document.querySelectorAll('[data-cookie-settings]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open();}));if(!cfg.cmpReady)notice();}
+function init(){if(!tc)apply({...denied});document.querySelectorAll('[data-cookie-settings]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open();}));if(!cfg.cmpReady)notice();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();

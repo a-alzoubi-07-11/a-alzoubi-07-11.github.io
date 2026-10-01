@@ -19,5 +19,9 @@
   },
   "privacyUrl": "https://a-alzoubi-07-11.github.io/privacy.html",
   "siteAdUnitsEnabled": false,
-  "liveChoiceTest": "pending"
+  "liveChoiceTest": "pending_google_delivery",
+  "autoAds": false,
+  "autoOptimise": false,
+  "livePrivacyAndAssets": "verified",
+  "buildAndDeployment": "success"
 }

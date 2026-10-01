@@ -27,3 +27,6 @@ https://support.google.com/adsense/answer/12474312
 https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/heldere-en-misleidende-cookiebanners
 
 هذه مراجعة إعدادات وتنفيذ تقني، وليست شهادة قانونية بالامتثال الكامل. يلزم التحقق من المعالجة الفعلية والمدد ونقل البيانات وموردي الأدوات قبل تشغيل خدمات إضافية.
+
+## نتيجة فحص الموقع الحي
+نجح بناء GitHub Pages والنشر. ظهرت سياسة الخصوصية الجديدة وملفات config v2 وconsent v6 على الموقع الحي. حمّل وسم AdSense ملفات fundingchoicesmessages.google.com، لكن لم تظهر واجهة اختيار TCF أثناء هذا الفحص؛ لم يمكن إثبات القبول والرفض والسحب على خدمة Google الحية. لا نعتمد نتائج قراءة globals من بيئة المتصفح المحدودة كدليل على غياب runtime. نسخة v7 تضيف حالة إلى سمات HTML لتفحصها عبر DOM وتبقي إشعاراً واضحاً إذا طلب الزائر إعدادات لا تستطيع Google عرضها. إعدادات Auto ads وAuto optimise كانت ON في الحساب وصارت OFF بعد الحفظ. يمكن أن يحتاج انتشار إعدادات Google إلى ساعة. المعالجة الاختيارية في كود الموقع تبقى مرفوضة عندما لا تصل موافقة صريحة.
