@@ -1,32 +1,23 @@
 {
-  "status": "prepared_not_published_in_adsense",
-  "messageName": "Guide Netherlands — EU consent — AR NL",
-  "publisherId": "ca-pub-9944637611029429",
-  "site": "https://a-alzoubi-07-11.github.io/",
-  "defaultLanguage": "ar",
-  "additionalLanguages": [
-    "nl"
+  "status": "published",
+  "verifiedDate": "2026-10-01",
+  "defaultLanguage": "nl",
+  "arabicAvailableInEditor": false,
+  "rejectVisible": true,
+  "optimiseConsent": false,
+  "advertisingConsentMode": true,
+  "analyticsConsentMode": true,
+  "legitimateInterestControls": false,
+  "dsaTransparency": true,
+  "rtbConsentCheck": true,
+  "selectedPartners": [
+    "Google Advertising Products"
   ],
-  "doNotConsent": true,
-  "manageOptions": true,
-  "privacyURLs": {
-    "ar": "https://a-alzoubi-07-11.github.io/privacy.html",
-    "nl": "https://a-alzoubi-07-11.github.io/nl/privacy.html"
+  "ownPurposes": {
+    "1": "consent",
+    "8": "consent"
   },
-  "languages": {
-    "ar": {
-      "title": "اختيارات الخصوصية",
-      "body": "نستخدم نحن وGoogle وشركاؤها ملفات الارتباط والبيانات لأغراض الإعلانات وقياس أدائها حسب اختيارك. يمكنك الموافقة أو الرفض أو إدارة الخيارات، وتغيير اختيارك لاحقاً من إعدادات الكوكيز. قد تستخدم الإعلانات غير المخصصة ملفات الارتباط أيضاً. راجع تفاصيل الشركاء والأغراض في رسالة الموافقة وسياسة الخصوصية.",
-      "accept": "قبول الكل",
-      "reject": "رفض الكل",
-      "manage": "إدارة الخيارات"
-    },
-    "nl": {
-      "title": "Je privacykeuzes",
-      "body": "Wij, Google en haar partners gebruiken cookies en gegevens voor advertenties en het meten van prestaties, afhankelijk van je keuze. Je kunt accepteren, weigeren of je opties beheren en je keuze later wijzigen via Cookie-instellingen. Ook niet-gepersonaliseerde advertenties kunnen cookies gebruiken. Bekijk de partners en doeleinden in het toestemmingsbericht en ons privacybeleid.",
-      "accept": "Alles accepteren",
-      "reject": "Alles weigeren",
-      "manage": "Opties beheren"
-    }
-  }
+  "privacyUrl": "https://a-alzoubi-07-11.github.io/privacy.html",
+  "siteAdUnitsEnabled": false,
+  "liveChoiceTest": "pending"
 }

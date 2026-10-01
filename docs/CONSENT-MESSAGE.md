@@ -1,30 +1,29 @@
-# رسالة الموافقة — جاهزة للإعداد، لم تُنشر داخل حساب AdSense
-هذا الملف مسودة إعداد وليس CMP مستقلة. لا يقبل AdSense استيراد ملف JSON هذا، ولا يحوّل رفعه إلى GitHub إلى رسالة TCF معتمدة.
+# مراجعة ربط رسالة Google CMP — 1 أكتوبر 2026
 
-اسم الرسالة: Guide Netherlands — EU consent — AR NL
-اللغة الافتراضية: العربية. الإضافية: Nederlands.
-فعّل Do not consent وإدارة الخيارات، واحفظ قائمة الشركاء والأغراض والتفاصيل الإلزامية التي يولدها Google. استخدم النصوص فقط حيث يتيح المحرر التعديل؛ لا تستبدل التفاصيل الإلزامية بنص مختصر.
-رابط الخصوصية العربي: https://a-alzoubi-07-11.github.io/privacy.html
-رابط الخصوصية الهولندي: https://a-alzoubi-07-11.github.io/nl/privacy.html
+تم الدخول الآمن إلى AdSense وتعديل الرسالة القائمة ونشرها؛ يظهر Published وتاريخ 1 Oct 2026.
 
-## ar
+- زر الرفض ظاهر لكل المناطق المعروضة، بما فيها هولندا. أزرار القبول والرفض متساوية في اللون والحجم في معاينة الهاتف.
+- تحسين الرسالة بهدف الإيراد متوقف؛ اللغة الافتراضية هولندية، مع 31 لغة إضافية. العربية غير متاحة في قائمة المحرر المرصودة؛ الشرح العربي موجود في سياسة الموقع.
+- اسم الموقع ثنائي اللغة، ورابط الخصوصية HTTPS يفتح privacy.html بدلاً من الرئيسية.
+- شريك إعلاني واحد: Google Advertising Products؛ أوقفت إضافة الشركاء تلقائياً.
+- Legitimate interest controls متوقفة؛ طلب شفافية DSA وفحص موافقة شركاء RTB مفعّلان.
+- Consent Mode للإعلانات والإحصاءات مفعّل. أغراض الموقع: التخزين (1) وقياس أداء المحتوى (8)، على أساس الموافقة.
+- Special feature two ظل متوقفاً. النص العام في معاينة Google يذكر تحديد الموقع الدقيق؛ لم يتوفر مفتاح مستقل لتعطيل special feature one في الإعدادات المرصودة. لا ندّعي تعطيله. راجع تفاصيل الشريك الفعلية قبل تشغيل الإعلانات.
+- إعادة طلب الموافقة مفعّلة بعد تعديل الإعدادات.
 
-اختيارات الخصوصية
+## الربط
+cmpReady=true. الإشارات الأربع denied افتراضياً. الحالات UNKNOWN/NOT_CONFIGURED غير مقبولة. إشارات إعلانات الموقع تتطلب موافقة TCF للجهة 755 والتخزين. الإحصاءات تتطلب أغراض الناشر 1 و8 وإشارة Google analytics granted. عند فتح إعدادات الكوكيز تتوقف المعالجة الاختيارية حتى اختيار جديد. لا يُعاد استخدام موافقة localStorage القديمة، ولا يظهر شريط قبول محلي منافس لرسالة Google.
 
-نستخدم نحن وGoogle وشركاؤها ملفات الارتباط والبيانات لأغراض الإعلانات وقياس أدائها حسب اختيارك. يمكنك الموافقة أو الرفض أو إدارة الخيارات، وتغيير اختيارك لاحقاً من إعدادات الكوكيز. قد تستخدم الإعلانات غير المخصصة ملفات الارتباط أيضاً. راجع تفاصيل الشركاء والأغراض في رسالة الموافقة وسياسة الخصوصية.
+adsEnabled=false ومعرّف GA4 ما زال placeholder. نجاح CMP لا يشغّل وحدات الإعلانات ولا يضمن قبول AdSense. وسم AdSense نفسه يتصل بخدمة Google لتشغيل CMP؛ ليس صحيحاً الادعاء بأن الموقع لا يتصل بـGoogle قبل الاختيار.
 
-قبول الكل / رفض الكل / إدارة الخيارات
+## الاختبارات
+نجح فحص صياغة JavaScript واختبار محلي بمحاكاة APIs: المجهول، القبول، الرفض، نقص غرض الإحصاءات، السحب، الردود المؤجلة القديمة، غير المهيأ وفشل CMP. هذه المحاكاة لا تثبت نجاح اختيار الزائر على الخدمة الحقيقية.
+اختبار حي للقبول والرفض والسحب جارٍ؛ تحديث رسالة Google قد يحتاج إلى ساعة وفق إشعار النشر. سجّل النتيجة في data/consent-message.json ولا تصف الاختبار غير المنجز بأنه ناجح.
 
-## nl
+## المصادر
+https://developers.google.com/funding-choices/fc-api-docs
+https://support.google.com/adsense/answer/16053245
+https://support.google.com/adsense/answer/12474312
+https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/heldere-en-misleidende-cookiebanners
 
-Je privacykeuzes
-
-Wij, Google en haar partners gebruiken cookies en gegevens voor advertenties en het meten van prestaties, afhankelijk van je keuze. Je kunt accepteren, weigeren of je opties beheren en je keuze later wijzigen via Cookie-instellingen. Ook niet-gepersonaliseerde advertenties kunnen cookies gebruiken. Bekijk de partners en doeleinden in het toestemmingsbericht en ons privacybeleid.
-
-Alles accepteren / Alles weigeren / Opties beheren
-
-## النشر والتحقق
-Privacy & messaging > European regulations > Create message > Select sites. اختر الموقع واللغات وخيار الرفض. راجع النصوص والروابط والشركاء ثم Publish. لا تغيّر cmpReady إلى true حتى تظهر الرسالة وتنجح إشارات القبول والرفض والسحب. اترك adsEnabled=false إلى أن تكتمل مراجعة المحتوى وأرقام الوحدات. الاختبار: ?fc=alwaysshow&fctype=gdpr في نافذة خاصة.
-مرجع Google: https://support.google.com/adsense/answer/10960768?hl=en
-
-حالة الدخول في جلسة 1 أكتوبر: تعذر تأكيد مفتاح المرور؛ لم يتم دخول AdSense أو تغيير حسابه أو نشر رسالته.
+هذه مراجعة إعدادات وتنفيذ تقني، وليست شهادة قانونية بالامتثال الكامل. يلزم التحقق من المعالجة الفعلية والمدد ونقل البيانات وموردي الأدوات قبل تشغيل خدمات إضافية.
