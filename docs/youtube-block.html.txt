@@ -1,0 +1,13 @@
+<!-- انسخ إلى مقال يعمل بـ guide.js بعد استبدال المعرف والعنوان بفيديو مطابق ومتحقق منه. -->
+<link rel="stylesheet" href="../assets/tools.css?v=1">
+<section aria-label="فيديو الشرح / Uitlegvideo">
+  <h2><span data-ar="شاهد الشرح" data-nl="Bekijk de uitleg">شاهد الشرح</span></h2>
+  <!-- استبدل YOUR_VIDEO_ID بمعرف فيديو YouTube ذي 11 حرفاً. -->
+  <div class="video-slot" data-video-id="YOUR_VIDEO_ID" data-video-title="عنوان الفيديو / Videotitel">
+    <div class="video-placeholder">
+      <p><span data-ar="تشغيل الفيديو يحمّل محتوى خارجياً من يوتيوب. راجع سياسة الخصوصية." data-nl="Afspelen laadt externe inhoud van YouTube. Lees het privacybeleid.">تشغيل الفيديو يحمّل محتوى خارجياً من يوتيوب. راجع سياسة الخصوصية.</span></p>
+      <button type="button" class="tool-button" data-play-video><span data-ar="تحميل وتشغيل الفيديو" data-nl="Video laden en afspelen">تحميل وتشغيل الفيديو</span></button>
+    </div>
+  </div>
+</section>
+<script src="../assets/video-embed.js?v=1" defer></script>

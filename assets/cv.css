@@ -4,3 +4,8 @@
 input::placeholder,textarea::placeholder{color:#757d87;opacity:1;font-weight:400}
 
 .restore-draft{margin:0 0 1rem;font-weight:500}
+
+
+/* الرجوع للخطوات السابقة باللمس ولوحة المفاتيح، دون تعبئة بيانات تلقائية. */
+button.step{background:transparent;color:var(--muted);border-radius:10px;padding:0;min-height:64px;font-weight:400}.step.completed .step-number{background:#e2f2ec;color:#106951}.step.completed{color:#106951}.actions{padding-block:.4rem}.suggestions{scrollbar-gutter:stable}.form-card{scroll-margin-block-start:1rem}.photo-section input{font-size:16px}
+@media(max-width:600px){.actions{gap:.5rem}.actions button{min-height:52px}.draft-footer{align-items:flex-start;flex-wrap:wrap}.draft-footer p{flex:1;min-width:160px}.step-list{margin-block:1.1rem}.form-card{padding:16px}.question{margin-block:1rem .4rem}}
