@@ -46,7 +46,7 @@
       placeholders: { name: 'Jan de Vries', city: 'Rotterdam', phone: '06 00000000', email: 'naam@example.com', role: 'Bijvoorbeeld: elektricien', experience: 'Bijvoorbeeld: een jaar in een winkel gewerkt, klanten geholpen en producten aangevuld.', education: 'Bijvoorbeeld: cursus Nederlands — 2025', languages: 'Bijvoorbeeld: Arabisch — moedertaal, Nederlands — A2' }
     }
   };
-  let lang = 'ar'; try { lang = localStorage.getItem('mbo_site_lang') === 'nl' ? 'nl' : 'ar'; } catch {}
+  let lang = document.documentElement.dataset.fixedLanguage || (document.documentElement.lang === 'nl' ? 'nl' : 'ar');
   function sanitize(draft) {
     const d = { ...draft };
     for (const k of ['name', 'nameLatin', 'city', 'phone', 'email', 'role', 'experience', 'education', 'languages']) d[k] = typeof d[k] === 'string' ? d[k] : '';
@@ -109,7 +109,7 @@
   }
   function shell() {
     document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    for (const id of ['back', 'language', 'title', 'intro', 'privacy', 'privacyLink']) document.getElementById(id).textContent = text()[id];
+    for (const id of ['back', 'title', 'intro', 'privacy', 'privacyLink']) document.getElementById(id).textContent = text()[id];
     document.title = text().title; render();
   }
   function field(k, type = 'text', multiline = false) {
@@ -261,7 +261,7 @@
     finally { URL.revokeObjectURL(url); }
   }
   document.addEventListener('click', e => fields.forEach(k => { const el = document.getElementById('field-' + k); if (el && !el.closest('.field-group').contains(e.target)) hideSuggestions(k); }));
-  document.getElementById('language').addEventListener('click', () => { lang = lang === 'ar' ? 'nl' : 'ar'; try { localStorage.setItem('mbo_site_lang', lang); } catch {} shell(); });
+  document.getElementById('language')?.addEventListener('click', () => { lang = lang === 'ar' ? 'nl' : 'ar'; try { localStorage.setItem('mbo_site_lang', lang); } catch {} shell(); });
   shell();
 })();
 

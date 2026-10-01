@@ -1271,7 +1271,7 @@ const safeStore = {
   set(k,v){ try { localStorage.setItem(k,v); } catch(e){} },
 };
 const state = {
-  lang: (safeStore.get("mbo_site_lang") || "ar"),
+  lang: (document.documentElement.dataset.fixedLanguage || safeStore.get("mbo_site_lang") || "ar"),
   page: "overview",
 };
 
@@ -5258,6 +5258,8 @@ function wireSearch() {
    LANGUAGE SWITCHER
 ═══════════════════════════════════════════════════════════ */
 function setLang(code) {
+  const fixed=document.documentElement.dataset.fixedLanguage;
+  if(fixed && code!==fixed){window.location.href=code==="nl"?"./nl/index.html":"./index.html";return;}
   if (!I18N[code]) return;
   state.lang = code;
   safeStore.set("mbo_site_lang", code);
