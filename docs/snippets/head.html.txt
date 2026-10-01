@@ -1,0 +1,12 @@
+<!-- قبل AdSense وأي config/event. السياسة هنا denied عالمياً، بما يشمل EEA. -->
+<script>
+window.dataLayer=window.dataLayer||[];
+window.gtag=function(){window.dataLayer.push(arguments)};
+window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+</script>
+<meta name="google-adsense-account" content="ca-pub-9944637611029429">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9944637611029429" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/assets/style.css?v=1">
+<script src="/assets/site-config.js?v=1" defer></script>
+<script src="/assets/consent.js?v=5" defer></script>
+<script src="/assets/ad-runtime.js?v=1" defer></script>

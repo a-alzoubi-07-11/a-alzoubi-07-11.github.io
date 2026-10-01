@@ -1,14 +1,18 @@
-/* جداول Belastingdienst لعام 2026؛ نموذج سنوي مبسّط لموظف دون سن AOW طوال العام. */
-(function(root){'use strict';
- function annual(gross,credits=true){
-  if(!Number.isFinite(gross)||gross<0||gross>2000000)throw new RangeError('Invalid gross income');
-  const taxBefore=Math.min(gross,38883)*.3575+Math.max(0,Math.min(gross,78426)-38883)*.3756+Math.max(0,gross-78426)*.495;
-  const general=gross<=29736?3115:gross<=78426?Math.max(0,3115-.06398*(gross-29736)):0;
-  const employment=gross<=11965?gross*.08324:gross<=25845?996+.31009*(gross-11965):gross<=45592?5300+.01950*(gross-25845):gross<=132920?Math.max(0,5685-.06510*(gross-45592)):0;
-  const applied=credits?Math.min(taxBefore,general+employment):0;
-  const tax=Math.max(0,taxBefore-applied);
-  return {gross,taxBefore,credits:applied,tax,net:gross-tax};
- }
- root.GuideSalary2026={annual};
- if(typeof module==='object'&&module.exports)module.exports=root.GuideSalary2026;
-})(typeof globalThis==='object'?globalThis:this);
+/* مصدر الأرقام الوحيد data/rates.json؛ فشل التحميل يوقف الحساب ولا يعيد أرقاماً قديمة. */
+(()=>{'use strict';let data=null;
+const ready=fetch('/data/rates.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Rates unavailable');return r.json();}).then(d=>{
+ if(d.schemaVersion!==1||d.salary?.status!=='verified'||new Date().toISOString().slice(0,10)>d.validUntil)throw Error('Unverified or expired rates');
+ const s=d.salary;if(!Array.isArray(s.taxRates)||s.taxRates.length!==3||!Array.isArray(s.thresholds)||s.thresholds.length!==2)throw Error('Invalid rates');data=d;return d;
+});
+function annual(gross,credits=true){
+ if(!data)throw Error('Rates not ready');if(!Number.isFinite(gross)||gross<0||gross>2000000)throw RangeError('Invalid gross');
+ const s=data.salary,[a,b]=s.thresholds,[r1,r2,r3]=s.taxRates;
+ const before=Math.min(gross,a)*r1+Math.max(0,Math.min(gross,b)-a)*r2+Math.max(0,gross-b)*r3;
+ const g=s.generalCredit,general=gross<=g.threshold?g.maximum:gross<=g.end?Math.max(0,g.maximum-g.reductionRate*(gross-g.threshold)):0;
+ const e=s.employmentCredit;let employment=0;
+ for(let i=0;i<4;i++)if(gross<=e.thresholds[i]){employment=Math.max(0,e.bases[i]+e.rates[i]*(gross-(i?e.thresholds[i-1]:0)));break;}
+ const applied=credits?Math.min(before,general+employment):0,tax=Math.max(0,before-applied);
+ return {gross,taxBefore:before,credits:applied,tax,net:gross-tax};
+}
+window.GuideSalary2026={annual,ready};
+})();

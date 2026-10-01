@@ -1,17 +1,51 @@
-/* Consent-based loading. Essential UI storage works without permission. */
-(()=>{"use strict";
-const KEY="mbo_consent_v3",POLICY=3;
-// AdSense ca-pub-9944637611029429 and GTM-NC8QB637 are paused until a certified CMP and tag audit are configured.
-const copy={ar:{title:"خيارات الخصوصية",intro:"نستخدم التخزين الضروري لحفظ تفضيل اللغة وإعدادات الخصوصية. التحليلات اختيارية، ويشمل ذلك إحصاء الزيارات. الإعلانات متوقفة حالياً.",analytics:"إحصاءات الزيارات وعداد الموقع",accept:"قبول الكل",reject:"رفض الاختياري",settings:"تخصيص",save:"حفظ اختياري",manage:"إعدادات الخصوصية",policy:"سياسة الخصوصية"},nl:{title:"Privacykeuzes",intro:"Noodzakelijke opslag onthoudt je taal en privacykeuzes. Statistieken, waaronder de bezoekenteller, laden alleen na je toestemming. Advertenties zijn nu uitgeschakeld.",analytics:"Bezoekersstatistieken en de teller op de site",accept:"Alles accepteren",reject:"Optioneel weigeren",settings:"Aanpassen",save:"Keuze opslaan",manage:"Privacyinstellingen",policy:"Privacybeleid"}};
-let state=null,loaded={analytics:false};
-function read(){try{const x=JSON.parse(localStorage.getItem(KEY)||"null");return x&&x.version===POLICY&&typeof x.analytics==="boolean"?x:null}catch{return null}}
-function script(src){const e=document.createElement("script");e.async=true;e.src=src;document.head.appendChild(e)}
-function activate(){if(!state)return;if(state.analytics&&!loaded.analytics){loaded.analytics=true;window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag("js",new Date());window.gtag("config","G-13HKYB9R0F",{anonymize_ip:true});script("https://www.googletagmanager.com/gtag/js?id=G-13HKYB9R0F")}
-window.dispatchEvent(new CustomEvent("mbo:consentchange",{detail:{analytics:state.analytics}}))}
-function lang(){return localStorage.getItem("mbo_site_lang")==="nl"?"nl":"ar"}
-function panel(custom=false){document.getElementById("mbo-consent")?.remove();const t=copy[lang()],el=document.createElement("section");el.id="mbo-consent";el.className="mbo-consent";el.setAttribute("role","dialog");el.setAttribute("aria-label",t.title);el.innerHTML=`<h2>${t.title}</h2><p>${t.intro} <a href="${location.pathname.includes('/articles/')?'../':'./'}privacy.html">${t.policy}</a></p><div class="choices" ${custom?'':'hidden'}>${["analytics"].map(k=>`<label><input type="checkbox" data-kind="${k}" ${state?.[k]?'checked':''}>${t[k]}</label>`).join("")}</div><div class="actions"><button type="button" data-choice="reject">${t.reject}</button><button type="button" data-choice="accept" class="primary">${t.accept}</button><button type="button" data-choice="custom">${custom?t.save:t.settings}</button></div>`;document.body.appendChild(el);el.addEventListener("click",e=>{const choice=e.target.closest("[data-choice]")?.dataset.choice;if(!choice)return;if(choice==="custom"&&!custom){panel(true);return}const value=choice==="accept"?{analytics:true}:choice==="reject"?{analytics:false}:Object.fromEntries([...el.querySelectorAll("[data-kind]")].map(x=>[x.dataset.kind,x.checked]));const reduced=state&&Object.keys(value).some(k=>state[k]&&!value[k]);state={version:POLICY,...value,updatedAt:new Date().toISOString()};try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}el.remove();if(reduced){location.reload();return}activate()})}
-function footer(){let target=document.querySelector("body>footer,footer.footer")||document.querySelector("main.wrap")||document.body;const wrap=document.createElement("div");wrap.className="consent-footer";const button=document.createElement("button");button.type="button";button.className="consent-manage";button.textContent=copy[lang()].manage;button.addEventListener("click",()=>panel(true));wrap.appendChild(button);target.appendChild(wrap);new MutationObserver(()=>{button.textContent=copy[lang()].manage}).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]})}
-state=read();Object.defineProperty(window,"MboConsent",{value:Object.freeze({allowed:kind=>!!state?.[kind],open:()=>panel(true)}),configurable:false});
-function init(){footer();if(state)activate();else panel();if("serviceWorker" in navigator){navigator.serviceWorker.addEventListener("controllerchange",()=>{if(!sessionStorage.getItem("mbo_sw_reloaded_v19")){sessionStorage.setItem("mbo_sw_reloaded_v19","1");location.reload()}})}}
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
+/* الشريط المحلي يدير الإحصاءات فقط، ولا يصنع موافقة TCF للإعلانات. */
+(()=>{'use strict';
+const KEY='guide-consent-v4',cfg=window.GuideConfig||{},lang=()=>document.documentElement.lang==='nl'?'nl':'ar';
+const texts={ar:{title:'إعدادات الكوكيز',intro:'التخزين الضروري يدعم الأدوات. إحصاءات الزيارات اختيارية. موافقة الإعلانات تُدار عبر رسالة Google المعتمدة عند تفعيلها.',analytics:'إحصاءات الزيارات وعداد الموقع',accept:'قبول الكل',reject:'رفض الكل',manage:'إدارة الخيارات',save:'حفظ الاختيار',privacy:'الخصوصية',storage:'تعذّر حفظ الاختيار؛ يسري أثناء فتح الصفحة.'},nl:{title:'Cookie-instellingen',intro:'Noodzakelijke opslag ondersteunt de tools. Bezoekersstatistieken zijn optioneel. Advertentietoestemming loopt via de gecertificeerde Google-melding zodra deze is ingesteld.',analytics:'Bezoekersstatistieken en bezoekenteller',accept:'Alles accepteren',reject:'Alles weigeren',manage:'Opties beheren',save:'Keuze opslaan',privacy:'Privacy',storage:'Opslaan lukt niet; de keuze geldt voor deze pagina.'}};
+let local=null,analytics=false,ads=false,gaLoaded=false,cmpSeen=false;
+try{const x=JSON.parse(localStorage.getItem(KEY)||'null');if(x?.version===4&&typeof x.analytics==='boolean')local=x;}catch{}
+const emit=()=>window.dispatchEvent(new CustomEvent('mbo:consentchange',{detail:{analytics,ads}}));
+function mode(values){window.gtag?.('consent','update',values);}
+function activateAnalytics(){
+ if(!analytics||gaLoaded||!/^G-[A-Z0-9]{6,20}$/.test(cfg.measurementId||'')||cfg.measurementId.includes('YOUR'))return;
+ gaLoaded=true;window.gtag('js',new Date());window.gtag('config',cfg.measurementId,{send_page_view:true});
+ const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+cfg.measurementId;document.head.append(script);
+}
+function setLocal(value){analytics=value;ads=false;mode({analytics_storage:value?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});activateAnalytics();emit();}
+function fallback(expanded=false){
+ document.getElementById('mbo-consent')?.remove();const t=texts[lang()],box=document.createElement('section');box.id='mbo-consent';box.className='mbo-consent';box.setAttribute('role','dialog');box.setAttribute('aria-label',t.title);
+ const privacy=location.pathname.startsWith('/nl/')?'/nl/privacy.html':'/privacy.html';
+ box.innerHTML=`<h2>${t.title}</h2><p>${t.intro} <a href="${privacy}">${t.privacy}</a></p><div class="choices" ${expanded?'':'hidden'}><label><input id="consent-analytics" type="checkbox" ${local?.analytics?'checked':''}>${t.analytics}</label></div><div class="actions"><button type="button" data-choice="accept">${t.accept}</button><button type="button" data-choice="reject">${t.reject}</button><button type="button" data-choice="manage">${expanded?t.save:t.manage}</button></div><p id="consent-storage" role="status"></p>`;
+ document.body.append(box);
+ box.addEventListener('click',e=>{const choice=e.target.closest('[data-choice]')?.dataset.choice;if(!choice)return;if(choice==='manage'&&!expanded){fallback(true);return;}
+ const value=choice==='accept'?true:choice==='reject'?false:box.querySelector('input').checked;
+ local={version:4,analytics:value,updatedAt:new Date().toISOString()};let saved=true;
+ try{localStorage.setItem(KEY,JSON.stringify(local));}catch{saved=false;}
+ const wasLoaded=gaLoaded;setLocal(value);if(saved)box.remove();else box.querySelector('#consent-storage').textContent=t.storage;
+ if(wasLoaded&&!value&&saved)location.reload();
+ });
+}
+function open(){
+ if(cfg.cmpReady&&typeof window.googlefc?.showRevocationMessage==='function'){
+  analytics=false;ads=false;mode({analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});emit();
+  window.googlefc.callbackQueue.push({CONSENT_API_READY:()=>window.googlefc.showRevocationMessage()});
+ }else fallback(true);
+}
+Object.defineProperty(window,'MboConsent',{value:Object.freeze({allowed:kind=>kind==='analytics'?analytics:kind==='ads'?ads:false,open}),configurable:false});
+function cmpUpdate(){
+ const fc=window.googlefc;if(!cfg.cmpReady||typeof fc?.getGoogleConsentModeValues!=='function')return;
+ const status=fc.getGoogleConsentModeValues();if(!status)return;cmpSeen=true;document.getElementById('mbo-consent')?.remove();
+ // لا نعتبر UNKNOWN أو NOT_CONFIGURED موافقة.
+ const grant=v=>v===1;
+ const values={ad_storage:grant(status.adStoragePurposeConsentStatus)?'granted':'denied',ad_user_data:grant(status.adUserDataPurposeConsentStatus)?'granted':'denied',ad_personalization:grant(status.adPersonalizationPurposeConsentStatus)?'granted':'denied',analytics_storage:grant(status.analyticsStoragePurposeConsentStatus)?'granted':'denied'};
+ mode(values);analytics=values.analytics_storage==='granted';ads=values.ad_storage==='granted'&&values.ad_user_data==='granted'&&typeof window.__tcfapi==='function';activateAnalytics();emit();
+}
+window.googlefc=window.googlefc||{};window.googlefc.callbackQueue=window.googlefc.callbackQueue||[];
+window.googlefc.callbackQueue.push({CONSENT_MODE_DATA_READY:cmpUpdate});
+function init(){
+ document.querySelectorAll('[data-cookie-settings]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open();}));
+ if(!cfg.cmpReady){if(local)setLocal(local.analytics);else fallback();}
+ else setTimeout(()=>{if(!cmpSeen)fallback();},4000);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();

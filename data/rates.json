@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "year": 2026,
+  "verifiedAt": "2026-10-01",
+  "validUntil": "2026-12-31",
+  "salary": {
+    "status": "verified",
+    "scope": "Resident employee under AOW age for the whole year, one employment income, no pension deduction or other box income",
+    "thresholds": [38883, 78426],
+    "taxRates": [0.3575, 0.3756, 0.495],
+    "generalCredit": {"maximum": 3115, "threshold": 29736, "end": 78426, "reductionRate": 0.06398},
+    "employmentCredit": {"thresholds": [11965, 25845, 45592, 132920], "bases": [0, 996, 5300, 5685], "rates": [0.08324, 0.31009, 0.0195, -0.0651]},
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1",
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene_heffingskorting/tabel-algemene-heffingskorting-2026",
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/arbeidskorting/tabel-arbeidskorting-2026"
+    ]
+  },
+  "zorgtoeslag": {"status": "needs_verification", "parameters": null, "source": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/brochures_en_publicaties/berekening-zorgtoeslag"},
+  "huurtoeslag": {"status": "needs_verification", "parameters": null, "source": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/brochures_en_publicaties/berekening-huurtoeslag"},
+  "overdrachtsbelasting": {"status": "needs_verification", "parameters": null, "source": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/overdrachtsbelasting/tarieven_overdrachtsbelasting/"},
+  "naturalisation": {"status": "needs_verification", "parameters": null, "source": "https://ind.nl/nl/leges-kosten-van-een-aanvraag"}
+}

@@ -1,0 +1,10 @@
+<!-- لا تضفه إلى مقال قصير. بعد المراجعة ضع data-ad-reviewed="true" على html. -->
+<aside class="ad-slot" aria-label="إعلان" hidden>
+  <span class="ad-label">إعلان</span>
+  <div class="ad-space">
+    <ins class="adsbygoogle" data-ad-client="ca-pub-9944637611029429"
+      data-ad-slot="YOUR_SLOT_ID_1" data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+</aside>
+<!-- ad-runtime.js ينفذ push({}) مرة واحدة بعد CMP ومعرف وحدة حقيقي. -->

@@ -2,6 +2,7 @@
  const $=id=>document.getElementById(id),nl=()=>document.documentElement.lang==='nl';
  const text=(ar,nlText)=>nl()?nlText:ar;
  const euro=value=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(value);
+ let ratesReady=false;const salaryButton=$('salary-form').querySelector('button[type=submit]');if(salaryButton)salaryButton.disabled=true;GuideSalary2026.ready.then(()=>{ratesReady=true;if(salaryButton)salaryButton.disabled=false;}).catch(()=>{$('salary-out').textContent=text('تعذر تحميل أرقام موثقة. الحساب متوقف.','Geverifieerde tarieven niet beschikbaar. Berekening uitgeschakeld.');});
  let salaryResult=null,budgetResult=null,storageFailed=false;
  function line(parent,label,value,big=false){const p=document.createElement('p');p.append(document.createTextNode(label+' '));const b=document.createElement(big?'strong':'bdi');b.textContent=euro(value);p.append(b);parent.append(p);}
  function showSalary(){const out=$('salary-out');out.replaceChildren();if(!salaryResult)return;
@@ -11,7 +12,7 @@
   line(out,text('الضريبة والاشتراكات الوطنية السنوية بعد الخصمين:','Belasting en volksverzekeringen per jaar na kortingen:'),r.tax);
   line(out,text('الصافي السنوي المقدّر:','Geschat netto per jaar:'),r.net);
  }
- $('salary-form').addEventListener('submit',e=>{e.preventDefault();if(!e.currentTarget.reportValidity())return;
+ $('salary-form').addEventListener('submit',e=>{e.preventDefault();if(!ratesReady||!e.currentTarget.reportValidity())return;
   // منع عرض جداول منتهية بوصفها حساباً للسنة الحالية.
   if(new Date().getFullYear()>2026){salaryResult=null;showSalary();$('salary-out').textContent=text('انتهت سنة هذا النموذج. يحتاج تحديث الجداول قبل استخدامه.','Dit model is verlopen. Werk de tabellen bij voordat je het gebruikt.');return;}
   const gross=Number($('salary-gross').value),holiday=Number($('salary-holiday').value||0);
