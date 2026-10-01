@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "path": "articles/family-reunification-mvv-ind.html",
+    "title_ar": "لمّ الشمل مع الشريك: خطوات MVV والإقامة العادية",
+    "title_nl": "Verblijf bij je partner: MVV en reguliere aanvraag",
+    "topic": "الإقامة",
+    "new": false,
+    "sources": [
+      "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner"
+    ]
+  },
+  {
+    "id": 2,
+    "path": "articles/housing-rent-allowance-2026.html",
+    "title_ar": "بدل الإيجار Huurtoeslag: الشروط وطريقة التحقق",
+    "title_nl": "Huurtoeslag: voorwaarden en voorbereiding",
+    "topic": "البدلات",
+    "new": false,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/huurtoeslag/voorwaarden/"
+    ]
+  },
+  {
+    "id": 3,
+    "path": "articles/asylum-family-reunification.html",
+    "title_ar": "لمّ شمل اللجوء: كيف تختار الإجراء الصحيح؟",
+    "title_nl": "Asielgezinshereniging: kies het juiste aanvraagpad",
+    "topic": "الإقامة",
+    "new": true,
+    "sources": [
+      "https://ind.nl/en/residence-permits/asylum/asylum-family-reunification"
+    ]
+  },
+  {
+    "id": 4,
+    "path": "articles/eu-permanent-residence-netherlands.html",
+    "title_ar": "الإقامة الدائمة ووضع المقيم طويل الأمد في الاتحاد الأوروبي",
+    "title_nl": "Permanent verblijf en langdurig ingezetene EU",
+    "topic": "الإقامة",
+    "new": false,
+    "sources": [
+      "https://ind.nl/en/replace-extend-renew-and-change/permanent-residency/permanent-residence-permit",
+      "https://ind.nl/en/residence-permits/long-term-eu-residency/apply-for-a-residence-permit-for-long-term-eu-residents",
+      "https://ind.nl/en/residence-permits/asylum/permanent-asylum-residency"
+    ]
+  },
+  {
+    "id": 5,
+    "path": "articles/dutch-naturalisation-guide.html",
+    "title_ar": "التجنّس في هولندا: الشروط وخطوات الطلب",
+    "title_nl": "Naturalisatie: bereid je aanvraag bij de gemeente voor",
+    "topic": "الإقامة",
+    "new": true,
+    "sources": [
+      "https://ind.nl/en/dutch-citizenship/becoming-a-dutch-national-through-naturalisation"
+    ]
+  },
+  {
+    "id": 6,
+    "path": "articles/bsn-municipality-registration.html",
+    "title_ar": "التسجيل في البلدية والحصول على BSN: دليل البداية",
+    "title_nl": "Inschrijving bij de gemeente en je BSN",
+    "topic": "البداية",
+    "new": true,
+    "sources": [
+      "https://www.government.nl/faq/when-should-i-register-with-the-personal-records-database-as-a-resident"
+    ]
+  },
+  {
+    "id": 7,
+    "path": "articles/digid-registration-guide.html",
+    "title_ar": "إنشاء DigiD وتفعيله: خطوات واضحة وحلول الأخطاء",
+    "title_nl": "DigiD aanvragen en activeren zonder verwarring",
+    "topic": "البداية",
+    "new": false,
+    "sources": [
+      "https://www.digid.nl/aanvragen-en-activeren/digid-aanvragen"
+    ]
+  },
+  {
+    "id": 8,
+    "path": "articles/zorgtoeslag-guide.html",
+    "title_ar": "Zorgtoeslag: بدل التأمين الصحي وكيف تتحقق من استحقاقك",
+    "title_nl": "Zorgtoeslag: controleer je recht en vraag aan",
+    "topic": "البدلات",
+    "new": true,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/zorgtoeslag/voorwaarden/"
+    ]
+  },
+  {
+    "id": 9,
+    "path": "articles/toeslagen-income-update.html",
+    "title_ar": "تغيّر راتبك؟ كيف تحدّث الدخل في Mijn Toeslagen",
+    "title_nl": "Je inkomen wijzigt: werk Mijn Toeslagen bij",
+    "topic": "البدلات",
+    "new": true,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/mijn-inkomen-verandert-moet-ik-dat-doorgeven",
+      "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/wat-is-mijn-toetsingsinkomen"
+    ]
+  },
+  {
+    "id": 10,
+    "path": "articles/toeslagpartner-guide.html",
+    "title_ar": "من هو Toeslagpartner؟ وكيف يؤثر في البدلات؟",
+    "title_nl": "Toeslagpartner: controleer wie meetelt",
+    "topic": "البدلات",
+    "new": true,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/toeslagpartner"
+    ]
+  },
+  {
+    "id": 11,
+    "path": "articles/health-insurance-newcomers.html",
+    "title_ar": "التأمين الصحي عند الوصول إلى هولندا: ماذا ترتّب أولاً؟",
+    "title_nl": "Zorgverzekering bij aankomst in Nederland",
+    "topic": "البداية",
+    "new": true,
+    "sources": [
+      "https://www.government.nl/faq/health-insurance/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands"
+    ]
+  },
+  {
+    "id": 12,
+    "path": "articles/huisarts-registration.html",
+    "title_ar": "التسجيل لدى طبيب الأسرة Huisarts: خطوات عملية",
+    "title_nl": "Een huisarts zoeken en je inschrijven",
+    "topic": "البداية",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/eerstelijnszorg/ben-ik-vrij-om-zelf-een-huisarts-te-kiezen-en-hoe-verander-ik-van-huisarts"
+    ]
+  },
+  {
+    "id": 13,
+    "path": "articles/change-address-netherlands.html",
+    "title_ar": "تغيير العنوان في هولندا: من تخبر بعد الانتقال؟",
+    "title_nl": "Verhuizen: je adreswijziging goed regelen",
+    "topic": "البداية",
+    "new": true,
+    "sources": [
+      "https://www.government.nl/faq/how-do-i-inform-the-municipality-of-a-change-of-address"
+    ]
+  },
+  {
+    "id": 14,
+    "path": "articles/annual-tax-return-2026.html",
+    "title_ar": "الإقرار الضريبي: الوثائق وخطوات المراجعة قبل الإرسال",
+    "title_nl": "Belastingaangifte: documenten, controle en verzending",
+    "topic": "البدلات",
+    "new": false,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/moet_ik_aangifte_doen"
+    ]
+  },
+  {
+    "id": 15,
+    "path": "articles/dutch-payslip-explained.html",
+    "title_ar": "قراءة قسيمة الراتب: Bruto وNetto والاقتطاعات",
+    "title_nl": "Je loonstrook lezen: bruto, netto en inhoudingen",
+    "topic": "العمل",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wat-staat-er-op-mijn-loonstrook"
+    ]
+  },
+  {
+    "id": 16,
+    "path": "articles/employment-contracts-labor-law-2026.html",
+    "title_ar": "عقد العمل في هولندا: ما الذي تقرؤه قبل التوقيع؟",
+    "title_nl": "Je arbeidscontract begrijpen vóór je tekent",
+    "topic": "العمل",
+    "new": false,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wat-staat-er-in-een-arbeidsovereenkomst"
+    ]
+  },
+  {
+    "id": 17,
+    "path": "articles/minimum-wage-netherlands.html",
+    "title_ar": "الحد الأدنى للأجر: كيف تتحقق من الأجر الساعي الحالي؟",
+    "title_nl": "Minimumuurloon controleren: bedragen vanaf juli 2026",
+    "topic": "العمل",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
+    ]
+  },
+  {
+    "id": 18,
+    "path": "articles/zero-hours-contract.html",
+    "title_ar": "عقد صفر ساعات والعمل عند الطلب: أسئلة قبل قبول الوظيفة",
+    "title_nl": "Nuluren- en oproepcontracten: praktische controle",
+    "topic": "العمل",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-contracten-zijn-er-voor-oproepkrachten"
+    ]
+  },
+  {
+    "id": 19,
+    "path": "articles/temporary-agency-work-rights.html",
+    "title_ar": "العمل عبر Uitzendbureau: العقد والمرض ومن يدفع الأجر",
+    "title_nl": "Uitzendwerk: werkgever, contract en ziekte",
+    "topic": "العمل",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
+    ]
+  },
+  {
+    "id": 20,
+    "path": "articles/diploma-evaluation-sbb.html",
+    "title_ar": "معادلة الشهادات: متى تحتاج IDW أو Nuffic أو SBB؟",
+    "title_nl": "Buitenlands diploma: IDW, Nuffic of SBB?",
+    "topic": "التعليم",
+    "new": false,
+    "sources": [
+      "https://www.idw.nl/studeren/"
+    ]
+  },
+  {
+    "id": 21,
+    "path": "articles/mbo-dutch-language-options.html",
+    "title_ar": "هل تستطيع بدء MBO قبل إتقان الهولندية؟",
+    "title_nl": "Mbo starten terwijl je Nederlands nog groeit",
+    "topic": "التعليم",
+    "new": true,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/aanmelden-mbo"
+    ]
+  },
+  {
+    "id": 22,
+    "path": "articles/nt2-b1-exam-guide.html",
+    "title_ar": "NT2: الفرق بين Programma I وII وكيف تستعد",
+    "title_nl": "Staatsexamen Nt2: Programma I of II kiezen",
+    "topic": "التعليم",
+    "new": false,
+    "sources": [
+      "https://www.staatsexamensnt2.nl/over-het-staatsexamen-nt2/wat-is-het-staatsexamen-nt2"
+    ]
+  },
+  {
+    "id": 23,
+    "path": "articles/bol-bbl-comparison.html",
+    "title_ar": "BOL أم BBL؟ مقارنة الدراسة والتدريب والعمل",
+    "title_nl": "Bol of bbl: school, praktijk en planning vergelijken",
+    "topic": "التعليم",
+    "new": true,
+    "sources": [
+      "https://www.kiesmbo.nl/mbo-tour",
+      "https://duo.nl/particulier/studiefinanciering/voorwaarden.jsp"
+    ]
+  },
+  {
+    "id": 24,
+    "path": "articles/mbo-conditions.html",
+    "title_ar": "شروط MBO والتسجيل: ماذا تحتاج قبل طلب القبول؟",
+    "title_nl": "Toelating en aanmelding bij het mbo",
+    "topic": "التعليم",
+    "new": false,
+    "sources": [
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/wat-zijn-de-toelatingseisen-voor-het-mbo",
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/aanmelden-mbo"
+    ]
+  },
+  {
+    "id": 25,
+    "path": "articles/mbo-hbo-wo-comparison.html",
+    "title_ar": "MBO وHBO وWO: أي مسار يناسب هدفك؟",
+    "title_nl": "Mbo, hbo en wo: een route kiezen",
+    "topic": "التعليم",
+    "new": true,
+    "sources": [
+      "https://www.nuffic.nl/onderwijssystemen/nederland/hoger-onderwijs",
+      "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/uit-welke-mbo-opleidingen-kan-ik-kiezen"
+    ]
+  },
+  {
+    "id": 26,
+    "path": "articles/student-finance.html",
+    "title_ar": "تمويل الدراسة DUO: كيف تتحقق من شروطك؟",
+    "title_nl": "DUO-studiefinanciering: controleer je voorwaarden",
+    "topic": "التعليم",
+    "new": false,
+    "sources": [
+      "https://duo.nl/particulier/studiefinanciering/voorwaarden.jsp"
+    ]
+  },
+  {
+    "id": 27,
+    "path": "articles/kinderbijslag-guide.html",
+    "title_ar": "Kinderbijslag: مخصصات الأطفال وطريقة الطلب عبر SVB",
+    "title_nl": "Kinderbijslag aanvragen bij de SVB",
+    "topic": "الأسرة",
+    "new": true,
+    "sources": [
+      "https://www.svb.nl/nl/kinderbijslag/hoe-vraagt-u-kinderbijslag-aan/kinderbijslag-aanvragen"
+    ]
+  },
+  {
+    "id": 28,
+    "path": "articles/kindgebonden-budget-guide.html",
+    "title_ar": "Kindgebonden budget: بدل الأطفال المرتبط بالدخل",
+    "title_nl": "Kindgebonden budget: kindregeling op basis van inkomen",
+    "topic": "الأسرة",
+    "new": true,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/kindgebonden-budget/voorwaarden/"
+    ]
+  },
+  {
+    "id": 29,
+    "path": "articles/childcare-allowance-kinderopvangtoeslag.html",
+    "title_ar": "Kinderopvangtoeslag: بدل الحضانة وخطوات الطلب",
+    "title_nl": "Kinderopvangtoeslag aanvragen en wijzigingen volgen",
+    "topic": "الأسرة",
+    "new": false,
+    "sources": [
+      "https://www.belastingdienst.nl/wps/wcm/connect/nl/kinderopvangtoeslag/content/hoe-moet-ik-kinderopvangtoeslag-aanvragen"
+    ]
+  },
+  {
+    "id": 30,
+    "path": "articles/dutch-school-system-basisschool.html",
+    "title_ar": "تسجيل الطفل في المدرسة الابتدائية: خطوات وأسئلة للمدرسة",
+    "title_nl": "Je kind aanmelden bij een basisschool",
+    "topic": "الأسرة",
+    "new": false,
+    "sources": [
+      "https://www.government.nl/themes/education/primary-education/registering-a-child-with-a-primary-school"
+    ]
+  }
+]
