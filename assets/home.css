@@ -154,3 +154,54 @@
 html[lang="nl"] .hm .hm-hero h1{max-width:24ch}
 @media(min-width:1000px){.hm .hm-rail-3{grid-template-columns:repeat(3,1fr)}}
 html[lang="nl"] .hm > footer.wrap{width:min(1120px,100% - 32px);margin-inline:auto;border-top:1px solid var(--hm-rule);padding-top:24px}
+
+/* ---------- Oranje: Dutch orange touch + calm motion (2026-10-04) ---------- */
+.hm{--hm-oranje:#FF6B1A;--hm-oranje-soft:rgba(255,107,26,.16);--hm-beacon:#FF8A2B}
+.hm .hm-hero{position:relative;overflow:hidden;isolation:isolate}
+/* a low orange sun over the polder: drifts very slowly */
+.hm .hm-hero::before{content:"";position:absolute;z-index:-1;width:min(70vw,780px);aspect-ratio:1;border-radius:50%;
+  inset-inline-start:-18%;bottom:-62%;background:radial-gradient(circle,rgba(255,107,26,.30) 0%,rgba(255,107,26,.10) 38%,transparent 68%);
+  animation:hm-sun 22s ease-in-out infinite alternate}
+/* thin horizon lines, like canals seen from above */
+.hm .hm-hero::after{content:"";position:absolute;z-index:-1;inset:auto 0 0 0;height:120px;opacity:.5;
+  background:repeating-linear-gradient(180deg,transparent 0 19px,rgba(255,255,255,.05) 19px 20px)}
+@keyframes hm-sun{from{transform:translate(0,0) scale(1)}to{transform:translate(6%,-8%) scale(1.08)}}
+
+/* hero title: one orange sheen on arrival, then a drawn horizon under it */
+.hm .hm-hero h1{position:relative;display:inline-block;padding-bottom:14px;
+  background:linear-gradient(100deg,#fff 0%,#fff 40%,#FFB37A 50%,#fff 60%,#fff 100%);background-size:250% 100%;background-position:100% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:hm-sheen 2.4s ease-out .5s 1 both}
+.hm .hm-hero h1::after{content:"";position:absolute;inset-inline-start:0;bottom:0;height:5px;width:96px;border-radius:3px;
+  background:linear-gradient(90deg,var(--hm-oranje),#FFA24D);transform-origin:var(--hm-start,right);animation:hm-draw .9s cubic-bezier(.2,.7,.2,1) .2s both}
+html[dir="ltr"] .hm{--hm-start:left}
+@keyframes hm-sheen{from{background-position:100% 0}to{background-position:0 0}}
+@keyframes hm-draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hm .hm-lede,.hm .hm-search{animation:hm-rise .8s ease-out both}
+.hm .hm-lede{animation-delay:.25s}.hm .hm-search{animation-delay:.4s}
+@keyframes hm-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* section headings: orange mark that draws when the section scrolls into view */
+.hm .hm-section h2,.hm .hm-about h2{position:relative;padding-inline-start:18px}
+.hm .hm-section h2::before,.hm .hm-about h2::before{content:"";position:absolute;inset-inline-start:0;top:.32em;bottom:.32em;width:6px;border-radius:3px;
+  background:linear-gradient(180deg,#FFA24D,var(--hm-oranje));transform:scaleY(0);transform-origin:bottom;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.hm .hm-in h2::before,.hm.no-io .hm-section h2::before,.hm.no-io .hm-about h2::before{transform:scaleY(1)}
+.hm .hm-panel h3{display:inline-block;background:linear-gradient(transparent 68%,var(--hm-oranje-soft) 68%)}
+
+/* small orange responses to the reader's actions */
+.hm .hm-tool svg{transition:color .25s ease}
+.hm .hm-tool:hover svg,.hm .hm-tool:focus-visible svg{color:var(--hm-oranje)}
+.hm .hm-tab[aria-selected="true"]{box-shadow:inset 0 -3px 0 var(--hm-oranje)}
+.hm .hm-switch button[aria-selected="true"]{box-shadow:0 1px 2px rgba(19,33,58,.12),inset 0 -2px 0 var(--hm-oranje)}
+.hm .hm-panel:not([hidden]){animation:hm-fade .35s ease-out}
+@keyframes hm-fade{from{opacity:0}to{opacity:1}}
+.hm .hm-search .search-input{border-inline-start-color:var(--hm-oranje)}
+.hm .hm-search .search-input:focus{box-shadow:0 0 0 3px rgba(255,107,26,.45)}
+.hm .tl-dot,.hm .tl-brand .tl-dot{background:var(--hm-oranje)}
+.hm :focus-visible{outline-color:var(--hm-beacon)}
+.hm .footer{border-top-color:var(--hm-oranje)}
+
+@media(prefers-reduced-motion:reduce){
+  .hm .hm-hero::before,.hm .hm-hero h1,.hm .hm-hero h1::after,.hm .hm-lede,.hm .hm-search,.hm .hm-panel:not([hidden]){animation:none!important}
+  .hm .hm-hero h1{color:#fff;background:none}
+  .hm .hm-section h2::before,.hm .hm-about h2::before{transform:none;transition:none}
+}

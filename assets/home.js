@@ -13,6 +13,9 @@ function tabs(list,onChange){
   const start=tabsEls.find(t=>t.getAttribute("aria-selected")==="true")||tabsEls[0];if(start)select(start);
 }
 document.querySelectorAll(".hm-tabs,.hm-switch").forEach(l=>tabs(l));
+/* Section headings draw their orange mark once, when the section comes into view. */
+if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("hm-in");io.unobserve(e.target)}}),{rootMargin:"0px 0px -15% 0px"});document.querySelectorAll(".hm-section,.hm-about").forEach(s=>io.observe(s))}else body.classList.add("no-io");
+
 
 /* Site search (Arabic page): app.js searches its study data; add the site's guides on top. */
 const box=document.getElementById("searchResults"),input=document.getElementById("searchInput");
