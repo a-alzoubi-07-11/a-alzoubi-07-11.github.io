@@ -2,7 +2,7 @@
    (phones and small tablets), plus a "back to top" button on long pages.
    Self-contained: injects its own small stylesheet and works with every page template. */
 (()=>{"use strict";
-const header=document.querySelector("header.topbar, header.site-header, body > header");
+const header=["header.topbar","header.site-header","header.top","header.site-head","body > nav","body > header"].map(s=>document.querySelector(s)).find(Boolean);
 const rtl=(document.documentElement.dir||getComputedStyle(document.documentElement).direction)==="rtl";
 const lang=(document.documentElement.lang||"ar").slice(0,2);
 const reduce=matchMedia("(prefers-reduced-motion: reduce)");
@@ -10,15 +10,15 @@ const small=matchMedia("(max-width: 820px)");
 
 const css=`
 .sc-sticky{position:sticky!important;top:0;z-index:300;transition:transform .28s ease, box-shadow .28s ease;will-change:transform}
-.sc-sticky.sc-scrolled{box-shadow:0 6px 18px rgba(19,33,58,.10)}
+.sc-sticky.sc-scrolled{box-shadow:none}
 .sc-sticky.sc-hidden{transform:translateY(-100%);box-shadow:none}
 .sc-top{position:fixed;z-index:310;inset-inline-start:16px;bottom:calc(24px + env(safe-area-inset-bottom,0px));
   width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;
-  background:#13213A;color:#fff;box-shadow:0 6px 18px rgba(19,33,58,.25);
+  background:rgba(29,29,31,.82);color:#fff;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 6px 20px rgba(0,0,0,.18);
   opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .25s ease, transform .25s ease}
 .sc-top.sc-show{opacity:1;transform:none;pointer-events:auto}
-.sc-top:hover{background:#1d3157}
-.sc-top:focus-visible{outline:3px solid #FF8A2B;outline-offset:3px}
+.sc-top:hover{background:#1d1d1f}
+.sc-top:focus-visible{outline:3px solid rgba(0,113,227,.55);outline-offset:3px}
 .sc-top svg{width:20px;height:20px}
 @media (max-width:820px){.sc-top{bottom:calc(88px + env(safe-area-inset-bottom,0px));width:44px;height:44px}}
 @media (prefers-reduced-motion: reduce){.sc-sticky,.sc-top{transition:none}}
@@ -43,6 +43,9 @@ if(header){
   header.addEventListener("focusin",()=>header.classList.remove("sc-hidden"));
   small.addEventListener?.("change",()=>header.classList.remove("sc-hidden"));
 }
+
+/* ---- mark the current topic in chip navigation ---- */
+document.querySelectorAll(".topic-nav a").forEach(a=>{try{if(new URL(a.href).pathname===location.pathname)a.setAttribute("aria-current","page")}catch(_){}});
 
 /* ---- back to top ---- */
 const btn=document.createElement("button");
