@@ -1,0 +1,71 @@
+name: Search index bot
+
+# Keeps the site search in step with the articles: whenever an article or category page
+# changes on main (or once a day, or on demand), rebuild assets/search-index.json and
+# commit it if anything changed. New articles are picked up without any manual step.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/**'
+      - 'nl/articles/**'
+      - 'categories/**'
+      - 'nl/categories/**'
+      - '.github/scripts/build_search_index.py'
+  schedule:
+    - cron: '20 5 * * *'   # daily safety net, 06:20/07:20 Amsterdam time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: search-index-bot
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Rebuild the search index
+        id: build
+        run: |
+          python .github/scripts/build_search_index.py | tee build.log
+          echo "## Search index bot" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat build.log >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- assets/search-index.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Commit the updated index
+        if: steps.build.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          added=$(grep -c '^  + ' build.log || true)
+          removed=$(grep -c '^  - ' build.log || true)
+          git add assets/search-index.json
+          git commit -m "Search index bot: update site search (+${added} / -${removed})"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep 5
+          done
+      - name: Ask GitHub Pages to publish the new index
+        if: steps.build.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null && echo "Pages build requested"

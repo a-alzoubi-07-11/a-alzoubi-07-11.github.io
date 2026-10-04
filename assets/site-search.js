@@ -5,7 +5,7 @@
    Exposes window.SiteSearch = {load, search, attach, suggest}. No dependencies. */
 (()=>{"use strict";
 if(window.SiteSearch)return;
-const INDEX_URL="/assets/search-index.json?v=1";
+const INDEX_URL="/assets/search-index.json";
 let DATA=null,LOADING=null;
 
 /* ---------- text normalisation ---------- */
@@ -63,7 +63,7 @@ function prepare(items){
 }
 function load(){
   if(DATA)return Promise.resolve(DATA);
-  if(!LOADING)LOADING=fetch(INDEX_URL).then(r=>{if(!r.ok)throw new Error("index "+r.status);return r.json()}).then(j=>(DATA=prepare(j.items||[])));
+  if(!LOADING)LOADING=fetch(INDEX_URL,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("index "+r.status);return r.json()}).then(j=>(DATA=prepare(j.items||[])));
   return LOADING;
 }
 

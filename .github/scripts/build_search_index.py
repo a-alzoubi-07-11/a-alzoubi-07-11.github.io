@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """Build assets/search-index.json for the site search.
 
-Run after adding or renaming articles:
-    python3 .github/scripts/build_search_index.py
+Run after adding or renaming articles (the "Search index bot" workflow does this
+automatically on every push that touches articles or categories):
+    python3 .github/scripts/build_search_index.py            # rebuild + report changes
+    python3 .github/scripts/build_search_index.py --check    # exit 1 if the index is stale
+
+New articles need no manual step: their topic is read from the category pages that
+link to them, and basic keywords come from the title, slug and Dutch terms. Hand-written
+aliases (ALIASES below) improve results further for colloquial searches.
 
 Each entry: u (url), l (ar|nl), y (guide|tool|topic), t (title), d (description),
 h (headings), c (topic label), k (aliases: colloquial Arabic, Dutch terms,
 transliterations and common misspellings that should find this page).
 """
 from __future__ import annotations
-import html, json, re
+import argparse, html, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -108,6 +114,20 @@ TOOLS = {
  ],
 }
 
+def topics_from_categories():
+    """slug -> topic key, read from categories/*.html (a new article only has to be linked there)."""
+    found = {}
+    for cat in sorted((ROOT / 'categories').glob('*.html')):
+        for slug in re.findall(r'href="/articles/([a-z0-9-]+)\.html"', cat.read_text(encoding='utf-8')):
+            found.setdefault(slug, cat.stem)
+    return found
+
+def auto_keywords(slug, title, desc):
+    """Fallback keywords for guides without hand-written aliases."""
+    words = set(slug.replace('-', ' ').split())
+    words |= set(re.findall(r'[A-Za-z][A-Za-z0-9]{2,}', title + ' ' + desc))
+    return ' '.join(sorted(w for w in words if not w.isdigit()))
+
 def text(s):
     s = re.sub(r'<(script|style)[^>]*>.*?</\1>', ' ', s, flags=re.S)
     s = re.sub(r'<[^>]+>', ' ', s)
@@ -124,17 +144,24 @@ def entry(path, lang, slug):
     heads = [text(h) for h in re.findall(r'<h2[^>]*>(.*?)</h2>', s, re.S)]
     SKIP = {'في هذا الدليل','In deze gids','الأسئلة الشائعة','Veelgestelde vragen','المصادر','Bronnen','المصادر الرسمية','Officiële bronnen','مسرد','Begrippen'}
     heads = [h for h in heads if h and len(h) < 90 and h not in SKIP][:14]
-    topic = TOPIC.get(slug)
+    topic = TOPIC.get(slug) or AUTO_TOPIC.get(slug)
+    desc = html.unescape(d.group(1)) if d else ''
     return {
         'u': ('/nl' if lang == 'nl' else '') + f'/articles/{slug}.html', 'l': lang, 'y': 'guide',
-        't': title, 'd': html.unescape(d.group(1)) if d else '', 'h': ' | '.join(heads),
-        'c': TOPIC_LABEL[lang].get(topic, ''), 'k': ALIASES.get(slug, '') + ' ' + TOPIC_ALIASES.get(topic, ''),
+        't': title, 'd': desc, 'h': ' | '.join(heads),
+        'c': TOPIC_LABEL[lang].get(topic or '', ''), 'k': (ALIASES.get(slug) or auto_keywords(slug, title, desc)) + ' ' + TOPIC_ALIASES.get(topic or '', ''),
     }
 
-def main():
-    out = []
+AUTO_TOPIC = {}
+
+def build():
+    global AUTO_TOPIC
+    AUTO_TOPIC = topics_from_categories()
+    out, problems = [], []
     for f in sorted((ROOT / 'articles').glob('*.html')):
-        out.append(entry(f, 'ar', f.stem))
+        e = entry(f, 'ar', f.stem); out.append(e)
+        if not e['t']: problems.append(f'{e["u"]}: no title found')
+        if not e['c']: problems.append(f'{e["u"]}: not linked from any category page (topic unknown)')
         nl = ROOT / 'nl' / 'articles' / f.name
         if nl.exists():
             out.append(entry(nl, 'nl', f.stem))
@@ -145,8 +172,31 @@ def main():
         for key, label in TOPIC_LABEL[lang].items():
             out.append({'u': ('/nl' if lang == 'nl' else '') + f'/categories/{key}.html', 'l': lang, 'y': 'topic', 't': label,
                         'd': 'كل الأدلة في هذا القسم' if lang == 'ar' else 'Alle gidsen in dit onderwerp', 'h': '', 'c': '', 'k': TOPIC_ALIASES[key]})
-    (ROOT / 'assets' / 'search-index.json').write_text(json.dumps({'v': 1, 'items': out}, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-    print(len(out), 'entries')
+    no_alias = sorted({e['u'] for e in out if e['y'] == 'guide' and e['l'] == 'ar' and e['u'].split('/')[-1][:-5] not in ALIASES})
+    return {'v': 1, 'items': out}, problems, no_alias
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--check', action='store_true', help='exit 1 if the committed index is out of date')
+    args = ap.parse_args()
+    path = ROOT / 'assets' / 'search-index.json'
+    data, problems, no_alias = build()
+    new = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
+    old = path.read_text(encoding='utf-8') if path.exists() else '{"items":[]}'
+    old_urls = {(e['u'], e['l']) for e in json.loads(old).get('items', [])}
+    new_urls = {(e['u'], e['l']) for e in data['items']}
+    added, removed = sorted(new_urls - old_urls), sorted(old_urls - new_urls)
+    changed = new != old
+    print(f"entries: {len(data['items'])} | added: {len(added)} | removed: {len(removed)} | changed: {changed}")
+    for u, l in added: print(f'  + [{l}] {u}')
+    for u, l in removed: print(f'  - [{l}] {u}')
+    for p in problems: print(f'  ! {p}')
+    if no_alias: print('  i guides using automatic keywords only (add ALIASES for better colloquial search): ' + ', '.join(no_alias))
+    if args.check:
+        sys.exit(1 if changed else 0)
+    if changed:
+        path.write_text(new, encoding='utf-8')
+        print('wrote', path.relative_to(ROOT))
 
 if __name__ == '__main__':
     main()
