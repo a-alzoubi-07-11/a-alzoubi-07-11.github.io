@@ -1,0 +1,41 @@
+name: IndexNow ping
+
+# When articles change on main, tell Bing and the other IndexNow engines right away.
+# (Google: sitemap + Search Console.) Manual run with "all" submits every page.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+  workflow_dispatch:
+    inputs:
+      all:
+        description: 'Submit every page'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Wait for GitHub Pages to publish
+        run: sleep 90
+      - name: Submit changed pages
+        run: |
+          if [ "${{ github.event.inputs.all }}" = "true" ]; then
+            python .github/scripts/indexnow_submit.py --all
+          else
+            python .github/scripts/indexnow_submit.py $(git diff --name-only HEAD~1 HEAD -- '*.html')
+          fi
