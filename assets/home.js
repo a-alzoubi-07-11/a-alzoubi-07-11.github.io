@@ -17,24 +17,9 @@ document.querySelectorAll(".hm-tabs,.hm-switch").forEach(l=>tabs(l));
 if("IntersectionObserver" in window){body.classList.add("js-reveal");const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("hm-in");io.unobserve(e.target)}}),{rootMargin:"0px 0px -15% 0px"});document.querySelectorAll(".hm-section,.hm-about").forEach(s=>io.observe(s))}else body.classList.add("no-io");
 
 
-/* Site search (Arabic page): app.js searches its study data; add the site's guides on top. */
-const box=document.getElementById("searchResults"),input=document.getElementById("searchInput");
-if(box&&input){
-  const norm=s=>(s||"").toLowerCase().normalize("NFKD").replace(/[̀-ًͯ-ٰٕـ]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/[^\p{L}\p{N}\s]/gu," ").replace(/\s+/g," ").trim();
-  const seen=new Set(),guides=[];
-  document.querySelectorAll(".hm-panel").forEach(panel=>{const topic=panel.querySelector("h3")?.textContent||"";panel.querySelectorAll(".hm-links a").forEach(a=>{if(seen.has(a.href))return;seen.add(a.href);const slug=a.getAttribute("href").split("/").pop().replace(".html","").replace(/-/g," ");guides.push({a,title:a.textContent,topic,hay:norm(a.textContent+" "+topic+" "+slug)})})});
-  const match=q=>{const nq=norm(q),words=nq.split(" ").filter(w=>w.length>1);if(!words.length)return[];
-    const scored=guides.map(g=>{const nt=norm(g.title),has=(h,w)=>w.length>2?h.includes(w):(" "+h).includes(" "+w);const th=words.filter(w=>has(nt,w)).length,ah=words.filter(w=>has(g.hay,w)).length;return{g,th,score:th*2+ah+(nt.includes(nq)?3:0),ok:ah>=Math.max(1,Math.ceil(words.length*0.6))}}).filter(x=>x.ok);
-    const best=Math.max(0,...scored.map(x=>x.th));
-    return scored.filter(x=>best===0||x.th>0).sort((a,b)=>b.score-a.score).slice(0,5).map(x=>x.g)};
-  const render=()=>{const q=input.value.trim();if(!q||box.hidden||box.querySelector(".hm-sr-group"))return;const found=match(q);if(!found.length)return;
-    box.querySelector(".search-empty")?.remove();
-    const grp=document.createElement("div");grp.className="hm-sr-group";
-    const head=document.createElement("div");head.className="search-cat";head.innerHTML='<span>أدلة الموقع</span><span class="search-cat-count">'+found.length+'</span>';grp.append(head);
-    found.forEach(g=>{const l=document.createElement("a");l.className="search-result hm-sr";l.href=g.a.getAttribute("href");l.innerHTML='<div class="search-texts"><div class="search-t"></div><div class="search-s"></div></div>';l.querySelector(".search-t").textContent=g.title;l.querySelector(".search-s").textContent=g.topic;grp.append(l)});
-    box.prepend(grp)};
-  new MutationObserver(render).observe(box,{childList:true,attributes:true,attributeFilter:["hidden"]});
-}
+/* Site search: forgiving search over all guides and tools (assets/site-search.js). */
+const ssInput=document.getElementById("siteSearchInput");
+if(ssInput&&window.SiteSearch)window.SiteSearch.attach(ssInput);
 
 /* Tool stage (Arabic page only: app.js renders the study tools into #mainContent). */
 const stage=document.getElementById("hm-stage"),main=document.getElementById("mainContent");

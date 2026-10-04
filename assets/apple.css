@@ -202,3 +202,4 @@ main.wrap>h1+p+p{font-size:13px;color:var(--ap-text-2)}
   .site-header .lang-button{order:2}
 }
 .breadcrumbs a,main.wrap>nav[aria-label="Breadcrumb"] a{text-decoration:none!important}
+@media(min-width:821px){.site-header .sc-search-btn{order:2}.site-header .lang-button{order:3}}

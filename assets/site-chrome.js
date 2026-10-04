@@ -22,7 +22,21 @@ const css=`
 .sc-top svg{width:20px;height:20px}
 @media (max-width:820px){.sc-top{bottom:calc(88px + env(safe-area-inset-bottom,0px));width:44px;height:44px}}
 @media (prefers-reduced-motion: reduce){.sc-sticky,.sc-top{transition:none}}
-@media print{.sc-top{display:none}}`;
+@media print{.sc-top{display:none}}
+.sc-search-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;min-height:34px!important;border:0;border-radius:50%;background:transparent;color:#1d1d1f;cursor:pointer;flex:none;padding:0!important;opacity:.85}
+.sc-search-btn:hover{background:rgba(0,0,0,.05);opacity:1}
+.sc-search-btn svg{width:18px;height:18px}
+.sc-ov{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.28);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;justify-content:center;align-items:flex-start;padding:max(10vh,24px) 16px 16px;opacity:0;transition:opacity .2s}
+.sc-ov.sc-open{opacity:1}
+.sc-panel{width:min(640px,100%);background:#fff;border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.25);padding:14px;font-family:var(--ap-font,system-ui)}
+.sc-row{display:flex;align-items:center;gap:8px}
+.sc-row .ss-wrap{flex:1}
+.sc-row input{width:100%;font:inherit;font-size:18px;border:0!important;background:#f5f5f7!important;border-radius:12px!important;padding:14px 44px 14px 14px!important;color:#1d1d1f;outline:0;box-shadow:none!important}
+[dir="rtl"] .sc-row input{padding:14px 14px 14px 44px!important}
+.sc-close{font:inherit;font-size:15px;border:0;background:none;color:#0066cc;cursor:pointer;padding:8px 6px;min-height:40px}
+.sc-panel .ss-list{position:static!important;box-shadow:none!important;padding:6px 0 0!important;max-height:60vh}
+@media(max-width:600px){.sc-ov{padding:10px}.sc-panel{border-radius:16px}}
+@media (prefers-reduced-motion: reduce){.sc-ov{transition:none}}`;
 const style=document.createElement("style");style.id="site-chrome-css";style.textContent=css;document.head.append(style);
 
 /* ---- header ---- */
@@ -43,6 +57,37 @@ if(header){
   header.addEventListener("focusin",()=>header.classList.remove("sc-hidden"));
   small.addEventListener?.("change",()=>header.classList.remove("sc-hidden"));
 }
+
+
+/* ---- site search: a magnifier in every header opens the forgiving search ---- */
+const L=lang==="nl"?{btn:"Zoeken",close:"Sluiten",label:"Zoek op de website"}:{btn:"بحث",close:"إغلاق",label:"ابحث في الموقع"};
+function loadSearch(){return window.SiteSearch?Promise.resolve():new Promise((ok,fail)=>{const s=document.createElement("script");s.src="/assets/site-search.js?v=1";s.onload=ok;s.onerror=fail;document.head.append(s)})}
+let ov=null,lastFocus=null;
+function openSearch(){
+  const inline=document.getElementById("siteSearchInput");
+  if(inline){scrollTo({top:0,behavior:reduce.matches?"auto":"smooth"});setTimeout(()=>inline.focus(),reduce.matches?0:300);return}
+  lastFocus=document.activeElement;
+  if(!ov){
+    ov=document.createElement("div");ov.className="sc-ov";ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");ov.setAttribute("aria-label",L.label);
+    ov.innerHTML='<div class="sc-panel"><div class="sc-row"><div class="ss-wrap"><input type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" aria-label="'+L.label+'"></div><button type="button" class="sc-close">'+L.close+'</button></div></div>';
+    document.body.append(ov);
+    ov.addEventListener("click",e=>{if(e.target===ov)closeSearch()});
+    ov.querySelector(".sc-close").addEventListener("click",closeSearch);
+    ov.addEventListener("keydown",e=>{if(e.key==="Escape")closeSearch();if(e.key==="Tab"){const f=[...ov.querySelectorAll("input,button,a[href]")].filter(x=>x.offsetParent);if(!f.length)return;const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+    loadSearch().then(()=>window.SiteSearch.attach(ov.querySelector("input"),{keepOpen:true,onEscape:closeSearch,container:ov.querySelector(".sc-panel")})).catch(()=>{});
+  }
+  ov.hidden=false;document.documentElement.style.overflow="hidden";
+  requestAnimationFrame(()=>{ov.classList.add("sc-open");ov.querySelector("input").focus()});
+}
+function closeSearch(){if(!ov)return;ov.classList.remove("sc-open");ov.hidden=true;document.documentElement.style.overflow="";lastFocus&&lastFocus.focus&&lastFocus.focus()}
+if(header){
+  const b=document.createElement("button");b.type="button";b.className="sc-search-btn";b.setAttribute("aria-label",L.label);b.title=L.btn;
+  b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+  b.addEventListener("click",openSearch);
+  const anchor=header.querySelector(".lang-button, .lang-btn, .tl-right, a[hreflang]");
+  if(anchor&&anchor.parentNode)anchor.parentNode.insertBefore(b,anchor);else header.append(b);
+}
+addEventListener("keydown",e=>{if(e.key==="/"&&!/input|textarea|select/i.test(document.activeElement.tagName)&&!document.activeElement.isContentEditable){e.preventDefault();openSearch()}});
 
 /* ---- mark the current topic in chip navigation ---- */
 document.querySelectorAll(".topic-nav a").forEach(a=>{try{if(new URL(a.href).pathname===location.pathname)a.setAttribute("aria-current","page")}catch(_){}});

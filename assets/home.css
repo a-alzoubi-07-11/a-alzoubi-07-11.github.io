@@ -142,3 +142,11 @@ html[lang="nl"] .hm .hm-hero h1{max-width:20ch;letter-spacing:-.02em}
   .hm *,.hm *::before,.hm *::after{animation:none!important;transition:none!important}
   .hm.js-reveal .hm-section,.hm.js-reveal .hm-about{opacity:1!important;transform:none!important}
 }
+
+/* forgiving site search field */
+.hm .ss-wrap{position:relative}
+.hm .ss-ico{position:absolute;inset-inline-start:16px;top:50%;width:19px;height:19px;transform:translateY(-50%);color:var(--ap-text-3);pointer-events:none;z-index:1}
+.hm .hm-search .search-input{padding-inline:46px 16px}
+.hm .hm-search .search-input::-webkit-search-cancel-button{opacity:.5}
+.hm .tl-brand{flex:none}
+@media(max-width:420px){.hm .hm-topnav a:nth-child(n+2){display:none}}
