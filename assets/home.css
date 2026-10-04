@@ -205,3 +205,16 @@ html[dir="ltr"] .hm{--hm-start:left}
   .hm .hm-hero h1{color:#fff;background:none}
   .hm .hm-section h2::before,.hm .hm-about h2::before{transform:none;transition:none}
 }
+
+/* phones: keep the two most-used links in the header */
+@media(max-width:720px){
+  .hm .hm-topnav{display:flex;gap:2px;margin-inline-start:auto}
+  .hm .hm-topnav a{font-size:13px;padding:.3rem .5rem}
+  .hm .hm-topnav a:nth-child(n+3){display:none}
+  .hm .tl-brand{font-size:14px}
+}
+@media(max-width:360px){.hm .tl-brand span:last-child{max-width:9.5em;overflow:hidden;text-overflow:ellipsis}}
+.hm .hm-topnav a,.hm a.lang-btn,.hm .lang-btn{white-space:nowrap}
+.hm .topbar{gap:10px}
+.hm a.lang-btn{padding:.25rem .6rem;flex:none}
+@media(max-width:420px){html[lang="nl"] .hm .hm-topnav a:nth-child(n+2){display:none}}
