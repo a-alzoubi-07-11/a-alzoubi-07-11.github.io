@@ -32,11 +32,11 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parents[2]
-SITE = "https://a-alzoubi-07-11.github.io"
+SITE = "https://gidsnederland.nl"
 PUB_LINE = "google.com, pub-9944637611029429, DIRECT, f08c47fec0942fa0"
 
 CORE_FILES = [
-    "index.html", "nl/index.html", "404.html", "sitemap.xml", "robots.txt", "ads.txt", "sw.js",
+    "CNAME", "index.html", "nl/index.html", "404.html", "sitemap.xml", "robots.txt", "ads.txt", "sw.js",
     "manifest.webmanifest", "privacy.html", "editorial-policy.html", "about.html", "contact.html",
     "assets/apple.css", "assets/site-chrome.js", "assets/site-search.js", "assets/search-index.json",
     "assets/news-ticker.js", "assets/news-ticker.json", "assets/home.css", "assets/home.js",
@@ -172,6 +172,12 @@ def check_ticker() -> None:
         bad("ticker", "assets/news-ticker.json", (r.stdout + r.stderr).strip()[-600:] or "validator failed")
 
 
+def check_domain() -> None:
+    cname = (ROOT / "CNAME").read_text(encoding="utf-8").strip() if (ROOT / "CNAME").exists() else ""
+    if cname != "gidsnederland.nl":
+        bad("domain", "CNAME", f"custom domain changed or missing (found {cname!r}); the site would fall back to github.io")
+
+
 def check_ads_robots() -> None:
     ads = (ROOT / "ads.txt").read_text(encoding="utf-8", errors="replace") if (ROOT / "ads.txt").exists() else ""
     if PUB_LINE not in ads:
@@ -212,6 +218,7 @@ def main() -> int:
     check_search_index()
     check_ticker()
     check_ads_robots()
+    check_domain()
     check_secrets(files)
 
     print(f"Site guard: {len(html)} pages checked, {len(problems)} problem(s).")

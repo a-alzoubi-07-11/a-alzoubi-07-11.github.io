@@ -94,7 +94,7 @@ def milestones(text: str, lang: str, today: date, verified: date | None = None) 
 
 def official_links(html: str) -> list[str]:
     return sorted({u for u in re.findall(r'href="(https?://[^"]+)"', html)
-                   if not u.startswith("https://a-alzoubi-07-11.github.io")
+                   if not u.startswith(("https://gidsnederland.nl", "https://www.gidsnederland.nl", "https://a-alzoubi-07-11.github.io"))
                    and re.search(r"\.(nl|eu)/", u + "/")})
 
 
