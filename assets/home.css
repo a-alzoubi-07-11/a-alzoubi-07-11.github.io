@@ -150,3 +150,16 @@ html[lang="nl"] .hm .hm-hero h1{max-width:20ch;letter-spacing:-.02em}
 .hm .hm-search .search-input::-webkit-search-cancel-button{opacity:.5}
 .hm .tl-brand{flex:none}
 @media(max-width:420px){.hm .hm-topnav a:nth-child(n+2){display:none}}
+
+/* Site name: one slow-motion shine on arrival (reading direction: right→left in Arabic) */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .hm .hm-hero h1{
+    background-image:linear-gradient(105deg,#1d1d1f 0%,#1d1d1f 36%,#56565c 42%,#ff9f5e 47.5%,#ffe9d6 50%,#ff9f5e 52.5%,#56565c 58%,#1d1d1f 64%,#1d1d1f 100%);
+    background-size:260% 100%;background-repeat:no-repeat;
+    -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    animation:hm-rise .9s cubic-bezier(.2,.7,.2,1) both,hm-shine-rtl 6.5s cubic-bezier(.45,.05,.55,.95) .9s 1 both}
+  html[dir="ltr"] .hm .hm-hero h1{animation:hm-rise .9s cubic-bezier(.2,.7,.2,1) both,hm-shine-ltr 6.5s cubic-bezier(.45,.05,.55,.95) .9s 1 both}
+}
+@keyframes hm-shine-rtl{from{background-position:0% 0}to{background-position:100% 0}}
+@keyframes hm-shine-ltr{from{background-position:100% 0}to{background-position:0% 0}}
+@media(prefers-reduced-motion:reduce){.hm .hm-hero h1{animation:none!important;background:none!important;color:var(--ap-text)!important;-webkit-text-fill-color:currentColor!important}}
