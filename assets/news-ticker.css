@@ -40,3 +40,24 @@
 .news-ticker .nt-empty{grid-column:2;margin:0;color:#8a8a8e;font-size:.78rem;line-height:1.4}
 @media(max-width:700px){.news-ticker{grid-template-columns:1fr;row-gap:3px;width:calc(100% - 24px);padding:8px 12px;min-height:58px;border-radius:15px}.news-ticker .nt-head{gap:8px}.news-ticker .nt-title{font-size:.78rem!important}.news-ticker .nt-updated{margin-inline-start:auto}.news-ticker .nt-empty{grid-column:1;font-size:.74rem}.news-ticker .nt-item{max-width:84vw}.news-ticker .nt-summary{display:none}}
 @media(prefers-reduced-motion:reduce){.news-ticker .nt-track{animation:none!important}}
+
+
+/* Rotating ticker: one item at a time, 6 seconds each */
+.news-ticker .nt-viewport.nt-rotator{direction:inherit;overflow:hidden;mask-image:none;position:relative;min-height:2.6rem}
+.news-ticker .nt-rotator .nt-list{display:grid!important;gap:0}
+.news-ticker .nt-rotator .nt-item{grid-area:1/1;display:flex;flex-wrap:wrap;align-items:center;max-width:none;width:auto;white-space:normal;border:0;border-radius:0;padding:.2rem .1rem;opacity:0;visibility:hidden;transform:translateY(.6rem);transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s}
+.news-ticker .nt-rotator .nt-item.is-active{opacity:1;visibility:visible;transform:none;transition:opacity .4s ease .25s,transform .4s ease .25s,visibility 0s linear .25s}
+.news-ticker .nt-rotator .nt-item a{flex:1 1 16rem;min-width:0;font-weight:650;line-height:1.45}
+.news-ticker .nt-rotator .nt-summary{display:none}
+.news-ticker .nt-rotator .nt-source{font-size:.66rem}
+.news-ticker .nt-nav{display:inline-flex;align-items:center;gap:4px;margin-inline-start:auto}
+.news-ticker .nt-counter{font-size:.68rem;color:#8a8a8e;min-width:2.6em;text-align:center;font-variant-numeric:tabular-nums}
+.news-ticker .nt-arrow{min-width:30px;padding:0 .4rem;line-height:1;display:inline-flex!important;align-items:center;justify-content:center;font-size:1rem}
+@media(max-width:600px){
+ .news-ticker{grid-template-columns:1fr}
+ .news-ticker .nt-control{display:inline-flex!important}
+ .news-ticker .nt-rotator .nt-item{width:100%;max-width:none;padding:.5rem .1rem;border:0}
+ .news-ticker .nt-rotator .nt-summary{display:block;flex-basis:100%;font-size:.76rem;line-height:1.55}
+ .news-ticker .nt-rotator{min-height:6.5rem}
+}
+@media(prefers-reduced-motion:reduce){.news-ticker .nt-rotator .nt-item,.news-ticker .nt-rotator .nt-item.is-active{transition:none;transform:none}}
