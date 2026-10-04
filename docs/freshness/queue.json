@@ -1,106 +1,9 @@
 {
  "generated": "2026-10-04",
- "pages_checked": 68,
- "links_checked": 122,
+ "pages_checked": 72,
+ "links_checked": 0,
  "broken_links": {},
  "queue": [
-  {
-   "page": "articles/annual-tax-return-2026.html",
-   "lang": "ar",
-   "title": "الإقرار الضريبي عن دخل 2025: من يجب عليه تقديمه، المواعيد، الغرامات، وماذا تفعل إن تأخرت | دليل هولندا بالعربية",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 104,
-   "reasons": [
-    "title only mentions 2025; check whether a 2026 version is due",
-    "date passed 33 days ago (2026-09-01): rewrite tense and check the new rule",
-    "date passed 82 days ago (2026-07-14): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-09-01",
-     "days": -33,
-     "context": "يخ في الرسالة، غالباً 1 مايو 2026 مع تأجيل (uitstel) قبل التاريخ في رسالة التأكيد، غالباً 1 سبتمبر 2026 بدون رسالة وستدفع ≥ 58 يورو قبل 14 يوليو 2026 وإلا قد تُغرَ"
-    },
-    {
-     "date": "2026-07-14",
-     "days": -82,
-     "context": "tstel) قبل التاريخ في رسالة التأكيد، غالباً 1 سبتمبر 2026 بدون رسالة وستدفع ≥ 58 يورو قبل 14 يوليو 2026 وإلا قد تُغرَّم إن طلبت منك Belastingdienst بعده بعد انتهاء"
-    }
-   ],
-   "sources": [
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/aangifte-doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/hoeveel-jaar-terug-belastingaangifte-doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/wat_gebeurt_er_na_de_aangifte",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/moet_ik_aangifte_doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig"
-   ]
-  },
-  {
-   "page": "nl/articles/annual-tax-return-2026.html",
-   "lang": "nl",
-   "title": "Aangifte inkomstenbelasting over 2025: wie moet aangifte doen, deadlines, boetes en wat als je te laat bent | Nederlandsgids",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 104,
-   "reasons": [
-    "title only mentions 2025; check whether a 2026 version is due",
-    "date passed 33 days ago (2026-09-01): rewrite tense and check the new rule",
-    "date passed 82 days ago (2026-07-14): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-09-01",
-     "days": -33,
-     "context": "atum in de brief, meestal 1 mei 2026 Met uitstel vóór de datum in de bevestiging, meestal 1 september 2026 Geen brief en je moet ≥ € 58 betalen vóór 14 juli 2026 , an"
-    },
-    {
-     "date": "2026-07-14",
-     "days": -82,
-     "context": "tum in de bevestiging, meestal 1 september 2026 Geen brief en je moet ≥ € 58 betalen vóór 14 juli 2026 , anders kun je een boete krijgen als de Belastingdienst je"
-    }
-   ],
-   "sources": [
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/aangifte-doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/hoeveel-jaar-terug-belastingaangifte-doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen/wat_gebeurt_er_na_de_aangifte",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/boete",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/moet_ik_aangifte_doen",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig"
-   ]
-  },
-  {
-   "page": "articles/energy-contracts-saving-2026.html",
-   "lang": "ar",
-   "title": "توفير فواتير الكهرباء والغاز في هولندا 2026: متى تغير عقد الطاقة؟",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 52,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": []
-  },
-  {
-   "page": "articles/health-insurance-2027.html",
-   "lang": "ar",
-   "title": "التأمين الصحي 2027 في هولندا: كيف تتجنب الغلاء وتطلب بدل الرعاية (Zorgtoeslag)",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 52,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.belastingdienst.nl/",
-    "https://www.rijksoverheid.nl/onderwerpen/zorgverzekering"
-   ]
-  },
   {
    "page": "articles/inburgering-integration-law-2026.html",
    "lang": "ar",
@@ -113,35 +16,6 @@
    ],
    "milestones": [],
    "sources": []
-  },
-  {
-   "page": "articles/municipal-taxes-exemption-kwijtschelding.html",
-   "lang": "ar",
-   "title": "إعفاء ضرائب البلدية في هولندا (Kwijtschelding): كيف تلغي فواتير النفايات والماء",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 52,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": []
-  },
-  {
-   "page": "articles/prinsjesdag-2026-changes.html",
-   "lang": "ar",
-   "title": "ترند اليوم: قرارات \"يوم الأمير\" (Prinsjesdag 2026) وتأثيرها على المساعدات والضرائب في 2027",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 52,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.belastingdienst.nl/",
-    "https://www.rijksoverheid.nl/"
-   ]
   },
   {
    "page": "articles/cbr-driving-license-netherlands.html",
@@ -186,176 +60,61 @@
    ]
   },
   {
-   "page": "articles/family-reunification-mvv-ind.html",
+   "page": "articles/health-insurance-2027.html",
    "lang": "ar",
-   "title": "لمّ الشمل مع الشريك في هولندا: الدخل المطلوب 2026، الرسوم، MVV، وكيف تحضّر طلبك | دليل هولندا بالعربية",
+   "title": "التأمين الصحي في هولندا 2027: المخاطرة الذاتية 400 يورو، الأقساط الجديدة، بدل الرعاية، وكيف تبدّل قبل 31 ديسمبر | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
    "age_days": 0,
-   "score": 39,
+   "score": 13,
    "reasons": [
-    "date passed 96 days ago (2026-06-30): rewrite tense and check the new rule"
+    "milestone in 39 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
-     "date": "2026-06-30",
-     "days": -96,
-     "context": "اً لتقييم استدامة دخلك (مثلاً إن تغيّر دخلك شهرياً أو كان عقدك أقل من 6 أشهر). في 1 يناير–30 يونيو 2026 كان المبلغ 2,294.40 (2,477.95 مع بدل العطلة). بحسب وثيقة EM"
+     "date": "2026-11-12",
+     "days": 39,
+     "context": "دخلك فحدّث التقدير ( كيف ). التبديل: التواريخ التي لا يجب أن تفوتك التاريخ ماذا تفعل حتى 12 نوفمبر 2026 الشركات تعلن أقساط 2027 وشروطها. تصلك رسالة من شركتك. من من"
     }
    ],
    "sources": [
-    "https://ind.nl/en/civic-integration-exam-abroad",
-    "https://ind.nl/en/required-amounts-income-requirements",
-    "https://ind.nl/nl/documenten/04-2025/gezinshereniging-van-derdelanders-in-nederland-mei-2017.pdf",
-    "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
-    "https://ind.nl/nl/verblijfsvergunningen/asiel/gezinshereniging-asiel",
-    "https://ind.nl/nl/verblijfsvergunningen/familie-en-partner/verblijfsvergunning-voor-partner-aanvragen"
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/hoeveel-zorgtoeslag",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
    ]
   },
   {
-   "page": "articles/minimum-wage-netherlands.html",
-   "lang": "ar",
-   "title": "الحد الأدنى للأجر في هولندا 2026: الأجر الساعي حسب العمر، وكيف تحسب راتبك الشهري | دليل هولندا بالعربية",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 39,
-   "reasons": [
-    "date passed 95 days ago (2026-07-01): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-07-01",
-     "days": -95,
-     "context": "سنة (1 يناير و1 يوليو). هذه أرقام الحكومة الهولندية: العمر من 1 يناير 2026 (يورو/ساعة) من 1 يوليو 2026 (يورو/ساعة) 21+ 14.71 14.99 20 11.77 11.99 19 8.83 8.99 18"
-    }
-   ],
-   "sources": [
-    "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
-   ]
-  },
-  {
-   "page": "nl/articles/eu-permanent-residence-netherlands.html",
+   "page": "nl/articles/health-insurance-2027.html",
    "lang": "nl",
-   "title": "Permanent verblijf en langdurig ingezetene EU | Nederlandsgids",
-   "dateModified": "2026-10-01",
-   "age_days": 3,
-   "score": 39,
-   "reasons": [
-    "date passed 114 days ago (2026-06-12): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-06-12",
-     "days": -114,
-     "context": "rwaarden tonen die niet voor jou bedoeld zijn. Let op bij asiel De IND vermeldt dat vanaf 12 juni 2026 geen nieuwe permanente asielvergunning kan worden aangevraa"
-    }
-   ],
-   "sources": [
-    "https://ind.nl/en/replace-extend-renew-and-change/permanent-residency/permanent-residence-permit",
-    "https://ind.nl/en/residence-permits/asylum/permanent-asylum-residency",
-    "https://ind.nl/en/residence-permits/long-term-eu-residency/apply-for-a-residence-permit-for-long-term-eu-residents"
-   ]
-  },
-  {
-   "page": "nl/articles/family-reunification-mvv-ind.html",
-   "lang": "nl",
-   "title": "Gezinshereniging met een partner in Nederland: inkomenseis 2026, leges, mvv en voorbereiding | Nederlandsgids",
+   "title": "Zorgverzekering 2027: eigen risico € 400, nieuwe premies, zorgtoeslag en overstappen vóór 31 december | Nederlandsgids",
    "dateModified": "2026-10-04",
    "age_days": 0,
-   "score": 39,
+   "score": 13,
    "reasons": [
-    "date passed 96 days ago (2026-06-30): rewrite tense and check the new rule"
+    "milestone in 39 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
-     "date": "2026-06-30",
-     "days": -96,
-     "context": "eld bij wisselend inkomen of een contract korter dan 6 maanden). Van 1 januari tot en met 30 juni 2026 was het bedrag € 2.294,40 (€ 2.477,95 met vakantiegeld). Vo"
+     "date": "2026-11-12",
+     "days": 39,
+     "context": "Zie de gids zorgtoeslag en inkomen doorgeven . Overstappen: de data Datum Actie Uiterlijk 12 november 2026 Verzekeraars maken premies en voorwaarden 2027 bekend. Vana"
     }
    ],
    "sources": [
-    "https://ind.nl/en/civic-integration-exam-abroad",
-    "https://ind.nl/en/required-amounts-income-requirements",
-    "https://ind.nl/nl/documenten/04-2025/gezinshereniging-van-derdelanders-in-nederland-mei-2017.pdf",
-    "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
-    "https://ind.nl/nl/verblijfsvergunningen/asiel/gezinshereniging-asiel",
-    "https://ind.nl/nl/verblijfsvergunningen/familie-en-partner/verblijfsvergunning-voor-partner-aanvragen"
-   ]
-  },
-  {
-   "page": "nl/articles/minimum-wage-netherlands.html",
-   "lang": "nl",
-   "title": "Minimumloon 2026: minimumuurloon per leeftijd en wat het per maand betekent | Nederlandsgids",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 39,
-   "reasons": [
-    "date passed 95 days ago (2026-07-01): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-07-01",
-     "days": -95,
-     "context": "eer per jaar aangepast (1 januari en 1 juli). Leeftijd Vanaf 1 januari 2026 (€/uur) Vanaf 1 juli 2026 (€/uur) 21+ 14,71 14,99 20 11,77 11,99 19 8,83 8,99 18 7,36"
-    }
-   ],
-   "sources": [
-    "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
-   ]
-  },
-  {
-   "page": "articles/bol-bbl-comparison.html",
-   "lang": "ar",
-   "title": "BOL أم BBL؟ مقارنة الدراسة والتدريب والعمل: الوقت، الراتب، التكلفة، والتمويل | دليل هولندا بالعربية",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 30,
-   "reasons": [
-    "date passed 95 days ago (2026-07-01): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-07-01",
-     "days": -95,
-     "context": "على الأقل الحد الأدنى الخاص بـBBL (إجمالي بالساعة، وفق الحكومة): العمر من 1 يناير 2026 من 1 يوليو 2026 21+ 14.71 14.99 20 9.05 9.22 19 7.72 7.87 18 6.69 6.82 17 5"
-    }
-   ],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
-    "https://www.rijksoverheid.nl/themas/onderwijs/studiefinanciering/studiefinanciering-mbo",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/hoogte-lesgeld-en-cursusgeld-mbo",
-    "https://www.s-bb.nl/bedrijven/wat-is-een-leerbedrijf/verschil-bol-en-bbl"
-   ]
-  },
-  {
-   "page": "nl/articles/bol-bbl-comparison.html",
-   "lang": "nl",
-   "title": "Bol of bbl? Leren, werken en verdienen vergeleken: tijd, loon, kosten en financiering | Nederlandsgids",
-   "dateModified": "2026-10-04",
-   "age_days": 0,
-   "score": 30,
-   "reasons": [
-    "date passed 95 days ago (2026-07-01): rewrite tense and check the new rule"
-   ],
-   "milestones": [
-    {
-     "date": "2026-07-01",
-     "days": -95,
-     "context": "bbl-minimumloon (bruto per uur, volgens de overheid): Leeftijd Vanaf 1 januari 2026 Vanaf 1 juli 2026 21+ 14,71 14,99 20 9,05 9,22 19 7,72 7,87 18 6,69 6,82 17 5"
-    }
-   ],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
-    "https://www.rijksoverheid.nl/themas/onderwijs/studiefinanciering/studiefinanciering-mbo",
-    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/middelbaar-beroepsonderwijs/hoogte-lesgeld-en-cursusgeld-mbo",
-    "https://www.s-bb.nl/bedrijven/wat-is-een-leerbedrijf/verschil-bol-en-bbl"
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/hoeveel-zorgtoeslag",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
+    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
    ]
   },
   {

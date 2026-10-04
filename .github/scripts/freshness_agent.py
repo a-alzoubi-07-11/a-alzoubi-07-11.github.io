@@ -69,7 +69,7 @@ def date_modified(html: str) -> date | None:
     return datetime.strptime(m.group(1), "%Y-%m-%d").date() if m else None
 
 
-def milestones(text: str, lang: str, today: date) -> list[dict]:
+def milestones(text: str, lang: str, today: date, verified: date | None = None) -> list[dict]:
     out, seen = [], set()
     pat, months = (DATE_AR, AR_M) if lang == "ar" else (DATE_NL, NL_M)
     for m in pat.finditer(text):
@@ -82,6 +82,8 @@ def milestones(text: str, lang: str, today: date) -> list[dict]:
         before = text[max(0, m.start() - 45):m.start()]
         if delta < 0 and not FORWARD.search(before):
             continue
+        if delta < 0 and verified and d <= verified:
+            continue  # the page was re-verified after this date passed: already handled
         if -MILESTONE_PAST <= delta <= MILESTONE_AHEAD and d not in seen:
             seen.add(d)
             s = max(0, m.start() - 90)
@@ -124,7 +126,7 @@ def main() -> int:
         dm = date_modified(html)
         age = (today - dm).days if dm else 999
         text = strip_tags(article_body(html))
-        ms = milestones(text, lang, today)
+        ms = milestones(text, lang, today, dm)
         years = [int(y) for y in re.findall(r"\b(20\d\d)\b", title)]
         old_year = bool(years) and max(years) < today.year
         links = official_links(html)

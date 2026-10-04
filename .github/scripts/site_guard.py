@@ -118,9 +118,9 @@ def check_html(rel: str) -> None:
 
 
 AR_ONLY_BASELINE = {  # Arabic-only trend pages that existed before the guard; new articles must be paired.
-    "cbr-driving-license-netherlands.html", "energy-contracts-saving-2026.html", "health-insurance-2027.html",
+    "cbr-driving-license-netherlands.html",
     "inburgering-integration-law-2026.html", "kvk-zzp-business-netherlands.html",
-    "municipal-taxes-exemption-kwijtschelding.html", "prinsjesdag-2026-changes.html", "trending-jobs-2026.html",
+    "trending-jobs-2026.html",
 }
 
 
