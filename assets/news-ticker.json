@@ -1,6 +1,159 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-10-04T08:59:49+02:00",
-  "validUntil": "2026-10-04T20:59:49+02:00",
-  "items": []
+  "schemaVersion": 2,
+  "updatedAt": "2026-10-04T11:20:11+02:00",
+  "validUntil": "2026-10-06T11:20:11+02:00",
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "checkedAt": "2026-10-04",
+      "result": "new"
+    },
+    {
+      "source": "IND",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "checkedAt": "2026-10-04",
+      "result": "new"
+    },
+    {
+      "source": "DUO",
+      "listingUrl": "https://duo.nl/particulier/",
+      "checkedAt": "2026-10-04",
+      "result": "no-change"
+    },
+    {
+      "source": "SZW",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "checkedAt": "2026-10-04",
+      "result": "new"
+    },
+    {
+      "source": "UWV",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "checkedAt": "2026-10-04",
+      "result": "new"
+    }
+  ],
+  "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-10-01",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "عمل حر",
+        "nl": "Zzp"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "مشروع قانون المستقلين (Zelfstandigenwet): قواعد واضحة للعمل الحر",
+        "nl": "Zelfstandigenwet: duidelijke spelregels voor zzp'ers"
+      },
+      "summary": {
+        "ar": "مشروع في استشارة عامة حتى 29 أكتوبر 2026، ويُخطط لتطبيقه في يناير 2028. ليس نافذاً بعد.",
+        "nl": "Wetsvoorstel in internetconsultatie tot 29 oktober 2026; beoogde invoering januari 2028. Nog niet van kracht."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/01/zelfstandigenwet-biedt-meer-duidelijkheid-en-erkenning-voor-zzpers",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "id": "szw-2026-10-01-c8f9fd51"
+    },
+    {
+      "source": "SZW",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "طاقة ودخل",
+        "nl": "Energie"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "صندوق الطوارئ للطاقة (Noodfonds Energie) يفتح للأسر ذات الدخل المنخفض",
+        "nl": "Noodfonds Energie gaat open voor huishoudens met een laag inkomen"
+      },
+      "summary": {
+        "ar": "الاستفسار من 1 ديسمبر 2026، والتقديم من 4 يناير حتى 7 مايو 2027، لدخل حتى 200% من الحد الاجتماعي.",
+        "nl": "Vragen stellen vanaf 1 december 2026; aanvragen van 4 januari t/m 7 mei 2027, voor inkomens tot 200% van het sociaal minimum."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "id": "szw-2026-09-29-90e389aa"
+    },
+    {
+      "source": "BZK",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "سكن وإيجار",
+        "nl": "Huren"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "مجلس الشيوخ يقرّ قانون Huurcommissie الجديد اعتباراً من 1 يناير 2027",
+        "nl": "Eerste Kamer stemt in met wet toekomstbestendige Huurcommissie"
+      },
+      "summary": {
+        "ar": "يعزز قدرة المستأجر على الاعتراض على رفع الإيجار، ويلزمه بإبلاغ المؤجر كتابياً بالعيوب قبل اللجوء للجنة.",
+        "nl": "Huurders kunnen huurverhogingen beter aanvechten; gebreken eerst schriftelijk melden bij de verhuurder. Ingang 1 januari 2027."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie",
+      "sourceName": {
+        "ar": "وزارة الداخلية (BZK)",
+        "nl": "Ministerie van BZK"
+      },
+      "id": "bzk-2026-09-29-87a8a84f"
+    },
+    {
+      "source": "UWV",
+      "publishedAt": "2026-08-11",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "مخصصات",
+        "nl": "Uitkering"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "توقف تطبيق arbeidskorting على المخصصات التي يدفعها صاحب العمل من 1 يناير 2027",
+        "nl": "Arbeidskorting over uitkering stopt per 1 januari 2027"
+      },
+      "summary": {
+        "ar": "يخص من يتلقى مخصصاً مثل WIA أو WAO عبر صاحب العمل مع الراتب؛ قد ينخفض الراتب الصافي.",
+        "nl": "Geldt voor werknemers die naast loon een uitkering (zoals WIA/WAO) via de werkgever krijgen; netto kan lager uitvallen."
+      },
+      "url": "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/arbeidskorting-over-uitkering-stopt-per-1-januari-2027",
+      "sourceName": {
+        "ar": "UWV",
+        "nl": "UWV"
+      },
+      "id": "uwv-2026-08-11-747e2a7a"
+    },
+    {
+      "source": "IND",
+      "publishedAt": "2026-08-05",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "حماية مؤقتة",
+        "nl": "Oekraïne"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "تمديد الحماية المؤقتة للأوكرانيين حتى 4 مارس 2028 مع شرط جديد للطلبات الجديدة",
+        "nl": "Tijdelijke bescherming Oekraïne verlengd tot 4 maart 2028, nieuwe voorwaarde"
+      },
+      "summary": {
+        "ar": "من 5 أغسطس 2026 على المكلفين بالخدمة العسكرية إثبات أدائها أو الإعفاء منها؛ لا يشمل من لديه حماية سابقاً.",
+        "nl": "Sinds 5 augustus 2026 moeten dienstplichtigen aantonen dat zij aan hun plicht voldeden of zijn vrijgesteld; bestaande houders niet geraakt."
+      },
+      "url": "https://ind.nl/nl/nieuws/richtlijn-tijdelijke-bescherming-voor-oekraine-verlengd-met-nieuwe-voorwaarde-voor-nieuwe-aanvragen",
+      "sourceName": {
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
+      },
+      "id": "ind-2026-08-05-87873445"
+    }
+  ]
 }
