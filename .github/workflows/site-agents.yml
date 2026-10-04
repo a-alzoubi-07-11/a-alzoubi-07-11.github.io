@@ -23,11 +23,11 @@ jobs:
     timeout-minutes: 25
     steps:
       - name: Checkout the branch being audited
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: site
       - name: Checkout shared audit scripts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: a-alzoubi-07-11/a-alzoubi-07-11.github.io
           ref: main
