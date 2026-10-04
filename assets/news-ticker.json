@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-10-04T11:20:11+02:00",
-  "validUntil": "2026-10-06T11:20:11+02:00",
+  "updatedAt": "2026-10-04T11:25:47+02:00",
+  "validUntil": "2026-10-06T11:25:47+02:00",
   "checkedSources": [
     {
       "source": "BZK",
@@ -32,6 +32,24 @@
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "checkedAt": "2026-10-04",
       "result": "new"
+    },
+    {
+      "source": "NOS",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "checkedAt": "2026-10-04",
+      "result": "new"
+    },
+    {
+      "source": "SVB",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "checkedAt": "2026-10-04",
+      "result": "no-change"
+    },
+    {
+      "source": "TOESLAGEN",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws",
+      "checkedAt": "2026-10-04",
+      "result": "no-change"
     }
   ],
   "items": [
@@ -57,7 +75,8 @@
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
       },
-      "id": "szw-2026-10-01-c8f9fd51"
+      "id": "szw-2026-10-01-c8f9fd51",
+      "tier": "official"
     },
     {
       "source": "SZW",
@@ -81,7 +100,8 @@
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
       },
-      "id": "szw-2026-09-29-90e389aa"
+      "id": "szw-2026-09-29-90e389aa",
+      "tier": "official"
     },
     {
       "source": "BZK",
@@ -105,7 +125,58 @@
         "ar": "وزارة الداخلية (BZK)",
         "nl": "Ministerie van BZK"
       },
-      "id": "bzk-2026-09-29-87a8a84f"
+      "id": "bzk-2026-09-29-87a8a84f",
+      "tier": "official"
+    },
+    {
+      "source": "NOS",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "تأمين صحي",
+        "nl": "Zorg"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "الـ eigen risico يُتوقع أن يرتفع في 2027 من 385 إلى 400 يورو",
+        "nl": "Eigen risico volgend jaar omhoog naar 400 euro, Kamer stilzwijgend akkoord"
+      },
+      "summary": {
+        "ar": "وفق NOS: البرلمان لن يوقف رفع المبلغ 15 يورو، وهو أول ارتفاع منذ 2017. لم يُنشر الرقم الرسمي لـ2027 بعد.",
+        "nl": "Volgens NOS houdt de Kamer de verhoging met 15 euro niet tegen; eerste stijging sinds 2017. Officieel bedrag 2027 nog niet gepubliceerd."
+      },
+      "url": "https://nos.nl/l/2633016",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-09-29-25716f36"
+    },
+    {
+      "source": "NOS",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-04",
+      "category": {
+        "ar": "ضرائب ومخصصات",
+        "nl": "Begroting"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "الحكومة تتراجع عن تقليص الضمان الاجتماعي وتعدّل ضريبة المدخرات (box 3)",
+        "nl": "Sociale zekerheid niet gekort, meer spaarders en beleggers gaan belasting betalen"
+      },
+      "summary": {
+        "ar": "وفق NOS: إلغاء تخفيضات الضمان الاجتماعي، وخفض الإعفاء من 1,800 إلى 1,000 يورو في box 3. بانتظار تصويت البرلمان.",
+        "nl": "Volgens NOS: bezuinigingen op sociale zekerheid van tafel; heffingsvrij rendement box 3 omlaag van 1.800 naar 1.000 euro. Kamer moet nog stemmen."
+      },
+      "url": "https://nos.nl/l/2632999",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-09-29-1e77e808"
     },
     {
       "source": "UWV",
@@ -129,7 +200,8 @@
         "ar": "UWV",
         "nl": "UWV"
       },
-      "id": "uwv-2026-08-11-747e2a7a"
+      "id": "uwv-2026-08-11-747e2a7a",
+      "tier": "official"
     },
     {
       "source": "IND",
@@ -153,7 +225,8 @@
         "ar": "دائرة الهجرة IND",
         "nl": "IND"
       },
-      "id": "ind-2026-08-05-87873445"
+      "id": "ind-2026-08-05-87873445",
+      "tier": "official"
     }
   ]
 }

@@ -4,8 +4,8 @@ const file=new URL("news-ticker.json",script.src).href;
 const fixedLanguage=script.dataset.language;
 let cachedData=null,loading=false;
 const text={
- ar:{title:"موجز هولندا للمهاجرين",updated:"آخر تحقق",empty:"لا توجد مستجدات رسمية مؤكدة في هذه النشرة الآن.",pending:"سيظهر الموجز الأول عند موعد التحديث المجدول.",stale:"لم يكتمل آخر فحص مجدول؛ هذه آخر المستجدات المؤكدة.",pause:"إيقاف الحركة",resume:"تشغيل الحركة",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",source:"المصدر الرسمي"},
- nl:{title:"Nederland in het kort voor nieuwkomers",updated:"Laatst gecontroleerd",empty:"Er zijn nu geen bevestigde officiële updates in dit overzicht.",pending:"De eerste briefing verschijnt bij de geplande update.",stale:"De laatste geplande controle is niet voltooid; dit zijn de laatste bevestigde updates.",pause:"Beweging pauzeren",resume:"Beweging hervatten",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",source:"Officiële bron"}
+ ar:{title:"موجز هولندا للمهاجرين",updated:"آخر تحقق",empty:"لا توجد مستجدات رسمية مؤكدة في هذه النشرة الآن.",pending:"سيظهر الموجز الأول عند موعد التحديث المجدول.",stale:"لم يكتمل آخر فحص مجدول؛ هذه آخر المستجدات المؤكدة.",pause:"إيقاف الحركة",resume:"تشغيل الحركة",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",reported:"حسب وسائل الإعلام",source:"المصدر الرسمي"},
+ nl:{title:"Nederland in het kort voor nieuwkomers",updated:"Laatst gecontroleerd",empty:"Er zijn nu geen bevestigde officiële updates in dit overzicht.",pending:"De eerste briefing verschijnt bij de geplande update.",stale:"De laatste geplande controle is niet voltooid; dit zijn de laatste bevestigde updates.",pause:"Beweging pauzeren",resume:"Beweging hervatten",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",reported:"Volgens media",source:"Officiële bron"}
 };
 const lang=()=>{if(fixedLanguage)return fixedLanguage==="nl"?"nl":"ar";try{return localStorage.getItem("mbo_site_lang")==="nl"?"nl":"ar"}catch{return document.documentElement.lang==="nl"?"nl":"ar"}};
 const pair=(value,l)=>typeof value==="string"?value:(value&&typeof value[l]==="string"?value[l]:"");

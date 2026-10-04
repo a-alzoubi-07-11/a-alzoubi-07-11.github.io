@@ -5,23 +5,44 @@ drives the "موجز هولندا للمهاجرين" ticker on the home page. F
 
 ## Goal
 
-Every day, check five official Dutch sources for news that matters to Arabic-speaking
+Every day, check the sources below for news that matters to Arabic-speaking
 newcomers in the Netherlands. Add what is new and keep what is still current. When
 nothing new is found, keep the existing items and only refresh the check timestamps.
 
-## The five source agents
+## Sources and the five agents
 
-Run one check per source. When the Agent tool is available, run them as five parallel
-subagents. Each returns zero or more **candidates**: title, publication date (YYYY-MM-DD)
-and URL, plus 2–3 sentences of facts taken from the page itself.
+There are two kinds of sources:
 
-| Code | Source | Where to look first | Fallback |
+- **official** (government bodies): statuses `confirmed`, `announced` or `proposed`.
+- **media** (fast news outlets that usually report first): status is always `reported`.
+  The ticker then shows "حسب وسائل الإعلام / Volgens media".
+
+| Code | Tier | Source | Where to look first |
 |---|---|---|---|
-| BZK | Ministerie van Binnenlandse Zaken en Koninkrijksrelaties | https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties (the "Nieuws" block and its "Meer nieuws" link, which filters rijksoverheid.nl/actueel/nieuws by ministry) | search `site:rijksoverheid.nl` + "Binnenlandse Zaken" |
-| IND | Immigratie- en Naturalisatiedienst | https://ind.nl/nl/nieuws | search `site:ind.nl nieuws` |
-| DUO | Dienst Uitvoering Onderwijs | https://duo.nl/particulier/ (news block; items live under `/particulier/home/actueel/...`) and the DUO press pages under `duo.nl/organisatie/pers/...` | search `site:duo.nl nieuws` for the last 30 days. DUO often has no new item; that is a valid "no-change" result |
-| SZW | Ministerie van Sociale Zaken en Werkgelegenheid | https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid (the "Nieuws" block and "Meer nieuws") | search `site:rijksoverheid.nl` + "Sociale Zaken" |
-| UWV | Uitvoeringsinstituut Werknemersverzekeringen | https://www.uwv.nl/nl/actueel | search `site:uwv.nl actueel` |
+| BZK | official | Ministerie van Binnenlandse Zaken en Koninkrijksrelaties | https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties ("Nieuws" block + "Meer nieuws", which filters rijksoverheid.nl/actueel/nieuws by ministry) |
+| SZW | official | Ministerie van Sociale Zaken en Werkgelegenheid | https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid (same pattern) |
+| IND | official | Immigratie- en Naturalisatiedienst | https://ind.nl/nl/nieuws |
+| DUO | official | Dienst Uitvoering Onderwijs | https://duo.nl/particulier/ (items under `/particulier/home/actueel/...`); search `site:duo.nl nieuws`. Often "no-change" |
+| UWV | official | Uitvoeringsinstituut Werknemersverzekeringen | https://www.uwv.nl/nl/actueel |
+| SVB | official | Sociale Verzekeringsbank (kinderbijslag, AOW) | https://www.svb.nl/nl/pers-en-nieuws/nieuws |
+| TOESLAGEN | official | Dienst Toeslagen / Belastingdienst | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws |
+| TK | official | Tweede Kamer (votes, adopted motions and bills) | https://www.tweedekamer.nl/nieuws |
+| STAB | official | Officiële bekendmakingen (Staatsblad/Staatscourant: when a law or rule is formally published) | https://zoek.officielebekendmakingen.nl (search recent Staatsblad items on the topics below) |
+| NOS | media | NOS | RSS https://feeds.nos.nl/nosnieuwspolitiek and https://feeds.nos.nl/nosnieuwsbinnenland |
+| NU | media | NU.nl | https://www.nu.nl/politiek (or its RSS feed) |
+| RTL | media | RTL Nieuws | https://www.rtl.nl/nieuws/politiek |
+
+Run five agents in parallel (Agent tool), one per group:
+
+1. **Ministries:** BZK, SZW.
+2. **Migration and education:** IND, DUO.
+3. **Money and benefits:** UWV, SVB, TOESLAGEN.
+4. **Parliament and law gazette:** TK, STAB.
+5. **Fast media:** NOS, NU, RTL. These usually report first, for example on budget deals,
+   votes and leaked plans.
+
+Each agent returns **candidates**: source code, title, publication date (YYYY-MM-DD), URL,
+and 2–3 sentences of facts read on the item page itself.
 
 Official sites change their URLs. If a listing URL returns 404, find the new one with a
 search, use it, and update the table above in the same commit.
@@ -31,18 +52,22 @@ available, otherwise WebFetch/WebSearch. The shell usually cannot reach these si
 
 ## Selection rules (editor step)
 
-1. **Official only.** The item URL must be on rijksoverheid.nl, government.nl, ind.nl,
-   duo.nl or uwv.nl. Never use news media, blogs or social posts.
+1. **Known sources only.** The URL must be on the host of the item's source code (the
+   validator enforces this). Never use blogs, social media posts or other outlets.
+   **Media items:** only about rules, money, deadlines or procedures that affect
+   residents (not party politics or gossip); the summary starts with "وفق NOS:" /
+   "Volgens NOS:" (or NU.nl / RTL) and says what is not official yet. As soon as an
+   official source publishes the same news, replace the media item with the official one.
 2. **Recent.** Published within the last 60 days. The validator removes older items.
 3. **Relevant for newcomers.** Prefer residence, asylum, family reunification,
    naturalisation, civic integration, study finance, work, wages, benefits, allowances,
    housing and rent, healthcare costs, energy support, and deadlines. Skip appointments of
    officials, items only for the Caribbean Netherlands, internal reports, and business
    newsletters with no effect on individuals.
-4. **At most 2 per source and 8 in total.** The newest relevant items win.
+4. **At most 2 per source, 3 media items, 10 in total.** The newest relevant items win.
 5. **Never invent.** Every date, amount and deadline in a summary must appear on the
    source page you opened. If you cannot open the page, do not add the item.
-6. **Status:** `confirmed` = a decision or law that is in force or adopted with a fixed
+6. **Status (official sources):** `confirmed` = a decision or law that is in force or adopted with a fixed
    date; `announced` = officially announced plan or scheme with dates; `proposed` = a bill
    in consultation or a plan that is not yet adopted. When unsure, use the weaker status.
 7. **Keep existing items** that still pass the rules. Do not rewrite them unless the
