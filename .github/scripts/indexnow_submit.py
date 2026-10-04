@@ -17,7 +17,8 @@ def to_url(path: str) -> str | None:
         return None
     if not (ROOT / path).exists():
         return None
-    return f"https://{HOST}/" + ("" if path == "index.html" else path)
+    public_path = path[:-len("index.html")] if path.endswith("index.html") else path
+    return f"https://{HOST}/" + public_path
 
 
 def main() -> int:

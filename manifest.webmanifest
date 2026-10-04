@@ -11,6 +11,6 @@
   "icons":[],
   "shortcuts":[
     {"name":"Artikelen / Artikelen","url":"./articles.html"},
-    {"name":"Home / الرئيسية","url":"./index.html"}
+    {"name":"Home / الرئيسية","url":"./"}
   ]
 }

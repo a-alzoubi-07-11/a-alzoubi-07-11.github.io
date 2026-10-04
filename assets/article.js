@@ -7,7 +7,7 @@
     const crumb = document.createElement('nav');
     crumb.className = 'breadcrumbs';
     crumb.setAttribute('aria-label','مسار الصفحة');
-    crumb.innerHTML = '<a href="../index.html">الرئيسية</a><span>›</span><a href="../index.html#articles">المقالات</a><span>›</span><span aria-current="page"></span>';
+    crumb.innerHTML = '<a href="../">الرئيسية</a><span>›</span><a href="../#articles">المقالات</a><span>›</span><span aria-current="page"></span>';
     crumb.lastElementChild.textContent = title.textContent.trim();
     title.before(crumb);
   }

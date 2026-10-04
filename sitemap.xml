@@ -246,11 +246,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/editorial-policy.html"/>
   </url>
   <url>
-    <loc>https://gidsnederland.nl/index.html</loc>
+    <loc>https://gidsnederland.nl/</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/index.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/"/>
   </url>
   <url>
     <loc>https://gidsnederland.nl/nl/about.html</loc>
@@ -498,11 +498,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/editorial-policy.html"/>
   </url>
   <url>
-    <loc>https://gidsnederland.nl/nl/index.html</loc>
+    <loc>https://gidsnederland.nl/nl/</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/index.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/"/>
   </url>
   <url>
     <loc>https://gidsnederland.nl/nl/privacy.html</loc>

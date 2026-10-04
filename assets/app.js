@@ -5259,7 +5259,7 @@ function wireSearch() {
 ═══════════════════════════════════════════════════════════ */
 function setLang(code) {
   const fixed=document.documentElement.dataset.fixedLanguage;
-  if(fixed && code!==fixed){window.location.href=code==="nl"?"./nl/index.html":"./index.html";return;}
+  if(fixed && code!==fixed){window.location.href=code==="nl"?"/nl/":"/";return;}
   if (!I18N[code]) return;
   state.lang = code;
   safeStore.set("mbo_site_lang", code);
@@ -5391,5 +5391,4 @@ if (document.readyState === "loading") {
 }
 
 /* V3 marker — 2026-09-26 */
-
 
