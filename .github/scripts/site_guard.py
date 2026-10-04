@@ -87,6 +87,8 @@ def check_html(rel: str) -> None:
             bad("html", rel, "missing lang attribute on <html>")
         if "apple.css" not in text:
             bad("design", rel, "calm design stylesheet apple.css is not loaded")
+        if rel.startswith(("articles/", "nl/articles/")) and re.search(r'<meta name="robots" content="[^"]*noindex', text):
+            bad("seo", rel, "article is set to noindex (Google will not show it)")
         if "site-chrome.js" not in text:
             bad("design", rel, "site-chrome.js (sticky header, search, back-to-top) is not loaded")
     for i, block in enumerate(re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', text, re.S)):
@@ -117,11 +119,7 @@ def check_html(rel: str) -> None:
             bad("links", rel, f"{attr} points to missing file: {url}")
 
 
-AR_ONLY_BASELINE = {  # Arabic-only trend pages that existed before the guard; new articles must be paired.
-    "cbr-driving-license-netherlands.html",
-    "inburgering-integration-law-2026.html", "kvk-zzp-business-netherlands.html",
-    "trending-jobs-2026.html",
-}
+AR_ONLY_BASELINE: set[str] = set()  # every article now has its Dutch twin
 
 
 def check_pairs(files: list[str]) -> None:

@@ -1,78 +1,23 @@
 {
- "generated": "2026-10-04",
- "pages_checked": 72,
+ "generated": "2026-10-05",
+ "pages_checked": 76,
  "links_checked": 0,
  "broken_links": {},
  "queue": [
-  {
-   "page": "articles/inburgering-integration-law-2026.html",
-   "lang": "ar",
-   "title": "الاندماج في هولندا (Inburgering): مسارات وقوانين 2026",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 52,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": []
-  },
-  {
-   "page": "articles/cbr-driving-license-netherlands.html",
-   "lang": "ar",
-   "title": "كيفية الحصول على رخصة القيادة الهولندية (CBR) وتكلفتها في 2026",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 40,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": []
-  },
-  {
-   "page": "articles/kvk-zzp-business-netherlands.html",
-   "lang": "ar",
-   "title": "كيفية تأسيس عمل تجاري (ZZP) وتسجيل شركة في هولندا (KVK)",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 40,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": []
-  },
-  {
-   "page": "articles/trending-jobs-2026.html",
-   "lang": "ar",
-   "title": "ترند 2026: أكثر المهن المطلوبة في هولندا ونقص العمالة",
-   "dateModified": null,
-   "age_days": 999,
-   "score": 40,
-   "reasons": [
-    "no verification date (dateModified) found: verify and restamp"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.cbs.nl/",
-    "https://www.uwv.nl/"
-   ]
-  },
   {
    "page": "articles/health-insurance-2027.html",
    "lang": "ar",
    "title": "التأمين الصحي في هولندا 2027: المخاطرة الذاتية 400 يورو، الأقساط الجديدة، بدل الرعاية، وكيف تبدّل قبل 31 ديسمبر | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 0,
+   "age_days": 1,
    "score": 13,
    "reasons": [
-    "milestone in 39 days (2026-11-12): prepare the update"
+    "milestone in 38 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 39,
+     "days": 38,
      "context": "دخلك فحدّث التقدير ( كيف ). التبديل: التواريخ التي لا يجب أن تفوتك التاريخ ماذا تفعل حتى 12 نوفمبر 2026 الشركات تعلن أقساط 2027 وشروطها. تصلك رسالة من شركتك. من من"
     }
    ],
@@ -93,15 +38,15 @@
    "lang": "nl",
    "title": "Zorgverzekering 2027: eigen risico € 400, nieuwe premies, zorgtoeslag en overstappen vóór 31 december | Nederlandsgids",
    "dateModified": "2026-10-04",
-   "age_days": 0,
+   "age_days": 1,
    "score": 13,
    "reasons": [
-    "milestone in 39 days (2026-11-12): prepare the update"
+    "milestone in 38 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 39,
+     "days": 38,
      "context": "Zie de gids zorgtoeslag en inkomen doorgeven . Overstappen: de data Datum Actie Uiterlijk 12 november 2026 Verzekeraars maken premies en voorwaarden 2027 bekend. Vana"
     }
    ],
@@ -122,15 +67,15 @@
    "lang": "ar",
    "title": "العمل عبر وكالات التوظيف (Uitzendbureau) في هولندا 2026: حقوقك في الأجر والمرض والسكن، وقانون ترخيص الوكالات من 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 0,
+   "age_days": 1,
    "score": 10,
    "reasons": [
-    "milestone in 28 days (2026-11-01): prepare the update"
+    "milestone in 27 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 28,
+     "days": 27,
      "context": "يعير عمالاً (Wet toelating terbeschikkingstelling van arbeidskrachten): التاريخ ماذا يحدث 1 نوفمبر 2026 – 1 يناير 2027 الوكالات التي تريد الاستفادة من الفترة الانت"
     }
    ],
@@ -149,15 +94,15 @@
    "lang": "nl",
    "title": "Werken via een uitzendbureau in 2026: je rechten bij loon, ziekte en huisvesting, en de toelatingsplicht voor uitleners vanaf 2027 | Nederlandsgids",
    "dateModified": "2026-10-04",
-   "age_days": 0,
+   "age_days": 1,
    "score": 10,
    "reasons": [
-    "milestone in 28 days (2026-11-01): prepare the update"
+    "milestone in 27 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 28,
+     "days": 27,
      "context": "cao met fases geldt dan niet. Toelatingsplicht voor uitleners (Wtta) Datum Wat er gebeurt 1 november 2026 – 1 januari 2027 Uitleners die gebruik willen maken van het"
     }
    ],
