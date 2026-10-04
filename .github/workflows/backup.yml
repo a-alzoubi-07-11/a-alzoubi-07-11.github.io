@@ -1,0 +1,29 @@
+name: Weekly backup snapshot
+
+# Every Sunday, freeze the current main branch as a protected tag
+# (backup-YYYY-MM-DD). Any page can be restored from any snapshot with:
+#   git checkout backup-YYYY-MM-DD -- path/to/file
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Tag the snapshot
+        run: |
+          tag="backup-$(date -u +%Y-%m-%d)"
+          if git rev-parse "$tag" >/dev/null 2>&1; then echo "$tag exists"; exit 0; fi
+          git tag "$tag" && git push origin "$tag"
+          echo "Created $tag at $(git rev-parse --short HEAD)" >> "$GITHUB_STEP_SUMMARY"

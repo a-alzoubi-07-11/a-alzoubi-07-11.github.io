@@ -1,0 +1,67 @@
+name: Site guard
+
+# Protects everything already built: design on every page, links, AR/NL pairs,
+# sitemap, search index, news ticker, ads.txt/robots.txt, and no leaked secrets.
+# Red cross on the commit + an alert issue on main when something breaks;
+# the issue closes itself when the next run is green again.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  schedule:
+    - cron: '35 4 * * *'   # daily, before the news and search bots
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: site-guard-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run the site guard
+        id: guard
+        run: |
+          set +e
+          python .github/scripts/site_guard.py --json guard.json | tee guard.log
+          code=${PIPESTATUS[0]}
+          {
+            echo "## Site guard"
+            echo '```'
+            cat guard.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Open or update the alert issue (main only)
+        if: steps.guard.outputs.code != '0' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create site-guard --color B60205 --description "Site guard alerts" 2>/dev/null || true
+          body=$(printf 'The site guard found problems on `main` (commit %s).\n\n```\n%s\n```\n\nRun: %s/%s/actions/runs/%s\n\nFix the listed files (or revert the commit). This issue closes automatically when the guard is green again.' \
+            "${GITHUB_SHA::7}" "$(cat guard.log)" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+          num=$(gh issue list --label site-guard --state open --json number --jq '.[0].number')
+          if [ -n "$num" ]; then gh issue comment "$num" --body "$body"; else gh issue create --title "🚨 Site guard: something on main is broken" --label site-guard --body "$body"; fi
+      - name: Close the alert issue when green again
+        if: steps.guard.outputs.code == '0' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --label site-guard --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Site guard is green again on ${GITHUB_SHA::7}."
+          done
+      - name: Fail the check when the guard failed
+        if: steps.guard.outputs.code != '0'
+        run: exit 1

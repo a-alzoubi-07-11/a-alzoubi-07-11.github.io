@@ -1,0 +1,61 @@
+name: Freshness agent
+
+# Weekly scan for articles whose facts may be out of date: old verification
+# dates, dates that just passed in forward-looking sentences ("from 1 January"),
+# titles stuck in an old year, and broken official source links.
+# It never edits articles; it writes a ranked queue (docs/freshness/queue.json),
+# a report (reports/freshness.md) and keeps one open issue up to date.
+# The monthly Claude freshness agent works through the queue (docs/freshness/PLAYBOOK.md).
+
+on:
+  schedule:
+    - cron: '10 5 * * 1'   # every Monday ~07:10 Amsterdam
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: freshness-agent
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Scan articles and official source links
+        run: |
+          python .github/scripts/freshness_agent.py --links | tee scan.log
+          cat reports/freshness.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Save the queue and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/freshness/queue.json reports/freshness.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Freshness agent: weekly queue"
+            for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
+          fi
+      - name: Keep one freshness issue up to date
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create freshness --color FF6B1A --description "Articles to re-verify" 2>/dev/null || true
+          count=$(python -c "import json;print(len(json.load(open('docs/freshness/queue.json'))['queue']))")
+          num=$(gh issue list --label freshness --state open --json number --jq '.[0].number')
+          if [ "$count" = "0" ]; then
+            [ -n "$num" ] && gh issue close "$num" --comment "All articles are fresh."
+            exit 0
+          fi
+          title="Freshness agent: $count article page(s) to re-verify"
+          if [ -n "$num" ]; then gh issue edit "$num" --title "$title" --body-file reports/freshness.md
+          else gh issue create --title "$title" --label freshness --body-file reports/freshness.md; fi

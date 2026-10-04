@@ -102,6 +102,7 @@ the `listingUrl` you used, and `result` set to `new`, `no-change` or `error`.
 ```bash
 python3 .github/scripts/news_ticker_validate.py --write   # cleans, caps, stamps updatedAt/validUntil (+48h)
 python3 .github/scripts/news_ticker_validate.py           # must exit 0
+python3 .github/scripts/site_guard.py                     # must exit 0 (protects the whole site)
 git add assets/news-ticker.json docs/news-agents/PLAYBOOK.md
 git commit -m "News ticker: daily official check YYYY-MM-DD (new: N)"
 git push origin main
