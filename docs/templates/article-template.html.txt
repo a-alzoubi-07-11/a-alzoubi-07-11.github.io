@@ -150,8 +150,8 @@
       {
         "@type":"BreadcrumbList",
         "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://a-alzoubi-07-11.github.io/"},
-          {"@type":"ListItem","position":2,"name":"المقالات","item":"https://a-alzoubi-07-11.github.io/articles.html"},
+          {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://gidsnederland.nl/"},
+          {"@type":"ListItem","position":2,"name":"المقالات","item":"https://gidsnederland.nl/articles.html"},
           {"@type":"ListItem","position":3,"name":"[العنوان الحقيقي]","item":"[عنوان URL الفعلي]"}
         ]
       }

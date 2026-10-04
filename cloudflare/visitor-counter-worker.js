@@ -1,4 +1,4 @@
-const ALLOWED_ORIGIN="https://a-alzoubi-07-11.github.io";
+const ALLOWED_ORIGIN="https://gidsnederland.nl";
 function reply(body,status,origin){
  const headers={"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store"};
  if(origin===ALLOWED_ORIGIN){headers["Access-Control-Allow-Origin"]=ALLOWED_ORIGIN;headers["Vary"]="Origin"}
