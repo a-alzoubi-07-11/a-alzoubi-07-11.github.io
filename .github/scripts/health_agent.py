@@ -9,7 +9,7 @@ UA = {'User-Agent': 'Mozilla/5.0 (compatible; GidsNederlandHealthBot/1.0; +https
       'Accept-Language': 'nl,en;q=0.8'}
 BOT_BLOCK = (401, 403, 405, 406, 429, 999)          # site refuses bots; not treated as broken
 SKIP_HOSTS = ('instagram.com', 'tiktok.com', 'facebook.com', 'linkedin.com', 'x.com', 'twitter.com')
-out = {'checked_at': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ')}
+out = {'checked_at': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%MZ')}
 
 def pages():
     return [f for f in glob.glob('**/*.html', recursive=True) if not f.startswith(('.git', 'node_modules', 'docs/'))]
@@ -55,7 +55,9 @@ def check_external():
         r['pages'] = sorted(where[r['url']])[:6]
         if r['code'] in BOT_BLOCK:
             blocked.append(r)
-        elif r['code'] == 0 or r['code'] >= 400 or r.get('soft404'):
+        elif r['code'] == 0:
+            blocked.append(r)          # connection refused from CI IPs (e.g. cbr.nl); not proof of a dead page
+        elif r['code'] >= 400 or r.get('soft404'):
             broken.append(r)
         elif r['final'] and r['final'].rstrip('/') != r['url'].rstrip('/') and urllib.parse.urlsplit(r['final']).path != urllib.parse.urlsplit(r['url']).path:
             moved.append(r)
@@ -194,9 +196,41 @@ def report():
     bad = e.get('broken') or b.get('problems') or b.get('dead_menu_links')
     return 1 if bad else 0
 
+# ---------- auto-fix (run with: health_agent.py fix) ----------
+MANUAL = {  # known replacements for dead official pages
+ 'https://www.uwv.nl/particulieren/ontslag/ik-word-ontslagen/detail/ontslag-met-wederzijds-goedvinden-of-instemming/ontslag-met-wederzijds-goedvinden': 'https://www.uwv.nl/nl/ww/ww-na-ontslag',
+ 'https://www.rijksoverheid.nl/vraag-en-antwoord/mag-ik-met-mijn-buitenlandse-rijbewijs-in-nederland-aan-het-verkeer-deelnemen':
+ 'https://www.rijksoverheid.nl/vraag-en-antwoord/rijbewijs/mag-ik-met-mijn-buitenlandse-rijbewijs-in-nederland-aan-het-verkeer-deelnemen',
+}
+def safe_target(old, new):
+    o, n = urllib.parse.urlsplit(old), urllib.parse.urlsplit(new)
+    if not new or o.netloc.replace('www.', '') != n.netloc.replace('www.', ''): return False
+    if re.search(r'not-supported|/home(/|$)|login|inloggen|error|404', n.path, re.I): return False
+    if n.path.count('/') < 2 or (o.path.count('/') >= 3 and n.path.rstrip('/').count('/') < 2): return False
+    if re.search(r'/\d{4}-\d{2}-\d{2}$', n.path): return False          # wetten.overheid dated versions
+    return True
+
+def autofix():
+    rep = json.load(open('docs/health/report.json', encoding='utf-8'))
+    pairs = dict(MANUAL)
+    for r in rep.get('external', {}).get('redirected', []):
+        if r['url'] not in pairs and safe_target(r['url'], r['final']): pairs[r['url']] = r['final']
+    changed = set()
+    for f in pages():
+        s = open(f, encoding='utf-8').read(); t = s
+        for a, b in pairs.items():
+            t = t.replace(f'"{a}"', f'"{b}"')
+        if t != s: open(f, 'w', encoding='utf-8').write(t); changed.add(f)
+    print(f'autofix: {len(pairs)} replacements, {len(changed)} files changed')
+    return changed
+
 if __name__ == '__main__':
+    if sys.argv[1:] == ['fix']:
+        autofix(); sys.exit(0)
     parts = sys.argv[1:] or ['links', 'buttons', 'index']
     if 'links' in parts: check_external()
     if 'buttons' in parts: check_buttons()
     if 'index' in parts: check_index()
     sys.exit(report())
+
+
