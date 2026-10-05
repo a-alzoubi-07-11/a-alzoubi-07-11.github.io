@@ -1,0 +1,62 @@
+name: Site health agent
+
+# Checks every external link, clicks through menus/buttons on the live site (mobile + desktop),
+# and (when secrets are set) asks Google Search Console and Bing Webmaster whether each page is indexed.
+# Report: docs/health/REPORT.md (committed) + an issue "Site health alert" that closes itself when green.
+
+on:
+  schedule:
+    - cron: '20 3 * * *'     # daily
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['pages build and deployment']
+    types: [completed]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: site-health
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: |
+          pip install -q requests playwright google-auth
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Wait for deploy to settle
+        if: github.event_name == 'workflow_run'
+        run: sleep 60
+      - name: Run health agent
+        id: run
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+        run: |
+          set +e
+          python .github/scripts/health_agent.py
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat docs/health/REPORT.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit report
+        run: |
+          git config user.name "site-health-bot"
+          git config user.email "site-health-bot@users.noreply.github.com"
+          git add docs/health
+          git diff --cached --quiet || (git commit -m "Health report $(date -u +%F)" && git pull --rebase -q && git push)
+      - name: Open or close alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          num=$(gh issue list --state open --search "Site health alert in:title" --json number -q '.[0].number')
+          if [ "${{ steps.run.outputs.code }}" != "0" ]; then
+            if [ -z "$num" ]; then gh issue create --title "Site health alert" --body-file docs/health/REPORT.md; else gh issue comment "$num" --body-file docs/health/REPORT.md; fi
+          elif [ -n "$num" ]; then gh issue close "$num" --comment "All green again."; fi
