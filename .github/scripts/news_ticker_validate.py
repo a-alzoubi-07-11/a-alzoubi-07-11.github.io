@@ -27,6 +27,7 @@ TZ = ZoneInfo("Europe/Amsterdam")
 RIJK = {"rijksoverheid.nl", "www.rijksoverheid.nl", "government.nl", "www.government.nl"}
 # tier "official": government bodies; tier "media": fast news outlets (status must be "reported").
 SOURCES = {
+    "RIJK": ("official", {"ar": "الحكومة الهولندية", "nl": "Rijksoverheid"}, RIJK),
     "BZK": ("official", {"ar": "وزارة الداخلية (BZK)", "nl": "Ministerie van BZK"}, RIJK),
     "SZW": ("official", {"ar": "وزارة الشؤون الاجتماعية (SZW)", "nl": "Ministerie van SZW"}, RIJK),
     "IND": ("official", {"ar": "دائرة الهجرة IND", "nl": "IND"}, {"ind.nl", "www.ind.nl"}),
@@ -58,6 +59,14 @@ def bilingual(value, limit):
 
 def check_item(item, now):
     problems = []
+    # Schema v1 identifies sources by official URL and bilingual name.
+    # Explicit unknown codes still fail; never infer media sources.
+    if not item.get("source"):
+        host = urlsplit(item.get("url", "")).hostname
+        for source_code, (source_tier, _, hosts) in SOURCES.items():
+            if source_tier == "official" and host in hosts:
+                item["source"] = source_code
+                break
     src = SOURCES.get(item.get("source"))
     if not src:
         return [f"unknown source {item.get('source')!r}"]
@@ -67,14 +76,14 @@ def check_item(item, now):
     if parts.scheme != "https" or parts.hostname not in hosts:
         problems.append(f"url is not on a host of {item['source']}: {url}")
     try:
-        published = datetime.strptime(item.get("publishedAt", ""), "%Y-%m-%d").date()
+        published = datetime.fromisoformat(item.get("publishedAt", "").replace("Z", "+00:00")).date()
         age = (now.date() - published).days
         if age < -1:
             problems.append(f"publishedAt in the future: {published}")
         if age > MAX_AGE_DAYS:
             problems.append(f"older than {MAX_AGE_DAYS} days ({published})")
     except ValueError:
-        problems.append("publishedAt must be YYYY-MM-DD")
+        problems.append("publishedAt must be an ISO date or datetime")
     allowed = MEDIA_STATUSES if tier == "media" else OFFICIAL_STATUSES
     if item.get("status") not in allowed:
         problems.append(f"status for {tier} source must be one of {sorted(allowed)}")
@@ -104,7 +113,8 @@ def main():
             dropped.append((item.get("url", "?"), problems))
             continue
         seen.add(item["url"])
-        item["sourceName"] = SOURCES[item["source"]][1]
+        if not bilingual(item.get("sourceName"), 140):
+            item["sourceName"] = SOURCES[item["source"]][1]
         item["tier"] = SOURCES[item["source"]][0]
         item.setdefault("id", f"{item['source'].lower()}-{item['publishedAt']}-{hashlib.sha1(item['url'].encode()).hexdigest()[:8]}")
         kept.append(item)
@@ -125,10 +135,10 @@ def main():
     print(f"OK {len(capped)} item(s) kept: " + ", ".join(f"{k}={v}" for k, v in sorted(per_source.items())))
 
     if args.write:
-        data["schemaVersion"] = 2
+        data.setdefault("schemaVersion", 1)
         data["items"] = capped
         data["updatedAt"] = now.isoformat(timespec="seconds")
-        data["validUntil"] = (now + timedelta(hours=VALID_HOURS)).isoformat(timespec="seconds")
+        data["validUntil"] = (now + timedelta(hours=12 if data["schemaVersion"] == 1 else VALID_HOURS)).isoformat(timespec="seconds")
         FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"WROTE {FILE.relative_to(ROOT)}")
     elif dropped:
