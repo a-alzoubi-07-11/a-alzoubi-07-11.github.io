@@ -51,6 +51,17 @@ TOPIC_ALIASES = {
 
 # Words people actually type (colloquial Arabic, Dutch, transliterations, misspellings).
 ALIASES = {
+ 'adult-learning-finance':'قرض دراسة للكبار دراسة بعد الثلاثين دراسة بعد 30 قرض DUO قرض التعلم levenlang leven lang leren krediet levenlanglerenkrediet studeren na 30 lening opleiding volwassenen STAP SLIM تمويل الدراسة للكبار',
+ 'aow-aio-pension':'تقاعد معاش تقاعدي معاش الشيخوخة راتب تقاعد سن التقاعد اي او في aow aow leeftijd pensioen aio aanvulling ouderen SVB معاش الكبار',
+ 'birth-parental-leave':'إجازة ولادة اجازة ولادة إجازة أمومة اجازة حمل إجازة أبوة إجازة الأب إجازة الشريك اجازة الوالدين zwangerschapsverlof bevallingsverlof geboorteverlof ouderschapsverlof verlof baby UWV ولادة',
+ 'debt-help-schuldhulp':'ديون دين مساعدة الديون حل الديون ديون كثيرة قروض غرامات تقسيط schulden schuldhulp schuldsanering wsnp beslag deurwaarder incasso betalingsregeling مأمور تنفيذ حجز',
+ 'energy-emergency-fund-2027':'صندوق الطاقة صندوق الطوارئ للطاقة فاتورة الكهرباء فاتورة الغاز مساعدة الطاقة دعم الكهرباء دعم الغاز نودفوندس noodfonds noodfonds energie energietoeslag energierekening stroom gas hulp',
+ 'sick-pay-ziektewet-wia':'مرض مريض راتب المرض إعانة المرض اعانة مرض عجز عن العمل عاجز عن العمل زيكتيفت وي اي ا ziek ziektewet wia wga iva arbeidsongeschikt ziekmelden loondoorbetaling wajong UWV',
+ 'single-parent-support':'أم وحيدة أب وحيد والد وحيد مطلقة مطلق أم عزباء طلاق انفصال دعم المطلقة alleenstaande ouder alleenstaande moeder kindgebonden budget alo kop iack kinderopvangtoeslag scheiding',
+ 'social-assistance-bijstand':'مساعدة اجتماعية مساعدة البلدية سوسيال بايستاند بيستاند راتب البلدية معونة دخل البلدية bijstand bijstandsuitkering participatiewet sociale dienst uitkering gemeente',
+ 'special-assistance-bijzondere-bijstand':'مساعدة خاصة مساعدة إضافية مساعدة طارئة مصاريف غير متوقعة ثلاجة غسالة أثاث بيزوندره bijzondere bijstand extra kosten gemeente hulp inrichting',
+ 'unemployment-benefit-ww':'بطالة إعانة البطالة اعانة بطالة فقدت عملي فصل من العمل طرد من العمل راتب البطالة ويه ويه ww ww uitkering werkloos ontslag werkloosheidswet UWV',
+ 'wmo-home-support':'رعاية منزلية مساعدة في البيت تنظيف البيت كرسي متحرك مساعدة كبار السن إعاقة وي ام او wmo huishoudelijke hulp thuiszorg mantelzorg rolstoel woningaanpassing gemeente',
  'zorgtoeslag-guide':'زورخ توسلاخ زورغ توسلاغ زورك زورخ توسلاق بدل التأمين بدل الصحة بدل التامين تعويض التأمين مساعدة التأمين الصحي دعم التأمين zorg toeslag zorgtoeslg zorgtoslag health allowance',
  'housing-rent-allowance-2026':'بدل السكن بدل الإيجار بدل الاجار بدل الايجار مساعدة الإيجار دعم الإيجار هور توسلاخ هورتوسلاخ huur toeslag huurtoesla huurtoeslg rent allowance ايجار اجار',
  'kinderbijslag-guide':'مخصصات الأطفال مخصصات الاولاد فلوس الاولاد فلوس الأطفال راتب الاطفال بدل الأطفال كيندربايسلاخ كيندر بايسلاخ كندر بيسلاخ SVB child benefit kinder bijslag',
