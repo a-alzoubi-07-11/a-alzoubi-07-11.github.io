@@ -1,8 +1,19 @@
 {
- "checked_at": "2026-10-05T02:28Z",
+ "checked_at": "2026-10-05T10:39Z",
  "external": {
-  "total": 344,
-  "broken": [],
+  "total": 371,
+  "broken": [
+   {
+    "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
+    "code": 404,
+    "final": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
+    "soft404": false,
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   }
+  ],
   "blocked": [
    {
     "url": "https://mymemory.translated.net/doc/en/tos.php",
@@ -167,6 +178,16 @@
   ],
   "redirected": [
    {
+    "url": "https://ind.nl",
+    "code": 200,
+    "final": "https://ind.nl/nl",
+    "soft404": false,
+    "pages": [
+     "index.html",
+     "nl/index.html"
+    ]
+   },
+   {
     "url": "https://mijn.belastingdienst.nl/",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst",
@@ -207,6 +228,16 @@
     ]
    },
    {
+    "url": "https://www.belastingdienst.nl",
+    "code": 200,
+    "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home",
+    "soft404": false,
+    "pages": [
+     "index.html",
+     "nl/index.html"
+    ]
+   },
+   {
     "url": "https://www.belastingdienst.nl/",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home",
@@ -225,6 +256,96 @@
      "index.html",
      "nl/index.html"
     ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/huurwoning-zoeken/vraag-en-antwoord/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/huurwoning-zoeken/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
+    "soft404": false,
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/inkomstenbelasting/vraag-en-antwoord/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
+    "soft404": false,
+    "pages": [
+     "articles/year-end-checklist-2026.html",
+     "nl/articles/year-end-checklist-2026.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/nieuws/2025/12/15/maximale-huurverhoging-2026-in-sociale-sector-41-middenhuur-61-en-vrije-sector-44",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/actueel/nieuws/2025/12/15/maximale-huurverhoging-2026-in-sociale-sector-41-middenhuur-61-en-vrije-sector-44",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/hoe-maak-ik-bezwaar-tegen-de-huurverhoging-voor-mijn-sociale-huurwoning",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/hoe-maak-ik-bezwaar-tegen-de-huurverhoging-voor-mijn-sociale-huurwoning",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
+    "soft404": false,
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/zorgverzekering/vraag-en-antwoord/overstappen-zorgverzekeraar",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "soft404": false,
+    "pages": [
+     "articles/year-end-checklist-2026.html",
+     "nl/articles/year-end-checklist-2026.html"
+    ]
+   },
+   {
+    "url": "https://www.uwv.nl",
+    "code": 200,
+    "final": "https://www.uwv.nl/nl",
+    "soft404": false,
+    "pages": [
+     "index.html",
+     "nl/index.html"
+    ]
+   },
+   {
+    "url": "https://www.volkshuisvestingnederland.nl/onderwerpen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
+    "code": 200,
+    "final": "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
+    ]
    }
   ]
  },
@@ -234,7 +355,7 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 126,
+  "sitemap_urls": 132,
   "google": {
    "status": "not_configured",
    "how": "Add repo secret GSC_SERVICE_ACCOUNT_JSON (service account added as user in Search Console)."
