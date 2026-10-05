@@ -1,6 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T09:04:44+02:00",
-  "validUntil": "2026-10-05T21:04:44+02:00",
-  "items": []
+  "updatedAt": "2026-10-05T21:00:46+02:00",
+  "validUntil": "2026-10-06T09:00:46+02:00",
+  "items": [
+    {
+      "id": "ocw-2026-10-05-internationalisering-hoger-onderwijs",
+      "status": "proposed",
+      "publishedAt": "2026-10-05T15:00:00+02:00",
+      "verifiedAt": "2026-10-05T21:00:46+02:00",
+      "category": {
+        "ar": "التعليم العالي",
+        "nl": "Hoger onderwijs"
+      },
+      "title": {
+        "ar": "مقترح جديد لتنظيم استقطاب الطلاب الدوليين ولغة الدراسة",
+        "nl": "Nieuw voorstel voor instroom internationale studenten en onderwijstaal"
+      },
+      "summary": {
+        "ar": "تقترح الحكومة منح الجامعات والمعاهد العليا أدوات أوسع لتحديد القبول في البرامج الأجنبية، مع بقاء الهولندية لغة الدراسة الأساسية. التعديل مطروح للاستشارة ولم يدخل حيز التنفيذ.",
+        "nl": "Het kabinet stelt voor dat hogescholen en universiteiten meer regie krijgen op de instroom bij anderstalige opleidingen, terwijl Nederlands de norm blijft. De wijziging is in consultatie en nog niet van kracht."
+      },
+      "sourceName": {
+        "ar": "الحكومة الهولندية – وزارة التعليم والثقافة والعلوم",
+        "nl": "Rijksoverheid – Ministerie van OCW"
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/05/kabinet-weloverwogen-regie-op-internationaal-talent"
+    }
+  ]
 }
