@@ -51,6 +51,9 @@ TOPIC_ALIASES = {
 
 # Words people actually type (colloquial Arabic, Dutch, transliterations, misspellings).
 ALIASES = {
+ 'social-housing-sociale-huurwoning':'بيت اجتماعي سكن اجتماعي بيت من البلدية بيت حكومي تسجيل بيت انتظار بيت قائمة انتظار اوخنتي urgentie sociale huurwoning woningcorporatie inschrijven woningnet woninghuren wachttijd loting statushouder woning',
+ 'tenant-rights-netherlands':'حقوق المستأجر زيادة الإيجار رفع الإيجار الكفالة التأمين المالك صاحب البيت إصلاحات تصليح عطل طرد إخلاء huurverhoging huurcommissie waarborgsom borg verhuurder reparatie gebreken huurrecht ontruiming huurcontract',
+ 'year-end-checklist-2026':'نهاية السنة قبل 31 ديسمبر تغيير التأمين قائمة مهام تغييرات 2027 السنة الجديدة jaareinde checklist overstappen zorgverzekering 2027 eigen risico 2027 wat verandert 2027',
  'adult-learning-finance':'قرض دراسة للكبار دراسة بعد الثلاثين دراسة بعد 30 قرض DUO قرض التعلم levenlang leven lang leren krediet levenlanglerenkrediet studeren na 30 lening opleiding volwassenen STAP SLIM تمويل الدراسة للكبار',
  'aow-aio-pension':'تقاعد معاش تقاعدي معاش الشيخوخة راتب تقاعد سن التقاعد اي او في aow aow leeftijd pensioen aio aanvulling ouderen SVB معاش الكبار',
  'birth-parental-leave':'إجازة ولادة اجازة ولادة إجازة أمومة اجازة حمل إجازة أبوة إجازة الأب إجازة الشريك اجازة الوالدين zwangerschapsverlof bevallingsverlof geboorteverlof ouderschapsverlof verlof baby UWV ولادة',
