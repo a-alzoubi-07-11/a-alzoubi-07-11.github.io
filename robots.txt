@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://gidsnederland.nl/sitemap.xml
+# AI index: https://gidsnederland.nl/llms.txt
