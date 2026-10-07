@@ -1,82 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T10:36:18+02:00",
-  "validUntil": "2026-10-07T22:36:18+02:00",
+  "updatedAt": "2026-10-07T20:59:59+02:00",
+  "validUntil": "2026-10-08T08:59:59+02:00",
   "items": [
     {
-      "id": "rijk-2026-10-07-terugkeerfrustreerders",
-      "source": "RIJK",
-      "tier": "official",
-      "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-07T10:36:18+02:00",
-      "status": "proposed",
-      "category": {
-        "ar": "الإقامة والعودة",
-        "nl": "Verblijf en terugkeer"
-      },
-      "title": {
-        "ar": "مقترح لتجريم عرقلة العودة يدخل الاستشارة العامة",
-        "nl": "Voorstel over strafbaarstelling van terugkeerfrustratie in consultatie"
-      },
-      "summary": {
-        "ar": "المقترح يستهدف من لا يملك إقامة قانونية ويعرقل عودته، بعد استنفاد جهود العودة الأخرى. ليس قانوناً نافذاً حالياً.",
-        "nl": "Het voorstel richt zich op mensen zonder rechtmatig verblijf die hun terugkeer frustreren, nadat andere terugkeerinspanningen niet tot vertrek leidden. Nog geen geldende wet."
-      },
-      "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/07/minister-van-den-brink-presenteert-wet-strafbaarstelling-terugkeerfrustreerders"
-    },
-    {
-      "id": "rijk-2026-10-07-hybride-warmtepompen",
-      "source": "RIJK",
-      "tier": "official",
-      "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-07T10:36:18+02:00",
-      "status": "proposed",
-      "category": {
-        "ar": "السكن والطاقة",
-        "nl": "Wonen en energie"
-      },
-      "title": {
-        "ar": "خطة لجعل المضخة الحرارية الهجينة معياراً من 2029",
-        "nl": "Kabinet wil hybride warmtepomp als standaard vanaf 2029"
-      },
-      "summary": {
-        "ar": "تريد الحكومة تطبيق المعيار عند استبدال غلاية التدفئة في مساكن لا تتصل بشبكة تدفئة. التفاصيل قيد الإعداد؛ لا يوجد إلزام جديد نافذ اليوم.",
-        "nl": "Het kabinet wil de norm bij vervanging van de cv-ketel in woningen zonder (geplande) warmtenetaansluiting. Uitwerking volgt; vandaag geldt hierdoor geen nieuwe verplichting."
-      },
-      "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/07/slimme-en-hybride-warmtepompen-vanaf-2029-de-nieuwe-standaard"
-    },
-    {
-      "id": "duo-2026-10-06-9ebf7728",
+      "id": "duo-2026-10-07-rentepercentages-2027",
       "source": "DUO",
       "tier": "official",
-      "publishedAt": "2026-10-06",
-      "checkedAt": "2026-10-07T10:36:18+02:00",
-      "status": "proposed",
+      "status": "confirmed",
+      "publishedAt": "2026-10-07",
+      "checkedAt": "2026-10-07T20:59:59+02:00",
       "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
+        "ar": "القروض الدراسية",
+        "nl": "Studieschuld"
       },
       "title": {
-        "ar": "التعويض الإضافي لطلاب نظام القروض ينتظر مجلس الشيوخ",
-        "nl": "Extra tegemoetkoming leenstelselstudenten wacht op Eerste Kamer"
+        "ar": "DUO تحدد فوائد 2027: ‏2.70% لنظام 35 سنة و3.28% لنظام 15 سنة",
+        "nl": "DUO stelt rente 2027 vast: 2,70% voor SF35 en 3,28% voor SF15"
       },
       "summary": {
-        "ar": "وافق مجلس النواب على الخطة، لكن موافقة مجلس الشيوخ ما زالت مطلوبة. إذا أُقرت، تتوقع DUO منح التعويض الإضافي من أبريل 2027، ولأغلب الطلاب تلقائياً.",
-        "nl": "De Tweede Kamer stemde in; de Eerste Kamer moet nog akkoord geven. Bij doorgang verwacht DUO toekenning vanaf april 2027, voor de meeste studenten automatisch."
+        "ar": "تسري من يناير على طلاب 2027 ومن انتهى تمويلهم في 2026. للذين يسددون، تتغير فقط إذا انتهت فترة تثبيت الفائدة في 31 ديسمبر 2026. تحقق من وضعك في Mijn DUO.",
+        "nl": "Vanaf januari voor studenten in 2027 en wie in 2026 voor het laatst financiering kreeg. Bij terugbetalers alleen als de rentevaste periode op 31 december 2026 afloopt. Controleer Mijn DUO."
       },
       "sourceName": {
         "ar": "هيئة تمويل التعليم",
         "nl": "Dienst Uitvoering Onderwijs"
       },
-      "url": "https://duo.nl/particulier/home/actueel/kabinetsplannen-aanvullende-tegemoetkoming-stapje-dichterbij.jsp"
+      "url": "https://duo.nl/particulier/home/actueel/rentepercentages-voor-2027-vastgesteld.jsp"
     }
   ]
 }
