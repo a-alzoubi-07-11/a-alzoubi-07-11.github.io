@@ -1,6 +1,82 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T08:57:48+02:00",
-  "validUntil": "2026-10-07T20:57:48+02:00",
-  "items": []
+  "updatedAt": "2026-10-07T10:36:18+02:00",
+  "validUntil": "2026-10-07T22:36:18+02:00",
+  "items": [
+    {
+      "id": "rijk-2026-10-07-terugkeerfrustreerders",
+      "source": "RIJK",
+      "tier": "official",
+      "publishedAt": "2026-10-07",
+      "checkedAt": "2026-10-07T10:36:18+02:00",
+      "status": "proposed",
+      "category": {
+        "ar": "الإقامة والعودة",
+        "nl": "Verblijf en terugkeer"
+      },
+      "title": {
+        "ar": "مقترح لتجريم عرقلة العودة يدخل الاستشارة العامة",
+        "nl": "Voorstel over strafbaarstelling van terugkeerfrustratie in consultatie"
+      },
+      "summary": {
+        "ar": "المقترح يستهدف من لا يملك إقامة قانونية ويعرقل عودته، بعد استنفاد جهود العودة الأخرى. ليس قانوناً نافذاً حالياً.",
+        "nl": "Het voorstel richt zich op mensen zonder rechtmatig verblijf die hun terugkeer frustreren, nadat andere terugkeerinspanningen niet tot vertrek leidden. Nog geen geldende wet."
+      },
+      "sourceName": {
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/07/minister-van-den-brink-presenteert-wet-strafbaarstelling-terugkeerfrustreerders"
+    },
+    {
+      "id": "rijk-2026-10-07-hybride-warmtepompen",
+      "source": "RIJK",
+      "tier": "official",
+      "publishedAt": "2026-10-07",
+      "checkedAt": "2026-10-07T10:36:18+02:00",
+      "status": "proposed",
+      "category": {
+        "ar": "السكن والطاقة",
+        "nl": "Wonen en energie"
+      },
+      "title": {
+        "ar": "خطة لجعل المضخة الحرارية الهجينة معياراً من 2029",
+        "nl": "Kabinet wil hybride warmtepomp als standaard vanaf 2029"
+      },
+      "summary": {
+        "ar": "تريد الحكومة تطبيق المعيار عند استبدال غلاية التدفئة في مساكن لا تتصل بشبكة تدفئة. التفاصيل قيد الإعداد؛ لا يوجد إلزام جديد نافذ اليوم.",
+        "nl": "Het kabinet wil de norm bij vervanging van de cv-ketel in woningen zonder (geplande) warmtenetaansluiting. Uitwerking volgt; vandaag geldt hierdoor geen nieuwe verplichting."
+      },
+      "sourceName": {
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/07/slimme-en-hybride-warmtepompen-vanaf-2029-de-nieuwe-standaard"
+    },
+    {
+      "id": "duo-2026-10-06-9ebf7728",
+      "source": "DUO",
+      "tier": "official",
+      "publishedAt": "2026-10-06",
+      "checkedAt": "2026-10-07T10:36:18+02:00",
+      "status": "proposed",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
+      },
+      "title": {
+        "ar": "التعويض الإضافي لطلاب نظام القروض ينتظر مجلس الشيوخ",
+        "nl": "Extra tegemoetkoming leenstelselstudenten wacht op Eerste Kamer"
+      },
+      "summary": {
+        "ar": "وافق مجلس النواب على الخطة، لكن موافقة مجلس الشيوخ ما زالت مطلوبة. إذا أُقرت، تتوقع DUO منح التعويض الإضافي من أبريل 2027، ولأغلب الطلاب تلقائياً.",
+        "nl": "De Tweede Kamer stemde in; de Eerste Kamer moet nog akkoord geven. Bij doorgang verwacht DUO toekenning vanaf april 2027, voor de meeste studenten automatisch."
+      },
+      "sourceName": {
+        "ar": "هيئة تمويل التعليم",
+        "nl": "Dienst Uitvoering Onderwijs"
+      },
+      "url": "https://duo.nl/particulier/home/actueel/kabinetsplannen-aanvullende-tegemoetkoming-stapje-dichterbij.jsp"
+    }
+  ]
 }
