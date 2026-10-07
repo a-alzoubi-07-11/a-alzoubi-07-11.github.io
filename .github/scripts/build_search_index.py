@@ -53,6 +53,8 @@ TOPIC_ALIASES = {
 ALIASES = {
  'social-housing-sociale-huurwoning':'بيت اجتماعي سكن اجتماعي بيت من البلدية بيت حكومي تسجيل بيت انتظار بيت قائمة انتظار اوخنتي urgentie sociale huurwoning woningcorporatie inschrijven woningnet woninghuren wachttijd loting statushouder woning',
  'tenant-rights-netherlands':'حقوق المستأجر زيادة الإيجار رفع الإيجار الكفالة التأمين المالك صاحب البيت إصلاحات تصليح عطل طرد إخلاء huurverhoging huurcommissie waarborgsom borg verhuurder reparatie gebreken huurrecht ontruiming huurcontract',
+ 'foreign-driving-license-exchange':'تبديل الرخصة تحويل الرخصة رخصة سورية رخصة عراقية رخصة تركية رخصة أجنبية شوفيرية سواقة 185 يوم معادلة رخصة القيادة رخصة أوروبية بلدية RDW rijbewijs omwisselen buitenlands rijbewijs 185 dagen 30%-regeling expatregeling gezondheidsverklaring rijbewijs inwisselen',
+ 'traffic-fines-cjib':'مخالفة مرور مخالفة سرعة غرامة كاميرا رادار فلاش مخالفة سير دفع المخالفة اعتراض على مخالفة تقسيط الغرامة انذار رسالة CJIB تضاعف الغرامة verkeersboete bekeuring flitsboete boete betalen betalingsregeling aanmaning beroep mulder cjib flitsfoto boetebase',
  'year-end-checklist-2026':'نهاية السنة قبل 31 ديسمبر تغيير التأمين قائمة مهام تغييرات 2027 السنة الجديدة jaareinde checklist overstappen zorgverzekering 2027 eigen risico 2027 wat verandert 2027',
  'adult-learning-finance':'قرض دراسة للكبار دراسة بعد الثلاثين دراسة بعد 30 قرض DUO قرض التعلم levenlang leven lang leren krediet levenlanglerenkrediet studeren na 30 lening opleiding volwassenen STAP SLIM تمويل الدراسة للكبار',
  'aow-aio-pension':'تقاعد معاش تقاعدي معاش الشيخوخة راتب تقاعد سن التقاعد اي او في aow aow leeftijd pensioen aio aanvulling ouderen SVB معاش الكبار',

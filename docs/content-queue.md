@@ -3,8 +3,8 @@
 - [x] social-housing-sociale-huurwoning
 - [x] tenant-rights-netherlands
 - [x] year-end-checklist-2026
-- [ ] foreign-driving-license-exchange — تبديل رخصة القيادة الأجنبية (RDW, CBR, verklaring van rijvaardigheid, EU vs non-EU, 185-day rule)
-- [ ] traffic-fines-cjib — المخالفات المرورية وCJIB: الدفع، الاعتراض، التقسيط
+- [x] foreign-driving-license-exchange — تبديل رخصة القيادة الأجنبية (RDW, CBR, verklaring van rijvaardigheid, EU vs non-EU, 185-day rule)
+- [x] traffic-fines-cjib — المخالفات المرورية وCJIB: الدفع، الاعتراض، التقسيط
 - [ ] liability-home-insurance — تأمين المسؤولية (aansprakelijkheid) وتأمين المحتويات والبيت
 - [ ] hbo-wo-university-newcomers — الدراسة في HBO وWO للقادمين الجدد (Studielink, toelating, taaleis, UAF)
 - [ ] dental-care-children-adults — العلاج السنّي: ما يغطيه التأمين للأطفال والكبار

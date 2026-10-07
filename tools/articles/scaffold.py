@@ -111,6 +111,16 @@ NEW.update({
    nl=('Checklist jaareinde 2026', 'Zorgverzekering vóór 31 december, inkomen 2027 bij Toeslagen, voorlopige aanslag en Noodfonds Energie vanaf januari — op datum.'),
    related=['health-insurance-2027', 'prinsjesdag-2026-changes', 'energy-emergency-fund-2027', 'toeslagen-income-update']),
 })
+NEW.update({
+ 'foreign-driving-license-exchange': dict(tpl='cbr-driving-license-netherlands', cat='housing', listing='life',
+   ar=('تبديل رخصة القيادة الأجنبية 2026', 'من يحق له التبديل، 185 يوماً لرخص خارج أوروبا و15 سنة لرخص الاتحاد الأوروبي، قائمة RDW، الوثائق والخطوات في البلدية، ولماذا لا تُبدَّل الرخصة السورية.'),
+   nl=('Buitenlands rijbewijs omwisselen 2026', 'Wie mag omwisselen, 185 dagen voor niet-EU en 15 jaar voor EU-rijbewijzen, de RDW-landenlijst, documenten en stappen bij de gemeente.'),
+   related=['cbr-driving-license-netherlands', 'traffic-fines-cjib', 'bsn-municipality-registration', 'change-address-netherlands']),
+ 'traffic-fines-cjib': dict(tpl='cbr-driving-license-netherlands', cat='money', listing='life',
+   ar=('المخالفات المرورية وCJIB: الدفع والاعتراض والتقسيط', 'مهلة 8 أسابيع وتذكير مجاني، الإنذار ×1.5 و×3، رسوم 9 يورو، الاعتراض خلال 6 أسابيع، والتقسيط من 75 يورو حتى 36 شهراً.'),
+   nl=('Verkeersboete en CJIB: betalen, beroep en termijnen', '8 weken en gratis herinnering, aanmaning ×1,5 en ×3, € 9 administratiekosten, beroep binnen 6 weken en betalingsregeling vanaf € 75 tot 36 maanden.'),
+   related=['foreign-driving-license-exchange', 'debt-help-schuldhulp', 'cbr-driving-license-netherlands', 'digid-registration-guide']),
+})
 
 def short_titles():
     m = {}
