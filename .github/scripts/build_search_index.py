@@ -51,6 +51,10 @@ TOPIC_ALIASES = {
 
 # Words people actually type (colloquial Arabic, Dutch, transliterations, misspellings).
 ALIASES = {
+ 'bezwaar-objection-letter':'اعتراض رسالة اعتراض اعتراض على قرار اعتراض على التوسلاخ اعتراض على البلدية بيزوار بزوار رفض طلب قرار ظالم محكمة استئناف bezwaar bezwaarschrift bezwaar maken bezwaarbrief pro forma bezwaar ingebrekestelling dwangsom beroep rechtbank griffierecht',
+ 'legal-aid-lawyer-toevoeging':'محامي مجاني محامي ببلاش محامي على حساب الدولة محامي مدعوم مساعدة قانونية استشارة قانونية جوريديش لوكيت توفوخينغ toevoeging toevoeging advocaat gratis advocaat pro deo advocaat prodeo juridisch loket eigen bijdrage advocaat rechtsbijstand raad voor rechtsbijstand toevoging',
+ 'scams-phishing-netherlands':'احتيال نصب نصاب رسالة مزيفة رسالة الضرائب مزيفة هاي ماما تصيد فيشينغ سرقة حساب البنك oplichting phishing fishing oplichter hoi mam bankhelpdeskfraude geldezel nepwebshop tikkie fraude fraudehelpdesk quishing',
+ 'pregnancy-newborn-care':'حمل حامل ولادة قابلة الداية فرلوسكوندخه كرامزورخ ممرضة الولادة تسجيل المولود تسجيل الطفل الاعتراف بالطفل إيكو سونار verloskundige kraamzorg zwanger bevalling aangifte geboorte erkenning 20 wekenecho nipt hielprik kraampakket consultatiebureau',
  'social-housing-sociale-huurwoning':'بيت اجتماعي سكن اجتماعي بيت من البلدية بيت حكومي تسجيل بيت انتظار بيت قائمة انتظار اوخنتي urgentie sociale huurwoning woningcorporatie inschrijven woningnet woninghuren wachttijd loting statushouder woning',
  'tenant-rights-netherlands':'حقوق المستأجر زيادة الإيجار رفع الإيجار الكفالة التأمين المالك صاحب البيت إصلاحات تصليح عطل طرد إخلاء huurverhoging huurcommissie waarborgsom borg verhuurder reparatie gebreken huurrecht ontruiming huurcontract',
  'foreign-driving-license-exchange':'تبديل الرخصة تحويل الرخصة رخصة سورية رخصة عراقية رخصة تركية رخصة أجنبية شوفيرية سواقة 185 يوم معادلة رخصة القيادة رخصة أوروبية بلدية RDW rijbewijs omwisselen buitenlands rijbewijs 185 dagen 30%-regeling expatregeling gezondheidsverklaring rijbewijs inwisselen',

@@ -120,6 +120,22 @@ NEW.update({
    ar=('المخالفات المرورية وCJIB: الدفع والاعتراض والتقسيط', 'مهلة 8 أسابيع وتذكير مجاني، الإنذار ×1.5 و×3، رسوم 9 يورو، الاعتراض خلال 6 أسابيع، والتقسيط من 75 يورو حتى 36 شهراً.'),
    nl=('Verkeersboete en CJIB: betalen, beroep en termijnen', '8 weken en gratis herinnering, aanmaning ×1,5 en ×3, € 9 administratiekosten, beroep binnen 6 weken en betalingsregeling vanaf € 75 tot 36 maanden.'),
    related=['foreign-driving-license-exchange', 'debt-help-schuldhulp', 'cbr-driving-license-netherlands', 'digid-registration-guide']),
+ 'bezwaar-objection-letter': dict(tpl='toeslagen-income-update', cat='money', listing='life',
+   ar=('الاعتراض على قرار حكومي (bezwaar)', 'مهلة 6 أسابيع، ما يجب أن تحتويه رسالة الاعتراض مع نموذج جاهز، غرامة يومية حتى 1,442 يورو إن تأخرت الجهة، ورسوم المحكمة 54 أو 200 يورو في 2026.'),
+   nl=('Bezwaar maken tegen een besluit', '6 weken termijn, wat in je bezwaarschrift moet met voorbeeldbrief, dwangsom tot € 1.442 bij te laat beslissen en griffierecht € 54 of € 200 in 2026.'),
+   related=['legal-aid-lawyer-toevoeging','toeslagen-income-update','traffic-fines-cjib','social-assistance-bijstand']),
+ 'legal-aid-lawyer-toevoeging': dict(tpl='debt-help-schuldhulp', cat='money', listing='life',
+   ar=('المحامي المدعوم (toevoeging) 2026', 'محامٍ بدعم حكومي إن كان دخلك حتى 35,400 يورو (أعزب) أو 50,000 (أسرة): مساهمة ذاتية من 257 يورو ناقص خصم 69، ونصيحة مجانية على 0800-8020.'),
+   nl=('Advocaat met toevoeging 2026', 'Gesubsidieerde advocaat bij een inkomen t/m € 35.400 (alleenstaand) of € 50.000 (gezin): eigen bijdrage vanaf € 257 min € 69 korting, gratis advies via 0800-8020.'),
+   related=['bezwaar-objection-letter','debt-help-schuldhulp','tenant-rights-netherlands','social-assistance-bijstand']),
+ 'scams-phishing-netherlands': dict(tpl='traffic-fines-cjib', cat='money', listing='life',
+   ar=('الاحتيال والتصيّد في هولندا', 'رسائل Belastingdienst وDigiD المزيفة، «هاي ماما»، احتيال موظف البنك، الإيجار الوهمي وgeldezel — وماذا تفعل فوراً: البنك، الشرطة، Fraudehelpdesk 088 786 73 72.'),
+   nl=('Oplichting en phishing', 'Valse berichten van Belastingdienst en DigiD, hoi-mam-fraude, bankhelpdeskfraude, nephuur en geldezels — en wat je direct doet: bank, aangifte, Fraudehelpdesk 088 786 73 72.'),
+   related=['digid-registration-guide','tenant-rights-netherlands','debt-help-schuldhulp','legal-aid-lawyer-toevoeging']),
+ 'pregnancy-newborn-care': dict(tpl='birth-parental-leave', cat='benefits', listing='family',
+   ar=('الحمل والولادة في هولندا', 'القابلة أولاً، NIPT وإيكو الأسبوع 20 مجاناً، الكرامزورخ 5.70 يورو للساعة (24–80 ساعة)، وتسجيل المولود خلال 3 أيام وتأمينه خلال 4 أشهر.'),
+   nl=('Zwanger en bevallen in Nederland', 'Verloskundige eerst, NIPT en 20 wekenecho gratis, kraamzorg € 5,70 per uur (24–80 uur), aangifte binnen 3 dagen en baby verzekeren binnen 4 maanden.'),
+   related=['birth-parental-leave','kinderbijslag-guide','kindgebonden-budget-guide','health-insurance-newcomers']),
 })
 
 def short_titles():
