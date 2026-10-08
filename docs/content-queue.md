@@ -17,10 +17,10 @@
 - [ ] gemeente-individuele-inkomenstoeslag — الإضافة الفردية للدخل من البلدية
 
 ## Added from competitor scan (5 Oct 2026) — gaps no Arabic site covers well
-- [ ] asylum-two-status-system-2026 — نظام الحالتين الجديد للجوء 2026: ماذا يتغير لحاملي الإقامة الحاليين والجدد
+- [x] asylum-two-status-system-2026 — نظام الحالتين الجديد للجوء 2026: ماذا يتغير لحاملي الإقامة الحاليين والجدد
 - [ ] official-letters-decoder — كيف تفهم رسائل Belastingdienst وCAK وCJIB والبلدية (مع المصطلحات الهولندية)
 - [ ] bezwaar-objection-letter — الاعتراض (bezwaar) على قرار حكومي: المهل والخطوات ونموذج رسالة
-- [ ] syrian-documents-legalisation-translation — الوثائق السورية: التصديق والترجمة المحلفة وتسجيلها في البلدية
+- [x] syrian-documents-legalisation-translation — الوثائق السورية: التصديق والترجمة المحلفة وتسجيلها في البلدية
 - [ ] marriage-divorce-recognition — تسجيل الزواج والطلاق الأجنبي في هولندا وحقوق الأم والأطفال
 - [ ] pregnancy-newborn-care — الحمل والولادة: kraamzorg وconsultatiebureau والتطعيمات وتسجيل المولود
 - [ ] scams-phishing-netherlands — الاحتيال الشائع: رسائل Belastingdienst المزيفة، Marktplaats، الاتصالات الكاذبة
@@ -29,3 +29,4 @@
 - [ ] legal-aid-lawyer-toevoeging — المحامي المجاني (toevoeging) والمساعدة القانونية
 - [ ] secondary-school-advice-doorstroomtoets — المدرسة الثانوية: نصيحة المدرسة والاختبار النهائي ومستويات VMBO/HAVO/VWO
 - [ ] death-funeral-repatriation — الوفاة والدفن الإسلامي ونقل الجثمان والتأمين على الجنازة
+- [x] asylum-residence-hub — مركز أدلة اللجوء والإقامة + مساعدة بشرية مجانية (VluchtelingenWerk, Juridisch Loket, sociaal raadslieden, Nationale ombudsman)

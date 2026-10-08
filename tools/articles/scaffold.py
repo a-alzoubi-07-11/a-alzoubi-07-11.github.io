@@ -137,6 +137,20 @@ NEW.update({
    nl=('Zwanger en bevallen in Nederland', 'Verloskundige eerst, NIPT en 20 wekenecho gratis, kraamzorg € 5,70 per uur (24–80 uur), aangifte binnen 3 dagen en baby verzekeren binnen 4 maanden.'),
    related=['birth-parental-leave','kinderbijslag-guide','kindgebonden-budget-guide','health-insurance-newcomers']),
 })
+NEW.update({
+ 'asylum-two-status-system-2026': dict(tpl='inburgering-integration-law-2026', cat='residence', listing='immigration',
+   ar=('نظام الحالتين للجوء 2026: ماذا تغيّر منذ 12 يونيو؟', 'لاجئ أم حماية ثانوية، إقامة 3 سنوات وإلغاء الإقامة غير المحددة، شروط nareis لكل حالة، الطلبات الموقوفة مؤقتاً عند IND ومدد الانتظار، مع أمثلة توضيحية.'),
+   nl=('Tweestatusstelsel asiel 2026: wat is er veranderd sinds 12 juni?', 'Vluchteling of subsidiair beschermd, vergunning van 3 jaar en geen onbepaalde tijd meer, nareisvoorwaarden per status, tijdelijk stilgelegde aanvragen bij de IND en wachttijden, met illustratieve voorbeelden.'),
+   related=['asylum-family-reunification', 'family-reunification-mvv-ind', 'eu-permanent-residence-netherlands', 'asylum-residence-hub']),
+ 'syrian-documents-legalisation-translation': dict(tpl='inburgering-integration-law-2026', cat='residence', listing='immigration',
+   ar=('الوثائق السورية: التصديق والترجمة المحلفة والتسجيل في البلدية', 'التصديق لدى الخارجية السورية لأن سفارة دمشق مغلقة، طريقتا الترجمة المحلفة، سجل المترجمين، تحويل الوثيقة عبر لاهاي، وثائق IND وBRP، مع أمثلة توضيحية.'),
+   nl=('Syrische documenten: legaliseren, beëdigd vertalen en inschrijven bij de gemeente', 'Legalisatie via het Syrische ministerie omdat de ambassade in Damascus gesloten is, twee vertaalroutes, register beëdigde vertalers, akten omzetten via Den Haag, documenten voor IND en BRP, met illustratieve voorbeelden.'),
+   related=['bsn-municipality-registration', 'diploma-evaluation-sbb', 'asylum-family-reunification', 'asylum-two-status-system-2026']),
+ 'asylum-residence-hub': dict(tpl='inburgering-integration-law-2026', cat='residence', listing='immigration',
+   ar=('مركز أدلة اللجوء والإقامة + مساعدة بشرية مجانية', 'كل أدلة اللجوء ولمّ الشمل والوثائق والاندماج والإقامة الدائمة في مكان واحد، وروابط VluchtelingenWerk وJuridisch Loket وsociaal raadslieden وNationale ombudsman.'),
+   nl=('Hub asiel en verblijf + gratis menselijke hulp', 'Alle gidsen over asiel, gezinshereniging, documenten, inburgering en permanent verblijf op één plek, plus VluchtelingenWerk, Juridisch Loket, sociaal raadslieden en de Nationale ombudsman.'),
+   related=['asylum-two-status-system-2026', 'asylum-family-reunification', 'syrian-documents-legalisation-translation', 'legal-aid-lawyer-toevoeging']),
+})
 
 def short_titles():
     m = {}
