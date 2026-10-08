@@ -15,3 +15,4 @@ Rules: official sources only; verify every figure; hedge anything not final; ill
 
 ## UPDATE an existing guide
 Edit its module, run `python3 run_batch.py a_x` (date = today, or set ARTICLE_DATE=YYYY-MM-DD), update `<lastmod>` in sitemap.xml, then steps 4–5.
+- Every content run ends by giving the owner the new URLs: python3 tools/indexing_list.py (see tools/indexing_list.py).
