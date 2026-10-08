@@ -74,3 +74,10 @@ faq=[('Wat is legalisatie?','Een officiële handeling waarmee een document uit h
 ('Wat kost legaliseren en vertalen?','Dat hebben we niet bij een officiële bron kunnen controleren. Vraag meerdere vertalers om een offerte en begin op tijd.'),
 ('En als ik geen documenten kan krijgen?','De IND kan een DNA-onderzoek of interview doen. Vraag eerst advies aan VluchtelingenWerk voordat u contact opneemt met autoriteiten van uw land.')],
 src_note='Gecontroleerd bij Nederland Wereldwijd (pagina Syrië laatst gewijzigd in juli 2022, pagina akten omzetten januari 2026), de IND (pagina legaliseren en vertalen februari 2025), Bureau Wbtv en de RvIG op 8 oktober 2026. De situatie in Syrië en de procedures daar kunnen veranderen: controleer vóór u reist of betaalt. Niet gecontroleerd: vertaalkosten, leges voor het omzetten van akten in Den Haag en wat elke gemeente vraagt bij de BRP-inschrijving. Voorbeelden illustratief, geen echte personen.')
+AR['seo_title']='الوثائق السورية في هولندا 2026: تصديق وترجمة'
+AR['desc']='كيف تستخدم وثائقك السورية في هولندا: التصديق (legalisatie)، الترجمة المحلفة، وتسجيلها في البلدية. خطوات ومصادر رسمية.'
+NL['seo_title']='Syrische documenten in Nederland 2026'
+NL['desc']='Syrische documenten gebruiken in Nederland: legalisatie, beëdigde vertaling en inschrijving bij de gemeente. Stappen en officiële bronnen.'
+#xlink
+AR['body']+='<p><strong>مصطلح غير مفهوم في رسالتك؟</strong> ابحث عنه في <a href="/articles/dutch-government-terms-glossary.html">قاموس المصطلحات الحكومية الهولندية</a> (141 مصطلحاً مع النطق والمعنى).</p>'
+NL['body']+='<p><strong>Een woord in uw brief niet begrepen?</strong> Zoek het op in <a href="/nl/articles/dutch-government-terms-glossary.html">Overheidstaal uitgelegd</a> (141 begrippen met het Arabische woord).</p>'

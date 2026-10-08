@@ -92,3 +92,10 @@ faq=[('Wat is het verschil tussen vluchteling en subsidiair beschermde?','Een vl
 ('Helpt het om mijn oude asielaanvraag in te trekken en opnieuw aan te vragen?','Nee. De datum van uw eerdere aanvraag bepaalt uw beurt, aldus de IND.'),
 ('Waar kan ik gratis hulp krijgen?','Bij VluchtelingenWerk Nederland, het Juridisch Loket en sociaal raadslieden in uw gemeente. Zie de hub asiel en verblijf.')],
 src_note='Gecontroleerd bij de IND, Rijksoverheid en Staatsblad 2026, 105 op 8 oktober 2026; IND-wachttijdpagina bijgewerkt op 7 oktober 2026 en wijzigt vaak. Niet vastgesteld: gevolgen voor permanent verblijf, naturalisatie of inburgering van wie vóór 12 juni een vergunning kreeg, een termijn voor nareis bij subsidiaire bescherming en het actuele inkomensbedrag. Voorbeelden zijn illustratief, geen echte personen.')
+AR['seo_title']='نظام الحالتين للجوء في هولندا 2026: ماذا يتغير؟'
+AR['desc']='ما الذي يغيّره نظام الحالتين منذ 12 يونيو 2026: إقامة اللجوء 3 سنوات، الحاملون الحاليون، وأثره على لمّ الشمل. مصادر IND الرسمية.'
+NL['seo_title']='Tweestatusstelsel asiel 2026: wat verandert er?'
+NL['desc']='Wat het tweestatusstelsel sinds 12 juni 2026 verandert: asielvergunning van 3 jaar, huidige statushouders en gevolgen voor nareis. Bronnen: IND.'
+#xlink
+AR['body']+='<p><strong>مصطلح غير مفهوم في رسالتك؟</strong> ابحث عنه في <a href="/articles/dutch-government-terms-glossary.html">قاموس المصطلحات الحكومية الهولندية</a> (141 مصطلحاً مع النطق والمعنى).</p>'
+NL['body']+='<p><strong>Een woord in uw brief niet begrepen?</strong> Zoek het op in <a href="/nl/articles/dutch-government-terms-glossary.html">Overheidstaal uitgelegd</a> (141 begrippen met het Arabische woord).</p>'

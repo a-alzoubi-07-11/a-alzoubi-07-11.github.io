@@ -51,3 +51,6 @@ faq=[('Vervalt kinderbijslag bij een hoog inkomen?','Nee. Kinderbijslag hangt ni
 ('Krijg ik het voor een kind van 17 dat niet studeert?','Mogelijk niet. Bij 16 en 17 moet het kind onderwijs volgen, een startkwalificatie hebben of vrijgesteld zijn.'),
 ('Moet ik het altijd zelf aanvragen?','Niet altijd; na de geboorte van je eerste kind kan de SVB je een bericht sturen. In andere situaties kies je je situatie op de SVB-site.')],
 src_note='SVB-pagina’s geraadpleegd op 4 oktober 2026 (bedragen 2026). Bedragen wijzigen regelmatig; controleer de actuele pagina.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p>'

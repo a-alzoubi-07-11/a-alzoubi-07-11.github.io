@@ -66,3 +66,6 @@ faq=[('Is schuldhulp van de gemeente gratis?','Ja, en het is een wettelijk recht
 ('Hoeveel incassokosten mogen er worden gerekend?','Volgens de wettelijke staffel: 15% over de eerste € 2.500, minimaal € 40, geen kosten voor aanmaningen.'),
 ('Klopt het beslag op mijn loon?','Controleer de beslagvrije voet op uwbeslagvrijevoet.nl en reageer binnen 4 weken.')],
 src_note='Gecontroleerd in de Wet gemeentelijke schuldhulpverlening, bij Juridisch Loket, Rijksoverheid en Belastingdienst op 5 oktober 2026. Het aantal maanden achterstand vóór vroegsignalering vonden we niet officieel.')
+#xlink
+AR['body']+='<p><strong>مصطلح غير مفهوم في رسالتك؟</strong> ابحث عنه في <a href="/articles/dutch-government-terms-glossary.html">قاموس المصطلحات الحكومية الهولندية</a> (141 مصطلحاً مع النطق والمعنى).</p>'
+NL['body']+='<p><strong>Een woord in uw brief niet begrepen?</strong> Zoek het op in <a href="/nl/articles/dutch-government-terms-glossary.html">Overheidstaal uitgelegd</a> (141 begrippen met het Arabische woord).</p>'

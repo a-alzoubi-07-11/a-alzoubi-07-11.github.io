@@ -75,3 +75,6 @@ faq=[('Hoe lang heb ik om een verkeersboete te betalen?','8 weken, daarna een gr
 ('Iemand anders reed in mijn auto. Kan de boete op zijn naam?','Nee, een Mulderbeschikking blijft bij de kentekenhouder als de bestuurder niet is staande gehouden.'),
 ('Krijg ik een strafblad van een verkeersboete?','Niet van een lichte Mulderboete (M). Een strafbeschikking (O) is wel strafrecht.')],
 src_note='Gecontroleerd bij het CJIB, het Openbaar Ministerie en Rijksoverheid op 7 oktober 2026. Geen bedragen per overtreding genoemd: die hangen af van de feitcode (zie Boetebase). De termijn voor de kantonrechter staat in de beslissing van de officier. Voorbeelden illustratief.')
+#xlink
+AR['body']+='<p><strong>مصطلح غير مفهوم في رسالتك؟</strong> ابحث عنه في <a href="/articles/dutch-government-terms-glossary.html">قاموس المصطلحات الحكومية الهولندية</a> (141 مصطلحاً مع النطق والمعنى).</p>'
+NL['body']+='<p><strong>Een woord in uw brief niet begrepen?</strong> Zoek het op in <a href="/nl/articles/dutch-government-terms-glossary.html">Overheidstaal uitgelegd</a> (141 begrippen met het Arabische woord).</p>'

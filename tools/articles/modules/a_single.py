@@ -71,3 +71,6 @@ faq=[('Krijgt een alleenstaande ouder extra?','Ja, de alleenstaande-ouderkop in 
 ('Is de bijstand hoger voor alleenstaande ouders?','Sinds 2026 mogelijk, ongeveer zo hoog als de ALO-kop, zonder toeslagpartner.'),
 ('Verlies ik de ALO-kop met een nieuwe partner?','Meestal wel als die toeslagpartner wordt.')],
 src_note='Gecontroleerd bij Belastingdienst, Dienst Toeslagen en Rijksoverheid op 5 oktober 2026. Bedragentabellen kindgebonden budget en kinderbijslag 2026 konden we niet direct lezen; gebruik de proefberekening. Voorbeelden zijn illustratief.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p><p><strong>جرّب الحاسبة:</strong> <a href="/calculators/zorgtoeslag.html">حاسبة zorgtoeslag 2026</a> تقدّر بدلك من دخلك وأصولك.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p><p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/zorgtoeslag.html">Zorgtoeslag berekenen 2026</a> geeft een schatting op basis van inkomen en vermogen.</p>'

@@ -47,3 +47,6 @@ faq=[('Heb ik kinderbijslag nodig voor kindgebonden budget?','Ja, recht heeft de
 ('Telt al mijn spaargeld mee?','Je vermogen op 1 januari min schulden telt, met enkele uitzonderingen; de grens in 2026 is € 146.011 (€ 184.633 met toeslagpartner).'),
 ('Wat als ik halverwege het jaar een grote erfenis krijg?','Alleen je vermogen op 1 januari telt. Een erfenis daarna heeft pas het jaar erop gevolgen.')],
 src_note='Dienst Toeslagen geraadpleegd op 4 oktober 2026. Bedragen per gezin zijn hier niet opgenomen omdat ze van je inkomen afhangen; gebruik de officiële proefberekening.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p>'

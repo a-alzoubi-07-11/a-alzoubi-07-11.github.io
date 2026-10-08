@@ -244,3 +244,7 @@ faq=[('Wat is het verschil tussen een besluit en een beschikking?','Besluit is h
 ('Wat is het verschil tussen een incassobureau en een deurwaarder?','Een incassobureau vraagt om betaling maar mag geen beslag leggen. Alleen een gerechtsdeurwaarder mag officiële stukken betekenen en beslag leggen.'),
 ('Waarom staat op de Arabische pagina de uitspraak in Arabisch schrift?','Veel mensen zoeken woorden zoals ze ze horen, bijvoorbeeld ‘توسلاخ’ voor toeslag. De uitspraak is een benadering; de juiste spelling blijft de Nederlandse.')],
 src_note='Gecontroleerd bij Rijksoverheid, de Rechtspraak, Belastingdienst/Toeslagen, MijnOverheid, DigiD en de IND op 7 oktober 2026. De uitleg is vereenvoudigd en geen juridische tekst; de precieze termijn en bezwaarmogelijkheid staan altijd in de brief zelf. Bedragen (zoals eigen risico, toeslaggrenzen of borg) zijn bewust weggelaten omdat ze jaarlijks veranderen; zie de gekoppelde gidsen. Voorbeelden illustratief.')
+AR['seo_title']='قاموس المصطلحات الحكومية الهولندية بالعربي'
+AR['desc']='141 مصطلحاً من رسائل الحكومة الهولندية (beschikking، bezwaar، aanmaning…) مع النطق والمعنى بالعربية وماذا تفعل عند وصولها.'
+NL['seo_title']='Overheidstaal uitgelegd: 141 begrippen'
+NL['desc']='141 begrippen uit overheidsbrieven (beschikking, bezwaar, aanmaning…) in eenvoudig Nederlands, met het Arabische woord en wat u moet doen.'

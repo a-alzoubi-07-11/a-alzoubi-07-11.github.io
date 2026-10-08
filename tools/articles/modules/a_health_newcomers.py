@@ -46,3 +46,6 @@ faq=[('Hoeveel tijd heb ik als ik werk?','Volgens de overheid in elk geval binne
 ('Betalen kinderen premie?','Nee, onder 18 geen premie en geen eigen risico.'),
 ('Is aanvullend verplicht?','Nee; tandzorg valt daar normaal onder.')],
 src_note='Regels, termijnen en eigen risico komen van Rijksoverheid en Zorginstituut Nederland, gecontroleerd op 4 oktober 2026. Een gemiddelde premie noemen we niet omdat die niet gecontroleerd is. Bijzondere situaties (studenten, buitenlandse werkgever) bepaalt de SVB.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/zorgtoeslag.html">حاسبة zorgtoeslag 2026</a> تقدّر بدلك من دخلك وأصولك.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/zorgtoeslag.html">Zorgtoeslag berekenen 2026</a> geeft een schatting op basis van inkomen en vermogen.</p>'

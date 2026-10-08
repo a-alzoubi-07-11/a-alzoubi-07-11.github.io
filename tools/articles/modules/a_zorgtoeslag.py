@@ -61,3 +61,6 @@ faq=[('Kan ik zorgtoeslag krijgen vóór mijn 18e?','Nee. Je kunt vanaf je 18e r
 ('Telt mijn spaargeld elke maand mee?','Nee. Alleen je vermogen op 1 januari telt.'),
 ('Wat als mijn inkomen verandert?','Pas Mijn toeslagen zo snel mogelijk aan; het maandbedrag is een voorschot en na het jaar volgt de definitieve berekening.')],
 src_note='Bronnen geraadpleegd op 4 oktober 2026 (cijfers 2026). Grenzen wijzigen jaarlijks; gebruik de actuele pagina en de proefberekening.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/zorgtoeslag.html">حاسبة zorgtoeslag 2026</a> تقدّر بدلك من دخلك وأصولك.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/zorgtoeslag.html">Zorgtoeslag berekenen 2026</a> geeft een schatting op basis van inkomen en vermogen.</p>'

@@ -68,3 +68,6 @@ faq=[('Wanneer moet ik me inschrijven?','Binnen 5 dagen na aankomst als je lange
 ('Mijn naam staat fout in de BRP.','Neem contact op met de gemeente met bewijs; besluit binnen een maand.'),
 ('Mag ik een adres kopen om me in te schrijven?','Nee, dat is adresfraude.')],
 src_note='Gecontroleerd bij Rijksoverheid, RvIG, Nederland Wereldwijd en (als voorbeeld) gemeente Den Haag op 5 oktober 2026. Documenten en afspraakroute verschillen per gemeente.')
+#xlink
+AR['body']+='<p><strong>مصطلح غير مفهوم في رسالتك؟</strong> ابحث عنه في <a href="/articles/dutch-government-terms-glossary.html">قاموس المصطلحات الحكومية الهولندية</a> (141 مصطلحاً مع النطق والمعنى).</p>'
+NL['body']+='<p><strong>Een woord in uw brief niet begrepen?</strong> Zoek het op in <a href="/nl/articles/dutch-government-terms-glossary.html">Overheidstaal uitgelegd</a> (141 begrippen met het Arabische woord).</p>'

@@ -70,3 +70,6 @@ faq=[('Is mijn echtgenoot toeslagpartner als hij elders woont?','Ja, maar hij te
 ('Mijn partner heeft geen Nederlandse zorgverzekering.','Je krijgt de helft van de gezamenlijke zorgtoeslag; het inkomen van je partner telt mee.'),
 ('Wanneer geef ik het door?','Binnen 4 weken via Mijn toeslagen.')],
 src_note='Gecontroleerd op pagina’s van Dienst Toeslagen op 5 oktober 2026. Regels voor een partner in het buitenland verschillen per toeslag; vraag Dienst Toeslagen naar jouw situatie.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/zorgtoeslag.html">حاسبة zorgtoeslag 2026</a> تقدّر بدلك من دخلك وأصولك.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/zorgtoeslag.html">Zorgtoeslag berekenen 2026</a> geeft een schatting op basis van inkomen en vermogen.</p>'

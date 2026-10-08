@@ -52,3 +52,6 @@ faq=[('Welk inkomen is nodig voor mijn partner in 2026?','Van 1 juli tot en met 
 ('Mag mijn partner reizen vóór de beslissing?','Beter van niet. In het reguliere traject is meestal eerst een mvv nodig.'),
 ('Hoe lang doet de IND erover?','De wettelijke termijn is 90 dagen, te verlengen met 90 dagen, volgens een bron uit 2017; controleer dit voor jouw situatie.')],
 src_note='IND geraadpleegd op 4 oktober 2026. Inkomenseis en leges komen van de actuele IND-pagina’s; leeftijd en termijnen komen uit een EMN/IND-document uit 2017 (alleen achtergrond); het inburgeringsexamen komt van de IND-pagina van 7 mei 2026.')
+#xlink
+AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p>'
+NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p>'
