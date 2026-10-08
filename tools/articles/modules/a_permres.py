@@ -9,8 +9,9 @@ SRC=[('IND · Asiel onbepaalde tijd in Nederland aanvragen','https://ind.nl/nl/v
 ('Eerste Kamer · Wet invoering tweestatusstelsel (36 703)','https://www.eerstekamer.nl/wetsvoorstel/36703_wet_invoering')]
 
 AR=dict(title='الإقامة الدائمة في هولندا 2026: ماذا تغيّر للاجئين منذ 12 يونيو، الإقامة غير المحددة العادية، والإقامة الأوروبية طويلة الأمد',
+seo_title='الإقامة الدائمة في هولندا 2026',
 crumb='الإقامة الدائمة',
-desc='دليل عميق ومحدّث للإقامة الدائمة: منذ 12 يونيو 2026 لم يعد ممكناً طلب إقامة لجوء غير محددة المدة، وأصبحت تصاريح اللجوء الجديدة لـ3 سنوات. ما الخيار الآن (الإقامة الأوروبية طويلة الأمد بعد 5 سنوات)، شروط الإقامة غير المحددة العادية (5 سنوات، دخل، اندماج A2)، الرسوم، ونصائح عملية.',
+desc='الإقامة الدائمة في هولندا: منذ 12 يونيو 2026 لا يمكن طلب إقامة لجوء غير محددة، والتصاريح الجديدة 3 سنوات. البديل: EU-langdurig بعد 5 سنوات.',
 summary='<ol><li><strong>تغيير كبير منذ 12 يونيو 2026:</strong> لم يعد ممكناً <strong>طلب</strong> إقامة لجوء غير محددة المدة. من لديه واحدة يحتفظ بها.</li><li>تصاريح اللجوء الجديدة أو المجددة صالحة <strong>3 سنوات</strong> (كانت 5).</li><li>بعد <strong>5 سنوات</strong> إقامة قانونية بتصريح لجوء قد يكون لك حق في <strong>إقامة «مقيم أوروبي طويل الأمد» (EU-langdurig ingezetene)</strong>.</li><li><strong>الإقامة غير المحددة العادية</strong> (لم الشمل، العمل…): 5 سنوات متتالية، دخل مستقل ودائم وكافٍ، اندماج بمستوى A2 على الأقل، وتسجيل في البلدية.</li><li>طلبات إقامة اللجوء الدائمة المقدمة قبل 12 يونيو بلا قرار تُعامل كتجديد، وتُرد الرسوم في حالات محددة.</li></ol>',
 body=(
 '<h2 id="change">ما الذي تغيّر في 12 يونيو 2026؟</h2><p>دخلت قوانين تطبيق «ميثاق الهجرة واللجوء الأوروبي» و<strong>نظام الحالتين (tweestatusstelsel)</strong> حيز التنفيذ في 12 يونيو 2026. حسب IND:</p>'
@@ -38,7 +39,7 @@ body=(
     ['لديك إقامة لم شمل أو عمل','الإقامة غير المحددة العادية بعد 5 سنوات بالشروط أعلاه.'],
     ['تفكر بالجنسية','غالباً بعد 5 سنوات إقامة متواصلة؛ الجنسية لا تتأثر بإلغاء إقامة اللجوء الدائمة (<a href="/articles/dutch-naturalisation-guide.html">دليل الجنسية</a>).']],
    ['وضعك','ماذا تفعل'])
-+'<h2 id="tips">نصائح تحميك</h2><ol><li><strong>لا تدع تصريحك ينتهي.</strong> فجوة في الإقامة القانونية قد تكسر عدّ السنوات الخمس.</li><li><strong>احتفظ بنسخ</strong> من كل بطاقات الإقامة ورسائل IND وشهادات الاندماج.</li><li><strong>السفر الطويل</strong> خارج هولندا قد يؤثر على «مكان الحياة الأساسي» وعلى عدّ السنوات؛ اسأل قبل السفر الطويل.</li><li><strong>الدخل:</strong> عقد عمل مستقر يساعدك في الإقامة الأوروبية والعادية (<a href="/articles/employment-contracts-labor-law-2026.html">عقد العمل</a>).</li><li>للحالات المعقدة: VluchtelingenWerk أو محامٍ مختص بالهجرة.</li></ol>'),
++'<h2 id="tips">نصائح تحميك</h2><ol><li><strong>لا تدع تصريحك ينتهي.</strong> فجوة في الإقامة القانونية قد تكسر عدّ السنوات الخمس.</li><li><strong>احتفظ بنسخ</strong> من كل بطاقات الإقامة ورسائل IND وشهادات الاندماج.</li><li><strong>السفر الطويل</strong> خارج هولندا قد يؤثر على «مكان الحياة الأساسي» وعلى عدّ السنوات؛ اسأل قبل السفر الطويل.</li><li><strong>الدخل:</strong> عقد عمل مستقر يساعدك في الإقامة الأوروبية والعادية (<a href="/articles/employment-contracts-labor-law-2026.html">عقد العمل</a>).</li><li>للحالات المعقدة: VluchtelingenWerk أو محامٍ مختص بالهجرة (<a href="/articles/legal-aid-lawyer-toevoeging.html">المحامي بمساعدة قانونية toevoeging</a>).</li></ol>'),
 faq=[('هل يمكنني طلب إقامة لجوء دائمة بعد 5 سنوات؟','لا، منذ 12 يونيو 2026 لم يعد ممكناً طلب إقامة لجوء غير محددة. من لديه واحدة يحتفظ بها. البديل بعد 5 سنوات قد يكون إقامة EU-langdurig ingezetene.'),
 ('كم مدة تصريح اللجوء الجديد؟','3 سنوات بدل 5، منذ 12 يونيو 2026.'),
 ('ماذا عن طلبي المقدم قبل 12 يونيو؟','يُعامل كطلب تجديد، وتُرد الرسوم إن كان مستندك الحالي صالحاً لأكثر من 3 أشهر عند انتهائه.'),
@@ -47,8 +48,9 @@ faq=[('هل يمكنني طلب إقامة لجوء دائمة بعد 5 سنوا
 src_note='راجعنا صفحات IND وملف مجلس الشيوخ في 5 أكتوبر 2026. القواعد الجديدة دخلت حيز التنفيذ في 12 يونيو 2026 وقد تتغير تفاصيل تطبيقها؛ اعتمد على صفحة IND لحالتك أو استشر VluchtelingenWerk.')
 
 NL=dict(title='Permanent verblijf in Nederland 2026: wat veranderde op 12 juni voor asielstatushouders, onbepaalde tijd regulier en EU-langdurig ingezetene',
+seo_title='Permanent verblijf in Nederland 2026',
 crumb='Permanent verblijf',
-desc='Actuele gids permanent verblijf: sinds 12 juni 2026 kun je geen asielvergunning voor onbepaalde tijd meer aanvragen en zijn nieuwe asielvergunningen 3 jaar geldig. Wat nu (EU-langdurig ingezetene na 5 jaar), voorwaarden onbepaalde tijd regulier (5 jaar, inkomen, inburgering A2), leges en praktische tips.',
+desc='Permanent verblijf in Nederland: sinds 12 juni 2026 geen asielvergunning voor onbepaalde tijd meer en nieuwe vergunningen 3 jaar. Na 5 jaar: EU-langdurig.',
 summary='<ol><li><strong>Sinds 12 juni 2026</strong> kun je geen asielvergunning voor onbepaalde tijd meer <strong>aanvragen</strong>; wie er een heeft, houdt die.</li><li>Nieuwe of verlengde asielvergunningen zijn <strong>3 jaar</strong> geldig (was 5).</li><li>Na <strong>5 jaar</strong> rechtmatig verblijf met een asielvergunning heb je mogelijk recht op <strong>EU-langdurig ingezetene</strong>.</li><li><strong>Onbepaalde tijd regulier:</strong> 5 jaar, zelfstandig, duurzaam en voldoende inkomen, inburgering minimaal A2, BRP-inschrijving.</li><li>Aanvragen asiel onbepaalde tijd van vóór 12 juni zonder besluit worden als verlenging behandeld.</li></ol>',
 body=(
 '<h2 id="change">Wat veranderde op 12 juni 2026?</h2><p>De wetten ter uitvoering van het EU-Migratiepact en het <strong>tweestatusstelsel</strong> zijn op 12 juni 2026 in werking getreden. Volgens de IND:</p>'
@@ -61,7 +63,7 @@ body=(
 '<h2 id="fees">Leges</h2><p>De IND-leges voor verblijfsvergunningen liggen tussen € 0 en € 1.406 en stegen op 1 januari 2026 met 4,4%. Controleer het bedrag voor jouw aanvraag in het officiële IND-overzicht.</p>'
 '<h2 id="plan">Wat doe je in jouw situatie?</h2>'
 +T([['Asiel onbepaalde tijd (van vóór 12 juni)','Je houdt die; verleng alleen het pasje en kijk naar naturalisatie.'],['Asiel bepaalde tijd','Op tijd verlengen; werk aan inburgering en inkomen; na 5 jaar EU-langdurig of naturalisatie bekijken.'],['Aanvraag onbepaalde tijd vóór 12 juni','Wordt als verlenging behandeld; let op IND-post over terugbetaling leges.'],['Gezinsmigrant of arbeidsmigrant','Onbepaalde tijd regulier na 5 jaar.'],['Naturalisatie','Meestal na 5 jaar; niet geraakt door het einde van asiel onbepaalde tijd (<a href="/nl/articles/dutch-naturalisation-guide.html">naturalisatie</a>).']],['Situatie','Actie'])
-+'<h2 id="tips">Tips</h2><ol><li>Laat je vergunning nooit verlopen; een gat kan de 5 jaar breken.</li><li>Bewaar alle pasjes, IND-brieven en diploma’s.</li><li>Lang verblijf in het buitenland kan je hoofdverblijf raken.</li><li>Stabiel werk helpt (<a href="/nl/articles/employment-contracts-labor-law-2026.html">arbeidscontract</a>).</li><li>Complexe situatie: VluchtelingenWerk of een immigratieadvocaat.</li></ol>'),
++'<h2 id="tips">Tips</h2><ol><li>Laat je vergunning nooit verlopen; een gat kan de 5 jaar breken.</li><li>Bewaar alle pasjes, IND-brieven en diploma’s.</li><li>Lang verblijf in het buitenland kan je hoofdverblijf raken.</li><li>Stabiel werk helpt (<a href="/nl/articles/employment-contracts-labor-law-2026.html">arbeidscontract</a>).</li><li>Complexe situatie: VluchtelingenWerk of een immigratieadvocaat (<a href="/nl/articles/legal-aid-lawyer-toevoeging.html">advocaat met toevoeging</a>).</li></ol>'),
 faq=[('Kan ik na 5 jaar asiel onbepaalde tijd aanvragen?','Nee, sinds 12 juni 2026 niet meer. Wie er een heeft, houdt die. Mogelijk alternatief: EU-langdurig ingezetene.'),
 ('Hoe lang is een nieuwe asielvergunning geldig?','3 jaar, sinds 12 juni 2026.'),
 ('Wat gebeurt met mijn aanvraag van vóór 12 juni?','Die wordt als verlenging behandeld; leges terug als je document nog meer dan 3 maanden geldig was.'),

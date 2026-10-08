@@ -2,8 +2,9 @@ from a_student_finance import T
 SLUG='adult-learning-finance'
 SRC=[('Rijksoverheid · Levenlanglerenkrediet','https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/levenlanglerenkrediet-vanaf-30-jaar'),('DUO · Levenlanglerenkrediet','https://duo.nl/particulier/levenlanglerenkrediet/'),('UWV · STAP-budget (gestopt)','https://www.uwv.nl/nl/stap-budget'),('Rijksoverheid · SLIM-regeling','https://www.rijksoverheid.nl/themas/onderwijs/leven-lang-ontwikkelen/leven-lang-ontwikkelen-financiele-regelingen/slim-regeling')]
 AR=dict(title='تمويل الدراسة للكبار في هولندا 2026: قرض التعلم مدى الحياة (Levenlanglerenkrediet) وبدائله — مع أمثلة محسوبة',
+seo_title='قرض الدراسة للكبار Levenlanglerenkrediet',
 crumb='تمويل دراسة الكبار',
-desc='دليل عميق لمن يريد الدراسة بعد الثلاثين: قرض Levenlanglerenkrediet من DUO حتى عمر 56، حتى 5 أضعاف الرسوم القانونية سنوياً، فائدة 2.33% في 2026، سداد على 15 سنة؛ نهاية STAP؛ SLIM لأصحاب العمل؛ مع أمثلة محسوبة وأسئلة شائعة.',
+desc='قرض Levenlanglerenkrediet من DUO لمن يدرس بعد الثلاثين: حتى 5 أضعاف الرسوم القانونية سنوياً، فائدة 2.33% في 2026، وسداد على 15 سنة، مع أمثلة وبدائل.',
 summary='<ol><li><strong>Levenlanglerenkrediet</strong> من DUO: إن كان عمرك أقل من 57 عند البدء ولم يعد لك حق في تمويل الدراسة العادي.</li><li>تقترض لرسوم الدراسة فقط: حتى <strong>5 أضعاف</strong> الرسوم القانونية سنوياً، ولا أكثر مما تدفعه فعلاً.</li><li>الفائدة <strong>2.33%</strong> في 2026، والسداد على <strong>15 سنة</strong> يبدأ في 1 مايو بعد انتهاء القرض.</li><li><strong>STAP-budget</strong> توقف منذ 1 يناير 2024؛ <strong>SLIM</strong> لأصحاب العمل لا للأفراد.</li></ol>',
 body=(
 '<h2 id="llk">قرض التعلم مدى الحياة: الشروط</h2>'
@@ -22,8 +23,9 @@ faq=[('من يحق له Levenlanglerenkrediet؟','من هم أقل من 57 عن�
 ('هل أطلب SLIM بنفسي؟','لا، SLIM لأصحاب العمل والشراكات.')],
 src_note='راجعنا Rijksoverheid وDUO وUWV في 5 أكتوبر 2026. الفائدة تتغير سنوياً؛ الأمثلة توضيحية.')
 NL=dict(title='Studiefinanciering voor volwassenen 2026: levenlanglerenkrediet en alternatieven — met rekenvoorbeelden',
+seo_title='Levenlanglerenkrediet 2026: studeren na je 30e',
 crumb='Leren als volwassene',
-desc='Uitgebreide gids voor wie na je 30e wil studeren: levenlanglerenkrediet van DUO tot 57 jaar, tot 5× het wettelijk collegegeld/lesgeld per jaar, rente 2,33% in 2026, terugbetalen in 15 jaar; einde STAP; SLIM voor werkgevers — met rekenvoorbeelden en FAQ.',
+desc='Levenlanglerenkrediet van DUO: leen tot 5× het wettelijk collegegeld of lesgeld per jaar, rente 2,33% in 2026, aflossen in 15 jaar. Met rekenvoorbeelden.',
 summary='<ol><li><strong>Levenlanglerenkrediet</strong> (DUO): jonger dan 57 bij start en geen recht meer op gewone studiefinanciering.</li><li>Alleen voor les-/collegegeld: tot <strong>5×</strong> het wettelijke bedrag per jaar, niet meer dan je betaalt.</li><li>Rente <strong>2,33%</strong> in 2026; terugbetalen in <strong>15 jaar</strong> vanaf 1 mei na einde krediet.</li><li><strong>STAP</strong> gestopt per 1 januari 2024; <strong>SLIM</strong> is voor werkgevers.</li></ol>',
 body=(
 '<h2 id="llk">Voorwaarden</h2>'

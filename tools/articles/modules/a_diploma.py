@@ -8,8 +8,9 @@ SRC=[('IDW · Diplomawaardering voor studeren','https://www.idw.nl/studeren/'),
 ('BIG-register · Nederlandse taalvaardigheid (buitenlands diploma)','https://www.bigregister.nl/buitenlands-diploma/procedures/verklaring-vakbekwaamheid/nederlandse-taalvaardigheid')]
 
 AR=dict(title='معادلة الشهادة الأجنبية في هولندا 2026 (IDW: Nuffic وSBB): مجانية للاجئين، السعر 148.83 يورو لغيرهم، المدة، «مؤشر المستوى» لمن فقد وثائقه، والمهن المسجلة',
+seo_title='معادلة الشهادة الأجنبية diplomawaardering',
 crumb='معادلة الشهادة',
-desc='دليل عميق لمعادلة الشهادات: ماذا تعني المعادلة وما لا تعنيه، Nuffic للجامعي والعالي وSBB للمهني عبر بوابة IDW، المعادلة المجانية للاجئين ولمن يندمج، السعر 148.83 يورو للآخرين، المدة (6 أسابيع للاجئين، 10 أسابيع عادة)، «مؤشر مستوى التعليم» دون وثائق، والطريق المنفصل للمهن الصحية (BIG).',
+desc='معادلة الشهادة الأجنبية (diplomawaardering) عبر IDW: Nuffic للعالي وSBB للمهني، مجانية للاجئين و148.83 يورو لغيرهم، والمدة عادة 10 أسابيع عمل على الأقل.',
 summary='<ol><li><strong>المعادلة</strong> تقارن شهادتك بشهادة هولندية (مثلاً «تعادل HBO بكالوريوس»). <strong>لا تضمن قبولاً</strong> في الدراسة ولا حق ممارسة مهنة مسجلة.</li><li>تقدّم عبر <strong>IDW</strong>: <strong>SBB</strong> للشهادات المهنية (MBO)، و<strong>Nuffic</strong> للعليا والجامعية.</li><li><strong>مجانية للاجئين</strong> (إقامة لجوء + رسالة DUO للاندماج)، ولمن بدأ الاندماج منذ 2015 لأغراض الاندماج أو الجنسية أو الإقامة الدائمة؛ لم تعد مجانية بعد حصولك على شهادة الاندماج.</li><li><strong>لغير ذلك:</strong> 148.83 يورو للدراسة، صالحة 3 سنوات في حسابك.</li><li><strong>فقدت وثائقك؟</strong> اطلب «مؤشر مستوى التعليم» (Indicatie Onderwijsniveau).</li></ol>',
 body=(
 '<h2 id="what">ما هي المعادلة وما فائدتها؟</h2><ul><li>تقرير يقارن شهادتك بالنظام الهولندي (وفق اتفاقية لشبونة للاعتراف).</li><li>تفيد في: التقديم للعمل (صاحب العمل يفهم مستواك)، التسجيل في MBO أو HBO أو الجامعة، الاندماج، وأحياناً تقليل مدة الدراسة.</li><li><strong>ليست ملزمة قانونياً</strong>: المدرسة أو الجامعة تقرر القبول، والمهن المسجلة لها طريق آخر.</li></ul>'
@@ -35,8 +36,9 @@ faq=[('هل المعادلة مجانية للاجئين؟','نعم، بإقام
 src_note='راجعنا IDW وNuffic وسجل BIG في 5 أكتوبر 2026. أسعار التقييم لأغراض العمل قد تختلف عن الدراسة؛ تحقق في IDW.')
 
 NL=dict(title='Buitenlands diploma laten waarderen in 2026 (IDW: Nuffic en SBB): gratis voor vluchtelingen, € 148,83 voor anderen, doorlooptijd, Indicatie Onderwijsniveau en gereglementeerde beroepen',
+seo_title='Diplomawaardering buitenlands diploma 2026',
 crumb='Diplomawaardering',
-desc='Uitgebreide gids diplomawaardering: wat een waardering wel en niet doet, SBB voor mbo en Nuffic voor hbo/wo via IDW, gratis voor vluchtelingen en inburgeraars, € 148,83 voor anderen, doorlooptijd (6 weken voor vluchtelingen, meestal 10 weken), Indicatie Onderwijsniveau zonder documenten en de aparte route voor BIG-beroepen.',
+desc='Diplomawaardering via IDW (Nuffic en SBB): gratis voor vluchtelingen, € 148,83 voor anderen en meestal minimaal 10 werkweken doorlooptijd.',
 summary='<ol><li>Een <strong>diplomawaardering</strong> vergelijkt je diploma met een Nederlands diploma; <strong>geen recht op toelating</strong> of op een gereglementeerd beroep.</li><li>Aanvragen via <strong>IDW</strong>: <strong>SBB</strong> (mbo) en <strong>Nuffic</strong> (hbo/wo).</li><li><strong>Gratis voor vluchtelingen</strong> (asielvergunning + DUO-brief) en voor inburgeraars sinds 2015; niet meer na het inburgeringsdiploma.</li><li><strong>Anders:</strong> € 148,83 voor studeren, 3 jaar geldig in je account.</li><li><strong>Geen documenten?</strong> Vraag een Indicatie Onderwijsniveau.</li></ol>',
 body=(
 '<h2 id="what">Wat is een diplomawaardering?</h2><ul><li>Een rapport dat je diploma vergelijkt met het Nederlandse systeem (Lisbon Recognition Convention).</li><li>Handig bij solliciteren, aanmelden voor mbo/hbo/wo, inburgering en soms vrijstellingen.</li><li><strong>Niet juridisch bindend</strong>: de school beslist over toelating; gereglementeerde beroepen hebben een eigen route.</li></ul>'

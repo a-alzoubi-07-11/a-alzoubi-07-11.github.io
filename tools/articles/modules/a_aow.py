@@ -9,7 +9,8 @@ SRC=[('Rijksoverheid · AOW-leeftijd','https://www.rijksoverheid.nl/onderwerpen/
 
 AR=dict(title='التقاعد الحكومي AOW والتكملة AIO للمهاجرين 2026: سن التقاعد، لماذا تكون AOW ناقصة (2% عن كل سنة)، وكيف ترفع AIO دخلك إلى الحد الاجتماعي',
 crumb='AOW وAIO',
-desc='دليل عميق لكبار السن من المهاجرين: سن التقاعد 67 في 2026 و2027 و67 وثلاثة أشهر في 2028، بناء AOW بنسبة 2% عن كل سنة إقامة أو عمل في هولندا، لماذا يحصل معظم المهاجرين على AOW ناقصة، التكملة AIO من SVB حتى الحد الاجتماعي وشروطها، حدود المساعدة لمن بلغ سن التقاعد، والبدلات الأخرى.',
+seo_title='التقاعد AOW وتكملة AIO للمهاجرين 2026',
+desc='سن التقاعد AOW هو 67 سنة في 2026، وتُبنى AOW بنسبة 2% عن كل سنة في هولندا. اعرف لماذا تكون ناقصة وكيف ترفع تكملة AIO من SVB دخلك.',
 summary='<ol><li><strong>سن التقاعد (AOW):</strong> 67 سنة في 2026 و2027، و<strong>67 سنة و3 أشهر في 2028</strong>. احسب تاريخك الشخصي بأداة SVB.</li><li><strong>AOW تُبنى بنسبة 2% عن كل سنة</strong> سكنت أو عملت فيها في هولندا قبل سن التقاعد. من وصل لهولندا متأخراً يحصل على AOW <strong>ناقصة</strong>.</li><li>AOW الكاملة: 70% من صافي الحد الأدنى للأجر للشخص الوحيد، و50% لكل شخص من الزوجين.</li><li><strong>التكملة AIO</strong> من SVB ترفع دخلك حتى الحد الاجتماعي إن كانت AOW ناقصة ودخلك ومالك قليلين وتسكن في هولندا.</li><li>حدود المساعدة لمن بلغ سن التقاعد (1 يوليو 2026): <strong>1,587.34</strong> يورو للشخص الوحيد، <strong>2,176.10</strong> للزوجين شهرياً.</li></ol>',
 body=(
 '<h2 id="age">سن التقاعد</h2>'
@@ -33,7 +34,8 @@ src_note='راجعنا Rijksoverheid وصفحات SVB المتاحة في 5 أك
 
 NL=dict(title='AOW en AIO-aanvulling voor migranten in 2026: AOW-leeftijd, waarom je AOW onvolledig is (2% per jaar) en hoe de AIO je aanvult tot het sociaal minimum',
 crumb='AOW en AIO',
-desc='Uitgebreide gids voor oudere migranten: AOW-leeftijd 67 in 2026 en 2027 en 67 jaar en 3 maanden in 2028, opbouw 2% per jaar wonen of werken in Nederland, waarom veel migranten een onvolledige AOW krijgen, de AIO-aanvulling van de SVB en voorwaarden, bijstandsnormen vanaf AOW-leeftijd en andere regelingen.',
+seo_title='AOW en AIO-aanvulling voor migranten 2026',
+desc='AOW-leeftijd 67 in 2026 en opbouw 2% per jaar in Nederland: waarom je AOW onvolledig is en hoe de AIO van de SVB aanvult tot het sociaal minimum.',
 summary='<ol><li><strong>AOW-leeftijd:</strong> 67 in 2026 en 2027, <strong>67 jaar en 3 maanden in 2028</strong>. Bekijk je eigen datum bij de SVB.</li><li>Je bouwt <strong>2% AOW per jaar</strong> op dat je in Nederland woont of werkt; wie later kwam, krijgt een <strong>onvolledige</strong> AOW.</li><li>Volledige AOW: 70% van het netto minimumloon (alleenstaand), 50% per persoon (samenwonend).</li><li>De <strong>AIO-aanvulling</strong> van de SVB vult aan tot het sociaal minimum bij onvolledige AOW, laag inkomen en vermogen, en wonen in Nederland.</li><li>Bijstandsnormen vanaf AOW-leeftijd (1 juli 2026): <strong>€ 1.587,34</strong> alleenstaand, <strong>€ 2.176,10</strong> gehuwd per maand.</li></ol>',
 body=(
 '<h2 id="age">AOW-leeftijd</h2>'

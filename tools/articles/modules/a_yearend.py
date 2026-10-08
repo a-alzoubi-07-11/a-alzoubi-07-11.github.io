@@ -9,8 +9,9 @@ SRC=[('Rijksoverheid · Overstappen zorgverzekeraar',R+'onderwerpen/zorgverzeker
 ('Volkshuisvesting Nederland · Wet toekomstbestendige Huurcommissie','https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie'),
 ('Dienst Toeslagen · Proefberekening','https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/hulpmiddel-proefberekening-toeslagen')]
 AR=dict(title='قائمة نهاية السنة 2026: ماذا تفعل قبل 31 ديسمبر وفي يناير 2027 (التأمين الصحي، البدلات، الضرائب، الطاقة)',
+seo_title='قائمة نهاية السنة 2026 قبل 31 ديسمبر',
 crumb='قائمة نهاية السنة',
-desc='قائمة عملية مرتبة بالتواريخ لكل أسرة في هولندا: تغيير التأمين الصحي قبل 31 ديسمبر، تحديث دخل 2027 في البدلات، الدفعة المؤقتة للضرائب، صندوق الطاقة من 1 ديسمبر، وما تغيّر في ميزانية 2027 — مع أمثلة وأسئلة شائعة.',
+desc='قائمة نهاية السنة 2026 في هولندا: غيّر التأمين الصحي قبل 31 ديسمبر، حدّث دخل 2027 في البدلات، وحضّر لصندوق الطاقة (التقديم 4 يناير – 7 مايو 2027).',
 summary='<ol><li><strong>12 نوفمبر</strong>: شركات التأمين تنشر أسعار 2027 — قارن.</li><li><strong>قبل 31 ديسمبر</strong>: غيّر التأمين الصحي إن أردت (والشركة الجديدة تلغي القديم).</li><li><strong>ديسمبر</strong>: حدّث دخلك المتوقع لـ2027 في حساب البدلات.</li><li><strong>من 1 ديسمبر</strong>: حضّر لصندوق الطاقة؛ التقديم <strong>4 يناير – 7 مايو 2027</strong>.</li><li>إجراءات الميزانية 2027 مقترحات حتى يقرها البرلمان.</li></ol>',
 body=(
 '<h2 id="calendar">التقويم</h2>'
@@ -27,8 +28,9 @@ body=(
 faq=[('متى آخر موعد لتغيير التأمين الصحي؟','31 ديسمبر 2026 لعقد يبدأ 1 يناير 2027.'),('كم المساهمة الذاتية 2027؟','مقترح الحكومة 400 يورو (حالياً 385)، بانتظار موافقة البرلمان.'),('هل أحدّث دخلي في البدلات؟','نعم، أدخل دخل 2027 المتوقع لتجنب الاسترداد.'),('متى صندوق الطاقة؟','التقديم من 4 يناير حتى 7 مايو 2027.'),('هل الحد الأدنى للأجور 2027 معروف؟','عند كتابة المقال لم يُنشر الرقم الرسمي بعد.')],
 src_note='راجعنا Rijksoverheid في 5 أكتوبر 2026. أرقام الميزانية 2027 مقترحات قد تتغير، وبعض التقديرات من مصادر إعلامية وقطاعية. الأمثلة توضيحية.')
 NL=dict(title='Checklist jaareinde 2026: wat regel je vóór 31 december en in januari 2027 (zorgverzekering, toeslagen, belasting, energie)',
+seo_title='Checklist jaareinde 2026: vóór 31 december',
 crumb='Checklist jaareinde',
-desc='Praktische checklist op datum voor huishoudens: zorgverzekering overstappen vóór 31 december, inkomen 2027 doorgeven bij Toeslagen, voorlopige aanslag, Noodfonds Energie vanaf 1 december en de plannen voor 2027 — met voorbeelden en FAQ.',
+desc='Checklist jaareinde 2026: zorgverzekering wisselen vóór 31 december, inkomen 2027 doorgeven bij Toeslagen en Noodfonds Energie (4 januari t/m 7 mei 2027).',
 summary='<ol><li><strong>12 november</strong>: premies 2027 bekend — vergelijk.</li><li><strong>Vóór 31 december</strong>: overstappen zorgverzekering (nieuwe verzekeraar zegt op).</li><li><strong>December</strong>: inkomen 2027 doorgeven bij Toeslagen.</li><li><strong>Vanaf 1 december</strong>: voorbereiden Noodfonds; aanvragen <strong>4 januari – 7 mei 2027</strong>.</li><li>Begrotingsmaatregelen 2027 zijn voorstellen tot het parlement beslist.</li></ol>',
 body=(
 '<h2 id="calendar">Kalender</h2>'

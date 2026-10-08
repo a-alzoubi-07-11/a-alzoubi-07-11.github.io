@@ -12,7 +12,8 @@ SRC=[('CJIB · Verkeersboete: hoe werken wij (stappen, aanmaningen, dwangmiddele
 ('Rijksoverheid · Boete voor een verkeersovertreding','https://www.rijksoverheid.nl/vraag-en-antwoord/straffen-en-maatregelen/werkwijze-boete-verkeersovertreding')]
 AR=dict(title='المخالفات المرورية وCJIB في 2026: المهل، الزيادات ×1.5 و×3، الاعتراض خلال 6 أسابيع، والتقسيط حتى 36 شهراً — مع أمثلة',
 crumb='المخالفات المرورية وCJIB',
-desc='دليل عميق لرسالة المخالفة المرورية من CJIB: معنى الحرف M، مهلة الدفع 8 أسابيع وتذكير مجاني لأسبوعين، الإنذار الأول ×1.5 والثاني ×3، رسوم إدارية 9 يورو، الاعتراض لدى النيابة خلال 6 أسابيع عبر Digitaal Loket Verkeer، شروط التقسيط (75 يورو فأكثر، من 3 إلى 36 شهراً)، وما يحدث إن لم تدفع، مع أمثلة محسوبة وأسئلة شائعة.',
+seo_title='المخالفات المرورية وCJIB: الدفع والاعتراض',
+desc='مخالفة مرورية من CJIB: مهلة الدفع 8 أسابيع ثم زيادة ×1.5 و×3، الاعتراض خلال 6 أسابيع، والتقسيط من 75 يورو حتى 36 شهراً، مع أمثلة محسوبة.',
 summary='<ol><li><strong>المهلة الأولى 8 أسابيع</strong> للدفع أو لطلب التقسيط. بعدها تذكير <strong>مجاني</strong> بمهلة <strong>أسبوعين</strong>.</li><li>إن لم تدفع: <strong>الإنذار الأول = 1.5 × الغرامة</strong>، و<strong>الإنذار الثاني = 3 × الغرامة</strong>. غرامة 50 يورو تصبح 150.</li><li>CJIB يضيف <strong>9 يورو رسوماً إدارية</strong>، ومبالغ Boetebase لا تشملها.</li><li><strong>لست موافقاً؟</strong> اعترض لدى النيابة (officier van justitie) خلال <strong>6 أسابيع</strong> من تاريخ الرسالة، عبر Digitaal Loket Verkeer بـDigiD أو برسالة. لا تدفع ولا تطلب تقسيطاً أثناء الاعتراض.</li><li><strong>التقسيط</strong> ممكن إن كان المجموع <strong>75 يورو فأكثر</strong>: من 3 أشهر (حتى 120 يورو) إلى 36 شهراً (4,000 فأكثر)، ويمكن طلب تقسيط حسب دخلك.</li></ol>',
 body=(
 '<h2 id="letter">افهم الرسالة: الحرف في أعلى اليمين</h2>'
@@ -44,7 +45,8 @@ faq=[('كم مهلة دفع المخالفة؟','8 أسابيع، ثم تذكي�
 src_note='راجعنا CJIB والنيابة العامة (OM) وRijksoverheid في 7 أكتوبر 2026. لم نذكر مبالغ مخالفات بعينها (السرعة، الهاتف…) لأنها تختلف حسب feitcode؛ ابحث عنها في Boetebase. مهلة الطعن لدى قاضي المقاطعة مذكورة في قرار النيابة. الأمثلة توضيحية.')
 NL=dict(title='Verkeersboetes en het CJIB in 2026: termijnen, verhogingen ×1,5 en ×3, beroep binnen 6 weken en betalen in termijnen tot 36 maanden — met voorbeelden',
 crumb='Verkeersboetes en CJIB',
-desc='Uitgebreide gids over de CJIB-verkeersboete: de letter M, 8 weken betaaltermijn en gratis herinnering van 2 weken, eerste aanmaning ×1,5 en tweede ×3, € 9 administratiekosten, beroep bij de officier van justitie binnen 6 weken via het Digitaal Loket Verkeer, betalingsregeling (vanaf € 75, 3 tot 36 maanden) en dwangmiddelen, met rekenvoorbeelden en FAQ.',
+seo_title='Verkeersboete CJIB: betalen, termijnen en beroep',
+desc='Verkeersboete van het CJIB: 8 weken om te betalen, dan ×1,5 en ×3, beroep binnen 6 weken en een betalingsregeling vanaf € 75 tot 36 maanden.',
 summary='<ol><li><strong>8 weken</strong> om te betalen of een regeling af te spreken; daarna een <strong>gratis</strong> herinnering met <strong>2 weken</strong> extra.</li><li>Niet betaald: <strong>eerste aanmaning = 1,5 × de boete</strong>, <strong>tweede = 3 ×</strong>. € 50 wordt € 150.</li><li>Het CJIB rekent <strong>€ 9 administratiekosten</strong>; Boetebase-bedragen zijn exclusief.</li><li><strong>Niet eens?</strong> Beroep bij de officier van justitie binnen <strong>6 weken</strong> na verzenddatum, via het Digitaal Loket Verkeer (DigiD) of per brief. Niet betalen en geen regeling aanvragen tijdens beroep.</li><li><strong>Betalingsregeling</strong> vanaf <strong>€ 75</strong>: 3 maanden (tot € 120) tot 36 maanden (€ 4.000+), of maatwerk.</li></ol>',
 body=(
 '<h2 id="letter">De letter rechtsboven</h2>'

@@ -10,7 +10,8 @@ SRC=[('Rijksoverheid · Uit welke mbo-opleidingen kan ik kiezen?',R+'vraag-en-an
 
 AR=dict(title='اللغة الهولندية ودراسة MBO للقادمين الجدد 2026: شروط الدخول لكل مستوى، مستوى اللغة 2F و3F، امتحان NT2، مسار التعليم في الاندماج، التسجيل قبل 1 أبريل، والرسوم',
 crumb='اللغة وMBO',
-desc='دليل عميق للقادم الجديد الذي يريد دراسة MBO: شروط الدخول للمستويات 1–4 (المستوى 1 دون شهادة من 16 سنة)، امتحانات الهولندية عند التخرج (2F للمستويات 1–3 و3F للمستوى 4)، دور امتحان الدولة NT2 B1، مسار التعليم في الاندماج، التسجيل قبل 1 أبريل لضمان القبول، والرسوم الدراسية 1,511 يورو لـBOL في 2026/2027.',
+seo_title='دراسة MBO واللغة الهولندية للقادمين 2026',
+desc='دراسة MBO للقادمين الجدد: المستوى 1 دون شهادة من سن 16، الهولندية 2F أو 3F عند التخرج، دور امتحان NT2 B1، والتسجيل قبل 1 أبريل لضمان القبول.',
 summary='<ol><li><strong>المستوى 1 (Entree)</strong>: لا يتطلب شهادة، العمر 16 سنة على الأقل في 1 أغسطس، ومدته سنة.</li><li><strong>المستوى 2</strong>: شهادة vmbo أو ما يعادلها، أو إكمال Entree. <strong>المستويان 3 و4</strong>: vmbo أو المستوى 2 أو ما يعادل havo/vwo.</li><li><strong>عند التخرج</strong> امتحان هولندية: <strong>2F</strong> للمستويات 1–3، و<strong>3F</strong> للمستوى 4.</li><li>كثير من المدارس تطلب من القادمين الجدد مستوى لغة قبل البدء (غالباً قريباً من A2–B1)؛ <strong>امتحان الدولة NT2 B1</strong> مصمم أصلاً لمن يريد دراسة MBO.</li><li><strong>سجّل قبل 1 أبريل</strong> ليكون لك حق القبول. <strong>الرسوم</strong> لمن عمره 18+: BOL 1,511 يورو في 2026/2027.</li></ol>',
 body=(
 '<h2 id="levels">شروط الدخول لكل مستوى</h2>'
@@ -42,7 +43,8 @@ src_note='راجعنا Rijksoverheid وstaatsexamensnt2.nl في 5 أكتوبر 2
 
 NL=dict(title='Nederlands en mbo voor nieuwkomers in 2026: toelating per niveau, taalniveau 2F en 3F, staatsexamen Nt2, onderwijsroute, aanmelden vóór 1 april en lesgeld',
 crumb='Taal en mbo',
-desc='Uitgebreide gids voor nieuwkomers die mbo willen doen: toelatingseisen niveau 1–4 (entree zonder diploma vanaf 16), taalexamens 2F (niveau 1–3) en 3F (niveau 4), de rol van staatsexamen Nt2 B1, de onderwijsroute in de inburgering, aanmelden vóór 1 april en lesgeld € 1.511 (bol 2026/2027).',
+seo_title='Mbo en Nederlands voor nieuwkomers 2026',
+desc='Mbo voor nieuwkomers: entree zonder diploma vanaf 16, taalniveau 2F of 3F, staatsexamen Nt2 B1, aanmelden vóór 1 april en lesgeld € 1.511 (bol 2026/2027).',
 summary='<ol><li><strong>Niveau 1 (entree)</strong>: geen diploma nodig, minimaal 16 op 1 augustus, 1 jaar.</li><li><strong>Niveau 2</strong>: vmbo of gelijkwaardig, of entree. <strong>Niveau 3 en 4</strong>: vmbo, niveau 2 of havo/vwo-bewijs.</li><li><strong>Bij diplomering</strong> een taalexamen: <strong>2F</strong> (niveau 1–3), <strong>3F</strong> (niveau 4).</li><li>Scholen bepalen zelf extra taaleisen bij de start; <strong>staatsexamen Nt2 programma I (B1)</strong> is gemaakt voor wie mbo wil doen.</li><li><strong>Aanmelden vóór 1 april</strong> voor recht op toelating. <strong>Lesgeld</strong> 18+: bol € 1.511 in 2026/2027.</li></ol>',
 body=(
 '<h2 id="levels">Toelating per niveau</h2>'

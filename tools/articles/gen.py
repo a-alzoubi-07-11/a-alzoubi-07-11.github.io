@@ -8,7 +8,7 @@ def build(slug,lang,spec,date_iso,date_text):
     path=f"{REPO}/{'nl/' if lang=='nl' else ''}articles/{slug}.html"
     t=open(path,encoding='utf-8').read()
     L=LBL[lang]; title=spec['title']; desc=spec['desc']; site='Nederlandsgids' if lang=='nl' else 'دليل هولندا بالعربية'
-    full=f"{title} | {site}"
+    full=f"{spec.get('seo_title') or title} | {site}"  # optional short SEO <title>; H1/headline keep the full title
     t=re.sub(r'<title>.*?</title>',lambda m:f'<title>{esc(full)}</title>',t,1,re.S)
     t=re.sub(r'(<meta name="description" content=")[^"]*"',lambda m:m.group(1)+esc(desc)+'"',t,1)
     t=re.sub(r'(<meta property="og:title" content=")[^"]*"',lambda m:m.group(1)+esc(full)+'"',t,1)

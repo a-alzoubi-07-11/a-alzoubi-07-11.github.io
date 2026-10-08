@@ -9,7 +9,8 @@ BBL=[['21+','14.71','14.99'],['20','9.05','9.22'],['19','7.72','7.87'],['18','6.
 def nl(rows): return [[r[0],r[1].replace('.',','),r[2].replace('.',',')] for r in rows]
 AR=dict(title='الحد الأدنى للأجر في هولندا 2026: الأجر الساعي حسب العمر، وكيف تحسب راتبك الشهري',
 crumb='الحد الأدنى للأجر',
-desc='الحد الأدنى للأجر في هولندا من 1 يوليو 2026: 14.99 يورو في الساعة (21+). جدول الأعمار، جدول BBL، طريقة تحويله إلى راتب أسبوعي وشهري، وما الذي سيتغير للشباب في 2027.',
+seo_title='الحد الأدنى للأجر minimumloon 2026',
+desc='الحد الأدنى للأجر minimumloon في هولندا من 1 يوليو 2026: 14.99 يورو إجمالي للساعة لمن عمره 21+، مع جدول الأعمار وBBL وتحويله إلى راتب شهري.',
 summary='<ol><li>منذ 1 يناير 2024 الحد الأدنى <strong>بالساعة</strong> فقط؛ لم يعد هناك حد أدنى شهري أو أسبوعي أو يومي ثابت.</li><li>من <strong>1 يوليو 2026</strong>: <strong>14.99 يورو إجمالي للساعة</strong> لمن هم 21 سنة فأكثر (14.71 من 1 يناير 2026).</li><li>من هم دون 21 يأخذون نسبة تتوقف على العمر؛ وطلاب <strong>BBL</strong> لهم جدول أدنى خاص حتى نهاية 2026.</li><li>الراتب الشهري = الأجر الساعي × عدد ساعات العمل الرسمية، فقد يختلف من شهر لآخر.</li><li>الأرقام <strong>إجمالية قبل الضريبة</strong>؛ ما يصلك صافياً أقل (<a href="/articles/dutch-payslip-explained.html">شرح قسيمة الراتب</a>).</li></ol>',
 body=(
 '<h2 id="amounts">الأرقام الحالية</h2><p>الأجر الأدنى القانوني هو المبلغ <strong>الإجمالي قبل الضريبة</strong> الذي يجب أن يُدفع لكل ساعة عمل. يتغير مرتين في السنة (1 يناير و1 يوليو). هذه أرقام الحكومة الهولندية:</p>'
@@ -18,7 +19,7 @@ body=(
 '<h2 id="monthly">كيف أحوّله إلى راتب أسبوعي أو شهري؟</h2><p>لا يوجد رقم شهري رسمي ثابت. الراتب يتبع <strong>ساعات العمل الرسمية</strong>، وهي تشمل ساعات العمل الفعلية وساعات الإجازة المأخوذة وساعات المرض المدفوعة. لذلك قد تختلف من شهر لآخر لأن بعض الأشهر فيها أيام عمل أكثر. وإن اتفقتَ مع صاحب العمل على عدد ثابت من الساعات أسبوعياً فيمكن الاتفاق على راتب شهري ثابت.</p>'
 '<p>تقدير تقريبي لمن عمره 21+ (من 1 يوليو 2026): الأجر الساعي × ساعات الأسبوع × 52 ÷ 12.</p>'
 +T([['32 ساعة','14.99 × 32 × 52 ÷ 12','≈ 2,078.6'],['36 ساعة','14.99 × 36 × 52 ÷ 12','≈ 2,338.4'],['38 ساعة','14.99 × 38 × 52 ÷ 12','≈ 2,468.3'],['40 ساعة','14.99 × 40 × 52 ÷ 12','≈ 2,598.3']],['ساعات الأسبوع','الحساب','إجمالي شهري تقريبي (يورو)'])
-+'<ul><li>هذه <strong>أدنى حد</strong>؛ كثير من العقود الجماعية (CAO) تدفع أكثر.</li><li>الأرقام تقديرية: تحتسب شهراً متوسطاً، وراتبك الفعلي يتبع احتساب صاحب العمل.</li><li>الحد الأدنى لا يشمل عادة <strong>بدل العطلة</strong> (يُدفع عادة 8% إضافة)، فاقرأ عقدك أو CAO لتتأكد.</li></ul>'
++'<ul><li>هذه <strong>أدنى حد</strong>؛ كثير من العقود الجماعية (CAO) تدفع أكثر.</li><li>الأرقام تقديرية: تحتسب شهراً متوسطاً، وراتبك الفعلي يتبع احتساب صاحب العمل.</li><li>الحد الأدنى لا يشمل عادة <strong>بدل العطلة</strong> (يُدفع عادة 8% إضافة)، فاقرأ عقدك أو CAO لتتأكد.</li><li>إن كنت تخطط للمّ شمل شريكك فهناك شرط دخل خاص بذلك؛ راجع <a href="/articles/family-reunification-mvv-ind.html">دليل لمّ شمل الشريك</a>.</li></ul>'
 '<h2 id="youth">الشباب وطلاب BBL</h2><p>طلاب مسار <strong>BBL</strong> (دراسة مع عمل، انظر <a href="/articles/bol-bbl-comparison.html">BOL أم BBL</a>) يطبّق عليهم جدول أدنى خاص حتى نهاية 2026:</p>'
 +T(BBL,['العمر','BBL من 1 يناير 2026','BBL من 1 يوليو 2026'])
 +'<p>مثلاً من عمره 20 سنة: الحد العام 11.99 يورو/ساعة، لكن في BBL 9.22 يورو/ساعة. <strong>تنبيه:</strong> إن كنت طالب BBL فتحقق من أن جدولك هو المطبّق على عقدك.</p>'
@@ -36,7 +37,8 @@ faq=[('كم الحد الأدنى للأجر في هولندا اليوم؟','م
 src_note='أرقام الأجر الساعي ونسب 2027 من موقع الحكومة الهولندية (Rijksoverheid وGovernment.nl)، راجعناها في 4 أكتوبر 2026. المبالغ الشهرية في الجدول حسابات تقريبية منا وليست أرقاماً رسمية.')
 NL=dict(title='Minimumloon 2026: minimumuurloon per leeftijd en wat het per maand betekent',
 crumb='Minimumloon',
-desc='Minimumloon vanaf 1 juli 2026: € 14,99 per uur (21+). Tabellen per leeftijd en voor bbl, omrekening naar week en maand, en wat er in 2027 verandert voor jongeren.',
+seo_title='Minimumloon 2026: uurloon per leeftijd',
+desc='Minimumloon vanaf 1 juli 2026: € 14,99 bruto per uur (21+). Tabellen per leeftijd en voor bbl, omrekening naar maandloon en plannen voor 2027.',
 summary='<ol><li>Sinds 1 januari 2024 geldt een minimum <strong>per uur</strong>; er is geen vast minimum maand-, week- of dagloon meer.</li><li>Per <strong>1 juli 2026</strong>: <strong>€ 14,99 bruto per uur</strong> voor 21 jaar en ouder (€ 14,71 vanaf 1 januari 2026).</li><li>Onder de 21 geldt een percentage per leeftijd; voor <strong>bbl</strong>-leerlingen is er tot eind 2026 een eigen, lagere tabel.</li><li>Maandloon = uurloon × officiele arbeidsduur; dat kan per maand verschillen.</li><li>Alle bedragen zijn <strong>bruto</strong> (<a href="/nl/articles/dutch-payslip-explained.html">loonstrook uitgelegd</a>).</li></ol>',
 body=(
 '<h2 id="amounts">De actuele bedragen</h2><p>Het wettelijk minimumloon is het brutobedrag per uur dat een werkgever minimaal moet betalen. Het wordt twee keer per jaar aangepast (1 januari en 1 juli).</p>'
@@ -44,7 +46,7 @@ body=(
 +'<p>Iedereen vanaf 15 jaar moet minimaal het uurloon voor zijn leeftijd krijgen. Vanaf 21 jaar geldt het volledige bedrag.</p>'
 '<h2 id="monthly">Omrekenen naar week of maand</h2><p>Er is geen officieel vast maandbedrag. Het loon volgt de <strong>officiele arbeidsduur</strong>: gewerkte uren, opgenomen verlofuren en uren ziekte met loondoorbetaling. Die kan per maand verschillen. Is een vast aantal uren per week afgesproken, dan mag een vast maandsalaris worden afgesproken.</p><p>Indicatie voor 21+ (vanaf 1 juli 2026): uurloon × uren per week × 52 ÷ 12.</p>'
 +T([['32 uur','14,99 × 32 × 52 ÷ 12','≈ 2.078,6'],['36 uur','14,99 × 36 × 52 ÷ 12','≈ 2.338,4'],['38 uur','14,99 × 38 × 52 ÷ 12','≈ 2.468,3'],['40 uur','14,99 × 40 × 52 ÷ 12','≈ 2.598,3']],['Uren per week','Berekening','Bruto per maand, indicatie (€)'])
-+'<ul><li>Dit is het <strong>minimum</strong>; veel cao-s betalen meer.</li><li>Het zijn eigen indicatieve berekeningen met een gemiddelde maand, geen officiele bedragen.</li><li>Vakantiegeld zit normaal gesproken niet in het minimumloon (meestal 8% extra); controleer je contract of cao.</li></ul>'
++'<ul><li>Dit is het <strong>minimum</strong>; veel cao-s betalen meer.</li><li>Het zijn eigen indicatieve berekeningen met een gemiddelde maand, geen officiele bedragen.</li><li>Vakantiegeld zit normaal gesproken niet in het minimumloon (meestal 8% extra); controleer je contract of cao.</li><li>Wil je je partner naar Nederland halen? Daarvoor geldt een eigen inkomenseis; zie <a href="/nl/articles/family-reunification-mvv-ind.html">gezinshereniging met een partner</a>.</li></ul>'
 '<h2 id="youth">Jongeren en bbl</h2><p>Voor leerlingen in de <strong>bbl</strong> (werken en leren, zie <a href="/nl/articles/bol-bbl-comparison.html">bol of bbl</a>) geldt tot eind 2026 een eigen tabel:</p>'
 +T(nl(BBL),['Leeftijd','Bbl vanaf 1 januari 2026','Bbl vanaf 1 juli 2026'])
 +'<p>Voorbeeld: op je 20e is het algemene minimum € 11,99, maar in de bbl € 9,22 per uur. Controleer dus welke tabel voor jouw contract geldt.</p>'

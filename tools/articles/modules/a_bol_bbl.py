@@ -6,8 +6,9 @@ SRC=[('SBB · Verschil tussen bol en bbl','https://www.s-bb.nl/bedrijven/wat-is-
 ('Rijksoverheid · Bedragen minimumloon bbl 2026','https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026'),
 ('Rijksoverheid · Hoger minimumjeugdloon vanaf 2027','https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027')]
 AR=dict(title='BOL أم BBL؟ مقارنة الدراسة والتدريب والعمل: الوقت، الراتب، التكلفة، والتمويل',
+seo_title='BOL أم BBL في MBO: الفرق والراتب والتكلفة',
 crumb='BOL أم BBL',
-desc='مقارنة بين BOL وBBL في MBO: أيام المدرسة، الراتب وعقد العمل، lesgeld وcursusgeld (2026/27)، الحد الأدنى لأجر BBL، التمويل، ومن يناسبه كل مسار.',
+desc='BOL أم BBL في MBO؟ قارن أيام المدرسة والراتب والعقد: BOL يدفع lesgeld 1,511 يورو وBBL يدفع cursusgeld 314 أو 762 يورو (2026/27)، مع حد أجر BBL.',
 summary='<ol><li><strong>BOL:</strong> تدرس 4 إلى 5 أيام أسبوعياً وتتدرب عند شركة معتمدة (stage) في فترات، ولا راتب مضمون.</li><li><strong>BBL:</strong> تدرس يوماً أو يومين وتعمل 3 إلى 4 أيام على الأقل عند شركة معتمدة بعقد عمل وراتب.</li><li>تكلفة الدراسة: BOL 18+ يدفع <strong>lesgeld 1,511 يورو</strong> (2026/27)، وBBL يدفع <strong>cursusgeld 314 أو 762 يورو</strong>.</li><li>BOL يستحق <strong>studiefinanciering</strong>؛ BBL يتقاضى راتباً وله جدول حد أدنى للأجر خاص حتى نهاية 2026.</li><li>BBL يتطلب <strong>إيجاد شركة</strong> تقبل بك قبل أن تبدأ فعلياً.</li></ol>',
 body=(
 '<h2 id="table">مقارنة سريعة</h2>'
@@ -32,8 +33,9 @@ faq=[('ما الفرق الأساسي بين BOL وBBL؟','BOL معظمه مدر
 ('هل أحتاج شركة؟','في BBL نعم: شركة معتمدة وعقد عمل.')],
 src_note='الفروق من SBB، والرسوم والتمويل والحد الأدنى من Rijksoverheid، راجعناها في 4 أكتوبر 2026. جملة أن BBL لا studiefinanciering له استنتاج من أن الحكومة تذكر الحق لـBOL فقط؛ تحقق من DUO لحالتك.')
 NL=dict(title='Bol of bbl? Leren, werken en verdienen vergeleken: tijd, loon, kosten en financiering',
+seo_title='Bol of bbl: verschil, loon en kosten',
 crumb='Bol of bbl',
-desc='Bol en bbl in het mbo vergeleken: schooldagen, loon en arbeidsovereenkomst, lesgeld en cursusgeld (2026-2027), minimumloon bbl, financiering en voor wie welke route past.',
+desc='Bol of bbl in het mbo? Vergelijk schooldagen, loon en contract: bol kost € 1.511 lesgeld, bbl € 314 of € 762 cursusgeld (2026-2027).',
 summary='<ol><li><strong>Bol:</strong> 4 tot 5 dagen per week naar school en stage bij een erkend leerbedrijf in periodes; geen vast loon.</li><li><strong>Bbl:</strong> 1 tot 2 dagen naar school en minimaal 3 tot 4 dagen werken bij een erkend leerbedrijf met een arbeidsovereenkomst en loon.</li><li>Kosten: bol vanaf 18 betaalt <strong>lesgeld € 1.511</strong> (2026-2027); bbl betaalt <strong>cursusgeld € 314 of € 762</strong>.</li><li>Bol geeft recht op <strong>studiefinanciering</strong>; bbl-leerlingen verdienen loon met een eigen minimumloontabel tot eind 2026.</li><li>Voor bbl moet je eerst een <strong>leerbedrijf</strong> vinden.</li></ol>',
 body=(
 '<h2 id="table">Snel vergeleken</h2>'

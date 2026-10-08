@@ -9,8 +9,9 @@ SRC=[('IND · Becoming a Dutch national through naturalisation','https://ind.nl/
 ('IND · Nieuwe wetten en regels asiel en nareis','https://ind.nl/nl/nieuwe-wetten-en-regels-asiel-en-nareis')]
 
 AR=dict(title='الجنسية الهولندية بالتجنس 2026: شرط 5 سنوات واستثناءاته، الاندماج A2، الرسوم، الإجراءات والحفل، وما هو مقترح فقط (10 سنوات وB1)',
+seo_title='التجنس naturalisatie والجنسية الهولندية',
 crumb='الجنسية الهولندية',
-desc='دليل عميق للتجنس: 5 سنوات إقامة متواصلة بتصريح ساري، الاستثناءات (3 سنوات للمتزوج من هولندي، سنتان بعد 10 سنوات)، شرط الاندماج A2 أو NT2، النظام العام، التخلي عن الجنسية الأصلية واستثناءاته، رسوم 2026 بين 847 و1,454 يورو، الطلب عبر البلدية، قرار خلال 12 شهراً، حفل التجنس، ووضع مقترحات 10 سنوات وB1.',
+desc='التجنس naturalisatie في هولندا: 5 سنوات إقامة متواصلة واستثناءاتها، شرط الاندماج A2، رسوم 2026 بين 847 و1,454 يورو، وقرار خلال 12 شهراً.',
 summary='<ol><li><strong>القاعدة:</strong> 5 سنوات <strong>متواصلة</strong> في هولندا بتصريح إقامة ساري، وعمر 18 سنة فأكثر، وإقامة سارية عند الطلب وأثناء الإجراء ويوم الحفل.</li><li><strong>الاستثناءات:</strong> 3 سنوات عند الزواج أو الشراكة أو المساكنة 3 سنوات مع هولندي؛ وسنتان إن كان مجموع إقامتك القانونية 10 سنوات.</li><li><strong>اللغة:</strong> امتحان الاندماج بمستوى <strong>A2</strong> على الأقل، أو امتحان الدولة NT2 B1/B2، أو إعفاء. شهادة مسار Z لا تكفي.</li><li><strong>الرسوم 2026</strong> بين <strong>847 و1,454 يورو</strong> حسب حالتك (اللاجئ وعديم الجنسية يدفعان أقل).</li><li><strong>اقتراحا 10 سنوات وB1 ليسا قانوناً</strong> حتى 5 أكتوبر 2026؛ الشرط الحالي 5 سنوات وA2.</li><li>إلغاء إقامة اللجوء الدائمة في يونيو 2026 لا يمنع التجنس.</li></ol>',
 body=(
 '<h2 id="conditions">الشروط الأساسية</h2>'
@@ -30,11 +31,11 @@ body=(
 '<h2 id="proposals">ما الذي يُقال عن 10 سنوات؟</h2>'
 +T([['تمديد المدة من 5 إلى 10 سنوات','وافقت حكومة Schoof في 26 سبتمبر 2025 على مسودة قانون وطرحتها للاستشارة. <strong>لم يصبح قانوناً</strong> حتى 5 أكتوبر 2026؛ المدة الحالية 5 سنوات.','مسودة'],
     ['رفع اللغة إلى B1','نية حكومية وقرار برلماني 2024، دون قانون.','نية'],
-    ['إلغاء إقامة اللجوء الدائمة (12 يونيو 2026)','نافذ، لكنه لا يغيّر شروط التجنس.','نافذ']],
+    ['إلغاء إقامة اللجوء الدائمة (12 يونيو 2026)','نافذ، لكنه لا يغيّر شروط التجنس (<a href="/articles/eu-permanent-residence-netherlands.html">دليل الإقامة الدائمة</a>).','نافذ']],
    ['الموضوع','الوضع','الحالة'])
 +'<p><strong>نصيحتنا:</strong> إن استوفيت الشروط الآن، فلا تؤجل الطلب بانتظار «الأخبار». القواعد السارية يوم تقديم الطلب هي الأهم عادة، والتغييرات القانونية تحتاج وقتاً.</p>'
-'<h2 id="refusal">أسباب شائعة للرفض أو التأخير</h2><ol><li>فجوة في الإقامة القانونية (انتهت البطاقة قبل التجديد).</li><li>شهادة الاندماج غير مكتملة أو مسار Z فقط.</li><li>غرامات أو سوابق جنائية حديثة.</li><li>وثائق هوية ناقصة دون إجراء «انعدام الدليل».</li><li>عدم حضور الحفل خلال السنة.</li></ol>'
-'<h2 id="checklist">قائمة التحقق قبل الموعد</h2><ol><li>احسب سنواتك المتواصلة من تاريخ أول إقامة سارية.</li><li>تأكد أن بطاقتك صالحة لسنة على الأقل.</li><li>جهّز شهادة الاندماج أو NT2.</li><li>اجمع الوثائق المدنية المتاحة والترجمات.</li><li>اسأل البلدية عن الرسوم الدقيقة وعن قاعدة التخلي عن الجنسية لحالتك.</li><li>فكّر في إشراك أطفالك القاصرين في الطلب.</li></ol>'),
+'<h2 id="refusal">أسباب شائعة للرفض أو التأخير</h2><ol><li>فجوة في الإقامة القانونية (انتهت البطاقة قبل التجديد).</li><li>شهادة الاندماج غير مكتملة أو مسار Z فقط.</li><li>غرامات أو سوابق جنائية حديثة.</li><li>وثائق هوية ناقصة دون إجراء «انعدام الدليل».</li><li>عدم حضور الحفل خلال السنة.</li></ol><p>إن وصلك قرار رفض فاقرأ المهلة المذكورة فيه، وراجع <a href="/articles/bezwaar-objection-letter.html">دليل الاعتراض على قرارات الحكومة</a>.</p>'
+'<h2 id="checklist">قائمة التحقق قبل الموعد</h2><ol><li>احسب سنواتك المتواصلة من تاريخ أول إقامة سارية.</li><li>تأكد أن بطاقتك صالحة لسنة على الأقل.</li><li>جهّز شهادة الاندماج أو NT2.</li><li>اجمع الوثائق المدنية المتاحة والترجمات، وصحّح أي خطأ في بياناتك لدى البلدية (<a href="/articles/bsn-municipality-registration.html">دليل التسجيل في البلدية</a>).</li><li>اسأل البلدية عن الرسوم الدقيقة وعن قاعدة التخلي عن الجنسية لحالتك.</li><li>فكّر في إشراك أطفالك القاصرين في الطلب.</li></ol>'),
 faq=[('بعد كم سنة أستطيع التجنس؟','عادة بعد 5 سنوات متواصلة بإقامة سارية؛ 3 سنوات عند الزواج أو الشراكة مع هولندي، وسنتان إن كان مجموع إقامتك 10 سنوات.'),
 ('هل أصبحت المدة 10 سنوات؟','لا. هناك مسودة قانون من 2025 لم تصبح قانوناً حتى 5 أكتوبر 2026.'),
 ('ما مستوى اللغة المطلوب؟','A2 في امتحان الاندماج أو NT2 B1/B2. مسار Z لا يكفي.'),
@@ -44,8 +45,9 @@ faq=[('بعد كم سنة أستطيع التجنس؟','عادة بعد 5 سنو
 src_note='راجعنا IND وinburgeren.nl وRijksoverheid في 5 أكتوبر 2026. أرقام الرسوم التفصيلية من مصدر قانوني ثانوي متوافق مع نطاق IND الرسمي؛ تحقق من المبلغ في البلدية.')
 
 NL=dict(title='Nederlander worden door naturalisatie in 2026: 5 jaar en uitzonderingen, inburgering A2, leges, procedure en ceremonie, en wat alleen een voorstel is (10 jaar, B1)',
+seo_title='Naturalisatie 2026: voorwaarden en leges',
 crumb='Naturalisatie',
-desc='Uitgebreide gids naturalisatie: 5 jaar onafgebroken met geldige vergunning, uitzonderingen (3 jaar met Nederlandse partner, 2 jaar na 10 jaar verblijf), inburgering A2 of Nt2, openbare orde, afstandseis met uitzonderingen, leges 2026 € 847–€ 1.454, aanvraag via de gemeente, besluit binnen 12 maanden, ceremonie, en de status van de plannen voor 10 jaar en B1.',
+desc='Naturalisatie in 2026: 5 jaar onafgebroken verblijf en uitzonderingen, inburgering A2, leges € 847–€ 1.454 en een besluit binnen 12 maanden.',
 summary='<ol><li><strong>Hoofdregel:</strong> 5 jaar <strong>onafgebroken</strong> met geldige vergunning, 18+, geldige status bij aanvraag, tijdens de procedure en bij de ceremonie.</li><li><strong>Uitzonderingen:</strong> 3 jaar bij huwelijk, partnerschap of 3 jaar samenwonen met een Nederlander; 2 jaar bij in totaal 10 jaar verblijf.</li><li><strong>Taal:</strong> inburgeringsexamen minimaal <strong>A2</strong> of staatsexamen Nt2 B1/B2; Z-route volstaat niet.</li><li><strong>Leges 2026:</strong> tussen <strong>€ 847 en € 1.454</strong>.</li><li><strong>10 jaar en B1 zijn geen wet</strong> per 5 oktober 2026.</li><li>Het einde van asiel onbepaalde tijd (juni 2026) blokkeert naturalisatie niet.</li></ol>',
 body=(
 '<h2 id="conditions">Basisvoorwaarden</h2>'
@@ -56,10 +58,10 @@ body=(
 '<h2 id="fees">Leges 2026</h2><p>Volgens het IND-overzicht: naturalisatie <strong>€ 847 – € 1.454</strong>; alle IND-leges stegen op 1 januari 2026 met 4,4%. Gedetailleerde bedragen (bijv. € 1.139 alleen, € 1.454 met partner, € 847 asiel/staatloos alleen, € 168 per meenaturaliserend kind) komen uit secundaire juridische overzichten; controleer het definitieve bedrag bij de gemeente.</p>'
 '<h2 id="process">Procedure</h2><ol><li>Afspraak bij de <strong>gemeente</strong>.</li><li>Meenemen: paspoort of reisdocument, verblijfsdocument, inburgeringsdiploma of Nt2, akten. Bij bewijsnood geldt een aparte procedure; vraag de gemeente.</li><li>Leges betalen.</li><li><strong>Besluit binnen 12 maanden</strong>; houd je verblijf geldig.</li><li><strong>Naturalisatieceremonie</strong> binnen 1 jaar na het besluit.</li><li>Paspoort aanvragen bij de gemeente.</li></ol>'
 '<h2 id="proposals">En die 10 jaar?</h2>'
-+T([['Termijn 5 naar 10 jaar','Concept-wetsvoorstel kabinet-Schoof (26 september 2025), internetconsultatie. <strong>Geen wet</strong> per 5 oktober 2026.','Concept'],['Taaleis B1','Aangekondigd, motie 2024, geen wet.','Voornemen'],['Einde asiel onbepaalde tijd (12 juni 2026)','In werking, maar verandert de naturalisatievoorwaarden niet.','Geldend']],['Onderwerp','Stand','Status'])
++T([['Termijn 5 naar 10 jaar','Concept-wetsvoorstel kabinet-Schoof (26 september 2025), internetconsultatie. <strong>Geen wet</strong> per 5 oktober 2026.','Concept'],['Taaleis B1','Aangekondigd, motie 2024, geen wet.','Voornemen'],['Einde asiel onbepaalde tijd (12 juni 2026)','In werking, maar verandert de naturalisatievoorwaarden niet (<a href="/nl/articles/eu-permanent-residence-netherlands.html">gids permanent verblijf</a>).','Geldend']],['Onderwerp','Stand','Status'])
 +'<p>Voldoe je nu aan de voorwaarden, wacht dan niet op «nieuws».</p>'
-'<h2 id="refusal">Veelvoorkomende redenen voor afwijzing of vertraging</h2><ol><li>Een gat in je rechtmatig verblijf.</li><li>Inburgering niet compleet of alleen Z-route.</li><li>Recente boetes of strafbare feiten.</li><li>Ontbrekende documenten zonder bewijsnoodprocedure.</li><li>Niet op de ceremonie verschijnen binnen een jaar.</li></ol>'
-'<h2 id="checklist">Checklist</h2><ol><li>Tel je onafgebroken jaren.</li><li>Pasje nog minstens een jaar geldig?</li><li>Inburgeringsdiploma of Nt2 klaar.</li><li>Akten en vertalingen verzamelen.</li><li>Vraag de gemeente naar leges en afstandseis.</li><li>Kinderen laten meenaturaliseren?</li></ol>'),
+'<h2 id="refusal">Veelvoorkomende redenen voor afwijzing of vertraging</h2><ol><li>Een gat in je rechtmatig verblijf.</li><li>Inburgering niet compleet of alleen Z-route.</li><li>Recente boetes of strafbare feiten.</li><li>Ontbrekende documenten zonder bewijsnoodprocedure.</li><li>Niet op de ceremonie verschijnen binnen een jaar.</li></ol><p>Afgewezen? Kijk naar de termijn in het besluit en zie onze <a href="/nl/articles/bezwaar-objection-letter.html">gids over bezwaar maken</a>.</p>'
+'<h2 id="checklist">Checklist</h2><ol><li>Tel je onafgebroken jaren.</li><li>Pasje nog minstens een jaar geldig?</li><li>Inburgeringsdiploma of Nt2 klaar.</li><li>Akten en vertalingen verzamelen, en fouten in je BRP-gegevens laten corrigeren (<a href="/nl/articles/bsn-municipality-registration.html">inschrijven bij de gemeente</a>).</li><li>Vraag de gemeente naar leges en afstandseis.</li><li>Kinderen laten meenaturaliseren?</li></ol>'),
 faq=[('Na hoeveel jaar kan ik naturaliseren?','Meestal na 5 jaar onafgebroken; 3 jaar met een Nederlandse partner; 2 jaar bij in totaal 10 jaar verblijf.'),
 ('Is het nu 10 jaar?','Nee, het concept-wetsvoorstel uit 2025 is geen wet per 5 oktober 2026.'),
 ('Welk taalniveau heb ik nodig?','A2 of staatsexamen Nt2 B1/B2; de Z-route volstaat niet.'),
