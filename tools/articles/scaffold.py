@@ -150,6 +150,10 @@ NEW.update({
    ar=('مركز أدلة اللجوء والإقامة + مساعدة بشرية مجانية', 'كل أدلة اللجوء ولمّ الشمل والوثائق والاندماج والإقامة الدائمة في مكان واحد، وروابط VluchtelingenWerk وJuridisch Loket وsociaal raadslieden وNationale ombudsman.'),
    nl=('Hub asiel en verblijf + gratis menselijke hulp', 'Alle gidsen over asiel, gezinshereniging, documenten, inburgering en permanent verblijf op één plek, plus VluchtelingenWerk, Juridisch Loket, sociaal raadslieden en de Nationale ombudsman.'),
    related=['asylum-two-status-system-2026', 'asylum-family-reunification', 'syrian-documents-legalisation-translation', 'legal-aid-lawyer-toevoeging']),
+ 'dutch-government-terms-glossary': dict(tpl='bsn-municipality-registration', cat='residence', listing='life',
+   ar=('قاموس المصطلحات الحكومية الهولندية', '141 مصطلحاً من رسائل Belastingdienst وUWV والبلدية وIND مع النطق والمعنى وماذا تفعل.'),
+   nl=('Overheidstaal uitgelegd', '141 begrippen uit brieven van de overheid in eenvoudig Nederlands, met het Arabische woord.'),
+   related=['bezwaar-objection-letter','digid-registration-guide','bsn-municipality-registration','toeslagen-income-update']),
 })
 
 def short_titles():

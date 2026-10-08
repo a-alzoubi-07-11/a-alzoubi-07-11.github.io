@@ -51,6 +51,7 @@ TOPIC_ALIASES = {
 
 # Words people actually type (colloquial Arabic, Dutch, transliterations, misspellings).
 ALIASES = {
+ 'dutch-government-terms-glossary':'قاموس مصطلحات مصطلحات هولندية كلمات الرسائل الحكومية معنى كلمة ترجمة رسالة بلاستينغ مصطلح glossary woordenlijst begrippen overheidstaal brief uitleg betekenis',
  'asylum-two-status-system-2026':'نظام الحالتين نظام الحالتين اللجوء لاجئ حماية ثانوية اقامة لجوء ثلاث سنوات اقامة مؤقتة اقامة غير محددة تغيير قوانين اللجوء 12 يونيو لم الشمل للحماية الثانوية انتظار سنتين جمع الشمل طلب لم الشمل موقوف IND ما بيبت بطلبي ستاتوس الحماية الاضافية تعديل الاقامة بطاقة اللجوء tweestatusstelsel twee statussen subsidiaire bescherming vluchteling asielvergunning bepaalde tijd onbepaalde tijd nareis nareistermijn migratiepact asielpas pasje statushouder wachttijd nareis IND beslist niet',
  'syrian-documents-legalisation-translation':'وثائق سورية تصديق الوثائق السورية ترجمة محلفة مترجم محلف ترجمة معتمدة شهادة ميلاد سورية عقد زواج سوري دفتر العائلة هوية سورية تصديق الخارجية السورية سفارة دمشق مغلقة تصديق شهادة تصديق اوراق تسجيل الوثائق في البلدية معادلة وثائق اوراق سورية legalisatie legaliseren Syrische documenten beëdigd vertaler beëdigde vertaling vertaling Arabisch geboorteakte huwelijksakte familieboekje Bureau Wbtv buitenlandse akte omzetten BRP inschrijven akte',
  'asylum-residence-hub':'اللجوء مركز اللجوء كل اللجوء مساعدة لاجئين مساعدة قانونية مجانية فلوختيلينغ فيرك VluchtelingenWerk جوريديش لوكيت Juridisch Loket مستشار اجتماعي sociaal raadslieden محقق وطني اومبودسمان ombudsman شكوى ضد IND اين اجد مساعدة منظمات اللاجئين اقامة لجوء اقامة دليل اللجوء asiel hub hulp vluchtelingen gratis juridische hulp klacht overheid nationale ombudsman sociaal raadsman asielzoeker verblijf',
@@ -119,6 +120,8 @@ TOOLS = {
   ('/tools.html#checklist','خطواتك الأولى','قائمة مرتبة بما تسجّله بعد الوصول','قائمة مهام بداية واصل جديد checklist'),
   ('/tools.html#budget','ميزانية الشهر','دخلك ومصاريفك والبدلات في جدول واحد','ميزانية مصروف حساب المصاريف budget'),
   ('/tools.html#salary','تقدير الراتب الصافي','من الإجمالي إلى الصافي لعام 2026','حاسبة الراتب حساب الصافي netto bruto calculator'),
+  ('/calculators/zorgtoeslag.html','حاسبة zorgtoeslag 2026','قدّر بدل التأمين الصحي حسب دخلك وأصولك','حاسبة بدل التأمين الصحي zorgtoeslag حساب بدل الصحة toeslag calculator'),
+  ('/calculators/kindgebonden-budget.html','حاسبة kindgebonden budget 2026','قدّر بدل الأطفال حسب الدخل وعدد الأطفال','حاسبة بدل الأطفال kindgebonden budget kgb حساب بدل اولاد'),
   ('/cv.html','السيرة الذاتية CV','سيرة هولندية في أربع خطوات','سي في سيرة ذاتية cv curriculum'),
   ('/#pathway','مخطط المسار الدراسي','من وضعك الحالي إلى الشهادة','مسار دراسي'),
   ('/#levels','مستويات التعليم','VMBO وHAVO وMBO وHBO والجامعة','مستويات vmbo havo vwo'),
@@ -132,6 +135,8 @@ TOOLS = {
   ('/nl/tools.html#checklist','Eerste stappen','Checklist voor je eerste weken','checklist start'),
   ('/nl/tools.html#budget','Maandbudget','Inkomen, vaste lasten en toeslagen','budget kosten'),
   ('/nl/tools.html#salary','Nettosalaris 2026','Van bruto naar netto, indicatief','salaris rekenen netto bruto'),
+  ('/nl/calculators/zorgtoeslag.html','Zorgtoeslag berekenen 2026','Schat uw zorgtoeslag op basis van inkomen en vermogen','zorgtoeslag berekenen rekenhulp calculator'),
+  ('/nl/calculators/kindgebonden-budget.html','Kindgebonden budget berekenen 2026','Schat uw kindgebonden budget per jaar en maand','kindgebonden budget berekenen rekenhulp calculator'),
   ('/nl/cv.html','Maak je cv','Nederlands cv in vier stappen','cv curriculum'),
   ('/nl/tools.html#routes','Onderwijsroutes','Mbo, hbo en wo naast elkaar','onderwijs routes'),
  ],
