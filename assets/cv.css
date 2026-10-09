@@ -128,6 +128,7 @@ details.ideas summary{cursor:pointer;min-height:44px;display:flex;align-items:ce
 .inline-item .translation-slot{grid-column:1/-1}
 .add-row{display:flex;gap:.5rem;margin:.6rem 0}
 .add-row input{flex:1}
+.add-wrap{margin-bottom:0}.add-wrap .add-row{margin-bottom:.3rem}
 .lang-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;gap:0 .7rem;align-items:start}
 .lang-row>.text-button{margin-top:2.6rem}
 

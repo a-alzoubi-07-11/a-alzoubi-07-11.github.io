@@ -277,7 +277,7 @@
         <div class="grid-2">${field(`exp.${e.id}.role`, x.role, { suggest: 'role', placeholder: x.placeholders.role })}${field(`exp.${e.id}.company`, x.company, { placeholder: x.placeholders.company, hint: x.companyHint, dir: 'ltr' })}</div>
         <div class="grid-3 dates">${field(`exp.${e.id}.city`, x.place, { suggest: 'city', placeholder: x.placeholders.place })}${datePick(`exp.${e.id}.start`, x.from)}${datePick(`exp.${e.id}.end`, x.to, e.current)}</div>
         <label class="check"><input type="checkbox" data-current="${e.id}" ${e.current ? 'checked' : ''}><span>${x.current}</span></label>
-        ${field(`exp.${e.id}.tasks`, x.tasks, { multiline: true, rows: 4, hint: x.tasksHint, placeholder: x.placeholders.tasks })}
+        ${field(`exp.${e.id}.tasks`, x.tasks, { multiline: true, rows: 4, suggest: 'tasks', hint: x.tasksHint, placeholder: x.placeholders.tasks })}
         <details class="ideas"><summary>${x.taskIdeas}</summary><label class="question compact"><span>${x.field}</span><select data-category="${e.id}">${S.categories.map(c => `<option value="${c[0]}" ${cat === c[0] ? 'selected' : ''}>${esc(ui === 'ar' ? c[1] : c[2])}</option>`).join('')}</select></label><div class="chips">${tasks.map(t => `<button type="button" class="chip add-chip" data-action="add-task" data-id="${e.id}" data-value="${esc(data.outLang === 'en' ? t[2] : t[1])}">＋ ${esc(uiLabel(t))}</button>`).join('')}</div></details></article>`;
     }).join('') + `<button type="button" class="add-entry" data-action="add-work">＋ ${x.addWork}</button>`;
   }
@@ -288,16 +288,16 @@
         <div class="grid-3 dates">${field(`edu.${e.id}.city`, x.place, { suggest: 'city', placeholder: x.placeholders.place })}${datePick(`edu.${e.id}.start`, x.from)}${datePick(`edu.${e.id}.end`, x.to, e.status === 'ongoing')}</div>
         <label class="question compact"><strong>${x.status}</strong><select data-status="${e.id}">${STATUS.map(s => `<option value="${s}" ${e.status === s ? 'selected' : ''}>${x.statuses[s]}</option>`).join('')}</select></label></article>`).join('')
       + `<button type="button" class="add-entry" data-action="add-edu">＋ ${x.addEdu}</button>`
-      + `<section class="subsection"><h3>${x.certs} <small>(${x.optional})</small></h3>${data.certificates.map(c => field(`cert.${c.id}`, x.certs, { cls: 'inline-item', after: `<button type="button" class="text-button danger" data-action="remove" data-list="certificates" data-id="${c.id}">${x.remove}</button>` })).join('')}
-        <div class="add-row"><input id="new-cert" dir="auto" maxlength="160" placeholder="${esc(x.certPlaceholder)}" aria-label="${x.certs}"><button type="button" class="small" data-action="add-cert">${x.add}</button></div>
+      + `<section class="subsection"><h3>${x.certs} <small>(${x.optional})</small></h3>${data.certificates.map(c => field(`cert.${c.id}`, x.certs, { suggest: 'cert', cls: 'inline-item', after: `<button type="button" class="text-button danger" data-action="remove" data-list="certificates" data-id="${c.id}">${x.remove}</button>` })).join('')}
+        <div class="field-group add-wrap"><div class="add-row"><input id="new-cert" dir="auto" maxlength="160" autocomplete="off" data-suggest="cert" aria-controls="s-new-cert" aria-expanded="false" aria-autocomplete="list" placeholder="${esc(x.certPlaceholder)}" aria-label="${x.certs}"><button type="button" class="small" data-action="add-cert">${x.add}</button></div><div class="sugg" id="s-new-cert" role="listbox" aria-label="${esc(x.certs)}" hidden></div></div>
         <p class="hint">${x.examples}</p><div class="chips">${S.cert.filter(r => !data.certificates.some(c => T.normalize(c.text) === T.normalize(r[1]) || T.normalize(c.text) === T.normalize(r[2]))).map(r => `<button type="button" class="chip add-chip" data-action="quick-cert" data-value="${esc(data.outLang === 'en' ? r[2] : r[1])}">＋ ${esc(uiLabel(r))}</button>`).join('')}</div></section>`;
   }
   function stepSkills() {
     const groups = S.skillGroups.map(g => `<div class="skill-group"><h4>${esc(ui === 'ar' ? g[1] : g[2])}</h4><div class="chips">${S.skills.filter(s => s[4] === g[0]).map(s => `<label class="chip"><input type="checkbox" data-skill="${s[0]}" ${data.skills.includes(s[0]) ? 'checked' : ''}><span>${esc(ui === 'ar' ? s[1] : s[2])}</span></label>`).join('')}</div></div>`).join('');
     const quick = S.langName.slice(0, 3).filter(r => !data.languages.some(l => [r[0], r[1], r[2]].some(c => T.normalize(c) === T.normalize(l.name))));
     return `<fieldset class="chips-set"><legend>${x.skills} <span class="skill-count" id="skill-count">${data.skills.length + data.customSkills.length}</span></legend><p class="hint">${x.skillsHint}</p>${groups}</fieldset>
-      <section class="subsection"><h3>${x.customSkill} <small>(${x.optional})</small></h3>${data.customSkills.map(c => field(`skill.${c.id}`, x.customSkill, { cls: 'inline-item', after: `<button type="button" class="text-button danger" data-action="remove" data-list="customSkills" data-id="${c.id}">${x.remove}</button>` })).join('')}
-      <div class="add-row"><input id="new-skill" dir="auto" maxlength="80" placeholder="${esc(x.customSkillPlaceholder)}" aria-label="${x.customSkill}"><button type="button" class="small" data-action="add-skill">${x.add}</button></div></section>
+      <section class="subsection"><h3>${x.customSkill} <small>(${x.optional})</small></h3>${data.customSkills.map(c => field(`skill.${c.id}`, x.customSkill, { suggest: 'skills', cls: 'inline-item', after: `<button type="button" class="text-button danger" data-action="remove" data-list="customSkills" data-id="${c.id}">${x.remove}</button>` })).join('')}
+      <div class="field-group add-wrap"><div class="add-row"><input id="new-skill" dir="auto" maxlength="80" autocomplete="off" data-suggest="skills" aria-controls="s-new-skill" aria-expanded="false" aria-autocomplete="list" placeholder="${esc(x.customSkillPlaceholder)}" aria-label="${x.customSkill}"><button type="button" class="small" data-action="add-skill">${x.add}</button></div><div class="sugg" id="s-new-skill" role="listbox" aria-label="${esc(x.customSkill)}" hidden></div></div></section>
       <section class="subsection"><h3>${x.languages}</h3>${data.languages.map(l => `<div class="lang-row">${field(`lang.${l.id}`, x.langName, { suggest: 'langName', placeholder: x.placeholders.langName })}<label class="question"><strong>${x.level}</strong><select data-level="${l.id}"><option value="">${x.chooseLevel}</option>${LEVELS.map(v => `<option value="${v}" ${l.level === v ? 'selected' : ''}>${x.levels[v]}</option>`).join('')}</select></label><button type="button" class="text-button danger" data-action="remove" data-list="languages" data-id="${l.id}">${x.remove}</button></div>`).join('')}
       ${quick.length ? `<p class="hint">${x.quickLangs}</p><div class="chips">${quick.map(r => `<button type="button" class="chip add-chip" data-action="quick-lang" data-value="${esc(data.outLang === 'en' ? r[2] : r[1])}">＋ ${esc(uiLabel(r))}</button>`).join('')}</div>` : ''}
       <button type="button" class="add-entry" data-action="add-lang">＋ ${x.addLang}</button></section>
@@ -374,13 +374,32 @@
 
   /* ---------- suggestions ---------- */
   const suggLabel = (kind, r) => kind === 'city' ? r[1] : (data.outLang === 'en' ? (r[2] || r[1]) : r[1]);
+  // Rows normalised to [ar, nl, en, extra]; skills carry their id as extra.
+  function suggRows(kind, el) {
+    if (kind === 'skills') {
+      const taken = el.id === 'new-skill' ? data.skills : [];
+      return S.skills.filter(r => !taken.includes(r[0])).map(r => [r[1], r[2], r[3], r[0]]);
+    }
+    if (kind === 'cert' && el.id === 'new-cert') return S.cert.filter(r => !data.certificates.some(c => [r[1], r[2]].some(v => T.normalize(v) === T.normalize(c.text))));
+    if (kind === 'tasks') {
+      const id = el.dataset.path.split('.')[1], e = data.experience.find(i => i.id === id) || {};
+      const cat = e.category && e.category !== 'all' ? e.category : guessCategory(e.role) || '';
+      const have = new Set(String(e.tasks || '').split('\n').map(l => T.normalize(l.replace(/^\s*[-•·*]\s*/, ''))));
+      const rows = S.tasks.filter(r => !have.has(T.normalize(r[1])) && !have.has(T.normalize(r[2])));
+      return cat ? [...rows.filter(r => r[3] === cat), ...rows.filter(r => r[3] !== cat)] : rows;
+    }
+    return S[kind] || [];
+  }
+  const suggQuery = (kind, el) => kind === 'interest' ? el.value.split(/[,،]/).at(-1)
+    : kind === 'tasks' ? el.value.split('\n').at(-1).replace(/^\s*[-•·*]\s*/, '') : el.value;
   function showSugg(el) {
-    const kind = el.dataset.suggest, box = document.getElementById('s-' + el.id); if (!box || !S[kind]) return;
-    const q = T.normalize(kind === 'interest' ? el.value.split(',').at(-1) : el.value);
-    const rows = S[kind].filter(r => !q || [r[0], r[1], r[2]].some(c => typeof c === 'string' && T.normalize(c).includes(q))).slice(0, q ? 6 : 8);
-    if (!rows.length || (rows.length === 1 && T.normalize(suggLabel(kind, rows[0])) === q)) { closeSugg(); return; }
+    const kind = el.dataset.suggest, box = document.getElementById('s-' + el.id); if (!box) return;
+    const q = T.normalize(suggQuery(kind, el));
+    if (kind === 'tasks' && q.length < 2) { if (openSugg === el) closeSugg(); return; }
+    const rows = suggRows(kind, el).filter(r => !q || [r[0], r[1], r[2]].some(c => typeof c === 'string' && T.normalize(c).includes(q))).slice(0, q ? 6 : 8);
+    if (!rows.length || (rows.length === 1 && T.normalize(suggLabel(kind, rows[0])) === q)) { if (openSugg === el) closeSugg(); return; }
     if (openSugg && openSugg !== el) closeSugg();
-    box.innerHTML = rows.map((r, i) => `<button type="button" role="option" tabindex="-1" id="${el.id}-o${i}" data-pick="${esc(suggLabel(kind, r))}"><strong dir="ltr">${esc(suggLabel(kind, r))}</strong>${ui === 'ar' ? `<span>${esc(r[0])}</span>` : ''}</button>`).join('');
+    box.innerHTML = rows.map((r, i) => `<button type="button" role="option" tabindex="-1" id="${el.id}-o${i}" data-pick="${esc(suggLabel(kind, r))}"${kind === 'skills' ? ` data-skill-id="${esc(r[3])}"` : ''}><strong dir="ltr">${esc(suggLabel(kind, r))}</strong>${ui === 'ar' ? `<span>${esc(r[0])}</span>` : ''}</button>`).join('');
     box.hidden = false; el.setAttribute('aria-expanded', 'true'); openSugg = el;
   }
   function closeSugg() {
@@ -388,10 +407,19 @@
     const box = document.getElementById('s-' + openSugg.id); if (box) box.hidden = true;
     openSugg.setAttribute('aria-expanded', 'false'); openSugg = null;
   }
-  function pick(el, value) {
-    let v = value;
-    if (el.dataset.suggest === 'interest') { const parts = el.value.split(','); parts[parts.length - 1] = ' ' + value; v = parts.join(',').replace(/^\s+/, '') + ', '; }
-    el.value = v; updateText(el.dataset.path, v.replace(/,\s*$/, ''), true); closeSugg(); el.focus();
+  function pick(el, value, skillId) {
+    if (el.id === 'new-cert' || el.id === 'new-skill') {
+      closeSugg();
+      if (el.id === 'new-skill' && skillId) { if (!data.skills.includes(skillId)) data.skills.push(skillId); }
+      else { const list = el.id === 'new-cert' ? 'certificates' : 'customSkills'; if (data[list].length >= (list === 'certificates' ? 20 : 12)) return; data[list].push({ id: uid(), text: value }); }
+      structural(); document.getElementById(el.id)?.focus(); return;
+    }
+    let v = value, stored;
+    if (el.dataset.suggest === 'interest') { const parts = el.value.split(/[,،]/); parts[parts.length - 1] = ' ' + value; v = parts.join(',').replace(/^\s+/, '') + ', '; stored = v.replace(/,\s*$/, ''); }
+    else if (el.dataset.suggest === 'tasks') { const lines = el.value.split('\n'); lines[lines.length - 1] = value; stored = lines.join('\n'); v = stored + '\n'; }
+    else stored = v;
+    el.value = v; updateText(el.dataset.path, stored, true); closeSugg(); el.focus();
+    if (el.setSelectionRange) el.setSelectionRange(v.length, v.length);
   }
 
   /* ---------- updates ---------- */
@@ -600,7 +628,7 @@
     if (el.matches('input[data-path], textarea[data-path]')) {
       updateText(el.dataset.path, el.value);
       if (el.dataset.suggest) showSugg(el);
-    }
+    } else if (el.id === 'new-cert' || el.id === 'new-skill') showSugg(el);
   });
   host.addEventListener('focusin', e => { const el = e.target; if (el.matches('[data-suggest]')) showSugg(el); else if (openSugg && !e.target.closest('.sugg')) closeSugg(); });
   host.addEventListener('focusout', e => { const el = e.target; if (el.matches('[data-path]') && textPaths().includes(el.dataset.path) && timers.has(tkey(el.dataset.path))) schedule(el.dataset.path, 250); });
@@ -610,6 +638,7 @@
       const box = document.getElementById('s-' + el.id), first = box?.querySelector('[data-pick]');
       if (e.key === 'ArrowDown' && first) { e.preventDefault(); first.focus(); }
       else if (e.key === 'Escape') closeSugg();
+      else if (e.key === 'Enter' && (el.id === 'new-cert' || el.id === 'new-skill')) { e.preventDefault(); closeSugg(); host.querySelector(`[data-action="${el.id === 'new-cert' ? 'add-cert' : 'add-skill'}"]`).click(); }
     } else if (el.matches('.sugg [data-pick]')) {
       const opts = [...el.parentElement.children], i = opts.indexOf(el), input = document.getElementById(el.parentElement.id.slice(2));
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); const n = i + (e.key === 'ArrowDown' ? 1 : -1); if (n < 0) input.focus(); else opts[Math.min(n, opts.length - 1)].focus(); }
@@ -644,7 +673,7 @@
   });
   host.addEventListener('click', e => {
     const pickBtn = e.target.closest('[data-pick]');
-    if (pickBtn) { pick(document.getElementById(pickBtn.parentElement.id.slice(2)), pickBtn.dataset.pick); return; }
+    if (pickBtn) { pick(document.getElementById(pickBtn.parentElement.id.slice(2)), pickBtn.dataset.pick, pickBtn.dataset.skillId); return; }
     const go = e.target.closest('[data-goto]');
     if (go) { closePreview(); changeStep(Number(go.dataset.goto)); return; }
     const b = e.target.closest('[data-action]'); if (!b) { if (openSugg && !e.target.closest('.field-group')) closeSugg(); return; }
@@ -656,6 +685,8 @@
     else if (a === 'quick-lang') { data.languages.push({ id: uid(), name: b.dataset.value, level: /^(Arabisch|Arabic)$/.test(b.dataset.value) ? 'native' : '' }); structural(); }
     else if (a === 'add-cert' || a === 'add-skill') {
       const inp = document.getElementById(a === 'add-cert' ? 'new-cert' : 'new-skill'), text = inp.value.trim(); if (!text) { inp.focus(); return; }
+      const match = a === 'add-skill' && S.skills.find(r => [r[1], r[2], r[3]].some(c => T.normalize(c) === T.normalize(text)));
+      if (match) { if (!data.skills.includes(match[0])) data.skills.push(match[0]); structural(); document.getElementById('new-skill')?.focus(); return; }
       const list = a === 'add-cert' ? 'certificates' : 'customSkills', max = a === 'add-cert' ? 20 : 12; if (data[list].length >= max) return;
       data[list].push({ id: uid(), text }); structural(); document.getElementById(a === 'add-cert' ? 'new-cert' : 'new-skill')?.focus();
     }
