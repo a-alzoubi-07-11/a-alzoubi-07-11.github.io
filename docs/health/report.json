@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-08T10:45Z",
+ "checked_at": "2026-10-09T10:43Z",
  "external": {
-  "total": 461,
+  "total": 470,
   "broken": [
    {
     "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
@@ -32,18 +32,6 @@
      "articles/legal-aid-lawyer-toevoeging.html",
      "nl/articles/legal-aid-lawyer-toevoeging.html"
     ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/mag-ik-met-mijn-buitenlandse-rijbewijs-in-nederland-aan-het-verkeer-deelnemen",
-    "code": 404,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/mag-ik-met-mijn-buitenlandse-rijbewijs-in-nederland-aan-het-verkeer-deelnemen",
-    "soft404": false,
-    "pages": [
-     "articles/cbr-driving-license-netherlands.html",
-     "articles/foreign-driving-license-exchange.html",
-     "nl/articles/cbr-driving-license-netherlands.html",
-     "nl/articles/foreign-driving-license-exchange.html"
-    ]
    }
   ],
   "blocked": [
@@ -55,56 +43,6 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0004766/",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "soft404": false,
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "nl/articles/bezwaar-objection-letter.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0031331/",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
     ]
    },
    {
@@ -204,7 +142,9 @@
     "soft404": false,
     "pages": [
      "articles/bezwaar-objection-letter.html",
-     "nl/articles/bezwaar-objection-letter.html"
+     "articles/dutch-government-terms-glossary.html",
+     "nl/articles/bezwaar-objection-letter.html",
+     "nl/articles/dutch-government-terms-glossary.html"
     ]
    },
    {
@@ -296,16 +236,6 @@
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
     ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-two-status-system-2026.html",
-     "nl/articles/asylum-two-status-system-2026.html"
-    ]
    }
   ],
   "redirected": [
@@ -320,27 +250,13 @@
     ]
    },
    {
-    "url": "https://ind.nl/nl/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "url": "https://ind.nl/nl/verlengen",
     "code": 200,
-    "final": "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "final": "https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/verlengen-en-vernieuwen/verblijfsvergunning-regulier-bepaalde-tijd-verlengen",
     "soft404": false,
     "pages": [
-     "articles/asylum-family-reunification.html",
-     "articles/dutch-naturalisation-guide.html",
-     "articles/eu-permanent-residence-netherlands.html",
-     "nl/articles/asylum-family-reunification.html",
-     "nl/articles/dutch-naturalisation-guide.html",
-     "nl/articles/eu-permanent-residence-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://ind.nl/nl/verlengen-vernieuwen-en-wijzigen/onbepaalde-tijd/verblijfsvergunning-onbepaalde-tijd-aanvragen",
-    "code": 200,
-    "final": "https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/onbepaalde-tijd/verblijfsvergunning-onbepaalde-tijd-aanvragen",
-    "soft404": false,
-    "pages": [
-     "articles/eu-permanent-residence-netherlands.html",
-     "nl/articles/eu-permanent-residence-netherlands.html"
+     "articles/dutch-government-terms-glossary.html",
+     "nl/articles/dutch-government-terms-glossary.html"
     ]
    },
    {
@@ -364,13 +280,23 @@
     ]
    },
    {
-    "url": "https://rijksoverheid.nl/onderwerpen/asielbeleid/vraag-en-antwoord/gezondheidszorg-asielzoekers",
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
     "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/asielbeleid/gezondheidszorg-asielzoekers",
+    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
     "soft404": false,
     "pages": [
-     "articles/huisarts-registration.html",
-     "nl/articles/huisarts-registration.html"
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
+    "soft404": false,
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
     ]
    },
    {
@@ -409,12 +335,12 @@
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/toeslagen",
     "soft404": false,
     "pages": [
-     "articles/childcare-allowance-kinderopvangtoeslag.html",
      "articles/kindgebonden-budget-guide.html",
      "articles/single-parent-support.html",
      "articles/toeslagen-income-update.html",
-     "nl/articles/childcare-allowance-kinderopvangtoeslag.html",
-     "nl/articles/kindgebonden-budget-guide.html"
+     "nl/articles/kindgebonden-budget-guide.html",
+     "nl/articles/single-parent-support.html",
+     "nl/articles/toeslagen-income-update.html"
     ]
    },
    {
@@ -440,6 +366,16 @@
     ]
    },
    {
+    "url": "https://www.digid.nl/machtigen",
+    "code": 200,
+    "final": "https://www.digid.nl/aanvragen-en-activeren/machtigen",
+    "soft404": false,
+    "pages": [
+     "articles/dutch-government-terms-glossary.html",
+     "nl/articles/dutch-government-terms-glossary.html"
+    ]
+   },
+   {
     "url": "https://www.kiesmbo.nl/",
     "code": 200,
     "final": "https://www.kiesmbo.nl/home",
@@ -460,16 +396,6 @@
     ]
    },
    {
-    "url": "https://www.nuffic.nl/onderwerpen/diploma/diplomawaardering",
-    "code": 200,
-    "final": "https://www.nuffic.nl/studeren-en-werken-in-nederland/diplomawaardering-aanvragen",
-    "soft404": false,
-    "pages": [
-     "articles/diploma-evaluation-sbb.html",
-     "nl/articles/diploma-evaluation-sbb.html"
-    ]
-   },
-   {
     "url": "https://www.pns.nl/13-wekenecho",
     "code": 200,
     "final": "https://www.pns.nl/prenatale-screeningen/13-wekenecho",
@@ -480,193 +406,13 @@
     ]
    },
    {
-    "url": "https://www.rijksoverheid.nl/contact/contactgids/fraudehelpdesk",
+    "url": "https://www.rijksoverheid.nl/onderwerpen/bezwaar-en-beroep/vraag-en-antwoord/bezwaar-tegen-beslissing-overheid",
     "code": 200,
-    "final": "https://www.rijksoverheid.nl/service/contact/contactgids/f/fraudehelpdesk",
+    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/bezwaar-en-beroep/bezwaar-tegen-beslissing-overheid",
     "soft404": false,
     "pages": [
-     "articles/scams-phishing-netherlands.html",
-     "nl/articles/scams-phishing-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/documenten/brochures/2020/03/23/fotomatrix-2020",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/2020/03/23/fotomatrix-2020",
-    "soft404": false,
-    "pages": [
-     "articles/foreign-driving-license-exchange.html",
-     "nl/articles/foreign-driving-license-exchange.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/algemene-ouderdomswet-aow/aow-leeftijd",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/algemene-ouderdomswet-aow/aow-leeftijd",
-    "soft404": false,
-    "pages": [
-     "articles/aow-aio-pension.html",
-     "nl/articles/aow-aio-pension.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/asielbeleid/vraag-en-antwoord/mogen-asielzoekers-werken",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/asielbeleid/mogen-asielzoekers-werken",
-    "soft404": false,
-    "pages": [
-     "articles/kvk-zzp-business-netherlands.html",
-     "nl/articles/kvk-zzp-business-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/asielbeleid/vraag-en-antwoord/mogen-familieleden-van-asielzoekers-naar-nederland-komen",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/asielbeleid/mogen-familieleden-van-asielzoekers-naar-nederland-komen",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-family-reunification.html",
-     "nl/articles/asylum-family-reunification.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/basisonderwijs/onderwijs-voor-nieuwkomers",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/onderwijs/basisonderwijs/onderwijs-voor-nieuwkomers",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-school-system-basisschool.html",
-     "nl/articles/dutch-school-system-basisschool.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/basisonderwijs/vraag-en-antwoord/kosten-basisschool-kind",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/basisonderwijs/kosten-basisschool-kind",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-school-system-basisschool.html",
-     "nl/articles/dutch-school-system-basisschool.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/basisvaardigheden/vraag-en-antwoord/taalexamens-mbo",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/basisvaardigheden/taalexamens-mbo",
-    "soft404": false,
-    "pages": [
-     "articles/mbo-dutch-language-options.html",
-     "nl/articles/mbo-dutch-language-options.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/bijstand/regels-voor-bijstand",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/bijstand/regels-voor-bijstand",
-    "soft404": false,
-    "pages": [
-     "articles/social-assistance-bijstand.html",
-     "nl/articles/social-assistance-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/bijstand/vraag-en-antwoord/wanneer-heb-ik-recht-op-bijzondere-bijstand",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijzondere-bijstand",
-    "soft404": false,
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/buitenlandse-werknemers/vraag-en-antwoord/kan-ik-als-buitenlandse-zelfstandig-ondernemer-in-nederland-werken",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/buitenlandse-werknemers/kan-ik-als-buitenlandse-zelfstandig-ondernemer-in-nederland-werken",
-    "soft404": false,
-    "pages": [
-     "articles/kvk-zzp-business-netherlands.html",
-     "nl/articles/kvk-zzp-business-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/eerstelijnszorg/vraag-en-antwoord/ben-ik-vrij-om-zelf-een-huisarts-te-kiezen-en-hoe-verander-ik-van-huisarts",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/eerstelijnszorg/ben-ik-vrij-om-zelf-een-huisarts-te-kiezen-en-hoe-verander-ik-van-huisarts",
-    "soft404": false,
-    "pages": [
-     "articles/huisarts-registration.html",
-     "nl/articles/huisarts-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/eerstelijnszorg/vraag-en-antwoord/huisartsenpost-spoedeisende-hulp",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/eerstelijnszorg/huisartsenpost-spoedeisende-hulp",
-    "soft404": false,
-    "pages": [
-     "articles/huisarts-registration.html",
-     "nl/articles/huisarts-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/eerstelijnszorg/vraag-en-antwoord/huisartskosten-op-zorgnota",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/eerstelijnszorg/huisartskosten-op-zorgnota",
-    "soft404": false,
-    "pages": [
-     "articles/huisarts-registration.html",
-     "nl/articles/huisarts-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/huurwoning-zoeken/vraag-en-antwoord/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/huurwoning-zoeken/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
-    "soft404": false,
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/identiteitsfraude/vraag-en-antwoord/wat-doe-ik-bij-mogelijke-identiteitsfraude",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/identiteitsfraude/wat-doe-ik-bij-mogelijke-identiteitsfraude",
-    "soft404": false,
-    "pages": [
-     "articles/scams-phishing-netherlands.html",
-     "nl/articles/scams-phishing-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/immigratie-naar-nederland/vraag-en-antwoord/moet-ik-als-vreemdeling-mijn-verhuizing-doorgeven-aan-de-immigratie--en-naturalisatiedienst",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/immigratie-naar-nederland/moet-ik-als-vreemdeling-mijn-verhuizing-doorgeven-aan-de-immigratie--en-naturalisatiedienst",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/inkomstenbelasting/vraag-en-antwoord/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "soft404": false,
-    "pages": [
-     "articles/year-end-checklist-2026.html",
-     "nl/articles/year-end-checklist-2026.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/leerplicht",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/onderwijs/leerplicht",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-school-system-basisschool.html",
-     "nl/articles/dutch-school-system-basisschool.html"
+     "articles/dutch-government-terms-glossary.html",
+     "nl/articles/dutch-government-terms-glossary.html"
     ]
    },
    {
@@ -677,36 +423,6 @@
     "pages": [
      "articles/bsn-municipality-registration.html",
      "nl/articles/bsn-municipality-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/uitschrijven-basisregistratie-personen",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/privacy-en-persoonsgegevens/uitschrijven-basisregistratie-personen",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/rechtspraak-en-geschiloplossing/vraag-en-antwoord/hoe-verloopt-het-aanvragen-van-gesubsidieerde-rechtsbijstand",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/rechtspraak-en-geschiloplossing/hoe-verloopt-het-aanvragen-van-gesubsidieerde-rechtsbijstand",
-    "soft404": false,
-    "pages": [
-     "articles/legal-aid-lawyer-toevoeging.html",
-     "nl/articles/legal-aid-lawyer-toevoeging.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/rijbewijs/vraag-en-antwoord/wanneer-mag-ik-rijles-nemen-en-rijexamen-doen-voor-mijn-bromfietsrijbewijs",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/rijbewijs/wanneer-mag-ik-rijles-nemen-en-rijexamen-doen-voor-mijn-bromfietsrijbewijs",
-    "soft404": false,
-    "pages": [
-     "articles/cbr-driving-license-netherlands.html",
-     "nl/articles/cbr-driving-license-netherlands.html"
     ]
    },
    {
@@ -727,166 +443,6 @@
     "pages": [
      "articles/debt-help-schuldhulp.html",
      "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/wia/vraag-en-antwoord/wia-hoogte-uitkering",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/wia/wia-hoogte-uitkering",
-    "soft404": false,
-    "pages": [
-     "articles/sick-pay-ziektewet-wia.html",
-     "nl/articles/sick-pay-ziektewet-wia.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/nieuws/2025/12/15/maximale-huurverhoging-2026-in-sociale-sector-41-middenhuur-61-en-vrije-sector-44",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/actueel/nieuws/2025/12/15/maximale-huurverhoging-2026-in-sociale-sector-41-middenhuur-61-en-vrije-sector-44",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/hoe-maak-ik-bezwaar-tegen-de-huurverhoging-voor-mijn-sociale-huurwoning",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/hoe-maak-ik-bezwaar-tegen-de-huurverhoging-voor-mijn-sociale-huurwoning",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "soft404": false,
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/ww-uitkering/vraag-en-antwoord/hoe-lang-heb-ik-recht-op-een-ww-uitkering",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/ww-uitkering/hoe-lang-heb-ik-recht-op-een-ww-uitkering",
-    "soft404": false,
-    "pages": [
-     "articles/unemployment-benefit-ww.html",
-     "nl/articles/unemployment-benefit-ww.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zorg-en-ondersteuning-thuis/vraag-en-antwoord/bezwaar-beslissing-wmo-2015",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorg-en-ondersteuning-thuis/bezwaar-beslissing-wmo-2015",
-    "soft404": false,
-    "pages": [
-     "articles/wmo-home-support.html",
-     "nl/articles/wmo-home-support.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zorg-en-ondersteuning-thuis/vraag-en-antwoord/eigen-bijdrage-wmo-2015",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorg-en-ondersteuning-thuis/eigen-bijdrage-wmo-2015",
-    "soft404": false,
-    "pages": [
-     "articles/wmo-home-support.html",
-     "nl/articles/wmo-home-support.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zorg-en-ondersteuning-thuis/vraag-en-antwoord/ondersteuning-gemeente-wmo-2015",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015",
-    "soft404": false,
-    "pages": [
-     "articles/wmo-home-support.html",
-     "nl/articles/wmo-home-support.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zorg-en-ondersteuning-thuis/vraag-en-antwoord/ondersteuning-gemeente-wmo-2015-aanvragen",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015-aanvragen",
-    "soft404": false,
-    "pages": [
-     "articles/wmo-home-support.html",
-     "nl/articles/wmo-home-support.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zorgverzekering/vraag-en-antwoord/overstappen-zorgverzekeraar",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
-    "soft404": false,
-    "pages": [
-     "articles/year-end-checklist-2026.html",
-     "nl/articles/year-end-checklist-2026.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/zwangerschapsverlof-en-bevallingsverlof/vraag-en-antwoord/aanvragen-zwangerschapsverlof-en-zwangerschapsuitkering",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zwangerschap-en-geboorte/aanvragen-zwangerschapsverlof-en-zwangerschapsuitkering",
-    "soft404": false,
-    "pages": [
-     "articles/birth-parental-leave.html",
-     "nl/articles/birth-parental-leave.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/ouderschapsverlof/wanneer-heb-ik-recht-op-betaald-ouderschapsverlof",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/zwangerschap-en-geboorte/wanneer-heb-ik-recht-op-betaald-ouderschapsverlof",
-    "soft404": false,
-    "pages": [
-     "articles/birth-parental-leave.html",
-     "nl/articles/birth-parental-leave.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/schooladvies-en-doorstroomtoets-basisschool/adviezen-in-groep-8",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/onderwijs/schooladvies-en-doorstroomtoets-basisschool/toelating-voortgezet-onderwijs-gebaseerd-op-definitief-schooladvies",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-school-system-basisschool.html",
-     "nl/articles/dutch-school-system-basisschool.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/gesubsidieerde-rechtsbijstand-of-mediation",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/rechtspraak-en-geschiloplossing/hoe-verloopt-het-aanvragen-van-gesubsidieerde-rechtsbijstand",
-    "soft404": false,
-    "pages": [
-     "articles/legal-aid-lawyer-toevoeging.html",
-     "nl/articles/legal-aid-lawyer-toevoeging.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/levenlanglerenkrediet-vanaf-30-jaar",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/leven-lang-ontwikkelen/hoe-vraag-ik-het-levenlanglerenkrediet-aan",
-    "soft404": false,
-    "pages": [
-     "articles/adult-learning-finance.html",
-     "nl/articles/adult-learning-finance.html"
     ]
    },
    {
@@ -918,46 +474,6 @@
      "index.html",
      "nl/index.html"
     ]
-   },
-   {
-    "url": "https://www.uwv.nl/particulieren/ontslag/ik-word-ontslagen/detail/ontslag-met-wederzijds-goedvinden-of-instemming/ontslag-met-wederzijds-goedvinden",
-    "code": 200,
-    "final": "https://www.uwv.nl/nl/ontslag/werknemer-ontslaan",
-    "soft404": false,
-    "pages": [
-     "articles/unemployment-benefit-ww.html",
-     "nl/articles/unemployment-benefit-ww.html"
-    ]
-   },
-   {
-    "url": "https://www.uwv.nl/particulieren/rekenhulpen/hoe-hoog-is-mijn-uitkering-aanvullend-geboorteverlof-of-betaald-ouderschapsverlof/",
-    "code": 200,
-    "final": "https://www.uwv.nl/nl/aanvullend-geboorteverlof/hoogte-uitkering-aanvullend-geboorteverlof-betaald-ouderschapsverlof",
-    "soft404": false,
-    "pages": [
-     "articles/birth-parental-leave.html",
-     "nl/articles/birth-parental-leave.html"
-    ]
-   },
-   {
-    "url": "https://www.uwv.nl/particulieren/werkloos/ik-word-werkloos/detail/wanneer-moet-ik-een-ww-uitkering-aanvragen",
-    "code": 200,
-    "final": "https://www.uwv.nl/nl/ww/ww-aanvragen",
-    "soft404": false,
-    "pages": [
-     "articles/unemployment-benefit-ww.html",
-     "nl/articles/unemployment-benefit-ww.html"
-    ]
-   },
-   {
-    "url": "https://www.volkshuisvestingnederland.nl/onderwerpen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
-    "code": 200,
-    "final": "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
    }
   ]
  },
@@ -967,7 +483,7 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 150,
+  "sitemap_urls": 156,
   "google": {
    "status": "not_configured",
    "how": "Add repo secret GSC_SERVICE_ACCOUNT_JSON (service account added as user in Search Console)."
