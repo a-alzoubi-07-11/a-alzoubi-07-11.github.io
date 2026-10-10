@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T09:03:13+02:00",
-  "validUntil": "2026-10-10T21:03:13+02:00",
+  "updatedAt": "2026-10-10T20:59:36+02:00",
+  "validUntil": "2026-10-11T08:59:36+02:00",
   "items": [
     {
       "id": "bzk-2026-10-07-e48d35c9",
@@ -9,7 +9,7 @@
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-10T09:03:13+02:00",
+      "checkedAt": "2026-10-10T20:59:36+02:00",
       "category": {
         "ar": "السكن والطاقة",
         "nl": "Wonen en energie"
@@ -35,7 +35,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-10T09:03:13+02:00",
+      "checkedAt": "2026-10-10T20:59:36+02:00",
       "category": {
         "ar": "القروض الدراسية",
         "nl": "Studieschuld"
@@ -61,7 +61,7 @@
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-06",
-      "checkedAt": "2026-10-10T09:03:13+02:00",
+      "checkedAt": "2026-10-10T20:59:36+02:00",
       "category": {
         "ar": "تمويل الدراسة",
         "nl": "Studiefinanciering"
@@ -105,7 +105,7 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-02-ea6ecc9e",
-      "checkedAt": "2026-10-10T09:03:13+02:00"
+      "checkedAt": "2026-10-10T20:59:36+02:00"
     },
     {
       "id": "bzk-2026-09-29-87a8a84f",
@@ -113,7 +113,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-10T09:03:13+02:00",
+      "checkedAt": "2026-10-10T20:59:36+02:00",
       "category": {
         "ar": "السكن والإيجار",
         "nl": "Wonen en huur"
@@ -139,7 +139,7 @@
       "tier": "official",
       "status": "announced",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-10T09:03:13+02:00",
+      "checkedAt": "2026-10-10T20:59:36+02:00",
       "category": {
         "ar": "الطاقة والدخل",
         "nl": "Energie en inkomen"
