@@ -25,8 +25,8 @@ There are two kinds of sources:
 | DUO | official | Dienst Uitvoering Onderwijs | https://duo.nl/particulier/ (items under `/particulier/home/actueel/...`); search `site:duo.nl nieuws`. Often "no-change" |
 | UWV | official | Uitvoeringsinstituut Werknemersverzekeringen | https://www.uwv.nl/nl/actueel |
 | SVB | official | Sociale Verzekeringsbank (kinderbijslag, AOW) | https://www.svb.nl/nl/pers-en-nieuws/nieuws |
-| TOESLAGEN | official | Dienst Toeslagen / Belastingdienst | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws |
-| TK | official | Tweede Kamer (votes, adopted motions and bills) | https://www.tweedekamer.nl/nieuws |
+| TOESLAGEN | official | Dienst Toeslagen / Belastingdienst | https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws (old /berichten/nieuws redirects here; list loads via JavaScript, so also search `site:belastingdienst.nl toeslagen`) |
+| TK | official | Tweede Kamer (votes, adopted motions and bills) | https://www.tweedekamer.nl/nieuws/kamernieuws |
 | STAB | official | Officiële bekendmakingen (Staatsblad/Staatscourant: when a law or rule is formally published) | https://zoek.officielebekendmakingen.nl (search recent Staatsblad items on the topics below) |
 | NOS | media | NOS | RSS https://feeds.nos.nl/nosnieuwspolitiek and https://feeds.nos.nl/nosnieuwsbinnenland |
 | NU | media | NU.nl | https://www.nu.nl/politiek (or its RSS feed) |
