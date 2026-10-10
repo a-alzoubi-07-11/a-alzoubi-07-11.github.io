@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-09T10:43Z",
+ "checked_at": "2026-10-10T09:59Z",
  "external": {
-  "total": 470,
+  "total": 467,
   "broken": [
    {
     "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
@@ -250,16 +250,6 @@
     ]
    },
    {
-    "url": "https://ind.nl/nl/verlengen",
-    "code": 200,
-    "final": "https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/verlengen-en-vernieuwen/verblijfsvergunning-regulier-bepaalde-tijd-verlengen",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-government-terms-glossary.html",
-     "nl/articles/dutch-government-terms-glossary.html"
-    ]
-   },
-   {
     "url": "https://mijn.belastingdienst.nl/",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst",
@@ -320,62 +310,6 @@
     ]
    },
    {
-    "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/betalenenontvangen/content/betalingsregeling",
-    "code": 200,
-    "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/betalenenontvangen/content/ik-kan-mijn-belasting-niet-op-tijd-betalen-betalingsregeling",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen-2026/topics/veranderingen-toeslagen-2026",
-    "code": 200,
-    "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/toeslagen",
-    "soft404": false,
-    "pages": [
-     "articles/kindgebonden-budget-guide.html",
-     "articles/single-parent-support.html",
-     "articles/toeslagen-income-update.html",
-     "nl/articles/kindgebonden-budget-guide.html",
-     "nl/articles/single-parent-support.html",
-     "nl/articles/toeslagen-income-update.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "code": 200,
-    "final": "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "soft404": false,
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/bezwaar-objection-letter.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.denhaag.nl/nl/verhuizen-en-migratie/verhuizen-vanuit-het-buitenland/inschrijven-vanuit-het-buitenland-u-heeft-nog-geen-bsn/1e-inschrijving-brp-vanuit-het-buitenland-met-verblijfsvergunning-u-heeft-nog-geen-bsn.htm",
-    "code": 200,
-    "final": "https://www.denhaag.nl/nl/verhuizen-en-migratie/1e-inschrijving-brp-vanuit-het-buitenland-met-verblijfsvergunning-u-heeft-nog-geen-bsn/",
-    "soft404": false,
-    "pages": [
-     "articles/bsn-municipality-registration.html",
-     "nl/articles/bsn-municipality-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.digid.nl/machtigen",
-    "code": 200,
-    "final": "https://www.digid.nl/aanvragen-en-activeren/machtigen",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-government-terms-glossary.html",
-     "nl/articles/dutch-government-terms-glossary.html"
-    ]
-   },
-   {
     "url": "https://www.kiesmbo.nl/",
     "code": 200,
     "final": "https://www.kiesmbo.nl/home",
@@ -383,66 +317,6 @@
     "pages": [
      "index.html",
      "nl/index.html"
-    ]
-   },
-   {
-    "url": "https://www.nederlandwereldwijd.nl/wonen-werken/registratie-niet-ingezetenen/over-de-rni/wat-is-de-rni",
-    "code": 200,
-    "final": "https://www.nederlandwereldwijd.nl/rni/wat-is-rni",
-    "soft404": false,
-    "pages": [
-     "articles/bsn-municipality-registration.html",
-     "nl/articles/bsn-municipality-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.pns.nl/13-wekenecho",
-    "code": 200,
-    "final": "https://www.pns.nl/prenatale-screeningen/13-wekenecho",
-    "soft404": false,
-    "pages": [
-     "articles/pregnancy-newborn-care.html",
-     "nl/articles/pregnancy-newborn-care.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/bezwaar-en-beroep/vraag-en-antwoord/bezwaar-tegen-beslissing-overheid",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/bezwaar-en-beroep/bezwaar-tegen-beslissing-overheid",
-    "soft404": false,
-    "pages": [
-     "articles/dutch-government-terms-glossary.html",
-     "nl/articles/dutch-government-terms-glossary.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/hoe-kom-ik-aan-een-burgerservicenummer-bsn",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/privacy-en-persoonsgegevens/hoe-kom-ik-aan-een-burgerservicenummer-bsn",
-    "soft404": false,
-    "pages": [
-     "articles/bsn-municipality-registration.html",
-     "nl/articles/bsn-municipality-registration.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/schulden/gemeenten-sneller-signaleren-van-schulden",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/schulden/gemeenten-sneller-signaleren-van-schulden",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/schulden/vraag-en-antwoord/beslagvrijevoet-controleren",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/vraag-en-antwoord/schulden/beslagvrijevoet-controleren",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
     ]
    },
    {
