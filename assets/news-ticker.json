@@ -1,40 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T07:03:21+02:00",
-  "validUntil": "2026-10-10T19:03:21+02:00",
+  "updatedAt": "2026-10-10T09:03:13+02:00",
+  "validUntil": "2026-10-10T21:03:13+02:00",
   "items": [
-    {
-      "source": "STAB",
-      "publishedAt": "2026-10-08",
-      "firstSeen": "2026-10-10",
-      "status": "confirmed",
-      "category": {
-        "ar": "رعاية الأطفال",
-        "nl": "Kinderopvang"
-      },
-      "title": {
-        "ar": "بدل رعاية الأطفال 2027: رفع الحد الأقصى لسعر الساعة وحدود الدخل",
-        "nl": "Kinderopvangtoeslag 2027: hogere maximum uurprijzen en toetsingsinkomens vastgesteld"
-      },
-      "summary": {
-        "ar": "من 1 يناير 2027: الرعاية النهارية 11.60 يورو للساعة (بدلاً من 11.23)، وBSO ‏10.31 يورو (9.98)، وgastouderopvang ‏8.77 يورو (8.49). وترتفع حدود الدخل بنسبة 3.47%.",
-        "nl": "Vanaf 1 januari 2027: dagopvang € 11,60 (was € 11,23), bso € 10,31 (was € 9,98) en gastouderopvang € 8,77 (was € 8,49). De toetsingsinkomens stijgen met 3,47%."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-10-08-56df3ad7"
-    },
     {
       "id": "bzk-2026-10-07-e48d35c9",
       "source": "BZK",
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
+      "checkedAt": "2026-10-10T09:03:13+02:00",
       "category": {
         "ar": "السكن والطاقة",
         "nl": "Wonen en energie"
@@ -60,7 +35,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
+      "checkedAt": "2026-10-10T09:03:13+02:00",
       "category": {
         "ar": "القروض الدراسية",
         "nl": "Studieschuld"
@@ -81,37 +56,12 @@
       "firstSeen": "2026-10-09"
     },
     {
-      "source": "NOS",
-      "publishedAt": "2026-10-06",
-      "firstSeen": "2026-10-10",
-      "status": "reported",
-      "category": {
-        "ar": "اللجوء",
-        "nl": "Asiel"
-      },
-      "title": {
-        "ar": "بعد حكم أوروبي: على IND دراسة طلبات لجوء أكثر من 140 ألف أوكراني",
-        "nl": "IND moet na Europese uitspraak asielaanvragen van ruim 140.000 Oekraïners beoordelen"
-      },
-      "summary": {
-        "ar": "وفق NOS: يريد الوزير معالجة الطلبات الجديدة وقائمة الانتظار أولاً. لم يحدد مجلس الدولة الأثر العملي للحكم بعد، ولا يوجد إجراء رسمي من IND حتى الآن.",
-        "nl": "Volgens NOS: de minister wil eerst nieuwe aanvragen en de wachtlijst behandelen. De Raad van State moet de gevolgen nog beoordelen; er is nog geen IND-procedure."
-      },
-      "url": "https://nos.nl/artikel/2633890-ind-moet-met-140-000-aanvragen-oekrainers-aan-de-slag-asielstelsel-verder-onder-druk",
-      "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
-      },
-      "tier": "media",
-      "id": "nos-2026-10-06-094665d8"
-    },
-    {
       "id": "duo-2026-10-06-9ebf7728",
       "source": "DUO",
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-06",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
+      "checkedAt": "2026-10-10T09:03:13+02:00",
       "category": {
         "ar": "تمويل الدراسة",
         "nl": "Studiefinanciering"
@@ -154,7 +104,8 @@
         "nl": "Dienst Toeslagen"
       },
       "tier": "official",
-      "id": "toeslagen-2026-10-02-ea6ecc9e"
+      "id": "toeslagen-2026-10-02-ea6ecc9e",
+      "checkedAt": "2026-10-10T09:03:13+02:00"
     },
     {
       "id": "bzk-2026-09-29-87a8a84f",
@@ -162,7 +113,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
+      "checkedAt": "2026-10-10T09:03:13+02:00",
       "category": {
         "ar": "السكن والإيجار",
         "nl": "Wonen en huur"
@@ -188,7 +139,7 @@
       "tier": "official",
       "status": "announced",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
+      "checkedAt": "2026-10-10T09:03:13+02:00",
       "category": {
         "ar": "الطاقة والدخل",
         "nl": "Energie en inkomen"
@@ -207,131 +158,6 @@
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
       "firstSeen": "2026-10-09"
-    },
-    {
-      "id": "toeslagen-2026-09-28-a259eec8",
-      "source": "TOESLAGEN",
-      "tier": "official",
-      "status": "confirmed",
-      "publishedAt": "2026-09-28",
-      "checkedAt": "2026-10-09T20:57:49+02:00",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "title": {
-        "ar": "آخر موعد لطلب بدلات 2025 هو 31 ديسمبر 2026",
-        "nl": "Toeslag over 2025 aanvragen kan tot en met 31 december 2026"
-      },
-      "summary": {
-        "ar": "يمكن طلب بدل السكن وبدل التأمين الصحي وميزانية الطفل عن 2025 حتى الموعد. أما بدل رعاية الأطفال فيُطلب بأثر رجعي لثلاثة أشهر كحد أقصى.",
-        "nl": "Huurtoeslag, zorgtoeslag en kindgebonden budget over 2025 kunnen tot die datum worden aangevraagd. Kinderopvangtoeslag kan maximaal 3 maanden terug."
-      },
-      "sourceName": {
-        "ar": "دائرة البدلات",
-        "nl": "Dienst Toeslagen"
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/vraag-uw-toeslag-voor-2025-uiterlijk-31-december-2026-aan",
-      "firstSeen": "2026-10-09"
-    },
-    {
-      "source": "STAB",
-      "publishedAt": "2026-09-24",
-      "firstSeen": "2026-10-10",
-      "status": "confirmed",
-      "category": {
-        "ar": "العمل والأجور",
-        "nl": "Werk en loon"
-      },
-      "title": {
-        "ar": "رفع الحد الأدنى لأجور الشباب من 16 إلى 20 سنة ابتداءً من 1 يناير 2027",
-        "nl": "Minimumjeugdloon voor 16- tot en met 20-jarigen stijgt per 1 januari 2027"
-      },
-      "summary": {
-        "ar": "النسب الجديدة من الحد الأدنى لأجر البالغين: ‏20 سنة 87.5%، و19 سنة 75%، و18 سنة 62.5%، و17 سنة 50%، و16 سنة 40%، و15 سنة 30%.",
-        "nl": "Nieuwe percentages van het volwassen minimumloon: 20 jaar 87,5%, 19 jaar 75%, 18 jaar 62,5%, 17 jaar 50%, 16 jaar 40% en 15 jaar 30%."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-279.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-09-24-954ce4d1"
-    }
-  ],
-  "checkedSources": [
-    {
-      "source": "BZK",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
-      "result": "no-change"
-    },
-    {
-      "source": "SZW",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "no-change"
-    },
-    {
-      "source": "IND",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://ind.nl/nl/nieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "DUO",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://duo.nl/particulier/",
-      "result": "no-change"
-    },
-    {
-      "source": "UWV",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "no-change"
-    },
-    {
-      "source": "SVB",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "TOESLAGEN",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "new"
-    },
-    {
-      "source": "TK",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "new"
-    },
-    {
-      "source": "NOS",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "new"
-    },
-    {
-      "source": "NU",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.nu.nl/politiek",
-      "result": "error"
-    },
-    {
-      "source": "RTL",
-      "checkedAt": "2026-10-10",
-      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "error"
     }
   ]
 }
