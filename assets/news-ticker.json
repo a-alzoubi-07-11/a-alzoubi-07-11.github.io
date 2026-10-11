@@ -1,40 +1,15 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T06:57:16+02:00",
-  "validUntil": "2026-10-11T18:57:16+02:00",
+  "updatedAt": "2026-10-11T09:00:08+02:00",
+  "validUntil": "2026-10-11T21:00:08+02:00",
   "items": [
-    {
-      "source": "STAB",
-      "publishedAt": "2026-10-08",
-      "firstSeen": "2026-10-11",
-      "status": "confirmed",
-      "category": {
-        "ar": "رعاية الأطفال",
-        "nl": "Kinderopvang"
-      },
-      "title": {
-        "ar": "رفع الحد الأقصى لسعر الساعة في بدل رعاية الأطفال من 1 يناير 2027",
-        "nl": "Maximum uurprijzen kinderopvangtoeslag omhoog per 1 januari 2027"
-      },
-      "summary": {
-        "ar": "نُشر القرار في Staatsblad: الرعاية النهارية من 11.23 إلى 11.60 يورو، وBSO من 9.98 إلى 10.31، ورعاية gastouder من 8.49 إلى 8.77 يورو للساعة.",
-        "nl": "Volgens het Staatsblad: dagopvang van € 11,23 naar € 11,60, bso van € 9,98 naar € 10,31 en gastouderopvang van € 8,49 naar € 8,77 per uur."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-10-08-56df3ad7"
-    },
     {
       "id": "bzk-2026-10-07-e48d35c9",
       "source": "BZK",
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-10T20:59:36+02:00",
+      "checkedAt": "2026-10-11T09:00:08+02:00",
       "category": {
         "ar": "السكن والطاقة",
         "nl": "Wonen en energie"
@@ -60,7 +35,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-10-07",
-      "checkedAt": "2026-10-10T20:59:36+02:00",
+      "checkedAt": "2026-10-11T09:00:08+02:00",
       "category": {
         "ar": "القروض الدراسية",
         "nl": "Studieschuld"
@@ -86,7 +61,7 @@
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-06",
-      "checkedAt": "2026-10-10T20:59:36+02:00",
+      "checkedAt": "2026-10-11T09:00:08+02:00",
       "category": {
         "ar": "تمويل الدراسة",
         "nl": "Studiefinanciering"
@@ -130,7 +105,7 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-02-ea6ecc9e",
-      "checkedAt": "2026-10-10T20:59:36+02:00"
+      "checkedAt": "2026-10-11T09:00:08+02:00"
     },
     {
       "id": "bzk-2026-09-29-87a8a84f",
@@ -138,7 +113,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-10T20:59:36+02:00",
+      "checkedAt": "2026-10-11T09:00:08+02:00",
       "category": {
         "ar": "السكن والإيجار",
         "nl": "Wonen en huur"
@@ -164,7 +139,7 @@
       "tier": "official",
       "status": "announced",
       "publishedAt": "2026-09-29",
-      "checkedAt": "2026-10-10T20:59:36+02:00",
+      "checkedAt": "2026-10-11T09:00:08+02:00",
       "category": {
         "ar": "الطاقة والدخل",
         "nl": "Energie en inkomen"
@@ -183,155 +158,6 @@
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
       "firstSeen": "2026-10-09"
-    },
-    {
-      "source": "TOESLAGEN",
-      "publishedAt": "2026-09-28",
-      "firstSeen": "2026-10-11",
-      "status": "confirmed",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "title": {
-        "ar": "اطلب بدلات 2025 قبل 31 ديسمبر 2026",
-        "nl": "Vraag uw toeslag over 2025 uiterlijk 31 december 2026 aan"
-      },
-      "summary": {
-        "ar": "يمكن طلب zorgtoeslag وhuurtoeslag وkindgebonden budget عن 2025 حتى 31 ديسمبر 2026. أما kinderopvangtoeslag فتُطلب بأثر رجعي لثلاثة أشهر فقط.",
-        "nl": "Zorgtoeslag, huurtoeslag en kindgebonden budget over 2025 kunt u tot en met 31 december 2026 aanvragen. Kinderopvangtoeslag kan maar 3 maanden terug."
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/vraag-uw-toeslag-voor-2025-uiterlijk-31-december-2026-aan",
-      "sourceName": {
-        "ar": "دائرة البدلات (Toeslagen)",
-        "nl": "Dienst Toeslagen"
-      },
-      "tier": "official",
-      "id": "toeslagen-2026-09-28-a259eec8"
-    },
-    {
-      "source": "STAB",
-      "publishedAt": "2026-09-24",
-      "firstSeen": "2026-10-11",
-      "status": "confirmed",
-      "category": {
-        "ar": "الأجور",
-        "nl": "Minimumloon"
-      },
-      "title": {
-        "ar": "زيادة خاصة في الحد الأدنى لأجور الشباب ابتداءً من 1 يناير 2027",
-        "nl": "Bijzondere verhoging van het minimumjeugdloon per 1 januari 2027"
-      },
-      "summary": {
-        "ar": "تصبح النسب من الحد الأدنى لأجر البالغين: 87.5% لعمر 20، و75% لعمر 19، و62.5% لعمر 18، و50% لعمر 17.",
-        "nl": "Nieuwe percentages van het volwassen minimumloon: 87,5% op 20 jaar, 75% op 19, 62,5% op 18 en 50% op 17 jaar."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-279.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-09-24-954ce4d1"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-09-22",
-      "firstSeen": "2026-10-11",
-      "status": "announced",
-      "category": {
-        "ar": "الدخل والدعم",
-        "nl": "Inkomen en regelingen"
-      },
-      "title": {
-        "ar": "حملة «لا تترك مالاً دون طلب» للعاملين ذوي الدخل المنخفض",
-        "nl": "Campagne 'Laat geen geld liggen' voor werkenden met een laag inkomen"
-      },
-      "summary": {
-        "ar": "تساعد الحملة العاملين على معرفة الدعم الذي يحق لهم عبر أداة potjes-check في موقع Geldfit. مواد الحملة متوفرة بالهولندية والإنجليزية والعربية والتركية.",
-        "nl": "De campagne wijst werkenden op regelingen waar zij recht op hebben, via de potjes-check van Geldfit. Materiaal is er in het Nederlands, Engels, Arabisch en Turks."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/22/campagne-laat-geen-geld-liggen-steunt-werkenden-met-een-laag-inkomen",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-09-22-64c88e1d"
-    }
-  ],
-  "checkedSources": [
-    {
-      "source": "BZK",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
-      "result": "no-change"
-    },
-    {
-      "source": "SZW",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
-      "result": "new"
-    },
-    {
-      "source": "IND",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://ind.nl/nl/nieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "DUO",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://duo.nl/particulier/",
-      "result": "no-change"
-    },
-    {
-      "source": "UWV",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "no-change"
-    },
-    {
-      "source": "SVB",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "TOESLAGEN",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "new"
-    },
-    {
-      "source": "TK",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
-      "result": "new"
-    },
-    {
-      "source": "NOS",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "no-change"
-    },
-    {
-      "source": "NU",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.nu.nl/politiek",
-      "result": "no-change"
-    },
-    {
-      "source": "RTL",
-      "checkedAt": "2026-10-11",
-      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "no-change"
     }
   ]
 }
