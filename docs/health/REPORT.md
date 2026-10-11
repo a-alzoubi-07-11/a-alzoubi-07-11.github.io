@@ -1,6 +1,6 @@
-# Site health report — 2026-10-10T09:59Z
+# Site health report — 2026-10-11T10:09Z
 
-## External links: 467 checked · 3 broken · 11 redirected · 20 bot-blocked
+## External links: 467 checked · 3 broken · 11 redirected · 22 bot-blocked
 - BROKEN 404 https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning  (in articles/social-housing-sociale-huurwoning.html, nl/articles/social-housing-sociale-huurwoning.html)
 - BROKEN 404 https://www.politie.nl/informatie/slachtoffer-van-internetoplichting-doe-aangifte.html  (in articles/scams-phishing-netherlands.html, nl/articles/scams-phishing-netherlands.html)
 - BROKEN 404 https://www.rechtsbijstand.nl/krijg-mediation-rechtsbijstand/brief-ontvangen/civiel-toevoeging  (in articles/legal-aid-lawyer-toevoeging.html, nl/articles/legal-aid-lawyer-toevoeging.html)
