@@ -58,3 +58,6 @@ faq=[('Is diplomawaardering gratis voor vluchtelingen?','Ja, met asielvergunning
 ('Ik heb geen diploma’s meer.','Vraag een Indicatie Onderwijsniveau via IDW aan.'),
 ('Mag ik met een waardering als arts of verpleegkundige werken?','Nee, daarvoor is BIG-registratie met B1, B2 of B2+ nodig.')],
 src_note='Gecontroleerd bij IDW, Nuffic en het BIG-register op 5 oktober 2026. Tarieven voor werken kunnen afwijken van die voor studeren; check IDW.')
+#xlink
+AR['body']+='<p><strong>تريد أن تعرف شهادتك تعادل ماذا؟</strong> اقرأ <a href="/articles/diploma-recognition-by-education-level.html">دليل المعادلة حسب المستوى</a>: من الابتدائي حتى الدكتوراه أو بلا وثائق.</p>'
+NL['body']+='<p><strong>Wat is uw diploma waard?</strong> Lees <a href="/nl/articles/diploma-recognition-by-education-level.html">buitenlands diploma per opleidingsniveau</a>: van basisschool tot doctoraat of zonder papieren.</p>'

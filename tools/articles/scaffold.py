@@ -154,6 +154,10 @@ NEW.update({
    ar=('قاموس المصطلحات الحكومية الهولندية', '141 مصطلحاً من رسائل Belastingdienst وUWV والبلدية وIND مع النطق والمعنى وماذا تفعل.'),
    nl=('Overheidstaal uitgelegd', '141 begrippen uit brieven van de overheid in eenvoudig Nederlands, met het Arabische woord.'),
    related=['bezwaar-objection-letter','digid-registration-guide','bsn-municipality-registration','toeslagen-income-update']),
+ 'diploma-recognition-by-education-level': dict(tpl='diploma-evaluation-sbb', cat='education', listing='education',
+   ar=('شهادتي تعادل ماذا في هولندا؟', 'دليل حسب مستواك: البكالوريا السورية تُقارَن بـhavo، المعهد بـMBO 4، الإجازة 4 سنوات بـHBO أو سنتين WO، والماجستير بماجستير سنة واحدة، مع من يقيّم والخطوة التالية.'),
+   nl=('Buitenlands diploma per niveau', 'Per niveau: Syrisch eindexamen ≈ havo, instituut ≈ mbo 4, 4-jarige bachelor ≈ hbo-bachelor of 2 jaar wo, master ≈ 1-jarige master; met NLQF, wie waardeert en de volgende stap.'),
+   related=['diploma-evaluation-sbb','mbo-hbo-wo-comparison','nt2-b1-exam-guide','mbo-conditions']),
 })
 
 def short_titles():
