@@ -1,187 +1,108 @@
 {
- "generated": "2026-10-05",
- "pages_checked": 104,
- "links_checked": 341,
- "broken_links": {
-  "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning": 404
- },
+ "generated": "2026-10-12",
+ "pages_checked": 126,
+ "links_checked": 445,
+ "broken_links": {},
  "queue": [
-  {
-   "page": "articles/social-housing-sociale-huurwoning.html",
-   "lang": "ar",
-   "title": "السكن الاجتماعي في هولندا 2026: كيف تسجّل، حدود الدخل، مدة الانتظار، والأولوية (urgentie) — مع أمثلة | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 0,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
-    "https://www.domijn.nl/media/4158/faq-woonruimteverdeling.pdf",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2025/11/25/indexering-inkomensgrenzen-woningcorporaties-maximale-huurprijsgrenzen-en-huurtoeslagparameters-2026",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/wet-versterking-regie-volkshuisvesting-van-kracht-vanaf-1-juli",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/huurwoning-zoeken/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
-    "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/inkomensgrenzen-huurprijsgrenzen-en-huurtoeslagparameters/woningtoewijzing",
-    "https://www.volkshuisvestingnederland.nl/wat-betekent-de-wet-betaalbare-huur-voor-mij/info/over-de-wet-betaalbare-huur",
-    "https://www.woninghuren.nl",
-    "https://www.ymere.nl/media/2xge5fxb/pwnr-jaarrapportage-woonruimteverdeling-2024-def.pdf"
-   ]
-  },
-  {
-   "page": "nl/articles/social-housing-sociale-huurwoning.html",
-   "lang": "nl",
-   "title": "Sociale huurwoning in 2026: inschrijven, inkomensgrenzen, wachttijd en urgentie — met voorbeelden | Nederlandsgids",
-   "dateModified": "2026-10-05",
-   "age_days": 0,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
-    "https://www.domijn.nl/media/4158/faq-woonruimteverdeling.pdf",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2025/11/25/indexering-inkomensgrenzen-woningcorporaties-maximale-huurprijsgrenzen-en-huurtoeslagparameters-2026",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/wet-versterking-regie-volkshuisvesting-van-kracht-vanaf-1-juli",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/huurwoning-zoeken/wanneer-krijg-ik-een-urgentieverklaring-voor-een-huurwoning",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
-    "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/inkomensgrenzen-huurprijsgrenzen-en-huurtoeslagparameters/woningtoewijzing",
-    "https://www.volkshuisvestingnederland.nl/wat-betekent-de-wet-betaalbare-huur-voor-mij/info/over-de-wet-betaalbare-huur",
-    "https://www.woninghuren.nl",
-    "https://www.ymere.nl/media/2xge5fxb/pwnr-jaarrapportage-woonruimteverdeling-2024-def.pdf"
-   ]
-  },
-  {
-   "page": "articles/dutch-naturalisation-guide.html",
-   "lang": "ar",
-   "title": "الجنسية الهولندية بالتجنس 2026: شرط 5 سنوات واستثناءاته، الاندماج A2، الرسوم، الإجراءات والحفل، وما هو مقترح فقط (10 سنوات وB1) | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 0,
-   "score": 13,
-   "reasons": [
-    "milestone in 0 days (2026-10-05): prepare the update"
-   ],
-   "milestones": [
-    {
-     "date": "2026-10-05",
-     "days": 0,
-     "context": "فقت حكومة Schoof في 26 سبتمبر 2025 على مسودة قانون وطرحتها للاستشارة. لم يصبح قانوناً حتى 5 أكتوبر 2026؛ المدة الحالية 5 سنوات. مسودة رفع اللغة إلى B1 نية حكومية و"
-    }
-   ],
-   "sources": [
-    "https://ind.nl/en/dutch-citizenship/becoming-a-dutch-national-through-naturalisation",
-    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
-    "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
-    "https://ind.nl/nl/nieuws/leges-en-normbedragen-2026-bekend",
-    "https://ind.nl/nl/uitzonderingen-5-jaar-verblijf-bij-naturalisatie",
-    "https://www.inburgeren.nl/u-gaat-inburgeren/naturaliseren.jsp",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2025/09/26/kabinet-wil-naturalisatietermijn-verlengen-van-5-naar-10-jaar"
-   ]
-  },
   {
    "page": "articles/health-insurance-2027.html",
    "lang": "ar",
-   "title": "التأمين الصحي في هولندا 2027: المخاطرة الذاتية 400 يورو، الأقساط الجديدة، بدل الرعاية، وكيف تبدّل قبل 31 ديسمبر | دليل هولندا بالعربية",
+   "title": "التأمين الصحي zorgverzekering 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 1,
+   "age_days": 8,
    "score": 13,
    "reasons": [
-    "milestone in 38 days (2026-11-12): prepare the update"
+    "milestone in 31 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 38,
+     "days": 31,
      "context": "دخلك فحدّث التقدير ( كيف ). التبديل: التواريخ التي لا يجب أن تفوتك التاريخ ماذا تفعل حتى 12 نوفمبر 2026 الشركات تعلن أقساط 2027 وشروطها. تصلك رسالة من شركتك. من من"
     }
    ],
    "sources": [
     "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/hoeveel-zorgtoeslag",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
-   ]
-  },
-  {
-   "page": "nl/articles/dutch-naturalisation-guide.html",
-   "lang": "nl",
-   "title": "Nederlander worden door naturalisatie in 2026: 5 jaar en uitzonderingen, inburgering A2, leges, procedure en ceremonie, en wat alleen een voorstel is (10 jaar, B1) | Nederlandsgids",
-   "dateModified": "2026-10-05",
-   "age_days": 0,
-   "score": 13,
-   "reasons": [
-    "milestone in 0 days (2026-10-05): prepare the update"
-   ],
-   "milestones": [
-    {
-     "date": "2026-10-05",
-     "days": 0,
-     "context": "oncept-wetsvoorstel kabinet-Schoof (26 september 2025), internetconsultatie. Geen wet per 5 oktober 2026. Concept Taaleis B1 Aangekondigd, motie 2024, geen wet. Voo"
-    }
-   ],
-   "sources": [
-    "https://ind.nl/en/dutch-citizenship/becoming-a-dutch-national-through-naturalisation",
-    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
-    "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
-    "https://ind.nl/nl/nieuws/leges-en-normbedragen-2026-bekend",
-    "https://ind.nl/nl/uitzonderingen-5-jaar-verblijf-bij-naturalisatie",
-    "https://www.inburgeren.nl/u-gaat-inburgeren/naturaliseren.jsp",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2025/09/26/kabinet-wil-naturalisatietermijn-verlengen-van-5-naar-10-jaar"
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
    ]
   },
   {
    "page": "nl/articles/health-insurance-2027.html",
    "lang": "nl",
-   "title": "Zorgverzekering 2027: eigen risico € 400, nieuwe premies, zorgtoeslag en overstappen vóór 31 december | Nederlandsgids",
+   "title": "Zorgverzekering 2027: eigen risico en premie | Nederlandsgids",
    "dateModified": "2026-10-04",
-   "age_days": 1,
+   "age_days": 8,
    "score": 13,
    "reasons": [
-    "milestone in 38 days (2026-11-12): prepare the update"
+    "milestone in 31 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 38,
+     "days": 31,
      "context": "Zie de gids zorgtoeslag en inkomen doorgeven . Overstappen: de data Datum Actie Uiterlijk 12 november 2026 Verzekeraars maken premies en voorwaarden 2027 bekend. Vana"
     }
    ],
    "sources": [
     "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/hoeveel-zorgtoeslag",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/ben-ik-verplicht-een-zorgverzekering-af-te-sluiten",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/eigen-risico-zorgverzekering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/kan-ik-een-zorgverzekering-afsluiten-als-ik-nog-geen-verblijfsvergunning-heb",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/korting-collectieve-zorgverzekering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/veranderingen-basispakket",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-niet-verzekerd-ben-voor-de-zorgverzekering"
+   ]
+  },
+  {
+   "page": "articles/asylum-two-status-system-2026.html",
+   "lang": "ar",
+   "title": "نظام الحالتين للجوء في هولندا 2026: ماذا يتغير؟ | دليل هولندا",
+   "dateModified": "2026-10-08",
+   "age_days": 4,
+   "score": 10,
+   "reasons": [
+    "milestone in 3 days (2026-10-15): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2026-10-15",
+     "days": 3,
+     "context": "ر الإقامة. الطلب مجاني. IND يواصل البت في هذه الفئة. صاحب حماية ثانوية قرار إقامته بتاريخ 15 أكتوبر 2026 ويطلب لزوجته سنتان من 15 أكتوبر 2026 تعني 15 أكتوبر 2028 كأ"
+    }
+   ],
+   "sources": [
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/asiel-aangevraagd-voor-12-juni-2026",
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/wanneer-begint-de-ind-met-mijn-nareisaanvraag",
+    "https://ind.nl/nl/verblijfsvergunningen/asiel/gezinshereniging-asiel",
+    "https://www.eerstekamer.nl/wetsvoorstel/36703_wet_invoering",
+    "https://www.rijksoverheid.nl/themas/migratie-en-reizen/asielbeleid/verminderen-instroom-asielzoekers",
+    "https://zoek.officielebekendmakingen.nl/stb-2026-105.html"
    ]
   },
   {
    "page": "articles/temporary-agency-work-rights.html",
    "lang": "ar",
-   "title": "العمل عبر وكالات التوظيف (Uitzendbureau) في هولندا 2026: حقوقك في الأجر والمرض والسكن، وقانون ترخيص الوكالات من 2027 | دليل هولندا بالعربية",
+   "title": "العمل عبر وكالة توظيف uitzendbureau 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 1,
+   "age_days": 8,
    "score": 10,
    "reasons": [
-    "milestone in 27 days (2026-11-01): prepare the update"
+    "milestone in 20 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 27,
+     "days": 20,
      "context": "يعير عمالاً (Wet toelating terbeschikkingstelling van arbeidskrachten): التاريخ ماذا يحدث 1 نوفمبر 2026 – 1 يناير 2027 الوكالات التي تريد الاستفادة من الفترة الانت"
     }
    ],
@@ -189,26 +110,26 @@
     "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
     "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/24/vanaf-2027-strengere-regels-uitzendbureaus",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/07/08/meer-zekerheid-voor-mensen-met-een-flexcontract",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wanneer-verandert-mijn-tijdelijke-arbeidscontract-in-een-vast-contract",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-payrollkracht",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-uitzendkracht",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wanneer-verandert-mijn-tijdelijke-arbeidscontract-in-een-vast-contract",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-payrollkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-uitzendkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
    ]
   },
   {
    "page": "articles/year-end-checklist-2026.html",
    "lang": "ar",
-   "title": "قائمة نهاية السنة 2026: ماذا تفعل قبل 31 ديسمبر وفي يناير 2027 (التأمين الصحي، البدلات، الضرائب، الطاقة) | دليل هولندا بالعربية",
+   "title": "قائمة نهاية السنة 2026 قبل 31 ديسمبر | دليل هولندا بالعربية",
    "dateModified": "2026-10-05",
-   "age_days": 0,
+   "age_days": 7,
    "score": 10,
    "reasons": [
-    "milestone in 38 days (2026-11-12): prepare the update"
+    "milestone in 31 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 38,
+     "days": 31,
      "context": "4. الطاقة 5. السكن أمثلة (توضيحية) القائمة النهائية أسئلة شائعة التقويم التاريخ ماذا تفعل 12 نوفمبر 2026 نشر أقساط التأمين الأساسي 2027 (والتكميلي بعده بأسبوع تقريب"
     }
    ],
@@ -217,25 +138,52 @@
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/belastingplan-2027-voorstellen-voor-beter-werkend-belastingstelsel-en-gezonde-overheidsfinancien",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-in-begrijpelijke-taal",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
     "https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie"
+   ]
+  },
+  {
+   "page": "nl/articles/asylum-two-status-system-2026.html",
+   "lang": "nl",
+   "title": "Tweestatusstelsel asiel 2026: wat verandert er? | Nederlandsgids",
+   "dateModified": "2026-10-08",
+   "age_days": 4,
+   "score": 10,
+   "reasons": [
+    "milestone in 3 days (2026-10-15): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2026-10-15",
+     "days": 3,
+     "context": "de vergunning. Gratis. De IND beslist op deze groep wel. Subsidiair beschermd, besluit op 15 oktober 2026, vraagt nareis voor de partner 2 jaar na 15 oktober 2026 is"
+    }
+   ],
+   "sources": [
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/asiel-aangevraagd-voor-12-juni-2026",
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/wanneer-begint-de-ind-met-mijn-nareisaanvraag",
+    "https://ind.nl/nl/verblijfsvergunningen/asiel/gezinshereniging-asiel",
+    "https://www.eerstekamer.nl/wetsvoorstel/36703_wet_invoering",
+    "https://www.rijksoverheid.nl/themas/migratie-en-reizen/asielbeleid/verminderen-instroom-asielzoekers",
+    "https://zoek.officielebekendmakingen.nl/stb-2026-105.html"
    ]
   },
   {
    "page": "nl/articles/temporary-agency-work-rights.html",
    "lang": "nl",
-   "title": "Werken via een uitzendbureau in 2026: je rechten bij loon, ziekte en huisvesting, en de toelatingsplicht voor uitleners vanaf 2027 | Nederlandsgids",
+   "title": "Uitzendbureau 2026: je rechten als uitzendkracht | Nederlandsgids",
    "dateModified": "2026-10-04",
-   "age_days": 1,
+   "age_days": 8,
    "score": 10,
    "reasons": [
-    "milestone in 27 days (2026-11-01): prepare the update"
+    "milestone in 20 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 27,
+     "days": 20,
      "context": "cao met fases geldt dan niet. Toelatingsplicht voor uitleners (Wtta) Datum Wat er gebeurt 1 november 2026 – 1 januari 2027 Uitleners die gebruik willen maken van het"
     }
    ],
@@ -243,26 +191,26 @@
     "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
     "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/24/vanaf-2027-strengere-regels-uitzendbureaus",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/07/08/meer-zekerheid-voor-mensen-met-een-flexcontract",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wanneer-verandert-mijn-tijdelijke-arbeidscontract-in-een-vast-contract",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-payrollkracht",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-uitzendkracht",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wanneer-verandert-mijn-tijdelijke-arbeidscontract-in-een-vast-contract",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-payrollkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-uitzendkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
    ]
   },
   {
    "page": "nl/articles/year-end-checklist-2026.html",
    "lang": "nl",
-   "title": "Checklist jaareinde 2026: wat regel je vóór 31 december en in januari 2027 (zorgverzekering, toeslagen, belasting, energie) | Nederlandsgids",
+   "title": "Checklist jaareinde 2026: vóór 31 december | Nederlandsgids",
    "dateModified": "2026-10-05",
-   "age_days": 0,
+   "age_days": 7,
    "score": 10,
    "reasons": [
-    "milestone in 38 days (2026-11-12): prepare the update"
+    "milestone in 31 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 38,
+     "days": 31,
      "context": "ie 5. Wonen Voorbeelden (illustratief) Checklist Veelgestelde vragen Kalender Datum Actie 12 november 2026 Basispremies 2027 bekend (aanvullend ca. een week later) —"
     }
    ],
@@ -271,8 +219,8 @@
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/belastingplan-2027-voorstellen-voor-beter-werkend-belastingstelsel-en-gezonde-overheidsfinancien",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-in-begrijpelijke-taal",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
     "https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie"
    ]
   }
