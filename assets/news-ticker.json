@@ -1,59 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T08:56:24+02:00",
-  "validUntil": "2026-10-13T20:56:24+02:00",
+  "updatedAt": "2026-10-13T20:55:29+02:00",
+  "validUntil": "2026-10-14T08:55:29+02:00",
   "items": [
     {
-      "id": "szw-2026-10-12-werkcentra",
-      "source": "SZW",
-      "tier": "official",
-      "status": "proposed",
-      "publishedAt": "2026-10-12",
-      "checkedAt": "2026-10-13T08:56:24+02:00",
-      "category": {
-        "ar": "العمل والتدريب",
-        "nl": "Werk en scholing"
-      },
-      "title": {
-        "ar": "الحكومة تريد إنشاء مركز عمل موحّد في كل منطقة عمل",
-        "nl": "Kabinet wil in elke arbeidsmarktregio één Werkcentrum"
-      },
-      "summary": {
-        "ar": "المشروع يجمع البلدية وUWV وأصحاب العمل ومؤسسات التعليم في مكان واحد لمساعدة الباحثين عن عمل والراغبين في التدريب، ويستهدف أيضاً تسهيل دخول القادمين الجدد إلى سوق العمل. أُرسل مشروع القانون إلى مجلس النواب.",
-        "nl": "Het plan bundelt gemeenten, UWV, werkgevers en onderwijs in één loket voor werkzoekenden en mensen die willen bijscholen. Ook nieuwkomers moeten zo makkelijker aan het werk komen. Het wetsvoorstel ligt bij de Tweede Kamer."
-      },
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية والعمل",
-        "nl": "Ministerie van Sociale Zaken en Werkgelegenheid"
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/12/kabinet-zet-werk-centraal-in-elke-regio-een-werkcentrum",
-      "firstSeen": "2026-10-12"
-    },
-    {
-      "id": "jenv-2026-10-12-denk-vooruit",
-      "source": "JENV",
+      "id": "bzk-2026-10-13-starterswoningen-nhg-2027",
+      "source": "BZK",
       "tier": "official",
       "status": "confirmed",
-      "publishedAt": "2026-10-12",
-      "checkedAt": "2026-10-13T08:56:24+02:00",
+      "publishedAt": "2026-10-13",
+      "checkedAt": "2026-10-13T20:55:29+02:00",
       "category": {
-        "ar": "الحياة اليومية والسلامة",
-        "nl": "Dagelijks leven en veiligheid"
+        "ar": "السكن وشراء المنزل",
+        "nl": "Wonen en koopwoning"
       },
       "title": {
-        "ar": "حملة حكومية جديدة للاستعداد لـ72 ساعة دون كهرباء أو ماء أو إنترنت",
-        "nl": "Nieuwe overheidscampagne voor 72 uur zonder stroom, water of internet"
+        "ar": "164 مليون يورو لمساكن المشترين لأول مرة ورفع حدّ NHG إلى 500 ألف يورو في 2027",
+        "nl": "€ 164 miljoen voor starterswoningen en NHG-grens naar € 500.000 in 2027"
       },
       "summary": {
-        "ar": "توصي الحكومة بثلاث خطوات: تجهيز حقيبة طوارئ، ووضع خطة مع الأسرة أو المحيط، والتحدث عن من يحتاج إلى المساعدة. تتوفر الإرشادات العملية عبر Denk vooruit.",
-        "nl": "De overheid adviseert drie stappen: een noodpakket samenstellen, een plan maken met gezin of omgeving en bespreken wie hulp nodig heeft. Praktische uitleg staat op Denk vooruit."
+        "ar": "تقول الحكومة إن التمويل يتيح بناء نحو 3900 مسكن للمشترين لأول مرة. يرتفع حدّ سعر الرهن بضمان NHG من 470 ألفاً إلى 500 ألف يورو، ويصبح 530 ألفاً مع تمويل تدابير توفير الطاقة.",
+        "nl": "Volgens het kabinet is financiering beschikbaar voor circa 3.900 starterswoningen. De NHG-grens stijgt van € 470.000 naar € 500.000; met energiebesparende voorzieningen wordt de grens € 530.000."
       },
       "sourceName": {
-        "ar": "وزارة العدل والأمن",
-        "nl": "Ministerie van Justitie en Veiligheid"
+        "ar": "وزارة الإسكان والتخطيط المكاني",
+        "nl": "Ministerie van Volkshuisvesting en Ruimtelijke Ordening"
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/12/nieuwe-denk-vooruit-campagne-om-extra-aandacht-te-vragen-om-voor-te-bereiden-op-noodsituatie",
-      "firstSeen": "2026-10-12"
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/13/nfbk-euro164-miljoen-beschikbaar-voor-nieuwe-starterswoningen",
+      "firstSeen": "2026-10-13"
     }
   ]
 }
