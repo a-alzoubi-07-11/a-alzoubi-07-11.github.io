@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T21:01:06+02:00",
-  "validUntil": "2026-10-13T09:01:06+02:00",
+  "updatedAt": "2026-10-13T08:56:24+02:00",
+  "validUntil": "2026-10-13T20:56:24+02:00",
   "items": [
     {
       "id": "szw-2026-10-12-werkcentra",
@@ -9,7 +9,7 @@
       "tier": "official",
       "status": "proposed",
       "publishedAt": "2026-10-12",
-      "checkedAt": "2026-10-12T21:01:06+02:00",
+      "checkedAt": "2026-10-13T08:56:24+02:00",
       "category": {
         "ar": "العمل والتدريب",
         "nl": "Werk en scholing"
@@ -35,7 +35,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-10-12",
-      "checkedAt": "2026-10-12T21:01:06+02:00",
+      "checkedAt": "2026-10-13T08:56:24+02:00",
       "category": {
         "ar": "الحياة اليومية والسلامة",
         "nl": "Dagelijks leven en veiligheid"
