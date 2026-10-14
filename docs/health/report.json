@@ -1,8 +1,18 @@
 {
- "checked_at": "2026-10-13T10:47Z",
+ "checked_at": "2026-10-14T08:51Z",
  "external": {
   "total": 478,
   "broken": [
+   {
+    "url": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
+    "code": 404,
+    "final": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
+    "soft404": false,
+    "pages": [
+     "articles/temporary-agency-work-rights.html",
+     "nl/articles/temporary-agency-work-rights.html"
+    ]
+   },
    {
     "url": "https://www.politie.nl/onderwerpen/internetoplichting.html",
     "code": 404,

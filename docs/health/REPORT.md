@@ -1,6 +1,7 @@
-# Site health report — 2026-10-13T10:47Z
+# Site health report — 2026-10-14T08:51Z
 
-## External links: 478 checked · 1 broken · 6 redirected · 29 bot-blocked
+## External links: 478 checked · 2 broken · 6 redirected · 29 bot-blocked
+- BROKEN 404 https://www.nlarbeidsinspectie.nl/onderwerpen/melden  (in articles/temporary-agency-work-rights.html, nl/articles/temporary-agency-work-rights.html)
 - BROKEN 404 https://www.politie.nl/onderwerpen/internetoplichting.html  (in articles/scams-phishing-netherlands.html, nl/articles/scams-phishing-netherlands.html)
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
