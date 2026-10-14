@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T09:04:09+02:00",
-  "validUntil": "2026-10-14T21:04:09+02:00",
+  "updatedAt": "2026-10-14T21:03:53+02:00",
+  "validUntil": "2026-10-15T09:03:53+02:00",
   "items": [
     {
-      "id": "bzk-2026-10-13-starterswoningen-nhg-2027",
-      "source": "BZK",
+      "id": "szw-2026-10-14-geldstress-geldfit-jongeren",
+      "source": "SZW",
       "tier": "official",
-      "status": "confirmed",
-      "publishedAt": "2026-10-13",
-      "checkedAt": "2026-10-14T09:04:09+02:00",
+      "status": "announced",
+      "publishedAt": "2026-10-14",
+      "checkedAt": "2026-10-14T21:03:53+02:00",
       "category": {
-        "ar": "السكن وشراء المنزل",
-        "nl": "Wonen en koopwoning"
+        "ar": "الدعم المالي للشباب",
+        "nl": "Hulp bij geldzorgen voor jongeren"
       },
       "title": {
-        "ar": "164 مليون يورو لمساكن المشترين لأول مرة ورفع حدّ NHG إلى 500 ألف يورو في 2027",
-        "nl": "€ 164 miljoen voor starterswoningen en NHG-grens naar € 500.000 in 2027"
+        "ar": "حملة حكومية لمساعدة الشباب عند مواجهة ضغوط مالية",
+        "nl": "Overheidscampagne wijst jongeren met geldzorgen op hulp"
       },
       "summary": {
-        "ar": "تقول الحكومة إن التمويل يتيح بناء نحو 3900 مسكن للمشترين لأول مرة. يرتفع حدّ سعر الرهن بضمان NHG من 470 ألفاً إلى 500 ألف يورو، ويصبح 530 ألفاً مع تمويل تدابير توفير الطاقة.",
-        "nl": "Volgens het kabinet is financiering beschikbaar voor circa 3.900 starterswoningen. De NHG-grens stijgt van € 470.000 naar € 500.000; met energiebesparende voorzieningen wordt de grens € 530.000."
+        "ar": "أطلقت وزارة الشؤون الاجتماعية حملة Geldstress للشباب بين 18 و27 عاماً. يمكنهم طلب معلومات ومساعدة مجاناً ودون ذكر الاسم عبر واتساب أو دردشة Geldfit أو الاتصال بالرقم 0800-8115؛ وقد يُوجّهون إلى دعم قريب منهم.",
+        "nl": "Het ministerie van Sociale Zaken en Werkgelegenheid start de campagne Geldstress voor 18- tot 27-jarigen. Jongeren kunnen gratis en anoniem hulp vragen via WhatsApp, de chat van Geldfit of 0800-8115 en zo nodig worden doorverwezen naar hulp in de buurt."
       },
       "sourceName": {
-        "ar": "وزارة الإسكان والتخطيط المكاني",
-        "nl": "Ministerie van Volkshuisvesting en Ruimtelijke Ordening"
+        "ar": "وزارة الشؤون الاجتماعية والعمل الهولندية",
+        "nl": "Ministerie van Sociale Zaken en Werkgelegenheid"
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/13/nfbk-euro164-miljoen-beschikbaar-voor-nieuwe-starterswoningen",
-      "firstSeen": "2026-10-13"
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/14/campagne-helpt-jongeren-met-geldzorgen",
+      "firstSeen": "2026-10-14"
     }
   ]
 }
