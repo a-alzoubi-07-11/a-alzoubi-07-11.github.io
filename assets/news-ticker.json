@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T20:55:29+02:00",
-  "validUntil": "2026-10-14T08:55:29+02:00",
+  "updatedAt": "2026-10-14T09:04:09+02:00",
+  "validUntil": "2026-10-14T21:04:09+02:00",
   "items": [
     {
       "id": "bzk-2026-10-13-starterswoningen-nhg-2027",
@@ -9,7 +9,7 @@
       "tier": "official",
       "status": "confirmed",
       "publishedAt": "2026-10-13",
-      "checkedAt": "2026-10-13T20:55:29+02:00",
+      "checkedAt": "2026-10-14T09:04:09+02:00",
       "category": {
         "ar": "السكن وشراء المنزل",
         "nl": "Wonen en koopwoning"
