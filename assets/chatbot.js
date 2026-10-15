@@ -92,8 +92,8 @@
     launcher.setAttribute("aria-label", nl ? "Chat openen" : "افتح المحادثة");
     const welcome = feed.querySelector("[data-gids-welcome]");
     if (welcome) welcome.textContent = nl
-      ? "Welkom! Stel je vraag in het Nederlands of Arabisch. Controleer belangrijke informatie altijd bij de officiële bron."
-      : "أهلاً بك! اسأل بالعربية أو الهولندية. تحقّق من المعلومات المهمة دائماً عبر المصدر الرسمي.";
+      ? "Welkom! Stel je vraag in het Nederlands of Arabisch. Antwoorden zijn automatisch en geen juridisch of financieel advies; controleer belangrijke informatie altijd bij de officiële bron."
+      : "أهلاً بك! اسأل بالعربية أو الهولندية. الردود آلية وليست استشارة قانونية أو مالية؛ تحقّق من المعلومات المهمة دائماً عبر المصدر الرسمي.";
     $(".gids-chat-launch-label").textContent = nl ? "Chat met ons" : "اسأل المساعد";
     $(".gids-chat-title").textContent = nl ? "Gids Nederland assistent" : "مساعد Gids Nederland";
     $(".gids-chat-subtitle").textContent = nl ? "Vragen over Nederland? Stel ze hier." : "اسأل عن الدراسة والحياة في هولندا";
@@ -116,8 +116,8 @@
   localize();
   addMessage(
     isDutch()
-      ? "Welkom! Stel je vraag in het Nederlands of Arabisch. Controleer belangrijke informatie altijd bij de officiële bron."
-      : "أهلاً بك! اسأل بالعربية أو الهولندية. تحقّق من المعلومات المهمة دائماً عبر المصدر الرسمي.",
+      ? "Welkom! Stel je vraag in het Nederlands of Arabisch. Antwoorden zijn automatisch en geen juridisch of financieel advies; controleer belangrijke informatie altijd bij de officiële bron."
+      : "أهلاً بك! اسأل بالعربية أو الهولندية. الردود آلية وليست استشارة قانونية أو مالية؛ تحقّق من المعلومات المهمة دائماً عبر المصدر الرسمي.",
     "bot"
   );
 
