@@ -1,18 +1,8 @@
 {
- "checked_at": "2026-10-14T08:51Z",
+ "checked_at": "2026-10-15T08:26Z",
  "external": {
   "total": 478,
   "broken": [
-   {
-    "url": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
-    "code": 404,
-    "final": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
-    "soft404": false,
-    "pages": [
-     "articles/temporary-agency-work-rights.html",
-     "nl/articles/temporary-agency-work-rights.html"
-    ]
-   },
    {
     "url": "https://www.politie.nl/onderwerpen/internetoplichting.html",
     "code": 404,
@@ -33,6 +23,56 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
+    "code": 403,
+    "final": "https://wetten.overheid.nl/BWBR0004766/",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
+    "code": 403,
+    "final": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
+    "soft404": false,
+    "pages": [
+     "articles/bezwaar-objection-letter.html",
+     "nl/articles/bezwaar-objection-letter.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
+    "code": 403,
+    "final": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 403,
+    "final": "https://wetten.overheid.nl/BWBR0031331/",
+    "soft404": false,
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
+    "code": 403,
+    "final": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
     ]
    },
    {
@@ -318,6 +358,26 @@
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
     ]
+   },
+   {
+    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
+    "code": 403,
+    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
+    "soft404": false,
+    "pages": [
+     "articles/asylum-two-status-system-2026.html",
+     "nl/articles/asylum-two-status-system-2026.html"
+    ]
+   },
+   {
+    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
+    "code": 403,
+    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
+    "soft404": false,
+    "pages": [
+     "calculators/zorgtoeslag.html",
+     "nl/calculators/zorgtoeslag.html"
+    ]
    }
   ],
   "redirected": [
@@ -342,26 +402,6 @@
     ]
    },
    {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 200,
-    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 200,
-    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
     "url": "https://www.belastingdienst.nl",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home",
@@ -379,6 +419,16 @@
     "pages": [
      "index.html",
      "nl/index.html"
+    ]
+   },
+   {
+    "url": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
+    "code": 200,
+    "final": "https://www.nlarbeidsinspectie.nl/onderwerpen/ik-wil-iets-melden",
+    "soft404": false,
+    "pages": [
+     "articles/temporary-agency-work-rights.html",
+     "nl/articles/temporary-agency-work-rights.html"
     ]
    }
   ]
