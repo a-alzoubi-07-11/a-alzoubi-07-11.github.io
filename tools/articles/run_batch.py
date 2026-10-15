@@ -10,6 +10,9 @@ for m in mods:
     a.AR['sources']=a.SRC; a.NL['sources']=a.SRC
     build(a.SLUG,'ar',a.AR,DATE_ISO,DATE_AR)
     build(a.SLUG,'nl',a.NL,DATE_ISO,DATE_NL)
+# one related list per page (merge in-article 'related' lists into the closing box)
+import subprocess, sys as _sys
+subprocess.run([_sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dedupe_related.py')] + [f'{REPO}/{p}' for m in mods for p in (f'articles/{importlib.import_module(m).SLUG}.html', f'nl/articles/{importlib.import_module(m).SLUG}.html')], check=True)
 # validate
 bad=0
 for m in mods:
