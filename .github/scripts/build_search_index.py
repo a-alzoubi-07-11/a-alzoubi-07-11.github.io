@@ -37,8 +37,8 @@ TOPIC = {
  'prinsjesdag-2026-changes':'money ميزانية الحكومة التغييرات القادمة قرارات الميزانية الضرائب الجديدة miljoenennota begroting 2027 wat verandert',
 }
 TOPIC_LABEL = {
- 'ar': {'housing':'البداية والحياة اليومية','residence':'الإقامة ولمّ الشمل','work':'العمل والراتب','education':'الدراسة والتعليم','benefits':'البدلات والمساعدات','money':'المال والضرائب'},
- 'nl': {'housing':'Starten en dagelijks leven','residence':'Verblijf en gezinshereniging','work':'Werk en salaris','education':'Studie en onderwijs','benefits':'Toeslagen en uitkeringen','money':'Geld en belastingen'},
+ 'ar': {'housing':'السكن والحياة اليومية','residence':'الإقامة ولمّ الشمل','work':'العمل والراتب','education':'الدراسة والتعليم','benefits':'الإعانات والبدلات','money':'المال والضرائب'},
+ 'nl': {'housing':'Wonen en dagelijks leven','residence':'Verblijf en gezinshereniging','work':'Werk en salaris','education':'Studie en onderwijs','benefits':'Toeslagen en uitkeringen','money':'Geld en belastingen'},
 }
 TOPIC_ALIASES = {
  'housing':'سكن بيت بلدية gemeente wonen بداية وصول جديد قادم',
@@ -173,12 +173,14 @@ def entry(path, lang, slug):
     heads = [text(h) for h in re.findall(r'<h2[^>]*>(.*?)</h2>', s, re.S)]
     SKIP = {'في هذا الدليل','In deze gids','الأسئلة الشائعة','Veelgestelde vragen','المصادر','Bronnen','المصادر الرسمية','Officiële bronnen','مسرد','Begrippen'}
     heads = [h for h in heads if h and len(h) < 90 and h not in SKIP][:14]
-    topic = TOPIC.get(slug) or AUTO_TOPIC.get(slug)
+    raw = TOPIC.get(slug, '')  # value = topic key, optionally followed by extra search words
+    topic, _, extra_kw = raw.partition(' ')
+    topic = topic or AUTO_TOPIC.get(slug)
     desc = html.unescape(d.group(1)) if d else ''
     return {
         'u': ('/nl' if lang == 'nl' else '') + f'/articles/{slug}.html', 'l': lang, 'y': 'guide',
         't': title, 'd': desc, 'h': ' | '.join(heads),
-        'c': TOPIC_LABEL[lang].get(topic or '', ''), 'k': (ALIASES.get(slug) or auto_keywords(slug, title, desc)) + ' ' + TOPIC_ALIASES.get(topic or '', ''),
+        'c': TOPIC_LABEL[lang].get(topic or '', ''), 'k': ' '.join(x for x in ((ALIASES.get(slug) or auto_keywords(slug, title, desc)), extra_kw, TOPIC_ALIASES.get(topic or '', '')) if x),
     }
 
 AUTO_TOPIC = {}

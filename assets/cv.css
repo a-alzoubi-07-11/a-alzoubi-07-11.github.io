@@ -198,7 +198,7 @@ details.ideas summary{cursor:pointer;min-height:44px;display:flex;align-items:ce
 
 /* mobile preview */
 .preview-fab{position:fixed;inset-inline-start:16px;inset-block-end:calc(20px + env(safe-area-inset-bottom));z-index:30;border-radius:999px;box-shadow:0 10px 26px #0e3b2f40;padding:.8rem 1.2rem}
-.preview-overlay{position:fixed;inset:0;z-index:50;background:#e7ebee;overflow:auto;padding:0 12px 24px}
+.preview-overlay{position:fixed;inset:0;z-index:2100;background:#e7ebee;overflow:auto;padding:0 12px 24px}
 .preview-overlay[hidden]{display:none}
 .overlay-bar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:10px 4px;background:#e7ebeeee;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 body.overlay-open{overflow:hidden}

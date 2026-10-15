@@ -55,7 +55,7 @@
     if (input.age18 === false) reasons.push('age');
     if (input.insured === false) reasons.push('insurance');
     if (input.legalStay === false) reasons.push('residence');
-    if (!isFinite(income)) reasons.push('income_missing');
+    if (!isFinite(income) || income < 0) { reasons.push('income_missing'); income = NaN; }
 
     var incomeLimit = partner ? P.incomeLimitPartner : P.incomeLimitSingle;
     var assetLimit = partner ? P.assetLimitPartner : P.assetLimitSingle;

@@ -26,10 +26,16 @@ function notice(){
  box.innerHTML='<h2>'+title+'</h2><p>'+info+'</p><div class="actions"><button type="button" data-retry>'+(nl?'Google-melding openen':'فتح رسالة Google')+'</button><a href="'+(nl?'/nl/privacy.html':'/privacy.html')+'">'+(nl?'Privacyverklaring':'سياسة الخصوصية')+'</a><button type="button" data-dismiss>'+(nl?'Sluiten':'إغلاق')+'</button></div>';
  box.querySelector('[data-retry]').addEventListener('click',open);box.querySelector('[data-dismiss]').addEventListener('click',()=>box.remove());document.body.append(box);
 }
+function unavailable(){
+ // Google's message did not load (not published for this site/region, blocked by the browser, or offline). Nothing is granted.
+ const box=document.getElementById('mbo-consent');if(!box||apiReady)return;const nl=document.documentElement.lang==='nl';
+ let p=box.querySelector('[data-cmp-status]');if(!p){p=document.createElement('p');p.setAttribute('data-cmp-status','');box.insertBefore(p,box.querySelector('.actions'));}
+ p.textContent=nl?'De Google-melding kon nu niet worden geladen (bijvoorbeeld door een adblocker, geen verbinding of omdat de melding in jouw regio niet getoond wordt). Er is niets toegestaan: advertentie- en statistiekcookies blijven uit.':'تعذّر تحميل رسالة Google الآن (مثلاً بسبب مانع إعلانات أو انقطاع الاتصال أو لأن الرسالة لا تظهر في منطقتك). لم تُمنح أي موافقة: كوكيز الإعلانات والإحصاءات تبقى متوقفة.';
+}
 function open(){
  stop();notice();if(!cfg.cmpReady)return;
- fc.callbackQueue.push({CONSENT_API_READY:()=>{if(typeof fc.showRevocationMessage==='function'){fc.showRevocationMessage();}else notice();}});
- 
+ fc.callbackQueue.push({CONSENT_API_READY:()=>{if(typeof fc.showRevocationMessage==='function'){document.getElementById('mbo-consent')?.remove();fc.showRevocationMessage();}else unavailable();}});
+ setTimeout(unavailable,3000);
 }
 Object.defineProperty(window,'MboConsent',{value:Object.freeze({allowed:kind=>kind==='analytics'?analytics:kind==='ads'?ads:false,open}),configurable:false});
 // No legacy localStorage consent is reused as a TCF decision.

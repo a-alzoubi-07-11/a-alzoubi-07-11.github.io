@@ -11,7 +11,7 @@ SLUG = 'zorgtoeslag'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
 k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1">'
-          '<script src="/assets/calc-zorgtoeslag.js?v=1" defer></script>')
+          '<script src="/assets/calc-zorgtoeslag.js?v=2" defer></script>')
 T_ = 'https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/'
 k.SOURCES = [
     ('Dienst Toeslagen · Berekening zorgtoeslag 2026 (pdf)', 'https://download.belastingdienst.nl/toeslagen/docs/berekening_zorgtoeslag_tg0821z61fd.pdf'),
