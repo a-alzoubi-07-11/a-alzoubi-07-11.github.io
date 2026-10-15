@@ -314,3 +314,9 @@ body.overlay-open{overflow:hidden}
   #cv-print-root .cv-modern{min-height:287mm}
   .cv-sec h2{break-after:avoid}
 }
+.cv-guide{max-width:760px;margin:3rem 0 1rem;line-height:1.7}
+.cv-guide h2{font-size:1.4rem;margin:0 0 .6rem}
+.cv-guide h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
+.cv-guide ul{padding-inline-start:1.2rem}
+.cv-guide li{margin:.25rem 0}
+.cv-guide a{overflow-wrap:anywhere}
