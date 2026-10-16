@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T21:00:12+02:00",
-  "validUntil": "2026-10-17T09:00:12+02:00",
+  "updatedAt": "2026-10-17T00:00:18+02:00",
+  "validUntil": "2026-10-17T12:00:18+02:00",
   "items": [
     {
       "id": "vro-2026-10-16-huisvesting-in-de-knel",
@@ -16,7 +16,7 @@
       },
       "summary": {
         "ar": "اتفقت الحكومة والبلديات ومؤسسات الإسكان على مساكن إضافية، مثل الوحدات المرنة وتحويل المباني الفارغة والسكن المشترك، للمحتاجين لسكن عاجل بمن فيهم حاملو إقامة اللجوء. أفق التنفيذ سنة ونصف؛ ليس ضماناً لمسكن فردي.",
-        "nl": "Rijk, gemeenten en corporaties spreken extra woonplekken af via flexwoningen, leegstaande gebouwen en woningdelen, ook voor statushouders. De ambities hebben een tijdpad van anderhalf jaar; dit is geen individuele woninggarantie."
+        "nl": "Rijk, gemeenten en corporaties spreken extra woonplekken af via flexwoningen, leegstaande gebouwen en woningdelen, ook voor statushouders. Tijdpad anderhalf jaar; geen individuele woninggarantie."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
       "publishedAt": "2026-10-16",
@@ -25,7 +25,8 @@
         "ar": "الحكومة الهولندية",
         "nl": "Rijksoverheid"
       },
-      "tier": "official"
+      "tier": "official",
+      "source": "RIJK"
     },
     {
       "id": "vro-2026-10-16-lagere-epv",
@@ -49,55 +50,8 @@
         "ar": "الحكومة الهولندية",
         "nl": "Rijksoverheid"
       },
-      "tier": "official"
-    },
-    {
-      "id": "vro-2026-10-16-opkoopbescherming",
-      "status": "proposed",
-      "category": {
-        "ar": "السكن وشراء المنازل",
-        "nl": "Wonen en koopwoningen"
-      },
-      "title": {
-        "ar": "مقترح لتعديل حماية الأحياء من شراء المنازل بغرض تأجيرها",
-        "nl": "Voorgenomen wijziging van de opkoopbescherming"
-      },
-      "summary": {
-        "ar": "تريد الوزارة ربط حماية الشراء بضغط المعيشة في الحي، وقصرها على منازل بقيمة WOZ لا تتجاوز متوسط البلدية. يُستهدف طرح مشروع القانون للتشاور نهاية 2026؛ هذه ليست قواعد نافذة جديدة.",
-        "nl": "De minister wil opkoopbescherming richten op leefbaarheid en beperken tot woningen met een WOZ-waarde tot het gemeentelijk gemiddelde. Consultatie van het wetsvoorstel is voorzien eind 2026; dit zijn nog geen nieuwe geldende regels."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/15/opkoopbescherming-wordt-gericht-op-leefbaarheid-in-wijken",
-      "publishedAt": "2026-10-16",
-      "checkedAt": "2026-10-16T21:00:12+02:00",
-      "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
-      },
-      "tier": "official"
-    },
-    {
-      "id": "ocw-2026-10-16-basisvaardigheden",
-      "status": "announced",
-      "category": {
-        "ar": "التعليم واللغة",
-        "nl": "Onderwijs en taal"
-      },
-      "title": {
-        "ar": "خطة لتعزيز القراءة والكتابة والحساب في المدارس",
-        "nl": "Versterkingsagenda voor taal en basisvaardigheden op school"
-      },
-      "summary": {
-        "ar": "أرسلت الحكومة للبرلمان خطة تركز على اللغة عبر المواد الدراسية، إلى جانب الحساب والمهارات الرقمية والمواطنة. الهدف تحسين نتائج القراءة خلال ثلاث سنوات؛ ليست تغييراً معلناً لشروط امتحانات الاندماج.",
-        "nl": "Het kabinet stuurde een agenda naar de Tweede Kamer met meer aandacht voor taal in alle vakken, naast rekenen, digitale geletterdheid en burgerschap. Doel is betere leesresultaten binnen drie jaar; dit is geen aangekondigde wijziging van inburgeringseisen."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/versterkingsagenda-moet-leesvaardigheid-leerlingen-verbeteren",
-      "publishedAt": "2026-10-16",
-      "checkedAt": "2026-10-16T21:00:12+02:00",
-      "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
-      },
-      "tier": "official"
+      "tier": "official",
+      "source": "RIJK"
     }
   ]
 }
