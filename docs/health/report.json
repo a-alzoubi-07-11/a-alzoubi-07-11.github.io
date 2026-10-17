@@ -1,16 +1,46 @@
 {
- "checked_at": "2026-10-15T08:26Z",
+ "checked_at": "2026-10-17T07:54Z",
  "external": {
-  "total": 478,
+  "total": 490,
   "broken": [
    {
-    "url": "https://www.politie.nl/onderwerpen/internetoplichting.html",
+    "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
     "code": 404,
-    "final": "https://www.politie.nl/onderwerpen/internetoplichting.html",
+    "final": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
     "soft404": false,
     "pages": [
-     "articles/scams-phishing-netherlands.html",
-     "nl/articles/scams-phishing-netherlands.html"
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://www.kvk.nl/hulp-en-contact/hulp-bij-inschrijven/",
+    "code": 404,
+    "final": "https://www.kvk.nl/hulp-en-contact/hulp-bij-inschrijven/",
+    "soft404": false,
+    "pages": [
+     "articles/kvk-zzp-business-netherlands.html",
+     "nl/articles/kvk-zzp-business-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
+    "code": 404,
+    "final": "https://www.rijksoverheid.nl/themas/bouwen-en-wonen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
+    "soft404": false,
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
+    "code": 404,
+    "final": "https://www.rijksoverheid.nl/themas/bouwen-en-wonen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
     ]
    }
   ],
@@ -23,56 +53,6 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0004766/",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "soft404": false,
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "nl/articles/bezwaar-objection-letter.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0031331/",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
     ]
    },
    {
@@ -358,26 +338,6 @@
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
     ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-two-status-system-2026.html",
-     "nl/articles/asylum-two-status-system-2026.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "soft404": false,
-    "pages": [
-     "calculators/zorgtoeslag.html",
-     "nl/calculators/zorgtoeslag.html"
-    ]
    }
   ],
   "redirected": [
@@ -402,6 +362,26 @@
     ]
    },
    {
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
+    "soft404": false,
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
+    ]
+   },
+   {
     "url": "https://www.belastingdienst.nl",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home",
@@ -422,13 +402,73 @@
     ]
    },
    {
-    "url": "https://www.nlarbeidsinspectie.nl/onderwerpen/melden",
+    "url": "https://www.cjib.nl/ik-ben-het-niet-eens-met-een-verkeersboete",
     "code": 200,
-    "final": "https://www.nlarbeidsinspectie.nl/onderwerpen/ik-wil-iets-melden",
+    "final": "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
     "soft404": false,
     "pages": [
-     "articles/temporary-agency-work-rights.html",
-     "nl/articles/temporary-agency-work-rights.html"
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.politie.nl/onderwerpen/internetoplichting.html",
+    "code": 200,
+    "final": "https://www.politie.nl/onderwerpen/aan-en-verkoopfraude-internetoplichting.html",
+    "soft404": false,
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/straffen-en-maatregelen/hoe-hoog-zijn-de-boetes-in-nederland",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/straffen-en-maatregelen/hoe-hoog-zijn-de-boetes-in-nederland",
+    "soft404": false,
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/straffen-en-maatregelen/werkwijze-boete-verkeersovertreding",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/straffen-en-maatregelen/werkwijze-boete-verkeersovertreding",
+    "soft404": false,
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/hoe-zorg-ik-ervoor-dat-de-verhuurder-slecht-onderhoud-aanpakt",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-huren/hoe-zorg-ik-ervoor-dat-de-verhuurder-slecht-onderhoud-aanpakt",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
+    "soft404": false,
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://www.volkshuisvestingnederland.nl/onderwerpen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
+    "code": 200,
+    "final": "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
+    "soft404": false,
+    "pages": [
+     "articles/tenant-rights-netherlands.html",
+     "nl/articles/tenant-rights-netherlands.html"
     ]
    }
   ]
