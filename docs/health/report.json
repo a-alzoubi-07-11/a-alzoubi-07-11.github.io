@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-17T07:54Z",
+ "checked_at": "2026-10-18T08:10Z",
  "external": {
-  "total": 490,
+  "total": 489,
   "broken": [
    {
     "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
@@ -11,16 +11,6 @@
     "pages": [
      "articles/social-housing-sociale-huurwoning.html",
      "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.kvk.nl/hulp-en-contact/hulp-bij-inschrijven/",
-    "code": 404,
-    "final": "https://www.kvk.nl/hulp-en-contact/hulp-bij-inschrijven/",
-    "soft404": false,
-    "pages": [
-     "articles/kvk-zzp-business-netherlands.html",
-     "nl/articles/kvk-zzp-business-netherlands.html"
     ]
    },
    {
@@ -399,76 +389,6 @@
     "pages": [
      "index.html",
      "nl/index.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "code": 200,
-    "final": "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "soft404": false,
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.politie.nl/onderwerpen/internetoplichting.html",
-    "code": 200,
-    "final": "https://www.politie.nl/onderwerpen/aan-en-verkoopfraude-internetoplichting.html",
-    "soft404": false,
-    "pages": [
-     "articles/scams-phishing-netherlands.html",
-     "nl/articles/scams-phishing-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/straffen-en-maatregelen/hoe-hoog-zijn-de-boetes-in-nederland",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/straffen-en-maatregelen/hoe-hoog-zijn-de-boetes-in-nederland",
-    "soft404": false,
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/straffen-en-maatregelen/werkwijze-boete-verkeersovertreding",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/straffen-en-maatregelen/werkwijze-boete-verkeersovertreding",
-    "soft404": false,
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-huren/hoe-zorg-ik-ervoor-dat-de-verhuurder-slecht-onderhoud-aanpakt",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-huren/hoe-zorg-ik-ervoor-dat-de-verhuurder-slecht-onderhoud-aanpakt",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/woning-verhuren/wat-moet-ik-weten-als-ik-mijn-huis-of-kamer-wil-onderverhuren",
-    "soft404": false,
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.volkshuisvestingnederland.nl/onderwerpen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
-    "code": 200,
-    "final": "https://www.volkshuisvestingnederland.nl/onderwerpen/huren-en-wonen/wet-goed-verhuurderschap/landelijke-regels-van-goed-verhuurderschap",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
     ]
    }
   ]
