@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T20:59:54+02:00",
-  "validUntil": "2026-10-18T08:59:54+02:00",
+  "updatedAt": "2026-10-18T07:02:12+02:00",
+  "validUntil": "2026-10-18T19:02:12+02:00",
   "items": [
     {
       "id": "vro-2026-10-16-huisvesting-in-de-knel",
@@ -68,7 +68,7 @@
       },
       "summary": {
         "ar": "ابتداءً من 1 يناير 2027، لا يكفي السكن مع بالغ لديه طفل قاصر لاعتباركما شريكي بدلات إذا لم ينطبق شرط آخر للشراكة. من تنتهي شراكته يتلقى خطاباً نهاية نوفمبر؛ راجع الشروط كاملة في المصدر.",
-        "nl": "Vanaf 1 januari 2027 maakt samenwonen met een volwassene met een minderjarig kind u niet meer tot toeslagpartners als geen andere partnergrond geldt. Wie hierdoor geen toeslagpartner meer heeft, krijgt eind november een brief. Bekijk alle voorwaarden in de bron."
+        "nl": "Vanaf 1 januari 2027 maakt samenwonen met een volwassene met een minderjarig kind u geen toeslagpartners meer als geen andere partnergrond geldt. Betrokkenen krijgen eind november een brief."
       },
       "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
       "checkedAt": "2026-10-17T20:59:54+02:00",
@@ -121,7 +121,7 @@
       },
       "summary": {
         "ar": "وافق مجلس الشيوخ على تعديل لإلغاء الغرامة القضائية على IND عند التأخر في البت بطلبات الإقامة. هذا الخبر يؤكد الموافقة البرلمانية، ولا يثبت موعد نفاذ التعديل أو أثره على قضية فردية.",
-        "nl": "De Eerste Kamer stemde in met afschaffing van de rechterlijke dwangsom voor de IND bij te late beslissingen op verblijfsaanvragen. Dit bericht bevestigt de parlementaire instemming, maar onderbouwt geen concrete ingangsdatum of gevolgen voor een individuele zaak."
+        "nl": "De Eerste Kamer stemde in met afschaffing van de rechterlijke dwangsom voor de IND bij te late beslissingen op verblijfsaanvragen. Een ingangsdatum of gevolgen per zaak staan er niet in."
       },
       "url": "https://ind.nl/nl/nieuws/eerste-kamer-stemt-in-met-afschaffen-rechterlijke-dwangsom",
       "sourceName": {
@@ -210,6 +210,31 @@
       "id": "duo-2026-10-07-320a07ef"
     },
     {
+      "source": "BZK",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-18",
+      "status": "confirmed",
+      "category": {
+        "ar": "الإيجار والسكن",
+        "nl": "Huur en wonen"
+      },
+      "title": {
+        "ar": "قانون جديد للجنة الإيجارات (Huurcommissie) يبدأ تطبيقه في 1 يناير 2027",
+        "nl": "Nieuwe wet Huurcommissie gaat op 1 januari 2027 in"
+      },
+      "summary": {
+        "ar": "أقر مجلس الشيوخ القانون: يمكن لمستأجري السكن الاجتماعي الاعتراض لدى Huurcommissie على زيادة إيجار منصوص عليها في العقد. يجب إبلاغ المؤجر بالعيوب كتابياً قبل بدء القضية. النفاذ في 1 يناير 2027.",
+        "nl": "De Eerste Kamer nam de wet aan: ook sociale huurders kunnen bij de Huurcommissie bezwaar maken tegen een huurverhoging uit het contract. Meld gebreken eerst schriftelijk bij de verhuurder. Ingang 1 januari 2027."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie",
+      "sourceName": {
+        "ar": "وزارة الداخلية (BZK)",
+        "nl": "Ministerie van BZK"
+      },
+      "tier": "official",
+      "id": "bzk-2026-09-29-87a8a84f"
+    },
+    {
       "source": "SZW",
       "publishedAt": "2026-09-29",
       "firstSeen": "2026-10-15",
@@ -234,32 +259,80 @@
       },
       "tier": "official",
       "id": "szw-2026-09-29-90e389aa"
+    }
+  ],
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "result": "new"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "no-change"
+    },
+    {
+      "source": "IND",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "DUO",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://duo.nl/particulier/",
+      "result": "no-change"
+    },
+    {
+      "source": "UWV",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "result": "no-change"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "error"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "no-change"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "no-change"
     },
     {
       "source": "STAB",
-      "publishedAt": "2026-09-24",
-      "firstSeen": "2026-10-17",
-      "status": "confirmed",
-      "category": {
-        "ar": "العمل والأجور",
-        "nl": "Werk en loon"
-      },
-      "title": {
-        "ar": "رفع الحد الأدنى القانوني لأجور الشباب ابتداءً من 1 يناير 2027",
-        "nl": "Hoger wettelijk minimumjeugdloon per 1 januari 2027"
-      },
-      "summary": {
-        "ar": "من 1 يناير 2027 يصبح الحد الأدنى لأجور الشباب من أجر البالغين: 87,5% لعمر 20، و75% لعمر 19، و62,5% لعمر 18، و50% لعمر 17، و40% لعمر 16. ويُلغى الأجر المخفّض لطلاب BBL.",
-        "nl": "Per 1 januari 2027 is het minimumjeugdloon: 20 jaar 87,5%, 19 jaar 75%, 18 jaar 62,5%, 17 jaar 50% en 16 jaar 40% van het volwassen minimumloon. Het lagere jeugdloon voor bbl-leerlingen vervalt."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-279.html",
-      "checkedAt": "2026-10-17T20:59:54+02:00",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-09-24-954ce4d1"
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "no-change"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "no-change"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.nu.nl/politiek",
+      "result": "error"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-18",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "error"
     }
   ]
 }
