@@ -1,0 +1,50 @@
+/* Permanent residence checker — builds on tools.css and the site tokens (--accent, --line, --soft, --text, --muted). */
+#prc{--ok:#15803d;--ok-bg:#e7f6ee;--warn:#a15c00;--warn-bg:#fff4dc;--bad:#b42318;--bad-bg:#fdecea;--na:#6e6e73;--na-bg:#f2f2f5}
+@media (prefers-color-scheme:dark){#prc{--ok:#5fd39a;--ok-bg:#16281f;--warn:#f0c060;--warn-bg:#2b2414;--bad:#ff8a80;--bad-bg:#2e1a19;--na:#a3adbd;--na-bg:#22262d}}
+#prc fieldset{border:0;padding:0;margin:0;min-width:0}
+#prc legend{font-size:1.25rem;font-weight:700;margin-block:.4rem 1rem;padding:0;outline:none}
+.prc-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.9rem;color:var(--muted)}
+.prc-progress{height:8px;background:var(--soft);border:1px solid var(--line);border-radius:999px;overflow:hidden;margin-block:.5rem 1.25rem}
+.prc-progress span{display:block;height:100%;width:25%;background:var(--accent);transition:width .25s}
+.prc-q{margin-block:0 1.25rem}
+.prc-q>span,.prc-q>p{font-weight:650;display:block;margin-block-end:.45rem}
+.prc-q small{display:block;font-weight:400;color:var(--muted);margin-block-start:.2rem}
+.prc-q select,.prc-q input[type=number]{width:100%;min-height:48px;font:inherit;border:1px solid var(--line);border-radius:12px;padding:.55rem .8rem;background:var(--card);color:var(--text)}
+.prc-opts{display:grid;gap:.5rem}
+.prc-opts label{display:flex;gap:.7rem;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:.75rem .9rem;cursor:pointer;background:var(--card)}
+.prc-opts label:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.prc-opts input{width:20px;height:20px;flex:none;margin-top:.25rem;accent-color:var(--accent)}
+.prc-opts b{display:block}
+.prc-opts small{display:block;color:var(--muted)}
+.prc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 1rem}
+.prc-msg{color:var(--bad);font-weight:650;min-height:1.4em}
+.prc-nav{display:flex;gap:.6rem;flex-wrap:wrap;margin-block:1rem}
+.prc-nav .tool-button{min-width:9rem;justify-content:center}
+.prc-result{outline:none}
+.prc-out section{border:1px solid var(--line);border-radius:18px;padding:1rem 1.1rem;margin-block:1rem;background:var(--card)}
+.prc-out h3{margin-block:0 .6rem;font-size:1.15rem}
+.prc-routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.prc-route{border:1px solid var(--line);border-radius:16px;padding:1rem;border-block-start:6px solid var(--na)}
+.prc-route.ok{border-block-start-color:var(--ok)}.prc-route.warn{border-block-start-color:var(--warn)}.prc-route.fail{border-block-start-color:var(--bad)}
+.prc-route.best{box-shadow:0 0 0 2px var(--accent)}
+.prc-route h4{margin:0 0 .4rem;font-size:1.05rem}
+.prc-route h4 small{display:block;font-weight:500;color:var(--muted);font-size:.85rem}
+.prc-score{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.prc-score b{font-size:2rem;line-height:1}
+.prc-stars span{color:var(--line);font-size:1.35rem}
+.prc-stars .on{color:#f5a524}
+.prc-stars .half{background:linear-gradient(90deg,#f5a524 50%,var(--line) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+[dir=rtl] .prc-stars{display:inline-flex;flex-direction:row-reverse}
+[dir=rtl] .prc-stars .half{background:linear-gradient(270deg,#f5a524 50%,var(--line) 50%);-webkit-background-clip:text;background-clip:text}
+.prc-verdict{font-weight:700;margin:.5rem 0}
+.prc-crit{list-style:none;padding:0;margin:0}
+.prc-crit li{padding:.5rem 0;border-block-start:1px solid var(--line);font-size:.95rem}
+.prc-crit li span:not(.prc-badge){color:var(--muted)}
+.prc-badge{display:inline-block;font-size:.78rem;font-weight:700;padding:.1rem .55rem;border-radius:999px;vertical-align:middle}
+.prc-badge.ok{background:var(--ok-bg);color:var(--ok)}.prc-badge.warn{background:var(--warn-bg);color:var(--warn)}.prc-badge.fail{background:var(--bad-bg);color:var(--bad)}.prc-badge.na{background:var(--na-bg);color:var(--na)}
+.prc-note{font-size:.88rem;color:var(--muted);margin-block:.8rem 0}
+.prc-contract b{display:block;font-size:1.05rem}
+.prc-todo li,.prc-list li{margin-block:.45rem}
+@media(max-width:640px){.prc-grid,.prc-routes{grid-template-columns:1fr}}
+@media print{.prc-nav,.tool-actions,#prc form{display:none!important}.prc-out section,.prc-route{break-inside:avoid}}
+#prc [dir=ltr]{unicode-bidi:isolate}

@@ -25,7 +25,7 @@ TOPIC = {
  'bsn-municipality-registration':'housing سجل البلدية بي ار بي موعد البلدية تسجيل السكن عنوان بريدي BRP afspraak gemeente sofinummer burgerservicenummer','digid-registration-guide':'housing','health-insurance-newcomers':'housing',
  'huisarts-registration':'housing طبيب عام تسجيل عند طبيب طوارئ ليلاً خط الطوارئ 112 huisartsenpost spoed apotheek inschrijven huisarts','change-address-netherlands':'housing','health-insurance-2027':'housing',
  'cbr-driving-license-netherlands':'housing امتحان السواقة امتحان نظري امتحان عملي مدرسة سواقة دروس سواقة theorie-examen praktijkexamen rijschool','energy-contracts-saving-2026':'money',
- 'family-reunification-mvv-ind':'residence','asylum-family-reunification':'residence','eu-permanent-residence-netherlands':'residence',
+ 'family-reunification-mvv-ind':'residence','asylum-family-reunification':'residence','eu-permanent-residence-netherlands':'residence','permanent-residence-asylum-route':'residence','permanent-residence-regular-route':'residence',
  'dutch-naturalisation-guide':'residence جواز هولندي الجنسية بعد 5 سنوات حفل التجنيس التخلي عن الجنسية naturalisatieceremonie afstandsplicht','inburgering-integration-law-2026':'residence','nt2-b1-exam-guide':'residence',
  'employment-contracts-labor-law-2026':'work فصل من العمل فترة التجربة عقد مؤقت عقد دائم proeftijd ontslag transitievergoeding opzegtermijn','minimum-wage-netherlands':'work','dutch-payslip-explained':'work',
  'zero-hours-contract':'work عقد الطلب عقد بدون ساعات شغل بالاستدعاء ساعات قليلة عرض ساعات ثابتة بعد 12 شهر nulurencontract oproepkracht min-max contract 3 uur vaste uren aanbod','temporary-agency-work-rights':'work','kvk-zzp-business-netherlands':'work','trending-jobs-2026':'work',
@@ -41,6 +41,8 @@ TOPIC_LABEL = {
  'nl': {'housing':'Wonen en dagelijks leven','residence':'Verblijf en gezinshereniging','work':'Werk en salaris','education':'Studie en onderwijs','benefits':'Toeslagen en uitkeringen','money':'Geld en belastingen'},
 }
 TOPIC_ALIASES = {
+ 'permanent-residence-asylum-route':'اقامة دائمة لاجئ اقامة دائمة للاجئين لجوء اقامة دائمة بعد 5 سنوات لجوء asiel onbepaalde tijd اقامة اوروبية للاجئ 6011 asielvergunning permanent verblijf statushouder',
+ 'permanent-residence-regular-route':'اقامة دائمة ريخولير regulier اقامة دائمة شريك لم شمل اقامة دائمة عمل kennismigrant onbepaalde tijd regulier 6009 اعفاء الدخل 10 سنوات permanent verblijf partner',
  'housing':'سكن بيت بلدية gemeente wonen بداية وصول جديد قادم',
  'residence':'اقامة إقامة هجرة IND verblijf لجوء',
  'work':'شغل عمل وظيفة راتب معاش werk baan salaris',
@@ -122,6 +124,7 @@ TOOLS = {
   ('/tools.html#budget','ميزانية الشهر','دخلك ومصاريفك والبدلات في جدول واحد','ميزانية مصروف حساب المصاريف budget'),
   ('/tools.html#salary','تقدير الراتب الصافي','من الإجمالي إلى الصافي لعام 2026','حاسبة الراتب حساب الصافي netto bruto calculator'),
   ('/calculators/zorgtoeslag.html','حاسبة zorgtoeslag 2026','قدّر بدل التأمين الصحي حسب دخلك وأصولك','حاسبة بدل التأمين الصحي zorgtoeslag حساب بدل الصحة toeslag calculator'),
+  ('/calculators/permanent-residence-check.html','فاحص الإقامة الدائمة','هل تستحق الإقامة الأوروبية أو الدائمة؟ تقييم عقدك ودخلك والاستمارة','فاحص اقامة دائمة اقامة اوروبية تقييم عقد العمل نسبة القبول IND لجوء ريخولير asiel regulier EU-langdurig onbepaalde tijd 6009 6011'),
   ('/calculators/kindgebonden-budget.html','حاسبة kindgebonden budget 2026','قدّر بدل الأطفال حسب الدخل وعدد الأطفال','حاسبة بدل الأطفال kindgebonden budget kgb حساب بدل اولاد'),
   ('/cv.html','السيرة الذاتية CV','سيرة هولندية في أربع خطوات','سي في سيرة ذاتية cv curriculum'),
   ('/#pathway','مخطط المسار الدراسي','من وضعك الحالي إلى الشهادة','مسار دراسي'),
@@ -137,6 +140,7 @@ TOOLS = {
   ('/nl/tools.html#budget','Maandbudget','Inkomen, vaste lasten en toeslagen','budget kosten'),
   ('/nl/tools.html#salary','Nettosalaris 2026','Van bruto naar netto, indicatief','salaris rekenen netto bruto'),
   ('/nl/calculators/zorgtoeslag.html','Zorgtoeslag berekenen 2026','Schat uw zorgtoeslag op basis van inkomen en vermogen','zorgtoeslag berekenen rekenhulp calculator'),
+  ('/nl/calculators/permanent-residence-check.html','Check permanent verblijf','Kom je in aanmerking voor EU-langdurig of onbepaalde tijd?','permanent verblijf check EU-langdurig ingezetene onbepaalde tijd asiel regulier 6009 6011 arbeidscontract IND'),
   ('/nl/calculators/kindgebonden-budget.html','Kindgebonden budget berekenen 2026','Schat uw kindgebonden budget per jaar en maand','kindgebonden budget berekenen rekenhulp calculator'),
   ('/nl/cv.html','Maak je cv','Nederlands cv in vier stappen','cv curriculum'),
   ('/nl/tools.html#routes','Onderwijsroutes','Mbo, hbo en wo naast elkaar','onderwijs routes'),

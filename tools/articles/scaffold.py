@@ -160,6 +160,17 @@ NEW.update({
    related=['diploma-evaluation-sbb','mbo-hbo-wo-comparison','nt2-b1-exam-guide','mbo-conditions']),
 })
 
+NEW.update({
+ 'permanent-residence-asylum-route': dict(tpl='eu-permanent-residence-netherlands', cat='residence', listing='immigration',
+   ar=('من إقامة اللجوء إلى الإقامة الدائمة 2026', 'منذ 12 يونيو 2026 لا يمكن طلب asiel onbepaalde tijd. الطريق إلى EU-langdurig ingezetene خطوة بخطوة: الاندماج، الدخل، 5 سنوات، والنموذج 6011، مع إنفوغرافيك.'),
+   nl=('Van asielvergunning naar permanent verblijf 2026', 'Sinds 12 juni 2026 geen asiel onbepaalde tijd meer. De route naar EU-langdurig ingezetene stap voor stap: inburgering, inkomen, 5 jaar en formulier 6011, met infographic.'),
+   related=['eu-permanent-residence-netherlands', 'asylum-two-status-system-2026', 'inburgering-integration-law-2026', 'dutch-naturalisation-guide']),
+ 'permanent-residence-regular-route': dict(tpl='eu-permanent-residence-netherlands', cat='residence', listing='immigration',
+   ar=('الإقامة الدائمة لأصحاب إقامة regulier 2026', 'EU-langdurig ingezetene أم regulier onbepaalde tijd: الأغراض المؤقتة وغير المؤقتة، إعفاءات شرط الدخل، سنوات الدراسة، والاستمارة 6009 وملاحقها، مع إنفوغرافيك.'),
+   nl=('Permanent verblijf met een reguliere vergunning 2026', 'EU-langdurig ingezetene of regulier onbepaalde tijd: tijdelijke en niet-tijdelijke doelen, vrijstellingen van de inkomenseis, studiejaren en formulier 6009 met bijlagen, met infographic.'),
+   related=['eu-permanent-residence-netherlands', 'family-reunification-mvv-ind', 'inburgering-integration-law-2026', 'dutch-naturalisation-guide']),
+})
+
 def short_titles():
     m = {}
     for lang, pat in (('ar', 'categories/*.html'), ('nl', 'nl/categories/*.html')):
