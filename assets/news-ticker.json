@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T09:05:00+02:00",
-  "validUntil": "2026-10-18T21:05:00+02:00",
+  "updatedAt": "2026-10-19T07:01:46+02:00",
+  "validUntil": "2026-10-19T19:01:46+02:00",
   "items": [
     {
       "id": "vro-2026-10-16-huisvesting-in-de-knel",
@@ -265,73 +265,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://ind.nl/nl/nieuws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://duo.nl/particulier/",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "error"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.nu.nl/politiek",
       "result": "error"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-10-18",
+      "checkedAt": "2026-10-19",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "error"
     }
