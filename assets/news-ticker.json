@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T09:07:23+02:00",
-  "validUntil": "2026-10-19T21:07:23+02:00",
+  "updatedAt": "2026-10-19T21:01:33+02:00",
+  "validUntil": "2026-10-20T09:01:33+02:00",
   "items": [
     {
-      "id": "rijk-2026-10-19-klikspijt",
-      "status": "confirmed",
+      "id": "ns-2026-10-19-ade-extra-treinen",
+      "status": "announced",
       "category": {
-        "ar": "الأمان الرقمي",
-        "nl": "Digitale veiligheid"
+        "ar": "المواصلات",
+        "nl": "Vervoer"
       },
       "title": {
-        "ar": "تحذير حكومي من رسائل الاحتيال: تمهّل قبل النقر أو الدفع",
-        "nl": "Overheid waarschuwt voor online misleiding: neem tijd voor een klik"
+        "ar": "NS تعلن قطارات إضافية وأطول خلال مهرجان ADE في أمستردام",
+        "nl": "NS kondigt extra en langere treinen aan tijdens ADE"
       },
       "summary": {
-        "ar": "نشرت الحكومة اليوم نتائج بحث جديد ضمن حملة الوقاية من الاحتيال الإلكتروني. قد ينتحل المحتالون صفة بنك أو شركة توصيل أو جهة حكومية؛ تمهّل ثلاث ثوانٍ قبل النقر أو الرد أو الدفع، ولا تنقر عند الشك. يتضمن موقع الحملة إرشادات للضحايا.",
-        "nl": "De overheid publiceert nieuw onderzoek bij de campagne tegen online misleiding. Criminelen doen zich onder meer voor als bank, pakketdienst of overheid. Neem drie tellen voordat u klikt, reageert of betaalt; klik bij twijfel weg. De campagnesite biedt ook hulpinformatie voor slachtoffers."
+        "ar": "أعلنت NS في 19 أكتوبر زيادة خدمات القطارات خلال مهرجان Amsterdam Dance Event، مع توقفات ليلية إضافية في Amsterdam Bijlmer ArenA وقطارات إضافية صباح الأحد. راجع مخطط رحلات NS قبل الذهاب والعودة لمعرفة تفاصيل رحلتك.",
+        "nl": "NS kondigde op 19 oktober extra en langere treinen aan tijdens Amsterdam Dance Event, met extra nachtelijke stops op Amsterdam Bijlmer ArenA en extra treinen op zondagochtend. Controleer voor de heen- en terugreis de NS Reisplanner."
       },
       "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
+        "ar": "السكك الحديدية الهولندية (NS)",
+        "nl": "Nederlandse Spoorwegen (NS)"
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/19/we-twijfelen-allemaal-maar-klikken-toch-vier-op-de-tien-heeft-weleens-klikspijt",
+      "url": "https://nieuws.ns.nl/met-de-trein-naar-ade/",
       "publishedAt": "2026-10-19",
-      "checkedAt": "2026-10-19T09:07:23+02:00"
+      "checkedAt": "2026-10-19T21:01:33+02:00"
     }
   ]
 }
