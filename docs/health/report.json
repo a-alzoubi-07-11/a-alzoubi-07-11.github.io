@@ -1,39 +1,8 @@
 {
- "checked_at": "2026-10-18T08:10Z",
+ "checked_at": "2026-10-19T04:43Z",
  "external": {
   "total": 489,
-  "broken": [
-   {
-    "url": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
-    "code": 404,
-    "final": "https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning",
-    "soft404": false,
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "code": 404,
-    "final": "https://www.rijksoverheid.nl/themas/bouwen-en-wonen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders",
-    "soft404": false,
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
-    "code": 404,
-    "final": "https://www.rijksoverheid.nl/themas/bouwen-en-wonen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder",
-    "soft404": false,
-    "pages": [
-     "articles/tenant-rights-netherlands.html",
-     "nl/articles/tenant-rights-netherlands.html"
-    ]
-   }
-  ],
+  "broken": [],
   "blocked": [
    {
     "url": "https://mymemory.translated.net/doc/en/tos.php",

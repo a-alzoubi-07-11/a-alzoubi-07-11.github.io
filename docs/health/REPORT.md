@@ -1,9 +1,6 @@
-# Site health report — 2026-10-18T08:10Z
+# Site health report — 2026-10-19T04:43Z
 
-## External links: 489 checked · 3 broken · 6 redirected · 29 bot-blocked
-- BROKEN 404 https://aedes.nl/aandachtsgroepen/wie-krijgt-voorrang-op-een-sociale-huurwoning  (in articles/social-housing-sociale-huurwoning.html, nl/articles/social-housing-sociale-huurwoning.html)
-- BROKEN 404 https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/kan-ik-mijn-huurwoning-ruilen-met-de-huurwoning-van-iemand-anders  (in articles/social-housing-sociale-huurwoning.html, nl/articles/social-housing-sociale-huurwoning.html)
-- BROKEN 404 https://www.rijksoverheid.nl/onderwerpen/woning-huren/vraag-en-antwoord/welke-kosten-zijn-voor-de-huurder-en-welke-voor-de-verhuurder  (in articles/tenant-rights-netherlands.html, nl/articles/tenant-rights-netherlands.html)
+## External links: 489 checked · 0 broken · 6 redirected · 29 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
 - MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
