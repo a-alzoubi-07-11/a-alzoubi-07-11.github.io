@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-19T09:05Z",
+ "checked_at": "2026-10-20T08:42Z",
  "external": {
-  "total": 489,
+  "total": 499,
   "broken": [],
   "blocked": [
    {
@@ -12,6 +12,56 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/bezwaar-objection-letter.html",
+     "nl/articles/bezwaar-objection-letter.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
     ]
    },
    {
@@ -297,26 +347,6 @@
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
     ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-two-status-system-2026.html",
-     "nl/articles/asylum-two-status-system-2026.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "soft404": false,
-    "pages": [
-     "calculators/zorgtoeslag.html",
-     "nl/calculators/zorgtoeslag.html"
-    ]
    }
   ],
   "redirected": [
@@ -338,26 +368,6 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 200,
-    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 200,
-    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
     ]
    },
    {
@@ -388,7 +398,7 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 158,
+  "sitemap_urls": 163,
   "google": {
    "status": "not_configured",
    "how": "Add repo secret GSC_SERVICE_ACCOUNT_JSON (service account added as user in Search Console)."
