@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T06:56:42+02:00",
-  "validUntil": "2026-10-20T18:56:42+02:00",
+  "updatedAt": "2026-10-20T08:57:04+02:00",
+  "validUntil": "2026-10-20T20:57:04+02:00",
   "items": [
     {
       "status": "announced",
@@ -19,12 +19,12 @@
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
       "publishedAt": "2026-10-16",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "source": "BZK",
       "firstSeen": "2026-10-18",
       "sourceName": {
-        "ar": "وزارة الداخلية (BZK)",
-        "nl": "Ministerie van BZK"
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
       },
       "tier": "official",
       "id": "bzk-2026-10-16-8b3edba4"
@@ -47,7 +47,7 @@
         "nl": "Vanaf 1 januari 2027 maakt samenwonen met een volwassene met een minderjarig kind u geen toeslagpartners meer als geen andere partnergrond geldt. Betrokkenen krijgen eind november een brief."
       },
       "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "sourceName": {
         "ar": "دائرة البدلات (Toeslagen)",
         "nl": "Dienst Toeslagen"
@@ -73,7 +73,7 @@
         "nl": "Vanaf 2027 is de vermogensgrens € 158.748 met toeslagpartner en € 119.122 zonder (2026: € 184.633 en € 146.011). Verwacht u erboven te zitten, geef dit van 1 november t/m 8 december 2026 door in Mijn toeslagen."
       },
       "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "sourceName": {
         "ar": "دائرة البدلات (Toeslagen)",
         "nl": "Dienst Toeslagen"
@@ -85,7 +85,7 @@
       "source": "IND",
       "publishedAt": "2026-10-13",
       "firstSeen": "2026-10-15",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "category": {
         "ar": "اللجوء والإقامة",
         "nl": "Asiel en verblijf"
@@ -125,7 +125,7 @@
         "nl": "UWV, gemeenten, werkgevers en scholen werken samen in een Werkcentrum per regio, vaak in de wijk en zonder afspraak, ook om meer nieuwkomers aan het werk te helpen. Het wetsvoorstel ligt bij de Tweede Kamer."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/12/kabinet-zet-werk-centraal-in-elke-regio-een-werkcentrum",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "sourceName": {
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
@@ -151,7 +151,7 @@
         "nl": "De rente voor 2027 is 2,70% (SF35) en 3,28% (SF15). Geldt bij studiefinanciering in 2027, laatste studiefinanciering in 2026 of einde rentevaste periode op 31 december 2026; niet voor alle terugbetalers."
       },
       "url": "https://duo.nl/particulier/home/actueel/rentepercentages-voor-2027-vastgesteld.jsp",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "sourceName": {
         "ar": "DUO",
         "nl": "DUO"
@@ -163,7 +163,7 @@
       "source": "DUO",
       "publishedAt": "2026-10-06",
       "firstSeen": "2026-10-20",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "category": {
         "ar": "تمويل الدراسة",
         "nl": "Studiefinanciering"
@@ -204,12 +204,12 @@
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie",
       "sourceName": {
-        "ar": "وزارة الداخلية (BZK)",
-        "nl": "Ministerie van BZK"
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
       },
       "tier": "official",
       "id": "bzk-2026-09-29-87a8a84f",
-      "checkedAt": "2026-10-20T08:00:00+02:00"
+      "checkedAt": "2026-10-20T08:57:04+02:00"
     },
     {
       "source": "SZW",
@@ -229,7 +229,7 @@
         "nl": "Aanvragen kan van 4 januari t/m 7 mei 2027. Voorwaarde: bruto-inkomen tot 130% van het sociaal minimum en energiequote van minstens 8%, of 130% tot 200% en minstens 10%. Aanvragen op papier kan ook."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "sourceName": {
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
@@ -241,7 +241,7 @@
       "source": "IND",
       "publishedAt": "2026-08-31",
       "firstSeen": "2026-10-20",
-      "checkedAt": "2026-10-20T08:00:00+02:00",
+      "checkedAt": "2026-10-20T08:57:04+02:00",
       "category": {
         "ar": "الحماية المؤقتة",
         "nl": "Tijdelijke bescherming"
@@ -252,8 +252,8 @@
         "nl": "Tijdelijke bescherming Oekraïne verlengd tot 4 maart 2028, nieuwe voorwaarde voor nieuwe aanvragen"
       },
       "summary": {
-        "ar": "من حصل على الحماية قبل 5 أغسطس 2026 تُمدَّد حمايته تلقائياً ويحتفظ بحق السكن والعمل. في الطلبات المقدّمة من 5 أغسطس 2026 يجب على المشمولين بالتجنيد الأوكراني إثبات أداء الخدمة أو الإعفاء منها.",
-        "nl": "Wie vóór 5 augustus 2026 bescherming had, wordt automatisch verlengd en mag blijven wonen en werken. Bij aanvragen vanaf 5 augustus 2026 tonen dienstplichtigen aan dat zij hun dienstplicht vervulden of vrijgesteld zijn."
+        "ar": "من شملتهم الحماية في الاتحاد الأوروبي قبل 5 أغسطس 2026 تُمدَّد حمايتهم تلقائياً حتى 4 مارس 2028. للطلبات الجديدة، يجب على المشمولين بالتجنيد الأوكراني إثبات أداء الخدمة أو الإعفاء؛ لا ينطبق القيد على الملتحقين بأفراد أسرهم المشمولين بالحماية.",
+        "nl": "Bescherming in de EU van vóór 5 augustus 2026 wordt automatisch verlengd tot 4 maart 2028. Bij nieuwe aanvragen moeten dienstplichtigen hun vervulde dienstplicht of vrijstelling aantonen. Deze beperking geldt niet bij aansluiting bij familieleden die al tijdelijke bescherming hebben."
       },
       "url": "https://ind.nl/en/news/temporary-protection-directive-for-ukraine-extended-with-new-condition-for-new-applications",
       "sourceName": {
