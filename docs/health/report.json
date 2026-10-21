@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-20T08:42Z",
+ "checked_at": "2026-10-21T08:43Z",
  "external": {
   "total": 499,
   "broken": [],
@@ -12,56 +12,6 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "nl/articles/bezwaar-objection-letter.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
     ]
    },
    {
@@ -368,6 +318,26 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
+    "soft404": false,
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
     ]
    },
    {

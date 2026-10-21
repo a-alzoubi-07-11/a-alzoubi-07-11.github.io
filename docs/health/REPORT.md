@@ -1,8 +1,10 @@
-# Site health report — 2026-10-20T08:42Z
+# Site health report — 2026-10-21T08:43Z
 
-## External links: 499 checked · 0 broken · 4 redirected · 34 bot-blocked
+## External links: 499 checked · 0 broken · 6 redirected · 29 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
+- MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
+- MOVED https://wetten.overheid.nl/BWBR0031331/ → https://wetten.overheid.nl/BWBR0031331/2026-07-01
 - MOVED https://www.belastingdienst.nl → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 - MOVED https://www.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 
