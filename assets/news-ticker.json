@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T06:59:02+02:00",
-  "validUntil": "2026-10-21T18:59:02+02:00",
+  "updatedAt": "2026-10-21T09:02:19+02:00",
+  "validUntil": "2026-10-21T21:02:19+02:00",
   "items": [
     {
       "status": "announced",
@@ -19,7 +19,7 @@
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
       "publishedAt": "2026-10-16",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "source": "BZK",
       "firstSeen": "2026-10-18",
       "sourceName": {
@@ -47,7 +47,7 @@
         "nl": "Vanaf 1 januari 2027 maakt samenwonen met een volwassene met een minderjarig kind u geen toeslagpartners meer als geen andere partnergrond geldt. Betrokkenen krijgen eind november een brief."
       },
       "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "دائرة البدلات (Toeslagen)",
         "nl": "Dienst Toeslagen"
@@ -73,7 +73,7 @@
         "nl": "Vanaf 2027 is de vermogensgrens € 158.748 met toeslagpartner en € 119.122 zonder (2026: € 184.633 en € 146.011). Verwacht u erboven te zitten, geef dit van 1 november t/m 8 december 2026 door in Mijn toeslagen."
       },
       "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "دائرة البدلات (Toeslagen)",
         "nl": "Dienst Toeslagen"
@@ -85,7 +85,7 @@
       "source": "IND",
       "publishedAt": "2026-10-13",
       "firstSeen": "2026-10-15",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "category": {
         "ar": "اللجوء والإقامة",
         "nl": "Asiel en verblijf"
@@ -125,7 +125,7 @@
         "nl": "UWV, gemeenten, werkgevers en scholen werken samen in een Werkcentrum per regio, vaak in de wijk en zonder afspraak, ook om meer nieuwkomers aan het werk te helpen. Het wetsvoorstel ligt bij de Tweede Kamer."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/12/kabinet-zet-werk-centraal-in-elke-regio-een-werkcentrum",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
@@ -151,7 +151,7 @@
         "nl": "Vanaf 1 januari 2027 stijgt de maximum uurprijs voor dagopvang naar € 11,60 (was € 11,23), voor bso naar € 10,31 (was € 9,98) en voor gastouderopvang naar € 8,77 (was € 8,49)."
       },
       "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "الجريدة الرسمية",
         "nl": "Officiële bekendmakingen"
@@ -177,7 +177,7 @@
         "nl": "De rente voor 2027 is 2,70% (SF35) en 3,28% (SF15). Geldt bij studiefinanciering in 2027, laatste studiefinanciering in 2026 of einde rentevaste periode op 31 december 2026; niet voor alle terugbetalers."
       },
       "url": "https://duo.nl/particulier/home/actueel/rentepercentages-voor-2027-vastgesteld.jsp",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "DUO",
         "nl": "DUO"
@@ -209,7 +209,7 @@
       },
       "tier": "official",
       "id": "bzk-2026-09-29-87a8a84f",
-      "checkedAt": "2026-10-21T06:59:02+02:00"
+      "checkedAt": "2026-10-21T09:02:19+02:00"
     },
     {
       "source": "SZW",
@@ -229,7 +229,7 @@
         "nl": "Aanvragen kan van 4 januari t/m 7 mei 2027. Voorwaarde: bruto-inkomen tot 130% van het sociaal minimum en energiequote van minstens 8%, of 130% tot 200% en minstens 10%. Aanvragen op papier kan ook."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "وزارة الشؤون الاجتماعية (SZW)",
         "nl": "Ministerie van SZW"
@@ -255,87 +255,13 @@
         "nl": "Vanaf 1 januari 2027 krijgen jongeren een groter deel van het minimumloon: 20 jaar 87,5% (was 80%), 19 jaar 75% (was 60%), 18 jaar 62,5% (was 50%). De aparte bbl-loonschaal voor 18–20 jaar vervalt."
       },
       "url": "https://zoek.officielebekendmakingen.nl/stb-2026-279.html",
-      "checkedAt": "2026-10-21T06:59:02+02:00",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
       "sourceName": {
         "ar": "الجريدة الرسمية",
         "nl": "Officiële bekendmakingen"
       },
       "tier": "official",
       "id": "stab-2026-09-24-954ce4d1"
-    }
-  ],
-  "checkedSources": [
-    {
-      "source": "BZK",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel",
-      "result": "no-change"
-    },
-    {
-      "source": "SZW",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel",
-      "result": "no-change"
-    },
-    {
-      "source": "IND",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://ind.nl/en/news",
-      "result": "no-change"
-    },
-    {
-      "source": "DUO",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://duo.nl/particulier/",
-      "result": "error"
-    },
-    {
-      "source": "UWV",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "error"
-    },
-    {
-      "source": "SVB",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "error"
-    },
-    {
-      "source": "TOESLAGEN",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "error"
-    },
-    {
-      "source": "TK",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "new"
-    },
-    {
-      "source": "NOS",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "no-change"
-    },
-    {
-      "source": "NU",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.nu.nl/politiek",
-      "result": "error"
-    },
-    {
-      "source": "RTL",
-      "checkedAt": "2026-10-21",
-      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "error"
     }
   ]
 }
