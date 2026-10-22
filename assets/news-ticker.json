@@ -1,30 +1,339 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T21:01:18+02:00",
-  "validUntil": "2026-10-22T09:01:18+02:00",
+  "updatedAt": "2026-10-22T06:59:41+02:00",
+  "validUntil": "2026-10-22T18:59:41+02:00",
   "items": [
     {
-      "id": "rijksoverheid-2026-10-21-php-websites-offline",
-      "status": "confirmed",
+      "source": "NOS",
+      "publishedAt": "2026-10-21",
+      "firstSeen": "2026-10-22",
+      "status": "reported",
       "category": {
-        "ar": "الخدمات الحكومية والحياة اليومية",
-        "nl": "Overheidsdiensten en dagelijks leven"
+        "ar": "الرعاية الصحية",
+        "nl": "Zorgkosten"
       },
       "title": {
-        "ar": "تعطيل احترازي لبعض المواقع الحكومية بسبب ثغرتين خطيرتين",
-        "nl": "Overheidswebsites preventief offline door twee kritieke kwetsbaarheden"
+        "ar": "وفق NOS: شركة DSW ترفع قسط التأمين الصحي الأساسي لعام 2027 بمقدار 14,75 يورو شهرياً",
+        "nl": "Volgens NOS: DSW verhoogt basispremie 2027 met € 14,75 per maand"
       },
       "summary": {
-        "ar": "أعلنت الحكومة في 21 أكتوبر أن عدداً من المواقع، بينها Overheid.nl وMijnOverheid.nl وموقع DigiD، أُخرج مؤقتاً من الخدمة حتى تثبيت تحديث أمني لـPHP. لم تكن هناك مؤشرات على استغلال الثغرتين وقت الإعلان؛ تحقق من توفر الخدمة قبل إنجاز معاملتك.",
-        "nl": "De overheid meldde op 21 oktober dat onder meer Overheid.nl, MijnOverheid.nl en de DigiD-website tijdelijk offline zijn gehaald totdat een PHP-beveiligingsupdate is geïnstalleerd. Op het moment van publicatie waren er geen signalen van actief misbruik; controleer de beschikbaarheid voordat u een digitale overheidszaak regelt."
+        "ar": "وفق NOS: قسط DSW الأساسي 173,25 يورو شهرياً في 2027 (+9,3%)، ويرتفع بدل الرعاية الصحية 11 يورو أقل من القسط. بقية شركات التأمين تعلن أقساطها حتى 12 نوفمبر؛ ليست أرقاماً رسمية بعد.",
+        "nl": "Volgens NOS: DSW vraagt in 2027 € 173,25 per maand voor de basisverzekering (+9,3%). De zorgtoeslag stijgt € 11 per maand minder. Andere verzekeraars maken hun premie uiterlijk 12 november bekend."
       },
+      "url": "https://nos.nl/artikel/2636058-grootste-stijging-zorgpremie-in-jaren-dsw-maakt-maandbedrag-2027-bekend",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-10-21-d63165a2"
+    },
+    {
+      "status": "announced",
+      "category": {
+        "ar": "السكن والإقامة",
+        "nl": "Wonen en verblijf"
+      },
+      "title": {
+        "ar": "اتفاق لتسريع توفير سكن لمن يحتاجونه بشكل عاجل",
+        "nl": "Afspraken voor snellere huisvesting van spoedzoekers"
+      },
+      "summary": {
+        "ar": "اتفقت الحكومة والبلديات ومؤسسات الإسكان على مساكن إضافية، مثل الوحدات المرنة وتحويل المباني الفارغة والسكن المشترك، للمحتاجين لسكن عاجل بمن فيهم حاملو إقامة اللجوء. أفق التنفيذ سنة ونصف؛ ليس ضماناً لمسكن فردي.",
+        "nl": "Rijk, gemeenten en corporaties spreken extra woonplekken af via flexwoningen, leegstaande gebouwen en woningdelen, ook voor statushouders. Tijdpad anderhalf jaar; geen individuele woninggarantie."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
+      "publishedAt": "2026-10-16",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "source": "BZK",
+      "firstSeen": "2026-10-18",
       "sourceName": {
         "ar": "الحكومة الهولندية",
         "nl": "Rijksoverheid"
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/21/aantal-websites-rijksoverheid-preventief-offline-na-kwetsbaarheden-php",
-      "publishedAt": "2026-10-21",
-      "checkedAt": "2026-10-21T21:01:18+02:00"
+      "tier": "official",
+      "id": "bzk-2026-10-16-8b3edba4"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-17",
+      "status": "confirmed",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "title": {
+        "ar": "قواعد أبسط لتحديد شريك البدلات (toeslagpartner) ابتداءً من 1 يناير 2027",
+        "nl": "Eenvoudigere regels voor toeslagpartners vanaf 1 januari 2027"
+      },
+      "summary": {
+        "ar": "ابتداءً من 1 يناير 2027، لا يكفي السكن مع بالغ لديه طفل قاصر لاعتباركما شريكي بدلات إذا لم ينطبق شرط آخر للشراكة. من تنتهي شراكته يتلقى خطاباً نهاية نوفمبر؛ راجع الشروط كاملة في المصدر.",
+        "nl": "Vanaf 1 januari 2027 maakt samenwonen met een volwassene met een minderjarig kind u geen toeslagpartners meer als geen andere partnergrond geldt. Betrokkenen krijgen eind november een brief."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-f11cac34"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-16",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "خفض حد الثروة لبدل الرعاية الصحية وKindgebonden budget من 2027",
+        "nl": "Lagere vermogensgrens zorgtoeslag en kindgebonden budget vanaf 2027"
+      },
+      "summary": {
+        "ar": "من 2027 يصبح حد الثروة 158.748 يورو مع شريك البدل و119.122 يورو بدونه (2026: ‏184.633 و146.011). من يتوقع تجاوزه يبلّغ عبر Mijn toeslagen من 1 نوفمبر حتى 8 ديسمبر 2026.",
+        "nl": "Vanaf 2027 is de vermogensgrens € 158.748 met toeslagpartner en € 119.122 zonder (2026: € 184.633 en € 146.011). Verwacht u erboven te zitten, geef dit van 1 november t/m 8 december 2026 door in Mijn toeslagen."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-4a21e9c2"
+    },
+    {
+      "source": "IND",
+      "publishedAt": "2026-10-13",
+      "firstSeen": "2026-10-15",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "category": {
+        "ar": "اللجوء والإقامة",
+        "nl": "Asiel en verblijf"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "مجلس الشيوخ يوافق على إلغاء الغرامة القضائية (dwangsom) على IND",
+        "nl": "Eerste Kamer stemt in met afschaffen rechterlijke dwangsom"
+      },
+      "summary": {
+        "ar": "وافق مجلس الشيوخ على تعديل لإلغاء الغرامة القضائية على IND عند التأخر في البت بطلبات الإقامة. هذا الخبر يؤكد الموافقة البرلمانية، ولا يثبت موعد نفاذ التعديل أو أثره على قضية فردية.",
+        "nl": "De Eerste Kamer stemde in met afschaffing van de rechterlijke dwangsom voor de IND bij te late beslissingen op verblijfsaanvragen. Een ingangsdatum of gevolgen per zaak staan er niet in."
+      },
+      "url": "https://ind.nl/nl/nieuws/eerste-kamer-stemt-in-met-afschaffen-rechterlijke-dwangsom",
+      "sourceName": {
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
+      },
+      "tier": "official",
+      "id": "ind-2026-10-13-1f4d2683"
+    },
+    {
+      "source": "SZW",
+      "publishedAt": "2026-10-12",
+      "firstSeen": "2026-10-17",
+      "status": "proposed",
+      "category": {
+        "ar": "العمل",
+        "nl": "Werk"
+      },
+      "title": {
+        "ar": "الحكومة تريد مركز عمل (Werkcentrum) في كل منطقة للمساعدة في إيجاد عمل",
+        "nl": "Kabinet wil in elke regio een Werkcentrum voor hulp bij werk"
+      },
+      "summary": {
+        "ar": "يعمل UWV والبلديات وأرباب العمل والمدارس معاً في مركز عمل بكل منطقة، غالباً داخل الحي ومن دون موعد، ومن أهدافه مساعدة مزيد من القادمين الجدد على العمل. مشروع القانون لدى البرلمان ولم يُقرّ بعد.",
+        "nl": "UWV, gemeenten, werkgevers en scholen werken samen in een Werkcentrum per regio, vaak in de wijk en zonder afspraak, ook om meer nieuwkomers aan het werk te helpen. Het wetsvoorstel ligt bij de Tweede Kamer."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/12/kabinet-zet-werk-centraal-in-elke-regio-een-werkcentrum",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-10-12-d880620d"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-10-08",
+      "firstSeen": "2026-10-21",
+      "status": "confirmed",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "title": {
+        "ar": "بدل رعاية الأطفال 2027: رفع الحد الأقصى لسعر الساعة",
+        "nl": "Kinderopvangtoeslag 2027: hogere maximum uurprijzen"
+      },
+      "summary": {
+        "ar": "من 1 يناير 2027 يرتفع الحد الأقصى لسعر الساعة في الحضانة النهارية (dagopvang) إلى 11,60 يورو (كان 11,23)، وفي BSO إلى 10,31 يورو (كان 9,98)، وفي gastouderopvang إلى 8,77 يورو (كان 8,49).",
+        "nl": "Vanaf 1 januari 2027 stijgt de maximum uurprijs voor dagopvang naar € 11,60 (was € 11,23), voor bso naar € 10,31 (was € 9,98) en voor gastouderopvang naar € 8,77 (was € 8,49)."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-10-08-56df3ad7"
+    },
+    {
+      "source": "DUO",
+      "publishedAt": "2026-10-07",
+      "firstSeen": "2026-10-15",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "DUO تحدد نسب الفائدة على قروض الدراسة لعام 2027",
+        "nl": "Rentepercentages studieschuld voor 2027 vastgesteld"
+      },
+      "summary": {
+        "ar": "فائدة 2027 هي 2,70% وفق SF35 و3,28% وفق SF15. تشمل من يتلقى تمويلاً دراسياً في 2027، ومن تلقاه للمرة الأخيرة في 2026، ومن تنتهي فترة تثبيت فائدته في 31 ديسمبر 2026؛ ليست زيادة تشمل جميع المسددين.",
+        "nl": "De rente voor 2027 is 2,70% (SF35) en 3,28% (SF15). Geldt bij studiefinanciering in 2027, laatste studiefinanciering in 2026 of einde rentevaste periode op 31 december 2026; niet voor alle terugbetalers."
+      },
+      "url": "https://duo.nl/particulier/home/actueel/rentepercentages-voor-2027-vastgesteld.jsp",
+      "checkedAt": "2026-10-21T09:02:19+02:00",
+      "sourceName": {
+        "ar": "DUO",
+        "nl": "DUO"
+      },
+      "tier": "official",
+      "id": "duo-2026-10-07-320a07ef"
+    },
+    {
+      "source": "DUO",
+      "publishedAt": "2026-10-06",
+      "firstSeen": "2026-10-22",
+      "status": "proposed",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
+      },
+      "title": {
+        "ar": "تعويض إضافي لطلاب نظام القروض (leenstelsel): مجلس النواب يوافق",
+        "nl": "Aanvullende tegemoetkoming leenstelsel: Tweede Kamer stemt in"
+      },
+      "summary": {
+        "ar": "من درس بنظام القروض دون منحة أساسية يحصل حالياً على 34,17 يورو عن كل شهر دراسة، وتقترح الحكومة إضافة 44,50 يورو شهرياً. لم يصوت مجلس الشيوخ بعد؛ الصرف المتوقع من أبريل 2027.",
+        "nl": "Wie onder het leenstelsel geen basisbeurs kreeg, krijgt nu € 34,17 per studiemaand; het kabinet wil daar € 44,50 per maand bij doen. De Eerste Kamer moet nog stemmen; uitbetaling waarschijnlijk vanaf april 2027."
+      },
+      "url": "https://www.duo.nl/particulier/home/actueel/kabinetsplannen-aanvullende-tegemoetkoming-stapje-dichterbij.jsp",
+      "sourceName": {
+        "ar": "DUO",
+        "nl": "DUO"
+      },
+      "tier": "official",
+      "id": "duo-2026-10-06-2df28d57"
+    },
+    {
+      "source": "BZK",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-18",
+      "status": "confirmed",
+      "category": {
+        "ar": "الإيجار والسكن",
+        "nl": "Huur en wonen"
+      },
+      "title": {
+        "ar": "قانون جديد للجنة الإيجارات (Huurcommissie) يبدأ تطبيقه في 1 يناير 2027",
+        "nl": "Nieuwe wet Huurcommissie gaat op 1 januari 2027 in"
+      },
+      "summary": {
+        "ar": "أقر مجلس الشيوخ القانون: يمكن لمستأجري السكن الاجتماعي الاعتراض لدى Huurcommissie على زيادة إيجار منصوص عليها في العقد. يجب إبلاغ المؤجر بالعيوب كتابياً قبل بدء القضية. النفاذ في 1 يناير 2027.",
+        "nl": "De Eerste Kamer nam de wet aan: ook sociale huurders kunnen bij de Huurcommissie bezwaar maken tegen een huurverhoging uit het contract. Meld gebreken eerst schriftelijk bij de verhuurder. Ingang 1 januari 2027."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie",
+      "sourceName": {
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
+      },
+      "tier": "official",
+      "id": "bzk-2026-09-29-87a8a84f",
+      "checkedAt": "2026-10-21T09:02:19+02:00"
+    }
+  ],
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "result": "no-change"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "no-change"
+    },
+    {
+      "source": "IND",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "DUO",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://duo.nl/particulier/",
+      "result": "new"
+    },
+    {
+      "source": "UWV",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "result": "error"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "error"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "no-change"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "STAB",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "no-change"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "new"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.nu.nl/politiek",
+      "result": "error"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-22",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "error"
     }
   ]
 }
