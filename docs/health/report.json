@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-21T08:43Z",
+ "checked_at": "2026-10-22T08:45Z",
  "external": {
   "total": 499,
   "broken": [],
@@ -9,6 +9,16 @@
     "code": 403,
     "final": "https://mymemory.translated.net/doc/en/tos.php",
     "soft404": false,
+    "pages": [
+     "nl/privacy.html",
+     "privacy.html"
+    ]
+   },
+   {
+    "url": "https://www.autoriteitpersoonsgegevens.nl/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
     "pages": [
      "nl/privacy.html",
      "privacy.html"
@@ -72,6 +82,58 @@
     "pages": [
      "articles/foreign-driving-license-exchange.html",
      "nl/articles/foreign-driving-license-exchange.html"
+    ]
+   },
+   {
+    "url": "https://www.cjib.nl/betalen-in-delen-aanvragen",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/bezwaar-objection-letter.html",
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/bezwaar-objection-letter.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.cjib.nl/ik-wil-met-een-brief-bezwaar-maken-tegen-mijn-verkeersboete",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.cjib.nl/over-ons/hoe-werken-wij/verkeersboete",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
+    ]
+   },
+   {
+    "url": "https://www.cjib.nl/wat-zijn-de-regels-voor-betalen-termijnen",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/traffic-fines-cjib.html",
+     "nl/articles/traffic-fines-cjib.html"
     ]
    },
    {
@@ -187,6 +249,86 @@
     ]
    },
    {
+    "url": "https://www.pns.nl/20-wekenecho/kosten",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/en/multiple-languages/arabic",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/en/multiple-languages/dutch/hearing-test",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/neonatale-screeningen/hielprik",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/nipt/kosten",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/prenatale-screeningen/13-wekenecho",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/prenatale-screeningen/nipt",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
+    "url": "https://www.pns.nl/tijdlijn-onderzoeken-tijdens-zwangerschap-en-na-geboorte",
+    "code": 0,
+    "final": null,
+    "error": "ConnectionError",
+    "pages": [
+     "articles/pregnancy-newborn-care.html",
+     "nl/articles/pregnancy-newborn-care.html"
+    ]
+   },
+   {
     "url": "https://www.rechtspraak.nl/naar-de-rechter/kosten-rechtszaak/griffierecht/griffierecht-bestuursrecht",
     "code": 403,
     "final": "https://www.rechtspraak.nl/naar-de-rechter/kosten-rechtszaak/griffierecht/griffierecht-bestuursrecht",
@@ -296,6 +438,56 @@
     "pages": [
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.veiligbankieren.nl/fraude/bankhelpdeskfraude/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectTimeout",
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.veiligbankieren.nl/fraude/geldezels/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectTimeout",
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.veiligbankieren.nl/meld-fraude/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectTimeout",
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.veiligbankieren.nl/uniforme-veiligheidsregels/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectTimeout",
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
+    ]
+   },
+   {
+    "url": "https://www.veiligbankieren.nl/veiligheid-betaalproducten/betaalverzoek/",
+    "code": 0,
+    "final": null,
+    "error": "ConnectTimeout",
+    "pages": [
+     "articles/scams-phishing-netherlands.html",
+     "nl/articles/scams-phishing-netherlands.html"
     ]
    }
   ],
