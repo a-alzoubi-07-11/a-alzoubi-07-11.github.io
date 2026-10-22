@@ -192,7 +192,7 @@
   } : {
     next: 'Volgende', back: 'Vorige', again: 'Opnieuw beginnen', print: 'Afdrukken of opslaan als pdf', req: 'Beantwoord de verplichte vragen in deze stap.',
     step: 'Stap', of: 'van',
-    fileH: 'Je dossier zoals een behandelaar het leest', fileSub: 'Onafhankelijke indicatieve beoordeling door Nederlandsgids, niet door de IND',
+    fileH: 'Je dossier zoals een behandelaar het leest', fileSub: 'Onafhankelijke indicatieve beoordeling door Gids Nederland, niet door de IND',
     checkH: 'Opmerkingen bij je antwoorden', routeH: 'Permanent verblijf: de twee routes', mapH: 'Je routekaart naar het Nederlanderschap',
     adviceH: 'Ons advies', natH: 'Naturalisatie: de voorwaarden', contractH: 'Beoordeling arbeidscontract', formH: 'Het juiste formulier en de bijlagen',
     docsH: 'Documenten die je klaarlegt', todoH: 'Wat je nu moet doen, op volgorde', rightsH: 'Rechten en plichten',

@@ -168,7 +168,7 @@ window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_pe
 </div></footer>
 
 
-<script src="/assets/app.js?v=7" defer></script>
+<script id="app-lazy">/* app.js (study tools, ~400KB) loads only when a visitor uses them: first interaction, a #deep-link, or a click on a study tool. */(()=>{let p=null,ready=false;const load=()=>p||(p=new Promise(r=>{const s=document.createElement('script');s.src='/assets/app.js?v=7';s.onload=()=>{ready=true;r()};s.onerror=r;document.body.append(s);}));document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('[data-page]');if(!a||ready)return;e.preventDefault();e.stopImmediatePropagation();load().then(()=>setTimeout(()=>a.click(),30));},true);['pointerdown','keydown','touchstart'].forEach(t=>addEventListener(t,load,{once:true,passive:true}));if(location.hash.length>1)load();addEventListener('hashchange',load,{once:true});})();</script>
 <script src="/assets/data-store.js?v=12" defer></script>
 <script id="ahmad-modern-engine">(()=>{const t=localStorage.getItem("mbo-theme");if(t)document.documentElement.dataset.theme=t;if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));})();</script>
 <script src="/assets/news-ticker.js?v=4" defer></script>

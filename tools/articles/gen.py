@@ -25,7 +25,7 @@ def first_published(path, fallback):
 def build(slug,lang,spec,date_iso,date_text):
     path=f"{REPO}/{'nl/' if lang=='nl' else ''}articles/{slug}.html"
     t=open(path,encoding='utf-8').read()
-    L=LBL[lang]; title=spec['title']; desc=spec['desc']; site='Nederlandsgids' if lang=='nl' else 'دليل هولندا بالعربية'
+    L=LBL[lang]; title=spec['title']; desc=spec['desc']; site='Gids Nederland' if lang=='nl' else 'دليل هولندا بالعربية'
     full=f"{spec.get('seo_title') or title} | {site}"  # optional short SEO <title>; H1/headline keep the full title
     t=re.sub(r'<title>.*?</title>',lambda m:f'<title>{esc(full)}</title>',t,1,re.S)
     t=re.sub(r'(<meta name="description" content=")[^"]*"',lambda m:m.group(1)+esc(desc)+'"',t,1)
