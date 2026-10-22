@@ -4,10 +4,28 @@ BASE="https://gidsnederland.nl"
 LBL={'ar':dict(toc='في هذا الدليل',faq='أسئلة شائعة',sumdef='الخلاصة العملية',src='المصادر الرسمية',faqid='ar-faq',vf='التحقق من المصادر الرسمية ونطاق هذا الدليل:'),
      'nl':dict(toc='In deze gids',faq='Veelgestelde vragen',sumdef='Kort samengevat',src='Officiële bronnen',faqid='nl-faq',vf='Officiële bronnen en reikwijdte gecontroleerd:')}
 def esc(s): return html.escape(s,quote=True)
+def first_published(path, fallback):
+    """Date the page was first committed (git), so datePublished is never copied from a template."""
+    import subprocess, os, json as _j
+    # Articles already live on 1 Oct 2026 (git history starts 4 Oct) are recorded in this list.
+    try:
+        rec = _j.load(open(os.path.join(REPO, 'docs', 'published-articles-2026-10-01.json'), encoding='utf-8'))
+        slugs = {r['path'].split('/')[-1] for r in rec}
+        if os.path.basename(path) in slugs:
+            return '2026-10-01'
+    except Exception:
+        pass
+    try:
+        out = subprocess.run(['git', 'log', '--diff-filter=A', '--follow', '--format=%ad', '--date=short', '--', os.path.relpath(path, REPO)],
+                             cwd=REPO, capture_output=True, text=True, timeout=30).stdout.split()
+        return out[-1] if out else fallback
+    except Exception:
+        return fallback
+
 def build(slug,lang,spec,date_iso,date_text):
     path=f"{REPO}/{'nl/' if lang=='nl' else ''}articles/{slug}.html"
     t=open(path,encoding='utf-8').read()
-    L=LBL[lang]; title=spec['title']; desc=spec['desc']; site='Nederlandsgids' if lang=='nl' else 'دليل هولندا بالعربية'
+    L=LBL[lang]; title=spec['title']; desc=spec['desc']; site='Gids Nederland' if lang=='nl' else 'دليل هولندا بالعربية'
     full=f"{spec.get('seo_title') or title} | {site}"  # optional short SEO <title>; H1/headline keep the full title
     t=re.sub(r'<title>.*?</title>',lambda m:f'<title>{esc(full)}</title>',t,1,re.S)
     t=re.sub(r'(<meta name="description" content=")[^"]*"',lambda m:m.group(1)+esc(desc)+'"',t,1)
@@ -19,6 +37,7 @@ def build(slug,lang,spec,date_iso,date_text):
     for n in j['@graph']:
         if n['@type']=='Article':
             n['headline']=title; n['description']=desc; n['dateModified']=date_iso
+            n['datePublished']=min(first_published(path,date_iso),date_iso)
             n['citation']=[u for _,u in spec['sources']]
         if n['@type']=='BreadcrumbList': n['itemListElement'][-1]['name']=title
     j['@graph']=[n for n in j['@graph'] if n['@type']!='FAQPage']

@@ -11,7 +11,7 @@ import make_kindgebondenbudget as k  # noqa: E402
 SLUG = 'permanent-residence-check'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
-k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=2">'
+k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=3">'
           '<script src="/assets/permres-check.js?v=3" defer></script>')
 k.SOURCES = [
     ('IND · Verblijfsvergunning EU-langdurig ingezetene', 'https://ind.nl/nl/verblijfsvergunningen/langdurig-ingezetene-eu/verblijfsvergunning-eu-langdurig-ingezetene'),
@@ -330,7 +330,7 @@ AR_FAQ = [
     ('هل تُحفظ إجاباتي؟', 'لا. كل شيء يُحسب في متصفحك، ولا نرسل أي معلومة.'),
 ]
 NL_FAQ = [
-    ('Is deze check van de IND?', 'Nee. Het is een onafhankelijke hulp van Nederlandsgids die de gepubliceerde IND-voorwaarden op je antwoorden toepast. Alleen de IND beslist.'),
+    ('Is deze check van de IND?', 'Nee. Het is een onafhankelijke hulp van Gids Nederland die de gepubliceerde IND-voorwaarden op je antwoorden toepast. Alleen de IND beslist.'),
     ('Is de score een officiële slagingskans?', 'Nee. Het is een gereedheidsscore die laat zien welke voorwaarden voldaan zijn en welke niet.'),
     ('Waarom kan naturalisatie makkelijker zijn dan EU-langdurig?', 'Omdat naturalisatie geen inkomenseis heeft. Wie niet genoeg inkomen heeft voor EU-langdurig, kan na 5 jaar met inburgering op A2-niveau wel kunnen naturaliseren.'),
     ('Welk formulier gebruik ik?', 'Asielvergunning: 6011, alleen schriftelijk. Reguliere vergunning: 6009, online of schriftelijk. Naturalisatie: via een afspraak bij de gemeente.'),

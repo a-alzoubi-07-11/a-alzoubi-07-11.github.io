@@ -30,6 +30,7 @@ SOURCES = {
     "RIJK": ("official", {"ar": "الحكومة الهولندية", "nl": "Rijksoverheid"}, RIJK),
     "BZK": ("official", {"ar": "وزارة الداخلية (BZK)", "nl": "Ministerie van BZK"}, RIJK),
     "SZW": ("official", {"ar": "وزارة الشؤون الاجتماعية (SZW)", "nl": "Ministerie van SZW"}, RIJK),
+    "OCW": ("official", {"ar": "وزارة التعليم (OCW)", "nl": "Ministerie van OCW"}, RIJK),
     "IND": ("official", {"ar": "دائرة الهجرة IND", "nl": "IND"}, {"ind.nl", "www.ind.nl"}),
     "DUO": ("official", {"ar": "DUO", "nl": "DUO"}, {"duo.nl", "www.duo.nl"}),
     "UWV": ("official", {"ar": "UWV", "nl": "UWV"}, {"uwv.nl", "www.uwv.nl"}),

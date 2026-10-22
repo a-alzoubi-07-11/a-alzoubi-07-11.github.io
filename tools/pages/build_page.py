@@ -23,7 +23,7 @@ def _url(p):
 def page(lang, path, twin, title, desc, main, head_extra='', jsonld=None, og_type='website'):
     src = 'tools.html' if lang == 'ar' else 'nl/tools.html'
     s = open(os.path.join(REPO, src), encoding='utf-8').read()
-    brand = 'دليل هولندا بالعربية' if lang == 'ar' else 'Nederlandsgids'
+    brand = 'دليل هولندا بالعربية' if lang == 'ar' else 'Gids Nederland'
     m = re.search(r'<title>[^<]*\| ([^<]+)</title>', s)
     if m:
         brand = m.group(1)

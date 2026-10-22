@@ -1,0 +1,11 @@
+# GitHub Pages (Jekyll) settings for gidsnederland.nl.
+# The site is plain HTML; Jekyll only copies files. The folders below are
+# working files for the maintainers and the automation agents and must not be
+# published on the website.
+exclude:
+  - docs
+  - reports
+  - tools
+  - cloudflare
+  - .github
+  - README.md
