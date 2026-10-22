@@ -79,3 +79,6 @@
 .prc-fork>ol{list-style:none;margin:0;padding:.4rem .6rem 0;border:1px dashed var(--line);border-radius:14px;display:grid;grid-template-columns:1fr 1fr;gap:0 .5rem}
 .prc-fork li::before{display:none}
 @media(max-width:640px){.prc-fork>ol{grid-template-columns:1fr}}
+
+/* wide tables scroll inside the page instead of widening it on phones */
+.reader table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
