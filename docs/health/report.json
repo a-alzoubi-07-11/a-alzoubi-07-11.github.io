@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-23T08:41Z",
+ "checked_at": "2026-10-24T08:16Z",
  "external": {
-  "total": 532,
+  "total": 528,
   "broken": [
    {
     "url": "https://mymemory.translated.net/doc/en/tos.php",
@@ -73,58 +73,6 @@
     "pages": [
      "articles/foreign-driving-license-exchange.html",
      "nl/articles/foreign-driving-license-exchange.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/betalen-in-delen-aanvragen",
-    "code": 0,
-    "final": null,
-    "error": "ConnectionError",
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "code": 0,
-    "final": null,
-    "error": "ConnectionError",
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/bezwaar-objection-letter.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/ik-wil-met-een-brief-bezwaar-maken-tegen-mijn-verkeersboete",
-    "code": 0,
-    "final": null,
-    "error": "ConnectionError",
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/over-ons/hoe-werken-wij/verkeersboete",
-    "code": 0,
-    "final": null,
-    "error": "ConnectionError",
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
-    ]
-   },
-   {
-    "url": "https://www.cjib.nl/wat-zijn-de-regels-voor-betalen-termijnen",
-    "code": 0,
-    "final": null,
-    "error": "ConnectionError",
-    "pages": [
-     "articles/traffic-fines-cjib.html",
-     "nl/articles/traffic-fines-cjib.html"
     ]
    },
    {
@@ -344,16 +292,6 @@
   ],
   "redirected": [
    {
-    "url": "https://duo.nl/bijlage2026",
-    "code": 200,
-    "final": "https://duo.nl/images/bijlage-bericht-studieschuld-2026.pdf",
-    "soft404": false,
-    "pages": [
-     "articles/adult-learning-finance.html",
-     "nl/articles/adult-learning-finance.html"
-    ]
-   },
-   {
     "url": "https://mijn.belastingdienst.nl/",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst",
@@ -371,16 +309,6 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
-    ]
-   },
-   {
-    "url": "https://ondernemersplein.overheid.nl/slim-subsidie/",
-    "code": 200,
-    "final": "https://ondernemersplein.overheid.nl/subsidies-en-regelingen/slim-subsidie/",
-    "soft404": false,
-    "pages": [
-     "articles/adult-learning-finance.html",
-     "nl/articles/adult-learning-finance.html"
     ]
    },
    {
@@ -421,156 +349,6 @@
     "pages": [
      "index.html",
      "nl/index.html"
-    ]
-   },
-   {
-    "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen-2026/topics/veranderingen-toeslagen-2026",
-    "code": 200,
-    "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/toeslagen",
-    "soft404": false,
-    "pages": [
-     "articles/childcare-allowance-kinderopvangtoeslag.html",
-     "nl/articles/childcare-allowance-kinderopvangtoeslag.html"
-    ]
-   },
-   {
-    "url": "https://www.denhaag.nl/nl/werk-bijstand-en-uitkering/uitkering-of-bijstand/regels-bijstandsuitkering/hoogte-bijstand-en-vergoedingen",
-    "code": 200,
-    "final": "https://www.denhaag.nl/nl/werk-bijstand-en-uitkering/hoogte-bijstand-en-vergoedingen/",
-    "soft404": false,
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://www.nuffic.nl/en/node/1054",
-    "code": 200,
-    "final": "https://www.nuffic.nl/en/studeren-en-werken-in-nederland/diplomawaardering/credential-evaluation-for-refugees",
-    "soft404": false,
-    "pages": [
-     "articles/diploma-evaluation-sbb.html",
-     "nl/articles/diploma-evaluation-sbb.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/bijstand/vraag-en-antwoord/wanneer-heb-ik-recht-op-bijzondere-bijstand",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijzondere-bijstand",
-    "soft404": false,
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/inkomstenbelasting/vraag-en-antwoord/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "soft404": false,
-    "pages": [
-     "articles/year-end-checklist-2026.html",
-     "nl/articles/year-end-checklist-2026.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/kinderopvangtoeslag/vraag-en-antwoord/wanneer-heb-ik-recht-op-kinderopvangtoeslag",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/kinderopvangtoeslag/wanneer-heb-ik-recht-op-kinderopvangtoeslag",
-    "soft404": false,
-    "pages": [
-     "articles/childcare-allowance-kinderopvangtoeslag.html",
-     "nl/articles/childcare-allowance-kinderopvangtoeslag.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/basisregistratie-personen-brp",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/themas/overheid-en-democratie/privacy-en-persoonsgegevens/basisregistratie-personen-brp",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/armoedebestrijding/kan-ik-ondersteuning-krijgen-bij-een-laag-inkomen",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/armoedebestrijding/kan-ik-ondersteuning-krijgen-bij-een-laag-inkomen",
-    "soft404": false,
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/hoger-onderwijs/hoogte-van-het-collegegeld-hogeschool-universiteit",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/hoger-onderwijs/hoogte-van-het-collegegeld-hogeschool-universiteit",
-    "soft404": false,
-    "pages": [
-     "articles/adult-learning-finance.html",
-     "nl/articles/adult-learning-finance.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/immigratie-naar-nederland/moet-ik-als-vreemdeling-mijn-verhuizing-doorgeven-aan-de-immigratie--en-naturalisatiedienst",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/immigratie-naar-nederland/moet-ik-als-vreemdeling-mijn-verhuizing-doorgeven-aan-de-immigratie--en-naturalisatiedienst",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/leven-lang-ontwikkelen/hoe-vraag-ik-het-levenlanglerenkrediet-aan",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/leven-lang-ontwikkelen/hoe-vraag-ik-het-levenlanglerenkrediet-aan",
-    "soft404": false,
-    "pages": [
-     "articles/adult-learning-finance.html",
-     "nl/articles/adult-learning-finance.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/privacy-en-persoonsgegevens/uitschrijven-basisregistratie-personen",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/privacy-en-persoonsgegevens/uitschrijven-basisregistratie-personen",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-de-premie-van-mijn-zorgverzekering-niet-betaal",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-de-premie-van-mijn-zorgverzekering-niet-betaal",
-    "soft404": false,
-    "pages": [
-     "articles/year-end-checklist-2026.html",
-     "nl/articles/year-end-checklist-2026.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/wetten-en-regelingen/productbeschrijvingen/melden-verhuizing-door-vreemdeling",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/immigratie-naar-nederland/moet-ik-als-vreemdeling-mijn-verhuizing-doorgeven-aan-de-immigratie--en-naturalisatiedienst",
-    "soft404": false,
-    "pages": [
-     "articles/change-address-netherlands.html",
-     "nl/articles/change-address-netherlands.html"
     ]
    }
   ]
