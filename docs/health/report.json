@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-24T08:16Z",
+ "checked_at": "2026-10-25T08:33Z",
  "external": {
   "total": 528,
   "broken": [
@@ -287,6 +287,36 @@
     "pages": [
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
+    ]
+   },
+   {
+    "url": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
+    "code": 403,
+    "final": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
+    "soft404": false,
+    "pages": [
+     "articles/childcare-allowance-kinderopvangtoeslag.html",
+     "nl/articles/childcare-allowance-kinderopvangtoeslag.html"
+    ]
+   },
+   {
+    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
+    "code": 403,
+    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
+    "soft404": false,
+    "pages": [
+     "articles/asylum-two-status-system-2026.html",
+     "nl/articles/asylum-two-status-system-2026.html"
+    ]
+   },
+   {
+    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
+    "code": 403,
+    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
+    "soft404": false,
+    "pages": [
+     "calculators/zorgtoeslag.html",
+     "nl/calculators/zorgtoeslag.html"
     ]
    }
   ],

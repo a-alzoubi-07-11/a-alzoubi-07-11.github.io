@@ -1,6 +1,6 @@
-# Site health report — 2026-10-24T08:16Z
+# Site health report — 2026-10-25T08:33Z
 
-## External links: 528 checked · 1 broken · 6 redirected · 27 bot-blocked
+## External links: 528 checked · 1 broken · 6 redirected · 30 bot-blocked
 - BROKEN 404 https://mymemory.translated.net/doc/en/tos.php  (in nl/privacy.html, privacy.html)
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
