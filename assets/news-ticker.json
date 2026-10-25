@@ -1,33 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T21:03:53+02:00",
-  "validUntil": "2026-10-25T08:03:53+01:00",
+  "updatedAt": "2026-10-25T06:56:39+01:00",
+  "validUntil": "2026-10-25T18:56:39+01:00",
   "items": [
     {
-      "source": "OCW",
-      "publishedAt": "2026-10-22",
-      "firstSeen": "2026-10-22",
-      "checkedAt": "2026-10-24T21:03:53+02:00",
-      "status": "announced",
+      "source": "NOS",
+      "publishedAt": "2026-10-21",
+      "firstSeen": "2026-10-25",
+      "status": "reported",
       "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
+        "ar": "تكاليف الرعاية الصحية",
+        "nl": "Zorgkosten"
       },
       "title": {
-        "ar": "سقف فائدة قروض الدراسة عند 2.5% لم يُعتمد بعد",
-        "nl": "Renteplafond van 2,5% op studieleningen is nog niet vastgesteld"
+        "ar": "شركة DSW تعلن قسط التأمين الصحي الأساسي لعام 2027: ‏173,25 يورو شهرياً",
+        "nl": "DSW maakt zorgpremie 2027 bekend: € 173,25 per maand"
       },
       "summary": {
-        "ar": "سقف 2.5% المقترح لفائدة قروض الدراسة يكلّف 160 مليون يورو سنوياً مقابل 40 مليوناً مخصصة؛ الوزيرة تناقش البدائل مع البرلمان في 27 و29 أكتوبر. لا تغيير مؤكد الآن.",
-        "nl": "Het voorgestelde renteplafond van 2,5% kost € 160 miljoen per jaar tegenover € 40 miljoen budget. De minister bespreekt op 27 en 29 oktober alternatieven met de Kamer; nu verandert er niets."
+        "ar": "وفق NOS: ترفع DSW قسط التأمين الأساسي بمقدار 14,75 يورو إلى 173,25 يورو شهرياً في 2027. هذا قسط شركة واحدة فقط؛ بقية شركات التأمين تعلن أقساطها حتى 12 نوفمبر.",
+        "nl": "Volgens NOS: DSW verhoogt de basispremie in 2027 met € 14,75 tot € 173,25 per maand. Dit is één verzekeraar; de andere maken hun premie uiterlijk 12 november bekend."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/22/renteplafond-studieleningen-duurder-en-risicovol-minister-in-gesprek-met-parlement",
+      "url": "https://nos.nl/artikel/2636058-grootste-stijging-zorgpremie-in-jaren-dsw-maakt-maandbedrag-2027-bekend",
       "sourceName": {
-        "ar": "وزارة التعليم والثقافة والعلوم (OCW)",
-        "nl": "Ministerie van OCW"
+        "ar": "NOS",
+        "nl": "NOS"
       },
-      "tier": "official",
-      "id": "ocw-2026-10-22-renteplafond-studieleningen"
+      "tier": "media",
+      "id": "nos-2026-10-21-d63165a2"
     },
     {
       "source": "BZK",
@@ -236,6 +235,105 @@
       },
       "tier": "official",
       "id": "duo-2026-10-07-320a07ef"
+    },
+    {
+      "source": "SZW",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-25",
+      "status": "announced",
+      "category": {
+        "ar": "طاقة ودخل",
+        "nl": "Energie"
+      },
+      "title": {
+        "ar": "صندوق الطوارئ للطاقة (Noodfonds Energie) يفتح: الطلبات من 4 يناير حتى 7 مايو 2027",
+        "nl": "Noodfonds Energie gaat open: aanvragen van 4 januari t/m 7 mei 2027"
+      },
+      "summary": {
+        "ar": "للدخل الإجمالي حتى 130% من الحد الأدنى الاجتماعي مع تكاليف طاقة 8% فأكثر، أو 130–200% مع 10% فأكثر. الدعم نصف التكاليف فوق هذه النسبة، بين 120 و1800 يورو. التواصل ممكن من 1 ديسمبر.",
+        "nl": "Voor bruto inkomens tot 130% van het sociaal minimum met energiequote van 8%+, of 130–200% met 10%+. Het fonds betaalt de helft boven die grens, € 120 tot € 1.800. Contact vanaf 1 december."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-09-29-90e389aa"
+    }
+  ],
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "result": "no-change"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "new"
+    },
+    {
+      "source": "IND",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "DUO",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://duo.nl/particulier/",
+      "result": "no-change"
+    },
+    {
+      "source": "UWV",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "result": "no-change"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "error"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "no-change"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "error"
+    },
+    {
+      "source": "STAB",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "error"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "new"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.nu.nl/politiek",
+      "result": "error"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-25",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "error"
     }
   ]
 }
