@@ -9,3 +9,7 @@ exclude:
   - cloudflare
   - .github
   - README.md
+# Jekyll's exclude also matches by prefix, so "tools" above would hide the
+# public tools.html page (it returned 404). Re-include it explicitly.
+include:
+  - tools.html
