@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-19",
+ "generated": "2026-10-26",
  "pages_checked": 130,
- "links_checked": 465,
+ "links_checked": 494,
  "broken_links": {},
  "queue": [
   {
@@ -9,15 +9,15 @@
    "lang": "ar",
    "title": "نظام الحالتين للجوء في هولندا 2026: ماذا يتغير؟ | دليل هولندا",
    "dateModified": "2026-10-08",
-   "age_days": 11,
+   "age_days": 18,
    "score": 30,
    "reasons": [
-    "date passed 4 days ago (2026-10-15): rewrite tense and check the new rule"
+    "date passed 11 days ago (2026-10-15): rewrite tense and check the new rule"
    ],
    "milestones": [
     {
      "date": "2026-10-15",
-     "days": -4,
+     "days": -11,
      "context": "ت في هذه الفئة. صاحب حماية ثانوية قرار إقامته بتاريخ 15 أكتوبر 2026 ويطلب لزوجته سنتان من 15 أكتوبر 2026 تعني 15 أكتوبر 2028 كأبكر تاريخ، مع دخل ذاتي ومستدام وسكن."
     }
    ],
@@ -34,17 +34,17 @@
   {
    "page": "nl/articles/asylum-two-status-system-2026.html",
    "lang": "nl",
-   "title": "Tweestatusstelsel asiel 2026: wat verandert er? | Nederlandsgids",
+   "title": "Tweestatusstelsel asiel 2026: wat verandert er? | Gids Nederland",
    "dateModified": "2026-10-08",
-   "age_days": 11,
+   "age_days": 18,
    "score": 30,
    "reasons": [
-    "date passed 4 days ago (2026-10-15): rewrite tense and check the new rule"
+    "date passed 11 days ago (2026-10-15): rewrite tense and check the new rule"
    ],
    "milestones": [
     {
      "date": "2026-10-15",
-     "days": -4,
+     "days": -11,
      "context": "Subsidiair beschermd, besluit op 15 oktober 2026, vraagt nareis voor de partner 2 jaar na 15 oktober 2026 is 15 oktober 2028 op zijn vroegst, plus zelfstandig en duu"
     }
    ],
@@ -62,65 +62,75 @@
    "page": "articles/year-end-checklist-2026.html",
    "lang": "ar",
    "title": "قائمة نهاية السنة 2026 قبل 31 ديسمبر | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 14,
+   "dateModified": "2026-10-23",
+   "age_days": 3,
    "score": 20,
    "reasons": [
-    "milestone in 24 days (2026-11-12): prepare the update",
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 17 days (2026-11-12): prepare the update",
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 24,
-     "context": "4. الطاقة 5. السكن أمثلة (توضيحية) القائمة النهائية أسئلة شائعة التقويم التاريخ ماذا تفعل 12 نوفمبر 2026 نشر أقساط التأمين الأساسي 2027 (والتكميلي بعده بأسبوع تقريب"
+     "days": 17,
+     "context": "– 31 ديسمبر 2026 قدّم إقرار 2021 إن كنت تتوقع استرداداً (آخر سنة من «5 سنوات للخلف») حتى 12 نوفمبر 2026 شركات التأمين تعلن أقساط 2027، وتصلك وثيقة السنة الجديدة في"
     },
     {
      "date": "2026-12-01",
-     "days": 43,
-     "context": "بر 2026 نشر أقساط التأمين الأساسي 2027 (والتكميلي بعده بأسبوع تقريباً) — حسب مصادر القطاع 1 ديسمبر 2026 بدء التواصل والتحضير لصندوق الطاقة 31 ديسمبر 2026 آخر يوم ل"
+     "days": 36,
+     "context": "beschikking) للبدلات لـ2027 (في العام الماضي: 21 نوفمبر – 14 ديسمبر، وأول دفعة 20 ديسمبر) 1 ديسمبر 2026 يمكن التواصل مع صندوق الطاقة (Noodfonds Energie) بالأسئلة 3"
     }
    ],
    "sources": [
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen",
     "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/hulpmiddel-proefberekening-toeslagen",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/tot-wanneer-kan-ik-toeslag-aanvragen",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/voorschotbeschikking-toeslagen",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/belastingplan-2027-voorstellen-voor-beter-werkend-belastingstelsel-en-gezonde-overheidsfinancien",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-in-begrijpelijke-taal",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
     "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-de-premie-van-mijn-zorgverzekering-niet-betaal",
+    "https://www.rijksoverheid.nl/themas/werk/werkloos-worden/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
     "https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie"
    ]
   },
   {
    "page": "nl/articles/year-end-checklist-2026.html",
    "lang": "nl",
-   "title": "Checklist jaareinde 2026: vóór 31 december | Nederlandsgids",
-   "dateModified": "2026-10-05",
-   "age_days": 14,
+   "title": "Checklist jaareinde 2026: vóór 31 december | Gids Nederland",
+   "dateModified": "2026-10-23",
+   "age_days": 3,
    "score": 20,
    "reasons": [
-    "milestone in 24 days (2026-11-12): prepare the update",
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 17 days (2026-11-12): prepare the update",
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 24,
-     "context": "ie 5. Wonen Voorbeelden (illustratief) Checklist Veelgestelde vragen Kalender Datum Actie 12 november 2026 Basispremies 2027 bekend (aanvullend ca. een week later) —"
+     "days": 17,
+     "context": "get) Nu – 31 december 2026 Aangifte over 2021 (laatste jaar van «5 jaar terug») Uiterlijk 12 november 2026 Zorgverzekeraars maken premies 2027 bekend; polis in novemb"
     },
     {
      "date": "2026-12-01",
-     "days": 43,
-     "context": "ber 2026 Basispremies 2027 bekend (aanvullend ca. een week later) — volgens sectorbronnen 1 december 2026 Noodfonds: voorbereiden en contact 31 december 2026 Laatste"
+     "days": 36,
+     "context": "kking toeslagen 2027 (vorig jaar: 21 november – 14 december, eerste betaling 20 december) 1 december 2026 Noodfonds Energie bereikbaar voor vragen 31 december 2026 L"
     }
    ],
    "sources": [
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/hoe_werkt_inkomstenbelasting/aangifte_doen",
     "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/hulpmiddel-proefberekening-toeslagen",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/tot-wanneer-kan-ik-toeslag-aanvragen",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/voorschotbeschikking-toeslagen",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/belastingplan-2027-voorstellen-voor-beter-werkend-belastingstelsel-en-gezonde-overheidsfinancien",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-in-begrijpelijke-taal",
     "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
     "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-de-voorlopige-aanslag-van-de-belastingdienst",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorgverzekering/wat-gebeurt-er-als-ik-de-premie-van-mijn-zorgverzekering-niet-betaal",
+    "https://www.rijksoverheid.nl/themas/werk/werkloos-worden/vraag-en-antwoord/zorgverzekering/overstappen-zorgverzekeraar",
     "https://www.volkshuisvestingnederland.nl/actueel/nieuws/2026/09/29/eerste-kamer-stemt-in-met-wet-voor-toekomstbestendige-huurcommissie"
    ]
   },
@@ -129,15 +139,15 @@
    "lang": "ar",
    "title": "عقد الكهرباء والغاز energiecontract 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "تاليان بمتوسط تحت الصفر). صندوق طوارئ الطاقة 2026–2027 البند التفاصيل التحضير والتواصل من 1 ديسمبر 2026 الطلبات من 4 يناير حتى 7 مايو 2027 من يستحق دخل إجمالي حتى"
     }
    ],
@@ -162,15 +172,15 @@
    "lang": "ar",
    "title": "التأمين الصحي zorgverzekering 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 24 days (2026-11-12): prepare the update"
+    "milestone in 17 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 24,
+     "days": 17,
      "context": "دخلك فحدّث التقدير ( كيف ). التبديل: التواريخ التي لا يجب أن تفوتك التاريخ ماذا تفعل حتى 12 نوفمبر 2026 الشركات تعلن أقساط 2027 وشروطها. تصلك رسالة من شركتك. من من"
     }
    ],
@@ -191,15 +201,15 @@
    "lang": "ar",
    "title": "Prinsjesdag 2026: ما الذي يتغير في 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "رح صندوق طوارئ الطاقة (Noodfonds Energie) 193 مليون يورو لهذا الشتاء. التحضير والتواصل من 1 ديسمبر 2026، والطلبات من 4 يناير حتى 7 مايو 2027 ، دون مبدأ «من يسبق»."
     }
    ],
@@ -220,17 +230,17 @@
   {
    "page": "nl/articles/energy-contracts-saving-2026.html",
    "lang": "nl",
-   "title": "Energiecontract 2026–2027: vast of variabel | Nederlandsgids",
+   "title": "Energiecontract 2026–2027: vast of variabel | Gids Nederland",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "middeld onder 0 graden). Noodfonds Energie 2026–2027 Onderdeel Details Voorbereiden Vanaf 1 december 2026 Aanvragen 4 januari tot en met 7 mei 2027 Voorwaarden Bruto"
     }
    ],
@@ -253,17 +263,17 @@
   {
    "page": "nl/articles/health-insurance-2027.html",
    "lang": "nl",
-   "title": "Zorgverzekering 2027: eigen risico en premie | Nederlandsgids",
+   "title": "Zorgverzekering 2027: eigen risico en premie | Gids Nederland",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 24 days (2026-11-12): prepare the update"
+    "milestone in 17 days (2026-11-12): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-12",
-     "days": 24,
+     "days": 17,
      "context": "Zie de gids zorgtoeslag en inkomen doorgeven . Overstappen: de data Datum Actie Uiterlijk 12 november 2026 Verzekeraars maken premies en voorwaarden 2027 bekend. Vana"
     }
    ],
@@ -282,17 +292,17 @@
   {
    "page": "nl/articles/prinsjesdag-2026-changes.html",
    "lang": "nl",
-   "title": "Prinsjesdag 2026: wat verandert er in 2027 | Nederlandsgids",
+   "title": "Prinsjesdag 2026: wat verandert er in 2027 | Gids Nederland",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 13,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "zamer afgebouwd. Voorstel Noodfonds Energie € 193 miljoen deze winter; voorbereiden vanaf 1 december 2026, aanvragen van 4 januari tot en met 7 mei 2027 , geen «op i"
     }
    ],
@@ -315,15 +325,15 @@
    "lang": "ar",
    "title": "صندوق الطاقة Noodfonds Energie 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-10-05",
-   "age_days": 14,
+   "age_days": 21,
    "score": 10,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "warming)، شبكة تدفئة (warmtenet)، البروبان، والطلاب. المواعيد المهمة التاريخ ماذا يحدث من 1 ديسمبر 2026 التحضير: جمع الأوراق والتواصل مع الصندوق 4 يناير 2027 بدء ا"
     }
    ],
@@ -338,15 +348,15 @@
    "lang": "ar",
    "title": "العمل عبر وكالة توظيف uitzendbureau 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 10,
    "reasons": [
-    "milestone in 13 days (2026-11-01): prepare the update"
+    "milestone in 6 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 13,
+     "days": 6,
      "context": "يعير عمالاً (Wet toelating terbeschikkingstelling van arbeidskrachten): التاريخ ماذا يحدث 1 نوفمبر 2026 – 1 يناير 2027 الوكالات التي تريد الاستفادة من الفترة الانت"
     }
    ],
@@ -365,15 +375,15 @@
    "lang": "ar",
    "title": "حقوق المستأجر huurrechten 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-15",
-   "age_days": 4,
+   "age_days": 11,
    "score": 10,
    "reasons": [
-    "milestone in 13 days (2026-11-01): prepare the update"
+    "milestone in 6 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 13,
+     "days": 6,
      "context": "تفق مع المالك فاطلب حكم اللجنة خلال 4 أشهر بعد تاريخ الزيادة (زيادة في 1 يوليو 2026 ← حتى 1 نوفمبر 2026). في القطاع الحر، وحتى 1 مايو 2029، لا يجوز للمالك أن يعرض"
     }
    ],
@@ -403,17 +413,17 @@
   {
    "page": "nl/articles/energy-emergency-fund-2027.html",
    "lang": "nl",
-   "title": "Noodfonds Energie 2027: voorwaarden en aanvragen | Nederlandsgids",
+   "title": "Noodfonds Energie 2027: voorwaarden en aanvragen | Gids Nederland",
    "dateModified": "2026-10-05",
-   "age_days": 14,
+   "age_days": 21,
    "score": 10,
    "reasons": [
-    "milestone in 43 days (2026-12-01): prepare the update"
+    "milestone in 36 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-01",
-     "days": 43,
+     "days": 36,
      "context": "ok voor blokverwarming, warmtenet, propaan en studenten. Belangrijke data Datum Wat Vanaf 1 december 2026 Voorbereiden en contact 4 januari 2027 Start aanvragen 7 me"
     }
    ],
@@ -426,17 +436,17 @@
   {
    "page": "nl/articles/temporary-agency-work-rights.html",
    "lang": "nl",
-   "title": "Uitzendbureau 2026: je rechten als uitzendkracht | Nederlandsgids",
+   "title": "Uitzendbureau 2026: je rechten als uitzendkracht | Gids Nederland",
    "dateModified": "2026-10-04",
-   "age_days": 15,
+   "age_days": 22,
    "score": 10,
    "reasons": [
-    "milestone in 13 days (2026-11-01): prepare the update"
+    "milestone in 6 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 13,
+     "days": 6,
      "context": "cao met fases geldt dan niet. Toelatingsplicht voor uitleners (Wtta) Datum Wat er gebeurt 1 november 2026 – 1 januari 2027 Uitleners die gebruik willen maken van het"
     }
    ],
@@ -453,17 +463,17 @@
   {
    "page": "nl/articles/tenant-rights-netherlands.html",
    "lang": "nl",
-   "title": "Huurrechten 2026: huurverhoging en waarborgsom | Nederlandsgids",
+   "title": "Huurrechten 2026: huurverhoging en waarborgsom | Gids Nederland",
    "dateModified": "2026-10-15",
-   "age_days": 4,
+   "age_days": 11,
    "score": 10,
    "reasons": [
-    "milestone in 13 days (2026-11-01): prepare the update"
+    "milestone in 6 days (2026-11-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": 13,
+     "days": 6,
      "context": "een uitspraak binnen 4 maanden na de ingangsdatum (verhoging per 1 juli 2026 → uiterlijk 1 november 2026). In de vrije sector mag de verhuurder tot 1 mei 2029 geen"
     }
    ],
