@@ -1,19 +1,8 @@
 {
- "checked_at": "2026-10-25T08:33Z",
+ "checked_at": "2026-10-26T05:50Z",
  "external": {
   "total": 528,
-  "broken": [
-   {
-    "url": "https://mymemory.translated.net/doc/en/tos.php",
-    "code": 404,
-    "final": "https://mymemory.translated.net/doc/en/tos.php",
-    "soft404": false,
-    "pages": [
-     "nl/privacy.html",
-     "privacy.html"
-    ]
-   }
-  ],
+  "broken": [],
   "blocked": [
    {
     "url": "https://www.cbr.nl/nl/rijbewijs-halen/auto/je-autorijbewijs-halen/stappenplan-rijden-voor-je-18e",
@@ -288,36 +277,6 @@
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
     ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
-    "soft404": false,
-    "pages": [
-     "articles/childcare-allowance-kinderopvangtoeslag.html",
-     "nl/articles/childcare-allowance-kinderopvangtoeslag.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-two-status-system-2026.html",
-     "nl/articles/asylum-two-status-system-2026.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "soft404": false,
-    "pages": [
-     "calculators/zorgtoeslag.html",
-     "nl/calculators/zorgtoeslag.html"
-    ]
    }
   ],
   "redirected": [
@@ -385,24 +344,8 @@
  },
  "buttons": {
   "pages_tested": 24,
-  "problems": [
-   {
-    "page": "/tools.html",
-    "viewport": 390,
-    "issue": "HTTP 404"
-   },
-   {
-    "page": "/tools.html",
-    "viewport": 1280,
-    "issue": "HTTP 404"
-   }
-  ],
-  "dead_menu_links": [
-   {
-    "url": "https://gidsnederland.nl/tools.html",
-    "code": 404
-   }
-  ]
+  "problems": [],
+  "dead_menu_links": []
  },
  "index": {
   "sitemap_urls": 163,
