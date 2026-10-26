@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T21:03:54+01:00",
-  "validUntil": "2026-10-26T09:03:54+01:00",
+  "updatedAt": "2026-10-26T06:58:00+01:00",
+  "validUntil": "2026-10-26T18:58:00+01:00",
   "items": [
+    {
+      "source": "NOS",
+      "publishedAt": "2026-10-21",
+      "firstSeen": "2026-10-26",
+      "status": "reported",
+      "category": {
+        "ar": "تكاليف الرعاية الصحية",
+        "nl": "Zorgkosten"
+      },
+      "title": {
+        "ar": "DSW ترفع قسط التأمين الصحي الأساسي إلى 173,25 يورو شهرياً في 2027",
+        "nl": "DSW verhoogt basispremie zorgverzekering naar € 173,25 per maand in 2027"
+      },
+      "summary": {
+        "ar": "وفق NOS: يرتفع قسط DSW بمقدار 14,75 يورو شهرياً، ولا تعوّض زيادة zorgtoeslag ذلك بالكامل. هذا قسط DSW فقط؛ باقي شركات التأمين تعلن أقساطها حتى 12 نوفمبر.",
+        "nl": "Volgens NOS: de DSW-premie stijgt € 14,75 per maand; de hogere zorgtoeslag vangt dat niet helemaal op. Dit geldt alleen voor DSW; andere verzekeraars maken hun premie uiterlijk 12 november bekend."
+      },
+      "url": "https://nos.nl/artikel/2636058-grootste-stijging-zorgpremie-in-jaren-dsw-maakt-maandbedrag-2027-bekend",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-10-21-d63165a2"
+    },
     {
       "source": "BZK",
       "publishedAt": "2026-10-16",
@@ -236,6 +261,80 @@
       "tier": "official",
       "id": "szw-2026-09-29-90e389aa",
       "checkedAt": "2026-10-25T21:03:54+01:00"
+    }
+  ],
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.rijksoverheid.nl/actueel",
+      "result": "no-change"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "no-change"
+    },
+    {
+      "source": "IND",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://ind.nl/en/news",
+      "result": "no-change"
+    },
+    {
+      "source": "DUO",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://duo.nl/particulier/",
+      "result": "no-change"
+    },
+    {
+      "source": "UWV",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "result": "no-change"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "error"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "no-change"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "STAB",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "no-change"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "new"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.nu.nl/politiek",
+      "result": "error"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-26",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "error"
     }
   ]
 }
