@@ -1,4 +1,4 @@
-# Site health report — 2026-10-26T09:08Z
+# Site health report — 2026-10-27T09:10Z
 
 ## External links: 528 checked · 0 broken · 6 redirected · 27 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
