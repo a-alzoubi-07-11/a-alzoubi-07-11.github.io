@@ -1,33 +1,111 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T08:59:02+01:00",
-  "validUntil": "2026-10-27T20:59:02+01:00",
+  "updatedAt": "2026-10-27T20:56:24+01:00",
+  "validUntil": "2026-10-28T08:56:24+01:00",
   "items": [
     {
-      "source": "BZK",
-      "publishedAt": "2026-10-26",
+      "source": "DUO",
+      "publishedAt": "2026-10-27",
       "firstSeen": "2026-10-27",
-      "status": "proposed",
+      "status": "confirmed",
       "category": {
-        "ar": "السكن وبناء المساكن",
-        "nl": "Wonen en woningbouw"
+        "ar": "التعليم وتمويل الدراسة",
+        "nl": "Onderwijs en studiefinanciering"
       },
       "title": {
-        "ar": "مقترح لتعديل سياسة الأراضي وتسريع مشاريع بناء المساكن",
-        "nl": "Voorstel voor beter grondbeleid om woningbouw te versnellen"
+        "ar": "موافقة مجلس الشيوخ على تعويض إضافي لطلاب نظام القروض",
+        "nl": "Leenstelselstudenten krijgen aanvullende tegemoetkoming"
       },
       "summary": {
-        "ar": "تقترح الحكومة احتساب تكاليف الطرق والصرف والمساحات الخضراء مسبقاً ضمن قيمة الأرض وتوضيح ما تسترده البلديات من المطورين، لتقليل التأخير والعجز في مشاريع الإسكان المستقبلية. التفاصيل والترتيبات الانتقالية ما زالت قيد الإعداد، ولا ينشأ عن الإعلان حق فوري في مسكن.",
-        "nl": "Het kabinet wil kosten voor wegen, riolering en groen vooraf meenemen in de grondwaarde en verduidelijken welke kosten gemeenten op ontwikkelaars kunnen verhalen. Dit moet toekomstige woningbouw versnellen; uitwerking en overgangsregeling volgen nog en geven geen direct recht op een woning."
+        "ar": "أقرّ مجلس الشيوخ تعويضاً إضافياً قدره 44.50 يورو شهرياً لطلاب التعليم العالي الذين لم يحصلوا على المنحة الأساسية خلال نظام القروض. يبدأ الصرف من أبريل 2027؛ ويحصل عليه معظم المؤهلين تلقائياً، بينما يجب على من لم يتلقوا أي تمويل دراسي التقديم بأنفسهم. تنطبق شروط خاصة على حالات التأخر الدراسي.",
+        "nl": "De Eerste Kamer heeft ingestemd met een extra tegemoetkoming van € 44,50 per maand voor hbo- en universitaire studenten die tijdens het leenstelsel geen basisbeurs kregen. Toekenning start in april 2027 en gaat meestal automatisch; wie nooit studiefinanciering ontving, moet zelf aanvragen. Voor studievertraging gelden voorwaarden."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/26/beter-grondbeleid-moet-financiele-tekorten-bij-gemeenten-verkleinen-en-woningbouw-versnellen",
+      "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
       "sourceName": {
-        "ar": "وزارة الإسكان والتخطيط المكاني (VRO)",
-        "nl": "Ministerie van VRO"
+        "ar": "دائرة التعليم التنفيذية (DUO)",
+        "nl": "Dienst Uitvoering Onderwijs (DUO)"
       },
       "tier": "official",
-      "id": "bzk-2026-10-26-grondbeleid-woningbouw",
-      "checkedAt": "2026-10-27T08:59:02+01:00"
+      "id": "duo-2026-10-27-aanvullende-tegemoetkoming-leenstelselstudenten",
+      "checkedAt": "2026-10-27T20:56:24+01:00"
+    },
+    {
+      "source": "NS",
+      "publishedAt": "2026-10-27",
+      "firstSeen": "2026-10-27",
+      "status": "announced",
+      "category": {
+        "ar": "المواصلات والقطارات",
+        "nl": "Vervoer en treinverkeer"
+      },
+      "title": {
+        "ar": "توقف القطارات من وإلى روتردام سنترال يومي 7 و8 نوفمبر",
+        "nl": "Geen treinen van, naar en via Rotterdam Centraal op 7 en 8 november"
+      },
+      "summary": {
+        "ar": "لن تعمل القطارات من روتردام سنترال أو إليها أو عبرها يومي السبت والأحد 7 و8 نوفمبر 2026 بسبب تحديث نظام تأمين حركة القطارات. ستوفر NS حافلات ومترو بديلين؛ تحقّق من مخطط الرحلات قبل المغادرة وتوقّع ازدحاماً ووقت سفر أطول.",
+        "nl": "Op zaterdag 7 en zondag 8 november 2026 rijden er geen treinen van, naar en via Rotterdam Centraal vanwege vernieuwing van de treinbeveiliging. NS zet vervangende bussen en metro's in. Plan de reis vooraf en houd rekening met drukte en extra reistijd."
+      },
+      "url": "https://nieuws.ns.nl/geen-treinen-van-naar-en-via-rotterdam-centraal-7-en-8-november/",
+      "sourceName": {
+        "ar": "السكك الحديدية الهولندية (NS)",
+        "nl": "Nederlandse Spoorwegen (NS)"
+      },
+      "tier": "official",
+      "id": "ns-2026-10-27-rotterdam-centraal-no-trains-7-8-november",
+      "checkedAt": "2026-10-27T20:56:24+01:00"
+    },
+    {
+      "source": "Rijksoverheid",
+      "publishedAt": "2026-10-27",
+      "firstSeen": "2026-10-27",
+      "status": "confirmed",
+      "category": {
+        "ar": "الرعاية الصحية والرعاية طويلة الأمد",
+        "nl": "Zorg en langdurige zorg"
+      },
+      "title": {
+        "ar": "تسهيل طلب الرعاية طويلة الأمد للأقارب ابتداءً من 1 يناير 2027",
+        "nl": "Familie kan vanaf 1 januari 2027 makkelijker Wlz-zorg aanvragen"
+      },
+      "summary": {
+        "ar": "اعتباراً من 1 يناير 2027، سيتمكن الشريك أو أحد أفراد الأسرة من توقيع طلب رعاية طويلة الأمد (Wlz) نيابةً عن قريب لا يستطيع فهم عواقب الطلب، مثل بعض المصابين بالخرف أو الإعاقة أو الاضطرابات النفسية. الهدف تقليل التأخير في ترتيب الرعاية.",
+        "nl": "Vanaf 1 januari 2027 kan een partner of familielid een Wlz-aanvraag ondertekenen voor een naaste die de gevolgen van de aanvraag niet kan overzien, bijvoorbeeld door dementie, een beperking of psychische kwetsbaarheid. Dit moet vertraging bij het regelen van zorg verminderen."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/wetswijziging-die-families-helpt-passende-zorg-te-krijgen-voor-hun-naasten-gaat-per-1-januari-in",
+      "sourceName": {
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
+      },
+      "tier": "official",
+      "id": "rijksoverheid-2026-10-27-wlz-family-application-2027",
+      "checkedAt": "2026-10-27T20:56:24+01:00"
+    },
+    {
+      "source": "Rijksoverheid",
+      "publishedAt": "2026-10-27",
+      "firstSeen": "2026-10-27",
+      "status": "confirmed",
+      "category": {
+        "ar": "الطيران والضوضاء البيئية",
+        "nl": "Luchtvaart en geluidsoverlast"
+      },
+      "title": {
+        "ar": "قواعد جديدة للضوضاء وحركة الطيران في سخيبول اعتباراً من 1 نوفمبر",
+        "nl": "Nieuwe regels voor geluid en vliegverkeer op Schiphol vanaf 1 november"
+      },
+      "summary": {
+        "ar": "نُشر قرار حركة مطار سخيبول في الجريدة الرسمية ويدخل حيز التنفيذ في 1 نوفمبر 2026. يعيد القرار حماية قانونية لسكان المناطق المحيطة ويزيد نقاط مراقبة الضوضاء من 35 إلى 148. ويحدد سقفاً قدره 478 ألف حركة طيران إلى أن يتحقق هدف خفض الإزعاج؛ وأي توسع لاحق مشروط بخفض الضوضاء وبمشاركة البرلمان.",
+        "nl": "Het nieuwe Luchthavenverkeerbesluit is gepubliceerd en geldt vanaf 1 november 2026. Het herstelt de rechtsbescherming van omwonenden en verhoogt het aantal handhavingspunten voor geluid van 35 naar 148. Het maximum is 478.000 vliegtuigbewegingen totdat het geluidsdoel is bereikt; eventuele groei daarna is voorwaardelijk en vereist betrokkenheid van het parlement."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/lvb-schiphol-gepubliceerd-in-staatsblad-regels-per-1-november-van-kracht",
+      "sourceName": {
+        "ar": "الحكومة الهولندية",
+        "nl": "Rijksoverheid"
+      },
+      "tier": "official",
+      "id": "rijksoverheid-2026-10-27-schiphol-lvb-1-november",
+      "checkedAt": "2026-10-27T20:56:24+01:00"
     }
   ]
 }
