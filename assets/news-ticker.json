@@ -1,163 +1,59 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T08:56:43+01:00",
-  "validUntil": "2026-10-28T20:56:43+01:00",
+  "updatedAt": "2026-10-28T21:03:23+01:00",
+  "validUntil": "2026-10-29T09:03:23+01:00",
   "items": [
     {
-      "source": "BZK",
-      "publishedAt": "2026-10-26",
+      "source": "VWS",
+      "publishedAt": "2026-10-28",
       "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
+      "checkedAt": "2026-10-28T21:03:23+01:00",
       "category": {
-        "ar": "السكن وبناء المساكن",
-        "nl": "Wonen en woningbouw"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "الحكومة تقترح تعديل سياسة قيمة الأراضي لتسريع بناء المساكن",
-        "nl": "Kabinet stelt beter grondbeleid voor om woningbouw te versnellen"
-      },
-      "summary": {
-        "ar": "مقترح حكومي لاحتساب تكاليف المرافق العامة، مثل الطرق والصرف والمساحات الخضراء، مبكراً عند تحديد قيمة الأرض وتوضيح التكاليف التي يمكن للبلديات استردادها من المطوّرين. يخص أساساً مشاريع الإسكان المستقبلية؛ والتفاصيل والترتيبات الانتقالية ما زالت قيد الإعداد.",
-        "nl": "Het kabinet stelt voor kosten voor publieke voorzieningen, zoals wegen, riolering en groen, eerder mee te nemen in de grondwaarde en te verduidelijken welke kosten gemeenten op ontwikkelaars kunnen verhalen. Dit raakt vooral toekomstige woningbouwprojecten; de uitwerking en overgangsregeling moeten nog volgen."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/26/beter-grondbeleid-moet-financiele-tekorten-bij-gemeenten-verkleinen-en-woningbouw-versnellen",
-      "sourceName": {
-        "ar": "وزارة الداخلية والعلاقات داخل المملكة (BZK)",
-        "nl": "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties"
-      },
-      "tier": "official",
-      "id": "bzk-2026-10-26-grondbeleid-woningbouw"
-    },
-    {
-      "source": "Rijksoverheid",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
-      "category": {
-        "ar": "الرعاية طويلة الأمد",
-        "nl": "Langdurige zorg"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "تسهيل طلب الرعاية طويلة الأمد نيابةً عن أحد أفراد الأسرة",
-        "nl": "Familie kan Wlz-aanvraag voor kwetsbare naaste makkelijker ondertekenen"
-      },
-      "summary": {
-        "ar": "من 1 يناير 2027 يمكن للشريك أو أحد أفراد الأسرة تقديم توقيع طلب رعاية Wlz لقريب لا يستطيع فهم عواقب الطلب بنفسه، بما في ذلك بعض حالات الخرف أو الإعاقة أو الهشاشة النفسية. قد يخفف ذلك التأخير والأعباء الإدارية عند ترتيب الرعاية.",
-        "nl": "Vanaf 1 januari 2027 kan een partner of familielid een Wlz-aanvraag ondertekenen voor een naaste die de gevolgen van de aanvraag niet kan overzien, onder meer bij dementie, een beperking of psychische kwetsbaarheid. Dit moet vertraging en administratieve lasten bij het regelen van zorg verminderen."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/wetswijziging-die-families-helpt-passende-zorg-te-krijgen-voor-hun-naasten-gaat-per-1-januari-in",
-      "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
-      },
-      "tier": "official",
-      "id": "rijksoverheid-2026-10-27-wlz-familieaanvraag"
-    },
-    {
-      "source": "DUO",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
-      "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "إقرار تعويض إضافي لطلاب نظام القروض",
-        "nl": "Eerste Kamer stemt in met extra tegemoetkoming voor leenstelselstudenten"
-      },
-      "summary": {
-        "ar": "أقرّ مجلس الشيوخ تعويضاً إضافياً قدره 44.50 يورو شهرياً لطلاب hbo والجامعات الذين لم يحصلوا على المنحة الأساسية خلال نظام القروض. يبدأ منح التعويض من أبريل 2027؛ وسيُصرف لمعظم المؤهلين تلقائياً، بينما قد يحتاج من لم يتلقَّ تمويلاً دراسياً سابقاً إلى التقديم.",
-        "nl": "De Eerste Kamer stemde in met € 44,50 extra per maand voor hbo- en universitaire studenten die tijdens het leenstelsel geen basisbeurs kregen. De tegemoetkoming wordt vanaf april 2027 toegekend; voor de meeste rechthebbenden gaat dit automatisch, terwijl sommigen zelf moeten aanvragen."
-      },
-      "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
-      "sourceName": {
-        "ar": "خدمة تنفيذ التعليم (DUO)",
-        "nl": "Dienst Uitvoering Onderwijs (DUO)"
-      },
-      "tier": "official",
-      "id": "duo-2026-10-27-aanvullende-tegemoetkoming"
-    },
-    {
-      "source": "NS",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
-      "category": {
-        "ar": "المواصلات والقطارات",
-        "nl": "Openbaar vervoer en treinen"
+        "ar": "دعم الوالدين والتربية",
+        "nl": "Ouderschap en opvoeding"
       },
       "status": "announced",
       "title": {
-        "ar": "توقف القطارات من روتردام سنترال وإليها وعبرها يومي 7 و8 نوفمبر",
-        "nl": "Geen treinen van, naar en via Rotterdam Centraal op 7 en 8 november"
+        "ar": "إطلاق مبادرة Team Ouders لدعم الوالدين في التربية",
+        "nl": "Team Ouders gelanceerd om ouders bij opvoedvragen te ondersteunen"
       },
       "summary": {
-        "ar": "لن تعمل القطارات من روتردام سنترال أو إليها أو عبرها يومي السبت والأحد 7 و8 نوفمبر 2026 بسبب تحديث نظام تأمين السكك. ستوفر NS حافلات ومترو بديلين؛ خطّط للرحلة مسبقاً وتحقق من مخطط الرحلات لاحتمال الازدحام ووقت السفر الإضافي.",
-        "nl": "Op zaterdag 7 en zondag 8 november 2026 rijden er geen treinen van, naar en via Rotterdam Centraal door vernieuwing van de treinbeveiliging. NS zet vervangende bussen en metro's in; plan de reis vooraf en houd rekening met drukte en extra reistijd."
+        "ar": "أطلقت الحكومة مبادرة Team Ouders لتشجيع الوالدين على تبادل الخبرات وطرح أسئلة التربية وطلب الدعم. يتضمن الموقع أدوات ونصائح للمهنيين، وستُنظَّم أنشطة وحوارات في أنحاء هولندا خلال العام المقبل. لا يعلن الخبر عن إعانة مالية جديدة.",
+        "nl": "De overheid heeft Team Ouders gelanceerd om ouders aan te moedigen opvoedvragen te bespreken, ervaringen uit te wisselen en steun te vinden. De website biedt kennis, gesprekstips en hulpmiddelen voor professionals; komend jaar volgen activiteiten en gesprekken door het hele land. Er wordt geen nieuwe financiële toeslag aangekondigd."
       },
-      "url": "https://nieuws.ns.nl/geen-treinen-van-naar-en-via-rotterdam-centraal-7-en-8-november/",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/28/team-ouders-initiatief-over-ouderschap-en-opvoeden-gelanceerd-door-minister-sterk-en-staatssecretaris-tielen",
       "sourceName": {
-        "ar": "السكك الحديدية الهولندية (NS)",
-        "nl": "Nederlandse Spoorwegen (NS)"
+        "ar": "وزارة الصحة والرعاية والرياضة (VWS) عبر الحكومة الهولندية",
+        "nl": "Ministerie van Volksgezondheid, Welzijn en Sport (VWS) via Rijksoverheid"
       },
       "tier": "official",
-      "id": "ns-2026-10-27-rotterdam-centraal"
+      "id": "vws-2026-10-28-team-ouders"
     },
     {
-      "source": "NS",
-      "publishedAt": "2026-10-27",
+      "source": "LVVN",
+      "publishedAt": "2026-10-28",
       "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
+      "checkedAt": "2026-10-28T21:03:23+01:00",
       "category": {
-        "ar": "المواصلات والقطارات",
-        "nl": "Openbaar vervoer en treinen"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "قطار إضافي يتوقف عند Heerenveen IJsstadion خلال أربعة أحداث للتزلج",
-        "nl": "Sprinter stopt tijdens vier schaatsevenementen bij Heerenveen IJsstadion"
-      },
-      "summary": {
-        "ar": "خلال أربعة أحداث للتزلج في ديسمبر 2026 ويناير 2027، سيتوقف قطار Sprinter بين Leeuwarden وZwolle في محطة Heerenveen IJsstadion كل نصف ساعة تقريباً، من ساعة إلى ساعتين قبل برنامج اليوم وحتى ساعة إلى ساعتين بعد انتهائه. تحقق من المواعيد في مخطط الرحلات قبل السفر.",
-        "nl": "Tijdens vier schaatsevenementen in december 2026 en januari 2027 stopt de Sprinter tussen Leeuwarden en Zwolle bij station Heerenveen IJsstadion, ieder halfuur en vanaf ongeveer één à twee uur vóór tot één à twee uur na het dagprogramma. Controleer de reisplanner voor vertrek."
-      },
-      "url": "https://nieuws.ns.nl/de-trein-stopt-deze-winter-weer-bij-heerenveen-ijsstadion/",
-      "sourceName": {
-        "ar": "السكك الحديدية الهولندية (NS)",
-        "nl": "Nederlandse Spoorwegen (NS)"
-      },
-      "tier": "official",
-      "id": "ns-2026-10-27-heerenveen-ijsstadion"
-    },
-    {
-      "source": "IenW",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-28",
-      "checkedAt": "2026-10-28T08:56:43+01:00",
-      "category": {
-        "ar": "الطيران والضوضاء البيئية",
-        "nl": "Luchtvaart en geluid"
+        "ar": "الزراعة والسلامة الحيوية",
+        "nl": "Landbouw en bioveiligheid"
       },
       "status": "confirmed",
       "title": {
-        "ar": "قواعد جديدة لحركة الطيران في سخيبول تدخل حيز التنفيذ في 1 نوفمبر",
-        "nl": "Nieuw Luchthavenverkeerbesluit Schiphol geldt vanaf 1 november"
+        "ar": "فرض إلزام وطني بإيواء الطيور التجارية أو حمايتها بسبب إنفلونزا الطيور",
+        "nl": "Landelijke ophok- en afschermplicht ingesteld na vogelgriepuitbraken"
       },
       "summary": {
-        "ar": "نُشر القرار الجديد لحركة الطيران في الجريدة الرسمية ويسري من 1 نوفمبر 2026. يزيد نقاط مراقبة الضوضاء من 35 إلى 148 ويعيد أساساً قانونياً أوضح لحماية السكان المحيطين؛ ويحدد سقفاً قدره 478 ألف حركة طيران إلى أن يتحقق هدف خفض الإزعاج، مع شروط لأي نمو لاحق.",
-        "nl": "Het nieuwe Luchthavenverkeerbesluit is gepubliceerd in het Staatsblad en geldt vanaf 1 november 2026. Het aantal handhavingspunten voor geluid stijgt van 35 naar 148 en de rechtsbescherming van omwonenden wordt hersteld. Het besluit legt voorlopig maximaal 478.000 vliegtuigbewegingen vast, met voorwaarden voor eventuele latere groei."
+        "ar": "بعد ثلاث إصابات بإنفلونزا الطيور، فُرض إيواء الطيور التجارية؛ ويُستثنى الدراج والطيور عديمة العارضة من الإيواء مع بقاء واجب الحماية. أما الطيور المنزلية المصنفة ضمن الفئات المعرضة للخطر، مثل الدجاج الذي يُربّى كهواية، فيجب حمايتها من مخالطة الطيور البرية. كما فُرض حظر على معارض الطيور المعرضة للخطر وشُدّدت قيود زيارة أماكن إيوائها.",
+        "nl": "Na drie uitbraken geldt een landelijke ophokplicht voor commercieel gehouden vogels. Voor commercieel gehouden fazanten en loopvogels geldt alleen een afschermplicht. Risicovogels die niet-commercieel worden gehouden, zoals hobbykippen, moeten worden afgeschermd tegen contact met wilde vogels. Ook geldt een tentoonstellingsverbod voor risicovogels en zijn bezoekersregels aangescherpt."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/lvb-schiphol-gepubliceerd-in-staatsblad-regels-per-1-november-van-kracht",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/28/landelijke-ophok-en-afschermplicht-ingesteld-na-vogelgriepuitbraken",
       "sourceName": {
-        "ar": "وزارة البنية التحتية وإدارة المياه (IenW)",
-        "nl": "Ministerie van Infrastructuur en Waterstaat"
+        "ar": "وزارة الزراعة ومصايد الأسماك والأمن الغذائي والطبيعة (LVVN)",
+        "nl": "Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur (LVVN)"
       },
       "tier": "official",
-      "id": "ienw-2026-10-27-schiphol-lvb"
+      "id": "lvvn-2026-10-28-vogelgriep-ophokplicht"
     }
   ]
 }
