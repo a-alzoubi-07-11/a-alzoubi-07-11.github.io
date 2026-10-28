@@ -171,6 +171,13 @@ NEW.update({
    related=['eu-permanent-residence-netherlands', 'family-reunification-mvv-ind', 'inburgering-integration-law-2026', 'dutch-naturalisation-guide']),
 })
 
+NEW.update({
+ 'liability-home-insurance': dict(tpl='energy-contracts-saving-2026', cat='money', listing='life',
+   ar=('تأمين المسؤولية وتأمين محتويات البيت', 'ما الإلزامي وما الاختياري، ماذا يغطي AVP، مسؤولية الأهل حسب عمر الطفل، المستأجر والمالك، الخروج من مركز COA، وخطوات المطالبة والشكوى عند Kifid، مع أمثلة.'),
+   nl=('AVP en inboedelverzekering', 'Wat verplicht is, wat de AVP dekt, aansprakelijkheid van ouders per leeftijd, huurder en verhuurder, van azc naar eigen woning, schade claimen en klagen bij Kifid, met voorbeelden.'),
+   related=['tenant-rights-netherlands', 'legal-aid-lawyer-toevoeging', 'traffic-fines-cjib', 'scams-phishing-netherlands']),
+})
+
 def short_titles():
     m = {}
     for lang, pat in (('ar', 'categories/*.html'), ('nl', 'nl/categories/*.html')):

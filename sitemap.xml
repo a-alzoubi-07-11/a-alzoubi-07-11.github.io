@@ -702,14 +702,14 @@
   </url>
   <url>
     <loc>https://gidsnederland.nl/articles/aow-aio-pension.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/articles/aow-aio-pension.html"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/articles/aow-aio-pension.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/articles/aow-aio-pension.html"/>
   </url>
   <url>
     <loc>https://gidsnederland.nl/nl/articles/aow-aio-pension.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/articles/aow-aio-pension.html"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/articles/aow-aio-pension.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/articles/aow-aio-pension.html"/>
@@ -1056,5 +1056,19 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/calculators/permanent-residence-check.html"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/calculators/permanent-residence-check.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/calculators/permanent-residence-check.html"/>
+  </url>
+  <url>
+    <loc>https://gidsnederland.nl/articles/liability-home-insurance.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/articles/liability-home-insurance.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/articles/liability-home-insurance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/articles/liability-home-insurance.html"/>
+  </url>
+  <url>
+    <loc>https://gidsnederland.nl/nl/articles/liability-home-insurance.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/articles/liability-home-insurance.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/articles/liability-home-insurance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/articles/liability-home-insurance.html"/>
   </url>
 </urlset>

@@ -41,8 +41,6 @@ TOPIC_LABEL = {
  'nl': {'housing':'Wonen en dagelijks leven','residence':'Verblijf en gezinshereniging','work':'Werk en salaris','education':'Studie en onderwijs','benefits':'Toeslagen en uitkeringen','money':'Geld en belastingen'},
 }
 TOPIC_ALIASES = {
- 'permanent-residence-asylum-route':'اقامة دائمة لاجئ اقامة دائمة للاجئين لجوء اقامة دائمة بعد 5 سنوات لجوء asiel onbepaalde tijd اقامة اوروبية للاجئ 6011 asielvergunning permanent verblijf statushouder',
- 'permanent-residence-regular-route':'اقامة دائمة ريخولير regulier اقامة دائمة شريك لم شمل اقامة دائمة عمل kennismigrant onbepaalde tijd regulier 6009 اعفاء الدخل 10 سنوات permanent verblijf partner',
  'housing':'سكن بيت بلدية gemeente wonen بداية وصول جديد قادم',
  'residence':'اقامة إقامة هجرة IND verblijf لجوء',
  'work':'شغل عمل وظيفة راتب معاش werk baan salaris',
@@ -53,6 +51,9 @@ TOPIC_ALIASES = {
 
 # Words people actually type (colloquial Arabic, Dutch, transliterations, misspellings).
 ALIASES = {
+ 'permanent-residence-asylum-route':'اقامة دائمة لاجئ اقامة دائمة للاجئين لجوء اقامة دائمة بعد 5 سنوات لجوء asiel onbepaalde tijd اقامة اوروبية للاجئ 6011 asielvergunning permanent verblijf statushouder',
+ 'permanent-residence-regular-route':'اقامة دائمة ريخولير regulier اقامة دائمة شريك لم شمل اقامة دائمة عمل kennismigrant onbepaalde tijd regulier 6009 اعفاء الدخل 10 سنوات permanent verblijf partner',
+ 'liability-home-insurance':'تأمين المسؤولية تامين مسؤولية تأمين ضد الغير تأمين الغير تأمين البيت تأمين العفش تأمين الأثاث تأمين المحتويات تأمين الشقة ابني كسر شباك الجيران كسرت تلفون صاحبي الكلب عض تسريب ماء للجيران مين بيدفع الضرر تعويض ضرر شكوى على شركة التأمين كيفيد AVP aansprakelijkheidsverzekering aansprakelijkheid WA-verzekering inboedelverzekering inboedel opstalverzekering opstal woonverzekering schade verzekering eigen risico Kifid schade buren kind aansprakelijk ouders hondenbeet fatbike onverzekerd',
  'diploma-recognition-by-education-level':'شهادتي تعادل ايش شهادتي تعادل ماذا معادلة البكالوريا معادلة الشهادة الثانوية معادلة الثانوية شهادة المعهد المتوسط معادلة الاجازة الجامعية معادلة الماجستير معادلة الدكتوراه تعديل الشهادة لقب دكتور بلا شهادة diploma waard diploma niveau buitenland havo gelijkwaardig nlqf niveau colloquium doctum 21+ toets isk schakelklas nederlandse titel',
  'dutch-government-terms-glossary':'قاموس مصطلحات مصطلحات هولندية كلمات الرسائل الحكومية معنى كلمة ترجمة رسالة بلاستينغ مصطلح glossary woordenlijst begrippen overheidstaal brief uitleg betekenis',
  'asylum-two-status-system-2026':'نظام الحالتين نظام الحالتين اللجوء لاجئ حماية ثانوية اقامة لجوء ثلاث سنوات اقامة مؤقتة اقامة غير محددة تغيير قوانين اللجوء 12 يونيو لم الشمل للحماية الثانوية انتظار سنتين جمع الشمل طلب لم الشمل موقوف IND ما بيبت بطلبي ستاتوس الحماية الاضافية تعديل الاقامة بطاقة اللجوء tweestatusstelsel twee statussen subsidiaire bescherming vluchteling asielvergunning bepaalde tijd onbepaalde tijd nareis nareistermijn migratiepact asielpas pasje statushouder wachttijd nareis IND beslist niet',
@@ -68,7 +69,7 @@ ALIASES = {
  'traffic-fines-cjib':'مخالفة مرور مخالفة سرعة غرامة كاميرا رادار فلاش مخالفة سير دفع المخالفة اعتراض على مخالفة تقسيط الغرامة انذار رسالة CJIB تضاعف الغرامة verkeersboete bekeuring flitsboete boete betalen betalingsregeling aanmaning beroep mulder cjib flitsfoto boetebase',
  'year-end-checklist-2026':'نهاية السنة قبل 31 ديسمبر تغيير التأمين قائمة مهام تغييرات 2027 السنة الجديدة jaareinde checklist overstappen zorgverzekering 2027 eigen risico 2027 wat verandert 2027',
  'adult-learning-finance':'قرض دراسة للكبار دراسة بعد الثلاثين دراسة بعد 30 قرض DUO قرض التعلم levenlang leven lang leren krediet levenlanglerenkrediet studeren na 30 lening opleiding volwassenen STAP SLIM تمويل الدراسة للكبار',
- 'aow-aio-pension':'تقاعد معاش تقاعدي معاش الشيخوخة راتب تقاعد سن التقاعد اي او في aow aow leeftijd pensioen aio aanvulling ouderen SVB معاش الكبار',
+ 'aow-aio-pension':'تقاعد معاش تقاعدي معاش الشيخوخة راتب تقاعد سن التقاعد اي او في aow aow leeftijd pensioen aio aanvulling ouderen SVB معاش الكبار شراء سنوات التقاعد شراء AOW سنوات ناقصة معاش ناقص تقاعد ناقص السفر مع AIO 13 أسبوع ابني ساكن معي inkoop AOW inkopen vrijwillig verzekeren onvolledige AOW AOW-gat kostendeler AIO buitenland 13 weken',
  'birth-parental-leave':'إجازة ولادة اجازة ولادة إجازة أمومة اجازة حمل إجازة أبوة إجازة الأب إجازة الشريك اجازة الوالدين zwangerschapsverlof bevallingsverlof geboorteverlof ouderschapsverlof verlof baby UWV ولادة',
  'debt-help-schuldhulp':'ديون دين مساعدة الديون حل الديون ديون كثيرة قروض غرامات تقسيط schulden schuldhulp schuldsanering wsnp beslag deurwaarder incasso betalingsregeling مأمور تنفيذ حجز',
  'energy-emergency-fund-2027':'صندوق الطاقة صندوق الطوارئ للطاقة فاتورة الكهرباء فاتورة الغاز مساعدة الطاقة دعم الكهرباء دعم الغاز نودفوندس noodfonds noodfonds energie energietoeslag energierekening stroom gas hulp',
