@@ -1,111 +1,331 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T20:56:24+01:00",
-  "validUntil": "2026-10-28T08:56:24+01:00",
+  "updatedAt": "2026-10-28T06:57:23+01:00",
+  "validUntil": "2026-10-28T18:57:23+01:00",
   "items": [
     {
       "source": "DUO",
       "publishedAt": "2026-10-27",
       "firstSeen": "2026-10-27",
-      "status": "confirmed",
       "category": {
-        "ar": "التعليم وتمويل الدراسة",
-        "nl": "Onderwijs en studiefinanciering"
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
       },
+      "status": "confirmed",
       "title": {
         "ar": "موافقة مجلس الشيوخ على تعويض إضافي لطلاب نظام القروض",
         "nl": "Leenstelselstudenten krijgen aanvullende tegemoetkoming"
       },
       "summary": {
-        "ar": "أقرّ مجلس الشيوخ تعويضاً إضافياً قدره 44.50 يورو شهرياً لطلاب التعليم العالي الذين لم يحصلوا على المنحة الأساسية خلال نظام القروض. يبدأ الصرف من أبريل 2027؛ ويحصل عليه معظم المؤهلين تلقائياً، بينما يجب على من لم يتلقوا أي تمويل دراسي التقديم بأنفسهم. تنطبق شروط خاصة على حالات التأخر الدراسي.",
-        "nl": "De Eerste Kamer heeft ingestemd met een extra tegemoetkoming van € 44,50 per maand voor hbo- en universitaire studenten die tijdens het leenstelsel geen basisbeurs kregen. Toekenning start in april 2027 en gaat meestal automatisch; wie nooit studiefinanciering ontving, moet zelf aanvragen. Voor studievertraging gelden voorwaarden."
+        "ar": "أقرّ مجلس الشيوخ (Eerste Kamer) مبلغاً إضافياً قدره 44.50 يورو شهرياً لطلاب hbo/wo في نظام القروض دون basisbeurs. يبدأ الصرف المتوقع من أبريل 2027، وغالباً تلقائياً.",
+        "nl": "De Eerste Kamer stemde in met € 44,50 per maand extra voor leenstelselstudenten (hbo/wo) zonder basisbeurs. Uitbetaling naar verwachting vanaf april 2027, meestal automatisch."
       },
       "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
       "sourceName": {
-        "ar": "دائرة التعليم التنفيذية (DUO)",
-        "nl": "Dienst Uitvoering Onderwijs (DUO)"
+        "ar": "DUO",
+        "nl": "DUO"
       },
       "tier": "official",
-      "id": "duo-2026-10-27-aanvullende-tegemoetkoming-leenstelselstudenten",
-      "checkedAt": "2026-10-27T20:56:24+01:00"
+      "id": "duo-2026-10-27-63c38e99"
     },
     {
-      "source": "NS",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-27",
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
       "status": "announced",
-      "category": {
-        "ar": "المواصلات والقطارات",
-        "nl": "Vervoer en treinverkeer"
-      },
       "title": {
-        "ar": "توقف القطارات من وإلى روتردام سنترال يومي 7 و8 نوفمبر",
-        "nl": "Geen treinen van, naar en via Rotterdam Centraal op 7 en 8 november"
+        "ar": "حدود ثروة أقل لـ zorgtoeslag وkindgebonden budget في 2027",
+        "nl": "Vanaf 2027 lagere vermogensgrenzen voor zorgtoeslag en kindgebonden budget"
       },
       "summary": {
-        "ar": "لن تعمل القطارات من روتردام سنترال أو إليها أو عبرها يومي السبت والأحد 7 و8 نوفمبر 2026 بسبب تحديث نظام تأمين حركة القطارات. ستوفر NS حافلات ومترو بديلين؛ تحقّق من مخطط الرحلات قبل المغادرة وتوقّع ازدحاماً ووقت سفر أطول.",
-        "nl": "Op zaterdag 7 en zondag 8 november 2026 rijden er geen treinen van, naar en via Rotterdam Centraal vanwege vernieuwing van de treinbeveiliging. NS zet vervangende bussen en metro's in. Plan de reis vooraf en houd rekening met drukte en extra reistijd."
+        "ar": "حد الثروة في 2027: ‏158,748 يورو مع شريك و119,122 يورو بدونه. إذا تجاوزت ثروتك الحد فأبلغ عبر Mijn toeslagen قبل 8 ديسمبر 2026 لتجنّب إعادة البدل.",
+        "nl": "Vermogensgrens 2027: € 158.748 met en € 119.122 zonder toeslagpartner. Te hoog vermogen? Geef dit uiterlijk 8 december 2026 door in Mijn toeslagen om terugbetalen te voorkomen."
       },
-      "url": "https://nieuws.ns.nl/geen-treinen-van-naar-en-via-rotterdam-centraal-7-en-8-november/",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
       "sourceName": {
-        "ar": "السكك الحديدية الهولندية (NS)",
-        "nl": "Nederlandse Spoorwegen (NS)"
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
       },
       "tier": "official",
-      "id": "ns-2026-10-27-rotterdam-centraal-no-trains-7-8-november",
-      "checkedAt": "2026-10-27T20:56:24+01:00"
+      "id": "toeslagen-2026-10-15-4a21e9c2"
     },
     {
-      "source": "Rijksoverheid",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-27",
-      "status": "confirmed",
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-28",
       "category": {
-        "ar": "الرعاية الصحية والرعاية طويلة الأمد",
-        "nl": "Zorg en langdurige zorg"
+        "ar": "البدلات",
+        "nl": "Toeslagen"
       },
+      "status": "announced",
       "title": {
-        "ar": "تسهيل طلب الرعاية طويلة الأمد للأقارب ابتداءً من 1 يناير 2027",
-        "nl": "Familie kan vanaf 1 januari 2027 makkelijker Wlz-zorg aanvragen"
+        "ar": "قواعد أبسط لشريك البدلات (toeslagpartner) ابتداءً من 2027",
+        "nl": "Regels voor toeslagpartners eenvoudiger vanaf 2027"
       },
       "summary": {
-        "ar": "اعتباراً من 1 يناير 2027، سيتمكن الشريك أو أحد أفراد الأسرة من توقيع طلب رعاية طويلة الأمد (Wlz) نيابةً عن قريب لا يستطيع فهم عواقب الطلب، مثل بعض المصابين بالخرف أو الإعاقة أو الاضطرابات النفسية. الهدف تقليل التأخير في ترتيب الرعاية.",
-        "nl": "Vanaf 1 januari 2027 kan een partner of familielid een Wlz-aanvraag ondertekenen voor een naaste die de gevolgen van de aanvraag niet kan overzien, bijvoorbeeld door dementie, een beperking of psychische kwetsbaarheid. Dit moet vertraging bij het regelen van zorg verminderen."
+        "ar": "من 1 يناير 2027 يبقى المتزوجون والشركاء المسجّلون شركاء بدلات؛ أما المساكنون فقط عند وجود عقد مساكنة موثّق أو طفل مشترك أو بيت مملوك مشترك مثلاً. رسالة للمعنيين نهاية نوفمبر.",
+        "nl": "Vanaf 1 januari 2027 blijven gehuwden en geregistreerd partners toeslagpartner; samenwoners alleen bij bijvoorbeeld een notarieel samenlevingscontract, gezamenlijk kind of eigen huis. Brief eind november."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/wetswijziging-die-families-helpt-passende-zorg-te-krijgen-voor-hun-naasten-gaat-per-1-januari-in",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
       "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
       },
       "tier": "official",
-      "id": "rijksoverheid-2026-10-27-wlz-family-application-2027",
-      "checkedAt": "2026-10-27T20:56:24+01:00"
+      "id": "toeslagen-2026-10-15-f11cac34"
     },
     {
-      "source": "Rijksoverheid",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-27",
-      "status": "confirmed",
+      "source": "IND",
+      "publishedAt": "2026-10-13",
+      "firstSeen": "2026-10-28",
       "category": {
-        "ar": "الطيران والضوضاء البيئية",
-        "nl": "Luchtvaart en geluidsoverlast"
+        "ar": "الإقامة",
+        "nl": "Verblijf"
       },
+      "status": "announced",
       "title": {
-        "ar": "قواعد جديدة للضوضاء وحركة الطيران في سخيبول اعتباراً من 1 نوفمبر",
-        "nl": "Nieuwe regels voor geluid en vliegverkeer op Schiphol vanaf 1 november"
+        "ar": "مجلس الشيوخ يوافق على إلغاء الغرامة القضائية (dwangsom) على IND",
+        "nl": "Eerste Kamer stemt in met afschaffen rechterlijke dwangsom"
       },
       "summary": {
-        "ar": "نُشر قرار حركة مطار سخيبول في الجريدة الرسمية ويدخل حيز التنفيذ في 1 نوفمبر 2026. يعيد القرار حماية قانونية لسكان المناطق المحيطة ويزيد نقاط مراقبة الضوضاء من 35 إلى 148. ويحدد سقفاً قدره 478 ألف حركة طيران إلى أن يتحقق هدف خفض الإزعاج؛ وأي توسع لاحق مشروط بخفض الضوضاء وبمشاركة البرلمان.",
-        "nl": "Het nieuwe Luchthavenverkeerbesluit is gepubliceerd en geldt vanaf 1 november 2026. Het herstelt de rechtsbescherming van omwonenden en verhoogt het aantal handhavingspunten voor geluid van 35 naar 148. Het maximum is 478.000 vliegtuigbewegingen totdat het geluidsdoel is bereikt; eventuele groei daarna is voorwaardelijk en vereist betrokkenheid van het parlement."
+        "ar": "بعد سريان القانون لن تدفع IND تعويضاً للمتقدّم إذا تأخّر قرار طلب الإقامة عن المهلة القانونية. لم يُحدَّد بعد موعد السريان.",
+        "nl": "Na inwerkingtreding betaalt de IND geen dwangsom meer als een besluit op een verblijfsaanvraag te laat is. De datum van inwerkingtreding is nog niet bekend."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/27/lvb-schiphol-gepubliceerd-in-staatsblad-regels-per-1-november-van-kracht",
+      "url": "https://ind.nl/nl/nieuws/eerste-kamer-stemt-in-met-afschaffen-rechterlijke-dwangsom",
       "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
       },
       "tier": "official",
-      "id": "rijksoverheid-2026-10-27-schiphol-lvb-1-november",
-      "checkedAt": "2026-10-27T20:56:24+01:00"
+      "id": "ind-2026-10-13-1f4d2683"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-10-08",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "تحديث مبالغ kinderopvangtoeslag ابتداءً من 1 يناير 2027",
+        "nl": "Kinderopvangtoeslag geïndexeerd per 1 januari 2027"
+      },
+      "summary": {
+        "ar": "نُشر في الجريدة الرسمية (Stb. 2026, 308) تعديل سنوي للحد الأقصى لأجر الساعة في رعاية الأطفال ولحدود الدخل وجدول الدخل، ويسري من 1 يناير 2027.",
+        "nl": "In het Staatsblad (Stb. 2026, 308) staat de jaarlijkse indexatie van de maximum uurprijzen, toetsingsinkomens en inkomenstabel van de kinderopvangtoeslag, per 1 januari 2027."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-10-08-56df3ad7"
+    },
+    {
+      "source": "DUO",
+      "publishedAt": "2026-10-07",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "تحديد نسب الفائدة على قروض الدراسة لعام 2027",
+        "nl": "Rentepercentages studiefinanciering 2027 vastgesteld"
+      },
+      "summary": {
+        "ar": "الفائدة في 2027: ‏2.70% لنظام SF35 و3.28% لنظام SF15. للطلاب الذين يتلقون تمويلاً دراسياً في 2027 تسري من 1 يناير 2027 لمدة سنة.",
+        "nl": "Rente 2027: 2,70% voor SF35 en 3,28% voor SF15. Voor studenten met studiefinanciering in 2027 geldt die vanaf 1 januari 2027, vast voor 1 jaar."
+      },
+      "url": "https://duo.nl/particulier/home/actueel/rentepercentages-voor-2027-vastgesteld.jsp",
+      "sourceName": {
+        "ar": "DUO",
+        "nl": "DUO"
+      },
+      "tier": "official",
+      "id": "duo-2026-10-07-320a07ef"
+    },
+    {
+      "source": "SZW",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "الطاقة والدخل",
+        "nl": "Energie"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "صندوق Noodfonds Energie يفتح لطلبات المساعدة في فواتير الطاقة",
+        "nl": "Noodfonds Energie gaat open"
+      },
+      "summary": {
+        "ar": "الطلبات من 4 يناير إلى 7 مايو 2027 لأسر بدخل محدود وتكاليف طاقة مرتفعة. يدفع الصندوق نصف التكاليف فوق الحد، من 120 إلى 1,800 يورو.",
+        "nl": "Aanvragen kan van 4 januari tot 7 mei 2027, voor huishoudens met een laag inkomen en hoge energiekosten. Het fonds betaalt de helft boven de grens, € 120 tot € 1.800."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-09-29-90e389aa"
+    },
+    {
+      "source": "NOS",
+      "publishedAt": "2026-09-29",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "الرعاية الصحية",
+        "nl": "Zorgkosten"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "ارتفاع التحمّل الذاتي (eigen risico) إلى 400 يورو في 2027",
+        "nl": "Eigen risico volgend jaar omhoog naar € 400"
+      },
+      "summary": {
+        "ar": "وفق NOS: يرتفع eigen risico في 2027 من 385 إلى 400 يورو بعد أن لم يعترض البرلمان. لم تُعلن أقساط التأمين لعام 2027 بعد؛ على شركات التأمين إعلانها قبل 12 نوفمبر.",
+        "nl": "Volgens NOS: het eigen risico gaat in 2027 van € 385 naar € 400; de Kamer hield het niet tegen. De zorgpremies 2027 zijn nog niet bekend; verzekeraars maken ze uiterlijk 12 november bekend."
+      },
+      "url": "https://nos.nl/artikel/2633016-eigen-risico-volgend-jaar-omhoog-kamer-stilzwijgend-akkoord",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-09-29-913e2af0"
+    },
+    {
+      "source": "BZK",
+      "publishedAt": "2026-09-21",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "السكن والإيجار",
+        "nl": "Wonen en huur"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "خطة لرفع إيجار السكن الاجتماعي لأصحاب الدخل المرتفع",
+        "nl": "Kabinet wil scheefhuur in sociale huur tegengaan"
+      },
+      "summary": {
+        "ar": "خطة حكومية: زيادة 50 أو 100 يورو شهرياً حسب الدخل لمستأجري السكن الاجتماعي ذوي الدخل المرتفع. مشروع القانون للتشاور مطلع 2027، ولم يُعتمد بعد.",
+        "nl": "Plan: corporaties verhogen de huur met € 50 of € 100 per maand, afhankelijk van inkomen, voor sociale huurders met een te hoog inkomen. Wetsvoorstel in consultatie begin 2027; nog niet aangenomen."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/21/kabinet-wil-scheefhuur-in-sociale-huur-tegengaan",
+      "sourceName": {
+        "ar": "وزارة الداخلية (BZK)",
+        "nl": "Ministerie van BZK"
+      },
+      "tier": "official",
+      "id": "bzk-2026-09-21-44b428a4"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-09-18",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "السكن والإيجار",
+        "nl": "Wonen en huur"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "تعديل قواعد تحديد الإيجار في القطاع الخاص من 1 يناير 2027",
+        "nl": "Besluit huurprijzen woonruimte gewijzigd per 1 januari 2027"
+      },
+      "summary": {
+        "ar": "نُشر في الجريدة الرسمية (Stb. 2026, 267): يمكن للمؤجّرين الخواص رفع تقييم بعض المساكن، مثل إلغاء خصم النقاط للبيوت بلا مساحة خارجية. يسري من 1 يناير 2027.",
+        "nl": "Staatsblad 2026, 267: particuliere verhuurders krijgen meer ruimte in het puntenstelsel, onder meer geen minpunten meer voor woningen zonder buitenruimte. Geldt vanaf 1 januari 2027."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-267.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-09-18-c579b2eb"
+    }
+  ],
+  "checkedSources": [
+    {
+      "source": "BZK",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "result": "new"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "new"
+    },
+    {
+      "source": "IND",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "new"
+    },
+    {
+      "source": "DUO",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://duo.nl/particulier/",
+      "result": "new"
+    },
+    {
+      "source": "UWV",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.uwv.nl/nl/actueel",
+      "result": "error"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "error"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "new"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "STAB",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "new"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "new"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.nu.nl/politiek",
+      "result": "error"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-28",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "error"
     }
   ]
 }
