@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T06:56:38+01:00",
-  "validUntil": "2026-10-29T18:56:38+01:00",
+  "updatedAt": "2026-10-29T08:56:30+01:00",
+  "validUntil": "2026-10-29T20:56:30+01:00",
   "items": [
     {
       "source": "SZW",
@@ -26,7 +26,8 @@
         "nl": "Ministerie van SZW"
       },
       "tier": "official",
-      "id": "szw-2026-10-28-ce56a4c0"
+      "id": "szw-2026-10-28-ce56a4c0",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "DUO",
@@ -51,7 +52,8 @@
         "nl": "DUO"
       },
       "tier": "official",
-      "id": "duo-2026-10-27-63c38e99"
+      "id": "duo-2026-10-27-63c38e99",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "BZK",
@@ -76,7 +78,8 @@
         "nl": "Ministerie van BZK"
       },
       "tier": "official",
-      "id": "bzk-2026-10-16-8b3edba4"
+      "id": "bzk-2026-10-16-8b3edba4",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "TOESLAGEN",
@@ -101,7 +104,8 @@
         "nl": "Dienst Toeslagen"
       },
       "tier": "official",
-      "id": "toeslagen-2026-10-15-4a21e9c2"
+      "id": "toeslagen-2026-10-15-4a21e9c2",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "TOESLAGEN",
@@ -126,7 +130,8 @@
         "nl": "Dienst Toeslagen"
       },
       "tier": "official",
-      "id": "toeslagen-2026-10-15-f11cac34"
+      "id": "toeslagen-2026-10-15-f11cac34",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "IND",
@@ -151,7 +156,8 @@
         "nl": "IND"
       },
       "tier": "official",
-      "id": "ind-2026-10-13-1f4d2683"
+      "id": "ind-2026-10-13-1f4d2683",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "STAB",
@@ -176,7 +182,8 @@
         "nl": "Officiële bekendmakingen"
       },
       "tier": "official",
-      "id": "stab-2026-10-08-56df3ad7"
+      "id": "stab-2026-10-08-56df3ad7",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "DUO",
@@ -201,7 +208,8 @@
         "nl": "DUO"
       },
       "tier": "official",
-      "id": "duo-2026-10-07-320a07ef"
+      "id": "duo-2026-10-07-320a07ef",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     },
     {
       "source": "SZW",
@@ -226,32 +234,8 @@
         "nl": "Ministerie van SZW"
       },
       "tier": "official",
-      "id": "szw-2026-09-29-90e389aa"
-    },
-    {
-      "source": "NOS",
-      "publishedAt": "2026-09-29",
-      "firstSeen": "2026-10-28",
-      "category": {
-        "ar": "الرعاية الصحية",
-        "nl": "Zorgkosten"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "ارتفاع التحمّل الذاتي (eigen risico) إلى 400 يورو في 2027",
-        "nl": "Eigen risico volgend jaar omhoog naar € 400"
-      },
-      "summary": {
-        "ar": "وفق NOS: يرتفع eigen risico في 2027 من 385 إلى 400 يورو بعد أن لم يعترض البرلمان. لم تُعلن أقساط التأمين لعام 2027 بعد؛ على شركات التأمين إعلانها قبل 12 نوفمبر.",
-        "nl": "Volgens NOS: het eigen risico gaat in 2027 van € 385 naar € 400; de Kamer hield het niet tegen. De zorgpremies 2027 zijn nog niet bekend; verzekeraars maken ze uiterlijk 12 november bekend."
-      },
-      "url": "https://nos.nl/artikel/2633016-eigen-risico-volgend-jaar-omhoog-kamer-stilzwijgend-akkoord",
-      "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
-      },
-      "tier": "media",
-      "id": "nos-2026-09-29-913e2af0"
+      "id": "szw-2026-09-29-90e389aa",
+      "checkedAt": "2026-10-29T08:56:30+01:00"
     }
   ],
   "checkedSources": [
