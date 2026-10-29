@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-27T09:10Z",
+ "checked_at": "2026-10-29T10:11Z",
  "external": {
-  "total": 528,
+  "total": 552,
   "broken": [],
   "blocked": [
    {
@@ -189,6 +189,46 @@
     ]
    },
    {
+    "url": "https://www.svb.nl/en/aio-supplement/living-on-your-own-or-with-1-or-more-other-adults/you-live-with-2-or-more-other-adults",
+    "code": 403,
+    "final": "https://www.svb.nl/en/aio-supplement/living-on-your-own-or-with-1-or-more-other-adults/you-live-with-2-or-more-other-adults",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/en/aow-pension/arranging-your-affairs/applying-for-an-aow-pension-if-you-live-in-the-netherlands",
+    "code": 403,
+    "final": "https://www.svb.nl/en/aow-pension/arranging-your-affairs/applying-for-an-aow-pension-if-you-live-in-the-netherlands",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/en/aow-pension/claiming-an-aow-pension-if-you-live-outside-the-netherlands/payment-of-aow-pension-if-you-live-outside-the-netherlands",
+    "code": 403,
+    "final": "https://www.svb.nl/en/aow-pension/claiming-an-aow-pension-if-you-live-outside-the-netherlands/payment-of-aow-pension-if-you-live-outside-the-netherlands",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/en/aow-pension/living-situations/which-aow-pension-rate-applies-in-your-situation",
+    "code": 403,
+    "final": "https://www.svb.nl/en/aow-pension/living-situations/which-aow-pension-rate-applies-in-your-situation",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
     "url": "https://www.svb.nl/nl/",
     "code": 403,
     "final": "https://www.svb.nl/nl/",
@@ -199,9 +239,39 @@
     ]
    },
    {
+    "url": "https://www.svb.nl/nl/aio/hoeveel-aio-aanvulling-krijgt-u/uw-inkomsten-en-vermogen",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/aio/hoeveel-aio-aanvulling-krijgt-u/uw-inkomsten-en-vermogen",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
     "url": "https://www.svb.nl/nl/aio/kijk-of-u-een-aio-aanvulling-krijgt",
     "code": 403,
     "final": "https://www.svb.nl/nl/aio/kijk-of-u-een-aio-aanvulling-krijgt",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/nl/aio/rechten-plichten/welke-wijzigingen-doorgeven",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/aio/rechten-plichten/welke-wijzigingen-doorgeven",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/nl/aio/verblijf-buiten-nederland",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/aio/verblijf-buiten-nederland",
     "soft404": false,
     "pages": [
      "articles/aow-aio-pension.html",
@@ -222,6 +292,16 @@
     "url": "https://www.svb.nl/nl/aow/bedragen-aow/aow-bedragen",
     "code": 403,
     "final": "https://www.svb.nl/nl/aow/bedragen-aow/aow-bedragen",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/nl/aow/wat-is-aow/hoe-gaat-de-opbouw-van-de-aow",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/aow/wat-is-aow/hoe-gaat-de-opbouw-van-de-aow",
     "soft404": false,
     "pages": [
      "articles/aow-aio-pension.html",
@@ -276,6 +356,26 @@
     "pages": [
      "articles/kinderbijslag-guide.html",
      "nl/articles/kinderbijslag-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/nl/vv/kosten-vrijwillig-verzekeren/wat-kost-vrijwillig-verzekeren-als-u-in-nederland-woont-of-werkt",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/vv/kosten-vrijwillig-verzekeren/wat-kost-vrijwillig-verzekeren-als-u-in-nederland-woont-of-werkt",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.svb.nl/nl/vv/nieuw-in-nederland/voorwaarden-inkoop-aow",
+    "code": 403,
+    "final": "https://www.svb.nl/nl/vv/nieuw-in-nederland/voorwaarden-inkoop-aow",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
     ]
    }
   ],
@@ -339,6 +439,46 @@
      "index.html",
      "nl/index.html"
     ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/auto/vraag-en-antwoord/auto-kopen",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/auto/auto-kopen",
+    "soft404": false,
+    "pages": [
+     "articles/liability-home-insurance.html",
+     "nl/articles/liability-home-insurance.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/onderwerpen/bijstand/vraag-en-antwoord/hoe-hoog-is-mijn-bijstandsuitkering",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/algemene-ouderdomswet-aow/hoe-hoog-is-mijn-aow",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/algemene-ouderdomswet-aow/hoe-hoog-is-mijn-aow",
+    "soft404": false,
+    "pages": [
+     "articles/aow-aio-pension.html",
+     "nl/articles/aow-aio-pension.html"
+    ]
+   },
+   {
+    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/hulp-bij-juridisch-probleem/rechtsbijstandverzekering",
+    "code": 200,
+    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/hulp-bij-juridisch-probleem/rechtsbijstandverzekering",
+    "soft404": false,
+    "pages": [
+     "articles/liability-home-insurance.html",
+     "nl/articles/liability-home-insurance.html"
+    ]
    }
   ]
  },
@@ -348,7 +488,7 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 163,
+  "sitemap_urls": 165,
   "google": {
    "status": "not_configured",
    "how": "Add repo secret GSC_SERVICE_ACCOUNT_JSON (service account added as user in Search Console)."
