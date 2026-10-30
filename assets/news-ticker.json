@@ -1,41 +1,40 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T21:01:51+01:00",
-  "validUntil": "2026-10-30T09:01:51+01:00",
+  "updatedAt": "2026-10-30T06:56:22+01:00",
+  "validUntil": "2026-10-30T18:56:22+01:00",
   "items": [
     {
-      "source": "BZK",
+      "source": "RTL",
       "publishedAt": "2026-10-29",
-      "firstSeen": "2026-10-29",
+      "firstSeen": "2026-10-30",
       "category": {
-        "ar": "السكن والإيجار السياحي",
-        "nl": "Wonen en toeristische verhuur"
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
       },
-      "status": "confirmed",
+      "status": "reported",
       "title": {
-        "ar": "قواعد جديدة للإيجار السياحي تبدأ في 1 نوفمبر",
-        "nl": "Nieuwe regels voor toeristische verhuur vanaf 1 november"
+        "ar": "وفق RTL: لا سقف 2.5% لفائدة قروض الدراسة",
+        "nl": "Volgens RTL: toch geen maximale rente van 2,5% op studieschuld"
       },
       "summary": {
-        "ar": "يدخل تعديل قانون الإيجار السياحي حيز التنفيذ في 1 نوفمبر 2026، ويمنح البلديات قدرة أفضل على مراقبة الإيجار قصير الأجل. ويمكن للبلديات التي لديها شرط تسجيل طلب بيانات من منصات التأجير للتحقق من الالتزام بالحدود المحلية. إذا كنت تؤجّر مسكناً للسياح، فتحقق من قواعد بلديتك.",
-        "nl": "Op 1 november 2026 treedt de wijziging van de Wet toeristische verhuur in werking. Gemeenten krijgen meer mogelijkheden om kortdurende verhuur te controleren. Gemeenten met een registratieplicht kunnen gegevens opvragen bij verhuurplatforms om lokale grenzen te handhaven. Verhuurt u een woning aan toeristen, controleer dan de regels van uw gemeente."
+        "ar": "وفق RTL Nieuws: أُلغي السقف الموعود 2.5% لفائدة قروض الدراسة، إذ تقول الوزيرة إن كلفته 160 مليون يورو سنوياً على الأقل. غير رسمي بعد: مقترح البرلمان لاستخدام المال للطلاب لم يُصوَّت عليه.",
+        "nl": "Volgens RTL Nieuws: de beloofde maximale rente van 2,5% op studieschuld komt er niet; dat kost minstens € 160 miljoen per jaar. Nog niet officieel: over een motie om het geld anders te besteden is nog niet gestemd."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/29/nieuwe-regels-voor-toeristische-verhuur-vanaf-1-november-2026",
+      "url": "https://www.rtl.nl/nieuws/politiek/artikel/5661845/toch-geen-maximale-rente-op-studieschuld-kamer-wil-geld-gebruiken",
       "sourceName": {
-        "ar": "الحكومة الهولندية",
-        "nl": "Rijksoverheid"
+        "ar": "RTL Nieuws",
+        "nl": "RTL Nieuws"
       },
-      "tier": "official",
-      "id": "rijksoverheid-2026-10-29-toeristische-verhuur",
-      "checkedAt": "2026-10-29T21:01:51+01:00"
+      "tier": "media",
+      "id": "rtl-2026-10-29-74307078"
     },
     {
       "source": "SZW",
       "publishedAt": "2026-10-29",
       "firstSeen": "2026-10-29",
       "category": {
-        "ar": "العمل وحقوق العاملين",
-        "nl": "Werk en arbeidsrechten"
+        "ar": "العمل",
+        "nl": "Werk"
       },
       "status": "proposed",
       "title": {
@@ -43,107 +42,290 @@
         "nl": "Voorstel: uitzendkracht maximaal drie jaar bij dezelfde inlener"
       },
       "summary": {
-        "ar": "يقترح مشروع قانون ألا يعمل العامل عبر وكالة التوظيف لدى الجهة المستفيدة نفسها لأكثر من 36 شهراً؛ وبعدها يجب عرض عقد مباشر إذا استمر العمل. بدأ التشاور العام في 29 أكتوبر ويستمر حتى 24 نوفمبر 2026. هذا مقترح وليس قانوناً نافذاً.",
-        "nl": "Een wetsvoorstel wil uitzendwerk bij dezelfde inlener beperken tot 36 maanden. Als het werk daarna doorgaat, moet de inlener een rechtstreeks contract aanbieden. De internetconsultatie loopt van 29 oktober tot en met 24 november 2026. Dit is een voorstel en nog geen geldende wet."
+        "ar": "مشروع قانون: لا يعمل العامل المؤقت لدى الجهة نفسها أكثر من 36 شهراً، وبعدها يجب عرض عقد مباشر. التشاور العام من 29 أكتوبر حتى 24 نوفمبر 2026. ليس قانوناً نافذاً بعد.",
+        "nl": "Wetsvoorstel: een uitzendkracht werkt maximaal 36 maanden bij dezelfde inlener; daarna moet een direct contract volgen. Internetconsultatie van 29 oktober tot 24 november 2026. Nog geen geldende wet."
       },
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/29/inzet-uitzendkrachten-wordt-begrensd-in-tijd",
       "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية والعمل (SZW)",
-        "nl": "Ministerie van Sociale Zaken en Werkgelegenheid (SZW)"
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
       },
       "tier": "official",
-      "id": "szw-2026-10-29-uitzendkracht-36-maanden",
-      "checkedAt": "2026-10-29T21:01:51+01:00"
+      "id": "szw-2026-10-29-7d4441d7"
     },
     {
-      "source": "KGG",
-      "publishedAt": "2026-10-29",
+      "source": "SZW",
+      "publishedAt": "2026-10-28",
       "firstSeen": "2026-10-29",
       "category": {
-        "ar": "الطاقة وتكاليف المعيشة",
-        "nl": "Energie en kosten van levensonderhoud"
+        "ar": "العمل والاندماج",
+        "nl": "Werk en integratie"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "توسيع مكاتب Meedoenbalie في مراكز اللجوء لمساعدة القادمين الجدد على العمل",
+        "nl": "Meer Meedoenbalies in azc's om nieuwkomers aan werk te helpen"
+      },
+      "summary": {
+        "ar": "تخصص SZW مبلغ 5 ملايين يورو إضافية سنويًا، ويُفتتح هذا العام 12 مكتبًا جديدًا (المجموع 50) للمعلومات عن العمل والتطوع ودروس اللغة. يحق لطالبي اللجوء العمل حاليًا بعد 6 أشهر.",
+        "nl": "SZW trekt € 5 miljoen per jaar extra uit; dit jaar openen 12 nieuwe Meedoenbalies (totaal 50) met info over werk, vrijwilligerswerk en taalles. Asielzoekers mogen nu na 6 maanden werken."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/28/kabinet-meer-meedoenbalies-in-azcs-om-nieuwkomers-aan-werk-te-helpen",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-10-28-ce56a4c0"
+    },
+    {
+      "source": "DUO",
+      "publishedAt": "2026-10-27",
+      "firstSeen": "2026-10-27",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
       },
       "status": "confirmed",
       "title": {
-        "ar": "هولندا تكمل الإفراج عن الدفعة الأخيرة من احتياطي النفط الاستراتيجي",
-        "nl": "Nederland geeft laatste deel strategische olievoorraad vrij"
+        "ar": "موافقة مجلس الشيوخ على تعويض إضافي لطلاب نظام القروض",
+        "nl": "Leenstelselstudenten krijgen aanvullende tegemoetkoming"
       },
       "summary": {
-        "ar": "أُفرج في 29 أكتوبر عن نحو 700 ألف برميل من المنتجات النفطية، نصفها تقريباً ديزل، ليصل إجمالي ما أُتيح للسوق إلى 5.36 مليون برميل ضمن تحرك دولي لتخفيف اضطراب الإمدادات. لا يضمن ذلك انخفاضاً فورياً في أسعار الوقود.",
-        "nl": "Op 29 oktober is ongeveer 700.000 vaten aan olieproducten vrijgegeven, waarvan circa de helft diesel. Daarmee komt het totaal op 5,36 miljoen vaten binnen een internationale actie om verstoringen in het aanbod te dempen. Dit garandeert geen onmiddellijke daling van de brandstofprijzen."
+        "ar": "أقرّ مجلس الشيوخ (Eerste Kamer) مبلغاً إضافياً قدره 44.50 يورو شهرياً لطلاب hbo/wo في نظام القروض دون basisbeurs. يبدأ الصرف المتوقع من أبريل 2027، وغالباً تلقائياً.",
+        "nl": "De Eerste Kamer stemde in met € 44,50 per maand extra voor leenstelselstudenten (hbo/wo) zonder basisbeurs. Uitbetaling naar verwachting vanaf april 2027, meestal automatisch."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/29/nederland-voldoet-aan-iea-actie-vrijgave-deel-olievoorraad",
+      "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
       "sourceName": {
-        "ar": "وزارة المناخ والنمو الأخضر",
-        "nl": "Ministerie van Klimaat en Groene Groei"
+        "ar": "DUO",
+        "nl": "DUO"
       },
       "tier": "official",
-      "id": "kgg-2026-10-29-strategische-olievoorraad",
-      "checkedAt": "2026-10-29T21:01:51+01:00"
+      "id": "duo-2026-10-27-63c38e99"
     },
     {
-      "source": "VWS",
-      "publishedAt": "2026-10-29",
+      "source": "BZK",
+      "publishedAt": "2026-10-16",
       "firstSeen": "2026-10-29",
       "category": {
-        "ar": "الصحة والتأمين",
-        "nl": "Zorg en verzekering"
+        "ar": "السكن",
+        "nl": "Wonen"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "اتفاقات لتسريع توفير السكن للمحتاجين بشكل عاجل ومنهم حاملو الإقامة",
+        "nl": "Afspraken om huisvesting voor mensen in de knel te versnellen"
+      },
+      "summary": {
+        "ar": "تعتمد الحكومة والبلديات وشركات الإسكان على مساكن مرنة ومبانٍ شاغرة محوّلة وسكن مشترك. والهدف إنهاء انتظار حاملي الإقامة (statushouders) في مراكز اللجوء خلال سنة ونصف.",
+        "nl": "Rijk, gemeenten en corporaties zetten in op flexwoningen, omgebouwde leegstaande panden en gedeelde woonvormen. De wachtrij van statushouders in azc's moet binnen 1,5 jaar weg zijn."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
+      "sourceName": {
+        "ar": "وزارة الداخلية (BZK)",
+        "nl": "Ministerie van BZK"
+      },
+      "tier": "official",
+      "id": "bzk-2026-10-16-8b3edba4"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-30",
+      "category": {
+        "ar": "اللجوء والإقامة",
+        "nl": "Asiel en verblijf"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "نشر قانون العودة واحتجاز الأجانب في الجريدة الرسمية",
+        "nl": "Wet terugkeer en vreemdelingenbewaring gepubliceerd in Staatsblad"
+      },
+      "summary": {
+        "ar": "ينص القانون على أن احتجاز الأجانب ملاذ أخير بحد أقصى ستة أشهر، يمكن تمديده في حالات محددة 12 شهراً كحد أقصى. يبدأ سريان معظمه في موعد يحدده مرسوم ملكي.",
+        "nl": "Vreemdelingenbewaring wordt een uiterst middel met een wettelijk maximum van zes maanden, in bepaalde gevallen te verlengen met ten hoogste twaalf maanden. Inwerkingtreding grotendeels bij koninklijk besluit."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-314.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-10-15-9ab836f6"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "حدود ثروة أقل لـ zorgtoeslag وkindgebonden budget في 2027",
+        "nl": "Vanaf 2027 lagere vermogensgrenzen voor zorgtoeslag en kindgebonden budget"
+      },
+      "summary": {
+        "ar": "حد الثروة في 2027: ‏158,748 يورو مع شريك و119,122 يورو بدونه. إذا تجاوزت ثروتك الحد فأبلغ عبر Mijn toeslagen قبل 8 ديسمبر 2026 لتجنّب إعادة البدل.",
+        "nl": "Vermogensgrens 2027: € 158.748 met en € 119.122 zonder toeslagpartner. Te hoog vermogen? Geef dit uiterlijk 8 december 2026 door in Mijn toeslagen om terugbetalen te voorkomen."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-4a21e9c2"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "قواعد أبسط لشريك البدلات (toeslagpartner) ابتداءً من 2027",
+        "nl": "Regels voor toeslagpartners eenvoudiger vanaf 2027"
+      },
+      "summary": {
+        "ar": "من 1 يناير 2027 يبقى المتزوجون والشركاء المسجّلون شركاء بدلات؛ أما المساكنون فقط عند وجود عقد مساكنة موثّق أو طفل مشترك أو بيت مملوك مشترك مثلاً. رسالة للمعنيين نهاية نوفمبر.",
+        "nl": "Vanaf 1 januari 2027 blijven gehuwden en geregistreerd partners toeslagpartner; samenwoners alleen bij bijvoorbeeld een notarieel samenlevingscontract, gezamenlijk kind of eigen huis. Brief eind november."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-f11cac34"
+    },
+    {
+      "source": "IND",
+      "publishedAt": "2026-10-13",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "الإقامة",
+        "nl": "Verblijf"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "مجلس الشيوخ يوافق على إلغاء الغرامة القضائية (dwangsom) على IND",
+        "nl": "Eerste Kamer stemt in met afschaffen rechterlijke dwangsom"
+      },
+      "summary": {
+        "ar": "بعد سريان القانون لن تدفع IND تعويضاً للمتقدّم إذا تأخّر قرار طلب الإقامة عن المهلة القانونية. لم يُحدَّد بعد موعد السريان.",
+        "nl": "Na inwerkingtreding betaalt de IND geen dwangsom meer als een besluit op een verblijfsaanvraag te laat is. De datum van inwerkingtreding is nog niet bekend."
+      },
+      "url": "https://ind.nl/nl/nieuws/eerste-kamer-stemt-in-met-afschaffen-rechterlijke-dwangsom",
+      "sourceName": {
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
+      },
+      "tier": "official",
+      "id": "ind-2026-10-13-1f4d2683"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-10-08",
+      "firstSeen": "2026-10-28",
+      "category": {
+        "ar": "البدلات ورعاية الأطفال",
+        "nl": "Kinderopvangtoeslag"
       },
       "status": "confirmed",
       "title": {
-        "ar": "تحديث لوحة متابعة مراحل تعويض الأدوية",
-        "nl": "Vernieuwd dashboard toont stappen in vergoeding van geneesmiddelen"
+        "ar": "رفع الحد الأقصى لأسعار الساعة في بدل رعاية الأطفال من 1 يناير 2027",
+        "nl": "Maximum uurprijzen kinderopvangtoeslag hoger vanaf 1 januari 2027"
       },
       "summary": {
-        "ar": "أُحدّثت لوحة الحكومة لمتابعة إجراءات تعويض الأدوية الجديدة. تتيح البحث حسب الشركة المصنّعة أو الحالة أو وضع التعويض، ومتابعة مراحل التقييم والتفاوض على السعر. التحديث أداة معلومات ولا يعني أن دواءً جديداً أصبح مشمولاً تلقائياً بالتأمين الأساسي.",
-        "nl": "Het overheidsdashboard voor de vergoeding van nieuwe geneesmiddelen is vernieuwd. U kunt zoeken op fabrikant, aandoening en vergoedingsstatus en de stappen van beoordeling en prijsonderhandeling volgen. De update is informatief en betekent niet dat een geneesmiddel automatisch uit de basisverzekering wordt vergoed."
+        "ar": "ترتفع أسعار الساعة القصوى لـ kinderopvangtoeslag من 11.23 إلى 11.60 يورو، ومن 9.98 إلى 10.31، ومن 8.49 إلى 8.77 يورو، ابتداءً من 1 يناير 2027.",
+        "nl": "De maximum uurprijzen voor de kinderopvangtoeslag stijgen per 1 januari 2027 van € 11,23 naar € 11,60, van € 9,98 naar € 10,31 en van € 8,49 naar € 8,77."
       },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/29/doorlooptijden-geneesmiddelen-vindbaar-in-vernieuwd-dashboard",
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
       "sourceName": {
-        "ar": "وزارة الصحة والرعاية والرياضة (VWS)",
-        "nl": "Ministerie van Volksgezondheid, Welzijn en Sport (VWS)"
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
       },
       "tier": "official",
-      "id": "vws-2026-10-29-geneesmiddelen-dashboard",
-      "checkedAt": "2026-10-29T21:01:51+01:00"
+      "id": "stab-2026-10-08-56df3ad7"
     }
   ],
   "checkedSources": [
     {
-      "source": "Rijksoverheid",
-      "checkedAt": "2026-10-29",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws",
-      "result": "new"
+      "source": "BZK",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "result": "no-change"
+    },
+    {
+      "source": "SZW",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-10-29",
+      "checkedAt": "2026-10-30",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-10-29",
-      "listingUrl": "https://www.duo.nl/particulier/",
-      "result": "no-change"
-    },
-    {
-      "source": "SVB",
-      "checkedAt": "2026-10-29",
-      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "no-change"
-    },
-    {
-      "source": "NS",
-      "checkedAt": "2026-10-29",
-      "listingUrl": "https://nieuws.ns.nl/",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-10-29",
+      "checkedAt": "2026-10-30",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
+    },
+    {
+      "source": "SVB",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "TOESLAGEN",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
+      "result": "no-change"
+    },
+    {
+      "source": "TK",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
+      "result": "no-change"
+    },
+    {
+      "source": "STAB",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "new"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "no-change"
+    },
+    {
+      "source": "NU",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.nu.nl/rss/Politiek",
+      "result": "no-change"
+    },
+    {
+      "source": "RTL",
+      "checkedAt": "2026-10-30",
+      "listingUrl": "https://www.rtl.nl/nieuws/politiek",
+      "result": "new"
     }
   ]
 }
