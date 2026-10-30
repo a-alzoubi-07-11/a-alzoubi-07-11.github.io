@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-10-29T10:11Z",
+ "checked_at": "2026-10-30T10:14Z",
  "external": {
-  "total": 552,
+  "total": 551,
   "broken": [],
   "blocked": [
    {
@@ -441,43 +441,13 @@
     ]
    },
    {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/auto/vraag-en-antwoord/auto-kopen",
+    "url": "https://www.vluchtelingenwerk.nl/wat-wij-doen/juridische-begeleiding",
     "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/auto/auto-kopen",
+    "final": "https://www.vluchtelingenwerk.nl/samenwerken-met-ons/voor-gemeenten/juridische-begeleiding",
     "soft404": false,
     "pages": [
-     "articles/liability-home-insurance.html",
-     "nl/articles/liability-home-insurance.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/onderwerpen/bijstand/vraag-en-antwoord/hoe-hoog-is-mijn-bijstandsuitkering",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
-    "soft404": false,
-    "pages": [
-     "articles/aow-aio-pension.html",
-     "nl/articles/aow-aio-pension.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/algemene-ouderdomswet-aow/hoe-hoog-is-mijn-aow",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/algemene-ouderdomswet-aow/hoe-hoog-is-mijn-aow",
-    "soft404": false,
-    "pages": [
-     "articles/aow-aio-pension.html",
-     "nl/articles/aow-aio-pension.html"
-    ]
-   },
-   {
-    "url": "https://www.rijksoverheid.nl/vraag-en-antwoord/hulp-bij-juridisch-probleem/rechtsbijstandverzekering",
-    "code": 200,
-    "final": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/hulp-bij-juridisch-probleem/rechtsbijstandverzekering",
-    "soft404": false,
-    "pages": [
-     "articles/liability-home-insurance.html",
-     "nl/articles/liability-home-insurance.html"
+     "articles/asylum-residence-hub.html",
+     "nl/articles/asylum-residence-hub.html"
     ]
    }
   ]
@@ -490,8 +460,191 @@
  "index": {
   "sitemap_urls": 165,
   "google": {
-   "status": "not_configured",
-   "how": "Add repo secret GSC_SERVICE_ACCOUNT_JSON (service account added as user in Search Console)."
+   "status": "ok",
+   "checked": 165,
+   "indexed": 129,
+   "not_indexed": [
+    {
+     "url": "https://gidsnederland.nl/articles/dutch-naturalisation-guide.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-06T08:03:09Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/temporary-agency-work-rights.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/cv.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/zorgtoeslag-guide.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/categories/work.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/categories/money.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-18T17:25:52Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/adult-learning-finance.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-07T08:32:16Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/social-housing-sociale-huurwoning.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/foreign-driving-license-exchange.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:46:03Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/traffic-fines-cjib.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:48:02Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/bezwaar-objection-letter.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:46:03Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/legal-aid-lawyer-toevoeging.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:46:03Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/scams-phishing-netherlands.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:45:35Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/pregnancy-newborn-care.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:44:44Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/asylum-two-status-system-2026.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-08T11:59:49Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/dutch-government-terms-glossary.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-08T11:59:05Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-08T11:57:34Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:39:19Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-10-12T07:38:35Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/permanent-residence-asylum-route.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/permanent-residence-regular-route.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/calculators/permanent-residence-check.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/liability-home-insurance.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    }
+   ]
   },
   "bing": {
    "status": "not_configured",
