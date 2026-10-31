@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T06:56:22+01:00",
-  "validUntil": "2026-10-30T18:56:22+01:00",
+  "updatedAt": "2026-10-31T06:51:01+01:00",
+  "validUntil": "2026-10-31T18:51:01+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-10-30",
+      "firstSeen": "2026-10-31",
+      "category": {
+        "ar": "الأطفال والبدلات",
+        "nl": "Kinderen en toeslagen"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "خطة حكومية لإلغاء kinderopvangtoeslag في 2029 ودمج بدلات الأطفال",
+        "nl": "Kabinet wil kinderopvangtoeslag in 2029 afschaffen en regelingen voor kinderen samenvoegen"
+      },
+      "summary": {
+        "ar": "تعمل الوزيرة Aartsen على نظام تمويل جديد يجعل رعاية الأطفال أرخص سنويًا للوالدين العاملين، بهدف إلغاء kinderopvangtoeslag كليًا في 2029. لاحقًا يُدمج kinderbijslag وkindgebonden budget في نظام واحد. خطة لم تُقر بعد.",
+        "nl": "Minister Aartsen werkt aan nieuwe financiering: opvang wordt jaarlijks goedkoper voor werkende ouders, zodat de kinderopvangtoeslag in 2029 verdwijnt. Later gaan kinderbijslag en kindgebonden budget samen. Nog een plan."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/30/kabinet-wil-vliegende-start-voor-jonge-kinderen",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-10-30-b27896d3"
+    },
     {
       "source": "RTL",
       "publishedAt": "2026-10-29",
@@ -52,31 +77,6 @@
       },
       "tier": "official",
       "id": "szw-2026-10-29-7d4441d7"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-10-28",
-      "firstSeen": "2026-10-29",
-      "category": {
-        "ar": "العمل والاندماج",
-        "nl": "Werk en integratie"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "توسيع مكاتب Meedoenbalie في مراكز اللجوء لمساعدة القادمين الجدد على العمل",
-        "nl": "Meer Meedoenbalies in azc's om nieuwkomers aan werk te helpen"
-      },
-      "summary": {
-        "ar": "تخصص SZW مبلغ 5 ملايين يورو إضافية سنويًا، ويُفتتح هذا العام 12 مكتبًا جديدًا (المجموع 50) للمعلومات عن العمل والتطوع ودروس اللغة. يحق لطالبي اللجوء العمل حاليًا بعد 6 أشهر.",
-        "nl": "SZW trekt € 5 miljoen per jaar extra uit; dit jaar openen 12 nieuwe Meedoenbalies (totaal 50) met info over werk, vrijwilligerswerk en taalles. Asielzoekers mogen nu na 6 maanden werken."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/28/kabinet-meer-meedoenbalies-in-azcs-om-nieuwkomers-aan-werk-te-helpen",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-10-28-ce56a4c0"
     },
     {
       "source": "DUO",
@@ -257,75 +257,75 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-10-30",
+      "checkedAt": "2026-10-31",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "new"
+      "result": "no-change"
     }
   ]
 }
