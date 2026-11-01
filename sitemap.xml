@@ -1074,5 +1074,13 @@
   <url>
     <loc>https://gidsnederland.nl/beroep/</loc>
     <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/beroep/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/beroep/"/>
+  </url>
+  <url>
+    <loc>https://gidsnederland.nl/nl/beroep/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/beroep/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/beroep/"/>
   </url>
 </urlset>

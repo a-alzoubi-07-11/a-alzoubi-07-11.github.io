@@ -1,0 +1,71 @@
+/* Beroep tool — scoped under .bt so the site header/footer keep their own look.
+   Layout: one column of panels (start here → your details → letter → send → other tools). */
+@font-face{font-family:"Cairo";src:url("/beroep/fonts/Cairo-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Cairo";src:url("/beroep/fonts/Cairo-Bold.ttf") format("truetype");font-weight:600 800;font-display:swap}
+.bt{
+  --bg:#eef1f6; --surface:#ffffff; --paper:#ffffff; --ink:#17202b; --muted:#5b6676; --line:#d8dee8;
+  --accent:#1f4fa3; --accent-ink:#ffffff; --go:#1d7a4c; --warn:#9a3b12; --warn-bg:#fdf0e8;
+  --hl:#fff1b8; --hl-ink:#5a4500; --missing:#ffe0dc; --missing-ink:#9b1c12;
+  --ui:"Cairo","Segoe UI",Tahoma,system-ui,sans-serif; --letter:Georgia,"Times New Roman",serif;
+  max-width:760px;margin:0 auto;padding-block:8px 32px;display:flex;flex-direction:column;gap:18px;
+  font-family:var(--ui);color:var(--ink);font-size:16px;line-height:1.7
+}
+.bt *{box-sizing:border-box}
+.bt [hidden]{display:none!important}
+.bt-head{display:flex;flex-direction:column;gap:8px}
+.bt h1{font-size:clamp(1.45rem,4.5vw,2rem);line-height:1.35;margin:0;text-wrap:balance;font-family:var(--ui)}
+.bt h2{font-size:1.15rem;margin:0;font-family:var(--ui)}
+.bt h3{font-size:1rem;margin:4px 0 0;font-family:var(--ui)}
+.bt p{margin:0}
+.bt .lead{color:var(--muted)}
+.bt .ltr{direction:ltr;unicode-bidi:isolate}
+.bt .ex{align-self:flex-start;font-size:.82rem;font-weight:600;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 10px}
+.bt .panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.bt .quick{border:2px solid var(--go)}
+.bt .steps{display:flex;gap:8px 14px;flex-wrap:wrap}
+.bt .step{display:flex;align-items:center;gap:8px;font-size:.92rem;color:var(--muted)}
+.bt .step b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:.8rem;flex:none}
+.bt .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px}
+@media (max-width:560px){.bt .grid{grid-template-columns:1fr}}
+.bt .f{display:flex;flex-direction:column;gap:4px;min-width:0}
+.bt .f.full{grid-column:1/-1}
+.bt label,.bt .lbl{font-weight:700;font-size:.95rem}
+.bt .hint{font-size:.8rem;color:var(--muted);line-height:1.5;font-weight:400}
+.bt input:not([type=checkbox]){font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;direction:ltr;text-align:left;margin:0}
+.bt input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.bt .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.bt .row.between{justify-content:space-between}
+.bt .gbtn{font:inherit;font-weight:700;font-size:.95rem;border:0;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;line-height:1.3;touch-action:manipulation}
+.bt .gbtn:focus-visible,.bt .tabs button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.bt .gprimary{background:var(--go);color:#fff}
+.bt .accent{background:var(--accent);color:var(--accent-ink)}
+.bt .ghost{background:var(--surface);color:var(--ink);border:1.5px solid var(--line)}
+.bt .danger{background:var(--surface);color:var(--warn);border:1.5px solid color-mix(in srgb,var(--warn) 45%,transparent)}
+.bt .qbtns{display:flex;flex-direction:column;gap:10px}
+.bt .qbtns .gbtn{justify-content:center;text-align:center}
+.bt .big{font-size:1.1rem;padding:14px 20px}
+.bt .docs{display:flex;flex-direction:column;gap:8px}
+.bt .doc{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;font-weight:400}
+.bt .doc input{width:22px;height:22px;flex:none;margin-top:3px;accent-color:var(--go)}
+.bt .doc small{display:block;color:var(--muted);font-size:.82rem;line-height:1.5}
+.bt .doc:has(input:checked){border-color:var(--go);background:color-mix(in srgb,var(--go) 8%,transparent)}
+.bt .tabs{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px}
+.bt .tabs button{font:inherit;font-weight:700;font-size:.95rem;border:0;border-radius:999px;cursor:pointer;background:transparent;color:var(--muted);padding:8px 16px}
+.bt .tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.bt .paper{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 22px 26px;direction:ltr;text-align:left;
+  font-family:var(--letter);font-size:1rem;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere;box-shadow:0 1px 0 var(--line),0 10px 24px -18px rgba(0,0,0,.35)}
+.bt .subj{direction:ltr;text-align:left;font-family:var(--letter);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-wrap:anywhere}
+.bt mark{background:var(--hl);color:var(--hl-ink);border-radius:3px;padding:0 2px}
+.bt mark.miss{background:var(--missing);color:var(--missing-ink)}
+.bt .note{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:12px 14px;font-size:.92rem}
+.bt .where{display:flex;flex-direction:column;gap:6px;font-size:.92rem;color:var(--muted);margin:0;padding-inline-start:1.2em}
+.bt .more{display:flex;flex-wrap:wrap;gap:8px}
+.bt .more a{display:inline-flex;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;text-decoration:none;color:var(--accent);font-weight:600;font-size:.92rem;background:var(--surface)}
+.bt .more a:hover{border-color:var(--accent)}
+.bt .social{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.bt .social a{font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;color:#fff;font-size:.9rem}
+.bt .yt{background:#c4302b}.bt .tt{background:#111}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#17202b;color:#fff;
+  padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;z-index:50;font-family:"Cairo",system-ui,sans-serif}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
