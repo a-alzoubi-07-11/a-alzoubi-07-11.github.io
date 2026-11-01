@@ -50,6 +50,7 @@ T = {
             "woonplaats": ("مدينة التوقيع", ""),
             "daanvraag": ("تاريخ تقديم طلبك للـ <span class='ltr'>IND</span>", "في أول سطر من رسالة القرار"),
             "dbesluit": ("تاريخ قرار الرفض", "التاريخ المكتوب على الرسالة"),
+            "dvandaag": ("تاريخ إرسال الطعن للمحكمة", "يُكتب تاريخ اليوم تلقائياً — غيّره إذا سترسل في يوم آخر"),
             "dvergunning": ("من متى عندك إقامة اللجوء المؤقتة؟", "يظهر في فقرة الوقائع"),
         },
         "letter_h": "② رسالة الطعن الكاملة بالهولندي", "letter_hint": "فيها كل أسباب الطعن. البيانات الصفراء من الخانات التي كتبتها، والحمراء ناقصة. يُفضّل أن يراجعها محامٍ قبل الإرسال.",
@@ -105,6 +106,7 @@ T = {
             "woonplaats": ("Plaats van ondertekening", ""),
             "daanvraag": ("Datum van je aanvraag bij de IND", "Staat in de eerste zin van het besluit"),
             "dbesluit": ("Datum van het besluit", "De datum op de brief"),
+            "dvandaag": ("Datum van verzenden naar de rechtbank", "Standaard vandaag — pas aan als je op een andere dag verstuurt"),
             "dvergunning": ("Sinds wanneer heb je asiel bepaalde tijd?", "Komt in de alinea Feiten"),
         },
         "letter_h": "② Je volledige beroepschrift", "letter_hint": "Met alle gronden. Geel komt uit je ingevulde velden, rood ontbreekt nog. Laat de brief bij voorkeur nakijken door een advocaat.",
@@ -183,7 +185,7 @@ def page(L):
 <link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
-<script src="/beroep/beroep.js?v=4" defer></script>
+<script src="/beroep/beroep.js?v=5" defer></script>
 <script src="/assets/site-chrome.js?v=3" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>

@@ -1,7 +1,7 @@
 /* Beroep tool: fills a Dutch appeal letter from the form. Nothing is stored or sent anywhere. */
 (function () {
   const TXT = window.BEROEP_TXT || {};
-  const F = ["naam", "vnr", "kenmerk", "adres", "woonplaats", "daanvraag", "dbesluit", "dvergunning"];
+  const F = ["naam", "vnr", "kenmerk", "adres", "woonplaats", "daanvraag", "dbesluit", "dvandaag", "dvergunning"];
   const $ = (id) => document.getElementById(id);
   const EXAMPLE = { naam: "Mohammed Voorbeeld", vnr: "0000000000", kenmerk: "0000000000", rbnr: "", adres: "Voorbeeldstraat 1, 1234 AB Enschede",
     tel: "06-00000000", woonplaats: "Enschede", daanvraag: "2025-11-10", dbesluit: "2026-10-20", dvandaag: "", dvergunning: "2021-04-15" };
@@ -10,7 +10,7 @@
   const today = () => { const d = new Date(); const p = (n) => String(n).padStart(2, "0"); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`; };
   const fmt = (v) => { if (!v) return ""; const [y, m, d] = v.split("-"); return `${d}-${m}-${y}`; };
   const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
-  const vals = () => { const o = {}; F.forEach((k) => (o[k] = $(k).value.trim())); o.dvandaag = today(); return o; };
+  const vals = () => { const o = {}; F.forEach((k) => (o[k] = $(k).value.trim())); return o; };
   const v = (o, k, label, isDate) => ({ t: isDate ? fmt(o[k]) : o[k], label });
 
   function build(o) {
@@ -18,7 +18,7 @@
       naam: v(o, "naam", "[naam]"), vnr: v(o, "vnr", "[V-nummer]"), kenmerk: v(o, "kenmerk", "[zaaknummer IND]"),
       adres: v(o, "adres", "[adres]"), plaats: v(o, "woonplaats", "[plaats]"),
       aanvraag: v(o, "daanvraag", "[datum aanvraag]", true), besluit: v(o, "dbesluit", "[datum besluit]", true),
-      vandaag: v(o, "dvandaag", "[datum]", true), vergunning: v(o, "dvergunning", "[datum]", true),
+      vandaag: v(o, "dvandaag", "[datum verzenden]", true), vergunning: v(o, "dvergunning", "[datum]", true),
     };
     const ref = ["V-nummer {vnr}", "zaaknummer IND {kenmerk}"];
     const subj = `Beroep – afwijzing verblijfsvergunning asiel voor onbepaalde tijd – ${ref.join(" – ")}`;
@@ -94,7 +94,7 @@ Met vriendelijke groet,
     $("missing-hint").textContent = miss ? (TXT.missing || "").replace("{n}", miss) : TXT.complete || "";
   }
 
-  function fill(o) { F.forEach((k) => ($(k).value = o[k] || "")); }
+  function fill(o) { F.forEach((k) => ($(k).value = o[k] || "")); if (!$("dvandaag").value) $("dvandaag").value = today(); }
   function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("show"), 1800); }
   async function copy(text, okMsg, el) {
     try { await navigator.clipboard.writeText(text); toast(okMsg); }
