@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T06:51:01+01:00",
-  "validUntil": "2026-10-31T18:51:01+01:00",
+  "updatedAt": "2026-11-01T06:51:28+01:00",
+  "validUntil": "2026-11-01T18:51:28+01:00",
   "items": [
     {
       "source": "SZW",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-10-31",
+      "checkedAt": "2026-11-01",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
