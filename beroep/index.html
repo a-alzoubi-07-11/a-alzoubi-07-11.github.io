@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="/beroep/beroep.css?v=3">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ", "url": "https://gidsnederland.nl/beroep/", "inLanguage": "ar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "أداة مجانية: اكتب بياناتك وانسخ رسالة الطعن الهولندية على رفض asiel onbepaalde tijd وأرسلها للمحكمة أونلاين. لا يتم حفظ أي بيانات.", "author": {"@type": "Person", "name": "Ahmad Alzoubi", "url": "https://gidsnederland.nl/about.html"}}</script>
 <script>window.BEROEP_TXT={"missing": "باقي {n} خانة فارغة (باللون الأحمر) — املأها قبل النسخ.", "complete": "كل الخانات معبّأة ✓", "kort": "المختصرة تكفي لحفظ حقك في المهلة. المحكمة ستطلب منك الأسباب الكاملة لاحقاً.", "lang": "الكاملة فيها كل الأسباب. يُفضّل أن يراجعها محامٍ قبل الإرسال.", "copied_subj": "تم نسخ الموضوع ✓", "copied_body": "تم نسخ الرسالة ✓", "selected": "تم تحديد النص — اضغط نسخ من القائمة", "cleared": "تم مسح البيانات"};</script>
-<script src="/beroep/beroep.js?v=2" defer></script>
+<script src="/beroep/beroep.js?v=3" defer></script>
 <script src="/assets/site-chrome.js?v=3" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="/"><span>دليل هولندا بالعربية</span></a><a class="lang-button" href="https://gidsnederland.nl/nl/beroep/" hreflang="nl">Nederlands</a></div><nav class="nav" aria-label="التنقل / Navigatie"><a href="/"><span>الرئيسية</span></a><a href="/articles.html"><span>المقالات</span></a><a href="/tools.html"><span>الأدوات</span></a><a href="/about.html"><span>من نحن</span></a><a href="/cv.html"><span>أنشئ سيرتك الذاتية</span></a></nav></div></header>
@@ -26,7 +26,7 @@
     <span class="ex">أداة مجانية • لا نحفظ أي بيانات — كل شيء يحدث داخل هاتفك</span>
     <h1>رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ</h1>
     <p class="lead">اكتب بياناتك مرة واحدة، فتتعبّأ الرسالة الهولندية تلقائياً. بعدها اضغط "نسخ" وأرسلها للمحكمة أونلاين.</p>
-    <div class="steps"><span class="step"><b>1</b>املأ بياناتك (الخانات فارغة)</span><span class="step"><b>2</b>اختر مختصرة أو كاملة</span><span class="step"><b>3</b>انسخ وأرسل</span></div>
+    <div class="steps"><span class="step"><b>1</b>املأ بياناتك (الخانات فارغة)</span><span class="step"><b>2</b>راجع رسالتك</span><span class="step"><b>3</b>انسخ وأرسل</span></div>
   </div>
 
   <section class="panel quick" aria-labelledby="h-quick">
@@ -53,19 +53,13 @@
     </div>
     <p id="example-flag" class="note" hidden>هذه بيانات <b>وهمية للمثال فقط</b>. اضغط "مسح كل البيانات" واكتب بياناتك.</p>
     <form class="grid" id="form" autocomplete="on">
-      <div class="f"><label for="naam">الاسم الكامل</label><input id="naam" autocomplete="name" placeholder="Mohammed Voorbeeld"><span class="hint">كما في بطاقة الإقامة</span></div><div class="f"><label for="vnr">رقم V (V-nummer)</label><input id="vnr" inputmode="numeric" placeholder="1234567890"><span class="hint">10 أرقام — على بطاقة الإقامة</span></div><div class="f"><label for="kenmerk">رقم ملف الـ IND (zaaknummer / kenmerk)</label><input id="kenmerk"  placeholder="1234567890"><span class="hint">في أعلى رسالة القرار عند Ons kenmerk أو Zaaknummer</span></div><div class="f"><label for="rbnr">رقم قضية المحكمة (zaaknummer rechtbank)</label><input id="rbnr"  placeholder="NL26.12345"><span class="hint">اختياري — فقط إذا أعطتك المحكمة رقماً يبدأ بـ NL</span></div><div class="f full"><label for="adres">العنوان</label><input id="adres" autocomplete="street-address" placeholder="Voorbeeldstraat 1, 1234 AB Enschede"></div><div class="f"><label for="tel">رقم الهاتف</label><input id="tel" autocomplete="tel" inputmode="tel" placeholder="06-12345678"><span class="hint">اختياري</span></div><div class="f"><label for="woonplaats">مدينة التوقيع</label><input id="woonplaats" autocomplete="address-level2" placeholder="Enschede"></div><div class="f"><label for="daanvraag">تاريخ تقديم طلبك للـ IND</label><input id="daanvraag" type="date"><span class="hint">في أول سطر من رسالة القرار</span></div><div class="f"><label for="dbesluit">تاريخ قرار الرفض</label><input id="dbesluit" type="date"><span class="hint">التاريخ المكتوب على الرسالة</span></div><div class="f"><label for="dvandaag">تاريخ اليوم</label><input id="dvandaag" type="date"></div><div class="f"><label for="dvergunning">من متى عندك إقامة اللجوء المؤقتة؟</label><input id="dvergunning" type="date"><span class="hint">للرسالة الكاملة فقط</span></div>
+      <div class="f"><label for="naam">الاسم الكامل</label><input id="naam" autocomplete="name" placeholder="Mohammed Voorbeeld"><span class="hint">كما في بطاقة الإقامة</span></div><div class="f"><label for="vnr">رقم V (V-nummer)</label><input id="vnr" inputmode="numeric" placeholder="1234567890"><span class="hint">10 أرقام — على بطاقة الإقامة</span></div><div class="f"><label for="kenmerk">رقم ملف الـ IND (zaaknummer / kenmerk)</label><input id="kenmerk"  placeholder="1234567890"><span class="hint">في أعلى رسالة القرار عند Ons kenmerk أو Zaaknummer</span></div><div class="f"><label for="rbnr">رقم قضية المحكمة (zaaknummer rechtbank)</label><input id="rbnr"  placeholder="NL26.12345"><span class="hint">اختياري — فقط إذا أعطتك المحكمة رقماً يبدأ بـ NL</span></div><div class="f full"><label for="adres">العنوان</label><input id="adres" autocomplete="street-address" placeholder="Voorbeeldstraat 1, 1234 AB Enschede"></div><div class="f"><label for="tel">رقم الهاتف</label><input id="tel" autocomplete="tel" inputmode="tel" placeholder="06-12345678"><span class="hint">اختياري</span></div><div class="f"><label for="woonplaats">مدينة التوقيع</label><input id="woonplaats" autocomplete="address-level2" placeholder="Enschede"></div><div class="f"><label for="daanvraag">تاريخ تقديم طلبك للـ IND</label><input id="daanvraag" type="date"><span class="hint">في أول سطر من رسالة القرار</span></div><div class="f"><label for="dbesluit">تاريخ قرار الرفض</label><input id="dbesluit" type="date"><span class="hint">التاريخ المكتوب على الرسالة</span></div><div class="f"><label for="dvandaag">تاريخ اليوم</label><input id="dvandaag" type="date"></div><div class="f"><label for="dvergunning">من متى عندك إقامة اللجوء المؤقتة؟</label><input id="dvergunning" type="date"><span class="hint">يظهر في فقرة الوقائع</span></div>
     </form>
   </section>
 
   <section class="panel" aria-labelledby="h-letter">
-    <div class="row between">
-      <h2 id="h-letter">② رسالتك بالهولندي</h2>
-      <div class="tabs" role="tablist" aria-label="نوع الرسالة">
-        <button role="tab" id="tab-kort" aria-selected="true" type="button">مختصرة</button>
-        <button role="tab" id="tab-lang" aria-selected="false" type="button">كاملة</button>
-      </div>
-    </div>
-    <p class="hint" id="kind-hint"></p>
+    <h2 id="h-letter">② رسالة الطعن الكاملة بالهولندي</h2>
+    <p class="hint">فيها كل أسباب الطعن. البيانات الصفراء من الخانات التي كتبتها، والحمراء ناقصة. يُفضّل أن يراجعها محامٍ قبل الإرسال.</p>
     <div class="f"><span class="lbl">الموضوع (Onderwerp)</span>
       <div class="subj" id="out-subj"></div>
       <div class="row"><button class="gbtn accent" id="copy-subj" type="button">نسخ الموضوع</button></div>

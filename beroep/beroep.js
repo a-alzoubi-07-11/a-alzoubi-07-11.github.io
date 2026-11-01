@@ -5,7 +5,7 @@
   const $ = (id) => document.getElementById(id);
   const EXAMPLE = { naam: "Mohammed Voorbeeld", vnr: "0000000000", kenmerk: "0000000000", rbnr: "", adres: "Voorbeeldstraat 1, 1234 AB Enschede",
     tel: "06-00000000", woonplaats: "Enschede", daanvraag: "2025-11-10", dbesluit: "2026-10-20", dvandaag: "", dvergunning: "2021-04-15" };
-  let kind = "kort", isExample = false;
+  const kind = "lang"; let isExample = false;
 
   const today = () => { const d = new Date(); const p = (n) => String(n).padStart(2, "0"); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`; };
   const fmt = (v) => { if (!v) return ""; const [y, m, d] = v.split("-"); return `${d}-${m}-${y}`; };
@@ -93,7 +93,6 @@ Met vriendelijke groet,
     $("out-body").innerHTML = b.out;
     const miss = s.missing + b.missing;
     $("missing-hint").textContent = miss ? (TXT.missing || "").replace("{n}", miss) : TXT.complete || "";
-    $("kind-hint").textContent = kind === "kort" ? TXT.kort || "" : TXT.lang || "";
   }
 
   function fill(o) { F.forEach((k) => ($(k).value = o[k] || "")); if (!$("dvandaag").value) $("dvandaag").value = today(); }
@@ -102,14 +101,11 @@ Met vriendelijke groet,
     try { await navigator.clipboard.writeText(text); toast(okMsg); }
     catch (e) { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast(TXT.selected || ""); }
   }
-  function setKind(k) { kind = k; $("tab-kort").setAttribute("aria-selected", k === "kort"); $("tab-lang").setAttribute("aria-selected", k === "lang"); update(); }
   function setExample(on) { isExample = on; $("example-flag").hidden = !on; }
 
   function init() {
     $("copy-subj").addEventListener("click", () => { const { subj, P } = build(vals()); copy(render(subj, P, false).out, TXT.copied_subj, $("out-subj")); });
     $("copy-body").addEventListener("click", () => { const { body, P } = build(vals()); copy(render(body, P, false).out, TXT.copied_body, $("out-body")); });
-    $("tab-kort").addEventListener("click", () => setKind("kort"));
-    $("tab-lang").addEventListener("click", () => setKind("lang"));
     $("btn-example").addEventListener("click", () => { fill(EXAMPLE); setExample(true); update(); });
     $("btn-clear").addEventListener("click", () => { fill({}); setExample(false); update(); $("naam").focus(); toast(TXT.cleared); });
     $("form").addEventListener("input", () => { if (isExample) setExample(false); update(); });

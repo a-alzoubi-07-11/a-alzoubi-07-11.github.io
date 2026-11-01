@@ -27,7 +27,7 @@ T = {
         "badge": "أداة مجانية • لا نحفظ أي بيانات — كل شيء يحدث داخل هاتفك",
         "h1": "رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ",
         "lead": "اكتب بياناتك مرة واحدة، فتتعبّأ الرسالة الهولندية تلقائياً. بعدها اضغط \"نسخ\" وأرسلها للمحكمة أونلاين.",
-        "steps": ["املأ بياناتك (الخانات فارغة)", "اختر مختصرة أو كاملة", "انسخ وأرسل"],
+        "steps": ["املأ بياناتك (الخانات فارغة)", "راجع رسالتك", "انسخ وأرسل"],
         "quick_h": "ابدأ من هنا",
         "q_send": "✉ أرسل الطعن أونلاين للمحكمة", "q_leeg": "⬇ تحميل الاستمارة فارغة", "q_vb": "⬇ تحميل نموذج تعليمي معبّأ (شرح بالعربي)",
         "docs_h": "📎 الأوراق التي ترفقها مع الإرسال", "docs_hint": "(اضغط على كل ورقة بعد تجهيزها)",
@@ -52,9 +52,9 @@ T = {
             "daanvraag": ("تاريخ تقديم طلبك للـ IND", "في أول سطر من رسالة القرار"),
             "dbesluit": ("تاريخ قرار الرفض", "التاريخ المكتوب على الرسالة"),
             "dvandaag": ("تاريخ اليوم", ""),
-            "dvergunning": ("من متى عندك إقامة اللجوء المؤقتة؟", "للرسالة الكاملة فقط"),
+            "dvergunning": ("من متى عندك إقامة اللجوء المؤقتة؟", "يظهر في فقرة الوقائع"),
         },
-        "letter_h": "② رسالتك بالهولندي", "tab_kort": "مختصرة", "tab_lang": "كاملة", "tabs_label": "نوع الرسالة",
+        "letter_h": "② رسالة الطعن الكاملة بالهولندي", "letter_hint": "فيها كل أسباب الطعن. البيانات الصفراء من الخانات التي كتبتها، والحمراء ناقصة. يُفضّل أن يراجعها محامٍ قبل الإرسال.",
         "subj_label": "الموضوع (Onderwerp)", "copy_subj": "نسخ الموضوع", "body_label": "نص الرسالة", "copy_body": "نسخ الرسالة",
         "send_h": "③ أرسلها للمحكمة", "send_btn": "أرسل أونلاين الآن (Zivver)", "leeg_btn": "⬇ الاستمارة فارغة",
         "where": [
@@ -86,7 +86,7 @@ T = {
         "badge": "Gratis • We slaan niets op — alles gebeurt op je eigen telefoon",
         "h1": "Beroepschrift tegen afwijzing van asiel onbepaalde tijd — klaar om te kopiëren",
         "lead": "Vul je gegevens één keer in; de brief wordt automatisch ingevuld. Druk daarna op \"Kopiëren\" en stuur hem online naar de rechtbank.",
-        "steps": ["Vul je gegevens in (velden zijn leeg)", "Kies kort of volledig", "Kopieer en verstuur"],
+        "steps": ["Vul je gegevens in (velden zijn leeg)", "Controleer je brief", "Kopieer en verstuur"],
         "quick_h": "Begin hier",
         "q_send": "✉ Beroep online indienen bij de rechtbank", "q_leeg": "⬇ Leeg formulier downloaden", "q_vb": "⬇ Ingevuld voorbeeld downloaden (uitleg in het Arabisch)",
         "docs_h": "📎 Bijlagen die je meestuurt", "docs_hint": "(vink elke bijlage aan als die klaar is)",
@@ -111,9 +111,9 @@ T = {
             "daanvraag": ("Datum van je aanvraag bij de IND", "Staat in de eerste zin van het besluit"),
             "dbesluit": ("Datum van het besluit", "De datum op de brief"),
             "dvandaag": ("Datum van vandaag", ""),
-            "dvergunning": ("Sinds wanneer heb je asiel bepaalde tijd?", "Alleen voor de volledige brief"),
+            "dvergunning": ("Sinds wanneer heb je asiel bepaalde tijd?", "Komt in de alinea Feiten"),
         },
-        "letter_h": "② Je brief", "tab_kort": "Kort", "tab_lang": "Volledig", "tabs_label": "Soort brief",
+        "letter_h": "② Je volledige beroepschrift", "letter_hint": "Met alle gronden. Geel komt uit je ingevulde velden, rood ontbreekt nog. Laat de brief bij voorkeur nakijken door een advocaat.",
         "subj_label": "Onderwerp", "copy_subj": "Onderwerp kopiëren", "body_label": "Tekst van de brief", "copy_body": "Brief kopiëren",
         "send_h": "③ Versturen naar de rechtbank", "send_btn": "Nu online versturen (Zivver)", "leeg_btn": "⬇ Leeg formulier",
         "where": [
@@ -190,7 +190,7 @@ def page(L):
 <link rel="stylesheet" href="/beroep/beroep.css?v=3">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
-<script src="/beroep/beroep.js?v=2" defer></script>
+<script src="/beroep/beroep.js?v=3" defer></script>
 <script src="/assets/site-chrome.js?v=3" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>
@@ -232,14 +232,8 @@ def page(L):
   </section>
 
   <section class="panel" aria-labelledby="h-letter">
-    <div class="row between">
-      <h2 id="h-letter">{t['letter_h']}</h2>
-      <div class="tabs" role="tablist" aria-label="{t['tabs_label']}">
-        <button role="tab" id="tab-kort" aria-selected="true" type="button">{t['tab_kort']}</button>
-        <button role="tab" id="tab-lang" aria-selected="false" type="button">{t['tab_lang']}</button>
-      </div>
-    </div>
-    <p class="hint" id="kind-hint"></p>
+    <h2 id="h-letter">{t['letter_h']}</h2>
+    <p class="hint">{t['letter_hint']}</p>
     <div class="f"><span class="lbl">{t['subj_label']}</span>
       <div class="subj" id="out-subj"></div>
       <div class="row"><button class="gbtn accent" id="copy-subj" type="button">{t['copy_subj']}</button></div>
