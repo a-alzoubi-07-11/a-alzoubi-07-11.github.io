@@ -4,7 +4,11 @@ Shared files: /beroep/beroep.css, /beroep/beroep.js. Run:  python3 tools/beroep_
 Nothing typed into the tool is stored or sent anywhere.
 """
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from tool_tiles import tiles_html  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://gidsnederland.nl"
@@ -182,7 +186,8 @@ def page(L):
 <link rel="stylesheet" href="/assets/style.css?v=1">
 <link rel="stylesheet" href="/assets/guide.css?v=1">
 <link rel="stylesheet" href="/assets/apple.css?v=4">
-<link rel="stylesheet" href="/beroep/beroep.css?v=2">
+<link rel="stylesheet" href="/assets/tool-tiles.css?v=1">
+<link rel="stylesheet" href="/beroep/beroep.css?v=3">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
 <script src="/beroep/beroep.js?v=2" defer></script>
@@ -260,7 +265,7 @@ def page(L):
 
   <section class="panel" aria-labelledby="h-more">
     <h2 id="h-more">{t['more_h']}</h2>
-    <nav class="more" aria-label="{t['more_h']}">{links(t['more'])}</nav>
+    {tiles_html(L, current=t['path'], page_local=False, base=t['crumbs'][1][0])}
     <h3>{t['read_h']}</h3>
     <nav class="more" aria-label="{t['read_h']}">{links(t['read'])}</nav>
   </section>

@@ -59,6 +59,8 @@
 .bt mark.miss{background:var(--missing);color:var(--missing-ink)}
 .bt .note{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:12px 14px;font-size:.92rem}
 .bt .where{display:flex;flex-direction:column;gap:6px;font-size:.92rem;color:var(--muted);margin:0;padding-inline-start:1.2em}
+.bt .tool-tiles{margin:0}
+.bt .tt-card strong{font-family:var(--ui)}
 .bt .more{display:flex;flex-wrap:wrap;gap:8px}
 .bt .more a{display:inline-flex;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;text-decoration:none;color:var(--accent);font-weight:600;font-size:.92rem;background:var(--surface)}
 .bt .more a:hover{border-color:var(--accent)}
