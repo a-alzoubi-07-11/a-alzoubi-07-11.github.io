@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index,follow">
+<meta name="description" content="أداة مجانية لكتابة رسالة الطعن على رفض الإقامة الدائمة (اللجوء) في هولندا ونسخها. لا يتم حفظ أي بيانات.">
+<title>رسالة الطعن الجاهزة | دليل هولندا بالعربية</title>
+<link rel="canonical" href="https://gidsnederland.nl/beroep/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/apple.css?v=3">
+<script src="/assets/site-chrome.js?v=3" defer></script>
+<style>
+@font-face{font-family:"Cairo";src:url("fonts/Cairo-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Cairo";src:url("fonts/Cairo-Bold.ttf") format("truetype");font-weight:600 800;font-display:swap}
+html{color-scheme:light}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+/* Layout: one column — form card (your details) above a "paper" letter preview with copy buttons; RTL UI, LTR Dutch letter */
+:root{
+  --bg:#eef1f6; --surface:#ffffff; --paper:#ffffff; --ink:#17202b; --muted:#5b6676; --line:#d8dee8;
+  --accent:#1f4fa3; --accent-ink:#ffffff; --go:#1d7a4c; --warn:#9a3b12; --warn-bg:#fdf0e8;
+  --hl:#fff1b8; --hl-ink:#5a4500; --missing:#ffe0dc; --missing-ink:#9b1c12;
+  --ui:"Cairo", "Segoe UI", Tahoma, sans-serif;
+  --letter:Georgia, "Times New Roman", serif;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:16px;line-height:1.7;direction:rtl;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{font-size:clamp(1.5rem,4.5vw,2rem);line-height:1.35;margin:0;text-wrap:balance}
+h2{font-size:1.15rem;margin:0}
+p{margin:0}
+.lead{color:var(--muted)}
+.nl{direction:ltr;unicode-bidi:isolate;font-weight:600}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px}
+.steps{display:flex;gap:8px;flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:8px;font-size:.92rem;color:var(--muted)}
+.step b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:.8rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.f{display:flex;flex-direction:column;gap:4px;min-width:0}
+.f.full{grid-column:1/-1}
+label{font-weight:600;font-size:.95rem}
+.hint{font-size:.8rem;color:var(--muted);line-height:1.5}
+input{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;direction:ltr;text-align:left}
+input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button,.btn{font:inherit;font-weight:700;font-size:.95rem;border:0;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;line-height:1.3}
+button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.primary{background:var(--go);color:#fff}
+.accent{background:var(--accent);color:var(--accent-ink)}
+.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.danger{background:transparent;color:var(--warn);border:1.5px solid color-mix(in srgb,var(--warn) 45%,transparent)}
+.tabs{display:inline-flex;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{background:transparent;color:var(--muted);padding:8px 16px}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.paper{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 22px 26px;direction:ltr;text-align:left;
+  font-family:var(--letter);font-size:1rem;line-height:1.6;white-space:pre-wrap;word-wrap:break-word;overflow-wrap:anywhere;
+  box-shadow:0 1px 0 var(--line),0 10px 24px -18px rgba(0,0,0,.35)}
+.subj{direction:ltr;text-align:left;font-family:var(--letter);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:12px 14px;overflow-wrap:anywhere}
+.paper mark,.subj mark{background:var(--hl);color:var(--hl-ink);border-radius:3px;padding:0 2px}
+.paper mark.miss,.subj mark.miss{background:var(--missing);color:var(--missing-ink)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);
+  padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+.note{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:12px 14px;font-size:.92rem}
+.where{display:flex;flex-direction:column;gap:6px;font-size:.92rem;color:var(--muted)}
+.social{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.social a{font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;color:#fff;font-size:.9rem}
+.yt{background:#c4302b}.tt{background:#111}.st{background:#1f4fa3}
+.ex{font-size:.82rem;font-weight:600;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 10px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <span class="ex" style="align-self:flex-start">أداة مجانية • لا نحفظ أي بيانات — كل شيء يحدث داخل هاتفك</span>
+    <h1>رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ</h1>
+    <p class="lead">اكتب بياناتك مرة واحدة، وتتغيّر الرسالة الهولندية تلقائياً. بعدها اضغط "نسخ" وأرسلها للمحكمة أونلاين.</p>
+    <div class="steps">
+      <span class="step"><b>1</b>املأ بياناتك</span>
+      <span class="step"><b>2</b>اختر مختصرة أو كاملة</span>
+      <span class="step"><b>3</b>انسخ وأرسل</span>
+    </div>
+  </header>
+
+  <section class="panel" aria-labelledby="h-data">
+    <div class="row" style="justify-content:space-between">
+      <h2 id="h-data">① بياناتك</h2>
+      <div class="row">
+        <button class="ghost" id="btn-example" type="button">عرض مثال</button>
+        <button class="danger" id="btn-clear" type="button">مسح كل البيانات</button>
+      </div>
+    </div>
+    <p id="example-flag" class="note" hidden>هذه بيانات <b>وهمية للمثال فقط</b>. اضغط "مسح كل البيانات" واكتب بياناتك.</p>
+    <form class="grid" id="form" autocomplete="on">
+      <div class="f"><label for="naam">الاسم الكامل</label><input id="naam" autocomplete="name" placeholder="Mohammed Voorbeeld"><span class="hint">كما في بطاقة الإقامة</span></div>
+      <div class="f"><label for="vnr">رقم V <span class="nl">(V-nummer)</span></label><input id="vnr" inputmode="numeric" placeholder="1234567890"><span class="hint">10 أرقام — على بطاقة الإقامة</span></div>
+      <div class="f"><label for="kenmerk">رقم ملف الـ IND <span class="nl">(zaaknummer / kenmerk)</span></label><input id="kenmerk" placeholder="bijv. 1234567890"><span class="hint">مكتوب في أعلى رسالة القرار عند <span class="nl">Ons kenmerk</span> أو <span class="nl">Zaaknummer</span></span></div>
+      <div class="f"><label for="rbnr">رقم قضية المحكمة <span class="nl">(zaaknummer rechtbank)</span></label><input id="rbnr" placeholder="NL26.12345"><span class="hint">اختياري — فقط إذا أرسلت طعناً من قبل وأعطتك المحكمة رقماً يبدأ بـ <span class="nl">NL</span></span></div>
+      <div class="f full"><label for="adres">العنوان</label><input id="adres" autocomplete="street-address" placeholder="Voorbeeldstraat 1, 1234 AB Enschede"></div>
+      <div class="f"><label for="tel">رقم الهاتف</label><input id="tel" autocomplete="tel" inputmode="tel" placeholder="06-12345678"><span class="hint">اختياري</span></div>
+      <div class="f"><label for="woonplaats">مدينة التوقيع</label><input id="woonplaats" autocomplete="address-level2" placeholder="Enschede"></div>
+      <div class="f"><label for="daanvraag">تاريخ تقديم طلبك للـ IND</label><input id="daanvraag" type="date"><span class="hint">في أول سطر من رسالة القرار</span></div>
+      <div class="f"><label for="dbesluit">تاريخ قرار الرفض</label><input id="dbesluit" type="date"><span class="hint">التاريخ المكتوب على الرسالة</span></div>
+      <div class="f"><label for="dvandaag">تاريخ اليوم</label><input id="dvandaag" type="date"></div>
+      <div class="f"><label for="dvergunning">من متى عندك إقامة اللجوء المؤقتة؟</label><input id="dvergunning" type="date"><span class="hint">للرسالة الكاملة فقط</span></div>
+    </form>
+  </section>
+
+  <section class="panel" aria-labelledby="h-letter">
+    <div class="row" style="justify-content:space-between">
+      <h2 id="h-letter">② رسالتك بالهولندي</h2>
+      <div class="tabs" role="tablist" aria-label="نوع الرسالة">
+        <button role="tab" id="tab-kort" aria-selected="true" type="button">مختصرة</button>
+        <button role="tab" id="tab-lang" aria-selected="false" type="button">كاملة</button>
+      </div>
+    </div>
+    <p class="hint" id="kind-hint"></p>
+
+    <div class="f"><span style="font-weight:700">الموضوع <span class="nl">(Onderwerp)</span></span>
+      <div class="subj" id="out-subj"></div>
+      <div class="row"><button class="accent" id="copy-subj" type="button">نسخ الموضوع</button></div>
+    </div>
+
+    <div class="f"><span style="font-weight:700">نص الرسالة</span>
+      <div class="paper" id="out-body" aria-live="polite"></div>
+    </div>
+    <div class="row">
+      <button class="primary" id="copy-body" type="button">نسخ الرسالة</button>
+      <span class="hint" id="missing-hint"></span>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-send">
+    <h2 id="h-send">③ أرسلها للمحكمة</h2>
+    <div class="row">
+      <a class="btn primary" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">أرسل أونلاين الآن (Zivver)</a>
+      <a class="btn ghost" href="https://www.rechtspraak.nl/binaries/_rts_1768465440740/content/assets/ao/ao-beroepschrift-verzoekschrift-asielprocedure.pdf" target="_blank" rel="noopener">تحميل الاستمارة الرسمية</a>
+    </div>
+    <div class="where">
+      <span>• الصق الموضوع في خانة الموضوع، والرسالة في خانة النص.</span>
+      <span>• أرفق: الاستمارة <b>موقّعة</b> + قرار الـ <span class="nl">IND</span> بكل صفحاته (PDF).</span>
+      <span>• خذ لقطة شاشة لتأكيد الإرسال واحتفظ بها.</span>
+      <span>• المهلة: <b>4 أسابيع</b> من تاريخ القرار. الطعن مجاني.</span>
+    </div>
+    <p class="note">هذه أداة تعليمية وليست استشارة قانونية. الأسباب في الرسالة تناسب من قدّم طلبه <b>قبل 12 يونيو 2026</b>. قبل الإرسال اتصل بـ <span class="nl">Juridisch Loket 0800-8020</span> (مجاني).</p>
+  </section>
+
+  <footer class="social">
+    <a class="yt" href="https://www.youtube.com/@a.alzoubi.07.11" target="_blank" rel="noopener">▶ YouTube</a>
+    <a class="tt" href="https://www.tiktok.com/@a.alzoubi.07.11" target="_blank" rel="noopener">♪ TikTok</a>
+    <a class="st" href="https://gidsnederland.nl" target="_blank" rel="noopener">gidsnederland.nl</a>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  const F = ["naam","vnr","kenmerk","rbnr","adres","tel","woonplaats","daanvraag","dbesluit","dvandaag","dvergunning"];
+  const $ = id => document.getElementById(id);
+    const EXAMPLE = {naam:"Mohammed Voorbeeld",vnr:"0000000000",kenmerk:"0000000000",rbnr:"",adres:"Voorbeeldstraat 1, 1234 AB Enschede",
+    tel:"06-00000000",woonplaats:"Enschede",daanvraag:"2025-11-10",dbesluit:"2026-10-20",dvandaag:"",dvergunning:"2021-04-15"};
+  let kind = "kort", isExample = false;
+
+  const today = () => { const d=new Date(); return d.toISOString().slice(0,10); };
+  const fmt = v => { if(!v) return ""; const [y,m,d]=v.split("-"); return `${d}-${m}-${y}`; };
+  const esc = s => s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+  function vals(){ const o={}; F.forEach(k=>o[k]=$(k).value.trim()); return o; }
+  // each placeholder: [text, label-if-missing]
+  function v(o,k,label,isDate){ const t=isDate?fmt(o[k]):o[k]; return {t, label}; }
+
+  function build(o){
+    const P = {
+      naam:v(o,"naam","[naam]"), vnr:v(o,"vnr","[V-nummer]"), kenmerk:v(o,"kenmerk","[zaaknummer IND]"),
+      adres:v(o,"adres","[adres]"), plaats:v(o,"woonplaats","[plaats]"),
+      aanvraag:v(o,"daanvraag","[datum aanvraag]",true), besluit:v(o,"dbesluit","[datum besluit]",true),
+      vandaag:v(o,"dvandaag","[datum]",true), vergunning:v(o,"dvergunning","[datum]",true)
+    };
+    const S = [], B = [];
+    const ref = [`V-nummer ${"{vnr}"}`, `zaaknummer IND {kenmerk}`];
+    if(o.rbnr) ref.push(`zaaknummer rechtbank ${o.rbnr}`);
+    S.push(`Beroep – afwijzing verblijfsvergunning asiel voor onbepaalde tijd – ${ref.join(" – ")}`);
+
+    const head =
+`Aan: Centraal Inschrijfbureau Vreemdelingenzaken
+p/a Rechtbank Noord-Holland, Postbus 1621, 2003 BR Haarlem
+
+Naam: {naam}
+V-nummer: {vnr}
+Zaaknummer IND: {kenmerk}` + (o.rbnr?`\nZaaknummer rechtbank: ${o.rbnr}`:"") + `
+Adres: {adres}` + (o.tel?`\nTelefoon: ${o.tel}`:"") + `
+
+Betreft: beroep tegen het besluit van de minister van Asiel en Migratie (IND) van {besluit} (afwijzing aanvraag verblijfsvergunning asiel voor onbepaalde tijd)
+
+Geachte rechtbank,
+
+`;
+    const kort =
+`Hierbij stel ik beroep in tegen het besluit van de IND van {besluit}, waarbij mijn aanvraag van {aanvraag} om een verblijfsvergunning asiel voor onbepaalde tijd is afgewezen. Een kopie van het besluit is bijgevoegd.
+
+Ik ben het niet eens met dit besluit. Mijn aanvraag is ingediend vóór 12 juni 2026, toen ik aan alle voorwaarden voldeed. De nieuwe regels zijn zonder overgangsrecht op mij toegepast. Dit is in strijd met de rechtszekerheid, het vertrouwensbeginsel en het gelijkheidsbeginsel.
+
+De volledige gronden stuur ik na binnen de termijn die de rechtbank mij geeft.
+`;
+    const lang =
+`Hierbij stel ik beroep in tegen het bovengenoemde besluit, waarbij mijn aanvraag van {aanvraag} om een verblijfsvergunning asiel voor onbepaalde tijd is afgewezen. Een kopie van het besluit is bijgevoegd.
+
+1. Feiten
+Ik heb sinds {vergunning} een verblijfsvergunning asiel voor bepaalde tijd. Op {aanvraag} heb ik een verblijfsvergunning asiel voor onbepaalde tijd aangevraagd en de leges betaald. Op dat moment voldeed ik aan alle wettelijke voorwaarden. Verweerder heeft niet binnen de wettelijke beslistermijn beslist. Pas op {besluit}, ná de inwerkingtreding van de Uitvoerings- en implementatiewet Asiel- en migratiepact 2026 op 12 juni 2026, heeft verweerder de aanvraag afgewezen met als enige reden dat de verblijfsvergunning asiel voor onbepaalde tijd per die datum is afgeschaft.
+
+2. Gronden van het beroep
+2.1 Strijd met rechtszekerheid en het vertrouwensbeginsel (geen overgangsrecht). Op de datum van mijn aanvraag gold het recht op grond waarvan ik een vergunning voor onbepaalde tijd kon verkrijgen. Ik mocht erop vertrouwen dat mijn aanvraag aan dat recht zou worden getoetst. De nieuwe regels zijn zonder enige overgangsregeling direct toegepast op aanvragen die al vóór 12 juni 2026 waren ingediend. Dit is in strijd met de algemene beginselen van rechtszekerheid en gerechtvaardigd vertrouwen, die ook als algemene beginselen van Unierecht gelden nu de wetswijziging verband houdt met de uitvoering van het Asiel- en migratiepact.
+
+2.2 De overschrijding van de beslistermijn komt voor rekening van verweerder. Als verweerder binnen de wettelijke beslistermijn had beslist, had dat vóór 12 juni 2026 moeten gebeuren en was de vergunning verleend. Een bestuursorgaan mag geen voordeel halen uit het niet tijdig beslissen; de gevolgen daarvan mogen niet op mij worden afgewenteld. Het besluit is daarom ook in strijd met het zorgvuldigheidsbeginsel (artikel 3:2 Awb) en het verbod van willekeur.
+
+2.3 Strijd met het gelijkheidsbeginsel. Vreemdelingen die op hetzelfde moment als ik een aanvraag deden en wier aanvraag toevallig vóór 12 juni 2026 werd beslist, hebben wél een vergunning voor onbepaalde tijd gekregen. Het moment waarop verweerder toevallig beslist, mag niet bepalend zijn voor mijn rechtspositie (artikel 1 Grondwet).
+
+2.4 Onvoldoende motivering en onevenredigheid. Het besluit bevat een standaardmotivering zonder beoordeling van mijn persoonlijke situatie en zonder belangenafweging. Verweerder heeft niet gemotiveerd waarom de nadelige gevolgen voor mij in verhouding staan tot het doel van de wetswijziging (artikelen 3:4, tweede lid, en 3:46 Awb).
+
+2.5 Voorbehoud. Ik behoud mij het recht voor de gronden aan te vullen binnen de termijn die de rechtbank mij geeft.
+
+3. Verzoek
+Ik verzoek de rechtbank het beroep gegrond te verklaren, het besluit te vernietigen, verweerder op te dragen een nieuw besluit te nemen waarbij mijn aanvraag wordt beoordeeld naar het recht zoals dat gold op de datum van de aanvraag, en verweerder te veroordelen in de proceskosten.
+`;
+    const tail =
+`
+Bijlagen: ingevuld en ondertekend beroepschrift-formulier, kopie besluit IND (alle pagina's)${kind==="lang"?", kopie verblijfsdocument, bewijs betaling leges":""}.
+
+Met vriendelijke groet,
+
+{naam}
+{plaats}, {vandaag}`;
+    const tpl = head + (kind==="kort"?kort:lang) + tail;
+    return {subj:S[0], body:tpl, P};
+  }
+
+  function render(o, tpl, P, html){
+    let missing = 0;
+    const out = tpl.replace(/\{(\w+)\}/g,(m,k)=>{
+      const p=P[k]; if(!p) return m;
+      if(!p.t){ missing++; return html?`<mark class="miss">${esc(p.label)}</mark>`:p.label; }
+      return html?`<mark>${esc(p.t)}</mark>`:p.t;
+    });
+    return {out, missing};
+  }
+
+  function update(){
+    const o = vals(); const {subj, body, P} = build(o);
+    const s = render(o, esc(subj).replace(/\{(\w+)\}/g,"{$1}"), P, true);
+    const b = render(o, esc(body), P, true);
+    $("out-subj").innerHTML = s.out;
+    $("out-body").innerHTML = b.out;
+    const miss = s.missing + b.missing;
+    $("missing-hint").textContent = miss ? `باقي ${miss} خانة فارغة (باللون الأحمر) — املأها قبل النسخ.` : "كل الخانات معبّأة ✓";
+    $("kind-hint").textContent = kind==="kort"
+      ? "المختصرة تكفي لحفظ حقك في المهلة. المحكمة ستطلب منك الأسباب الكاملة لاحقاً."
+      : "الكاملة فيها كل الأسباب. يُفضّل أن يراجعها محامٍ قبل الإرسال.";
+  }
+
+  function fill(o){ F.forEach(k=>$(k).value=o[k]||""); if(!$("dvandaag").value) $("dvandaag").value=today(); }
+
+  function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toast.h); toast.h=setTimeout(()=>t.classList.remove("show"),1800); }
+  async function copy(text, okMsg, el){
+    try{ await navigator.clipboard.writeText(text); toast(okMsg); }
+    catch(e){
+      const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r);
+      toast("تم تحديد النص — اضغط نسخ من القائمة");
+    }
+  }
+  $("copy-subj").addEventListener("click",()=>{ const o=vals(),{subj,P}=build(o); copy(render(o,subj,P,false).out,"تم نسخ الموضوع ✓",$("out-subj")); });
+  $("copy-body").addEventListener("click",()=>{ const o=vals(),{body,P}=build(o); copy(render(o,body,P,false).out,"تم نسخ الرسالة ✓",$("out-body")); });
+
+  function setKind(k){ kind=k; $("tab-kort").setAttribute("aria-selected",k==="kort"); $("tab-lang").setAttribute("aria-selected",k==="lang"); update(); }
+  $("tab-kort").addEventListener("click",()=>setKind("kort"));
+  $("tab-lang").addEventListener("click",()=>setKind("lang"));
+
+  function setExample(on){ isExample=on; $("example-flag").hidden=!on; }
+  $("btn-example").addEventListener("click",()=>{ fill(EXAMPLE); setExample(true); update(); });
+  $("btn-clear").addEventListener("click",()=>{ fill({}); setExample(false); update(); $("naam").focus(); toast("تم مسح البيانات"); });
+  $("form").addEventListener("input",()=>{ if(isExample) setExample(false); update(); });
+  $("form").addEventListener("submit",e=>e.preventDefault());
+
+  fill(EXAMPLE); setExample(true);
+  update();
+})();
+</script>
+</body>
+</html>
