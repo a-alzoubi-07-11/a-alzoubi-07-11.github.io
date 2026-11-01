@@ -1,59 +1,9 @@
 {
- "checked_at": "2026-10-31T09:48Z",
+ "checked_at": "2026-11-01T10:38Z",
  "external": {
-  "total": 551,
+  "total": 555,
   "broken": [],
   "blocked": [
-   {
-    "url": "https://wetten.overheid.nl/BWBR0004766/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0004766/",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "soft404": false,
-    "pages": [
-     "articles/bezwaar-objection-letter.html",
-     "nl/articles/bezwaar-objection-letter.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0031331/",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0031331/",
-    "soft404": false,
-    "pages": [
-     "articles/debt-help-schuldhulp.html",
-     "nl/articles/debt-help-schuldhulp.html"
-    ]
-   },
-   {
-    "url": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "code": 403,
-    "final": "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
-    "soft404": false,
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
    {
     "url": "https://www.cbr.nl/nl/rijbewijs-halen/auto/je-autorijbewijs-halen/stappenplan-rijden-voor-je-18e",
     "code": 0,
@@ -224,6 +174,16 @@
     "pages": [
      "articles/bezwaar-objection-letter.html",
      "nl/articles/bezwaar-objection-letter.html"
+    ]
+   },
+   {
+    "url": "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-den-haag/nieuws/2026/10/nieuwe-regels-voor-gezinshereniging-nareis-mogen-ook-bij-oudere-aanvragen-worden-toegepast",
+    "code": 403,
+    "final": "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-den-haag/nieuws/2026/10/nieuwe-regels-voor-gezinshereniging-nareis-mogen-ook-bij-oudere-aanvragen-worden-toegepast",
+    "soft404": false,
+    "pages": [
+     "articles/asylum-two-status-system-2026.html",
+     "nl/articles/asylum-two-status-system-2026.html"
     ]
    },
    {
@@ -427,36 +387,6 @@
      "articles/aow-aio-pension.html",
      "nl/articles/aow-aio-pension.html"
     ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2022-386.html",
-    "soft404": false,
-    "pages": [
-     "articles/childcare-allowance-kinderopvangtoeslag.html",
-     "nl/articles/childcare-allowance-kinderopvangtoeslag.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stb-2026-105.html",
-    "soft404": false,
-    "pages": [
-     "articles/asylum-two-status-system-2026.html",
-     "nl/articles/asylum-two-status-system-2026.html"
-    ]
-   },
-   {
-    "url": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "code": 403,
-    "final": "https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html",
-    "soft404": false,
-    "pages": [
-     "calculators/zorgtoeslag.html",
-     "nl/calculators/zorgtoeslag.html"
-    ]
    }
   ],
   "redirected": [
@@ -478,6 +408,26 @@
     "pages": [
      "nl/privacy.html",
      "privacy.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0004766/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0004766/2026-01-01",
+    "soft404": false,
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://wetten.overheid.nl/BWBR0031331/",
+    "code": 200,
+    "final": "https://wetten.overheid.nl/BWBR0031331/2026-07-01",
+    "soft404": false,
+    "pages": [
+     "articles/debt-help-schuldhulp.html",
+     "nl/articles/debt-help-schuldhulp.html"
     ]
    },
    {
@@ -508,10 +458,10 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 165,
+  "sitemap_urls": 166,
   "google": {
    "status": "ok",
-   "checked": 165,
+   "checked": 166,
    "indexed": 129,
    "not_indexed": [
     {
@@ -541,7 +491,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -576,7 +526,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -691,7 +641,12 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/beroep/",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     }
    ]
