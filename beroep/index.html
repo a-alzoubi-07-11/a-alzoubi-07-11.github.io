@@ -48,9 +48,9 @@ label{font-weight:600;font-size:.95rem}
 input{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;direction:ltr;text-align:left}
 input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-button,.btn{font:inherit;font-weight:700;font-size:.95rem;border:0;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;line-height:1.3}
-button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.primary{background:var(--go);color:#fff}
+button,.gbtn{font:inherit;font-weight:700;font-size:.95rem;border:0;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;line-height:1.3}
+button:focus-visible,.gbtn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.gprimary{background:var(--go);color:#fff}
 .accent{background:var(--accent);color:var(--accent-ink)}
 .ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .danger{background:transparent;color:var(--warn);border:1.5px solid color-mix(in srgb,var(--warn) 45%,transparent)}
@@ -72,6 +72,16 @@ button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-
 .social a{font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;color:#fff;font-size:.9rem}
 .yt{background:#c4302b}.tt{background:#111}.st{background:#1f4fa3}
 .ex{font-size:.82rem;font-weight:600;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:2px 10px}
+.quick{border:2px solid var(--go)}
+.qbtns{display:flex;flex-direction:column;gap:10px}
+.qbtns .gbtn{justify-content:center;text-align:center}
+.big{font-size:1.1rem;padding:14px 20px}
+.docs{display:flex;flex-direction:column;gap:8px}
+.docs h3{font-size:1rem;margin:4px 0 0}
+.doc{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;font-weight:400}
+.doc input{width:22px;height:22px;flex:none;margin-top:3px;accent-color:var(--go)}
+.doc small{display:block;color:var(--muted);font-size:.82rem;line-height:1.5}
+.doc:has(input:checked){border-color:var(--go);background:color-mix(in srgb,var(--go) 8%,transparent)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 </style>
@@ -84,11 +94,29 @@ button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-
     <h1>رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ</h1>
     <p class="lead">اكتب بياناتك مرة واحدة، وتتغيّر الرسالة الهولندية تلقائياً. بعدها اضغط "نسخ" وأرسلها للمحكمة أونلاين.</p>
     <div class="steps">
-      <span class="step"><b>1</b>املأ بياناتك</span>
+      <span class="step"><b>1</b>املأ بياناتك (الخانات فارغة)</span>
       <span class="step"><b>2</b>اختر مختصرة أو كاملة</span>
       <span class="step"><b>3</b>انسخ وأرسل</span>
     </div>
   </header>
+
+  <section class="panel quick" aria-labelledby="h-quick">
+    <h2 id="h-quick">ابدأ من هنا</h2>
+    <div class="qbtns">
+      <a class="gbtn gprimary big" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">✉ أرسل الطعن أونلاين للمحكمة</a>
+      <a class="gbtn accent" href="/beroep/formulier-leeg.pdf" download="beroepschrift-asielprocedure-leeg.pdf">⬇ تحميل الاستمارة فارغة</a>
+      <a class="gbtn ghost" href="/beroep/voorbeeld-beroep.pdf" download="voorbeeld-beroep-gidsnederland.pdf">⬇ تحميل نموذج تعليمي معبّأ (شرح بالعربي)</a>
+    </div>
+    <div class="docs">
+      <h3>📎 الأوراق التي ترفقها مع الإرسال <span class="hint">(اضغط على كل ورقة بعد تجهيزها)</span></h3>
+      <label class="doc"><input type="checkbox"><span><b>الاستمارة معبّأة وموقّعة</b><small>حمّلها فارغة من الزر في الأعلى، املأها ووقّعها، ثم صوّرها PDF</small></span></label>
+      <label class="doc"><input type="checkbox"><span><b>قرار الرفض من الـ IND</b> <span class="nl">(beschikking)</span><small>كل الصفحات — من <span class="nl">Mijn IND</span> أو صورة الرسالة الورقية</small></span></label>
+      <label class="doc"><input type="checkbox"><span><b>رسالة الطعن</b> <span class="nl">(beroepschrift)</span><small>انسخها من الأسفل والصقها في الإيميل، أو أرفقها كملف PDF</small></span></label>
+      <label class="doc"><input type="checkbox"><span><b>إثبات دفع الرسوم للـ IND</b> <span class="nl">(leges)</span><small>لقطة شاشة للدفع أو تأكيد استلام الدفع من الـ IND — يثبت أنك قدّمت الطلب ودفعت</small></span></label>
+      <label class="doc"><input type="checkbox"><span><b>نسخة من بطاقة الإقامة</b> <span class="hint">(اختياري)</span><small>الوجهين</small></span></label>
+      <p class="hint">💡 لتحويل الأوراق إلى PDF مجاناً: آيفون ← تطبيق <span class="nl">Bestanden</span> أو <span class="nl">Notities</span> ← <span class="nl">Scan documenten</span>. أندرويد ← <span class="nl">Google Drive</span> ← <span class="nl">Scannen</span>.</p>
+    </div>
+  </section>
 
   <section class="panel" aria-labelledby="h-data">
     <div class="row" style="justify-content:space-between">
@@ -133,7 +161,7 @@ button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-
       <div class="paper" id="out-body" aria-live="polite"></div>
     </div>
     <div class="row">
-      <button class="primary" id="copy-body" type="button">نسخ الرسالة</button>
+      <button class="gprimary" id="copy-body" type="button">نسخ الرسالة</button>
       <span class="hint" id="missing-hint"></span>
     </div>
   </section>
@@ -141,12 +169,12 @@ button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-
   <section class="panel" aria-labelledby="h-send">
     <h2 id="h-send">③ أرسلها للمحكمة</h2>
     <div class="row">
-      <a class="btn primary" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">أرسل أونلاين الآن (Zivver)</a>
-      <a class="btn ghost" href="https://www.rechtspraak.nl/binaries/_rts_1768465440740/content/assets/ao/ao-beroepschrift-verzoekschrift-asielprocedure.pdf" target="_blank" rel="noopener">تحميل الاستمارة الرسمية</a>
+      <a class="gbtn gprimary" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">أرسل أونلاين الآن (Zivver)</a>
+      <a class="gbtn ghost" href="/beroep/formulier-leeg.pdf" download="beroepschrift-asielprocedure-leeg.pdf">⬇ الاستمارة فارغة</a>
     </div>
     <div class="where">
       <span>• الصق الموضوع في خانة الموضوع، والرسالة في خانة النص.</span>
-      <span>• أرفق: الاستمارة <b>موقّعة</b> + قرار الـ <span class="nl">IND</span> بكل صفحاته (PDF).</span>
+      <span>• أرفق الأوراق الموجودة في قائمة "ابدأ من هنا" في أعلى الصفحة.</span>
       <span>• خذ لقطة شاشة لتأكيد الإرسال واحتفظ بها.</span>
       <span>• المهلة: <b>4 أسابيع</b> من تاريخ القرار. الطعن مجاني.</span>
     </div>
@@ -232,7 +260,7 @@ Ik verzoek de rechtbank het beroep gegrond te verklaren, het besluit te vernieti
 `;
     const tail =
 `
-Bijlagen: ingevuld en ondertekend beroepschrift-formulier, kopie besluit IND (alle pagina's)${kind==="lang"?", kopie verblijfsdocument, bewijs betaling leges":""}.
+Bijlagen: ingevuld en ondertekend beroepschrift-formulier, kopie besluit IND (alle pagina's), bewijs van betaling van de leges${kind==="lang"?", kopie verblijfsdocument":""}.
 
 Met vriendelijke groet,
 
@@ -288,7 +316,7 @@ Met vriendelijke groet,
   $("form").addEventListener("input",()=>{ if(isExample) setExample(false); update(); });
   $("form").addEventListener("submit",e=>e.preventDefault());
 
-  fill(EXAMPLE); setExample(true);
+  fill({}); setExample(false);
   update();
 })();
 </script>
