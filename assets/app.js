@@ -3744,9 +3744,11 @@ const RENDERERS = {
           class: "pnode " + lv.color,
           "data-id": lv.id,
           onclick: () => openModal(lv.id),
-          onmouseenter: (e) => showTooltip(e, lv),
+          // Hover tooltips only on devices that really hover: on phones a hover-triggered
+          // tooltip makes iOS swallow the first tap (the user had to tap twice).
+          onmouseenter: (e) => { if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) showTooltip(e, lv); },
           onmouseleave: hideTooltip,
-          onfocus: (e) => showTooltip(e, lv),
+          onfocus: (e) => { if (e.currentTarget.matches(":focus-visible")) showTooltip(e, lv); },
           onblur: hideTooltip,
         });
         btn.innerHTML = `<span class="pnode-ico">${lv.icon}</span><span class="pnode-name">${lv.name[state.lang]}</span><span class="pnode-age num">${lv.ageRange}</span>`;

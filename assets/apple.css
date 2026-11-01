@@ -206,3 +206,6 @@ main.wrap>h1+p+p{font-size:13px;color:var(--ap-text-2)}
 
 /* long Dutch compound words must not widen the page on phones */
 .reader h1,.reader h2{overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}
+
+/* one tap is enough on phones: no double-tap-to-zoom wait on controls */
+a,button,summary,[role=tab],[role=button],label,input,select,textarea{touch-action:manipulation}
