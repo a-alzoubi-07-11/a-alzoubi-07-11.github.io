@@ -71,3 +71,5 @@
   padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;z-index:50;font-family:"Cairo",system-ui,sans-serif}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
+.bt .send-steps{margin:0;padding-inline-start:1.4em;display:flex;flex-direction:column;gap:4px;font-size:1rem}
+.bt .send-btn{justify-content:center}

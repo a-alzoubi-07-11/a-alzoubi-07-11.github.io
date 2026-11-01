@@ -13,10 +13,10 @@
 <link rel="stylesheet" href="/assets/guide.css?v=1">
 <link rel="stylesheet" href="/assets/apple.css?v=4">
 <link rel="stylesheet" href="/assets/tool-tiles.css?v=1">
-<link rel="stylesheet" href="/beroep/beroep.css?v=3">
+<link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "رسالة الطعن على رفض الإقامة الدائمة (اللجوء) — جاهزة للنسخ", "url": "https://gidsnederland.nl/beroep/", "inLanguage": "ar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "description": "أداة مجانية: اكتب بياناتك وانسخ رسالة الطعن الهولندية على رفض asiel onbepaalde tijd وأرسلها للمحكمة أونلاين. لا يتم حفظ أي بيانات.", "author": {"@type": "Person", "name": "Ahmad Alzoubi", "url": "https://gidsnederland.nl/about.html"}}</script>
 <script>window.BEROEP_TXT={"missing": "باقي {n} خانة فارغة (باللون الأحمر) — املأها قبل النسخ.", "complete": "كل الخانات معبّأة ✓", "kort": "المختصرة تكفي لحفظ حقك في المهلة. المحكمة ستطلب منك الأسباب الكاملة لاحقاً.", "lang": "الكاملة فيها كل الأسباب. يُفضّل أن يراجعها محامٍ قبل الإرسال.", "copied_subj": "تم نسخ الموضوع ✓", "copied_body": "تم نسخ الرسالة ✓", "selected": "تم تحديد النص — اضغط نسخ من القائمة", "cleared": "تم مسح البيانات"};</script>
-<script src="/beroep/beroep.js?v=3" defer></script>
+<script src="/beroep/beroep.js?v=4" defer></script>
 <script src="/assets/site-chrome.js?v=3" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="/"><span>دليل هولندا بالعربية</span></a><a class="lang-button" href="https://gidsnederland.nl/nl/beroep/" hreflang="nl">Nederlands</a></div><nav class="nav" aria-label="التنقل / Navigatie"><a href="/"><span>الرئيسية</span></a><a href="/articles.html"><span>المقالات</span></a><a href="/tools.html"><span>الأدوات</span></a><a href="/about.html"><span>من نحن</span></a><a href="/cv.html"><span>أنشئ سيرتك الذاتية</span></a></nav></div></header>
@@ -32,9 +32,9 @@
   <section class="panel quick" aria-labelledby="h-quick">
     <h2 id="h-quick">ابدأ من هنا</h2>
     <div class="qbtns">
-      <a class="gbtn gprimary big" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">✉ أرسل الطعن أونلاين للمحكمة</a>
-      <a class="gbtn accent" href="/beroep/formulier-leeg.pdf" download="beroepschrift-asielprocedure-leeg.pdf">⬇ تحميل الاستمارة فارغة</a>
-      <a class="gbtn ghost" href="/beroep/voorbeeld-beroep.pdf" download="voorbeeld-beroep-gidsnederland.pdf">⬇ تحميل نموذج تعليمي معبّأ (شرح بالعربي)</a>
+      <a class="gbtn accent big" href="/beroep/formulier-leeg.pdf" download="beroepschrift-asielprocedure-leeg.pdf">⬇ تحميل الاستمارة فارغة</a>
+      <a class="gbtn ghost" href="/beroep/formulier-voorbeeld.pdf" download="beroepschrift-ingevuld-voorbeeld.pdf">⬇ تحميل الاستمارة معبّأة كمثال (بدون شرح)</a>
+      <a class="gbtn ghost" href="/beroep/voorbeeld-beroep.pdf" download="voorbeeld-beroep-met-uitleg.pdf">⬇ تحميل نموذج تعليمي مع شرح بالعربي</a>
     </div>
     <div class="docs">
       <h3>📎 الأوراق التي ترفقها مع الإرسال <span class="hint">(اضغط على كل ورقة بعد تجهيزها)</span></h3>
@@ -53,7 +53,7 @@
     </div>
     <p id="example-flag" class="note" hidden>هذه بيانات <b>وهمية للمثال فقط</b>. اضغط "مسح كل البيانات" واكتب بياناتك.</p>
     <form class="grid" id="form" autocomplete="on">
-      <div class="f"><label for="naam">الاسم الكامل</label><input id="naam" autocomplete="name" placeholder="Mohammed Voorbeeld"><span class="hint">كما في بطاقة الإقامة</span></div><div class="f"><label for="vnr">رقم V (V-nummer)</label><input id="vnr" inputmode="numeric" placeholder="1234567890"><span class="hint">10 أرقام — على بطاقة الإقامة</span></div><div class="f"><label for="kenmerk">رقم ملف الـ IND (zaaknummer / kenmerk)</label><input id="kenmerk"  placeholder="1234567890"><span class="hint">في أعلى رسالة القرار عند Ons kenmerk أو Zaaknummer</span></div><div class="f"><label for="rbnr">رقم قضية المحكمة (zaaknummer rechtbank)</label><input id="rbnr"  placeholder="NL26.12345"><span class="hint">اختياري — فقط إذا أعطتك المحكمة رقماً يبدأ بـ NL</span></div><div class="f full"><label for="adres">العنوان</label><input id="adres" autocomplete="street-address" placeholder="Voorbeeldstraat 1, 1234 AB Enschede"></div><div class="f"><label for="tel">رقم الهاتف</label><input id="tel" autocomplete="tel" inputmode="tel" placeholder="06-12345678"><span class="hint">اختياري</span></div><div class="f"><label for="woonplaats">مدينة التوقيع</label><input id="woonplaats" autocomplete="address-level2" placeholder="Enschede"></div><div class="f"><label for="daanvraag">تاريخ تقديم طلبك للـ IND</label><input id="daanvraag" type="date"><span class="hint">في أول سطر من رسالة القرار</span></div><div class="f"><label for="dbesluit">تاريخ قرار الرفض</label><input id="dbesluit" type="date"><span class="hint">التاريخ المكتوب على الرسالة</span></div><div class="f"><label for="dvandaag">تاريخ اليوم</label><input id="dvandaag" type="date"></div><div class="f"><label for="dvergunning">من متى عندك إقامة اللجوء المؤقتة؟</label><input id="dvergunning" type="date"><span class="hint">يظهر في فقرة الوقائع</span></div>
+      <div class="f"><label for="naam">الاسم الكامل</label><input id="naam" autocomplete="name" placeholder="Mohammed Voorbeeld"><span class="hint">كما في بطاقة الإقامة</span></div><div class="f"><label for="vnr">رقم <span class='ltr'>V-nummer</span></label><input id="vnr" inputmode="numeric" placeholder="1234567890"><span class="hint">10 أرقام — على بطاقة الإقامة</span></div><div class="f"><label for="kenmerk">رقم الملف عند الـ <span class='ltr'>IND</span> <span class='ltr'>(zaaknummer)</span></label><input id="kenmerk"  placeholder="1234567890"><span class="hint">في أعلى رسالة القرار عند <span class='ltr'>Ons kenmerk</span></span></div><div class="f full"><label for="adres">العنوان</label><input id="adres" autocomplete="street-address" placeholder="Voorbeeldstraat 1, 1234 AB Enschede"></div><div class="f"><label for="woonplaats">مدينة التوقيع</label><input id="woonplaats" autocomplete="address-level2" placeholder="Enschede"></div><div class="f"><label for="daanvraag">تاريخ تقديم طلبك للـ <span class='ltr'>IND</span></label><input id="daanvraag" type="date"><span class="hint">في أول سطر من رسالة القرار</span></div><div class="f"><label for="dbesluit">تاريخ قرار الرفض</label><input id="dbesluit" type="date"><span class="hint">التاريخ المكتوب على الرسالة</span></div><div class="f"><label for="dvergunning">من متى عندك إقامة اللجوء المؤقتة؟</label><input id="dvergunning" type="date"><span class="hint">يظهر في فقرة الوقائع</span></div>
     </form>
   </section>
 
@@ -75,12 +75,9 @@
 
   <section class="panel" aria-labelledby="h-send">
     <h2 id="h-send">③ أرسلها للمحكمة</h2>
-    <div class="row">
-      <a class="gbtn gprimary" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">أرسل أونلاين الآن (Zivver)</a>
-      <a class="gbtn ghost" href="/beroep/formulier-leeg.pdf" download="beroepschrift-asielprocedure-leeg.pdf">⬇ الاستمارة فارغة</a>
-    </div>
-    <ul class="where"><li>الصق الموضوع في خانة الموضوع، والرسالة في خانة النص.</li><li>أرفق الأوراق الموجودة في قائمة "ابدأ من هنا" في أعلى الصفحة.</li><li>خذ لقطة شاشة لتأكيد الإرسال واحتفظ بها.</li><li>المهلة: <b>4 أسابيع</b> من تاريخ القرار. الطعن مجاني.</li></ul>
-    <p class="note">هذه أداة تعليمية وليست استشارة قانونية. الأسباب في الرسالة تناسب من قدّم طلبه <b>قبل 12 يونيو 2026</b>. قبل الإرسال اتصل بـ Juridisch Loket على <span class='ltr'>0800-8020</span> (مجاني).</p>
+    <a class="gbtn gprimary big send-btn" href="https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1" target="_blank" rel="noopener">✉ أرسل الطعن أونلاين</a>
+    <ol class="send-steps"><li>اضغط الزر الأخضر فتفتح صفحة المحكمة.</li><li>الصق الموضوع والرسالة.</li><li>أرفق الأوراق، ثم اضغط إرسال.</li></ol>
+    <p class="note">المهلة <b>4 أسابيع</b> من تاريخ القرار، والطعن مجاني. هذه أداة تعليمية وليست استشارة قانونية — للمساعدة المجانية: <span class='ltr'>Juridisch Loket 0800-8020</span>.</p>
   </section>
 
   <section class="panel" aria-labelledby="h-more">

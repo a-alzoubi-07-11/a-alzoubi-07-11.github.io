@@ -15,6 +15,7 @@ SITE = "https://gidsnederland.nl"
 ZIVVER = "https://app.zivver.com/l/start/9fd886a5-459d-4c08-8606-07c385ed0df1"
 LEEG = "/beroep/formulier-leeg.pdf"
 VOORBEELD = "/beroep/voorbeeld-beroep.pdf"
+INGEVULD = "/beroep/formulier-voorbeeld.pdf"
 
 T = {
     "ar": {
@@ -29,7 +30,7 @@ T = {
         "lead": "اكتب بياناتك مرة واحدة، فتتعبّأ الرسالة الهولندية تلقائياً. بعدها اضغط \"نسخ\" وأرسلها للمحكمة أونلاين.",
         "steps": ["املأ بياناتك (الخانات فارغة)", "راجع رسالتك", "انسخ وأرسل"],
         "quick_h": "ابدأ من هنا",
-        "q_send": "✉ أرسل الطعن أونلاين للمحكمة", "q_leeg": "⬇ تحميل الاستمارة فارغة", "q_vb": "⬇ تحميل نموذج تعليمي معبّأ (شرح بالعربي)",
+        "q_leeg": "⬇ تحميل الاستمارة فارغة", "q_ing": "⬇ تحميل الاستمارة معبّأة كمثال (بدون شرح)", "q_vb": "⬇ تحميل نموذج تعليمي مع شرح بالعربي",
         "docs_h": "📎 الأوراق التي ترفقها مع الإرسال", "docs_hint": "(اضغط على كل ورقة بعد تجهيزها)",
         "docs": [
             ("الاستمارة معبّأة وموقّعة", "", "حمّلها فارغة من الزر في الأعلى، املأها ووقّعها، ثم صوّرها PDF"),
@@ -43,27 +44,23 @@ T = {
         "example_flag": "هذه بيانات <b>وهمية للمثال فقط</b>. اضغط \"مسح كل البيانات\" واكتب بياناتك.",
         "fields": {
             "naam": ("الاسم الكامل", "كما في بطاقة الإقامة"),
-            "vnr": ("رقم V (V-nummer)", "10 أرقام — على بطاقة الإقامة"),
-            "kenmerk": ("رقم ملف الـ IND (zaaknummer / kenmerk)", "في أعلى رسالة القرار عند Ons kenmerk أو Zaaknummer"),
-            "rbnr": ("رقم قضية المحكمة (zaaknummer rechtbank)", "اختياري — فقط إذا أعطتك المحكمة رقماً يبدأ بـ NL"),
+            "vnr": ("رقم <span class='ltr'>V-nummer</span>", "10 أرقام — على بطاقة الإقامة"),
+            "kenmerk": ("رقم الملف عند الـ <span class='ltr'>IND</span> <span class='ltr'>(zaaknummer)</span>", "في أعلى رسالة القرار عند <span class='ltr'>Ons kenmerk</span>"),
             "adres": ("العنوان", ""),
-            "tel": ("رقم الهاتف", "اختياري"),
             "woonplaats": ("مدينة التوقيع", ""),
-            "daanvraag": ("تاريخ تقديم طلبك للـ IND", "في أول سطر من رسالة القرار"),
+            "daanvraag": ("تاريخ تقديم طلبك للـ <span class='ltr'>IND</span>", "في أول سطر من رسالة القرار"),
             "dbesluit": ("تاريخ قرار الرفض", "التاريخ المكتوب على الرسالة"),
-            "dvandaag": ("تاريخ اليوم", ""),
             "dvergunning": ("من متى عندك إقامة اللجوء المؤقتة؟", "يظهر في فقرة الوقائع"),
         },
         "letter_h": "② رسالة الطعن الكاملة بالهولندي", "letter_hint": "فيها كل أسباب الطعن. البيانات الصفراء من الخانات التي كتبتها، والحمراء ناقصة. يُفضّل أن يراجعها محامٍ قبل الإرسال.",
         "subj_label": "الموضوع (Onderwerp)", "copy_subj": "نسخ الموضوع", "body_label": "نص الرسالة", "copy_body": "نسخ الرسالة",
-        "send_h": "③ أرسلها للمحكمة", "send_btn": "أرسل أونلاين الآن (Zivver)", "leeg_btn": "⬇ الاستمارة فارغة",
+        "send_h": "③ أرسلها للمحكمة", "send_btn": "✉ أرسل الطعن أونلاين",
         "where": [
-            "الصق الموضوع في خانة الموضوع، والرسالة في خانة النص.",
-            "أرفق الأوراق الموجودة في قائمة \"ابدأ من هنا\" في أعلى الصفحة.",
-            "خذ لقطة شاشة لتأكيد الإرسال واحتفظ بها.",
-            "المهلة: <b>4 أسابيع</b> من تاريخ القرار. الطعن مجاني.",
+            "اضغط الزر الأخضر فتفتح صفحة المحكمة.",
+            "الصق الموضوع والرسالة.",
+            "أرفق الأوراق، ثم اضغط إرسال.",
         ],
-        "note": "هذه أداة تعليمية وليست استشارة قانونية. الأسباب في الرسالة تناسب من قدّم طلبه <b>قبل 12 يونيو 2026</b>. قبل الإرسال اتصل بـ Juridisch Loket على <span class='ltr'>0800-8020</span> (مجاني).",
+        "note": "المهلة <b>4 أسابيع</b> من تاريخ القرار، والطعن مجاني. هذه أداة تعليمية وليست استشارة قانونية — للمساعدة المجانية: <span class='ltr'>Juridisch Loket 0800-8020</span>.",
         "more_h": "أدوات أخرى في الموقع",
         "more": [("/calculators/permanent-residence-check.html", "فاحص الإقامة الدائمة والجنسية"), ("/calculators/zorgtoeslag.html", "حاسبة zorgtoeslag"),
                  ("/calculators/kindgebonden-budget.html", "حاسبة kindgebonden budget"), ("/cv.html", "أنشئ سيرتك الذاتية CV"), ("/tools.html", "كل الأدوات")],
@@ -88,7 +85,7 @@ T = {
         "lead": "Vul je gegevens één keer in; de brief wordt automatisch ingevuld. Druk daarna op \"Kopiëren\" en stuur hem online naar de rechtbank.",
         "steps": ["Vul je gegevens in (velden zijn leeg)", "Controleer je brief", "Kopieer en verstuur"],
         "quick_h": "Begin hier",
-        "q_send": "✉ Beroep online indienen bij de rechtbank", "q_leeg": "⬇ Leeg formulier downloaden", "q_vb": "⬇ Ingevuld voorbeeld downloaden (uitleg in het Arabisch)",
+        "q_leeg": "⬇ Leeg formulier downloaden", "q_ing": "⬇ Ingevuld voorbeeldformulier (zonder uitleg)", "q_vb": "⬇ Voorbeeld met uitleg in het Arabisch",
         "docs_h": "📎 Bijlagen die je meestuurt", "docs_hint": "(vink elke bijlage aan als die klaar is)",
         "docs": [
             ("Ingevuld en ondertekend formulier", "", "Download het lege formulier hierboven, vul het in, onderteken het en scan het als PDF"),
@@ -104,25 +101,21 @@ T = {
             "naam": ("Volledige naam", "Zoals op je verblijfsdocument"),
             "vnr": ("V-nummer", "10 cijfers — op je verblijfsdocument"),
             "kenmerk": ("Zaaknummer IND (kenmerk)", "Bovenaan het besluit bij Ons kenmerk of Zaaknummer"),
-            "rbnr": ("Zaaknummer rechtbank", "Optioneel — alleen als de rechtbank je al een nummer gaf (begint met NL)"),
             "adres": ("Adres", ""),
-            "tel": ("Telefoonnummer", "Optioneel"),
             "woonplaats": ("Plaats van ondertekening", ""),
             "daanvraag": ("Datum van je aanvraag bij de IND", "Staat in de eerste zin van het besluit"),
             "dbesluit": ("Datum van het besluit", "De datum op de brief"),
-            "dvandaag": ("Datum van vandaag", ""),
             "dvergunning": ("Sinds wanneer heb je asiel bepaalde tijd?", "Komt in de alinea Feiten"),
         },
         "letter_h": "② Je volledige beroepschrift", "letter_hint": "Met alle gronden. Geel komt uit je ingevulde velden, rood ontbreekt nog. Laat de brief bij voorkeur nakijken door een advocaat.",
         "subj_label": "Onderwerp", "copy_subj": "Onderwerp kopiëren", "body_label": "Tekst van de brief", "copy_body": "Brief kopiëren",
-        "send_h": "③ Versturen naar de rechtbank", "send_btn": "Nu online versturen (Zivver)", "leeg_btn": "⬇ Leeg formulier",
+        "send_h": "③ Versturen naar de rechtbank", "send_btn": "✉ Beroep online versturen",
         "where": [
-            "Plak het onderwerp in het onderwerpveld en de brief in het tekstveld.",
-            "Voeg de bijlagen uit de lijst \"Begin hier\" bovenaan toe.",
-            "Maak een screenshot van de verzendbevestiging en bewaar die.",
-            "Termijn: <b>4 weken</b> na de datum van het besluit. Beroep in asielzaken is gratis.",
+            "Druk op de groene knop; de pagina van de rechtbank opent.",
+            "Plak het onderwerp en de brief.",
+            "Voeg de bijlagen toe en verstuur.",
         ],
-        "note": "Dit is een informatief hulpmiddel, geen juridisch advies. De gronden in de brief passen bij wie de aanvraag <b>vóór 12 juni 2026</b> heeft ingediend. Bel vóór het versturen het Juridisch Loket: 0800-8020 (gratis).",
+        "note": "Termijn: <b>4 weken</b> na de datum van het besluit. Beroep is gratis. Dit is geen juridisch advies — gratis hulp: Juridisch Loket 0800-8020.",
         "more_h": "Andere hulpmiddelen",
         "more": [("/nl/calculators/permanent-residence-check.html", "Check permanent verblijf en naturalisatie"), ("/nl/calculators/zorgtoeslag.html", "Zorgtoeslag berekenen"),
                  ("/nl/calculators/kindgebonden-budget.html", "Kindgebonden budget berekenen"), ("/nl/cv.html", "Maak je cv"), ("/nl/tools.html", "Alle hulpmiddelen")],
@@ -187,10 +180,10 @@ def page(L):
 <link rel="stylesheet" href="/assets/guide.css?v=1">
 <link rel="stylesheet" href="/assets/apple.css?v=4">
 <link rel="stylesheet" href="/assets/tool-tiles.css?v=1">
-<link rel="stylesheet" href="/beroep/beroep.css?v=3">
+<link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
-<script src="/beroep/beroep.js?v=3" defer></script>
+<script src="/beroep/beroep.js?v=4" defer></script>
 <script src="/assets/site-chrome.js?v=3" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>
@@ -206,9 +199,9 @@ def page(L):
   <section class="panel quick" aria-labelledby="h-quick">
     <h2 id="h-quick">{t['quick_h']}</h2>
     <div class="qbtns">
-      <a class="gbtn gprimary big" href="{ZIVVER}" target="_blank" rel="noopener">{t['q_send']}</a>
-      <a class="gbtn accent" href="{LEEG}" download="beroepschrift-asielprocedure-leeg.pdf">{t['q_leeg']}</a>
-      <a class="gbtn ghost" href="{VOORBEELD}" download="voorbeeld-beroep-gidsnederland.pdf">{t['q_vb']}</a>
+      <a class="gbtn accent big" href="{LEEG}" download="beroepschrift-asielprocedure-leeg.pdf">{t['q_leeg']}</a>
+      <a class="gbtn ghost" href="{INGEVULD}" download="beroepschrift-ingevuld-voorbeeld.pdf">{t['q_ing']}</a>
+      <a class="gbtn ghost" href="{VOORBEELD}" download="voorbeeld-beroep-met-uitleg.pdf">{t['q_vb']}</a>
     </div>
     <div class="docs">
       <h3>{t['docs_h']} <span class="hint">{t['docs_hint']}</span></h3>
@@ -249,11 +242,8 @@ def page(L):
 
   <section class="panel" aria-labelledby="h-send">
     <h2 id="h-send">{t['send_h']}</h2>
-    <div class="row">
-      <a class="gbtn gprimary" href="{ZIVVER}" target="_blank" rel="noopener">{t['send_btn']}</a>
-      <a class="gbtn ghost" href="{LEEG}" download="beroepschrift-asielprocedure-leeg.pdf">{t['leeg_btn']}</a>
-    </div>
-    <ul class="where">{where}</ul>
+    <a class="gbtn gprimary big send-btn" href="{ZIVVER}" target="_blank" rel="noopener">{t['send_btn']}</a>
+    <ol class="send-steps">{where}</ol>
     <p class="note">{t['note']}</p>
   </section>
 
