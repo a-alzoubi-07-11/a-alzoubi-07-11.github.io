@@ -8,7 +8,7 @@ import os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from build_page import page, REPO  # noqa: E402
 
-LIST_JS = '<script src="/assets/partners-page.js?v=1" defer></script>'
+LIST_JS = '<script src="/assets/partners-page.js?v=2" defer></script>'
 
 AR = dict(
     title='عروض الشركاء وأكواد الخصم',

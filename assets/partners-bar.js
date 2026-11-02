@@ -47,7 +47,8 @@ const css=`
 function itemHtml(o,dup){const name=nl&&o.partner_nl?o.partner_nl:o.partner;const title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"";
   return `<span class="pb-item"${dup?' aria-hidden="true"':""}><b>${esc(name)}:</b> ${esc(title)}`
    +(o.code?` <span>${T.code}</span> <span class="pb-code">${esc(o.code)}</span> <button type="button" class="pb-copy" data-code="${esc(o.code)}"${dup?' tabindex="-1"':""}>${T.copy}</button>`:"")
-   +` <a class="pb-go" href="${esc(o.url)}" target="_blank" rel="sponsored noopener"${dup?' tabindex="-1"':""}>${T.open}</a></span>`;}
+   +` <a class="pb-go" href="${esc(o.url)}" target="_blank" rel="sponsored noopener"${dup?' tabindex="-1"':""}>${T.open}</a>`
+   +(/^\d{8,15}$/.test(o.whatsapp||"")?` <a class="pb-go" href="https://wa.me/${o.whatsapp}" target="_blank" rel="sponsored noopener"${dup?' tabindex="-1"':""}>WhatsApp</a>`:"")+`</span>`;}
 function render(items){
   const st=document.createElement("style");st.textContent=css;document.head.append(st);
   const bar=document.createElement("aside");bar.className="pb";bar.setAttribute("aria-label",T.ad+" – "+T.label);bar.title=T.note;
