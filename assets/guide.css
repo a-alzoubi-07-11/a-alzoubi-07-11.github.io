@@ -2,3 +2,19 @@
 /* Make the single article link cover its whole guide card. */
 [data-guide-card]{position:relative}
 [data-guide-card] h3 a::after{content:"";position:absolute;inset:0}
+
+/* Channel explainer videos (inserted by .github/scripts/insert_channel_videos.py). Nothing loads from YouTube before play. */
+.cv{margin-block:2rem}
+.cv-intro{color:var(--muted,#6e6e73);margin:.25rem 0 1rem}
+.cv-item{margin:0 0 1.25rem}
+.cv .video-slot{aspect-ratio:16/9;border:1px solid var(--line,#d2d2d7);border-radius:16px;display:grid;place-items:center;overflow:hidden;background:var(--soft,#f5f5f7)}
+.cv .video-slot iframe{width:100%;height:100%;border:0}
+.cv .video-placeholder{padding:1rem 1.25rem;text-align:center;max-width:36rem}
+.cv-title{font-weight:650;margin:0 0 .75rem;line-height:1.45}
+.cv-play{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:0 1.25rem;border:0;border-radius:999px;background:#0071e3;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.cv-play::before{content:"";width:0;height:0;border-block:7px solid transparent;border-inline-start:11px solid #fff}
+[dir="rtl"] .cv-play::before{transform:scaleX(-1)}
+.cv-play:hover{background:#0077ed}
+.cv-note{font-size:.85rem;color:var(--muted,#6e6e73);margin:.75rem 0 0}
+.cv figcaption{margin-top:.4rem;font-size:.9rem}
+@media print{.cv{display:none}}
