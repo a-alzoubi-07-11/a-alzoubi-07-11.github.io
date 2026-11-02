@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-02T05:41Z",
+ "checked_at": "2026-11-02T11:26Z",
  "external": {
   "total": 555,
   "broken": [],
@@ -471,7 +471,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -501,7 +501,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -636,7 +636,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/liability-home-insurance.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
