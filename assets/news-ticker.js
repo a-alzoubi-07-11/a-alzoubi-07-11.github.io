@@ -1,5 +1,6 @@
-/* Homepage "updates" strip: official news (assets/news-ticker.json) and partner offers
-   (assets/partners.json, clearly labelled as advertising) in ONE quiet, rotating card.
+/* Homepage "updates" strip: official news only (assets/news-ticker.json), in ONE quiet, rotating card.
+   Partner offers are NOT mixed in here: they live in a separate, labelled "partner offers" box
+   further down the page (partners-bar.js), so news and advertising stay clearly apart.
    - One item visible at a time, soft cross-fade; all items share one grid cell, so the height never jumps.
    - Pauses on hover/focus, when the tab is hidden, and for prefers-reduced-motion (manual arrows only).
    - Buttons never move, so every tap works the first time. No cookies, no tracking. */
@@ -9,8 +10,8 @@ const base=new URL(".",script.src).href;
 const fixedLanguage=script.dataset.language;
 const ROTATE_MS=7000;
 const T={
- ar:{title:"المستجدات",region:"آخر المستجدات وعروض الشركاء",news:"خبر رسمي",ad:"إعلان",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",reported:"حسب وسائل الإعلام",read:"اقرأ في المصدر",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",prev:"السابق",next:"التالي",pause:"إيقاف التقليب",play:"تشغيل التقليب",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."},
- nl:{title:"Updates",region:"Laatste updates en aanbiedingen van partners",news:"Officieel nieuws",ad:"Advertentie",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",reported:"Volgens media",read:"Lees bij de bron",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",prev:"Vorige",next:"Volgende",pause:"Wisselen pauzeren",play:"Wisselen hervatten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
+ ar:{title:"المستجدات",region:"آخر المستجدات الرسمية",news:"خبر رسمي",ad:"إعلان",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",reported:"حسب وسائل الإعلام",read:"اقرأ في المصدر",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",prev:"السابق",next:"التالي",pause:"إيقاف التقليب",play:"تشغيل التقليب",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."},
+ nl:{title:"Updates",region:"Laatste officiële updates",news:"Officieel nieuws",ad:"Advertentie",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",reported:"Volgens media",read:"Lees bij de bron",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",prev:"Vorige",next:"Volgende",pause:"Wisselen pauzeren",play:"Wisselen hervatten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
 };
 const ICON={
  prev:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>',
@@ -39,25 +40,10 @@ function newsItems(data,l){
    +`<p class="us-foot">${src?`<span class="us-src">${esc(src)}</span>`:""}<a class="us-link" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${t.read}${ICON.ext}</a></p>`;
  });
 }
-function offerItems(data,l){
- const t=T[l];
- return (Array.isArray(data&&data.items)?data.items:[]).filter(o=>o&&o.active===true&&okUrl(o.url)&&(!o.start||o.start<=today)&&(!o.end||o.end>=today)
-  &&(!Array.isArray(o.topics)||!o.topics.length||o.topics.map(String).includes("home"))).slice(0,4).map(o=>{
-  const name=l==="nl"&&o.partner_nl?o.partner_nl:o.partner,title=pair(o.title,l)||pair(o.title,"ar");
-  const code=o.code?`<button type="button" class="us-btn us-code" data-code="${esc(o.code)}" aria-label="${t.copy}: ${esc(o.code)}"><span class="us-code-l">${t.code}</span><span class="us-code-v">${esc(o.code)}</span>${ICON.copy}</button>`:"";
-  const wa=/^\d{8,15}$/.test(o.whatsapp||"")?`<a class="us-btn us-ghost" href="https://wa.me/${o.whatsapp}" target="_blank" rel="sponsored noopener">${t.wa}</a>`:"";
-  return `<p class="us-meta"><span class="us-label us-ad" title="${esc(t.note)}">${t.ad}</span><span>${esc(name)}</span></p>`
-   +`<p class="us-title">${esc(title)}</p>`
-   +`<p class="us-sum">${esc(t.note)} <a href="${l==="nl"?"/nl/partners.html":"/partners.html"}">${t.all}</a></p>`
-   +`<div class="us-acts">${code}<a class="us-btn us-primary" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">${t.visit}</a>${wa}</div>`;
- });
-}
-function render(news,offers){
+function render(news){
  const root=document.getElementById("news-ticker");if(!root)return;clearInterval(timer);
  const l=lang(),t=T[l];
- const n=newsItems(news,l),o=offerItems(offers,l);
- // news leads; offers sit in second place (then every third item), so the ad is seen without dominating
- const items=[];let oi=0;n.forEach((x,i)=>{items.push({k:"news",h:x});if((i===0||i%2===1)&&oi<o.length)items.push({k:"ad",h:o[oi++]})});while(oi<o.length)items.push({k:"ad",h:o[oi++]});
+ const items=newsItems(news,l).map(h=>({k:"news",h})); // official news only; offers have their own box
  if(!items.length){root.hidden=true;return}
  root.className="us";root.hidden=false;root.lang=l;root.dir=l==="ar"?"rtl":"ltr";root.setAttribute("aria-label",t.region);root.removeAttribute("aria-live");
  const multi=items.length>1;
@@ -84,14 +70,13 @@ function render(news,offers){
  show(Math.min(current,lis.length-1));restart();
 }
 const get=f=>fetch(base+f,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null);
-let cache=[null,null];
-async function load(){cache=await Promise.all([get("news-ticker.json"),get("partners.json")]);render(cache[0],cache[1])}
+let cache=[null];
+async function load(){cache=[await get("news-ticker.json")];render(cache[0])}
 function init(){
  let root=document.getElementById("news-ticker");
  if(!root){root=document.createElement("section");root.id="news-ticker";root.hidden=true;const hero=document.querySelector("main .hm-hero");if(hero)hero.after(root);else return}
- window.__updatesStrip=true; // partners-bar.js: the offers are already shown here
  load();
- setInterval(()=>{if(!document.hidden)get("news-ticker.json").then(d=>{if(d&&JSON.stringify(d)!==JSON.stringify(cache[0])){cache[0]=d;render(cache[0],cache[1])}})},600000);
+ setInterval(()=>{if(!document.hidden)get("news-ticker.json").then(d=>{if(d&&JSON.stringify(d)!==JSON.stringify(cache[0])){cache[0]=d;render(cache[0])}})},600000);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })();

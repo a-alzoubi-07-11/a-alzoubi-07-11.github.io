@@ -1,14 +1,14 @@
 /* Partner offer card on guide pages (sponsored, clearly labelled). Data: /assets/partners.json.
    - Shows only active offers whose dates include today and whose topics match the page.
-   - On the homepages the offers live inside the "updates" strip (news-ticker.js), so nothing is added here.
+   - Never mixed into the official news strip. Homepages: a separate "partner offers" box at the end of the page.
+     Guides: after the article (and its sources), never inside the reading flow.
    - Quiet, static card (no moving text). The visitor can close it for this browser session. No tracking, no cookies. */
 (()=>{"use strict";
 if(window.__partnersBar)return;window.__partnersBar=true;
 const HOME=/^\/(nl\/)?(index\.html)?$/.test(location.pathname);
-if(HOME&&(window.__updatesStrip||document.getElementById("news-ticker")))return;
 const nl=(document.documentElement.lang||"ar").slice(0,2)==="nl";
-const T=nl?{ad:"Advertentie",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",close:"Sluiten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
-            :{ad:"إعلان",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",close:"إغلاق",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."};
+const T=nl?{head:"Aanbiedingen van partners",ad:"Advertentie",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",close:"Sluiten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
+            :{head:"عروض الشركاء",ad:"إعلان",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",close:"إغلاق",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."};
 const KEY="gn-partners-closed";
 try{if(sessionStorage.getItem(KEY)==="1")return;}catch(_){}
 const today=new Date().toISOString().slice(0,10);
@@ -39,6 +39,8 @@ const css=`
 .pb-x:hover{background:rgba(0,0,0,.09)}
 .pb :focus-visible{outline:2px solid #0071e3;outline-offset:2px}
 .pb.pb-top-page{width:min(1024px,calc(100% - 32px));margin:16px auto}
+.pb.pb-end{width:min(1024px,calc(100% - 32px));margin:32px auto 24px}
+.pb-h{margin:0 0 6px;font-size:13px;font-weight:600;color:#6e6e73;letter-spacing:.01em}
 @media print{.pb{display:none}}
 `;
 function card(o){
@@ -57,11 +59,13 @@ function render(items){
   bar.addEventListener("click",async e=>{const c=e.target.closest(".pb-code");if(c){let ok=false;try{await navigator.clipboard.writeText(c.dataset.code);ok=true}catch(_){}
       const v=c.querySelector(".pb-code-l"),old=v.textContent;v.textContent=ok?T.copied:T.code;c.classList.toggle("done",ok);setTimeout(()=>{v.textContent=old;c.classList.remove("done")},2000);}
     if(e.target.closest(".pb-x")){bar.remove();try{sessionStorage.setItem(KEY,"1")}catch(_){}}});
-  // place: guides -> after the summary box; other pages -> under the header
-  const sum=document.querySelector("main .reader .summary, main .summary");
-  if(sum){sum.after(bar);}
-  else{bar.classList.add("pb-top-page");const header=["header.topbar","header.site-header","header.top","header.site-head","body > header"].map(s=>document.querySelector(s)).find(Boolean);
-    if(header&&header.parentNode)header.parentNode.insertBefore(bar,header.nextSibling);else document.body.prepend(bar);}
+  // place it out of the reading flow: guides -> right after the article; all other pages (incl. homepages) -> end of <main>
+  const main=document.querySelector("main");
+  const art=main&&main.querySelector("article.reader, article");
+  if(HOME)bar.insertAdjacentHTML("afterbegin",`<p class="pb-h">${T.head}</p>`);
+  if(art&&!HOME){art.after(bar);}
+  else if(main){bar.classList.add("pb-end");main.append(bar);}
+  else{bar.classList.add("pb-end");const foot=document.querySelector("footer.gn-foot, body > footer");if(foot)foot.before(bar);else document.body.append(bar);}
 }
 fetch("/assets/partners.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{const items=live(d&&d.items);if(items.length)render(items)}).catch(()=>{});
 })();
