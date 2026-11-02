@@ -1,13 +1,14 @@
-/* Partner offers bar (sponsored, clearly labelled). Data: /assets/partners.json.
-   - Shows only active offers whose dates include today (and whose topics match the page, if set).
-   - Moving text line (text only) + buttons that stand still, so every tap works the first time.
-   - prefers-reduced-motion: no movement, the strip simply scrolls sideways by hand.
-   - The visitor can close it for this browser session. No tracking, no cookies. */
+/* Partner offer card on guide pages (sponsored, clearly labelled). Data: /assets/partners.json.
+   - Shows only active offers whose dates include today and whose topics match the page.
+   - On the homepages the offers live inside the "updates" strip (news-ticker.js), so nothing is added here.
+   - Quiet, static card (no moving text). The visitor can close it for this browser session. No tracking, no cookies. */
 (()=>{"use strict";
 if(window.__partnersBar)return;window.__partnersBar=true;
+const HOME=/^\/(nl\/)?(index\.html)?$/.test(location.pathname);
+if(HOME&&(window.__updatesStrip||document.getElementById("news-ticker")))return;
 const nl=(document.documentElement.lang||"ar").slice(0,2)==="nl";
-const T=nl?{ad:"Advertentie",label:"Aanbiedingen",code:"Code",copy:"Kopieer",copied:"Gekopieerd",open:"Bekijk aanbod",all:"Alle aanbiedingen",close:"Sluiten",pause:"Pauzeren",play:"Afspelen",note:"Betaalde samenwerking. Gids Nederland garandeert de diensten van partners niet."}
-            :{ad:"إعلان",label:"عروض الشركاء",code:"الكود",copy:"نسخ",copied:"تم النسخ",open:"اطّلع على العرض",all:"كل العروض",close:"إغلاق",pause:"إيقاف الحركة",play:"تشغيل الحركة",note:"تعاون مدفوع. دليل هولندا لا يضمن خدمات الشركاء."};
+const T=nl?{ad:"Advertentie",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",close:"Sluiten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
+            :{ad:"إعلان",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",close:"إغلاق",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."};
 const KEY="gn-partners-closed";
 try{if(sessionStorage.getItem(KEY)==="1")return;}catch(_){}
 const today=new Date().toISOString().slice(0,10);
@@ -16,61 +17,50 @@ const okUrl=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");
 function live(items){const path=location.pathname.toLowerCase();
   return (items||[]).filter(o=>o&&o.active===true&&okUrl(o.url)&&(!o.start||o.start<=today)&&(!o.end||o.end>=today)
     &&(!Array.isArray(o.topics)||!o.topics.length||o.topics.some(t=>{t=String(t).toLowerCase();return t==="home"?HOME:path.includes(t)})));}
-const HOME=/^\/(nl\/)?(index\.html)?$/.test(location.pathname);
+const ICO={copy:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A1.5 1.5 0 0 1 6.5 5H15"/></svg>',
+  x:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>'};
 const css=`
-.pb{--pb-bg:#16202e;--pb-fg:#f5f7fa;--pb-acc:#f5a524;position:relative;z-index:5;display:flex;flex-wrap:wrap;align-items:stretch;gap:0;max-width:100%;margin:14px auto;background:var(--pb-bg);color:var(--pb-fg);font-size:15px;line-height:1.4;overflow:hidden;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
-.hm-hero+.pb,.pb.pb-home{margin:18px auto 6px;width:min(1100px,calc(100% - 32px))}
-.pb-tag{flex:none;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:800;background:var(--pb-acc);color:#1d1400;padding:0 12px;min-height:44px}
-.pb-tag small{font-weight:600;font-size:11px;opacity:.85;border:1px solid rgba(29,20,0,.35);border-radius:4px;padding:0 4px}
-.pb-view{flex:1 1 220px;min-width:0;overflow:hidden;display:flex;align-items:center;color:inherit!important;text-decoration:none!important;min-height:44px;mask-image:linear-gradient(90deg,transparent,#000 18px,#000 calc(100% - 18px),transparent)}
-.pb-track{display:flex;width:max-content;gap:56px;padding-inline:12px;animation:pb-move var(--pb-dur,22s) linear infinite;will-change:transform}
-[dir=rtl] .pb-track{animation-name:pb-move-rtl}
-.pb:hover .pb-track,.pb.pb-paused .pb-track{animation-play-state:paused}
-@keyframes pb-move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes pb-move-rtl{from{transform:translateX(0)}to{transform:translateX(50%)}}
-.pb-msg{white-space:nowrap}
-.pb-msg b{font-weight:800;color:var(--pb-acc)}
-.pb-code{font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(255,255,255,.12);border:1px dashed var(--pb-acc);border-radius:4px;padding:0 6px;direction:ltr;unicode-bidi:isolate}
-.pb-acts{display:flex;align-items:center;gap:6px;flex:none;padding:6px 8px}
-.pb button,.pb a{font:inherit;color:var(--pb-fg)}
-.pb-btn{display:inline-flex;align-items:center;gap:4px;min-height:34px;border:1px solid rgba(255,255,255,.45);background:transparent;border-radius:999px;padding:2px 12px;cursor:pointer;text-decoration:none!important;font-weight:600;white-space:nowrap;font-size:14px}
-.pb-btn:hover{background:rgba(255,255,255,.1)}
-.pb-btn.pb-copy{background:var(--pb-acc);color:#1d1400!important;border-color:var(--pb-acc)}
-.pb-btn.pb-wa{border-color:#25d366}
-.pb-ctl{flex:none;display:flex;align-items:center}
-.pb-ctl button{border:0;background:transparent;font-size:16px;line-height:1;width:40px;height:44px;cursor:pointer}
-.pb :focus-visible{outline:3px solid var(--pb-acc);outline-offset:2px}
-@media (max-width:600px){.pb{font-size:14px;border-radius:8px}.pb-tag{padding:0 8px}.pb-tag-t{display:none}.pb-tag small{font-size:12px;font-weight:800;border:0;padding:0;opacity:1}.pb-view{flex:1 1 0}.pb-ctl button{width:36px}.pb-acts{order:3;flex-basis:100%;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap}.pb-ctl{order:2}}
-@media (prefers-reduced-motion: reduce){.pb-track{animation:none;width:auto;flex-wrap:wrap}.pb-msg{white-space:normal}.pb-track>.pb-msg[aria-hidden]{display:none}.pb-view{mask-image:none}.pb-pause{display:none}}
+.pb{position:relative;margin:20px 0;padding:16px 18px 14px;border-radius:18px;background:#f5f5f7;color:#1d1d1f;font-family:var(--ap-font,system-ui,sans-serif);font-size:15px;line-height:1.5}
+.pb-top{display:flex;align-items:center;gap:8px;font-size:13px;color:#6e6e73;padding-inline-end:36px}
+.pb-ad{border:1px solid #d2d2d7;border-radius:6px;padding:0 6px;font-size:11px;line-height:18px;font-weight:600}
+.pb-name{font-weight:600}
+.pb-title{margin:6px 0 0;font-size:18px;line-height:1.35;font-weight:600;color:#1d1d1f}
+.pb-note{margin:4px 0 0;font-size:13px;color:#86868b}
+.pb-note a{color:#0066cc}
+.pb-acts{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.pb-btn{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 16px;border-radius:999px;font:inherit;font-size:14px;font-weight:500;text-decoration:none!important;cursor:pointer;border:0;white-space:nowrap}
+.pb-primary{background:#0071e3;color:#fff!important}.pb-primary:hover{background:#0077ed}
+.pb-ghost{background:transparent;color:#0066cc!important;padding:0 8px}
+.pb-code{background:#fff;color:#1d1d1f;box-shadow:inset 0 0 0 1px #d2d2d7}
+.pb-code-l{color:#6e6e73}.pb-code-v{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:600;letter-spacing:.04em;direction:ltr;unicode-bidi:isolate}
+.pb-code.done{box-shadow:inset 0 0 0 1px #34c759}.pb-code.done .pb-code-l{color:#248a3d}
+.pb svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pb .pb-x{position:absolute;top:10px;inset-inline-end:10px;display:grid;place-items:center;box-sizing:border-box;width:32px!important;height:32px!important;min-width:0;min-height:0;border:0;border-radius:50%;background:rgba(0,0,0,.05);color:#6e6e73;cursor:pointer;padding:0}
+.pb-x:hover{background:rgba(0,0,0,.09)}
+.pb :focus-visible{outline:2px solid #0071e3;outline-offset:2px}
+.pb.pb-top-page{width:min(1024px,calc(100% - 32px));margin:16px auto}
 @media print{.pb{display:none}}
 `;
-const nameOf=o=>nl&&o.partner_nl?o.partner_nl:o.partner;
-const titleOf=o=>(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"";
-/* moving line = text only (nothing to aim at); the buttons stand still next to it, so every tap works the first time */
-function msg(o,dup){return `<span class="pb-msg"${dup?' aria-hidden="true"':""}><b>${esc(nameOf(o))}:</b> ${esc(titleOf(o))}${o.code?` — ${T.code} <span class="pb-code">${esc(o.code)}</span>`:""}</span>`;}
-function acts(o){return (o.code?`<button type="button" class="pb-btn pb-copy" data-code="${esc(o.code)}">${T.copy} ${esc(o.code)}</button>`:"")
-  +`<a class="pb-btn" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">${T.open}</a>`
-  +(/^\d{8,15}$/.test(o.whatsapp||"")?`<a class="pb-btn pb-wa" href="https://wa.me/${o.whatsapp}" target="_blank" rel="sponsored noopener">WhatsApp</a>`:"");}
+function card(o){
+  const name=nl&&o.partner_nl?o.partner_nl:o.partner,title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"";
+  return `<p class="pb-top"><span class="pb-ad" title="${esc(T.note)}">${T.ad}</span><span class="pb-name">${esc(name)}</span></p>`
+   +`<p class="pb-title">${esc(title)}</p><p class="pb-note">${T.note} <a href="${nl?"/nl/partners.html":"/partners.html"}">${T.all}</a></p>`
+   +`<div class="pb-acts">${o.code?`<button type="button" class="pb-btn pb-code" data-code="${esc(o.code)}" aria-label="${T.copy}: ${esc(o.code)}"><span class="pb-code-l">${T.code}</span><span class="pb-code-v">${esc(o.code)}</span>${ICO.copy}</button>`:""}`
+   +`<a class="pb-btn pb-primary" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">${T.visit}</a>`
+   +(/^\d{8,15}$/.test(o.whatsapp||"")?`<a class="pb-btn pb-ghost" href="https://wa.me/${o.whatsapp}" target="_blank" rel="sponsored noopener">${T.wa}</a>`:"")+`</div>`;
+}
 function render(items){
   const st=document.createElement("style");st.textContent=css;document.head.append(st);
-  const bar=document.createElement("aside");bar.className="pb";bar.setAttribute("aria-label",T.ad+" – "+T.label);bar.title=T.note;
-  const line=items.map(o=>msg(o,false)).join("")+items.map(o=>msg(o,true)).join("");
-  bar.innerHTML=`<span class="pb-tag"><span class="pb-tag-t">${T.label}</span><small>${T.ad}</small></span><a class="pb-view" href="${esc(items[0].url)}" target="_blank" rel="sponsored noopener"><span class="pb-track">${line}</span></a>`
-    +`<span class="pb-ctl"><button type="button" class="pb-pause" aria-pressed="false" aria-label="${T.pause}">⏸</button><button type="button" class="pb-x" aria-label="${T.close}">×</button></span><span class="pb-acts">${acts(items[0])}</span>`;
-  // speed ~ 60px per second, whatever the text length
-  requestAnimationFrame(()=>{const tr=bar.querySelector(".pb-track");tr.style.setProperty("--pb-dur",Math.max(12,Math.round(tr.scrollWidth/2/60))+"s")});
-  // several partners: the buttons follow the offers one by one
-  if(items.length>1){let i=0;const box=bar.querySelector(".pb-acts"),view=bar.querySelector(".pb-view");
-    setInterval(()=>{if(bar.matches(":hover,:focus-within"))return;i=(i+1)%items.length;box.innerHTML=acts(items[i]);view.href=items[i].url},8000);}
-  bar.addEventListener("click",async e=>{const c=e.target.closest(".pb-copy");if(c){e.preventDefault();let ok=false;try{await navigator.clipboard.writeText(c.dataset.code);ok=true}catch(_){}
-      const old=c.textContent;c.textContent=ok?T.copied:c.dataset.code;setTimeout(()=>{c.textContent=old},2000);}
-    const ps=e.target.closest(".pb-pause");if(ps){const on=bar.classList.toggle("pb-paused");ps.setAttribute("aria-pressed",String(on));ps.textContent=on?"▶":"⏸";ps.setAttribute("aria-label",on?T.play:T.pause);}
+  const o=items[Math.floor(Math.random()*items.length)]; // several partners: a different one per page view, nothing moves
+  const bar=document.createElement("aside");bar.className="pb";bar.setAttribute("aria-label",T.ad);
+  bar.innerHTML=card(o)+`<button type="button" class="pb-x" aria-label="${T.close}">${ICO.x}</button>`;
+  bar.addEventListener("click",async e=>{const c=e.target.closest(".pb-code");if(c){let ok=false;try{await navigator.clipboard.writeText(c.dataset.code);ok=true}catch(_){}
+      const v=c.querySelector(".pb-code-l"),old=v.textContent;v.textContent=ok?T.copied:T.code;c.classList.toggle("done",ok);setTimeout(()=>{v.textContent=old;c.classList.remove("done")},2000);}
     if(e.target.closest(".pb-x")){bar.remove();try{sessionStorage.setItem(KEY,"1")}catch(_){}}});
-  // place: homepage -> after the first section (title + search); guides -> after the summary box; else under the header
-  const hero=document.querySelector("main .hm-hero"),sum=document.querySelector("main .reader .summary, main .summary");
-  if(hero){bar.classList.add("pb-home");hero.after(bar);}
-  else if(sum){sum.after(bar);}
-  else{const header=["header.topbar","header.site-header","header.top","header.site-head","body > header"].map(s=>document.querySelector(s)).find(Boolean);
+  // place: guides -> after the summary box; other pages -> under the header
+  const sum=document.querySelector("main .reader .summary, main .summary");
+  if(sum){sum.after(bar);}
+  else{bar.classList.add("pb-top-page");const header=["header.topbar","header.site-header","header.top","header.site-head","body > header"].map(s=>document.querySelector(s)).find(Boolean);
     if(header&&header.parentNode)header.parentNode.insertBefore(bar,header.nextSibling);else document.body.prepend(bar);}
 }
 fetch("/assets/partners.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{const items=live(d&&d.items);if(items.length)render(items)}).catch(()=>{});

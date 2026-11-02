@@ -31,7 +31,7 @@ T = {
         "steps": ["املأ بياناتك (الخانات فارغة)", "راجع رسالتك", "انسخ وأرسل"],
         "quick_h": "ابدأ من هنا",
         "q_leeg": "⬇ تحميل الاستمارة فارغة", "q_ing": "⬇ تحميل الاستمارة معبّأة كمثال (بدون شرح)", "q_vb": "⬇ تحميل نموذج تعليمي مع شرح بالعربي",
-        "docs_h": "📎 الأوراق التي ترفقها مع الإرسال", "docs_hint": "(اضغط على كل ورقة بعد تجهيزها)",
+        "docs_h": "<i class=gi-link aria-hidden=true></i> الأوراق التي ترفقها مع الإرسال", "docs_hint": "(اضغط على كل ورقة بعد تجهيزها)",
         "docs": [
             ("الاستمارة معبّأة وموقّعة", "", "حمّلها فارغة من الزر في الأعلى، املأها ووقّعها، ثم صوّرها PDF"),
             ("قرار الرفض من الـ IND", "beschikking", "كل الصفحات — من Mijn IND أو صورة الرسالة الورقية"),
@@ -39,7 +39,7 @@ T = {
             ("إثبات دفع الرسوم للـ IND", "leges", "لقطة شاشة للدفع أو تأكيد استلام الدفع من الـ IND — يثبت أنك قدّمت الطلب ودفعت"),
             ("نسخة من بطاقة الإقامة (اختياري)", "", "الوجهين"),
         ],
-        "scan": "💡 لتحويل الأوراق إلى PDF مجاناً: آيفون ← تطبيق Bestanden أو Notities ← Scan documenten. أندرويد ← Google Drive ← Scannen.",
+        "scan": "<i class=gi-bulb aria-hidden=true></i> لتحويل الأوراق إلى PDF مجاناً: آيفون ← تطبيق Bestanden أو Notities ← Scan documenten. أندرويد ← Google Drive ← Scannen.",
         "data_h": "① بياناتك", "b_example": "عرض مثال", "b_clear": "مسح كل البيانات",
         "example_flag": "هذه بيانات <b>وهمية للمثال فقط</b>. اضغط \"مسح كل البيانات\" واكتب بياناتك.",
         "fields": {
@@ -55,7 +55,7 @@ T = {
         },
         "letter_h": "② رسالة الطعن الكاملة بالهولندي", "letter_hint": "فيها كل أسباب الطعن. البيانات الصفراء من الخانات التي كتبتها، والحمراء ناقصة. يُفضّل أن يراجعها محامٍ قبل الإرسال.",
         "subj_label": "الموضوع (Onderwerp)", "copy_subj": "نسخ الموضوع", "body_label": "نص الرسالة", "copy_body": "نسخ الرسالة",
-        "send_h": "③ أرسلها للمحكمة", "send_btn": "✉ أرسل الطعن أونلاين",
+        "send_h": "③ أرسلها للمحكمة", "send_btn": "<i class=gi-mail aria-hidden=true></i> أرسل الطعن أونلاين",
         "where": [
             "اضغط الزر الأخضر فتفتح صفحة المحكمة.",
             "الصق الموضوع والرسالة.",
@@ -87,7 +87,7 @@ T = {
         "steps": ["Vul je gegevens in (velden zijn leeg)", "Controleer je brief", "Kopieer en verstuur"],
         "quick_h": "Begin hier",
         "q_leeg": "⬇ Leeg formulier downloaden", "q_ing": "⬇ Ingevuld voorbeeldformulier (zonder uitleg)", "q_vb": "⬇ Voorbeeld met uitleg in het Arabisch",
-        "docs_h": "📎 Bijlagen die je meestuurt", "docs_hint": "(vink elke bijlage aan als die klaar is)",
+        "docs_h": "<i class=gi-link aria-hidden=true></i> Bijlagen die je meestuurt", "docs_hint": "(vink elke bijlage aan als die klaar is)",
         "docs": [
             ("Ingevuld en ondertekend formulier", "", "Download het lege formulier hierboven, vul het in, onderteken het en scan het als PDF"),
             ("Besluit van de IND", "beschikking", "Alle pagina's — uit Mijn IND of een foto van de papieren brief"),
@@ -95,7 +95,7 @@ T = {
             ("Bewijs van betaling van de leges", "", "Screenshot van de betaling of de ontvangstbevestiging van de IND"),
             ("Kopie verblijfsdocument (optioneel)", "", "Voor- en achterkant"),
         ],
-        "scan": "💡 Gratis scannen naar PDF: iPhone ← app Bestanden of Notities ← Scan documenten. Android ← Google Drive ← Scannen.",
+        "scan": "<i class=gi-bulb aria-hidden=true></i> Gratis scannen naar PDF: iPhone ← app Bestanden of Notities ← Scan documenten. Android ← Google Drive ← Scannen.",
         "data_h": "① Je gegevens", "b_example": "Voorbeeld tonen", "b_clear": "Alles wissen",
         "example_flag": "Dit zijn <b>verzonnen voorbeeldgegevens</b>. Druk op \"Alles wissen\" en vul je eigen gegevens in.",
         "fields": {
@@ -111,7 +111,7 @@ T = {
         },
         "letter_h": "② Je volledige beroepschrift", "letter_hint": "Met alle gronden. Geel komt uit je ingevulde velden, rood ontbreekt nog. Laat de brief bij voorkeur nakijken door een advocaat.",
         "subj_label": "Onderwerp", "copy_subj": "Onderwerp kopiëren", "body_label": "Tekst van de brief", "copy_body": "Brief kopiëren",
-        "send_h": "③ Versturen naar de rechtbank", "send_btn": "✉ Beroep online versturen",
+        "send_h": "③ Versturen naar de rechtbank", "send_btn": "<i class=gi-mail aria-hidden=true></i> Beroep online versturen",
         "where": [
             "Druk op de groene knop; de pagina van de rechtbank opent.",
             "Plak het onderwerp en de brief.",
@@ -180,13 +180,13 @@ def page(L):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css?v=1">
 <link rel="stylesheet" href="/assets/guide.css?v=1">
-<link rel="stylesheet" href="/assets/apple.css?v=4">
-<link rel="stylesheet" href="/assets/tool-tiles.css?v=1">
+<link rel="stylesheet" href="/assets/apple.css?v=5">
+<link rel="stylesheet" href="/assets/tool-tiles.css?v=2">
 <link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
 <script src="/beroep/beroep.js?v=5" defer></script>
-<script src="/assets/site-chrome.js?v=7" defer></script>
+<script src="/assets/site-chrome.js?v=8" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>
 <main id="content" class="wrap"><nav class="breadcrumbs" aria-label="مسار التنقل / Kruimelpad"><ol>{crumbs}<li aria-current="page"><span>{t['crumb_here']}</span></li></ol></nav>
@@ -257,8 +257,8 @@ def page(L):
   </section>
 
   <div class="social">
-    <a class="yt" href="https://www.youtube.com/@a.alzoubi.07.11" target="_blank" rel="noopener">▶ YouTube</a>
-    <a class="tt" href="https://www.tiktok.com/@a.alzoubi.07.11" target="_blank" rel="noopener">♪ TikTok</a>
+    <a class="yt" href="https://www.youtube.com/@a.alzoubi.07.11" target="_blank" rel="noopener"><i class=gi-play aria-hidden=true></i> YouTube</a>
+    <a class="tt" href="https://www.tiktok.com/@a.alzoubi.07.11" target="_blank" rel="noopener"><i class=gi-music aria-hidden=true></i> TikTok</a>
   </div>
 </div>
 </main>

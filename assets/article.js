@@ -14,7 +14,7 @@
   if (headings.length > 2 && !root.querySelector('.article-toc')) {
     const toc = document.createElement('aside');
     toc.className = 'article-toc';
-    toc.innerHTML = '<strong>📚 في هذا الدليل</strong><ul></ul>';
+    toc.innerHTML = '<strong><i class=gi-list aria-hidden=true></i> في هذا الدليل</strong><ul></ul>';
     const list = toc.querySelector('ul');
     headings.forEach((h,i) => {
       if (!h.id) h.id = 'section-' + (i+1);

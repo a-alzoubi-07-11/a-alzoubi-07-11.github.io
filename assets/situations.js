@@ -18,7 +18,7 @@
   };
 
   var S = [
-    { id: 'new', ico: '🧳', tone: 'blue',
+    { id: 'new', ico: '<i class=gi-compass aria-hidden=true></i>', tone: 'blue',
       t: nl ? 'Net aangekomen' : 'وصلت جديداً', s: nl ? 'BSN, DigiD, zorg en geld' : 'التسجيل والتأمين والبدلات',
       tip: nl ? 'Doe stap 1 eerst: zonder BSN lukt bijna niets anders.' : 'ابدأ بالخطوة 1: بدون BSN لا يمكنك فعل أي شيء تقريباً.',
       steps: [
@@ -29,7 +29,7 @@
         [nl ? 'Toeslagen checken' : 'افحص البدلات', nl ? 'Zorgtoeslag en huurtoeslag kunnen veel schelen.' : 'بدل التأمين والسكن يوفران كثيراً.', A('zorgtoeslag-guide')]
       ], tool: [nl ? 'Zorgtoeslag berekenen' : 'حاسبة zorgtoeslag', C('zorgtoeslag')] },
 
-    { id: 'asiel', ico: '🛡️', tone: 'green',
+    { id: 'asiel', ico: '<i class=gi-shield aria-hidden=true></i>', tone: 'green',
       t: nl ? 'Ik heb een asielvergunning' : 'عندي إقامة لجوء', s: nl ? 'Inburgering, gezin, permanent' : 'الاندماج، لمّ الشمل، الدائمة',
       tip: nl ? 'Sinds 12 juni 2026 is de vergunning 3 jaar. Verleng altijd op tijd.' : 'منذ 12 يونيو 2026 الإقامة 3 سنوات. جدّدها دائماً في وقتها.',
       steps: [
@@ -40,7 +40,7 @@
         [nl ? 'Route naar permanent verblijf' : 'الطريق إلى الإقامة الدائمة', nl ? 'EU-langdurig ingezetene na 5 jaar.' : 'EU-langdurig ingezetene بعد 5 سنوات.', A('permanent-residence-asylum-route')]
       ], tool: [nl ? 'Check permanent verblijf' : 'فاحص الإقامة الدائمة', C('permanent-residence-check')] },
 
-    { id: 'perm', ico: '🏡', tone: 'orange',
+    { id: 'perm', ico: '<i class=gi-home aria-hidden=true></i>', tone: 'orange',
       t: nl ? 'Ik wil permanent verblijf' : 'أريد الإقامة الدائمة', s: nl ? 'Of Nederlander worden' : 'أو الجنسية الهولندية',
       tip: nl ? 'Een tijdelijk contract is genoeg als het nog 12 maanden loopt.' : 'العقد المؤقت يكفي إذا بقي منه 12 شهراً.',
       steps: [
@@ -51,7 +51,7 @@
         [nl ? 'Naturalisatie' : 'التجنّس', nl ? 'Voorwaarden en kosten.' : 'الشروط والتكاليف.', A('dutch-naturalisation-guide')]
       ], tool: [nl ? 'Check permanent verblijf' : 'فاحص الإقامة الدائمة', C('permanent-residence-check')] },
 
-    { id: 'letter', ico: '✉️', tone: 'red',
+    { id: 'letter', ico: '<i class=gi-mail aria-hidden=true></i>', tone: 'red',
       t: nl ? 'Ik kreeg een brief' : 'وصلتني رسالة', s: nl ? 'Boete, schuld of besluit' : 'غرامة، دين، أو قرار',
       tip: nl ? 'Let op de datum: bezwaar maken kan meestal binnen 6 weken.' : 'انتبه للتاريخ: الاعتراض عادة خلال 6 أسابيع فقط.',
       steps: [
@@ -62,7 +62,7 @@
         [nl ? 'Schulden? Gratis hulp' : 'ديون؟ مساعدة مجانية', nl ? 'Schuldhulp van de gemeente.' : 'مساعدة الديون من البلدية.', A('debt-help-schuldhulp')]
       ], tool: [nl ? 'Gratis advocaat (toevoeging)' : 'محامٍ بمساعدة قانونية', A('legal-aid-lawyer-toevoeging')] },
 
-    { id: 'work', ico: '💼', tone: 'blue',
+    { id: 'work', ico: '<i class=gi-briefcase aria-hidden=true></i>', tone: 'blue',
       t: nl ? 'Werk zoeken of werken' : 'أبحث عن عمل', s: nl ? 'Cv, contract en salaris' : 'السيرة، العقد، الراتب',
       tip: nl ? 'Controleer je loonstrook elke maand: fouten zie je daar eerst.' : 'افحص قسيمة راتبك كل شهر: الأخطاء تظهر فيها أولاً.',
       steps: [
@@ -73,7 +73,7 @@
         [nl ? 'Minimumloon 2026' : 'الحد الأدنى للأجور 2026', nl ? 'Krijg je genoeg?' : 'هل تحصل على حقك؟', A('minimum-wage-netherlands')]
       ], tool: [nl ? 'Maak je cv' : 'أنشئ سيرتك الذاتية', P('cv.html')] },
 
-    { id: 'kids', ico: '👶', tone: 'green',
+    { id: 'kids', ico: '<i class=gi-child aria-hidden=true></i>', tone: 'green',
       t: nl ? 'Ik heb (of krijg) een kind' : 'عندي طفل', s: nl ? 'Toeslagen, opvang en school' : 'البدلات، الحضانة، المدرسة',
       tip: nl ? 'Kinderbijslag en kindgebonden budget zijn twee verschillende regelingen.' : 'kinderbijslag وkindgebonden budget بدلان مختلفان: اطلب الاثنين.',
       steps: [
@@ -84,7 +84,7 @@
         [nl ? 'De basisschool' : 'المدرسة الابتدائية', nl ? 'Inschrijven en hoe het werkt.' : 'التسجيل وكيف تعمل.', A('dutch-school-system-basisschool')]
       ], tool: [nl ? 'Kindgebonden budget berekenen' : 'حاسبة kindgebonden budget', C('kindgebonden-budget')] },
 
-    { id: 'study', ico: '🎓', tone: 'orange',
+    { id: 'study', ico: '<i class=gi-grad aria-hidden=true></i>', tone: 'orange',
       t: nl ? 'Ik wil studeren' : 'أريد الدراسة', s: nl ? 'Diploma, taal en DUO' : 'الشهادة، اللغة، التمويل',
       tip: nl ? 'Laat je buitenlandse diploma eerst waarderen; dat bepaalt je niveau.' : 'قيّم شهادتك الأجنبية أولاً؛ فهي تحدد مستواك.',
       steps: [
@@ -94,7 +94,7 @@
         [nl ? 'Studiefinanciering' : 'تمويل الدراسة DUO', nl ? 'Wie krijgt wat?' : 'من يستحق وكم؟', A('student-finance')]
       ], tool: [nl ? 'Onderwijsroutes vergelijken' : 'قارن مسارات التعليم', P('tools.html#routes')] },
 
-    { id: 'home', ico: '🔑', tone: 'red',
+    { id: 'home', ico: '<i class=gi-key aria-hidden=true></i>', tone: 'red',
       t: nl ? 'Wonen en huur' : 'السكن والإيجار', s: nl ? 'Huurwoning, rechten en toeslag' : 'السكن الاجتماعي والحقوق',
       tip: nl ? 'Schrijf je zo vroeg mogelijk in voor een sociale huurwoning: de wachttijd telt.' : 'سجّل مبكراً للسكن الاجتماعي: مدة الانتظار هي ما يُحسب.',
       steps: [
@@ -140,8 +140,8 @@
         return '<li class="' + (ticks[i] ? 'ok' : '') + '"><label class="sit-tick"><input type="checkbox" data-i="' + i + '"' + (ticks[i] ? ' checked' : '') + '><span class="sr">' + L.mark + '</span></label>'
           + '<a href="' + st[2] + '"><span class="sit-n">' + (i + 1) + '</span><span class="sit-txt"><strong>' + esc(st[0]) + '</strong><small>' + esc(st[1]) + '</small></span><span class="sit-go" aria-hidden="true">' + (nl ? '→' : '←') + '</span></a></li>';
       }).join('') + '</ol>'
-      + '<p class="sit-tip"><b>💡 ' + L.tip + ':</b> ' + esc(x.tip) + '</p>'
-      + '<div class="sit-actions"><a class="sit-tool" href="' + x.tool[1] + '">🧰 ' + L.tool + ': <b>' + esc(x.tool[0]) + '</b></a>'
+      + '<p class="sit-tip"><b><i class=gi-bulb aria-hidden=true></i> ' + L.tip + ':</b> ' + esc(x.tip) + '</p>'
+      + '<div class="sit-actions"><a class="sit-tool" href="' + x.tool[1] + '"><i class=gi-tool aria-hidden=true></i> ' + L.tool + ': <b>' + esc(x.tool[0]) + '</b></a>'
       + '<button type="button" class="sit-other">' + L.other + '</button></div>';
     panel.hidden = false;
     panel.querySelectorAll('.sit-steps input').forEach(function (cb) {

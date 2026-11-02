@@ -31,17 +31,17 @@ window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_pe
 .form{display:grid;gap:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:7px}.field label{font-weight:800;font-size:14px}.field input,.field textarea,.field select{width:100%;border:1px solid #d2d2d7;background:#fbfbfd;border-radius:15px;padding:13px 14px;font:inherit;color:var(--text);outline:none;transition:.2s}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 4px #0071e31a}.field textarea{min-height:150px;resize:vertical}
 .actions{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:999px;padding:12px 18px;font-weight:800;font:inherit;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#eef0f3;color:var(--text)}
 .status{display:none;padding:12px 14px;border-radius:14px;background:#eaf7ee;color:#176b2d;font-weight:700}.status.show{display:block}
-.socials{display:grid;gap:11px}.social{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--text);background:#fff;transition:.2s}.social:hover{transform:translateY(-2px);box-shadow:0 10px 25px #0000000b}.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#f2f2f7;font-size:21px}.social strong{display:block}.social span{display:block;color:var(--muted);font-size:12px}
+.socials{display:grid;gap:11px}.social{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--text);background:#fff;transition:.2s}.social:hover{transform:translateY(-2px);box-shadow:0 10px 25px #0000000b}.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#f2f2f7;color:#1d1d1f;font-size:20px}.social strong{display:block}.social span{display:block;color:var(--muted);font-size:12px}
 .note{font-size:13px;color:var(--muted);margin-top:12px}.contact-link{display:inline-flex;margin-top:10px;color:var(--blue);font-weight:800;text-decoration:none}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.nav{display:none}.hero{padding-top:42px}.card{padding:21px;border-radius:23px}}
  .contact-email{display:inline-block;margin:0 0 16px;color:#0071e3;font-weight:800;text-decoration:none} </style>
 <link rel="stylesheet" href="/assets/news-ticker.css?v=4">
-<link rel="canonical" href="https://gidsnederland.nl/nl/contact.html"><link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/contact.html"><link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/contact.html"><link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/contact.html"><meta property="og:title" content="Neem contact op"><meta property="og:url" content="https://gidsnederland.nl/nl/contact.html"><meta property="og:locale" content="nl_NL"><meta property="og:locale:alternate" content="ar_AR"><meta property="og:site_name" content="Gids Nederland"><meta property="og:description" content="Contact voor suggesties en correcties."><link rel="stylesheet" href="/assets/apple.css?v=4">
+<link rel="canonical" href="https://gidsnederland.nl/nl/contact.html"><link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/contact.html"><link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/contact.html"><link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/contact.html"><meta property="og:title" content="Neem contact op"><meta property="og:url" content="https://gidsnederland.nl/nl/contact.html"><meta property="og:locale" content="nl_NL"><meta property="og:locale:alternate" content="ar_AR"><meta property="og:site_name" content="Gids Nederland"><meta property="og:description" content="Contact voor suggesties en correcties."><link rel="stylesheet" href="/assets/apple.css?v=5">
 </head>
 <body>
 
 <main class="wrap">
-<header class="top"><strong>✉️ <span>Contact</span></strong>
+<header class="top"><strong><i class=gi-mail aria-hidden=true></i> <span>Contact</span></strong>
 <nav class="nav"><a href="/nl/">Home</a><a href="/nl/articles.html">Artikelen</a><a href="/nl/about.html">Over ons</a><a href="/nl/privacy.html">Privacy</a><a href="/nl/contact.html">Contact</a></nav>
 <a class="lang-button" href="https://gidsnederland.nl/contact.html" hreflang="ar">العربية</a></header>
 
@@ -54,7 +54,7 @@ window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_pe
 <section class="grid">
 <div>
 <div class="card">
-<h2>✉️ Contactformulier</h2><a class="contact-email" href="mailto:a.alzoubi.07.11@gmail.com">Officieel e-mailadres: a.alzoubi.07.11@gmail.com</a>
+<h2><i class=gi-mail aria-hidden=true></i> Contactformulier</h2><a class="contact-email" href="mailto:a.alzoubi.07.11@gmail.com">Officieel e-mailadres: a.alzoubi.07.11@gmail.com</a>
 <p class="muted">Vul je bericht in; we maken er een duidelijke contacttekst van. Deel geen gevoelige gegevens.</p>
 <form class="form" id="contactForm">
 <div class="row">
@@ -64,21 +64,21 @@ window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_pe
 <div class="field"><label for="topic">Onderwerp</label>
 <select id="topic" name="topic"><option value="suggestion">Suggestie</option><option value="correction">Correctie of update</option><option value="collaboration">Samenwerking</option><option value="other">Overig</option></select></div>
 <div class="field"><label for="message">Bericht</label><textarea id="message" name="message" required></textarea></div>
-<div class="actions"><button class="btn primary" type="submit">📋 Bericht voorbereiden</button><button class="btn secondary" type="reset">Wissen</button></div>
+<div class="actions"><button class="btn primary" type="submit"><i class=gi-clipboard aria-hidden=true></i> Bericht voorbereiden</button><button class="btn secondary" type="reset">Wissen</button></div>
 <div class="status" id="status" role="status"></div>
 </form>
 <p class="note">De knop opent je e-mailprogramma met een voorbereid bericht. Controleer en verstuur het zelf; de website verstuurt niets automatisch. Deel geen gevoelige gegevens.</p>
 </div>
 
-<div class="card"><h2>🔎 Een fout of update melden</h2><p class="muted">Vermeld de pagina, de informatie die moet worden aangepast en indien mogelijk de officiële bron. Zo kan de inhoud nauwkeurig worden bijgewerkt.</p></div>
+<div class="card"><h2><i class=gi-search aria-hidden=true></i> Een fout of update melden</h2><p class="muted">Vermeld de pagina, de informatie die moet worden aangepast en indien mogelijk de officiële bron. Zo kan de inhoud nauwkeurig worden bijgewerkt.</p></div>
 </div>
 
 <aside>
-<div class="card"><h2>🌐 Volg of neem contact op</h2><p class="muted">Volg de content of neem contact op via een van deze platforms.</p>
+<div class="card"><h2><i class=gi-globe aria-hidden=true></i> Volg of neem contact op</h2><p class="muted">Volg de content of neem contact op via een van deze platforms.</p>
 <div class="socials">
 <a class="social" href="https://youtube.com/@a.alzoubi.07.11" target="_blank" rel="noopener noreferrer"><div class="icon">▶️</div><div><strong>YouTube</strong><span>Ahmad Alzoubi</span></div></a>
-<a class="social" href="https://www.instagram.com/a.alzoubi.07.11/" target="_blank" rel="noopener noreferrer"><div class="icon">📸</div><div><strong>Instagram</strong><span>@a.alzoubi.07.11</span></div></a>
-<a class="social" href="https://www.tiktok.com/@a.alzoubi.07.11" target="_blank" rel="noopener noreferrer"><div class="icon">🎵</div><div><strong>TikTok</strong><span>@a.alzoubi.07.11</span></div></a>
+<a class="social" href="https://www.instagram.com/a.alzoubi.07.11/" target="_blank" rel="noopener noreferrer"><div class="icon"><i class=gi-camera aria-hidden=true></i></div><div><strong>Instagram</strong><span>@a.alzoubi.07.11</span></div></a>
+<a class="social" href="https://www.tiktok.com/@a.alzoubi.07.11" target="_blank" rel="noopener noreferrer"><div class="icon"><i class=gi-music aria-hidden=true></i></div><div><strong>TikTok</strong><span>@a.alzoubi.07.11</span></div></a>
 </div>
 </div>
 <div class="card"><h2>Arabisch en Nederlands</h2><p class="muted">Gebruik de taal knop bovenaan om tussen Arabisch en Nederlands te wisselen.</p></div>
@@ -87,5 +87,5 @@ window.gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_pe
 </main>
 
 <script src="/assets/chatbot.js?v=4" defer></script>
-<script src="/assets/contact-static.js?v=2" defer></script><footer><nav class="site-footer-nav" aria-label="Footer"><a href="/nl/">Home</a><a href="/nl/articles.html">Artikelen</a><a href="/nl/tools.html">Rekentools</a><a href="/nl/about.html">Over ons</a><a href="/nl/contact.html">Contact</a><a href="/nl/privacy.html">Privacy</a><a href="/nl/editorial-policy.html">Redactiebeleid</a><a href="/nl/privacy.html#cookie-settings" data-cookie-settings="">Cookie-instellingen</a></nav></footer><script src="/assets/site-chrome.js?v=7" defer></script>
+<script src="/assets/contact-static.js?v=2" defer></script><footer><nav class="site-footer-nav" aria-label="Footer"><a href="/nl/">Home</a><a href="/nl/articles.html">Artikelen</a><a href="/nl/tools.html">Rekentools</a><a href="/nl/about.html">Over ons</a><a href="/nl/contact.html">Contact</a><a href="/nl/privacy.html">Privacy</a><a href="/nl/editorial-policy.html">Redactiebeleid</a><a href="/nl/privacy.html#cookie-settings" data-cookie-settings="">Cookie-instellingen</a></nav></footer><script src="/assets/site-chrome.js?v=8" defer></script>
 </body></html>

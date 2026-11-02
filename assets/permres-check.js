@@ -662,21 +662,21 @@
     h += '<section class="prc-file"><div class="prc-file-top"><div><p class="prc-file-sub">' + T.fileSub + '</p><h3>' + T.fileH + '</h3></div>'
       + '<dl><div><dt>' + T.ref + '</dt><dd dir="ltr">' + ref + '</dd></div><div><dt>' + T.date + '</dt><dd>' + NOW.getDate() + ' ' + MONTHS[NOW.getMonth()] + ' ' + NOW.getFullYear() + '</dd></div></dl></div>'
       + '<div class="prc-permit"><b>' + P.t + '</b><span>' + P.code + '</span></div><p>' + P.d + '</p>'
-      + (P.work ? '<p class="prc-small">💼 ' + P.work + '</p>' : '')
+      + (P.work ? '<p class="prc-small"><i class=gi-briefcase aria-hidden=true></i> ' + P.work + '</p>' : '')
       + (R.p === 'reg_bt' ? '<p>' + (R.tempPurpose ? T.purposeTemp : T.purposeNonTemp) + '</p>' : '')
       + (R.asylum ? '<p>' + (R.ground === 'refugee' ? T.groundRef : R.ground === 'subsidiary' ? T.groundSub : T.groundUnk) + '</p>' : '')
-      + (R.p !== 'none' ? '<p class="prc-small">🗓️ ' + (AR ? 'بدأت إقامتك المتواصلة في ' : 'Onafgebroken verblijf sinds ') + '<b>' + mdate(R.startAbs) + '</b> · ' + yr(R.years) + ' ' + (AR ? 'سنة' : 'jaar') + '</p>' : '')
+      + (R.p !== 'none' ? '<p class="prc-small"><i class=gi-calendar aria-hidden=true></i> ' + (AR ? 'بدأت إقامتك المتواصلة في ' : 'Onafgebroken verblijf sinds ') + '<b>' + mdate(R.startAbs) + '</b> · ' + yr(R.years) + ' ' + (AR ? 'سنة' : 'jaar') + '</p>' : '')
       + '</section>';
-    if (R.alerts.length) h += '<section class="prc-alerts"><h3>⚠️ ' + T.checkH + '</h3>' + list(R.alerts) + '</section>';
+    if (R.alerts.length) h += '<section class="prc-alerts"><h3><i class=gi-alert aria-hidden=true></i> ' + T.checkH + '</h3>' + list(R.alerts) + '</section>';
     if (R.p === 'none') return h + '<p class="prc-note">' + T.disclaimer + '</p>' + actions() + '</div>';
 
     // roadmap + advice
-    h += '<section><h3>🧭 ' + T.mapH + '</h3>' + roadmap(R) + '</section>';
-    if (R.advice.length) h += '<section class="prc-advice"><h3>💡 ' + T.adviceH + '</h3>' + list(R.advice) + '</section>';
+    h += '<section><h3><i class=gi-compass aria-hidden=true></i> ' + T.mapH + '</h3>' + roadmap(R) + '</section>';
+    if (R.advice.length) h += '<section class="prc-advice"><h3><i class=gi-bulb aria-hidden=true></i> ' + T.adviceH + '</h3>' + list(R.advice) + '</section>';
 
     // routes
     if (R.p !== 'eu_citizen') h += '<section><h3>' + T.routeH + '</h3><div class="prc-routes">' + card(R.eu, T.eu, T.euSub, R.best === 'eu') + card(R.reg, T.reg, T.regSub, R.best === 'reg') + '</div></section>';
-    if (R.nat.avail) h += '<section><h3>🇳🇱 ' + T.natH + '</h3><div class="prc-routes one">' + card(R.nat, T.nat, T.natSub, false) + '</div></section>';
+    if (R.nat.avail) h += '<section><h3> ' + T.natH + '</h3><div class="prc-routes one">' + card(R.nat, T.nat, T.natSub, false) + '</div></section>';
     h += '<p class="prc-note">' + T.disclaimer + '</p>';
 
     // contract
@@ -697,7 +697,7 @@
     else if (!R.permanent) todo.push(R.asylum ? T.todo.asylumKeep : T.todo.regKeep);
     if (R.nat.avail && !R.nat.fails) todo.push(T.todo.natReady);
     if (!todo.length) todo.push(T.todo.ready);
-    h += '<section><h3>✅ ' + T.todoH + '</h3><ol class="prc-todo">' + todo.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ol></section>';
+    h += '<section><h3><i class=gi-check aria-hidden=true></i> ' + T.todoH + '</h3><ol class="prc-todo">' + todo.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ol></section>';
 
     // forms
     var f = [];
@@ -713,7 +713,7 @@
     }
     f.push(T.form.natForm);
     f.push(R.asylum ? T.form.natLeges(LEGES.natAsiel, LEGES.natAsielPartner) : T.form.natLeges(LEGES.nat, LEGES.natPartner));
-    h += '<section><h3>📄 ' + T.formH + '</h3>' + list(f) + '</section>';
+    h += '<section><h3><i class=gi-doc aria-hidden=true></i> ' + T.formH + '</h3>' + list(f) + '</section>';
 
     // docs
     var d = [T.docs.id], ctp = R.contract ? R.contract.type : '';
@@ -727,8 +727,8 @@
       if (R.p !== 'reg_ot') d.push(T.docs.inb);
     }
     d.push(T.docs.nat);
-    h += '<section><h3>🗂️ ' + T.docsH + '</h3>' + list(d) + '</section>';
-    h += '<section><h3>⚖️ ' + T.rightsH + '</h3>' + list(T.rights) + '</section>';
+    h += '<section><h3><i class=gi-clipboard aria-hidden=true></i> ' + T.docsH + '</h3>' + list(d) + '</section>';
+    h += '<section><h3><i class=gi-scale aria-hidden=true></i> ' + T.rightsH + '</h3>' + list(T.rights) + '</section>';
     return h + actions() + '</div>';
   }
   function actions() { return '<div class="tool-actions"><button type="button" class="tool-button prc-again">' + T.again + '</button><button type="button" class="tool-button primary prc-print">' + T.print + '</button></div>'; }

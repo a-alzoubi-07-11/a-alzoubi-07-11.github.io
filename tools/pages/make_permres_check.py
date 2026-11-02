@@ -12,7 +12,7 @@ SLUG = 'permanent-residence-check'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
 k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=3">'
-          '<script src="/assets/permres-check.js?v=3" defer></script>')
+          '<script src="/assets/permres-check.js?v=4" defer></script>')
 k.SOURCES = [
     ('IND · Verblijfsvergunning EU-langdurig ingezetene', 'https://ind.nl/nl/verblijfsvergunningen/langdurig-ingezetene-eu/verblijfsvergunning-eu-langdurig-ingezetene'),
     ('IND · Verblijfsvergunning onbepaalde tijd aanvragen (regulier)', 'https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/onbepaalde-tijd/verblijfsvergunning-onbepaalde-tijd-aanvragen'),
@@ -110,7 +110,7 @@ def form(L):
           + '</fieldset>')
     return (f'<section id="prc" class="tool-section" aria-label="{L["title"]}"><h2><span>{L["form_h"]}</span></h2>'
             f'<noscript><p class="notice"><span>{L["noscript"]}</span></p></noscript>'
-            f'<div class="prc-head"><span class="prc-steplabel"></span><span>🔒 {F["private"]}</span></div>'
+            f'<div class="prc-head"><span class="prc-steplabel"></span><span><i class=gi-lock aria-hidden=true></i> {F["private"]}</span></div>'
             '<div class="prc-progress" aria-hidden="true"><span></span></div>'
             f'<form novalidate hidden>{s1}{s2}{s3}{s4}<p class="prc-msg" role="alert"></p>'
             f'<div class="prc-nav" hidden><button type="button" class="tool-button prc-back" hidden><span>{F["back"]}</span></button>'

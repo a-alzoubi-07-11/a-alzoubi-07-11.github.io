@@ -10,23 +10,23 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # (icon, colour, ar_href, ar_title, ar_sub, nl_href, nl_title, nl_sub, is_new)
 TILES = [
-    ("✉️", "red", "/beroep/", "رسالة الطعن", "على رفض الإقامة الدائمة — جاهزة للنسخ والإرسال",
+    ("<i class=gi-mail aria-hidden=true></i>", "red", "/beroep/", "رسالة الطعن", "على رفض الإقامة الدائمة — جاهزة للنسخ والإرسال",
      "/nl/beroep/", "Beroepschrift", "Tegen afwijzing asiel onbepaalde tijd", True),
-    ("🏡", "orange", "/calculators/permanent-residence-check.html", "فاحص الإقامة والجنسية", "متى تستحق الإقامة الدائمة أو الجنسية؟",
+    ("<i class=gi-home aria-hidden=true></i>", "orange", "/calculators/permanent-residence-check.html", "فاحص الإقامة والجنسية", "متى تستحق الإقامة الدائمة أو الجنسية؟",
      "/nl/calculators/permanent-residence-check.html", "Check verblijf en naturalisatie", "Wanneer kun je permanent verblijf krijgen?", False),
-    ("🩺", "green", "/calculators/zorgtoeslag.html", "حاسبة zorgtoeslag", "كم بدل التأمين الصحي الذي قد تحصل عليه؟",
+    ("<i class=gi-health aria-hidden=true></i>", "green", "/calculators/zorgtoeslag.html", "حاسبة zorgtoeslag", "كم بدل التأمين الصحي الذي قد تحصل عليه؟",
      "/nl/calculators/zorgtoeslag.html", "Zorgtoeslag berekenen", "Hoeveel zorgtoeslag kun je krijgen?", False),
-    ("👶", "blue", "/calculators/kindgebonden-budget.html", "حاسبة kindgebonden budget", "تقدير بدل الأطفال الشهري",
+    ("<i class=gi-child aria-hidden=true></i>", "blue", "/calculators/kindgebonden-budget.html", "حاسبة kindgebonden budget", "تقدير بدل الأطفال الشهري",
      "/nl/calculators/kindgebonden-budget.html", "Kindgebonden budget", "Schat je maandelijkse bedrag", False),
-    ("📄", "blue", "/cv.html", "أنشئ سيرتك الذاتية", "CV بالهولندي في 4 خطوات مع ترجمة",
+    ("<i class=gi-doc aria-hidden=true></i>", "blue", "/cv.html", "أنشئ سيرتك الذاتية", "CV بالهولندي في 4 خطوات مع ترجمة",
      "/nl/cv.html", "Maak je cv", "Nederlands cv in 4 stappen", False),
-    ("💶", "green", "#salary", "تقدير الراتب", "من bruto إلى netto لعام 2026",
+    ("<i class=gi-euro aria-hidden=true></i>", "green", "#salary", "تقدير الراتب", "من bruto إلى netto لعام 2026",
      "#salary", "Salarisindicatie", "Van bruto naar netto in 2026", False),
-    ("✅", "orange", "#checklist", "خطوات البداية", "قائمة أول الإجراءات في هولندا",
+    ("<i class=gi-check aria-hidden=true></i>", "orange", "#checklist", "خطوات البداية", "قائمة أول الإجراءات في هولندا",
      "#checklist", "Eerste stappen", "Checklist voor nieuwkomers", False),
-    ("🧮", "red", "#budget", "ميزانيتي", "نظّم دخلك ومصاريفك الشهرية",
+    ("<i class=gi-calc aria-hidden=true></i>", "red", "#budget", "ميزانيتي", "نظّم دخلك ومصاريفك الشهرية",
      "#budget", "Mijn budget", "Inkomsten en uitgaven per maand", False),
-    ("🎓", "blue", "#routes", "مسارات التعليم", "قارن بين MBO وHBO وWO",
+    ("<i class=gi-grad aria-hidden=true></i>", "blue", "#routes", "مسارات التعليم", "قارن بين MBO وHBO وWO",
      "#routes", "Onderwijsroutes", "MBO, HBO en WO vergelijken", False),
 ]
 
@@ -48,7 +48,7 @@ def tiles_html(lang: str, current: str = "", page_local: bool = True, base: str 
     return f'<nav class="tool-tiles" aria-label="{label}">{"".join(out)}</nav>'
 
 
-CSS_LINK = '<link rel="stylesheet" href="/assets/tool-tiles.css?v=1">'
+CSS_LINK = '<link rel="stylesheet" href="/assets/tool-tiles.css?v=2">'
 
 
 def update_tools_page(path: Path, lang: str) -> None:

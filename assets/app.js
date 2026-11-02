@@ -23,29 +23,29 @@ const num = s => `<span class="num">${s}</span>`;
 const I18N = {
   ar: {
     "topbar.tag": "دليل التعليم الهولندي","brand.title":"دليل التعليم الهولندي","brand.updated":"محدَّث 2026",
-    "nav.articles":"📰 المقالات","nav.about":"ℹ️ من نحن","nav.privacy":"🔒 الخصوصية","nav.contact":"✉️ تواصل",
-    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"🔎 بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة","smart.cv":"📄 أنشئ سيرتك الذاتية CV",
+    "nav.articles":"المقالات","nav.about":"من نحن","nav.privacy":"الخصوصية","nav.contact":"تواصل",
+    "smart.kicker":"أدوات ذكية","smart.title":"كل شيء في مكان واحد","smart.sub":"واجهة واحدة للبحث، المقارنة، حساب الراتب، واستكشاف مسارات التعليم.","smart.search":"بحث","smart.theme":"◐ المظهر","smart.share":"↗ مشاركة","smart.cv":"أنشئ سيرتك الذاتية CV",
     "newcomers.kicker":"أحمد الزعبي · هولندا","newcomers.title":"دليل العرب الجدد في هولندا","newcomers.open":"فتح الدليل ←","newcomers.sub":"من الدراسة والعمل إلى السكن والضرائب والإقامة: محتوى عربي عملي، مرتب ومترابط، يساعدك على فهم النظام الهولندي خطوة بخطوة.",
     "newcomers.education.title":"التعليم والدراسة","newcomers.education.text":"فهم MBO وHBO والجامعة، اختيار التخصص، مستويات اللغة والانتقال بين المسارات.","newcomers.work.title":"العمل والراتب","newcomers.work.text":"عقود العمل، الراتب، vakantiegeld، التدريب، البحث عن وظيفة وبناء المسار المهني.","newcomers.life.title":"الحياة اليومية","newcomers.life.text":"السكن، التأمين، المواصلات، الخدمات الحكومية والقرارات التي تؤثر على الحياة اليومية.","newcomers.money.title":"المال والضرائب","newcomers.money.text":"Belastingdienst، aangifte، toeslagen، Kinderbijslag وKindgebonden budget بأسلوب مبسط.",
-    "gids.sources":"مصادر رسمية مرتبطة بالدليل","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"دليل الإقامة الدائمة","gids.01.label":"الدليل 01","gids.02.label":"الدليل 02","gids.03.label":"الدليل 03","gids.04.label":"الدليل 04","gids.05.label":"الدليل 05","gids.06.label":"الدليل 06","gids.06.permits":"🛂 IND · الإقامات ↗","gids.01.title":"كيف تبدأ حياتك في هولندا؟","gids.01.text":"خريطة عملية للخطوات الأولى: البلدية، BSN، DigiD، التأمين، السكن، العمل والتعليم، وما الذي يجب ترتيبه أولاً.","gids.01.guide":"افتح مجموعة الأدلة ←",
+    "gids.sources":"مصادر رسمية مرتبطة بالدليل","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"دليل الإقامة الدائمة","gids.01.label":"الدليل 01","gids.02.label":"الدليل 02","gids.03.label":"الدليل 03","gids.04.label":"الدليل 04","gids.05.label":"الدليل 05","gids.06.label":"الدليل 06","gids.06.permits":"IND · الإقامات ↗","gids.01.title":"كيف تبدأ حياتك في هولندا؟","gids.01.text":"خريطة عملية للخطوات الأولى: البلدية، BSN، DigiD، التأمين، السكن، العمل والتعليم، وما الذي يجب ترتيبه أولاً.","gids.01.guide":"افتح مجموعة الأدلة ←",
     "gids.02.title":"فهم نظام التعليم الهولندي","gids.02.text":"من التعليم الأساسي إلى MBO ثم HBO والجامعة، مع شرح مبسط للانتقالات والاختيارات المهنية.","gids.02.guide":"افتح مجموعة الأدلة ←",
     "gids.03.title":"دليل العمل لأول مرة","gids.03.text":"ما الفرق بين أنواع العقود؟ ما معنى bruto وnetto؟ وكيف تقرأ قسيمة الراتب الهولندية؟","gids.03.guide":"افتح مجموعة الأدلة ←",
     "gids.04.title":"الضرائب والإقرار السنوي","gids.04.text":"شرح مبسط للمفاهيم الأساسية حول inkomstenbelasting وaangifte، مع روابط للمصادر الرسمية.","gids.04.guide":"افتح مجموعة الأدلة ←",
-    "gids.05.title":"البدلات والمساعدات","gids.05.text":"كيف تفهم Kinderbijslag وKindgebonden budget وغيرها من الخدمات دون الاعتماد على منشورات غير موثوقة.","gids.05.guide":"افتح مجموعة الأدلة ←","gids.05.calc":"🧮 حاسبة Toeslagen ↗",
-    "gids.06.title":"الإقامة ولمّ الشمل","gids.06.text":"معلومات توعوية عن IND والإقامة ونقل الأسرة، مع التأكيد دائماً على مراجعة الشروط الرسمية الحالية.","gids.06.guide":"افتح مجموعة الأدلة ←","gids.06.family":"🛂 IND · لمّ الشمل ↗","gids.06.permanent":"📘 دليل الإقامة الدائمة ↗",
+    "gids.05.title":"البدلات والمساعدات","gids.05.text":"كيف تفهم Kinderbijslag وKindgebonden budget وغيرها من الخدمات دون الاعتماد على منشورات غير موثوقة.","gids.05.guide":"افتح مجموعة الأدلة ←","gids.05.calc":"حاسبة Toeslagen ↗",
+    "gids.06.title":"الإقامة ولمّ الشمل","gids.06.text":"معلومات توعوية عن IND والإقامة ونقل الأسرة، مع التأكيد دائماً على مراجعة الشروط الرسمية الحالية.","gids.06.guide":"افتح مجموعة الأدلة ←","gids.06.family":"IND · لمّ الشمل ↗","gids.06.permanent":"دليل الإقامة الدائمة ↗",
     "hero.eyebrow": "دليل شامل · 2025–2026",
     "hero.title.pre": "دليل النظام التعليمي",
     "hero.title.em": "الهولندي",
     "hero.title.post": "الشامل",
     "hero.sub": "من الحضانة إلى الجامعة: كل المسارات، الشروط، الرواتب والانتقالات — بلغتك.",
     "hero.s1": "جامعة بحثية", "hero.s2": "جامعة تطبيقية", "hero.s3": "معدل التخرج", "hero.s4": "مستويات تعليمية",
-    "hero.b1": "🇳🇱 رسمي", "hero.b2": "📚 مصادر موثوقة", "hero.b3": "🔄 انتقالات كاملة",
+    "hero.b1": "رسمي", "hero.b2": "مصادر موثوقة", "hero.b3": "انتقالات كاملة",
     "modal.close": "إغلاق", "modal.goto": "عرض الصفحة الكاملة ←",
     "footer.logo": "دليل التعليم",
     "footer.tag": "دليل مستقل للتعليم والعمل والحياة اليومية، مع روابط للمصادر الرسمية.",
     "footer.follow": "تابعنا للجديد:",
     "footer.levels": "المستويات", "footer.tools": "الأدوات", "footer.official": "مصادر رسمية",
-    "footer.compare": "⚖️ مقارنة المسارات", "footer.calc": "🧮 حاسبة الراتب", "footer.sources": "🔗 المصادر الرسمية",
+    "footer.compare": "مقارنة المسارات", "footer.calc": "حاسبة الراتب", "footer.sources": "المصادر الرسمية",
     "footer.editorial": "سياسة المحتوى والمصادر", "footer.copy": "كل الحقوق محفوظة",
     "footer.note": "للأغراض التعليمية فقط — تحقق دائماً من المصادر الرسمية",
     "col.level": "المستوى", "col.age": "العمر", "col.duration": "المدة", "col.outcome": "النتيجة",
@@ -55,15 +55,15 @@ const I18N = {
     "tbl.title.trans": "جدول الانتقالات الرسمية",
     "tbl.title.salary": "متوسط الرواتب الشهرية (إجمالي) 2026",
     "pathway.title": "المخطط التفاعلي للمسار التعليمي",
-    "pathway.hint": "👆 اضغط أو مرّر الماوس على أي عنصر لعرض التفاصيل",
+    "pathway.hint": "اضغط أو مرّر الماوس على أي عنصر لعرض التفاصيل",
     "sec.summary": "نظرة موجزة", "sec.details": "التفاصيل الكاملة", "sec.next": "ماذا بعد؟",
-    "calc.title": "🧮 حاسبة الراتب الصافي (هولندا 2026)",
+    "calc.title": "حاسبة الراتب الصافي (هولندا 2026)",
     "calc.gross": "الراتب الإجمالي الشهري (€)",
     "calc.age": "الفئة العمرية",
     "calc.age.under": "أقل من 67", "calc.age.over": "67 فأكثر",
     "calc.run": "احسب الصافي",
     "calc.net": "الراتب الصافي", "calc.tax": "ضريبة الدخل", "calc.yearly": "الراتب السنوي",
-    "cmp.title": "⚖️ مقارنة بين مسارات التعليم",
+    "cmp.title": "مقارنة بين مسارات التعليم",
     "cmp.pick": "اختر مسارين للمقارنة:",
     "cmp.a": "المسار الأول", "cmp.b": "المسار الثاني", "cmp.go": "قارن الآن",
     "cmp.criterion": "المعيار",
@@ -92,29 +92,29 @@ const I18N = {
   },
   nl: {
     "topbar.tag": "Gids Nederlands Onderwijs","brand.title":"Nederlandse Onderwijsgids","brand.updated":"Bijgewerkt 2026",
-    "nav.articles":"📰 Artikelen","nav.about":"ℹ️ Over ons","nav.privacy":"🔒 Privacy","nav.contact":"✉️ Contact",
-    "smart.kicker":"Slimme tools","smart.title":"Alles op één plek","smart.sub":"Eén interface om te zoeken, vergelijken, salaris te berekenen en onderwijsroutes te ontdekken.","smart.search":"🔎 Zoeken","smart.theme":"◐ Weergave","smart.share":"↗ Delen","smart.cv":"📄 Maak je cv",
+    "nav.articles":"Artikelen","nav.about":"Over ons","nav.privacy":"Privacy","nav.contact":"Contact",
+    "smart.kicker":"Slimme tools","smart.title":"Alles op één plek","smart.sub":"Eén interface om te zoeken, vergelijken, salaris te berekenen en onderwijsroutes te ontdekken.","smart.search":"Zoeken","smart.theme":"◐ Weergave","smart.share":"↗ Delen","smart.cv":"Maak je cv",
     "newcomers.kicker":"Ahmad Alzoubi · Nederland","newcomers.title":"Gids voor Arabischtalige nieuwkomers in Nederland","newcomers.open":"Gids openen →","newcomers.sub":"Van studie en werk tot wonen, belastingen en verblijf: praktische, verbonden informatie om het Nederlandse systeem stap voor stap te begrijpen.",
     "newcomers.education.title":"Onderwijs & studie","newcomers.education.text":"MBO, HBO en universiteit begrijpen, een opleiding kiezen, taalniveaus en overstappen tussen routes.","newcomers.work.title":"Werk & salaris","newcomers.work.text":"Arbeidscontracten, salaris, vakantiegeld, stages, werk zoeken en je loopbaan opbouwen.","newcomers.life.title":"Dagelijks leven","newcomers.life.text":"Wonen, verzekering, vervoer, overheidsdiensten en beslissingen die het dagelijks leven beïnvloeden.","newcomers.money.title":"Geld & belastingen","newcomers.money.text":"Belastingdienst, aangifte, toeslagen, Kinderbijslag en Kindgebonden budget eenvoudig uitgelegd.",
-    "gids.sources":"Gekoppelde officiële bronnen","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"Gids permanent verblijf","gids.01.label":"Gids 01","gids.02.label":"Gids 02","gids.03.label":"Gids 03","gids.04.label":"Gids 04","gids.05.label":"Gids 05","gids.06.label":"Gids 06","gids.06.permits":"🛂 IND · Verblijfsvergunningen ↗","gids.01.title":"Hoe begin je je leven in Nederland?","gids.01.text":"Een praktische routekaart voor de eerste stappen: gemeente, BSN, DigiD, verzekering, wonen, werk en onderwijs.","gids.01.guide":"Bekijk de gidsen →",
+    "gids.sources":"Gekoppelde officiële bronnen","source.rijksoverheid":"Rijksoverheid","source.digid":"DigiD","source.belastingdienst":"Belastingdienst","source.kiesmbo":"KiesMBO","source.duo":"DUO","source.studiekeuze123":"Studiekeuze123","source.uwv":"UWV","source.mijnbelastingdienst":"Mijn Belastingdienst","source.toeslagen":"Dienst Toeslagen","source.svb":"SVB · Kinderbijslag","source.permanent":"Gids permanent verblijf","gids.01.label":"Gids 01","gids.02.label":"Gids 02","gids.03.label":"Gids 03","gids.04.label":"Gids 04","gids.05.label":"Gids 05","gids.06.label":"Gids 06","gids.06.permits":"IND · Verblijfsvergunningen ↗","gids.01.title":"Hoe begin je je leven in Nederland?","gids.01.text":"Een praktische routekaart voor de eerste stappen: gemeente, BSN, DigiD, verzekering, wonen, werk en onderwijs.","gids.01.guide":"Bekijk de gidsen →",
     "gids.02.title":"Het Nederlandse onderwijssysteem begrijpen","gids.02.text":"Van basisonderwijs naar MBO, HBO en universiteit, met uitleg over overstappen en studiekeuzes.","gids.02.guide":"Bekijk de gidsen →",
     "gids.03.title":"Gids voor je eerste baan","gids.03.text":"Wat is het verschil tussen contracten? Wat betekenen bruto en netto? En hoe lees je een Nederlandse loonstrook?","gids.03.guide":"Bekijk de gidsen →",
     "gids.04.title":"Belastingen en de jaarlijkse aangifte","gids.04.text":"Een eenvoudige uitleg van inkomstenbelasting en aangifte, met links naar officiële bronnen.","gids.04.guide":"Bekijk de gidsen →",
-    "gids.05.title":"Toeslagen en tegemoetkomingen","gids.05.text":"Kinderbijslag, Kindgebonden budget en andere regelingen begrijpen zonder te vertrouwen op verouderde berichten.","gids.05.guide":"Bekijk de gidsen →","gids.05.calc":"🧮 Toeslagen →",
-    "gids.06.title":"Verblijf en gezinshereniging","gids.06.text":"Praktische informatie over IND, verblijfsvergunningen en gezinshereniging. Controleer altijd de actuele officiële voorwaarden.","gids.06.guide":"Bekijk de gidsen →","gids.06.family":"🛂 IND · Gezinshereniging ↗","gids.06.permanent":"📘 Gids permanent verblijf ↗",
+    "gids.05.title":"Toeslagen en tegemoetkomingen","gids.05.text":"Kinderbijslag, Kindgebonden budget en andere regelingen begrijpen zonder te vertrouwen op verouderde berichten.","gids.05.guide":"Bekijk de gidsen →","gids.05.calc":"Toeslagen →",
+    "gids.06.title":"Verblijf en gezinshereniging","gids.06.text":"Praktische informatie over IND, verblijfsvergunningen en gezinshereniging. Controleer altijd de actuele officiële voorwaarden.","gids.06.guide":"Bekijk de gidsen →","gids.06.family":"IND · Gezinshereniging ↗","gids.06.permanent":"Gids permanent verblijf ↗",
     "hero.eyebrow": "Complete Gids · 2025–2026",
     "hero.title.pre": "Gids van het",
     "hero.title.em": "Nederlandse",
     "hero.title.post": "Onderwijssysteem",
     "hero.sub": "Van kinderopvang tot universiteit: alle routes, voorwaarden, salarissen en overgangen — in jouw taal.",
     "hero.s1": "Onderzoeksuniversiteiten", "hero.s2": "Hogescholen", "hero.s3": "Slagingspercentage", "hero.s4": "Onderwijsniveaus",
-    "hero.b1": "🇳🇱 Officieel", "hero.b2": "📚 Betrouwbare bronnen", "hero.b3": "🔄 Volledige overgangen",
+    "hero.b1": "Officieel", "hero.b2": "Betrouwbare bronnen", "hero.b3": "Volledige overgangen",
     "modal.close": "Sluiten", "modal.goto": "Volledige pagina bekijken →",
     "footer.logo": "Onderwijsgids",
     "footer.tag": "De meest complete Arabischtalige gids voor het Nederlandse onderwijssysteem.",
     "footer.follow": "Volg ons voor updates:",
     "footer.levels": "Niveaus", "footer.tools": "Tools", "footer.official": "Officiële bronnen",
-    "footer.compare": "⚖️ Routes vergelijken", "footer.calc": "🧮 Salariscalculator", "footer.sources": "🔗 Officiële bronnen",
+    "footer.compare": "Routes vergelijken", "footer.calc": "Salariscalculator", "footer.sources": "Officiële bronnen",
     "footer.editorial": "Redactioneel beleid", "footer.copy": "Alle rechten voorbehouden",
     "footer.note": "Alleen voor educatieve doeleinden — controleer altijd officiële bronnen",
     "col.level": "Niveau", "col.age": "Leeftijd", "col.duration": "Duur", "col.outcome": "Uitkomst",
@@ -124,15 +124,15 @@ const I18N = {
     "tbl.title.trans": "Tabel van officiële overgangen",
     "tbl.title.salary": "Gemiddeld brutomaandsalaris 2026",
     "pathway.title": "Interactief overzicht van de onderwijsroute",
-    "pathway.hint": "👆 Klik of beweeg over een element voor details",
+    "pathway.hint": "Klik of beweeg over een element voor details",
     "sec.summary": "Samenvatting", "sec.details": "Volledige details", "sec.next": "Wat nu?",
-    "calc.title": "🧮 Nettosalariscalculator (Nederland 2026)",
+    "calc.title": "Nettosalariscalculator (Nederland 2026)",
     "calc.gross": "Brutomaandsalaris (€)",
     "calc.age": "Leeftijdsgroep",
     "calc.age.under": "Jonger dan 67", "calc.age.over": "67 of ouder",
     "calc.run": "Bereken netto",
     "calc.net": "Nettosalaris", "calc.tax": "Inkomstenbelasting", "calc.yearly": "Jaarsalaris",
-    "cmp.title": "⚖️ Vergelijking onderwijsroutes",
+    "cmp.title": "Vergelijking onderwijsroutes",
     "cmp.pick": "Kies twee routes om te vergelijken:",
     "cmp.a": "Route A", "cmp.b": "Route B", "cmp.go": "Vergelijk nu",
     "cmp.criterion": "Criterium",
@@ -166,7 +166,7 @@ const I18N = {
 ═══════════════════════════════════════════════════════════ */
 const LEVELS = [
   {
-    id:"kinderopvang", icon:"👶", color:"en-ey",
+    id:"kinderopvang", icon:"<i class=gi-child aria-hidden=true></i>", color:"en-ey",
     name:{ ar:"الحضانة", nl:"Kinderopvang" },
     ageRange:"0–4", duration:{ ar:"اختياري", nl:"Optioneel" },
     short:{
@@ -180,7 +180,7 @@ const LEVELS = [
     }
   },
   {
-    id:"basisschool", icon:"🏫", color:"en-basis",
+    id:"basisschool", icon:"<i class=gi-building aria-hidden=true></i>", color:"en-basis",
     name:{ ar:"المدرسة الابتدائية", nl:"Basisschool" },
     ageRange:"4–12", duration:{ ar:"8 سنوات (Groep 1–8)", nl:"8 jaar (Groep 1–8)" },
     short:{
@@ -194,7 +194,7 @@ const LEVELS = [
     }
   },
   {
-    id:"groep8", icon:"📝", color:"en-basis",
+    id:"groep8", icon:"<i class=gi-pen aria-hidden=true></i>", color:"en-basis",
     name:{ ar:"المجموعة الثامنة", nl:"Groep 8" },
     ageRange:"11–12", duration:{ ar:"سنة", nl:"1 jaar" },
     short:{
@@ -207,7 +207,7 @@ const LEVELS = [
     }
   },
   {
-    id:"vmbo", icon:"🔧", color:"en-vmbo",
+    id:"vmbo", icon:"<i class=gi-tool aria-hidden=true></i>", color:"en-vmbo",
     name:{ ar:"التعليم المهني الثانوي التحضيري", nl:"VMBO" },
     ageRange:"12–16", duration:{ ar:"4 سنوات", nl:"4 jaar" },
     short:{
@@ -224,7 +224,7 @@ const LEVELS = [
     }
   },
   {
-    id:"havo", icon:"🎓", color:"en-havo",
+    id:"havo", icon:"<i class=gi-grad aria-hidden=true></i>", color:"en-havo",
     name:{ ar:"التعليم العام الثانوي العالي", nl:"HAVO" },
     ageRange:"12–17", duration:{ ar:"5 سنوات", nl:"5 jaar" },
     short:{
@@ -237,7 +237,7 @@ const LEVELS = [
     }
   },
   {
-    id:"vwo", icon:"🏛️", color:"en-vwo",
+    id:"vwo", icon:"<i class=gi-bank aria-hidden=true></i>", color:"en-vwo",
     name:{ ar:"التعليم ما قبل الجامعي", nl:"VWO" },
     ageRange:"12–18", duration:{ ar:"6 سنوات", nl:"6 jaar" },
     short:{
@@ -250,7 +250,7 @@ const LEVELS = [
     }
   },
   {
-    id:"vavo", icon:"🔄", color:"en-vavo",
+    id:"vavo", icon:"<i class=gi-refresh aria-hidden=true></i>", color:"en-vavo",
     name:{ ar:"التعليم الثانوي للكبار", nl:"VAVO" },
     ageRange:"18+", duration:{ ar:"1–2 سنة", nl:"1–2 jaar" },
     short:{
@@ -263,7 +263,7 @@ const LEVELS = [
     }
   },
   {
-    id:"isk", icon:"🌍", color:"en-isk",
+    id:"isk", icon:"<i class=gi-globe aria-hidden=true></i>", color:"en-isk",
     name:{ ar:"الفصول الدولية للوافدين", nl:"ISK" },
     ageRange:"12–18", duration:{ ar:"1–2 سنة", nl:"1–2 jaar" },
     short:{
@@ -276,7 +276,7 @@ const LEVELS = [
     }
   },
   {
-    id:"mbo", icon:"🛠️", color:"en-mbo",
+    id:"mbo", icon:"<i class=gi-tool aria-hidden=true></i>", color:"en-mbo",
     name:{ ar:"التعليم المهني الثانوي", nl:"MBO" },
     ageRange:"16+", duration:{ ar:"1–4 سنوات", nl:"1–4 jaar" },
     short:{
@@ -294,7 +294,7 @@ const LEVELS = [
     }
   },
   {
-    id:"hbo", icon:"🏢", color:"en-hbo",
+    id:"hbo", icon:"<i class=gi-building aria-hidden=true></i>", color:"en-hbo",
     name:{ ar:"التعليم العالي التطبيقي", nl:"HBO" },
     ageRange:"17+", duration:{ ar:"4 سنوات (بكالوريوس)", nl:"4 jaar (Bachelor)" },
     short:{
@@ -307,7 +307,7 @@ const LEVELS = [
     }
   },
   {
-    id:"wo", icon:"🎓", color:"en-wo",
+    id:"wo", icon:"<i class=gi-grad aria-hidden=true></i>", color:"en-wo",
     name:{ ar:"التعليم العلمي الأكاديمي", nl:"WO" },
     ageRange:"18+", duration:{ ar:"3 سنوات (بكالوريوس)", nl:"3 jaar (Bachelor)" },
     short:{
@@ -320,7 +320,7 @@ const LEVELS = [
     }
   },
   {
-    id:"phd", icon:"🔬", color:"en-phd",
+    id:"phd", icon:"<i class=gi-flask aria-hidden=true></i>", color:"en-phd",
     name:{ ar:"الدكتوراه", nl:"PhD / Promotie" },
     ageRange:"22+", duration:{ ar:"4 سنوات", nl:"4 jaar" },
     short:{
@@ -333,7 +333,7 @@ const LEVELS = [
     }
   },
   {
-    id:"werk", icon:"💼", color:"en-work",
+    id:"werk", icon:"<i class=gi-briefcase aria-hidden=true></i>", color:"en-work",
     name:{ ar:"سوق العمل", nl:"Arbeidsmarkt" },
     ageRange:"16+", duration:{ ar:"—", nl:"—" },
     short:{
@@ -396,7 +396,7 @@ const SALARIES = [
 ═══════════════════════════════════════════════════════════ */
 const EXAMS = [
   {
-    id:"ccvx", icon:"🧪", color:"blue",
+    id:"ccvx", icon:"<i class=gi-flask aria-hidden=true></i>", color:"blue",
     name:{ar:"CCVX — لجنة التحضير للامتحانات الجامعية", nl:"CCVX (Centrale Commissie Voortentamen)"},
     organizer:{ar:"تنظمها UvA / VU / UU / RUG / Erasmus / TU Delft / TU/e", nl:"Universiteit van Amsterdam, VU, UU, RUG, EUR, TUD, TU/e"},
     purpose:{
@@ -424,7 +424,7 @@ const EXAMS = [
     link:"https://www.ccvx.nl"
   },
   {
-    id:"boswell", icon:"🧬", color:"purple",
+    id:"boswell", icon:"<i class=gi-flask aria-hidden=true></i>", color:"purple",
     name:{ar:"Boswell-Bèta — معهد بوزويل للعلوم", nl:"Boswell-Bèta (Voortentamens bèta-vakken)"},
     organizer:{ar:"معهد Boswell-Bèta المستقل (معتمد من جميع الجامعات الهولندية)", nl:"Onafhankelijk instituut Boswell-Bèta (erkend door alle universiteiten)"},
     purpose:{
@@ -452,7 +452,7 @@ const EXAMS = [
     link:"https://www.boswell-beta.nl"
   },
   {
-    id:"vasvu", icon:"📐", color:"orange",
+    id:"vasvu", icon:"<i class=gi-pen aria-hidden=true></i>", color:"orange",
     name:{ar:"VASVU — امتحانات قبول جامعة VU أمستردام", nl:"VASVU (Voortentamens VU Amsterdam)"},
     organizer:{ar:"جامعة Vrije Universiteit Amsterdam", nl:"Vrije Universiteit Amsterdam"},
     purpose:{
@@ -480,7 +480,7 @@ const EXAMS = [
     link:"https://vu.nl/nl/onderwijs/voortentamen"
   },
   {
-    id:"colloquium", icon:"🎓", color:"green",
+    id:"colloquium", icon:"<i class=gi-grad aria-hidden=true></i>", color:"green",
     name:{ar:"Colloquium Doctum — امتحان الكولوكويوم للبالغين", nl:"Colloquium Doctum (toelatingsonderzoek 21+)"},
     organizer:{ar:"كل جامعة (WO) أو HBO تنظمه بشكل مستقل", nl:"Per universiteit (WO) of hogeschool (HBO) afzonderlijk"},
     purpose:{
@@ -508,7 +508,7 @@ const EXAMS = [
     link:"https://www.studiekeuze123.nl/zonder-vwo"
   },
   {
-    id:"staatsexamen", icon:"🏛️", color:"red",
+    id:"staatsexamen", icon:"<i class=gi-bank aria-hidden=true></i>", color:"red",
     name:{ar:"Staatsexamen VWO/HAVO — امتحان الدولة", nl:"Staatsexamen VWO/HAVO"},
     organizer:{ar:"DUO (Dienst Uitvoering Onderwijs) نيابةً عن وزارة التعليم", nl:"DUO (Dienst Uitvoering Onderwijs) namens het Ministerie van OCW"},
     purpose:{
@@ -536,7 +536,7 @@ const EXAMS = [
     link:"https://www.duo.nl/particulier/staatsexamen-nt2/hoe-het-staatsexamen-nt2-werkt.jsp"
   },
   {
-    id:"staatsexamen-nt2", icon:"🗣️", color:"teal",
+    id:"staatsexamen-nt2", icon:"<i class=gi-chat aria-hidden=true></i>", color:"teal",
     name:{ar:"Staatsexamen NT2 — امتحان الهولندية كلغة ثانية", nl:"Staatsexamen NT2 (Nederlands als 2e taal)"},
     organizer:{ar:"DUO / College voor Toetsen en Examens", nl:"DUO / College voor Toetsen en Examens"},
     purpose:{
@@ -564,7 +564,7 @@ const EXAMS = [
     link:"https://www.duo.nl/particulier/staatsexamen-nt2/"
   },
   {
-    id:"ielts-toefl", icon:"🌍", color:"navy",
+    id:"ielts-toefl", icon:"<i class=gi-globe aria-hidden=true></i>", color:"navy",
     name:{ar:"IELTS / TOEFL — اللغة الإنجليزية", nl:"IELTS / TOEFL (Engelstalige programma's)"},
     organizer:{ar:"British Council / IDP / ETS", nl:"British Council / IDP / ETS"},
     purpose:{
@@ -592,7 +592,7 @@ const EXAMS = [
     link:"https://www.studyfinder.nl/admission-requirements"
   },
   {
-    id:"tudelft-ompt", icon:"🔧", color:"blue",
+    id:"tudelft-ompt", icon:"<i class=gi-tool aria-hidden=true></i>", color:"blue",
     name:{ar:"TU Delft OMPT / Matching — امتحانات التقنية", nl:"TU Delft OMPT & Matching"},
     organizer:{ar:"TU Delft، TU/e، University of Twente (4TU)", nl:"TU Delft, TU/e, Universiteit Twente (4TU)"},
     purpose:{
@@ -620,7 +620,7 @@ const EXAMS = [
     link:"https://ompt.nl"
   },
   {
-    id:"schakeljaar", icon:"🔗", color:"purple",
+    id:"schakeljaar", icon:"<i class=gi-link aria-hidden=true></i>", color:"purple",
     name:{ar:"Schakeljaar / Premaster — السنة التحضيرية", nl:"Schakeljaar / Premaster"},
     organizer:{ar:"كل جامعة هولندية تنظمه مستقلًا (WO & HBO)", nl:"Elke NL-universiteit organiseert dit afzonderlijk (WO & HBO)"},
     purpose:{
@@ -648,7 +648,7 @@ const EXAMS = [
     link:"https://www.studielink.nl"
   },
   {
-    id:"decentrale-selectie", icon:"🎯", color:"red",
+    id:"decentrale-selectie", icon:"<i class=gi-target aria-hidden=true></i>", color:"red",
     name:{ar:"Decentrale Selectie — الاختيار اللامركزي", nl:"Decentrale Selectie (Numerus Fixus)"},
     organizer:{ar:"كل جامعة مستقلة (للدراسات ذات numerus fixus)", nl:"Per universiteit (studies met numerus fixus)"},
     purpose:{
@@ -682,7 +682,7 @@ const EXAMS = [
 ═══════════════════════════════════════════════════════════ */
 const STUDY_REQUIREMENTS = [
   {
-    id:"geneeskunde", icon:"⚕️", level:"WO",
+    id:"geneeskunde", icon:"", level:"WO",
     name:{ar:"الطب البشري (Geneeskunde)", nl:"Geneeskunde"},
     duration:{ar:"3 سنوات بكالوريوس + 3 سنوات ماجستير + 3–6 سنوات تخصص", nl:"3 jaar Bachelor + 3 jaar Master + 3–6 jaar specialisatie"},
     profile:{ar:"VWO شعبة Natuur & Gezondheid أو Natuur & Techniek", nl:"VWO Natuur & Gezondheid of Natuur & Techniek"},
@@ -705,7 +705,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"tandheelkunde", icon:"🦷", level:"WO",
+    id:"tandheelkunde", icon:"<i class=gi-tooth aria-hidden=true></i>", level:"WO",
     name:{ar:"طب الأسنان (Tandheelkunde)", nl:"Tandheelkunde"},
     duration:{ar:"3 سنوات بكالوريوس + 3 سنوات ماجستير + تخصص اختياري 3–4 سنوات", nl:"3 jaar Bachelor + 3 jaar Master + specialisatie 3–4 jaar (optioneel)"},
     profile:{ar:"VWO N&G أو N&T", nl:"VWO N&G of N&T"},
@@ -728,7 +728,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"diergeneeskunde", icon:"🐾", level:"WO",
+    id:"diergeneeskunde", icon:"<i class=gi-paw aria-hidden=true></i>", level:"WO",
     name:{ar:"الطب البيطري (Diergeneeskunde)", nl:"Diergeneeskunde"},
     duration:{ar:"3 سنوات بكالوريوس + 3 سنوات ماجستير", nl:"3 jaar Bachelor + 3 jaar Master"},
     profile:{ar:"VWO N&G أو N&T", nl:"VWO N&G of N&T"},
@@ -751,7 +751,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"farmacie", icon:"💊", level:"WO",
+    id:"farmacie", icon:"<i class=gi-pill aria-hidden=true></i>", level:"WO",
     name:{ar:"الصيدلة (Farmacie)", nl:"Farmacie"},
     duration:{ar:"3 سنوات بكالوريوس + 3 سنوات ماجستير", nl:"3 jaar Bachelor + 3 jaar Master"},
     profile:{ar:"VWO N&G أو N&T", nl:"VWO N&G of N&T"},
@@ -774,7 +774,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"psychologie", icon:"🧠", level:"WO",
+    id:"psychologie", icon:"<i class=gi-brain aria-hidden=true></i>", level:"WO",
     name:{ar:"علم النفس (Psychologie)", nl:"Psychologie"},
     duration:{ar:"3 سنوات بكالوريوس + 1 سنة ماجستير (research master = 2 سنة)", nl:"3 jaar Bachelor + 1 jaar Master (research master = 2 jaar)"},
     profile:{ar:"VWO جميع الشعب", nl:"VWO alle profielen"},
@@ -797,7 +797,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"rechten", icon:"⚖️", level:"WO",
+    id:"rechten", icon:"<i class=gi-scale aria-hidden=true></i>", level:"WO",
     name:{ar:"القانون (Rechten / Rechtsgeleerdheid)", nl:"Rechtsgeleerdheid"},
     duration:{ar:"3 سنوات بكالوريوس + 1 سنة ماجستير", nl:"3 jaar Bachelor + 1 jaar Master"},
     profile:{ar:"VWO جميع الشعب (مع شرط Wiskunde A للاقتصاد القانوني)", nl:"VWO alle profielen (Wiskunde A voor Notarieel/Fiscaal recht)"},
@@ -820,7 +820,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"informatica", icon:"💻", level:"WO",
+    id:"informatica", icon:"<i class=gi-laptop aria-hidden=true></i>", level:"WO",
     name:{ar:"علوم الكمبيوتر (Informatica / Computer Science)", nl:"Informatica / Computer Science"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO N&T أو N&G مع Wiskunde B", nl:"VWO N&T of N&G met Wiskunde B"},
@@ -843,7 +843,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"engineering", icon:"⚙️", level:"WO",
+    id:"engineering", icon:"<i class=gi-gear aria-hidden=true></i>", level:"WO",
     name:{ar:"الهندسة (Werktuigbouwkunde / Civiele Techniek / Lucht- & Ruimtevaart)", nl:"Werktuigbouwkunde / Civiele Techniek / Lucht- & Ruimtevaart"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO N&T (إجباري)", nl:"VWO N&T (verplicht)"},
@@ -866,7 +866,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"biomedische", icon:"🧬", level:"WO",
+    id:"biomedische", icon:"<i class=gi-flask aria-hidden=true></i>", level:"WO",
     name:{ar:"العلوم الحيوية الطبية (Biomedische Wetenschappen)", nl:"Biomedische Wetenschappen"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO N&G أو N&T", nl:"VWO N&G of N&T"},
@@ -889,7 +889,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"econometrie", icon:"📈", level:"WO",
+    id:"econometrie", icon:"<i class=gi-chart aria-hidden=true></i>", level:"WO",
     name:{ar:"الاقتصاد القياسي (Econometrie & Operations Research)", nl:"Econometrie & Operations Research"},
     duration:{ar:"3 سنوات بكالوريوس + 1–2 سنة ماجستير", nl:"3 jaar Bachelor + 1–2 jaar Master"},
     profile:{ar:"VWO مع Wiskunde B (إجباري)", nl:"VWO met Wiskunde B (verplicht)"},
@@ -912,7 +912,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"wiskunde", icon:"🔢", level:"WO",
+    id:"wiskunde", icon:"<i class=gi-calc aria-hidden=true></i>", level:"WO",
     name:{ar:"الرياضيات (Wiskunde / Mathematics)", nl:"Wiskunde / Mathematics"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO مع Wiskunde B أو D", nl:"VWO met Wiskunde B of D"},
@@ -935,7 +935,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"natuurkunde", icon:"⚛️", level:"WO",
+    id:"natuurkunde", icon:"", level:"WO",
     name:{ar:"الفيزياء (Natuurkunde / Physics)", nl:"Natuurkunde / Physics"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO N&T (إجباري)", nl:"VWO N&T (verplicht)"},
@@ -958,7 +958,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"scheikunde", icon:"⚗️", level:"WO",
+    id:"scheikunde", icon:"<i class=gi-flask aria-hidden=true></i>", level:"WO",
     name:{ar:"الكيمياء (Scheikunde / Chemistry)", nl:"Scheikunde / Chemistry"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO N&T أو N&G", nl:"VWO N&T of N&G"},
@@ -981,7 +981,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"ai", icon:"🤖", level:"WO",
+    id:"ai", icon:"<i class=gi-robot aria-hidden=true></i>", level:"WO",
     name:{ar:"الذكاء الاصطناعي (Kunstmatige Intelligentie / AI)", nl:"Kunstmatige Intelligentie (AI)"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير", nl:"3 jaar Bachelor + 2 jaar Master"},
     profile:{ar:"VWO مع Wiskunde B (إجباري)", nl:"VWO met Wiskunde B (verplicht)"},
@@ -1004,7 +1004,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"bouwkunde", icon:"🏗️", level:"WO",
+    id:"bouwkunde", icon:"<i class=gi-building aria-hidden=true></i>", level:"WO",
     name:{ar:"الهندسة المعمارية (Bouwkunde / Architecture)", nl:"Bouwkunde / Architecture"},
     duration:{ar:"3 سنوات بكالوريوس + 2 سنة ماجستير + تدريب إلزامي", nl:"3 jaar Bachelor + 2 jaar Master + verplichte stage"},
     profile:{ar:"VWO N&T أو N&G مع Wiskunde B", nl:"VWO N&T of N&G met Wiskunde B"},
@@ -1027,7 +1027,7 @@ const STUDY_REQUIREMENTS = [
     }
   },
   {
-    id:"bedrijfskunde", icon:"💼", level:"WO",
+    id:"bedrijfskunde", icon:"<i class=gi-briefcase aria-hidden=true></i>", level:"WO",
     name:{ar:"إدارة الأعمال (Bedrijfskunde / Business Administration)", nl:"Bedrijfskunde / Business Administration"},
     duration:{ar:"3 سنوات بكالوريوس + 1 سنة ماجستير", nl:"3 jaar Bachelor + 1 jaar Master"},
     profile:{ar:"VWO جميع الشعب (مع Wiskunde A كحد أدنى)", nl:"VWO alle profielen (minimaal Wiskunde A)"},
@@ -1056,17 +1056,17 @@ const STUDY_REQUIREMENTS = [
 ═══════════════════════════════════════════════════════════ */
 const STUDY_GUIDANCE = [
   {
-    id:"guide-wiskunde", icon:"➗", color:"blue",
+    id:"guide-wiskunde", icon:"", color:"blue",
     subject:{ar:"الرياضيات (Wiskunde A/B)", nl:"Wiskunde A/B"},
     level:{ar:"VWO 5/6 مستوى", nl:"VWO-5/6 niveau"},
     duration:{ar:"4–9 أشهر للتحضير الكامل", nl:"4–9 maanden totale voorbereiding"},
     textbooks:{
-      ar:["📘 Getal & Ruimte VWO 5/6 (الكتاب الرسمي الهولندي للثانوية)","📘 Moderne Wiskunde (بديل)","📘 Noordhoff Getal & Ruimte Oefenboek (كتاب تمارين)","📗 Wiskunde Makkelijk Gemaakt — سلسلة مبسّطة للمبتدئين"],
-      nl:["📘 Getal & Ruimte VWO 5/6 (standaard schoolboek)","📘 Moderne Wiskunde (alternatief)","📘 Noordhoff Oefenboek (oefenopgaven)","📗 Wiskunde Makkelijk Gemaakt"]
+      ar:["Getal & Ruimte VWO 5/6 (الكتاب الرسمي الهولندي للثانوية)","Moderne Wiskunde (بديل)","Noordhoff Getal & Ruimte Oefenboek (كتاب تمارين)","Wiskunde Makkelijk Gemaakt — سلسلة مبسّطة للمبتدئين"],
+      nl:["Getal & Ruimte VWO 5/6 (standaard schoolboek)","Moderne Wiskunde (alternatief)","Noordhoff Oefenboek (oefenopgaven)","Wiskunde Makkelijk Gemaakt"]
     },
     websites:{
-      ar:["🌐 wiskundeacademie.nl (فيديوهات شرح بالهولندية — مجاني)","🌐 wiskunde.net (نصائح وامتحانات سابقة)","🌐 khanacademy.org/math (بالإنجليزية — ممتاز للجبر والتفاضل)","🌐 examenoverzicht.nl (امتحانات VWO سابقة مع الحلول)","🌐 ccvx.nl/oude-tentamens (امتحانات CCVX السابقة)"],
-      nl:["🌐 wiskundeacademie.nl (gratis uitlegvideo's)","🌐 wiskunde.net (tips + oude examens)","🌐 khanacademy.org/math (Engels — algebra, calculus)","🌐 examenoverzicht.nl (oude VWO-examens + antwoorden)","🌐 ccvx.nl/oude-tentamens"]
+      ar:["wiskundeacademie.nl (فيديوهات شرح بالهولندية — مجاني)","wiskunde.net (نصائح وامتحانات سابقة)","khanacademy.org/math (بالإنجليزية — ممتاز للجبر والتفاضل)","examenoverzicht.nl (امتحانات VWO سابقة مع الحلول)","ccvx.nl/oude-tentamens (امتحانات CCVX السابقة)"],
+      nl:["wiskundeacademie.nl (gratis uitlegvideo's)","wiskunde.net (tips + oude examens)","khanacademy.org/math (Engels — algebra, calculus)","examenoverzicht.nl (oude VWO-examens + antwoorden)","ccvx.nl/oude-tentamens"]
     },
     topics:{
       ar:["الجبر والمعادلات (Algebra & vergelijkingen)","الدوال والرسوم البيانية (Functies & grafieken)","التفاضل والتكامل (Differentiëren & integreren) — مهم جدًا للطب والهندسة","الإحصاء والاحتمالات (Statistiek & kansrekening) — ضروري لـ Wiskunde A","المثلثات والمتجهات (Goniometrie & vectoren)","المتتاليات والمتسلسلات (Rijen & reeksen)"],
@@ -1079,17 +1079,17 @@ const STUDY_GUIDANCE = [
     }
   },
   {
-    id:"guide-scheikunde", icon:"⚗️", color:"purple",
+    id:"guide-scheikunde", icon:"<i class=gi-flask aria-hidden=true></i>", color:"purple",
     subject:{ar:"الكيمياء (Scheikunde)", nl:"Scheikunde"},
     level:{ar:"VWO 5/6 — إجباري للطب والصيدلة والبيطرة", nl:"VWO-5/6 — verplicht voor geneeskunde, farmacie, diergeneeskunde"},
     duration:{ar:"5–8 أشهر للتحضير الكامل", nl:"5–8 maanden totale voorbereiding"},
     textbooks:{
-      ar:["📘 Chemie Overal VWO 5/6","📘 Pulsar Chemie (بديل شامل)","📘 Nova Scheikunde","📗 BINAS — كتاب الجداول العلمية (إلزامي في كل امتحان)","📗 Chemie in Context (للتعمق)"],
-      nl:["📘 Chemie Overal VWO 5/6","📘 Pulsar Chemie","📘 Nova Scheikunde","📗 BINAS — tabellenboek (verplicht bij elk tentamen)","📗 Chemie in Context"]
+      ar:["Chemie Overal VWO 5/6","Pulsar Chemie (بديل شامل)","Nova Scheikunde","BINAS — كتاب الجداول العلمية (إلزامي في كل امتحان)","Chemie in Context (للتعمق)"],
+      nl:["Chemie Overal VWO 5/6","Pulsar Chemie","Nova Scheikunde","BINAS — tabellenboek (verplicht bij elk tentamen)","Chemie in Context"]
     },
     websites:{
-      ar:["🌐 scheikundeinbeeld.nl (فيديوهات مجانية)","🌐 scheikunde.net","🌐 chemistryguru.com (بالإنجليزية)","🌐 ccvx.nl — امتحانات Scheikunde سابقة","🌐 youtube.com/@scheikundelessen — قناة هولندية ممتازة"],
-      nl:["🌐 scheikundeinbeeld.nl","🌐 scheikunde.net","🌐 chemistryguru.com (Engels)","🌐 ccvx.nl — oude Scheikunde-examens","🌐 youtube.com/@scheikundelessen"]
+      ar:["scheikundeinbeeld.nl (فيديوهات مجانية)","scheikunde.net","chemistryguru.com (بالإنجليزية)","ccvx.nl — امتحانات Scheikunde سابقة","youtube.com/@scheikundelessen — قناة هولندية ممتازة"],
+      nl:["scheikundeinbeeld.nl","scheikunde.net","chemistryguru.com (Engels)","ccvx.nl — oude Scheikunde-examens","youtube.com/@scheikundelessen"]
     },
     topics:{
       ar:["البنية الذرية والجدول الدوري (Atoomstructuur & periodiek systeem)","الروابط الكيميائية (Chemische binding)","التفاعلات وتوازنها (Reacties & evenwichten)","الكيمياء العضوية (Organische chemie) — كربوهيدرات، بروتينات، دهون","الأحماض والقواعد والـ pH (Zuur-base & pH)","الكيمياء التحليلية (Analytische chemie)","الكيمياء الخضراء (Groene chemie)"],
@@ -1102,17 +1102,17 @@ const STUDY_GUIDANCE = [
     }
   },
   {
-    id:"guide-biologie", icon:"🧬", color:"green",
+    id:"guide-biologie", icon:"<i class=gi-flask aria-hidden=true></i>", color:"green",
     subject:{ar:"علم الأحياء (Biologie)", nl:"Biologie"},
     level:{ar:"VWO 5/6 — مفضّل بقوة للطب والبيطرة", nl:"VWO-5/6 — sterk aanbevolen voor geneeskunde/diergeneeskunde"},
     duration:{ar:"4–7 أشهر", nl:"4–7 maanden"},
     textbooks:{
-      ar:["📘 Biologie voor Jou VWO 5/6 (الأشهر)","📘 Nectar Biologie","📘 Biologie-Sesam","📗 Campbell Biology (الإنجليزي — المرجع الجامعي)","📗 BINAS (للأحياء أيضًا)"],
-      nl:["📘 Biologie voor Jou VWO 5/6","📘 Nectar Biologie","📘 Biologie-Sesam","📗 Campbell Biology (Engels — universitaire referentie)","📗 BINAS"]
+      ar:["Biologie voor Jou VWO 5/6 (الأشهر)","Nectar Biologie","Biologie-Sesam","Campbell Biology (الإنجليزي — المرجع الجامعي)","BINAS (للأحياء أيضًا)"],
+      nl:["Biologie voor Jou VWO 5/6","Nectar Biologie","Biologie-Sesam","Campbell Biology (Engels — universitaire referentie)","BINAS"]
     },
     websites:{
-      ar:["🌐 biologiepagina.nl (شرح شامل بالهولندية)","🌐 bioplek.org (أشهر مصدر هولندي)","🌐 biodoen.nl","🌐 khanacademy.org/science/biology","🌐 ccvx.nl — امتحانات Biologie سابقة"],
-      nl:["🌐 biologiepagina.nl","🌐 bioplek.org (bekende Nederlandse bron)","🌐 biodoen.nl","🌐 khanacademy.org/science/biology","🌐 ccvx.nl — oude Biologie-examens"]
+      ar:["biologiepagina.nl (شرح شامل بالهولندية)","bioplek.org (أشهر مصدر هولندي)","biodoen.nl","khanacademy.org/science/biology","ccvx.nl — امتحانات Biologie سابقة"],
+      nl:["biologiepagina.nl","bioplek.org (bekende Nederlandse bron)","biodoen.nl","khanacademy.org/science/biology","ccvx.nl — oude Biologie-examens"]
     },
     topics:{
       ar:["الخلية والـ DNA (Cel & DNA)","الوراثة والتطور (Erfelijkheid & evolutie)","علم وظائف الأعضاء البشرية (Humane fysiologie) — الجهاز العصبي، القلب، الغدد","علم البيئة (Ecologie)","علم النباتات (Plantenbiologie)","المناعة والأمراض (Immuniteit & ziekten)","التكاثر والتطور الجنيني (Voortplanting & embryologie)"],
@@ -1125,17 +1125,17 @@ const STUDY_GUIDANCE = [
     }
   },
   {
-    id:"guide-natuurkunde", icon:"⚡", color:"orange",
+    id:"guide-natuurkunde", icon:"<i class=gi-bolt aria-hidden=true></i>", color:"orange",
     subject:{ar:"الفيزياء (Natuurkunde)", nl:"Natuurkunde"},
     level:{ar:"VWO 5/6 — إجباري للهندسة وبعض كليات الطب", nl:"VWO-5/6 — verplicht voor techniek & soms geneeskunde"},
     duration:{ar:"5–8 أشهر", nl:"5–8 maanden"},
     textbooks:{
-      ar:["📘 Overal Natuurkunde VWO 5/6","📘 Pulsar Natuurkunde","📘 Systematische Natuurkunde","📗 BINAS (جداول القوانين)","📗 Giancoli Physics (الإنجليزي — مرجع جامعي)"],
-      nl:["📘 Overal Natuurkunde VWO 5/6","📘 Pulsar Natuurkunde","📘 Systematische Natuurkunde","📗 BINAS (formulebladen)","📗 Giancoli Physics (Engels)"]
+      ar:["Overal Natuurkunde VWO 5/6","Pulsar Natuurkunde","Systematische Natuurkunde","BINAS (جداول القوانين)","Giancoli Physics (الإنجليزي — مرجع جامعي)"],
+      nl:["Overal Natuurkunde VWO 5/6","Pulsar Natuurkunde","Systematische Natuurkunde","BINAS (formulebladen)","Giancoli Physics (Engels)"]
     },
     websites:{
-      ar:["🌐 natuurkunde.nl (شرح شامل)","🌐 natuurkundeuitgelegd.nl","🌐 roelhendriks.eu (ممتاز جدًا للـ VWO)","🌐 physicsclassroom.com (بالإنجليزية)","🌐 ccvx.nl — امتحانات Natuurkunde"],
-      nl:["🌐 natuurkunde.nl","🌐 natuurkundeuitgelegd.nl","🌐 roelhendriks.eu","🌐 physicsclassroom.com (Engels)","🌐 ccvx.nl — oude Natuurkunde-examens"]
+      ar:["natuurkunde.nl (شرح شامل)","natuurkundeuitgelegd.nl","roelhendriks.eu (ممتاز جدًا للـ VWO)","physicsclassroom.com (بالإنجليزية)","ccvx.nl — امتحانات Natuurkunde"],
+      nl:["natuurkunde.nl","natuurkundeuitgelegd.nl","roelhendriks.eu","physicsclassroom.com (Engels)","ccvx.nl — oude Natuurkunde-examens"]
     },
     topics:{
       ar:["الحركة والقوى (Kinematica & dynamica)","الطاقة والشغل (Energie & arbeid)","الكهرباء والمغناطيسية (Elektriciteit & magnetisme)","الموجات والصوت والضوء (Golven, geluid, licht)","الفيزياء الحديثة (Quantumfysica & relativiteit)","الفيزياء الطبية (Medische fysica) — الأشعة السينية، MRI","النووية (Kernfysica)"],
@@ -1148,17 +1148,17 @@ const STUDY_GUIDANCE = [
     }
   },
   {
-    id:"guide-nederlands", icon:"🇳🇱", color:"teal",
+    id:"guide-nederlands", icon:"", color:"teal",
     subject:{ar:"الهولندية (Nederlands / NT2)", nl:"Nederlands / NT2"},
     level:{ar:"B2 (NT2-II) — إجباري للدراسة في WO/HBO الهولندية", nl:"B2 (NT2-II) — verplicht voor WO/HBO"},
     duration:{ar:"6–18 شهرًا (حسب مستواك الابتدائي)", nl:"6–18 maanden (afhankelijk van beginniveau)"},
     textbooks:{
-      ar:["📘 Nederlands in Gang (A1–A2)","📘 Nederlands in Actie (B1)","📘 Nederlands op Niveau (B2)","📘 Vooruit! — كتاب CITO للـ NT2","📗 Taalriedel / Het Grote Oefenboek NT2","📗 Van Dale woordenboek Nederlands-Arabisch"],
-      nl:["📘 Nederlands in Gang (A1–A2)","📘 Nederlands in Actie (B1)","📘 Nederlands op Niveau (B2)","📘 Vooruit! — CITO NT2","📗 Het Grote Oefenboek NT2","📗 Van Dale woordenboek"]
+      ar:["Nederlands in Gang (A1–A2)","Nederlands in Actie (B1)","Nederlands op Niveau (B2)","Vooruit! — كتاب CITO للـ NT2","Taalriedel / Het Grote Oefenboek NT2","Van Dale woordenboek Nederlands-Arabisch"],
+      nl:["Nederlands in Gang (A1–A2)","Nederlands in Actie (B1)","Nederlands op Niveau (B2)","Vooruit! — CITO NT2","Het Grote Oefenboek NT2","Van Dale woordenboek"]
     },
     websites:{
-      ar:["🌐 nt2school.nl (دورات مجانية)","🌐 oefenen.nl (تدريبات تفاعلية مجانية)","🌐 taalthuis.com","🌐 duo.nl/nt2 (امتحانات تجريبية رسمية)","🌐 nos.nl/jeugdjournaal (للاستماع بسرعة بطيئة)","🌐 duolingo.com/nl (للمبتدئين)"],
-      nl:["🌐 nt2school.nl","🌐 oefenen.nl","🌐 taalthuis.com","🌐 duo.nl/nt2 (oefenexamens)","🌐 nos.nl/jeugdjournaal","🌐 duolingo.com/nl"]
+      ar:["nt2school.nl (دورات مجانية)","oefenen.nl (تدريبات تفاعلية مجانية)","taalthuis.com","duo.nl/nt2 (امتحانات تجريبية رسمية)","nos.nl/jeugdjournaal (للاستماع بسرعة بطيئة)","duolingo.com/nl (للمبتدئين)"],
+      nl:["nt2school.nl","oefenen.nl","taalthuis.com","duo.nl/nt2 (oefenexamens)","nos.nl/jeugdjournaal","duolingo.com/nl"]
     },
     topics:{
       ar:["القراءة (Lezen) — مقالات نيوز، قصص قصيرة، نصوص أكاديمية","الاستماع (Luisteren) — NOS Journaal, podcasts، محاضرات","الكتابة (Schrijven) — مقالات 200–400 كلمة، رسائل رسمية","المحادثة (Spreken) — موضوعات أكاديمية، عروض تقديمية","القواعد (Grammatica) — زمن الفعل، ترتيب الجملة الفرعية، modale werkwoorden","المفردات الأكاديمية (Academisch taalgebruik)"],
@@ -1171,17 +1171,17 @@ const STUDY_GUIDANCE = [
     }
   },
   {
-    id:"guide-engels", icon:"🇬🇧", color:"navy",
+    id:"guide-engels", icon:"", color:"navy",
     subject:{ar:"الإنجليزية (Engels — IELTS/TOEFL)", nl:"Engels (IELTS/TOEFL)"},
     level:{ar:"B2–C1 (IELTS 6.5–7.0 / TOEFL 90–100)", nl:"B2–C1 (IELTS 6.5–7.0 / TOEFL 90–100)"},
     duration:{ar:"3–6 أشهر تحضير مكثف", nl:"3–6 maanden intensieve voorbereiding"},
     textbooks:{
-      ar:["📘 Cambridge IELTS 17–19 (كتب الامتحانات الرسمية)","📘 The Official Guide to the TOEFL iBT Test","📘 Barron's IELTS Superpack","📗 English Grammar in Use (Raymond Murphy) — الكتاب الذهبي","📗 1100 Words You Need to Know"],
-      nl:["📘 Cambridge IELTS 17–19 (officiële examenboeken)","📘 Official Guide to the TOEFL iBT Test","📘 Barron's IELTS Superpack","📗 English Grammar in Use (Raymond Murphy)","📗 1100 Words You Need to Know"]
+      ar:["Cambridge IELTS 17–19 (كتب الامتحانات الرسمية)","The Official Guide to the TOEFL iBT Test","Barron's IELTS Superpack","English Grammar in Use (Raymond Murphy) — الكتاب الذهبي","1100 Words You Need to Know"],
+      nl:["Cambridge IELTS 17–19 (officiële examenboeken)","Official Guide to the TOEFL iBT Test","Barron's IELTS Superpack","English Grammar in Use (Raymond Murphy)","1100 Words You Need to Know"]
     },
     websites:{
-      ar:["🌐 ielts.org (امتحانات تجريبية مجانية)","🌐 ets.org/toefl (TOEFL الرسمي)","🌐 magoosh.com (دورات عالية الجودة)","🌐 bbc.co.uk/learningenglish (مجاني وممتاز)","🌐 engvid.com (فيديوهات مجانية)","🌐 youtube.com/@EnglishAddictWithMrDuncan"],
-      nl:["🌐 ielts.org (gratis oefenexamens)","🌐 ets.org/toefl","🌐 magoosh.com","🌐 bbc.co.uk/learningenglish","🌐 engvid.com","🌐 youtube.com/@EnglishAddictWithMrDuncan"]
+      ar:["ielts.org (امتحانات تجريبية مجانية)","ets.org/toefl (TOEFL الرسمي)","magoosh.com (دورات عالية الجودة)","bbc.co.uk/learningenglish (مجاني وممتاز)","engvid.com (فيديوهات مجانية)","youtube.com/@EnglishAddictWithMrDuncan"],
+      nl:["ielts.org (gratis oefenexamens)","ets.org/toefl","magoosh.com","bbc.co.uk/learningenglish","engvid.com","youtube.com/@EnglishAddictWithMrDuncan"]
     },
     topics:{
       ar:["Reading — نصوص أكاديمية 700–900 كلمة","Listening — محاضرات + محادثات (4 أقسام في IELTS)","Writing — Task 1 (رسم بياني/رسالة) + Task 2 (مقالة 250 كلمة)","Speaking — مقابلة 11–14 دقيقة (IELTS) أو تسجيل (TOEFL)","Grammar — الأزمنة، الشرط، المبني للمجهول، الجمل الوصفية","Academic vocabulary — استخدم Academic Word List (AWL)"],
@@ -1204,28 +1204,28 @@ const MEDICINE_ROADMAP = {
       tasks:["قم بتقييم ذاتي: ما المواد الناقصة (Scheikunde / Biologie / Wiskunde / Natuurkunde)؟","سجل في دورة CCVX أو Boswell-Bèta إذا احتجت (ابدأ مبكرًا!)","اشتر الكتب: Chemie Overal, Biologie voor Jou, Getal & Ruimte","افتح حسابًا في wiskundeacademie.nl + bioplek.org","احسب معدل VWO المتوقع — هل يحتاج تحسين؟"] },
     { month:"الشهر 3–4 (نوفمبر–ديسمبر)", title:"تعميق المواد العلمية",
       tasks:["ادرس 10–12 ساعة أسبوعيًا للمواد الناقصة","ابدأ بحلّ امتحانات CCVX السابقة (3 سنوات أخيرة)","ابدأ بإعداد CV + رسالة دافع (motivatiebrief)","تطوع في مستشفى أو دار رعاية — 4 ساعات أسبوعيًا","اقرأ 3 مقالات طبية أسبوعيًا (NRC، de Volkskrant، Nature)"] },
-    { month:"الشهر 5 (يناير) — ⚠️ حاسم", title:"التسجيل الرسمي + اختبارات العينة",
-      tasks:["📅 التسجيل في Studielink قبل 15 يناير (لا تمديد!)","قدّم ملف الاختيار قبل 1 فبراير (CV + motivatiebrief + شهادات)","مارس Situational Judgement Tests (SJT) على studielink.nl","حل امتحان CCVX تجريبي كامل كل أسبوع","ابدأ تمارين المقابلات الشخصية (مع صديق/معلم)"] },
+    { month:"الشهر 5 (يناير) — حاسم", title:"التسجيل الرسمي + اختبارات العينة",
+      tasks:["التسجيل في Studielink قبل 15 يناير (لا تمديد!)","قدّم ملف الاختيار قبل 1 فبراير (CV + motivatiebrief + شهادات)","مارس Situational Judgement Tests (SJT) على studielink.nl","حل امتحان CCVX تجريبي كامل كل أسبوع","ابدأ تمارين المقابلات الشخصية (مع صديق/معلم)"] },
     { month:"الشهر 6–7 (فبراير–مارس)", title:"اختبارات الاختيار (Decentrale Selectie)",
       tasks:["حضر اختبارات الـ kennistoets في مارس (كل جامعة موعد مختلف)","حضر مقابلات الاختيار (Interview Day)","إذا كنت تقدم لـ CCVX: الامتحان في يونيو/يوليو","راجع الملاحظات من كل اختبار وتعلم من الأخطاء","احتفظ بهدوئك — التوتر الزائد يقلل الأداء"] },
     { month:"الشهر 8 (أبريل)", title:"النتائج وقرار القبول",
-      tasks:["📩 15 أبريل: نتائج Decentrale Selectie (قبول أو قائمة انتظار)","إذا رُفضت: راجع خياراتك — Biomedische Wetenschappen أو طب في بلجيكا","إذا قُبلت: ابدأ إجراءات السكن في مدينة الجامعة","سجّل في DUO للتمويل الطلابي (studiefinanciering)"] },
+      tasks:["15 أبريل: نتائج Decentrale Selectie (قبول أو قائمة انتظار)","إذا رُفضت: راجع خياراتك — Biomedische Wetenschappen أو طب في بلجيكا","إذا قُبلت: ابدأ إجراءات السكن في مدينة الجامعة","سجّل في DUO للتمويل الطلابي (studiefinanciering)"] },
     { month:"الشهر 9 (مايو–يوليو)", title:"إعداد نهائي + دبلوم VWO",
-      tasks:["امتحانات VWO النهائية (مايو)","استلام دبلوم VWO (يوليو)","إكمال متطلبات NT2-II إذا أجنبي (قبل 31 أغسطس)","احضر introduction week (مثل ASW أو AID) في أغسطس","ابدأ دراستك في سبتمبر! 🎉"] },
+      tasks:["امتحانات VWO النهائية (مايو)","استلام دبلوم VWO (يوليو)","إكمال متطلبات NT2-II إذا أجنبي (قبل 31 أغسطس)","احضر introduction week (مثل ASW أو AID) في أغسطس","ابدأ دراستك في سبتمبر! "] },
   ],
   nl:[
     { month:"Maand 1–2 (sep–okt)", title:"Fundament leggen + niveaubepaling",
       tasks:["Zelfbeoordeling: welke vakken ontbreken (Scheikunde / Biologie / Wiskunde / Natuurkunde)?","Meld je aan voor CCVX- of Boswell-Bèta-cursus (begin vroeg!)","Koop boeken: Chemie Overal, Biologie voor Jou, Getal & Ruimte","Maak account op wiskundeacademie.nl + bioplek.org","Bereken verwacht VWO-gemiddelde — moet dit omhoog?"] },
     { month:"Maand 3–4 (nov–dec)", title:"Verdieping bètavakken",
       tasks:["Studeer 10–12 uur per week voor missende vakken","Los oude CCVX-examens op (laatste 3 jaar)","Begin met CV + motivatiebrief","Vrijwilligerswerk ziekenhuis of zorginstelling — 4 uur/week","Lees wekelijks 3 medische artikelen (NRC, Volkskrant, Nature)"] },
-    { month:"Maand 5 (januari) — ⚠️ kritiek", title:"Officiële aanmelding + oefentests",
-      tasks:["📅 Aanmelden in Studielink vóór 15 januari (géén uitstel!)","Selectiedossier indienen vóór 1 februari (CV + motivatie + diploma)","Oefen SJT (Situational Judgement Tests) op studielink.nl","Wekelijks volledig CCVX-proefexamen maken","Begin met interview-training (met vriend/docent)"] },
+    { month:"Maand 5 (januari) — kritiek", title:"Officiële aanmelding + oefentests",
+      tasks:["Aanmelden in Studielink vóór 15 januari (géén uitstel!)","Selectiedossier indienen vóór 1 februari (CV + motivatie + diploma)","Oefen SJT (Situational Judgement Tests) op studielink.nl","Wekelijks volledig CCVX-proefexamen maken","Begin met interview-training (met vriend/docent)"] },
     { month:"Maand 6–7 (feb–mrt)", title:"Selectie-examens (Decentrale Selectie)",
       tasks:["Kennistoetsen in maart (elke universiteit eigen datum)","Interviews bijwonen (Interview Day)","CCVX-examen: juni/juli","Reflecteer na elke test — leer van fouten","Blijf kalm — stress vermindert prestaties"] },
     { month:"Maand 8 (april)", title:"Uitslag + toelatingsbesluit",
-      tasks:["📩 15 april: uitslag Decentrale Selectie (toegelaten of wachtlijst)","Bij afwijzing: overweeg Biomedische Wetenschappen of geneeskunde in België","Bij toelating: regel huisvesting in studentenstad","Meld je aan bij DUO voor studiefinanciering"] },
+      tasks:["15 april: uitslag Decentrale Selectie (toegelaten of wachtlijst)","Bij afwijzing: overweeg Biomedische Wetenschappen of geneeskunde in België","Bij toelating: regel huisvesting in studentenstad","Meld je aan bij DUO voor studiefinanciering"] },
     { month:"Maand 9 (mei–jul)", title:"Eindexamens + VWO-diploma",
-      tasks:["VWO-eindexamens (mei)","VWO-diploma ontvangen (juli)","NT2-II afronden indien buitenlander (vóór 31 augustus)","Introductieweek bijwonen (ASW / AID) in augustus","Start studie in september! 🎉"] },
+      tasks:["VWO-eindexamens (mei)","VWO-diploma ontvangen (juli)","NT2-II afronden indien buitenlander (vóór 31 augustus)","Introductieweek bijwonen (ASW / AID) in augustus","Start studie in september! "] },
   ]
 };
 
@@ -1235,25 +1235,25 @@ const MEDICINE_ROADMAP = {
 // 8 primary tabs in top nav. Level detail pages (vmbo/havovwo/mbo/hbo/wo/vavo) are routed but accessed
 // via cards on "levels" page, nodes on "pathway", or modal "full page" button.
 const PAGES = [
-  { id:"overview",     icon:"🏠", group:"main",  label:{ar:"نظرة عامة",   nl:"Overzicht"} },
-  { id:"pathway",      icon:"🧭", group:"main",  label:{ar:"المخطط",      nl:"Route"} },
-  { id:"levels",       icon:"📚", group:"main",  label:{ar:"المستويات",   nl:"Niveaus"} },
-  { id:"mbo-beroepen", icon:"👷", group:"main",  label:{ar:"مهن MBO",     nl:"MBO-beroepen"} },
-  { id:"transitions",  icon:"🔄", group:"ref",   label:{ar:"الانتقالات",  nl:"Overgangen"} },
-  { id:"exams",        icon:"📝", group:"ref",   label:{ar:"امتحانات القبول", nl:"Toelatingsexamens"} },
-  { id:"salaries",     icon:"💶", group:"ref",   label:{ar:"الرواتب",     nl:"Salarissen"} },
-  { id:"compare",      icon:"⚖️", group:"tool",  label:{ar:"مقارنة",      nl:"Vergelijken"} },
-  { id:"calculator",   icon:"🧮", group:"tool",  label:{ar:"حاسبة",       nl:"Calculator"} },
-  { id:"sources",      icon:"🔗", group:"ref",   label:{ar:"مصادر",       nl:"Bronnen"} },
+  { id:"overview",     icon:"<i class=gi-home aria-hidden=true></i>", group:"main",  label:{ar:"نظرة عامة",   nl:"Overzicht"} },
+  { id:"pathway",      icon:"<i class=gi-compass aria-hidden=true></i>", group:"main",  label:{ar:"المخطط",      nl:"Route"} },
+  { id:"levels",       icon:"<i class=gi-list aria-hidden=true></i>", group:"main",  label:{ar:"المستويات",   nl:"Niveaus"} },
+  { id:"mbo-beroepen", icon:"<i class=gi-building aria-hidden=true></i>", group:"main",  label:{ar:"مهن MBO",     nl:"MBO-beroepen"} },
+  { id:"transitions",  icon:"<i class=gi-refresh aria-hidden=true></i>", group:"ref",   label:{ar:"الانتقالات",  nl:"Overgangen"} },
+  { id:"exams",        icon:"<i class=gi-pen aria-hidden=true></i>", group:"ref",   label:{ar:"امتحانات القبول", nl:"Toelatingsexamens"} },
+  { id:"salaries",     icon:"<i class=gi-euro aria-hidden=true></i>", group:"ref",   label:{ar:"الرواتب",     nl:"Salarissen"} },
+  { id:"compare",      icon:"<i class=gi-scale aria-hidden=true></i>", group:"tool",  label:{ar:"مقارنة",      nl:"Vergelijken"} },
+  { id:"calculator",   icon:"<i class=gi-calc aria-hidden=true></i>", group:"tool",  label:{ar:"حاسبة",       nl:"Calculator"} },
+  { id:"sources",      icon:"<i class=gi-link aria-hidden=true></i>", group:"ref",   label:{ar:"مصادر",       nl:"Bronnen"} },
 ];
 // Secondary pages — reachable via routing but not shown in top nav
 const SECONDARY_PAGES = [
-  { id:"vmbo",     icon:"🔧",  label:{ar:"VMBO",     nl:"VMBO"} },
-  { id:"havovwo",  icon:"🎓",  label:{ar:"HAVO/VWO", nl:"HAVO/VWO"} },
-  { id:"mbo",      icon:"🛠️", label:{ar:"MBO",      nl:"MBO"} },
-  { id:"hbo",      icon:"🏢",  label:{ar:"HBO",      nl:"HBO"} },
-  { id:"wo",       icon:"🏛️", label:{ar:"WO",       nl:"WO"} },
-  { id:"vavo",     icon:"🔁",  label:{ar:"VAVO",     nl:"VAVO"} },
+  { id:"vmbo",     icon:"<i class=gi-tool aria-hidden=true></i>",  label:{ar:"VMBO",     nl:"VMBO"} },
+  { id:"havovwo",  icon:"<i class=gi-grad aria-hidden=true></i>",  label:{ar:"HAVO/VWO", nl:"HAVO/VWO"} },
+  { id:"mbo",      icon:"<i class=gi-tool aria-hidden=true></i>", label:{ar:"MBO",      nl:"MBO"} },
+  { id:"hbo",      icon:"<i class=gi-building aria-hidden=true></i>",  label:{ar:"HBO",      nl:"HBO"} },
+  { id:"wo",       icon:"<i class=gi-bank aria-hidden=true></i>", label:{ar:"WO",       nl:"WO"} },
+  { id:"vavo",     icon:"<i class=gi-refresh aria-hidden=true></i>",  label:{ar:"VAVO",     nl:"VAVO"} },
 ];
 const ALL_PAGE_IDS = [...PAGES, ...SECONDARY_PAGES].map(p => p.id);
 
@@ -1404,7 +1404,7 @@ function buildTable(title, headers, rows) {
 ═══════════════════════════════════════════════════════════ */
 const MBO_SECTORS = [
   {
-    id:"techniek", icon:"⚙️", name:{ar:"التقنية والهندسة", nl:"Techniek & Engineering"},
+    id:"techniek", icon:"<i class=gi-gear aria-hidden=true></i>", name:{ar:"التقنية والهندسة", nl:"Techniek & Engineering"},
     professions:[
       { id:"monteur", name:{ar:"فنّي ميكانيكي", nl:"Machinebankwerker / Monteur"},
         levels:[2,3,4],
@@ -1453,7 +1453,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"bouw", icon:"🏗️", name:{ar:"البناء والعمارة", nl:"Bouw & Infra"},
+    id:"bouw", icon:"<i class=gi-building aria-hidden=true></i>", name:{ar:"البناء والعمارة", nl:"Bouw & Infra"},
     professions:[
       { id:"timmerman", name:{ar:"نجّار بناء", nl:"Timmerman (bouwplaats/werkplaats)"},
         levels:[2,3,4],
@@ -1502,7 +1502,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"ict", icon:"💻", name:{ar:"تكنولوجيا المعلومات", nl:"ICT"},
+    id:"ict", icon:"<i class=gi-laptop aria-hidden=true></i>", name:{ar:"تكنولوجيا المعلومات", nl:"ICT"},
     professions:[
       { id:"ict-support", name:{ar:"فنّي دعم IT", nl:"ICT-beheerder / Servicedesk"},
         levels:[2,3,4],
@@ -1540,7 +1540,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"media", icon:"🎨", name:{ar:"الإعلام والتصميم", nl:"Media, Vormgeving & Design"},
+    id:"media", icon:"<i class=gi-palette aria-hidden=true></i>", name:{ar:"الإعلام والتصميم", nl:"Media, Vormgeving & Design"},
     professions:[
       { id:"grafisch-vormgever", name:{ar:"مصمم جرافيك", nl:"Mediavormgever / Grafisch vormgever"},
         levels:[4],
@@ -1578,7 +1578,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"zorg", icon:"🏥", name:{ar:"الرعاية الصحية والخدمات", nl:"Zorg & Welzijn"},
+    id:"zorg", icon:"<i class=gi-health aria-hidden=true></i>", name:{ar:"الرعاية الصحية والخدمات", nl:"Zorg & Welzijn"},
     professions:[
       { id:"verzorgende", name:{ar:"مساعد تمريض (IG)", nl:"Verzorgende IG"},
         levels:[3],
@@ -1627,7 +1627,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"economie", icon:"💼", name:{ar:"الاقتصاد والإدارة", nl:"Economie & Administratie"},
+    id:"economie", icon:"<i class=gi-briefcase aria-hidden=true></i>", name:{ar:"الاقتصاد والإدارة", nl:"Economie & Administratie"},
     professions:[
       { id:"boekhouder", name:{ar:"مُحاسب", nl:"Financieel administratief medewerker"},
         levels:[3,4],
@@ -1665,7 +1665,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"handel", icon:"🛒", name:{ar:"التجارة والمبيعات", nl:"Handel & Retail"},
+    id:"handel", icon:"<i class=gi-cart aria-hidden=true></i>", name:{ar:"التجارة والمبيعات", nl:"Handel & Retail"},
     professions:[
       { id:"verkoper", name:{ar:"بائع/مستشار مبيعات", nl:"Verkoper / Verkoopspecialist"},
         levels:[2,3],
@@ -1703,7 +1703,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"horeca", icon:"🍳", name:{ar:"الضيافة والمطاعم", nl:"Horeca"},
+    id:"horeca", icon:"<i class=gi-cup aria-hidden=true></i>", name:{ar:"الضيافة والمطاعم", nl:"Horeca"},
     professions:[
       { id:"kok", name:{ar:"طبّاخ/شيف", nl:"Kok / Zelfstandig werkend kok"},
         levels:[2,3,4],
@@ -1741,7 +1741,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"mobiliteit", icon:"🚗", name:{ar:"المركبات والنقل", nl:"Mobiliteit & Transport"},
+    id:"mobiliteit", icon:"<i class=gi-car aria-hidden=true></i>", name:{ar:"المركبات والنقل", nl:"Mobiliteit & Transport"},
     professions:[
       { id:"automonteur", name:{ar:"ميكانيكي سيارات", nl:"Autotechnicus / Eerste Autotechnicus"},
         levels:[2,3,4],
@@ -1779,7 +1779,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"onderwijs", icon:"🧑‍🏫", name:{ar:"التعليم والتدريب", nl:"Onderwijs & Opleiden"},
+    id:"onderwijs", icon:"<i class=gi-users aria-hidden=true></i>", name:{ar:"التعليم والتدريب", nl:"Onderwijs & Opleiden"},
     professions:[
       { id:"onderwijsassistent", name:{ar:"مساعد معلم", nl:"Onderwijsassistent"},
         levels:[4],
@@ -1795,7 +1795,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"sport", icon:"⚽", name:{ar:"الرياضة والترفيه", nl:"Sport & Bewegen"},
+    id:"sport", icon:"<i class=gi-target aria-hidden=true></i>", name:{ar:"الرياضة والترفيه", nl:"Sport & Bewegen"},
     professions:[
       { id:"sport-bewegingsleider", name:{ar:"مدرب رياضة", nl:"Sport- en bewegingsleider / Trainer/Coach"},
         levels:[3,4],
@@ -1811,7 +1811,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"uiterlijk", icon:"💄", name:{ar:"العناية الشخصية والتجميل", nl:"Uiterlijke Verzorging"},
+    id:"uiterlijk", icon:"<i class=gi-palette aria-hidden=true></i>", name:{ar:"العناية الشخصية والتجميل", nl:"Uiterlijke Verzorging"},
     professions:[
       { id:"kapper", name:{ar:"مصفف شعر", nl:"Kapper / Allround kapper"},
         levels:[2,3,4],
@@ -1838,7 +1838,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"veiligheid", icon:"🚓", name:{ar:"الأمن والسلامة", nl:"Veiligheid & Defensie"},
+    id:"veiligheid", icon:"<i class=gi-shield aria-hidden=true></i>", name:{ar:"الأمن والسلامة", nl:"Veiligheid & Defensie"},
     professions:[
       { id:"beveiliger", name:{ar:"عون أمن", nl:"Beveiliger 2"},
         levels:[2,3],
@@ -1865,7 +1865,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"toerisme", icon:"✈️", name:{ar:"السياحة والترفيه", nl:"Toerisme & Recreatie"},
+    id:"toerisme", icon:"<i class=gi-plane aria-hidden=true></i>", name:{ar:"السياحة والترفيه", nl:"Toerisme & Recreatie"},
     professions:[
       { id:"travel-specialist", name:{ar:"مستشار سفر", nl:"Medewerker Toerisme & Recreatie"},
         levels:[3,4],
@@ -1881,7 +1881,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"voedsel", icon:"🌱", name:{ar:"الغذاء والطبيعة والزراعة", nl:"Voedsel, Natuur & Landbouw"},
+    id:"voedsel", icon:"<i class=gi-leaf aria-hidden=true></i>", name:{ar:"الغذاء والطبيعة والزراعة", nl:"Voedsel, Natuur & Landbouw"},
     professions:[
       { id:"hovenier", name:{ar:"بستاني/مُنسّق حدائق", nl:"Hovenier / Vakbekwaam hovenier"},
         levels:[2,3,4],
@@ -1919,7 +1919,7 @@ const MBO_SECTORS = [
     ]
   },
   {
-    id:"luchtvaart", icon:"🛫", name:{ar:"الطيران والبحرية", nl:"Luchtvaart & Scheepvaart"},
+    id:"luchtvaart", icon:"<i class=gi-plane aria-hidden=true></i>", name:{ar:"الطيران والبحرية", nl:"Luchtvaart & Scheepvaart"},
     professions:[
       { id:"luchtvaartdienstverlener", name:{ar:"موظف خدمات جوية", nl:"Luchtvaartdienstverlener (grondpersoneel)"},
         levels:[4],
@@ -2231,7 +2231,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
   // Two new sectors
   const NEW_SECTORS = [
     {
-      id:"procestechniek", icon:"🧪", name:{ar:"العمليات الصناعية والكيمياء", nl:"Procestechniek & Chemie"},
+      id:"procestechniek", icon:"<i class=gi-flask aria-hidden=true></i>", name:{ar:"العمليات الصناعية والكيمياء", nl:"Procestechniek & Chemie"},
       professions:[
         p({ id:"procesoperator", name:{ar:"مُشغّل عمليات صناعية", nl:"Procesoperator A/B/C"}, levels:[2,3,4],
             duration:{ar:"2–4 سنوات", nl:"2–4 jaar"},
@@ -2257,7 +2257,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
       ]
     },
     {
-      id:"energie", icon:"⚡", name:{ar:"الطاقة والاستدامة", nl:"Energie & Duurzaamheid"},
+      id:"energie", icon:"<i class=gi-bolt aria-hidden=true></i>", name:{ar:"الطاقة والاستدامة", nl:"Energie & Duurzaamheid"},
       professions:[
         p({ id:"zonnepanelen", name:{ar:"فنّي ألواح شمسية", nl:"Zonnepanelen-monteur (PV-installateur)"}, levels:[2,3],
             duration:{ar:"2–3 سنوات", nl:"2–3 jaar"},
@@ -2889,7 +2889,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
   // Two additional brand-new sectors for comprehensive coverage
   const MORE_SECTORS = [
     {
-      id:"maritiem", icon:"⚓", name:{ar:"البحرية والصيد", nl:"Maritiem & Visserij"},
+      id:"maritiem", icon:"<i class=gi-anchor aria-hidden=true></i>", name:{ar:"البحرية والصيد", nl:"Maritiem & Visserij"},
       professions:[
         p({ id:"zeevaart-matroos", name:{ar:"بحّار سفن", nl:"Zeevaart Matroos / Stuurman kleine zeevaart"}, levels:[3,4],
             duration:{ar:"3–4 سنوات", nl:"3–4 jaar"},
@@ -2915,7 +2915,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
       ]
     },
     {
-      id:"creatief-ambacht", icon:"🎭", name:{ar:"الحرف والفنون التطبيقية", nl:"Creatief Ambacht"},
+      id:"creatief-ambacht", icon:"<i class=gi-palette aria-hidden=true></i>", name:{ar:"الحرف والفنون التطبيقية", nl:"Creatief Ambacht"},
       professions:[
         p({ id:"goudsmid", name:{ar:"صائغ مجوهرات", nl:"Goudsmid / Juwelier"}, levels:[3,4],
             duration:{ar:"3–4 سنوات", nl:"3–4 jaar"},
@@ -3298,7 +3298,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
 
   // 3 NEW SECTORS
   const MORE_SECTORS_V4 = [
-    { id:"dier", icon:"🐾", name:{ar:"الحيوانات والبيطرة", nl:"Dier & Diergeneeskunde"},
+    { id:"dier", icon:"<i class=gi-paw aria-hidden=true></i>", name:{ar:"الحيوانات والبيطرة", nl:"Dier & Diergeneeskunde"},
       professions: [
         { id:"dierenarts-assist", name:{ar:"مساعد طبيب بيطري", nl:"Dierenartsassistent"}, levels:[3,4], duration:{ar:"3-4 سنوات", nl:"3-4 jaar"},
           subjects:{ar:"تشريح الحيوانات، أدوية، مساعدة في العمليات", nl:"Anatomie dieren, medicatie, OK-assistentie"},
@@ -3327,7 +3327,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
       ]
     },
 
-    { id:"muziek-podium", icon:"🎵", name:{ar:"الموسيقى والفنون المسرحية", nl:"Muziek & Podiumkunsten"},
+    { id:"muziek-podium", icon:"<i class=gi-music aria-hidden=true></i>", name:{ar:"الموسيقى والفنون المسرحية", nl:"Muziek & Podiumkunsten"},
       professions: [
         { id:"licht-tech", name:{ar:"فني إضاءة مسرحية", nl:"Lichttechnicus"}, levels:[3,4], duration:{ar:"3-4 سنوات", nl:"3-4 jaar"},
           subjects:{ar:"تصميم الإضاءة، DMX، Grand MA، عروض حية", nl:"Lichtontwerp, DMX, Grand MA, live shows"},
@@ -3360,7 +3360,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
       ]
     },
 
-    { id:"drukwerk", icon:"🖨️", name:{ar:"الطباعة والورق", nl:"Drukwerk & Papier"},
+    { id:"drukwerk", icon:"<i class=gi-printer aria-hidden=true></i>", name:{ar:"الطباعة والورق", nl:"Drukwerk & Papier"},
       professions: [
         { id:"drukker", name:{ar:"طبّاع صناعي", nl:"Drukker (offset/digitaal)"}, levels:[2,3], duration:{ar:"2-3 سنوات", nl:"2-3 jaar"},
           subjects:{ar:"طباعة أوفست، رقمية، إدارة الألوان", nl:"Offsetdruk, digitale druk, kleurbeheer"},
@@ -3637,7 +3637,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
   };
 
   const MORE_SECTORS_V5 = [
-    { id:"water", icon:"💧", name:{ar:"المياه والبيئة المائية", nl:"Water & Watermanagement"},
+    { id:"water", icon:"<i class=gi-drop aria-hidden=true></i>", name:{ar:"المياه والبيئة المائية", nl:"Water & Watermanagement"},
       professions: [
         { id:"watermanagement-med", name:{ar:"موظف إدارة مياه", nl:"Medewerker Watermanagement"}, levels:[3,4], duration:{ar:"3-4 سنوات", nl:"3-4 jaar"},
           subjects:{ar:"إدارة المياه، السدود، الفيضانات، GIS", nl:"Waterbeheer, dijken, overstromingen, GIS"},
@@ -3662,7 +3662,7 @@ let MBO_SECTOR_BY_ID = Object.fromEntries(MBO_SECTORS.map(s => [s.id, s]));
       ]
     },
 
-    { id:"preventie-zorg", icon:"💊", name:{ar:"الرعاية الوقائية والصحة العامة", nl:"Preventieve Zorg & Volksgezondheid"},
+    { id:"preventie-zorg", icon:"<i class=gi-pill aria-hidden=true></i>", name:{ar:"الرعاية الوقائية والصحة العامة", nl:"Preventieve Zorg & Volksgezondheid"},
       professions: [
         { id:"jeugdwerk", name:{ar:"عامل مع الشباب", nl:"Jongerenwerker"}, levels:[3,4], duration:{ar:"3-4 سنوات", nl:"3-4 jaar"},
           subjects:{ar:"تربية الشباب، حلّ النزاعات، الإدمان والتوعية", nl:"Jongerenwerk, conflicthantering, verslavingspreventie"},
@@ -3805,10 +3805,10 @@ const RENDERERS = {
     intro.innerHTML = ar
       ? `<p>يضم التعليم المهني (${nl("MBO")}) ستة عشر قطاعاً رئيسياً (${nl("domeinen")}) تغطي أكثر من 480 مهنة. في كل مهنة: المتطلبات، المواد الدراسية، مدة الدراسة، والشهادات المطلوبة. توجد أربعة مستويات (${nl("niveau 1–4")}): 1 إعدادي (${nl("entreeopleiding")}) · 2 عامل منفّذ · 3 عامل مستقل · 4 عامل متخصص/مشرف يمنح الدخول إلى ${nl("HBO")}.</p>
 <p>مسارا التعلم: <b>${nl("BOL")}</b> (دراسة بدوام كامل + تدريب) و <b>${nl("BBL")}</b> (عمل 4 أيام + مدرسة يوماً واحداً). المتطلبات الأساسية العامة: شهادة ${nl("VMBO")} المناسبة + نسخة عن الهوية + شهادة حسن سلوك (${nl("VOG")}) للبعض + عقد تدريب (${nl("stageovereenkomst")}).</p>
-<p class="mbo-hint">👇 اختر قطاعاً للانتقال إليه مباشرة.</p>`
+<p class="mbo-hint">اختر قطاعاً للانتقال إليه مباشرة.</p>`
       : `<p>Het MBO kent 16 domeinen met in totaal 480+ beroepen. Per beroep vind je: instroomeisen, vakken, studieduur en certificaten. Vier niveaus: 1 entree · 2 basisberoeps · 3 zelfstandig · 4 specialist/middenkader (geeft doorstroomrecht naar HBO).</p>
 <p>Leerwegen: <b>BOL</b> (fulltime school + stage) en <b>BBL</b> (4 dagen werk + 1 dag school). Algemene eisen: passend VMBO-diploma + ID + soms VOG + stageovereenkomst.</p>
-<p class="mbo-hint">👇 Kies een sector om direct te springen.</p>`;
+<p class="mbo-hint">Kies een sector om direct te springen.</p>`;
     frag.append(intro);
 
     // Sector chips navigation
@@ -3843,22 +3843,22 @@ const RENDERERS = {
           <header class="mbo-card-head">
             <h4>${p.name[state.lang]}</h4>
             <p class="nl">${p.name.nl}</p>
-            <div class="mbo-lvl-row">${lvls}<span class="mbo-dur">⏱ <bdi>${p.duration[state.lang]}</bdi></span></div>
+            <div class="mbo-lvl-row">${lvls}<span class="mbo-dur"><bdi>${p.duration[state.lang]}</bdi></span></div>
           </header>
           <div class="mbo-row">
-            <span class="mbo-k">${ar?"📥 المتطلبات":"📥 Instroomeisen"}</span>
+            <span class="mbo-k">${ar?"المتطلبات":"Instroomeisen"}</span>
             <span class="mbo-v"><bdi>${p.entry[state.lang]}</bdi></span>
           </div>
           <div class="mbo-row mbo-row-subjects">
-            <span class="mbo-k">${ar?"📚 المواد":"📚 Vakken"}</span>
+            <span class="mbo-k">${ar?"المواد":"Vakken"}</span>
             <div class="mbo-tags">${subjects.map(s => `<span class="mbo-tag"><bdi>${s}</bdi></span>`).join("")}</div>
           </div>
           <div class="mbo-row">
-            <span class="mbo-k">${ar?"📜 الشهادات":"📜 Certificaten"}</span>
+            <span class="mbo-k">${ar?"الشهادات":"Certificaten"}</span>
             <span class="mbo-v"><bdi>${p.cert[state.lang]}</bdi></span>
           </div>
           <div class="mbo-row mbo-row-next">
-            <span class="mbo-k">${ar?"➡️ ماذا بعد":"➡️ Vervolg"}</span>
+            <span class="mbo-k">${ar?"ماذا بعد":"Vervolg"}</span>
             <div class="mbo-tags">${nexts.map(n => `<span class="mbo-tag mbo-tag-next"><bdi>${n}</bdi></span>`).join("")}</div>
           </div>`;
         grid.append(card);
@@ -3870,8 +3870,8 @@ const RENDERERS = {
     // Footer note
     const foot = el("div", { class:"card reveal mbo-foot" });
     foot.innerHTML = ar
-      ? `<p>📌 ملاحظة: الأعداد والأسماء مستندة إلى تصنيف ${nl("SBB")} / ${nl("DUO")}. المناهج الدقيقة تختلف من مدرسة إلى أخرى — راجع دائماً موقع المدرسة.</p><p>🔗 مصادر: <a href="https://www.s-bb.nl" target="_blank" rel="noopener">s-bb.nl</a> · <a href="https://www.mbostad.nl" target="_blank" rel="noopener">mbostad.nl</a> · <a href="https://www.kiesmbo.nl" target="_blank" rel="noopener">kiesmbo.nl</a></p>`
-      : `<p>📌 Let op: beroepsnamen en aantallen zijn gebaseerd op SBB/DUO-classificaties. Exacte vakken verschillen per school — raadpleeg de schoolsite.</p><p>🔗 Bronnen: <a href="https://www.s-bb.nl" target="_blank" rel="noopener">s-bb.nl</a> · <a href="https://www.mbostad.nl" target="_blank" rel="noopener">mbostad.nl</a> · <a href="https://www.kiesmbo.nl" target="_blank" rel="noopener">kiesmbo.nl</a></p>`;
+      ? `<p>ملاحظة: الأعداد والأسماء مستندة إلى تصنيف ${nl("SBB")} / ${nl("DUO")}. المناهج الدقيقة تختلف من مدرسة إلى أخرى — راجع دائماً موقع المدرسة.</p><p>مصادر: <a href="https://www.s-bb.nl" target="_blank" rel="noopener">s-bb.nl</a> · <a href="https://www.mbostad.nl" target="_blank" rel="noopener">mbostad.nl</a> · <a href="https://www.kiesmbo.nl" target="_blank" rel="noopener">kiesmbo.nl</a></p>`
+      : `<p>Let op: beroepsnamen en aantallen zijn gebaseerd op SBB/DUO-classificaties. Exacte vakken verschillen per school — raadpleeg de schoolsite.</p><p>Bronnen: <a href="https://www.s-bb.nl" target="_blank" rel="noopener">s-bb.nl</a> · <a href="https://www.mbostad.nl" target="_blank" rel="noopener">mbostad.nl</a> · <a href="https://www.kiesmbo.nl" target="_blank" rel="noopener">kiesmbo.nl</a></p>`;
     frag.append(foot);
 
     return frag;
@@ -3896,22 +3896,22 @@ const RENDERERS = {
 
     // Page title
     frag.append(el("h2", { class:"page-title reveal" },
-      ar ? "📝 امتحانات القبول والتحضير الجامعي" : "📝 Toelatingsexamens & Voortentamens"));
+      ar ? "امتحانات القبول والتحضير الجامعي" : "Toelatingsexamens & Voortentamens"));
 
     // Intro
     const intro = el("div", { class:"card reveal exam-intro" });
     intro.innerHTML = ar
       ? `<p><strong>هل ينقصك مادة من VWO؟</strong> هل تريد دراسة الطب أو طب الأسنان أو الصيدلة أو الهندسة لكنك لم تدرس Scheikunde أو Wiskunde B في الثانوية؟ هل أنت قادم جديد إلى هولندا؟</p>
          <p>لا تقلق — يوجد <strong>عدة طرق رسمية</strong> لتعويض المواد المفقودة والوصول إلى الجامعة الهولندية. هذه الصفحة تشرحها بالتفصيل.</p>
-         <p class="exam-quick">⚡ <strong>دليل سريع:</strong> فقدت مادة واحدة → CCVX/Boswell · بدون VWO/HAVO + ≥21 سنة → Colloquium Doctum · بدون أي دبلوم → Staatsexamen VWO · أجنبي تعلم الهولندية → Staatsexamen NT2 · دراسة بالإنجليزية → IELTS/TOEFL.</p>`
+         <p class="exam-quick"><strong>دليل سريع:</strong> فقدت مادة واحدة → CCVX/Boswell · بدون VWO/HAVO + ≥21 سنة → Colloquium Doctum · بدون أي دبلوم → Staatsexamen VWO · أجنبي تعلم الهولندية → Staatsexamen NT2 · دراسة بالإنجليزية → IELTS/TOEFL.</p>`
       : `<p><strong>Mis je een VWO-vak?</strong> Wil je geneeskunde, tandheelkunde, farmacie of techniek studeren maar heb je geen Scheikunde of Wiskunde B gehad? Of ben je nieuwkomer in Nederland?</p>
          <p>Geen zorgen — er zijn <strong>meerdere officiële routes</strong> om ontbrekende vakken in te halen en toelating tot een Nederlandse universiteit te krijgen. Deze pagina legt ze uit.</p>
-         <p class="exam-quick">⚡ <strong>Snelgids:</strong> Eén vak ontbreekt → CCVX/Boswell · Geen VWO/HAVO + ≥21 → Colloquium Doctum · Geen diploma → Staatsexamen VWO · Buitenlander leert NL → Staatsexamen NT2 · Engelstalige studie → IELTS/TOEFL.</p>`;
+         <p class="exam-quick"><strong>Snelgids:</strong> Eén vak ontbreekt → CCVX/Boswell · Geen VWO/HAVO + ≥21 → Colloquium Doctum · Geen diploma → Staatsexamen VWO · Buitenlander leert NL → Staatsexamen NT2 · Engelstalige studie → IELTS/TOEFL.</p>`;
     frag.append(intro);
 
     // Exam cards section
     frag.append(el("h3", { class:"exam-section-title reveal" },
-      ar ? "🧪 الامتحانات المتاحة" : "🧪 Beschikbare examens"));
+      ar ? "الامتحانات المتاحة" : "Beschikbare examens"));
 
     const grid = el("div", { class:"exam-grid reveal" });
     EXAMS.forEach(ex => {
@@ -3934,37 +3934,37 @@ const RENDERERS = {
         </div>
         <div class="exam-body">
           <div class="exam-row">
-            <span class="exam-k">${ar?"🎯 الهدف":"🎯 Doel"}</span>
+            <span class="exam-k">${ar?"الهدف":"Doel"}</span>
             <p class="exam-v"><bdi>${ex.purpose[state.lang]}</bdi></p>
           </div>
           <div class="exam-row">
-            <span class="exam-k">${ar?"📚 المواد":"📚 Vakken"}</span>
+            <span class="exam-k">${ar?"المواد":"Vakken"}</span>
             <ul class="exam-list">${subjects}</ul>
           </div>
           <div class="exam-grid-meta">
             <div class="exam-meta-cell">
-              <span class="exam-meta-k">${ar?"⏱️ المدة":"⏱️ Duur"}</span>
+              <span class="exam-meta-k">${ar?"المدة":"Duur"}</span>
               <span class="exam-meta-v"><bdi>${ex.duration[state.lang]}</bdi></span>
             </div>
             <div class="exam-meta-cell">
-              <span class="exam-meta-k">${ar?"💶 الرسوم":"💶 Kosten"}</span>
+              <span class="exam-meta-k">${ar?"الرسوم":"Kosten"}</span>
               <span class="exam-meta-v num"><bdi>${ex.fee[state.lang] || ex.fee}</bdi></span>
             </div>
           </div>
           <div class="exam-row">
-            <span class="exam-k">${ar?"👥 لمن":"👥 Voor wie"}</span>
+            <span class="exam-k">${ar?"لمن":"Voor wie"}</span>
             <p class="exam-v"><bdi>${ex.whoFor[state.lang]}</bdi></p>
           </div>
           <div class="exam-row">
-            <span class="exam-k">${ar?"📝 التسجيل":"📝 Aanmelden"}</span>
+            <span class="exam-k">${ar?"التسجيل":"Aanmelden"}</span>
             <p class="exam-v"><bdi>${ex.howToRegister[state.lang]}</bdi></p>
           </div>
           <div class="exam-row exam-tips-row">
-            <span class="exam-k">${ar?"💡 نصائح":"💡 Tips"}</span>
+            <span class="exam-k">${ar?"نصائح":"Tips"}</span>
             <ul class="exam-list exam-tips">${tips}</ul>
           </div>
           <a class="exam-link" href="${ex.link}" target="_blank" rel="noopener">
-            🔗 ${ar?"الموقع الرسمي":"Officiële site"} → <span class="num">${ex.link.replace("https://","")}</span>
+            ${ar?"الموقع الرسمي":"Officiële site"} → <span class="num">${ex.link.replace("https://","")}</span>
           </a>
         </div>`;
       grid.append(card);
@@ -3973,7 +3973,7 @@ const RENDERERS = {
 
     // ── STUDY REQUIREMENTS section ──
     frag.append(el("h3", { class:"exam-section-title reveal", style:"margin-top:2.5rem" },
-      ar ? "🎓 متطلبات الدراسات الجامعية الشائعة (WO)" : "🎓 Toelatingseisen populaire WO-studies"));
+      ar ? "متطلبات الدراسات الجامعية الشائعة (WO)" : "Toelatingseisen populaire WO-studies"));
 
     const studyIntro = el("p", { class:"page-hint reveal" },
       ar ? "كل دراسة جامعية لها مواد VWO إجبارية. إذا كانت ينقصك واحدة، استخدم CCVX أو Boswell-Bèta أو VASVU لتعويضها."
@@ -4000,31 +4000,31 @@ const RENDERERS = {
         </header>
         <div class="study-body">
           <div class="study-row">
-            <span class="study-k">${ar?"⏳ المدة":"⏳ Duur"}</span>
+            <span class="study-k">${ar?"المدة":"Duur"}</span>
             <span class="study-v"><bdi>${st.duration[state.lang]}</bdi></span>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"📊 الشعبة (Profiel)":"📊 Profiel"}</span>
+            <span class="study-k">${ar?"الشعبة (Profiel)":"Profiel"}</span>
             <span class="study-v"><bdi>${st.profile[state.lang]}</bdi></span>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"📖 المواد المطلوبة":"📖 Vereiste vakken"}</span>
+            <span class="study-k">${ar?"المواد المطلوبة":"Vereiste vakken"}</span>
             <ul class="study-list">${reqs}</ul>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"🎯 الاختيار":"🎯 Selectie"}</span>
+            <span class="study-k">${ar?"الاختيار":"Selectie"}</span>
             <p class="study-v"><bdi>${st.selection[state.lang]}</bdi></p>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"🏛️ الجامعات":"🏛️ Universiteiten"}</span>
+            <span class="study-k">${ar?"الجامعات":"Universiteiten"}</span>
             <div class="uni-chips">${unis}</div>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"📅 الموعد النهائي":"📅 Deadline"}</span>
+            <span class="study-k">${ar?"الموعد النهائي":"Deadline"}</span>
             <span class="study-v num"><bdi>${st.deadline[state.lang]}</bdi></span>
           </div>
           <div class="study-row">
-            <span class="study-k">${ar?"💡 نصائح":"💡 Tips"}</span>
+            <span class="study-k">${ar?"نصائح":"Tips"}</span>
             <ul class="study-list">${tips}</ul>
           </div>
         </div>`;
@@ -4034,7 +4034,7 @@ const RENDERERS = {
 
     // ── STUDY GUIDANCE / MATERIALS section ──
     frag.append(el("h3", { class:"exam-section-title reveal", style:"margin-top:2.5rem" },
-      ar ? "📖 إرشادات الدراسة والمواد التعليمية" : "📖 Studiegids & Aanbevolen lesmateriaal"));
+      ar ? "إرشادات الدراسة والمواد التعليمية" : "Studiegids & Aanbevolen lesmateriaal"));
 
     const guideIntro = el("p", { class:"page-hint reveal" },
       ar ? "لكل مادة من VWO، إليك أفضل الكتب والمواقع وعدد ساعات الدراسة الأسبوعية + المواضيع التي ستراها في الامتحان."
@@ -4063,28 +4063,28 @@ const RENDERERS = {
         <div class="guide-body">
           <div class="guide-meta">
             <div class="guide-meta-cell">
-              <span class="guide-meta-k">${ar?"⏱️ المدة":"⏱️ Duur"}</span>
+              <span class="guide-meta-k">${ar?"المدة":"Duur"}</span>
               <span class="guide-meta-v"><bdi>${g.duration[state.lang]}</bdi></span>
             </div>
             <div class="guide-meta-cell">
-              <span class="guide-meta-k">${ar?"📊 ساعات/أسبوع":"📊 Uren/week"}</span>
+              <span class="guide-meta-k">${ar?"ساعات/أسبوع":"Uren/week"}</span>
               <span class="guide-meta-v num"><bdi>${g.weeklyHours[state.lang]}</bdi></span>
             </div>
           </div>
           <div class="guide-row">
-            <span class="guide-k">${ar?"📚 الكتب الموصى بها":"📚 Aanbevolen boeken"}</span>
+            <span class="guide-k">${ar?"الكتب الموصى بها":"Aanbevolen boeken"}</span>
             <ul class="guide-list">${books}</ul>
           </div>
           <div class="guide-row">
-            <span class="guide-k">${ar?"🌐 المواقع المجانية":"🌐 Gratis websites"}</span>
+            <span class="guide-k">${ar?"المواقع المجانية":"Gratis websites"}</span>
             <ul class="guide-list">${sites}</ul>
           </div>
           <div class="guide-row">
-            <span class="guide-k">${ar?"🎯 المواضيع الأساسية":"🎯 Kernonderwerpen"}</span>
+            <span class="guide-k">${ar?"المواضيع الأساسية":"Kernonderwerpen"}</span>
             <ul class="guide-list">${topics}</ul>
           </div>
           <div class="guide-row guide-tips-row">
-            <span class="guide-k">${ar?"💡 نصائح ذهبية":"💡 Gouden tips"}</span>
+            <span class="guide-k">${ar?"نصائح ذهبية":"Gouden tips"}</span>
             <ul class="guide-list guide-tips">${tips}</ul>
           </div>
         </div>`;
@@ -4094,7 +4094,7 @@ const RENDERERS = {
 
     // ── MEDICINE 9-MONTH ROADMAP ──
     frag.append(el("h3", { class:"exam-section-title reveal", style:"margin-top:2.5rem" },
-      ar ? "🗺️ خارطة طريق 9 أشهر — الطريق إلى دراسة الطب" : "🗺️ 9-maanden routekaart — naar Geneeskunde"));
+      ar ? "خارطة طريق 9 أشهر — الطريق إلى دراسة الطب" : "9-maanden routekaart — naar Geneeskunde"));
 
     const roadIntro = el("p", { class:"page-hint reveal" },
       ar ? "خطة عمل شهرية تبدأ في سبتمبر وتنتهي بقبولك في الجامعة في سبتمبر التالي. تنطبق أيضًا على طب الأسنان والبيطرة والصيدلة (مع تعديل بسيط)."
@@ -4120,39 +4120,39 @@ const RENDERERS = {
     // ── Pre-Decision tree quick block ──
     const cheatsheet = el("div", { class:"card reveal cheatsheet" });
     cheatsheet.innerHTML = ar
-      ? `<h3>📌 ورقة الغش السريعة — ما الذي أحتاجه لأي دراسة؟</h3>
+      ? `<h3>ورقة الغش السريعة — ما الذي أحتاجه لأي دراسة؟</h3>
          <table class="cheat-table">
            <thead><tr><th>الدراسة</th><th>المواد الإجبارية</th><th>numerus fixus؟</th><th>الموعد النهائي</th></tr></thead>
            <tbody>
-             <tr><td>الطب البشري</td><td>Wisk A/B + Sk + Bi</td><td>✅ نعم</td><td>15 يناير</td></tr>
-             <tr><td>طب الأسنان</td><td>Wisk A/B + Sk + Bi</td><td>✅ نعم</td><td>15 يناير</td></tr>
-             <tr><td>الطب البيطري</td><td>Wisk A/B + Sk + Bi</td><td>✅ نعم</td><td>15 يناير</td></tr>
-             <tr><td>الصيدلة</td><td>Wisk A/B + Sk + Bi</td><td>❌ لا</td><td>1 مايو</td></tr>
-             <tr><td>علم الأحياء الطبية</td><td>Wisk A/B + Sk + Bi</td><td>❌ لا</td><td>1 مايو</td></tr>
+             <tr><td>الطب البشري</td><td>Wisk A/B + Sk + Bi</td><td>✓ نعم</td><td>15 يناير</td></tr>
+             <tr><td>طب الأسنان</td><td>Wisk A/B + Sk + Bi</td><td>✓ نعم</td><td>15 يناير</td></tr>
+             <tr><td>الطب البيطري</td><td>Wisk A/B + Sk + Bi</td><td>✓ نعم</td><td>15 يناير</td></tr>
+             <tr><td>الصيدلة</td><td>Wisk A/B + Sk + Bi</td><td>✗ لا</td><td>1 مايو</td></tr>
+             <tr><td>علم الأحياء الطبية</td><td>Wisk A/B + Sk + Bi</td><td>✗ لا</td><td>1 مايو</td></tr>
              <tr><td>الهندسة</td><td>Wisk B + Nat</td><td>غالبًا لا (matching)</td><td>1 مايو</td></tr>
              <tr><td>علوم الكمبيوتر</td><td>Wisk B</td><td>أحيانًا</td><td>1 مايو</td></tr>
-             <tr><td>الذكاء الاصطناعي</td><td>Wisk B</td><td>✅ نعم (UvA, RU)</td><td>15 يناير</td></tr>
-             <tr><td>علم النفس</td><td>Wisk A/B</td><td>✅ نعم (معظم)</td><td>15 يناير</td></tr>
-             <tr><td>الاقتصاد القياسي</td><td>Wisk B</td><td>❌ لا</td><td>1 مايو</td></tr>
-             <tr><td>القانون</td><td>VWO فقط</td><td>❌ لا</td><td>1 مايو</td></tr>
+             <tr><td>الذكاء الاصطناعي</td><td>Wisk B</td><td>✓ نعم (UvA, RU)</td><td>15 يناير</td></tr>
+             <tr><td>علم النفس</td><td>Wisk A/B</td><td>✓ نعم (معظم)</td><td>15 يناير</td></tr>
+             <tr><td>الاقتصاد القياسي</td><td>Wisk B</td><td>✗ لا</td><td>1 مايو</td></tr>
+             <tr><td>القانون</td><td>VWO فقط</td><td>✗ لا</td><td>1 مايو</td></tr>
              <tr><td>إدارة الأعمال</td><td>Wisk A/B</td><td>RSM فقط</td><td>15 يناير / 1 مايو</td></tr>
            </tbody>
          </table>`
-      : `<h3>📌 Cheatsheet — wat heb ik nodig per studie?</h3>
+      : `<h3>Cheatsheet — wat heb ik nodig per studie?</h3>
          <table class="cheat-table">
            <thead><tr><th>Studie</th><th>Verplichte vakken</th><th>Numerus fixus?</th><th>Deadline</th></tr></thead>
            <tbody>
-             <tr><td>Geneeskunde</td><td>Wisk A/B + Sk + Bi</td><td>✅ ja</td><td>15 jan</td></tr>
-             <tr><td>Tandheelkunde</td><td>Wisk A/B + Sk + Bi</td><td>✅ ja</td><td>15 jan</td></tr>
-             <tr><td>Diergeneeskunde</td><td>Wisk A/B + Sk + Bi</td><td>✅ ja</td><td>15 jan</td></tr>
-             <tr><td>Farmacie</td><td>Wisk A/B + Sk + Bi</td><td>❌ nee</td><td>1 mei</td></tr>
-             <tr><td>Biomedische W.</td><td>Wisk A/B + Sk + Bi</td><td>❌ nee</td><td>1 mei</td></tr>
+             <tr><td>Geneeskunde</td><td>Wisk A/B + Sk + Bi</td><td>✓ ja</td><td>15 jan</td></tr>
+             <tr><td>Tandheelkunde</td><td>Wisk A/B + Sk + Bi</td><td>✓ ja</td><td>15 jan</td></tr>
+             <tr><td>Diergeneeskunde</td><td>Wisk A/B + Sk + Bi</td><td>✓ ja</td><td>15 jan</td></tr>
+             <tr><td>Farmacie</td><td>Wisk A/B + Sk + Bi</td><td>✗ nee</td><td>1 mei</td></tr>
+             <tr><td>Biomedische W.</td><td>Wisk A/B + Sk + Bi</td><td>✗ nee</td><td>1 mei</td></tr>
              <tr><td>Techniek</td><td>Wisk B + Nat</td><td>meestal niet (matching)</td><td>1 mei</td></tr>
              <tr><td>Informatica</td><td>Wisk B</td><td>soms</td><td>1 mei</td></tr>
-             <tr><td>AI</td><td>Wisk B</td><td>✅ ja (UvA, RU)</td><td>15 jan</td></tr>
-             <tr><td>Psychologie</td><td>Wisk A/B</td><td>✅ ja (meeste)</td><td>15 jan</td></tr>
-             <tr><td>Econometrie</td><td>Wisk B</td><td>❌ nee</td><td>1 mei</td></tr>
-             <tr><td>Rechten</td><td>VWO volstaat</td><td>❌ nee</td><td>1 mei</td></tr>
+             <tr><td>AI</td><td>Wisk B</td><td>✓ ja (UvA, RU)</td><td>15 jan</td></tr>
+             <tr><td>Psychologie</td><td>Wisk A/B</td><td>✓ ja (meeste)</td><td>15 jan</td></tr>
+             <tr><td>Econometrie</td><td>Wisk B</td><td>✗ nee</td><td>1 mei</td></tr>
+             <tr><td>Rechten</td><td>VWO volstaat</td><td>✗ nee</td><td>1 mei</td></tr>
              <tr><td>Bedrijfskunde</td><td>Wisk A/B</td><td>alleen RSM</td><td>15 jan / 1 mei</td></tr>
            </tbody>
          </table>`;
@@ -4161,7 +4161,7 @@ const RENDERERS = {
     // ── Decision tree / Pathway helper ──
     const tree = el("div", { class:"card reveal exam-tree" });
     tree.innerHTML = ar
-      ? `<h3>🧭 شجرة القرار: أيّ امتحان أحتاج؟</h3>
+      ? `<h3>شجرة القرار: أيّ امتحان أحتاج؟</h3>
          <ol class="exam-tree-list">
            <li><strong>هل لديك دبلوم VWO ولكن ينقصك مادة واحدة (مثل Scheikunde)؟</strong><br>→ استخدم <a href="#exam-ccvx" onclick="setPage('exams');return true;">CCVX</a> أو <a href="#exam-boswell" onclick="setPage('exams');return true;">Boswell-Bèta</a> أو <a href="#exam-vasvu" onclick="setPage('exams');return true;">VASVU</a> لتعويض هذه المادة فقط.</li>
            <li><strong>هل لديك HBO Bachelor وتريد الانتقال إلى ماجستير WO؟</strong><br>→ في الغالب تحتاج <a href="#exam-ccvx" onclick="setPage('exams');return true;">CCVX</a> أو premaster (سنة تحضيرية).</li>
@@ -4170,7 +4170,7 @@ const RENDERERS = {
            <li><strong>هل أنت قادم جديد إلى هولندا (لاجئ، مهاجر)؟</strong><br>→ ابدأ بدورة <strong>ISK</strong> أو <strong>Schakeljaar</strong> في الجامعة، ثم <a href="#exam-staatsexamen-nt2" onclick="setPage('exams');return true;">Staatsexamen NT2</a> لإثبات الهولندية.</li>
            <li><strong>هل تريد دراسة برنامج بالإنجليزية؟</strong><br>→ <a href="#exam-ielts-toefl" onclick="setPage('exams');return true;">IELTS أو TOEFL</a> (الحد الأدنى يعتمد على الدراسة).</li>
          </ol>`
-      : `<h3>🧭 Beslisboom: welk examen heb ik nodig?</h3>
+      : `<h3>Beslisboom: welk examen heb ik nodig?</h3>
          <ol class="exam-tree-list">
            <li><strong>Heb je een VWO-diploma maar mis je één vak (bv. Scheikunde)?</strong><br>→ Gebruik <a href="#exam-ccvx" onclick="setPage('exams');return true;">CCVX</a>, <a href="#exam-boswell" onclick="setPage('exams');return true;">Boswell-Bèta</a> of <a href="#exam-vasvu" onclick="setPage('exams');return true;">VASVU</a> om dat ene vak in te halen.</li>
            <li><strong>Heb je een HBO Bachelor en wil je doorstromen naar een WO-master?</strong><br>→ Meestal <a href="#exam-ccvx" onclick="setPage('exams');return true;">CCVX</a> of een premaster nodig.</li>
@@ -4184,7 +4184,7 @@ const RENDERERS = {
     // Footer with sources
     const foot = el("div", { class:"card reveal exam-foot" });
     foot.innerHTML = ar
-      ? `<h4>📚 موارد مفيدة إضافية</h4>
+      ? `<h4>موارد مفيدة إضافية</h4>
          <ul>
            <li><a href="https://www.studielink.nl" target="_blank" rel="noopener">Studielink</a> — منصة التسجيل الموحدة لجميع الدراسات.</li>
            <li><a href="https://www.studiekeuze123.nl" target="_blank" rel="noopener">Studiekeuze123</a> — مقارنة الدراسات والشروط.</li>
@@ -4192,8 +4192,8 @@ const RENDERERS = {
            <li><a href="https://www.duo.nl" target="_blank" rel="noopener">DUO</a> — التمويل الطلابي والامتحانات الرسمية.</li>
            <li><a href="https://www.numerusfixusopleidingen.nl" target="_blank" rel="noopener">Numerus Fixus</a> — قائمة الدراسات ذات العدد المحدود.</li>
          </ul>
-         <p class="exam-disclaimer">⚠️ المعلومات محدّثة لعام 2026 لكن قد تتغير الرسوم والمواعيد سنويًا — تحقق دائمًا من الموقع الرسمي للجامعة أو DUO قبل التسجيل.</p>`
-      : `<h4>📚 Aanvullende bronnen</h4>
+         <p class="exam-disclaimer">المعلومات محدّثة لعام 2026 لكن قد تتغير الرسوم والمواعيد سنويًا — تحقق دائمًا من الموقع الرسمي للجامعة أو DUO قبل التسجيل.</p>`
+      : `<h4>Aanvullende bronnen</h4>
          <ul>
            <li><a href="https://www.studielink.nl" target="_blank" rel="noopener">Studielink</a> — landelijk inschrijfportaal.</li>
            <li><a href="https://www.studiekeuze123.nl" target="_blank" rel="noopener">Studiekeuze123</a> — studies en eisen vergelijken.</li>
@@ -4201,7 +4201,7 @@ const RENDERERS = {
            <li><a href="https://www.duo.nl" target="_blank" rel="noopener">DUO</a> — studiefinanciering en officiële examens.</li>
            <li><a href="https://www.numerusfixusopleidingen.nl" target="_blank" rel="noopener">Numerus Fixus</a> — overzicht studies met loting/selectie.</li>
          </ul>
-         <p class="exam-disclaimer">⚠️ Informatie geldt voor 2026 maar kosten en data wijzigen jaarlijks — controleer altijd de officiële site van de universiteit of DUO voor inschrijving.</p>`;
+         <p class="exam-disclaimer">Informatie geldt voor 2026 maar kosten en data wijzigen jaarlijks — controleer altijd de officiële site van de universiteit of DUO voor inschrijving.</p>`;
     frag.append(foot);
 
     // Deep-link scroll
@@ -4232,7 +4232,7 @@ const RENDERERS = {
       const sel = el("select", { id: selId });
       ids.forEach(id => {
         const lv = LEVEL_BY_ID[id];
-        const opt = el("option", { value: id }, `${lv.icon} ${lv.name[state.lang]}`);
+        const opt = el("option", { value: id }, lv.name[state.lang]);
         if (id === def) opt.selected = true;
         sel.append(opt);
       });
@@ -4352,7 +4352,7 @@ function openModal(id) {
   const lv = LEVEL_BY_ID[id];
   if (!lv) return;
   lastFocus = document.activeElement;
-  $("#modalIcon").textContent = lv.icon;
+  $("#modalIcon").innerHTML = lv.icon;
   $("#modalTitle").textContent = lv.name[state.lang];
   $("#modalSub").innerHTML = `<span class="nl">${lv.name.nl}</span> · <span class="num">${lv.ageRange}</span> · ${lv.duration[state.lang]}`;
   const body = $("#modalBody");
@@ -4693,7 +4693,7 @@ function buildSearchIndex() {
       const nextAr = _j(pr.next?.ar);
       const nextNl = _j(pr.next?.nl);
       pushItem({
-        type:"profession", icon:"👷",
+        type:"profession", icon:"<i class=gi-building aria-hidden=true></i>",
         title: pr.name,
         subtitle: s.name,
         action: { kind:"profession", sectorId: s.id, professionId: pr.id },
@@ -4705,7 +4705,7 @@ function buildSearchIndex() {
   // Transitions
   TRANSITIONS.forEach(tr => {
     pushItem({
-      type:"transition", icon:"🔄",
+      type:"transition", icon:"<i class=gi-refresh aria-hidden=true></i>",
       title: { ar: tr.from + " → " + tr.to, nl: tr.from + " → " + tr.to },
       subtitle: tr.req,
       action: { kind:"page", id:"transitions" },
@@ -4716,7 +4716,7 @@ function buildSearchIndex() {
   // Salaries
   SALARIES.forEach(sa => {
     pushItem({
-      type:"salary", icon:"💶",
+      type:"salary", icon:"<i class=gi-euro aria-hidden=true></i>",
       title: sa.field,
       subtitle: { ar: sa.gross + " / شهر", nl: sa.gross + " / maand" },
       action: { kind:"page", id:"salaries" },
@@ -4733,7 +4733,7 @@ function buildSearchIndex() {
       const tipAr = _j(ex.tips?.ar);
       const tipNl = _j(ex.tips?.nl);
       pushItem({
-        type:"exam", icon: ex.icon || "📝",
+        type:"exam", icon: ex.icon || "",
         title: ex.name,
         subtitle: { ar: ex.duration?.ar || "", nl: ex.duration?.nl || "" },
         action: { kind:"exam", examId: ex.id },
@@ -4763,7 +4763,7 @@ function buildSearchIndex() {
       const tipAr = _j(st.tips?.ar);
       const tipNl = _j(st.tips?.nl);
       pushItem({
-        type:"study", icon: st.icon || "🎓",
+        type:"study", icon: st.icon || "",
         title: st.name,
         subtitle: { ar: `دراسة ${st.level}`, nl: `${st.level}-studie` },
         action: { kind:"study", studyId: st.id },
@@ -4791,7 +4791,7 @@ function buildSearchIndex() {
       const topAr  = _j(g.topics?.ar);   const topNl  = _j(g.topics?.nl);
       const tipAr  = _j(g.tips?.ar);     const tipNl  = _j(g.tips?.nl);
       pushItem({
-        type:"guide", icon: g.icon || "📖",
+        type:"guide", icon: g.icon || "",
         title: g.subject,
         subtitle: { ar: "دليل دراسة", nl: "Studiegids" },
         action: { kind:"guide", guideId: g.id },
@@ -5039,7 +5039,7 @@ function renderSearchResults() {
       const subText = it.subtitle ? (it.subtitle[state.lang] || "") : "";
       const titleH = highlightText(titleText, words);
       const subH = subText ? highlightText(subText, words) : "";
-      btn.innerHTML = `<span class="search-ico2" aria-hidden="true">${escapeHtml(it.icon || "•")}</span>
+      btn.innerHTML = `<span class="search-ico2" aria-hidden="true">${it.icon || "•"}</span>
         <div class="search-texts">
           <div class="search-t"><bdi>${titleH}</bdi></div>
           ${subH ? `<div class="search-s"><bdi>${subH}</bdi></div>` : ""}

@@ -1,38 +1,97 @@
+/* Homepage "updates" strip: official news (assets/news-ticker.json) and partner offers
+   (assets/partners.json, clearly labelled as advertising) in ONE quiet, rotating card.
+   - One item visible at a time, soft cross-fade; all items share one grid cell, so the height never jumps.
+   - Pauses on hover/focus, when the tab is hidden, and for prefers-reduced-motion (manual arrows only).
+   - Buttons never move, so every tap works the first time. No cookies, no tracking. */
 (()=>{"use strict";
 const script=document.currentScript;
-const file=new URL("news-ticker.json",script.src).href;
+const base=new URL(".",script.src).href;
 const fixedLanguage=script.dataset.language;
-let cachedData=null,loading=false,current=0,timer=null,hovering=false;const ROTATE_MS=6000;
-const text={
- ar:{title:"موجز هولندا للمهاجرين",updated:"آخر تحقق",empty:"لا توجد مستجدات رسمية مؤكدة في هذه النشرة الآن.",pending:"سيظهر الموجز الأول عند موعد التحديث المجدول.",stale:"لم يكتمل آخر فحص مجدول؛ هذه آخر المستجدات المؤكدة.",pause:"إيقاف الحركة",resume:"تشغيل الحركة",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",reported:"حسب وسائل الإعلام",source:"المصدر الرسمي",prev:"الخبر السابق",next:"الخبر التالي",carousel:"شريط أخبار متقلب"},
- nl:{title:"Nederland in het kort voor nieuwkomers",updated:"Laatst gecontroleerd",empty:"Er zijn nu geen bevestigde officiële updates in dit overzicht.",pending:"De eerste briefing verschijnt bij de geplande update.",stale:"De laatste geplande controle is niet voltooid; dit zijn de laatste bevestigde updates.",pause:"Beweging pauzeren",resume:"Beweging hervatten",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",reported:"Volgens media",source:"Officiële bron",prev:"Vorig bericht",next:"Volgend bericht",carousel:"Wisselende nieuwsbalk"}
+const ROTATE_MS=7000;
+const T={
+ ar:{title:"المستجدات",region:"آخر المستجدات وعروض الشركاء",news:"خبر رسمي",ad:"إعلان",confirmed:"قرار نافذ",announced:"إعلان رسمي",proposed:"مقترح",reported:"حسب وسائل الإعلام",read:"اقرأ في المصدر",code:"كود الخصم",copy:"انسخ الكود",copied:"تم النسخ",visit:"زيارة الموقع",wa:"واتساب",all:"كل العروض",prev:"السابق",next:"التالي",pause:"إيقاف التقليب",play:"تشغيل التقليب",note:"تعاون مدفوع. لا نضمن خدمات الشركاء."},
+ nl:{title:"Updates",region:"Laatste updates en aanbiedingen van partners",news:"Officieel nieuws",ad:"Advertentie",confirmed:"Besluit van kracht",announced:"Officieel aangekondigd",proposed:"Voorstel",reported:"Volgens media",read:"Lees bij de bron",code:"Kortingscode",copy:"Kopieer code",copied:"Gekopieerd",visit:"Naar de website",wa:"WhatsApp",all:"Alle aanbiedingen",prev:"Vorige",next:"Volgende",pause:"Wisselen pauzeren",play:"Wisselen hervatten",note:"Betaalde samenwerking. Wij garanderen de diensten van partners niet."}
 };
-const lang=()=>{if(fixedLanguage)return fixedLanguage==="nl"?"nl":"ar";try{return localStorage.getItem("mbo_site_lang")==="nl"?"nl":"ar"}catch{return document.documentElement.lang==="nl"?"nl":"ar"}};
-const pair=(value,l)=>typeof value==="string"?value:(value&&typeof value[l]==="string"?value[l]:"");
-function node(tag,cls,value){const el=document.createElement(tag);if(cls)el.className=cls;if(value)el.textContent=value;return el}
-function render(data){const root=document.getElementById("news-ticker");if(!root)return;clearInterval(timer);const l=lang(),t=text[l];root.hidden=false;root.lang=l;root.dir=l==="ar"?"rtl":"ltr";root.dataset.dir=root.dir;root.replaceChildren();
- const head=node("div","nt-head");head.append(node("h2","nt-title",t.title));
- const last=Date.parse(data?.updatedAt||"");const until=Date.parse(data?.validUntil||"");const started=Number.isFinite(last);const stale=started&&(!Number.isFinite(until)||until<Date.now());
- if(Number.isFinite(last)){const stamp=new Intl.DateTimeFormat(l==="ar"?"ar-NL":"nl-NL",{dateStyle:"short",timeStyle:"short",timeZone:"Europe/Amsterdam"}).format(last);head.append(node("span","nt-updated",`${t.updated}: ${stamp}`))}
- root.append(head);
- const items=Array.isArray(data?.items)?data.items.slice(0,8).filter(item=>item&&pair(item.title,l)&&/^https:\/\//i.test(item.url||"")):[];
- if(!items.length){root.append(node("p","nt-empty",!started?t.pending:stale?t.stale:t.empty));return}
- if(stale)head.append(node("span","nt-updated",t.stale));
- const isPaused=()=>root.dataset.paused==="true";
- const toggle=node("button","nt-control",isPaused()?t.resume:t.pause);toggle.type="button";toggle.setAttribute("aria-pressed",String(isPaused()));toggle.addEventListener("click",()=>{const paused=!isPaused();root.dataset.paused=String(paused);toggle.textContent=paused?t.resume:t.pause;toggle.setAttribute("aria-pressed",String(paused));if(!paused)restart()});
- const viewport=node("div","nt-viewport nt-rotator");viewport.setAttribute("aria-label",t.title);viewport.setAttribute("aria-roledescription",t.carousel);
- const ul=node("ul","nt-list");const lis=[];
- for(const item of items){const li=node("li","nt-item"),category=pair(item.category,l),title=pair(item.title,l),summary=pair(item.summary,l),source=pair(item.sourceName,l),status=text[l][item.status]||text[l].announced;if(category)li.append(node("span","nt-category",category));li.append(node("span","nt-status",status));if(/^\d{4}-\d{2}-\d{2}$/.test(item.publishedAt||"")){const d=new Date(item.publishedAt+"T12:00:00");const tm=node("time","nt-updated",new Intl.DateTimeFormat(l==="ar"?"ar-NL":"nl-NL",{day:"numeric",month:"short"}).format(d));tm.dateTime=item.publishedAt;li.append(tm)}const a=node("a","",title);a.href=item.url;a.target="_blank";a.rel="noopener noreferrer";a.setAttribute("aria-label",`${title} — ${t.source}`);li.append(a);if(summary)li.append(node("span","nt-summary",summary));if(source)li.append(node("span","nt-updated nt-source",source));ul.append(li);lis.push(li)}
- const counter=node("span","nt-counter");counter.setAttribute("aria-live","polite");
- function show(i){current=((i%lis.length)+lis.length)%lis.length;lis.forEach((li,k)=>{const on=k===current;li.classList.toggle("is-active",on);li.setAttribute("aria-hidden",String(!on));li.inert=!on});counter.textContent=`${current+1} / ${lis.length}`}
- function restart(){clearInterval(timer);if(lis.length<2)return;timer=setInterval(()=>{if(!isPaused()&&!hovering&&!document.hidden)show(current+1)},ROTATE_MS)}
- const nav=node("div","nt-nav");
- if(lis.length>1){const prev=node("button","nt-control nt-arrow",l==="ar"?"›":"‹"),next=node("button","nt-control nt-arrow",l==="ar"?"‹":"›");prev.type=next.type="button";prev.setAttribute("aria-label",t.prev);next.setAttribute("aria-label",t.next);prev.addEventListener("click",()=>{show(current-1);restart()});next.addEventListener("click",()=>{show(current+1);restart()});nav.append(prev,counter,next,toggle)}
- head.append(nav);
- viewport.addEventListener("mouseenter",()=>{hovering=true});viewport.addEventListener("mouseleave",()=>{hovering=false});viewport.addEventListener("focusin",()=>{hovering=true});viewport.addEventListener("focusout",()=>{hovering=false});
- viewport.append(ul);root.append(viewport);show(current);restart();
+const ICON={
+ prev:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>',
+ next:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>',
+ pause:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>',
+ play:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>',
+ copy:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A1.5 1.5 0 0 1 6.5 5H15"/></svg>',
+ ext:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>'
+};
+const lang=()=>{if(fixedLanguage)return fixedLanguage==="nl"?"nl":"ar";return (document.documentElement.lang||"ar").slice(0,2)==="nl"?"nl":"ar"};
+const pair=(v,l)=>typeof v==="string"?v:(v&&typeof v[l]==="string"?v[l]:"");
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const okUrl=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");
+const today=new Date().toISOString().slice(0,10);
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+let timer=null,current=0,paused=reduce,hovering=false;
+
+function newsItems(data,l){
+ const t=T[l];
+ return (Array.isArray(data&&data.items)?data.items:[]).filter(i=>i&&pair(i.title,l)&&okUrl(i.url)).slice(0,6).map(i=>{
+  let date="";if(/^\d{4}-\d{2}-\d{2}$/.test(i.publishedAt||"")){const d=new Date(i.publishedAt+"T12:00:00");date=`<time datetime="${i.publishedAt}">${esc(new Intl.DateTimeFormat(l==="ar"?"ar-NL":"nl-NL",{day:"numeric",month:"long"}).format(d))}</time>`}
+  const status=t[i.status]||t.announced,src=pair(i.sourceName,l),sum=pair(i.summary,l),title=pair(i.title,l);
+  return `<p class="us-meta"><span class="us-label">${t.news}</span><span>${esc(status)}</span>${date?`<span>${date}</span>`:""}</p>`
+   +`<a class="us-title" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a>`
+   +(sum?`<p class="us-sum">${esc(sum)}</p>`:"")
+   +`<p class="us-foot">${src?`<span class="us-src">${esc(src)}</span>`:""}<a class="us-link" href="${esc(i.url)}" target="_blank" rel="noopener noreferrer">${t.read}${ICON.ext}</a></p>`;
+ });
 }
-async function load(){if(loading)return;loading=true;try{const response=await fetch(file,{cache:"no-store"});if(!response.ok)throw new Error(`Ticker data: ${response.status}`);cachedData=await response.json();render(cachedData)}catch(error){console.warn("News ticker unavailable",error);render(cachedData||{items:[],validUntil:null})}finally{loading=false}}
-function init(){let root=document.getElementById("news-ticker");if(!root){root=document.createElement("section");root.id="news-ticker";root.className="news-ticker";root.setAttribute("aria-live","off");const anchor=document.querySelector("header,.topbar");if(anchor)anchor.insertAdjacentElement("afterend",root);else document.body.prepend(root)}load();setInterval(()=>{if(!document.hidden)load()},300000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});new MutationObserver(()=>render(cachedData)).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});window.addEventListener("storage",event=>{if(event.key==="mbo_site_lang")load()})}
+function offerItems(data,l){
+ const t=T[l];
+ return (Array.isArray(data&&data.items)?data.items:[]).filter(o=>o&&o.active===true&&okUrl(o.url)&&(!o.start||o.start<=today)&&(!o.end||o.end>=today)
+  &&(!Array.isArray(o.topics)||!o.topics.length||o.topics.map(String).includes("home"))).slice(0,4).map(o=>{
+  const name=l==="nl"&&o.partner_nl?o.partner_nl:o.partner,title=pair(o.title,l)||pair(o.title,"ar");
+  const code=o.code?`<button type="button" class="us-btn us-code" data-code="${esc(o.code)}" aria-label="${t.copy}: ${esc(o.code)}"><span class="us-code-l">${t.code}</span><span class="us-code-v">${esc(o.code)}</span>${ICON.copy}</button>`:"";
+  const wa=/^\d{8,15}$/.test(o.whatsapp||"")?`<a class="us-btn us-ghost" href="https://wa.me/${o.whatsapp}" target="_blank" rel="sponsored noopener">${t.wa}</a>`:"";
+  return `<p class="us-meta"><span class="us-label us-ad" title="${esc(t.note)}">${t.ad}</span><span>${esc(name)}</span></p>`
+   +`<p class="us-title">${esc(title)}</p>`
+   +`<p class="us-sum">${esc(t.note)} <a href="${l==="nl"?"/nl/partners.html":"/partners.html"}">${t.all}</a></p>`
+   +`<div class="us-acts">${code}<a class="us-btn us-primary" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">${t.visit}</a>${wa}</div>`;
+ });
+}
+function render(news,offers){
+ const root=document.getElementById("news-ticker");if(!root)return;clearInterval(timer);
+ const l=lang(),t=T[l];
+ const n=newsItems(news,l),o=offerItems(offers,l);
+ // news leads; offers sit in second place (then every third item), so the ad is seen without dominating
+ const items=[];let oi=0;n.forEach((x,i)=>{items.push({k:"news",h:x});if((i===0||i%2===1)&&oi<o.length)items.push({k:"ad",h:o[oi++]})});while(oi<o.length)items.push({k:"ad",h:o[oi++]});
+ if(!items.length){root.hidden=true;return}
+ root.className="us";root.hidden=false;root.lang=l;root.dir=l==="ar"?"rtl":"ltr";root.setAttribute("aria-label",t.region);root.removeAttribute("aria-live");
+ const multi=items.length>1;
+ root.innerHTML=`<div class="us-wrap"><div class="us-card"><div class="us-top"><h2 class="us-h">${t.title}</h2>`
+  +(multi?`<div class="us-ctl"><span class="us-count" aria-live="polite"></span><button type="button" class="us-ic us-prev" aria-label="${t.prev}">${l==="ar"?ICON.next:ICON.prev}</button><button type="button" class="us-ic us-next" aria-label="${t.next}">${l==="ar"?ICON.prev:ICON.next}</button><button type="button" class="us-ic us-pause" aria-pressed="${paused}" aria-label="${paused?t.play:t.pause}">${paused?ICON.play:ICON.pause}</button></div>`:"")
+  +`</div><ul class="us-list">${items.map(x=>`<li class="us-item us-${x.k}">${x.h}</li>`).join("")}</ul>`
+  +(multi?`<div class="us-dots" aria-hidden="true">${items.map(()=>"<i></i>").join("")}</div>`:"")+`</div></div>`;
+ const lis=[...root.querySelectorAll(".us-item")],dots=[...root.querySelectorAll(".us-dots i")],count=root.querySelector(".us-count");
+ function show(i){current=((i%lis.length)+lis.length)%lis.length;lis.forEach((li,k)=>{const on=k===current;li.classList.toggle("on",on);li.setAttribute("aria-hidden",String(!on));li.inert=!on});dots.forEach((d,k)=>d.classList.toggle("on",k===current));if(count)count.textContent=`${current+1} / ${lis.length}`}
+ function restart(){clearInterval(timer);if(!multi)return;timer=setInterval(()=>{if(!paused&&!hovering&&!document.hidden)show(current+1)},ROTATE_MS)}
+ const card=root.querySelector(".us-card");
+ card.addEventListener("mouseenter",()=>{hovering=true});card.addEventListener("mouseleave",()=>{hovering=false});
+ card.addEventListener("focusin",()=>{hovering=true});card.addEventListener("focusout",()=>{hovering=false});
+ card.addEventListener("click",async e=>{
+  if(e.target.closest(".us-prev")){show(current-1);restart();return}
+  if(e.target.closest(".us-next")){show(current+1);restart();return}
+  const p=e.target.closest(".us-pause");if(p){paused=!paused;p.setAttribute("aria-pressed",String(paused));p.setAttribute("aria-label",paused?t.play:t.pause);p.innerHTML=paused?ICON.play:ICON.pause;if(!paused)restart();return}
+  const c=e.target.closest(".us-code");if(c){let ok=false;try{await navigator.clipboard.writeText(c.dataset.code);ok=true}catch(_){}
+   const v=c.querySelector(".us-code-l"),old=v.textContent;v.textContent=ok?t.copied:t.code;c.classList.toggle("done",ok);setTimeout(()=>{v.textContent=old;c.classList.remove("done")},2000)}
+ });
+ // swipe on touch screens
+ let sx=null;card.addEventListener("touchstart",e=>{sx=e.touches[0].clientX},{passive:true});
+ card.addEventListener("touchend",e=>{if(sx==null||!multi)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)<50)return;const fwd=(dx<0)!==(l==="ar");show(current+(fwd?1:-1));restart()},{passive:true});
+ show(Math.min(current,lis.length-1));restart();
+}
+const get=f=>fetch(base+f,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null);
+let cache=[null,null];
+async function load(){cache=await Promise.all([get("news-ticker.json"),get("partners.json")]);render(cache[0],cache[1])}
+function init(){
+ let root=document.getElementById("news-ticker");
+ if(!root){root=document.createElement("section");root.id="news-ticker";root.hidden=true;const hero=document.querySelector("main .hm-hero");if(hero)hero.after(root);else return}
+ window.__updatesStrip=true; // partners-bar.js: the offers are already shown here
+ load();
+ setInterval(()=>{if(!document.hidden)get("news-ticker.json").then(d=>{if(d&&JSON.stringify(d)!==JSON.stringify(cache[0])){cache[0]=d;render(cache[0],cache[1])}})},600000);
+}
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })();
