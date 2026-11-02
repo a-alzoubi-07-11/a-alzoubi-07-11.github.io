@@ -107,4 +107,7 @@ const check=()=>{t2=false;const doc=document.documentElement;const long=doc.scro
 addEventListener("scroll",()=>{if(!t2){t2=true;requestAnimationFrame(check)}},{passive:true});
 check();
 void rtl;
+
+/* ---- partner offers bar (only when assets/partners.json has an active offer) ---- */
+if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=1";ps.defer=true;document.head.append(ps);}
 })();

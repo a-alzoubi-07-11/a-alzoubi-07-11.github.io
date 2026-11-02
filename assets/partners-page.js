@@ -1,0 +1,8 @@
+/* Renders /partners.html from assets/partners.json (same data as the partners bar). */
+(()=>{const nl=document.documentElement.lang==='nl',box=document.getElementById('partner-list'),today=new Date().toISOString().slice(0,10);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+fetch('/assets/partners.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{const items=(d.items||[]).filter(o=>o.active===true&&/^https:\/\//.test(o.url||'')&&(!o.start||o.start<=today)&&(!o.end||o.end>=today));
+if(!items.length){box.innerHTML='<p class="muted">'+(nl?'Er zijn op dit moment geen actieve aanbiedingen.':'لا توجد عروض فعّالة حالياً.')+'</p>';return}
+box.innerHTML=items.map(o=>{const name=nl&&o.partner_nl?o.partner_nl:o.partner,t=(o.title&&(o.title[nl?'nl':'ar']||o.title.ar))||'';
+return '<article class="tool-section"><h2>'+esc(name)+'</h2><p>'+esc(t)+'</p>'+(o.code?'<p>'+(nl?'Kortingscode: ':'كود الخصم: ')+'<code dir="ltr">'+esc(o.code)+'</code></p>':'')
++(o.end?'<p class="muted">'+(nl?'Geldig tot ':'صالح حتى ')+esc(o.end)+'</p>':'')+'<a class="tool-button primary" href="'+esc(o.url)+'" target="_blank" rel="sponsored noopener">'+(nl?'Naar de partner':'الذهاب إلى الشريك')+'</a></article>'}).join('')}).catch(()=>{box.textContent=nl?'De aanbiedingen konden niet worden geladen.':'تعذّر تحميل العروض.'})})();
