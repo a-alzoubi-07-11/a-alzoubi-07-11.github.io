@@ -238,3 +238,4 @@ if __name__ == '__main__':
     main()
     import runpy, pathlib
     runpy.run_path(str(pathlib.Path(__file__).with_name('build_llms_txt.py')), run_name='__main__')
+    runpy.run_path(str(pathlib.Path(__file__).with_name('build_feeds.py')), run_name='__main__')
