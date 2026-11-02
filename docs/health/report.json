@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-01T10:38Z",
+ "checked_at": "2026-11-02T05:41Z",
  "external": {
   "total": 555,
   "broken": [],
@@ -458,10 +458,10 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 166,
+  "sitemap_urls": 167,
   "google": {
    "status": "ok",
-   "checked": 166,
+   "checked": 167,
    "indexed": 129,
    "not_indexed": [
     {
@@ -471,7 +471,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -491,7 +491,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -526,12 +526,12 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -641,11 +641,16 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/beroep/",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/beroep/",
      "state": "URL is unknown to Google",
      "last_crawl": null
     }
