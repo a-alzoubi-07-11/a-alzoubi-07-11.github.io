@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T06:51:28+01:00",
-  "validUntil": "2026-11-01T18:51:28+01:00",
+  "updatedAt": "2026-11-02T06:57:52+01:00",
+  "validUntil": "2026-11-02T18:57:52+01:00",
   "items": [
     {
       "source": "SZW",
@@ -102,6 +102,31 @@
       },
       "tier": "official",
       "id": "duo-2026-10-27-63c38e99"
+    },
+    {
+      "source": "NOS",
+      "publishedAt": "2026-10-21",
+      "firstSeen": "2026-11-02",
+      "category": {
+        "ar": "تكاليف الرعاية الصحية",
+        "nl": "Zorgkosten"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NOS: شركة DSW ترفع قسط التأمين الصحي لعام 2027 بمقدار 14.75 يورو شهرياً",
+        "nl": "Volgens NOS: DSW verhoogt zorgpremie 2027 met € 14,75 per maand"
+      },
+      "summary": {
+        "ar": "وفق NOS: قسط التأمين الأساسي لدى DSW في 2027 يصبح 173.25 يورو شهرياً (+9.3%)، ويرتفع zorgtoeslag بـ11 يورو أقل من القسط. أقساط بقية الشركات لم تُعلن بعد، وموعدها حتى 12 نوفمبر.",
+        "nl": "Volgens NOS: de DSW-basispremie 2027 wordt € 173,25 per maand (+9,3%); de zorgtoeslag stijgt € 11 minder. Premies van andere verzekeraars zijn nog niet bekend; die volgen uiterlijk 12 november."
+      },
+      "url": "https://nos.nl/artikel/2636058-grootste-stijging-zorgpremie-in-jaren-dsw-maakt-maandbedrag-2027-bekend",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-10-21-d63165a2"
     },
     {
       "source": "BZK",
@@ -227,105 +252,80 @@
       },
       "tier": "official",
       "id": "ind-2026-10-13-1f4d2683"
-    },
-    {
-      "source": "STAB",
-      "publishedAt": "2026-10-08",
-      "firstSeen": "2026-10-28",
-      "category": {
-        "ar": "البدلات ورعاية الأطفال",
-        "nl": "Kinderopvangtoeslag"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "رفع الحد الأقصى لأسعار الساعة في بدل رعاية الأطفال من 1 يناير 2027",
-        "nl": "Maximum uurprijzen kinderopvangtoeslag hoger vanaf 1 januari 2027"
-      },
-      "summary": {
-        "ar": "ترتفع أسعار الساعة القصوى لـ kinderopvangtoeslag من 11.23 إلى 11.60 يورو، ومن 9.98 إلى 10.31، ومن 8.49 إلى 8.77 يورو، ابتداءً من 1 يناير 2027.",
-        "nl": "De maximum uurprijzen voor de kinderopvangtoeslag stijgen per 1 januari 2027 van € 11,23 naar € 11,60, van € 9,98 naar € 10,31 en van € 8,49 naar € 8,77."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-308.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-10-08-56df3ad7"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-02",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "no-change"
+      "result": "error"
     }
   ]
 }
