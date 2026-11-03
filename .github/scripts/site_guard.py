@@ -44,7 +44,7 @@ CORE_FILES = [
     "docs/news-agents/PLAYBOOK.md",
 ]
 # Pages that are not part of the public site design (verification stubs, templates, reports).
-SKIP_DESIGN = re.compile(r"^(docs/|reports/|cloudflare/|google[0-9a-f]+\.html$|refresh\.html$)")
+SKIP_DESIGN = re.compile(r"^(docs/|reports/|cloudflare/|google[0-9a-f]+\.html$|refresh\.html$|(nl/)?links/index\.html$)")  # links/: standalone link-in-bio page, own minimal design
 SECRET_PATTERNS = [
     (re.compile(r"sk-ant-[A-Za-z0-9_\-]{20,}"), "Anthropic API key"),
     (re.compile(r"sk-[A-Za-z0-9]{32,}"), "API secret key"),

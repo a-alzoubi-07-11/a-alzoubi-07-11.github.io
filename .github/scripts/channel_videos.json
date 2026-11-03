@@ -34,35 +34,120 @@
     "MRS8JiMVVeM": "دفع الفواتير والمخالفات عبر ING | Betalingskenmerk en overboeken",
     "9OGJW9VkBBs": "البحث عن مترجم محلف في هولندا | Beëdigd vertaler zoeken",
     "AEFR8SvMk94": "تغيير عنوانك لدى ING في هولندا | ING adres wijzigen",
-    "5tOBOC5bBY8": "قواعد السكن والمحظورات في هولندا | Huisregels"
+    "5tOBOC5bBY8": "قواعد السكن والمحظورات في هولندا | Huisregels",
+    "cT7FO74P7MY": "نقل تطبيق ING إلى موبايل جديد بدون اسم مستخدم وكلمة سر | ING app overzetten",
+    "NPqTTOEjOtk": "تعديل حد السحب النقدي لبطاقة ING في هولندا | Opnamelimiet wijzigen",
+    "jevRUsUvvig": "تفعيل إشعارات ING: الأموال والرصيد | ING meldingen aanzetten",
+    "uyEeEzxhsh8": "إلغاء اشتراك إنترنت KPN في هولندا أونلاين | KPN internet opzeggen",
+    "c8TiWKUVoNQ": "إرجاع راوتر الإنترنت في هولندا: KPN وOdido وZiggo | Modem terugsturen",
+    "hVXmL_MESUs": "تطبيق Odido: تعديل باقة البيانات ومراجعة التكاليف | Odido-app",
+    "UeVX0GZfXWU": "شراء تذكرة قطار بين مدينتين في هولندا | Treinkaartje kopen",
+    "-957CtFtHak": "تذكرة الدراجة في قطارات NS: ما الشروط؟ | Fietskaart Dal"
   },
   "guides": {
-    "annual-tax-return-2026": ["006CY4Ki0O8"],
-    "asylum-two-status-system-2026": ["n0TZIbOBbaU"],
-    "asylum-residence-hub": ["T_but1r5yhQ", "n0TZIbOBbaU"],
-    "permanent-residence-asylum-route": ["jXWCIiSwUVQ", "iFpl5iAZfS8"],
-    "eu-permanent-residence-netherlands": ["Xm5iHny608w", "8pMSdGY76VI"],
-    "permanent-residence-regular-route": ["8pMSdGY76VI"],
-    "digid-registration-guide": ["dr2bnNBYV1k", "3XEYGK9-ryM"],
-    "dutch-naturalisation-guide": ["JGL8b35ywvQ", "xXpJnOTMRFY"],
-    "inburgering-integration-law-2026": ["h5ggP_coOqY", "QKTEHoTkcBc"],
-    "nt2-b1-exam-guide": ["oXl_C2lpeF0"],
-    "mbo-conditions": ["Us1zCWGMOXU"],
-    "mbo-hbo-wo-comparison": ["PpD0gAbhU28"],
-    "bol-bbl-comparison": ["Sa0VojIlH4M"],
-    "dutch-school-system-basisschool": ["_-8X8fu7BpM"],
-    "diploma-evaluation-sbb": ["hGRAKuVWl_w", "IGdTSAFoRcQ"],
-    "diploma-recognition-by-education-level": ["ShRUSFhxa9c"],
-    "pregnancy-newborn-care": ["_AS3brCMai4", "wI5jl9vCDcw"],
-    "scams-phishing-netherlands": ["YARZpQ-JREs"],
-    "trending-jobs-2026": ["dtF4vJ0QAYM"],
-    "unemployment-benefit-ww": ["xjeCI3kGMK0"],
-    "social-housing-sociale-huurwoning": ["valvaugdFGg", "79CHagtr54w"],
-    "tenant-rights-netherlands": ["5tOBOC5bBY8"],
-    "energy-contracts-saving-2026": ["Lc8rKi8pM8Y"],
-    "health-insurance-newcomers": ["kfvn5cKdZws"],
-    "traffic-fines-cjib": ["MRS8JiMVVeM"],
-    "syrian-documents-legalisation-translation": ["9OGJW9VkBBs"],
-    "change-address-netherlands": ["AEFR8SvMk94"]
+    "annual-tax-return-2026": [
+      "006CY4Ki0O8"
+    ],
+    "asylum-two-status-system-2026": [
+      "n0TZIbOBbaU"
+    ],
+    "asylum-residence-hub": [
+      "T_but1r5yhQ",
+      "n0TZIbOBbaU"
+    ],
+    "permanent-residence-asylum-route": [
+      "jXWCIiSwUVQ",
+      "iFpl5iAZfS8"
+    ],
+    "eu-permanent-residence-netherlands": [
+      "Xm5iHny608w",
+      "8pMSdGY76VI"
+    ],
+    "permanent-residence-regular-route": [
+      "8pMSdGY76VI"
+    ],
+    "digid-registration-guide": [
+      "dr2bnNBYV1k",
+      "3XEYGK9-ryM"
+    ],
+    "dutch-naturalisation-guide": [
+      "JGL8b35ywvQ",
+      "xXpJnOTMRFY"
+    ],
+    "inburgering-integration-law-2026": [
+      "h5ggP_coOqY",
+      "QKTEHoTkcBc"
+    ],
+    "nt2-b1-exam-guide": [
+      "oXl_C2lpeF0"
+    ],
+    "mbo-conditions": [
+      "Us1zCWGMOXU"
+    ],
+    "mbo-hbo-wo-comparison": [
+      "PpD0gAbhU28"
+    ],
+    "bol-bbl-comparison": [
+      "Sa0VojIlH4M"
+    ],
+    "dutch-school-system-basisschool": [
+      "_-8X8fu7BpM"
+    ],
+    "diploma-evaluation-sbb": [
+      "hGRAKuVWl_w",
+      "IGdTSAFoRcQ"
+    ],
+    "diploma-recognition-by-education-level": [
+      "ShRUSFhxa9c"
+    ],
+    "pregnancy-newborn-care": [
+      "_AS3brCMai4",
+      "wI5jl9vCDcw"
+    ],
+    "scams-phishing-netherlands": [
+      "YARZpQ-JREs"
+    ],
+    "trending-jobs-2026": [
+      "dtF4vJ0QAYM"
+    ],
+    "unemployment-benefit-ww": [
+      "xjeCI3kGMK0"
+    ],
+    "social-housing-sociale-huurwoning": [
+      "valvaugdFGg",
+      "79CHagtr54w"
+    ],
+    "tenant-rights-netherlands": [
+      "5tOBOC5bBY8"
+    ],
+    "energy-contracts-saving-2026": [
+      "Lc8rKi8pM8Y"
+    ],
+    "health-insurance-newcomers": [
+      "kfvn5cKdZws"
+    ],
+    "traffic-fines-cjib": [
+      "MRS8JiMVVeM"
+    ],
+    "syrian-documents-legalisation-translation": [
+      "9OGJW9VkBBs"
+    ],
+    "change-address-netherlands": [
+      "AEFR8SvMk94"
+    ],
+    "ing-bank-app-card-guide": [
+      "cT7FO74P7MY",
+      "NPqTTOEjOtk",
+      "jevRUsUvvig"
+    ],
+    "internet-phone-contract-cancel": [
+      "uyEeEzxhsh8",
+      "c8TiWKUVoNQ",
+      "hVXmL_MESUs"
+    ],
+    "ns-train-ov-chipkaart-ovpay": [
+      "UeVX0GZfXWU",
+      "-957CtFtHak"
+    ]
   }
 }

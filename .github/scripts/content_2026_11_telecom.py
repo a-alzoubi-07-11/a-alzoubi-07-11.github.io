@@ -1,0 +1,63 @@
+"""Guide: cancelling internet / phone / TV subscriptions and returning equipment (AR + NL)."""
+SLUG = "internet-phone-contract-cancel"
+CATEGORY = {"ar": ("/categories/housing.html", "السكن والحياة اليومية"), "nl": ("/nl/categories/housing.html", "Wonen en dagelijks leven")}
+VIDEOS = [("uyEeEzxhsh8", "إلغاء اشتراك إنترنت KPN في هولندا أونلاين | KPN internet opzeggen"),
+          ("c8TiWKUVoNQ", "إرجاع راوتر الإنترنت في هولندا: KPN وOdido وZiggo | Modem terugsturen"),
+          ("hVXmL_MESUs", "تطبيق Odido: تعديل باقة البيانات ومراجعة التكاليف | Odido-app")]
+VIDEO_DATES = {"uyEeEzxhsh8": "2026-05-03", "c8TiWKUVoNQ": "2026-06-08", "hVXmL_MESUs": "2025-09-27"}
+SOURCES = [
+    ("telecom", "ACM ConsuWijzer — Telecomabonnement opzeggen", "https://consument.acm.nl/telefoon-internet-en-televisie/abonnementen/wanneer-abonnement-opzeggen"),
+    ("cancel", "ACM ConsuWijzer — Abonnement opzeggen", "https://consument.acm.nl/aankoop-dienst-annuleren/abonnement-opzeggen"),
+    ("letter", "ACM ConsuWijzer — Voorbeeldbrief abonnement opzeggen", "https://consument.acm.nl/voorbeeldbrieven/aankoop-dienst-annuleren/voorbeeldbrief-abonnement-opzeggen"),
+    ("services", "ACM ConsuWijzer — Pas op voor opzegdiensten", "https://consument.acm.nl/opzeggen"),
+    ("change", "ACM ConsuWijzer — Aanbieder verandert prijzen of voorwaarden", "https://consument.acm.nl/telefoon-internet-en-televisie/abonnementen/aanbieder-verandert-prijzen-of-algemene-voorwaarden"),
+    ("fiber", "ACM ConsuWijzer — Glasvezelcontract afsluiten of opzeggen", "https://consument.acm.nl/telefoon-internet-en-televisie/abonnementen-en-diensten/glasvezel-contract-afgesloten"),
+]
+
+AR = dict(
+    title="إلغاء اشتراك الإنترنت أو الهاتف في هولندا: مدة العقد وموعد الإلغاء وإرجاع الراوتر",
+    desc="متى تستطيع إلغاء اشتراك الإنترنت أو الهاتف أو التلفاز في هولندا دون تكلفة؟ مدة الإشعار، الإلغاء المبكر، الانتقال لبيت جديد، وإرجاع الراوتر، بحسب ACM ConsuWijzer.",
+    summary="بعد انتهاء المدة الثابتة للعقد (سنة أو سنتان غالباً) تستطيع الإلغاء مجاناً في أي وقت، ومدة الإشعار شهر واحد كحد أقصى تبدأ من يوم الإلغاء. الإلغاء قبل نهاية المدة يكلّف عادةً باقي الأشهر. ألغِ بنفسك كتابياً أو بنفس الطريقة التي اشتركت بها، واطلب تأكيداً، ثم أرجع الراوتر وأجهزة الشركة واحتفظ بإيصال الإرسال.",
+    sections=[
+        ("term", "اعرف نوع عقدك أولاً", "<p>بحسب <a href=\"#source-telecom\">صفحة ACM ConsuWijzer عن إلغاء اشتراكات الاتصالات</a> تكون العقود غالباً لسنة أو سنتين، وبعضها يمكن إلغاؤه في أي وقت. لا يجوز أن يربطك المزوّد أكثر من سنتين. ابحث في عقدك أو في حسابك على موقع الشركة عن تاريخ نهاية المدة الثابتة.</p>\n<p>إضافة خدمة جديدة من نفس الشركة أثناء العقد (مثل خط هاتف إضافي) لا تغيّر تاريخ نهاية عقدك الحالي، كما تذكر الصفحة نفسها.</p>"),
+        ("after", "بعد نهاية المدة: إلغاء مجاني بإشعار شهر", "<p>بعد انتهاء المدة الثابتة يمكنك الإلغاء مجاناً في أي يوم، ومدة الإشعار <strong>شهر واحد كحد أقصى</strong> تبدأ من يوم الإلغاء. إذا لم تلغِ يستمر الاشتراك تلقائياً، ويبقى بإمكانك الإلغاء لاحقاً بنفس الإشعار.</p>\n<p>قبل نهاية المدة بشهر على الأقل يجب أن يخبرك المزوّد ويعرض عليك أرخص أسعاره الحالية. أنت غير ملزم بالقبول، وقبول العرض يبدأ غالباً عقداً جديداً لسنة أو سنتين.</p>"),
+        ("early", "الإلغاء قبل نهاية المدة", "<p>الإلغاء المبكر ليس مجانياً في العادة: قد تدفع باقي أشهر العقد، أو ثمن جهاز (هاتف مثلاً) حصلت عليه مع الاشتراك. المبالغ الدقيقة مكتوبة في عقدك.</p>\n<p>إذا رفع المزوّد السعر أو غيّر الشروط أثناء العقد، فهناك قواعد خاصة تشرحها صفحة <a href=\"#source-change\">تغيير الأسعار أو الشروط</a>، وقد تمنحك حق الإلغاء في بعض الحالات.</p>"),
+        ("how", "كيف تلغي بالطريقة الصحيحة", "<ol><li>ألغِ كتابياً على الأقل: رسالة، أو نموذج على الموقع، أو بريد إلكتروني. ويجب أن تستطيع الإلغاء بنفس الطريقة التي اشتركت بها؛ فإن اشتركت أونلاين فلك أن تلغي أونلاين.</li><li>استخدم <a href=\"#source-letter\">نموذج رسالة الإلغاء</a> من ACM إن أردت صياغة جاهزة.</li><li>اطلب تأكيد الإلغاء بالبريد أو برسالة. إذا لم يصلك تأكيد، فكّر في رسالة مسجّلة (<span lang=\"nl\">aangetekende brief</span>) كإثبات.</li><li>دوّن تاريخ الإلغاء وآخر يوم للخدمة.</li></ol>\n<p>لا تحتاج شركة «خدمة إلغاء» تأخذ أجراً؛ تحذّر ACM منها في صفحة <a href=\"#source-services\">الإلغاء تفعله بنفسك</a>.</p>"),
+        ("equipment", "إرجاع الراوتر والأجهزة", "<p>الراوتر وجهاز التلفاز غالباً ملك للشركة ويجب إرجاعه بعد الإلغاء. تعليمات الإرجاع تأتيك من المزوّد نفسه (KPN أو Odido أو Ziggo وغيرها)، وعادةً مع ملصق أو رمز إرسال. شرحنا الطريقة في فيديو القناة.</p>\n<ul><li>أرجع كل القطع التي استلمتها: الراوتر، والمحوّل، وجهاز التلفاز، والريموت إن وُجد.</li><li>صوّر الجهاز والطرد قبل الإرسال.</li><li>احتفظ بإيصال الإرسال ورقم التتبع حتى يصلك تأكيد الاستلام. قد تُحسب عليك تكلفة إن لم يصل الجهاز.</li></ul>"),
+        ("moving", "إذا انتقلت إلى بيت جديد", "<p>الانتقال لا يلغي العقد تلقائياً. بعض الشركات تطالب بباقي الأشهر، وبعضها لديها ترتيب انتقال يسمح بإنهاء العقد أو نقله إلى العنوان الجديد. راجع شروط شركتك قبل الانتقال، ولا تنسَ <a href=\"/articles/change-address-netherlands.html\">تغيير عنوانك لدى الجهات الأخرى</a>.</p>\n<p>لعقود الألياف الضوئية قواعد إضافية تشرحها صفحة <a href=\"#source-fiber\">عقد الألياف الضوئية</a>.</p>"),
+        ("complaint", "إذا رفضت الشركة أو طالبتك بمبلغ خاطئ", "<p>أرسل رسالة أو بريداً إلكترونياً تشرح فيه المشكلة، واطلب حلاً حتى تاريخ محدد، واذكر خطوتك التالية إن لم يأتِ الحل. احتفظ بنسخ كل الرسائل وتأكيد الإلغاء وإيصال إرجاع الجهاز.</p>"),
+        ("checklist", "قائمة سريعة قبل الإلغاء", "<ul><li>تاريخ نهاية المدة الثابتة معروف.</li><li>الإلغاء مكتوب، ومعك تأكيد منه.</li><li>آخر يوم للخدمة مسجّل عندك، وبديل الإنترنت جاهز إن احتجت.</li><li>الأجهزة أُرجعت بإيصال ورقم تتبع.</li><li>آخر فاتورة راجعتها بعد انتهاء الخدمة.</li></ul>"),
+    ],
+    faq=[
+        ("كم مدة الإشعار بعد انتهاء العقد؟", "شهر واحد كحد أقصى، يبدأ من يوم الإلغاء، بحسب ACM ConsuWijzer."),
+        ("هل أدفع إذا ألغيت قبل نهاية السنة؟", "غالباً نعم: باقي أشهر العقد أو ثمن جهاز مرتبط بالاشتراك. المبلغ في عقدك."),
+        ("هل يمكنني الإلغاء عبر الإنترنت؟", "نعم إذا اشتركت عبر الإنترنت، فالقانون يتيح الإلغاء بنفس الطريقة التي اشتركت بها، وكتابياً على الأقل."),
+        ("هل أحتاج شركة متخصصة للإلغاء؟", "لا. تنصح ACM بأن تلغي بنفسك وتحذّر من خدمات الإلغاء التي تأخذ أجراً."),
+        ("ماذا إن لم تستلم الشركة الراوتر؟", "قدّم إيصال الإرسال ورقم التتبع. لذلك احتفظ بهما حتى يصلك تأكيد الاستلام."),
+    ],
+    related=[("/articles/change-address-netherlands.html", "تغيير العنوان في هولندا: من تخبر بعد الانتقال؟"), ("/articles/energy-contracts-saving-2026.html", "توفير فواتير الكهرباء والغاز"), ("/articles/tenant-rights-netherlands.html", "حقوق المستأجر في هولندا"), ("/articles/scams-phishing-netherlands.html", "الاحتيال والتصيّد في هولندا")],
+)
+
+NL = dict(
+    title="Internet- of telefoonabonnement opzeggen: contractduur, opzegtermijn en modem terugsturen",
+    desc="Wanneer kun je je internet-, telefoon- of tv-abonnement kosteloos opzeggen? Opzegtermijn, eerder opzeggen, verhuizen en apparatuur terugsturen, volgens ACM ConsuWijzer.",
+    summary="Na de vaste contractperiode (meestal 1 of 2 jaar) kun je altijd kosteloos opzeggen, met een opzegtermijn van maximaal 1 maand vanaf de dag van opzeggen. Eerder opzeggen kost meestal de resterende maanden. Zeg zelf schriftelijk op, of op dezelfde manier als je je aanmeldde, vraag om een bevestiging en stuur de modem en andere apparatuur terug met een verzendbewijs.",
+    sections=[
+        ("term", "Ken eerst je contract", "<p>Volgens <a href=\"#source-telecom\">ACM ConsuWijzer over het opzeggen van een telecomabonnement</a> duren contracten meestal 1 of 2 jaar en zijn sommige altijd opzegbaar. Een aanbieder mag je niet langer dan 2 jaar binden. Zoek de einddatum van de vaste periode in je contract of je online account.</p>\n<p>Neem je tijdens het contract een extra dienst af bij dezelfde aanbieder, dan verandert de einddatum van je huidige contract niet.</p>"),
+        ("after", "Na de vaste periode: kosteloos opzeggen met maximaal 1 maand", "<p>Na de vaste periode kun je op elk moment kosteloos opzeggen. De opzegtermijn is <strong>maximaal 1 maand</strong> vanaf de dag dat je opzegt. Zeg je niet op, dan loopt het abonnement door en kun je later met dezelfde termijn opzeggen.</p>\n<p>Minstens 1 maand voor het einde moet de aanbieder je informeren en zijn goedkoopste actuele tarieven aanbieden. Je hoeft niet in te gaan op dat aanbod; accepteren betekent meestal een nieuw contract van 1 of 2 jaar.</p>"),
+        ("early", "Eerder opzeggen", "<p>Tussentijds opzeggen is meestal niet gratis: je betaalt dan bijvoorbeeld de resterende maanden of een toestel dat je bij het abonnement kreeg. De bedragen staan in je contract.</p>\n<p>Verandert de aanbieder prijzen of voorwaarden tijdens het contract, dan gelden aparte regels; zie <a href=\"#source-change\">Aanbieder verandert prijzen of voorwaarden</a>.</p>"),
+        ("how", "Zo zeg je goed op", "<ol><li>Zeg minstens schriftelijk op: per brief, webformulier of e-mail. Je moet ook kunnen opzeggen op dezelfde manier als je je aanmeldde; online afgesloten is online opzeggen.</li><li>Gebruik zo nodig de <a href=\"#source-letter\">voorbeeldbrief van ACM</a>.</li><li>Vraag om een bevestiging per e-mail of brief. Krijg je die niet, overweeg dan een aangetekende brief als bewijs.</li><li>Noteer de opzegdatum en de laatste dag van de dienst.</li></ol>\n<p>Een betaalde opzegdienst is niet nodig; ACM waarschuwt ervoor op <a href=\"#source-services\">Abonnement opzeggen? Dat doe je gewoon zelf</a>.</p>"),
+        ("equipment", "Modem en apparatuur terugsturen", "<p>De modem en tv-ontvanger zijn vaak eigendom van de aanbieder en moeten na het opzeggen terug. De instructies krijg je van je aanbieder (KPN, Odido, Ziggo en andere), meestal met een verzendlabel of retourcode. In de video op ons kanaal laten we zien hoe dat gaat.</p>\n<ul><li>Stuur alle onderdelen terug: modem, adapter, tv-ontvanger en afstandsbediening.</li><li>Maak foto's van de apparatuur en het pakket.</li><li>Bewaar het verzendbewijs en de track-and-tracecode tot je een ontvangstbevestiging hebt; anders kunnen er kosten volgen.</li></ul>"),
+        ("moving", "Verhuizen", "<p>Verhuizen beëindigt je contract niet automatisch. Sommige aanbieders rekenen de resterende maanden, andere hebben een verhuisregeling. Lees de voorwaarden vóór de verhuizing en denk aan <a href=\"/nl/articles/change-address-netherlands.html\">je adreswijziging bij andere instanties</a>.</p>\n<p>Voor glasvezel gelden extra punten; zie <a href=\"#source-fiber\">Een glasvezelcontract afsluiten of opzeggen</a>.</p>"),
+        ("complaint", "Als de aanbieder niet meewerkt", "<p>Stuur een brief of e-mail, beschrijf het probleem, vraag om een oplossing binnen een redelijke termijn en noem wat je daarna doet. Bewaar kopieën van alle berichten, de opzegbevestiging en het retourbewijs.</p>"),
+        ("checklist", "Korte checklist", "<ul><li>Einddatum van de vaste periode bekend.</li><li>Schriftelijk opgezegd, met bevestiging.</li><li>Laatste dienstdag genoteerd en zo nodig een nieuw abonnement klaar.</li><li>Apparatuur teruggestuurd met verzendbewijs.</li><li>Laatste factuur gecontroleerd.</li></ul>"),
+    ],
+    faq=[
+        ("Hoe lang is de opzegtermijn na de contractperiode?", "Maximaal 1 maand vanaf de dag van opzeggen, volgens ACM ConsuWijzer."),
+        ("Moet ik betalen als ik eerder opzeg?", "Meestal wel: de resterende maanden of een toestel dat bij het abonnement hoort. Het bedrag staat in je contract."),
+        ("Kan ik online opzeggen?", "Ja, als je online hebt afgesloten. Je moet kunnen opzeggen op dezelfde manier als je je aanmeldde, en in elk geval schriftelijk."),
+        ("Heb ik een opzegdienst nodig?", "Nee. ACM raadt aan zelf op te zeggen en waarschuwt voor betaalde opzegdiensten."),
+        ("Wat als de aanbieder mijn modem niet heeft ontvangen?", "Laat je verzendbewijs en track-and-tracecode zien. Bewaar die dus tot je een ontvangstbevestiging hebt."),
+    ],
+    related=[("/nl/articles/change-address-netherlands.html", "Adreswijziging: wie moet je informeren?"), ("/nl/articles/energy-contracts-saving-2026.html", "Besparen op energie"), ("/nl/articles/tenant-rights-netherlands.html", "Huurdersrechten in Nederland"), ("/nl/articles/scams-phishing-netherlands.html", "Oplichting en phishing in Nederland")],
+)
