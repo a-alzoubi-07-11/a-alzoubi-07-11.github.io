@@ -15,6 +15,7 @@ ICON = {
     "play": '<rect x="3" y="5" width="18" height="14" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/>',
     "music": '<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>',
     "camera": '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h0"/>',
+    "users": '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/>',
     "work": '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/>',
     "mail": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
 }
@@ -29,6 +30,7 @@ LINKS = [
     ("social", "play", "https://www.youtube.com/@a.alzoubi.07.11", None, "YouTube", "YouTube", "شروحات بالفيديو خطوة بخطوة", "Stap-voor-stap uitlegvideo's (Arabisch)", False),
     ("social", "music", "https://www.tiktok.com/@a.alzoubi.07.11", None, "TikTok", "TikTok", "@a.alzoubi.07.11", "@a.alzoubi.07.11", False),
     ("social", "camera", "https://www.instagram.com/a.alzoubi.07.11/", None, "Instagram", "Instagram", "@a.alzoubi.07.11", "@a.alzoubi.07.11", False),
+    ("social", "users", "https://www.facebook.com/a.alzzoubi.07.11", None, "Facebook", "Facebook", "Ahmad Alzoubi", "Ahmad Alzoubi", False),
     ("social", "work", "https://www.linkedin.com/in/ahmad-alzoubi-5b1467149/", None, "LinkedIn", "LinkedIn", "Ahmad Alzoubi", "Ahmad Alzoubi", False),
     ("contact", "mail", "/contact.html", "/nl/contact.html", "تواصل معنا", "Contact", "اقتراحات، تصحيحات وتعاون", "Suggesties, correcties en samenwerking", False),
 ]
