@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-02T11:26Z",
+ "checked_at": "2026-11-03T11:02Z",
  "external": {
-  "total": 555,
+  "total": 589,
   "broken": [],
   "blocked": [
    {
@@ -462,8 +462,13 @@
   "google": {
    "status": "ok",
    "checked": 167,
-   "indexed": 129,
+   "indexed": 128,
    "not_indexed": [
+    {
+     "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-11-02T11:35:44Z"
+    },
     {
      "url": "https://gidsnederland.nl/articles/dutch-naturalisation-guide.html",
      "state": "Crawled - currently not indexed",
@@ -471,7 +476,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -491,7 +496,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -501,7 +506,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -611,22 +616,22 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-asylum-route.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-regular-route.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -636,7 +641,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/liability-home-insurance.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -646,12 +651,12 @@
     },
     {
      "url": "https://gidsnederland.nl/beroep/",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     }
    ]

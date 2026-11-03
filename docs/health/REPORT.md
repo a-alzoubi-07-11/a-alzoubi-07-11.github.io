@@ -1,6 +1,6 @@
-# Site health report — 2026-11-02T11:26Z
+# Site health report — 2026-11-03T11:02Z
 
-## External links: 555 checked · 0 broken · 6 redirected · 38 bot-blocked
+## External links: 589 checked · 0 broken · 6 redirected · 38 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
 - MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
@@ -11,15 +11,16 @@
 ## Buttons & menus: 24 page views · 0 problems · 0 dead menu links
 
 ## Index status (167 URLs in sitemap)
-- google: 129/167 indexed
+- google: 128/167 indexed
+  - not indexed: https://gidsnederland.nl/articles/diploma-evaluation-sbb.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/dutch-naturalisation-guide.html (Crawled - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/temporary-agency-work-rights.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/cv.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/student-finance.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/articles/student-finance.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/zorgtoeslag-guide.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/categories/work.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/categories/money.html (URL is unknown to Google)
@@ -41,13 +42,13 @@
   - not indexed: https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html (Crawled - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/permanent-residence-asylum-route.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/articles/permanent-residence-regular-route.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/articles/permanent-residence-asylum-route.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/articles/permanent-residence-regular-route.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/calculators/permanent-residence-check.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/articles/liability-home-insurance.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/articles/liability-home-insurance.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/liability-home-insurance.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/beroep/ (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/nl/beroep/ (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/beroep/ (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/beroep/ (Discovered - currently not indexed)
 - bing: not_configured — Add repo secret BING_WEBMASTER_API_KEY (Bing Webmaster Tools > Settings > API access).
