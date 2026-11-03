@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T06:57:52+01:00",
-  "validUntil": "2026-11-02T18:57:52+01:00",
+  "updatedAt": "2026-11-03T06:52:11+01:00",
+  "validUntil": "2026-11-03T18:52:11+01:00",
   "items": [
     {
       "source": "SZW",
@@ -77,6 +77,31 @@
       },
       "tier": "official",
       "id": "szw-2026-10-29-7d4441d7"
+    },
+    {
+      "source": "TK",
+      "publishedAt": "2026-10-27",
+      "firstSeen": "2026-11-03",
+      "category": {
+        "ar": "تكاليف الرعاية الصحية",
+        "nl": "Zorgkosten"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "مجلس النواب يطلب من الحكومة عدم رفع eigen risico بمقدار 60 يورو",
+        "nl": "Tweede Kamer vraagt kabinet af te zien van verhoging eigen risico met € 60"
+      },
+      "summary": {
+        "ar": "تبنّى مجلس النواب (Tweede Kamer) في 27 أكتوبر 2026 مقترح النائبة Dobbe (SP) الذي يطلب من الحكومة التراجع عن رفع eigen risico في التأمين الصحي بمقدار 60 يورو. المقترح طلب للحكومة وليس قانوناً بعد.",
+        "nl": "De Tweede Kamer nam op 27 oktober 2026 de motie-Dobbe (SP) aan die het kabinet vraagt af te zien van de verhoging van het eigen risico met € 60. Een motie is een verzoek, nog geen wetswijziging."
+      },
+      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P17133&did=2026P17133",
+      "sourceName": {
+        "ar": "البرلمان (Tweede Kamer)",
+        "nl": "Tweede Kamer"
+      },
+      "tier": "official",
+      "id": "tk-2026-10-27-88677a56"
     },
     {
       "source": "DUO",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-15-f11cac34"
-    },
-    {
-      "source": "IND",
-      "publishedAt": "2026-10-13",
-      "firstSeen": "2026-10-28",
-      "category": {
-        "ar": "الإقامة",
-        "nl": "Verblijf"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "مجلس الشيوخ يوافق على إلغاء الغرامة القضائية (dwangsom) على IND",
-        "nl": "Eerste Kamer stemt in met afschaffen rechterlijke dwangsom"
-      },
-      "summary": {
-        "ar": "بعد سريان القانون لن تدفع IND تعويضاً للمتقدّم إذا تأخّر قرار طلب الإقامة عن المهلة القانونية. لم يُحدَّد بعد موعد السريان.",
-        "nl": "Na inwerkingtreding betaalt de IND geen dwangsom meer als een besluit op een verblijfsaanvraag te laat is. De datum van inwerkingtreding is nog niet bekend."
-      },
-      "url": "https://ind.nl/nl/nieuws/eerste-kamer-stemt-in-met-afschaffen-rechterlijke-dwangsom",
-      "sourceName": {
-        "ar": "دائرة الهجرة IND",
-        "nl": "IND"
-      },
-      "tier": "official",
-      "id": "ind-2026-10-13-1f4d2683"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "error"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "error"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "error"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-11-02",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "no-change"
-    },
-    {
-      "source": "NOS",
-      "checkedAt": "2026-11-02",
-      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "new"
     },
     {
+      "source": "STAB",
+      "checkedAt": "2026-11-03",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "error"
+    },
+    {
+      "source": "NOS",
+      "checkedAt": "2026-11-03",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "no-change"
+    },
+    {
       "source": "NU",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "error"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-03",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "error"
     }
