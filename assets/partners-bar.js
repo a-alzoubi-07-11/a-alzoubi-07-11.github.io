@@ -8,8 +8,8 @@
 if(window.__partnersBar)return;window.__partnersBar=true;
 const HOME=/^\/(nl\/)?(index\.html)?$/.test(location.pathname);
 const nl=(document.documentElement.lang||"ar").slice(0,2)==="nl";
-const T=nl?{ad:"Advertentie",code:"Code",close:"Sluiten",visit:"Bekijk",all:"Alle aanbiedingen"}
-            :{ad:"إعلان",code:"كود الخصم",close:"إغلاق",visit:"زيارة",all:"كل العروض"};
+const T=nl?{ad:"Advertentie",code:"Code",close:"Sluiten",visit:"Bekijk",wa:"App via WhatsApp",all:"Alle aanbiedingen"}
+            :{ad:"إعلان",code:"كود الخصم",close:"إغلاق",visit:"زيارة",wa:"راسلهم واتساب",all:"كل العروض"};
 const KEY="gn-partners-closed";
 try{if(sessionStorage.getItem(KEY)==="1")return;}catch(_){}
 const today=new Date().toISOString().slice(0,10);
@@ -45,10 +45,15 @@ const css=`
 `;
 function item(o){
   const name=nl&&o.partner_nl?o.partner_nl:o.partner,title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"",kind=(o.kind&&(o.kind[nl?"nl":"ar"]||o.kind.ar))||"";
-  return `<a class="pt-item" dir="${nl?"ltr":"rtl"}" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">`
+  // strip_link "whatsapp": the strip opens a WhatsApp chat with the partner, with a ready message naming the site and the code
+  const wa=o.strip_link==="whatsapp"&&/^\d{8,15}$/.test(o.whatsapp||"");
+  const msg=nl?`Hallo, ik kom via Gids Nederland (gidsnederland.nl)${o.code?` en wil graag de korting met code ${o.code}`:""}.`
+              :`مرحباً، وصلت إليكم من موقع دليل هولندا بالعربية (gidsnederland.nl)${o.code?` وأريد الاستفادة من الخصم بالكود ${o.code}`:""}.`;
+  const href=wa?`https://wa.me/${o.whatsapp}?text=${encodeURIComponent(msg)}`:o.url;
+  return `<a class="pt-item" dir="${nl?"ltr":"rtl"}" href="${esc(href)}" target="_blank" rel="sponsored noopener">`
     +`<span class="pt-name">${esc(name)}</span>`+(kind?`<span class="pt-kind">${esc(kind)}</span>`:"")+`<span class="pt-sep">·</span><span>${esc(title)}</span>`
     +(o.code?`<span class="pt-sep">·</span><span>${T.code}</span><span class="pt-code">${esc(o.code)}</span>`:"")
-    +`<span class="pt-sep">·</span><span class="pt-go">${T.visit} ${nl?"→":"←"}</span></a><span class="pt-dot" aria-hidden="true"></span>`;
+    +`<span class="pt-sep">·</span><span class="pt-go">${wa?T.wa:T.visit} ${nl?"→":"←"}</span></a><span class="pt-dot" aria-hidden="true"></span>`;
 }
 function render(items){
   const st=document.createElement("style");st.textContent=css;document.head.append(st);
