@@ -31,6 +31,7 @@ const css=`
 .pt-item:hover .pt-go,.pt-item:focus-visible .pt-go{text-decoration:underline}
 .pt-name{font-weight:700}
 .pt-sep{opacity:.45}
+.pt-kind{color:#c7c7cc;font-size:12.5px}
 .pt-code{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.12);border-radius:5px;padding:0 6px;line-height:22px;direction:ltr;unicode-bidi:isolate}
 .pt-go{color:#6cb6ff;font-weight:600}
 .pt-dot{display:inline-block;align-self:center;flex:none;width:5px;height:5px;border-radius:50%;background:#ee731c;margin:0 4px}
@@ -43,9 +44,9 @@ const css=`
 @media print{.pt{display:none}}
 `;
 function item(o){
-  const name=nl&&o.partner_nl?o.partner_nl:o.partner,title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"";
+  const name=nl&&o.partner_nl?o.partner_nl:o.partner,title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"",kind=(o.kind&&(o.kind[nl?"nl":"ar"]||o.kind.ar))||"";
   return `<a class="pt-item" dir="${nl?"ltr":"rtl"}" href="${esc(o.url)}" target="_blank" rel="sponsored noopener">`
-    +`<span class="pt-name">${esc(name)}</span><span class="pt-sep">·</span><span>${esc(title)}</span>`
+    +`<span class="pt-name">${esc(name)}</span>`+(kind?`<span class="pt-kind">${esc(kind)}</span>`:"")+`<span class="pt-sep">·</span><span>${esc(title)}</span>`
     +(o.code?`<span class="pt-sep">·</span><span>${T.code}</span><span class="pt-code">${esc(o.code)}</span>`:"")
     +`<span class="pt-sep">·</span><span class="pt-go">${T.visit} ${nl?"→":"←"}</span></a><span class="pt-dot" aria-hidden="true"></span>`;
 }
