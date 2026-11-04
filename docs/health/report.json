@@ -1,9 +1,49 @@
 {
- "checked_at": "2026-11-03T11:02Z",
+ "checked_at": "2026-11-04T11:12Z",
  "external": {
-  "total": 589,
+  "total": 617,
   "broken": [],
   "blocked": [
+   {
+    "url": "https://lokaleregelgeving.overheid.nl/CVDR706038/",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/social-housing-sociale-huurwoning.html",
+     "nl/articles/social-housing-sociale-huurwoning.html"
+    ]
+   },
+   {
+    "url": "https://lokaleregelgeving.overheid.nl/CVDR744533/1",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/special-assistance-bijzondere-bijstand.html",
+     "nl/articles/special-assistance-bijzondere-bijstand.html"
+    ]
+   },
+   {
+    "url": "https://lokaleregelgeving.overheid.nl/CVDR749442/1",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/municipal-taxes-exemption-kwijtschelding.html",
+     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
+    ]
+   },
+   {
+    "url": "https://lokaleregelgeving.overheid.nl/CVDR752532",
+    "code": 0,
+    "final": null,
+    "error": "SSLError",
+    "pages": [
+     "articles/special-assistance-bijzondere-bijstand.html",
+     "nl/articles/special-assistance-bijzondere-bijstand.html"
+    ]
+   },
    {
     "url": "https://www.cbr.nl/nl/rijbewijs-halen/auto/je-autorijbewijs-halen/stappenplan-rijden-voor-je-18e",
     "code": 0,
@@ -164,6 +204,76 @@
      "articles/inburgering-integration-law-2026.html",
      "nl/articles/dutch-naturalisation-guide.html",
      "nl/articles/inburgering-integration-law-2026.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/betalen/contant-geld/geld-opnemen",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/betalen/geld-overmaken/inzicht-in-je-limieten",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/betalen/passen/verlies-of-diefstal",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/digitaal-bankieren/app",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/digitaal-bankieren/app/activeren-met-een-qr-code",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/digitaal-bankieren/app/activeren-met-je-identiteitsbewijs",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
+    ]
+   },
+   {
+    "url": "https://www.ing.nl/particulier/digitaal-bankieren/app/activeren-met-je-identiteitsbewijs-hulp",
+    "code": 0,
+    "final": null,
+    "error": "ReadTimeout",
+    "pages": [
+     "articles/ing-bank-app-card-guide.html",
+     "nl/articles/ing-bank-app-card-guide.html"
     ]
    },
    {
@@ -458,11 +568,11 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 167,
+  "sitemap_urls": 173,
   "google": {
    "status": "ok",
-   "checked": 167,
-   "indexed": 128,
+   "checked": 173,
+   "indexed": 129,
    "not_indexed": [
     {
      "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
@@ -481,7 +591,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/temporary-agency-work-rights.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -496,7 +606,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -536,7 +646,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -646,7 +756,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -657,6 +767,31 @@
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
      "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html",
+     "state": "Crawled - currently not indexed",
+     "last_crawl": "2026-11-03T15:26:53Z"
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     }
    ]
