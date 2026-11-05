@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T06:52:11+01:00",
-  "validUntil": "2026-11-03T18:52:11+01:00",
+  "updatedAt": "2026-11-05T06:56:51+01:00",
+  "validUntil": "2026-11-05T18:56:51+01:00",
   "items": [
+    {
+      "source": "TK",
+      "publishedAt": "2026-11-03",
+      "firstSeen": "2026-11-05",
+      "category": {
+        "ar": "تمويل الدراسة",
+        "nl": "Studiefinanciering"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "مجلس النواب يرفض سقف 2.5% لفائدة قروض الدراسة ويطلب رفع basisbeurs",
+        "nl": "Tweede Kamer: geen rentemaximum van 2,5% op studieschuld, geld naar hogere basisbeurs"
+      },
+      "summary": {
+        "ar": "رفض مجلس النواب في 3 نوفمبر 2026 سقف 2.5% لفائدة قروض الدراسة، وتبنّى مقترح Rooderkerk لاستخدام 40 مليون يورو لرفع basisbeurs وإعادة les- en cursusgeld. طلب وليس قانوناً بعد.",
+        "nl": "De Kamer verwierp op 3 november 2026 een rentemaximum van 2,5% op studieschuld. Aangenomen: motie-Rooderkerk om € 40 miljoen te gebruiken voor een hogere basisbeurs en teruggave van lesgeld. Nog geen wet."
+      },
+      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P17772&did=2026P17772",
+      "sourceName": {
+        "ar": "البرلمان (Tweede Kamer)",
+        "nl": "Tweede Kamer"
+      },
+      "tier": "official",
+      "id": "tk-2026-11-03-38e0c63d"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-10-30",
@@ -27,31 +52,6 @@
       },
       "tier": "official",
       "id": "szw-2026-10-30-b27896d3"
-    },
-    {
-      "source": "RTL",
-      "publishedAt": "2026-10-29",
-      "firstSeen": "2026-10-30",
-      "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "وفق RTL: لا سقف 2.5% لفائدة قروض الدراسة",
-        "nl": "Volgens RTL: toch geen maximale rente van 2,5% op studieschuld"
-      },
-      "summary": {
-        "ar": "وفق RTL Nieuws: أُلغي السقف الموعود 2.5% لفائدة قروض الدراسة، إذ تقول الوزيرة إن كلفته 160 مليون يورو سنوياً على الأقل. غير رسمي بعد: مقترح البرلمان لاستخدام المال للطلاب لم يُصوَّت عليه.",
-        "nl": "Volgens RTL Nieuws: de beloofde maximale rente van 2,5% op studieschuld komt er niet; dat kost minstens € 160 miljoen per jaar. Nog niet officieel: over een motie om het geld anders te besteden is nog niet gestemd."
-      },
-      "url": "https://www.rtl.nl/nieuws/politiek/artikel/5661845/toch-geen-maximale-rente-op-studieschuld-kamer-wil-geld-gebruiken",
-      "sourceName": {
-        "ar": "RTL Nieuws",
-        "nl": "RTL Nieuws"
-      },
-      "tier": "media",
-      "id": "rtl-2026-10-29-74307078"
     },
     {
       "source": "SZW",
@@ -257,75 +257,75 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "error"
+      "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
-      "result": "error"
+      "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "new"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "error"
+      "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "error"
+      "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-03",
+      "checkedAt": "2026-11-05",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
-      "result": "error"
+      "result": "no-change"
     }
   ]
 }
