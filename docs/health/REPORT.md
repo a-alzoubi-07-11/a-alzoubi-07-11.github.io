@@ -1,6 +1,6 @@
-# Site health report — 2026-11-04T11:12Z
+# Site health report — 2026-11-05T11:11Z
 
-## External links: 617 checked · 0 broken · 6 redirected · 49 bot-blocked
+## External links: 617 checked · 0 broken · 6 redirected · 45 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
 - MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
@@ -15,10 +15,10 @@
   - not indexed: https://gidsnederland.nl/articles/diploma-evaluation-sbb.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/dutch-naturalisation-guide.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/temporary-agency-work-rights.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/articles/temporary-agency-work-rights.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/cv.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/student-finance.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/zorgtoeslag-guide.html (Discovered - currently not indexed)
@@ -26,7 +26,7 @@
   - not indexed: https://gidsnederland.nl/nl/categories/money.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/articles/trending-jobs-2026.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/trending-jobs-2026.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/aow-aio-pension.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/articles/aow-aio-pension.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/birth-parental-leave.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/adult-learning-finance.html (Crawled - currently not indexed)
@@ -51,5 +51,5 @@
   - not indexed: https://gidsnederland.nl/nl/articles/liability-home-insurance.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/beroep/ (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/beroep/ (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html (Discovered - currently not indexed)
 - bing: not_configured — Add repo secret BING_WEBMASTER_API_KEY (Bing Webmaster Tools > Settings > API access).

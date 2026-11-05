@@ -1,49 +1,9 @@
 {
- "checked_at": "2026-11-04T11:12Z",
+ "checked_at": "2026-11-05T11:11Z",
  "external": {
   "total": 617,
   "broken": [],
   "blocked": [
-   {
-    "url": "https://lokaleregelgeving.overheid.nl/CVDR706038/",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/social-housing-sociale-huurwoning.html",
-     "nl/articles/social-housing-sociale-huurwoning.html"
-    ]
-   },
-   {
-    "url": "https://lokaleregelgeving.overheid.nl/CVDR744533/1",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
-   {
-    "url": "https://lokaleregelgeving.overheid.nl/CVDR749442/1",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/municipal-taxes-exemption-kwijtschelding.html",
-     "nl/articles/municipal-taxes-exemption-kwijtschelding.html"
-    ]
-   },
-   {
-    "url": "https://lokaleregelgeving.overheid.nl/CVDR752532",
-    "code": 0,
-    "final": null,
-    "error": "SSLError",
-    "pages": [
-     "articles/special-assistance-bijzondere-bijstand.html",
-     "nl/articles/special-assistance-bijzondere-bijstand.html"
-    ]
-   },
    {
     "url": "https://www.cbr.nl/nl/rijbewijs-halen/auto/je-autorijbewijs-halen/stappenplan-rijden-voor-je-18e",
     "code": 0,
@@ -591,7 +551,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/temporary-agency-work-rights.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -606,7 +566,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -646,7 +606,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -771,12 +731,12 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -791,7 +751,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     }
    ]
