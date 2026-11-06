@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-05T11:11Z",
+ "checked_at": "2026-11-06T11:09Z",
  "external": {
-  "total": 617,
+  "total": 622,
   "broken": [],
   "blocked": [
    {
@@ -528,21 +528,16 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 173,
+  "sitemap_urls": 176,
   "google": {
    "status": "ok",
-   "checked": 173,
-   "indexed": 129,
+   "checked": 176,
+   "indexed": 131,
    "not_indexed": [
     {
      "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-02T11:35:44Z"
-    },
-    {
-     "url": "https://gidsnederland.nl/articles/dutch-naturalisation-guide.html",
-     "state": "Crawled - currently not indexed",
-     "last_crawl": "2026-10-06T08:03:09Z"
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
@@ -566,7 +561,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -576,11 +571,6 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
-     "state": "Discovered - currently not indexed",
-     "last_crawl": null
-    },
-    {
-     "url": "https://gidsnederland.nl/nl/articles/zorgtoeslag-guide.html",
      "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
@@ -691,7 +681,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -726,7 +716,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -736,12 +726,12 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -752,6 +742,21 @@
     {
      "url": "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
      "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/affiliate-disclosure.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/affiliate-disclosure.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     }
    ]
