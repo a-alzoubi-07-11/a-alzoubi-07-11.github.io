@@ -7,6 +7,12 @@ structure to the rest of the site. Content is passed as plain data.
 """
 import html, json, pathlib, re
 
+
+def _iso_dt(d):
+    """Google wants uploadDate as ISO 8601 datetime with a time zone."""
+    d = str(d)
+    return d if "T" in d else d + "T12:00:00+00:00"
+
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SITE = "https://gidsnederland.nl"
 TEMPLATE = {"ar": ROOT / "articles/digid-registration-guide.html", "nl": ROOT / "nl/articles/digid-registration-guide.html"}
@@ -75,7 +81,7 @@ def build(lang, a, today):
          "citation": [u for _, _, u in a["sources"]],
          "video": [{"@type": "VideoObject", "name": ti, "embedUrl": f"https://www.youtube-nocookie.com/embed/{v}",
                     "url": f"https://www.youtube.com/watch?v={v}", "thumbnailUrl": f"https://i.ytimg.com/vi/{v}/hqdefault.jpg",
-                    "uploadDate": a.get("video_dates", {}).get(v, today), "description": ti} for v, ti in a["videos"]]},
+                    "uploadDate": _iso_dt(a.get("video_dates", {}).get(v, today)), "description": ti} for v, ti in a["videos"]]},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": t["home"], "item": SITE + ("/" if lang == "ar" else "/nl/")},
             {"@type": "ListItem", "position": 2, "name": t["articles"], "item": SITE + ("/articles.html" if lang == "ar" else "/nl/articles.html")},
