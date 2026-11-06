@@ -42,14 +42,21 @@
     "c8TiWKUVoNQ": "إرجاع راوتر الإنترنت في هولندا: KPN وOdido وZiggo | Modem terugsturen",
     "hVXmL_MESUs": "تطبيق Odido: تعديل باقة البيانات ومراجعة التكاليف | Odido-app",
     "UeVX0GZfXWU": "شراء تذكرة قطار بين مدينتين في هولندا | Treinkaartje kopen",
-    "-957CtFtHak": "تذكرة الدراجة في قطارات NS: ما الشروط؟ | Fietskaart Dal"
+    "-957CtFtHak": "تذكرة الدراجة في قطارات NS: ما الشروط؟ | Fietskaart Dal",
+    "WkDx4EohFhM": "رفع مستندات إضافية إلى IND باستخدام DigiD | Documenten uploaden",
+    "A-2ZHswz_MA": "دفع ضريبة السيارة شهرياً في هولندا | Motorrijtuigenbelasting automatische incasso",
+    "2kVRV9n9pBo": "البحث عن شركة راعية معتمدة للعمل في هولندا | IND erkende referent",
+    "QNLlOv1nQtA": "مشكلة الدفع أونلاين مع ING: ما الذي يجب التحقق منه؟ | Online betalen",
+    "d1qBJ0DWE3c": "موعد وثيقة سفر اللاجئ في البلدية | Vluchtelingenpaspoort aanvragen"
   },
   "guides": {
     "annual-tax-return-2026": [
       "006CY4Ki0O8"
     ],
     "asylum-two-status-system-2026": [
-      "n0TZIbOBbaU"
+      "n0TZIbOBbaU",
+      "T_but1r5yhQ",
+      "d1qBJ0DWE3c"
     ],
     "asylum-residence-hub": [
       "T_but1r5yhQ",
@@ -72,7 +79,8 @@
     ],
     "dutch-naturalisation-guide": [
       "JGL8b35ywvQ",
-      "xXpJnOTMRFY"
+      "xXpJnOTMRFY",
+      "oXl_C2lpeF0"
     ],
     "inburgering-integration-law-2026": [
       "h5ggP_coOqY",
@@ -98,17 +106,22 @@
       "IGdTSAFoRcQ"
     ],
     "diploma-recognition-by-education-level": [
-      "ShRUSFhxa9c"
+      "ShRUSFhxa9c",
+      "hGRAKuVWl_w",
+      "IGdTSAFoRcQ"
     ],
     "pregnancy-newborn-care": [
       "_AS3brCMai4",
       "wI5jl9vCDcw"
     ],
     "scams-phishing-netherlands": [
-      "YARZpQ-JREs"
+      "YARZpQ-JREs",
+      "QNLlOv1nQtA"
     ],
     "trending-jobs-2026": [
-      "dtF4vJ0QAYM"
+      "dtF4vJ0QAYM",
+      "xjeCI3kGMK0",
+      "2kVRV9n9pBo"
     ],
     "unemployment-benefit-ww": [
       "xjeCI3kGMK0"
@@ -127,7 +140,8 @@
       "kfvn5cKdZws"
     ],
     "traffic-fines-cjib": [
-      "MRS8JiMVVeM"
+      "MRS8JiMVVeM",
+      "A-2ZHswz_MA"
     ],
     "syrian-documents-legalisation-translation": [
       "9OGJW9VkBBs"
@@ -148,6 +162,26 @@
     "ns-train-ov-chipkaart-ovpay": [
       "UeVX0GZfXWU",
       "-957CtFtHak"
+    ],
+    "bezwaar-objection-letter": [
+      "iFpl5iAZfS8",
+      "WkDx4EohFhM"
+    ],
+    "foreign-driving-license-exchange": [
+      "A-2ZHswz_MA",
+      "MRS8JiMVVeM"
+    ],
+    "legal-aid-lawyer-toevoeging": [
+      "iFpl5iAZfS8"
+    ],
+    "dutch-government-terms-glossary": [
+      "dr2bnNBYV1k",
+      "WkDx4EohFhM",
+      "MRS8JiMVVeM"
+    ],
+    "adult-learning-finance": [
+      "Us1zCWGMOXU",
+      "dtF4vJ0QAYM"
     ]
   }
 }
