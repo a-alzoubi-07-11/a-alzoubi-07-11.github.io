@@ -1,8 +1,58 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T06:56:51+01:00",
-  "validUntil": "2026-11-05T18:56:51+01:00",
+  "updatedAt": "2026-11-06T06:51:39+01:00",
+  "validUntil": "2026-11-06T18:51:39+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-11-05",
+      "firstSeen": "2026-11-06",
+      "category": {
+        "ar": "الاندماج",
+        "nl": "Inburgering"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "خطة حكومية: حاملو الإقامة العاملون يحصلون على وقت أطول لإتمام inburgering",
+        "nl": "Kabinet: statushouders die werken krijgen meer tijd om in te burgeren"
+      },
+      "summary": {
+        "ar": "تريد الوزيرة Aartsen تمديد مهلة inburgering (3 سنوات) حتى 3 سنوات إضافية لمن يعمل 28 ساعة أسبوعياً على الأقل، وسنة إضافية كحد أقصى لمن يرعى أطفالاً صغاراً بلا حضانة. القواعد في 2027؛ خطة لم تُقر بعد.",
+        "nl": "Minister Aartsen wil de inburgeringstermijn van 3 jaar met maximaal 3 jaar verlengen voor wie minstens 28 uur per week werkt; max. 1 jaar extra bij zorg voor jonge kinderen zonder opvang. Regels gaan in 2027 gelden."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/05/kabinet-zet-werk-centraal-in-de-inburgering-wie-werkt-krijgt-meer-tijd-om-in-te-burgeren",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-11-05-21f6c803"
+    },
+    {
+      "source": "STAB",
+      "publishedAt": "2026-11-05",
+      "firstSeen": "2026-11-06",
+      "category": {
+        "ar": "الإعانات",
+        "nl": "Uitkeringen"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "نشر قانون Wet handhaving sociale zekerheid: عقوبات أخف على متلقي الإعانات",
+        "nl": "Wet handhaving sociale zekerheid gepubliceerd: passender sancties bij uitkeringen"
+      },
+      "summary": {
+        "ar": "بعد بدء السريان يمكن للجهات المانحة توجيه إنذار كتابي بدل العقوبة، وتُلغى العقوبة إن لم يكن هناك لوم. استرداد الإعانة محدود بخمس سنوات (أحياناً 20). موعد السريان بمرسوم ملكي.",
+        "nl": "Na inwerkingtreding kunnen uitkeringsinstanties een schriftelijke waarschuwing geven in plaats van een sanctie; zonder verwijtbaarheid vervalt de sanctie. Terugvorderen max. 5 jaar terug (soms 20). Datum volgt bij KB."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-372.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-11-05-3f910561"
+    },
     {
       "source": "TK",
       "publishedAt": "2026-11-03",
@@ -52,31 +102,6 @@
       },
       "tier": "official",
       "id": "szw-2026-10-30-b27896d3"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-10-29",
-      "firstSeen": "2026-10-29",
-      "category": {
-        "ar": "العمل",
-        "nl": "Werk"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "مقترح لتحديد عمل العامل المؤقت لدى الجهة نفسها بثلاث سنوات",
-        "nl": "Voorstel: uitzendkracht maximaal drie jaar bij dezelfde inlener"
-      },
-      "summary": {
-        "ar": "مشروع قانون: لا يعمل العامل المؤقت لدى الجهة نفسها أكثر من 36 شهراً، وبعدها يجب عرض عقد مباشر. التشاور العام من 29 أكتوبر حتى 24 نوفمبر 2026. ليس قانوناً نافذاً بعد.",
-        "nl": "Wetsvoorstel: een uitzendkracht werkt maximaal 36 maanden bij dezelfde inlener; daarna moet een direct contract volgen. Internetconsultatie van 29 oktober tot 24 november 2026. Nog geen geldende wet."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/29/inzet-uitzendkrachten-wordt-begrensd-in-tijd",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-10-29-7d4441d7"
     },
     {
       "source": "TK",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-15-4a21e9c2"
-    },
-    {
-      "source": "TOESLAGEN",
-      "publishedAt": "2026-10-15",
-      "firstSeen": "2026-10-28",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "قواعد أبسط لشريك البدلات (toeslagpartner) ابتداءً من 2027",
-        "nl": "Regels voor toeslagpartners eenvoudiger vanaf 2027"
-      },
-      "summary": {
-        "ar": "من 1 يناير 2027 يبقى المتزوجون والشركاء المسجّلون شركاء بدلات؛ أما المساكنون فقط عند وجود عقد مساكنة موثّق أو طفل مشترك أو بيت مملوك مشترك مثلاً. رسالة للمعنيين نهاية نوفمبر.",
-        "nl": "Vanaf 1 januari 2027 blijven gehuwden en geregistreerd partners toeslagpartner; samenwoners alleen bij bijvoorbeeld een notarieel samenlevingscontract, gezamenlijk kind of eigen huis. Brief eind november."
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
-      "sourceName": {
-        "ar": "دائرة البدلات (Toeslagen)",
-        "nl": "Dienst Toeslagen"
-      },
-      "tier": "official",
-      "id": "toeslagen-2026-10-15-f11cac34"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "new"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-11-05",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
+      "source": "STAB",
+      "checkedAt": "2026-11-06",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "result": "new"
+    },
+    {
       "source": "NOS",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-06",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
