@@ -1,6 +1,6 @@
 {
   "_help": "Partner offers shown in the 'partners' bar on every page and on /partners.html. To add an offer copy one item, fill it in and set active to true. Dates are YYYY-MM-DD (the offer shows from start until the end of the end day). topics (optional) = words from the page address, e.g. [\"diploma\", \"syrian-documents\"]; leave it out to show the offer on all pages; \"home\" = the Arabic and Dutch homepages. code is optional. Never publish an offer without the partner's written OK. whatsapp (optional) = number with country code, digits only, e.g. 31612345678. kind (optional) = what the partner does, shown after the name, e.g. {\"ar\": \"مكتب ترجمة أوراق\", \"nl\": \"Vertaalbureau\"}. strip_link (optional) = \"whatsapp\" makes the moving strip open a WhatsApp chat (needs whatsapp) instead of the website.",
-  "updated": "2026-11-05",
+  "updated": "2026-11-07",
   "items": [
     {
       "id": "wolky-tolky-2026",
@@ -34,6 +34,31 @@
         "nl": "Vertaalbureau voor documenten"
       },
       "strip_link": "whatsapp"
+    },
+    {
+      "id": "fcrl-plus-eu-guide",
+      "active": true,
+      "partner": "FCRL Plus",
+      "partner_nl": "FCRL Plus",
+      "kind": {
+        "ar": "ملف PDF بالعربي",
+        "nl": "PDF-gids in het Arabisch"
+      },
+      "url": "https://payhip.com/b/LrHOh",
+      "start": "2026-11-07",
+      "title": {
+        "ar": "دليل الإقامة الأوروبية في هولندا خطوة بخطوة",
+        "nl": "EU-verblijf langdurig ingezetene: stap-voor-stap gids"
+      },
+      "topics": [
+        "home",
+        "links",
+        "partners",
+        "permanent-residence",
+        "asylum",
+        "inburgering",
+        "naturalisation"
+      ]
     }
   ]
 }
