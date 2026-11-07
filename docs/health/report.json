@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-06T11:09Z",
+ "checked_at": "2026-11-07T10:27Z",
  "external": {
   "total": 622,
   "broken": [],
@@ -681,7 +681,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -706,7 +706,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -716,7 +716,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -726,7 +726,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
@@ -746,17 +746,17 @@
     },
     {
      "url": "https://gidsnederland.nl/affiliate-disclosure.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/affiliate-disclosure.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     },
     {
      "url": "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null
     }
    ]
