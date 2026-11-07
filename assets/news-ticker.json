@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T06:51:39+01:00",
-  "validUntil": "2026-11-06T18:51:39+01:00",
+  "updatedAt": "2026-11-07T06:51:04+01:00",
+  "validUntil": "2026-11-07T18:51:04+01:00",
   "items": [
+    {
+      "source": "NOS",
+      "publishedAt": "2026-11-06",
+      "firstSeen": "2026-11-07",
+      "category": {
+        "ar": "العمل",
+        "nl": "Werk"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NOS: الحكومة تريد قواعد أشد لإرسال عمال من خارج الاتحاد الأوروبي عبر دولة أوروبية أخرى",
+        "nl": "Volgens NOS: kabinet wil strengere regels voor detacheren van arbeidsmigranten via ander EU-land"
+      },
+      "summary": {
+        "ar": "وفق NOS: على العامل من خارج الاتحاد أن يعمل 3 أشهر أولاً في الدولة الأوروبية الأخرى، بدءاً من 1 يوليو 2027، وترتفع غرامات الدفع دون الحد الأدنى للأجور نحو 22%. خطة حكومية لم تُقر بعد.",
+        "nl": "Volgens NOS: niet-EU-werknemers moeten eerst 3 maanden in het andere EU-land werken; start 1 juli 2027. Boetes voor onderbetaling stijgen ca. 22%. Nog een kabinetsplan, Kamer debatteert nog."
+      },
+      "url": "https://nos.nl/artikel/2638357-kabinet-wil-strengere-regels-voor-detacheren-arbeidsmigrant-vanuit-ander-eu-land",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-11-06-c006584c"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-05",
@@ -204,31 +229,6 @@
       "id": "bzk-2026-10-16-8b3edba4"
     },
     {
-      "source": "STAB",
-      "publishedAt": "2026-10-15",
-      "firstSeen": "2026-10-30",
-      "category": {
-        "ar": "اللجوء والإقامة",
-        "nl": "Asiel en verblijf"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "نشر قانون العودة واحتجاز الأجانب في الجريدة الرسمية",
-        "nl": "Wet terugkeer en vreemdelingenbewaring gepubliceerd in Staatsblad"
-      },
-      "summary": {
-        "ar": "ينص القانون على أن احتجاز الأجانب ملاذ أخير بحد أقصى ستة أشهر، يمكن تمديده في حالات محددة 12 شهراً كحد أقصى. يبدأ سريان معظمه في موعد يحدده مرسوم ملكي.",
-        "nl": "Vreemdelingenbewaring wordt een uiterst middel met een wettelijk maximum van zes maanden, in bepaalde gevallen te verlengen met ten hoogste twaalf maanden. Inwerkingtreding grotendeels bij koninklijk besluit."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-314.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-10-15-9ab836f6"
-    },
-    {
       "source": "TOESLAGEN",
       "publishedAt": "2026-10-15",
       "firstSeen": "2026-10-28",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
-      "result": "new"
-    },
-    {
-      "source": "NOS",
-      "checkedAt": "2026-11-06",
-      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
+      "source": "NOS",
+      "checkedAt": "2026-11-07",
+      "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
+      "result": "new"
+    },
+    {
       "source": "NU",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-07",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
