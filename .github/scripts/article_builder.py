@@ -96,7 +96,7 @@ def build(lang, a, today):
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(a["title"])}"><meta name="twitter:description" content="{e(a["desc"])}">'
             f'<meta name="twitter:image" content="{SITE}/assets/og-image.png">\n'
             '<meta name="google-site-verification" content="A9hem9lFx7-Zdjg2rwL9IQqAU1kmCPdOonknPoIP_0">\n'
-            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=6"><script src="/assets/guide.js?v=2" defer></script>\n'
+            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=7"><script src="/assets/guide.js?v=2" defer></script>\n'
             f'<link rel="canonical" href="{me}"><link rel="alternate" hreflang="ar" href="{ar_u}"><link rel="alternate" hreflang="nl" href="{nl_u}"><link rel="alternate" hreflang="x-default" href="{ar_u}">\n'
             f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n</head>\n')
     header = re.search(r"<body>.*?</header>", tpl, re.S).group(0)

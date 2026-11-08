@@ -45,7 +45,8 @@ def build(slug,lang,spec,date_iso,date_text):
         j['@graph'].append({"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub('<[^>]+>','',a)}} for q,a in spec['faq']]})
     t=t[:m.start(1)]+json.dumps(j,ensure_ascii=False)+t[m.end(1):]
     # h1 + breadcrumb
-    t=re.sub(r'(<h1><span>).*?(</span></h1>)',lambda m:m.group(1)+esc(title)+m.group(2),t,1,re.S)
+    from titles import apply as short_h1        # long titles: short H1 + subtitle line; headline = H1
+    t=short_h1(t,title)
     t=re.sub(r'(<li aria-current="page"><span>).*?(</span></li>)',lambda m:m.group(1)+esc(spec.get('crumb',title))+m.group(2),t,1,re.S)
     # meta date
     from verified import label, verified_from_note   # 'sources checked' (from src_note) is separate from 'page edited'

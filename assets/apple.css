@@ -272,3 +272,4 @@ a,button,summary,[role=tab],[role=button],label,input,select,textarea{touch-acti
 .gi-cross{--gi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M9 9l6 6M15 9l-6 6'/%3E%3C/svg%3E")}
 .gi-printer{--gi:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 9V3.5h10V9'/%3E%3Crect x='3.5' y='9' width='17' height='8' rx='2'/%3E%3Cpath d='M7 14.5h10V21H7z'/%3E%3C/svg%3E")}
 /* @icons:end */
+.reader .article-sub{margin:-.2em 0 .9em;font-size:clamp(17px,2.2vw,20px);line-height:1.5;color:var(--ap-text-2,#5e5e63);font-weight:500}

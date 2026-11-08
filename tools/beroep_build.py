@@ -180,7 +180,7 @@ def page(L):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css?v=1">
 <link rel="stylesheet" href="/assets/guide.css?v=1">
-<link rel="stylesheet" href="/assets/apple.css?v=6">
+<link rel="stylesheet" href="/assets/apple.css?v=7">
 <link rel="stylesheet" href="/assets/tool-tiles.css?v=2">
 <link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
