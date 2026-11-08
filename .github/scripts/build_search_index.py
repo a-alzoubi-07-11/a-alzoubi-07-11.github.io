@@ -2,7 +2,7 @@
 """Build assets/search-index.json for the site search.
 
 Run after adding or renaming articles (the "Search index bot" workflow does this
-automatically on every push that touches articles or categories):
+automatically on every push that touches HTML pages):
     python3 .github/scripts/build_search_index.py            # rebuild + report changes
     python3 .github/scripts/build_search_index.py --check    # exit 1 if the index is stale
 
@@ -10,7 +10,7 @@ New articles need no manual step: their topic is read from the category pages th
 link to them, and basic keywords come from the title, slug and Dutch terms. Hand-written
 aliases (ALIASES below) improve results further for colloquial searches.
 
-Each entry: u (url), l (ar|nl), y (guide|tool|topic), t (title), d (description),
+Each entry: u (url), l (ar|nl), y (guide|tool|topic|page), t (title), d (description),
 h (headings), c (topic label), k (aliases: colloquial Arabic, Dutch terms,
 transliterations and common misspellings that should find this page).
 """
@@ -148,6 +148,21 @@ TOOLS = {
  ],
 }
 
+# Public site pages outside articles/ and categories/. Read their current metadata
+# from HTML, just like articles, and keep navigation pages distinct from guides.
+# Each relative path is included in Arabic and Dutch when the file exists.
+SITE_PAGES = [
+ ('index.html', 'page', 'الرئيسية الصفحة الرئيسية بداية دليل هولندا home homepage startpagina gids nederland'),
+ ('articles.html', 'page', 'المقالات كل المقالات جميع الأدلة تصفح artikelen alle artikelen gidsen overzicht'),
+ ('tools.html', 'page', 'الأدوات كل الأدوات جميع الحاسبات حاسبات الموقع tools hulpmiddelen rekenhulpen calculators'),
+ ('beroep/index.html', 'tool', 'الطعن طعن رسالة الطعن رفض الإقامة الدائمة رفض اللجوء المحكمة beroep beroepschrift afwijzing asiel onbepaalde tijd rechtbank'),
+ ('about.html', 'page', 'من نحن عن الموقع صاحب الموقع أحمد الزعبي احمد الزعبي over ons over de website Ahmad Alzoubi'),
+ ('contact.html', 'page', 'تواصل التواصل اتصل بنا مراسلة بريد إلكتروني ايميل اقتراح تصحيح contact contactformulier e-mail email bericht'),
+ ('editorial-policy.html', 'page', 'سياسة المحتوى المصادر المراجعة تصحيح الأخطاء منهج المراجعة redactiebeleid bronnen correcties redactioneel beleid'),
+ ('privacy.html', 'page', 'الخصوصية سياسة الخصوصية ملفات الارتباط الكوكيز بيانات privacy privacyverklaring cookies cookie-instellingen gegevens'),
+ ('affiliate-disclosure.html', 'page', 'الإفصاح الإعلاني الإفصاح عن الإعلانات الروابط الإعلانية عمولة affiliate affiliate-verklaring advertenties reclame betaalde samenwerking'),
+]
+
 def topics_from_categories():
     """slug -> topic key, read from categories/*.html (a new article only has to be linked there)."""
     found = {}
@@ -167,7 +182,7 @@ def text(s):
     s = re.sub(r'<[^>]+>', ' ', s)
     return re.sub(r'\s+', ' ', html.unescape(s)).strip()
 
-def entry(path, lang, slug):
+def entry(path, lang, slug, *, url=None, kind='guide', keywords=None):
     s = path.read_text(encoding='utf-8')
     h1s = re.findall(r'<h1[^>]*>(.*?)</h1>', s, re.S)
     title = text(h1s[-1]) if h1s else ''
@@ -183,9 +198,9 @@ def entry(path, lang, slug):
     topic = topic or AUTO_TOPIC.get(slug)
     desc = html.unescape(d.group(1)) if d else ''
     return {
-        'u': ('/nl' if lang == 'nl' else '') + f'/articles/{slug}.html', 'l': lang, 'y': 'guide',
+        'u': url if url is not None else ('/nl' if lang == 'nl' else '') + f'/articles/{slug}.html', 'l': lang, 'y': kind,
         't': title, 'd': desc, 'h': ' | '.join(heads),
-        'c': TOPIC_LABEL[lang].get(topic or '', ''), 'k': ' '.join(x for x in ((ALIASES.get(slug) or auto_keywords(slug, title, desc)), extra_kw, TOPIC_ALIASES.get(topic or '', '')) if x),
+        'c': TOPIC_LABEL[lang].get(topic or '', ''), 'k': keywords if keywords is not None else ' '.join(x for x in ((ALIASES.get(slug) or auto_keywords(slug, title, desc)), extra_kw, TOPIC_ALIASES.get(topic or '', '')) if x),
     }
 
 AUTO_TOPIC = {}
@@ -208,6 +223,19 @@ def build():
         for key, label in TOPIC_LABEL[lang].items():
             out.append({'u': ('/nl' if lang == 'nl' else '') + f'/categories/{key}.html', 'l': lang, 'y': 'topic', 't': label,
                         'd': 'كل الأدلة في هذا القسم' if lang == 'ar' else 'Alle gidsen in dit onderwerp', 'h': '', 'c': '', 'k': TOPIC_ALIASES[key]})
+    for lang in ('ar', 'nl'):
+        for relative, kind, keywords in SITE_PAGES:
+            path = ROOT / ('nl' if lang == 'nl' else '') / relative
+            if not path.exists():
+                problems.append(f'{path.relative_to(ROOT)}: site page is missing')
+                continue
+            url = '/' + path.relative_to(ROOT).as_posix()
+            if url.endswith('/index.html'):
+                url = url[:-len('index.html')]
+            e = entry(path, lang, path.stem, url=url, kind=kind, keywords=keywords)
+            out.append(e)
+            if not e['t']:
+                problems.append(f'{url}: no title found')
     no_alias = sorted({e['u'] for e in out if e['y'] == 'guide' and e['l'] == 'ar' and e['u'].split('/')[-1][:-5] not in ALIASES})
     return {'v': 1, 'items': out}, problems, no_alias
 

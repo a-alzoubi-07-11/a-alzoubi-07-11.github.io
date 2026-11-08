@@ -123,8 +123,8 @@ function suggest(query){
 }
 
 /* ---------- UI ---------- */
-const TXT={ar:{ph:"مثلاً: لمّ الشمل، بدل السكن",none:"لم نجد نتيجة مطابقة.",mean:"هل تقصد:",try:"جرّب أحد هذه المواضيع:",guide:"دليل",tool:"أداة",topic:"قسم",other:"بالهولندية",hint:"اكتب كلمة أو كلمتين، بالعربية أو الهولندية، ولا تقلق من الأخطاء الإملائية.",pop:"الأكثر بحثاً",count:n=>n+" نتيجة"},
- nl:{ph:"Bijv. huurtoeslag, DigiD",none:"Geen passend resultaat gevonden.",mean:"Bedoel je:",try:"Probeer een van deze onderwerpen:",guide:"Gids",tool:"Hulpmiddel",topic:"Onderwerp",other:"in het Arabisch",hint:"Typ een of twee woorden, in het Nederlands of Arabisch. Tikfouten zijn geen probleem.",pop:"Veelgezocht",count:n=>n+" resultaten"}};
+const TXT={ar:{ph:"مثلاً: لمّ الشمل، بدل السكن",none:"لم نجد نتيجة مطابقة.",mean:"هل تقصد:",try:"جرّب أحد هذه المواضيع:",guide:"دليل",tool:"أداة",topic:"قسم",page:"صفحة",other:"بالهولندية",hint:"اكتب كلمة أو كلمتين، بالعربية أو الهولندية، ولا تقلق من الأخطاء الإملائية.",pop:"الأكثر بحثاً",count:n=>n+" نتيجة"},
+ nl:{ph:"Bijv. huurtoeslag, DigiD",none:"Geen passend resultaat gevonden.",mean:"Bedoel je:",try:"Probeer een van deze onderwerpen:",guide:"Gids",tool:"Hulpmiddel",topic:"Onderwerp",page:"Pagina",other:"in het Arabisch",hint:"Typ een of twee woorden, in het Nederlands of Arabisch. Tikfouten zijn geen probleem.",pop:"Veelgezocht",count:n=>n+" resultaten"}};
 const POPULAR={ar:["لم الشمل","بدل السكن","zorgtoeslag","الحد الأدنى للأجر","DigiD","الجنسية","تمويل الدراسة","قسيمة الراتب"],
  nl:["gezinshereniging","huurtoeslag","zorgtoeslag","minimumloon","DigiD","naturalisatie","studiefinanciering","loonstrook"]};
 const CSS=`.ss-list{list-style:none;margin:8px 0 0;padding:6px;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.14);max-height:min(62vh,520px);overflow:auto;text-align:start;font-family:var(--ap-font,system-ui)}

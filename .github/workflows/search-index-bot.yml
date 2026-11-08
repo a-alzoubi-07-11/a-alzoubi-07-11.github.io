@@ -1,6 +1,6 @@
 name: Search index bot
 
-# Keeps the site search in step with the articles: whenever an article or category page
+# Keeps the site search in step with the site: whenever a public HTML page
 # changes on main (or once a day, or on demand), rebuild assets/search-index.json and
 # commit it if anything changed. New articles are picked up without any manual step.
 
@@ -8,10 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'articles/**'
-      - 'nl/articles/**'
-      - 'categories/**'
-      - 'nl/categories/**'
+      - '**/*.html'
       - '.github/scripts/build_search_index.py'
   schedule:
     - cron: '20 5 * * *'   # daily safety net, 06:20/07:20 Amsterdam time
