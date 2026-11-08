@@ -16,3 +16,10 @@ Rules: official sources only; verify every figure; hedge anything not final; ill
 ## UPDATE an existing guide
 Edit its module, run `python3 run_batch.py a_x` (date = today, or set ARTICLE_DATE=YYYY-MM-DD), update `<lastmod>` in sitemap.xml, then steps 4–5.
 - Every content run ends by giving the owner the new URLs: python3 tools/indexing_list.py (see tools/indexing_list.py).
+
+## Share images
+After adding or renaming a guide run `python3 tools/pages/make_og.py`: it renders `assets/og/<slug>.jpg` (AR) and `assets/og/nl-<slug>.jpg` (NL) and sets og:image / twitter:image and the Article image. Only changed titles are re-rendered.
+
+## Dates and facts
+- The visible «sources last checked» date comes from the date written in `src_note`; change it only after really re-reading the sources. «Page last edited» is the build date.
+- Figures used in several places live in `data/facts.json`; `tools/check_facts.py` (run by site_guard) fails when a guide or tool disagrees.
