@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T06:51:04+01:00",
-  "validUntil": "2026-11-07T18:51:04+01:00",
+  "updatedAt": "2026-11-08T06:51:03+01:00",
+  "validUntil": "2026-11-08T18:51:03+01:00",
   "items": [
     {
-      "source": "NOS",
-      "publishedAt": "2026-11-06",
-      "firstSeen": "2026-11-07",
+      "source": "SZW",
+      "publishedAt": "2026-11-07",
+      "firstSeen": "2026-11-08",
       "category": {
         "ar": "العمل",
         "nl": "Werk"
       },
-      "status": "reported",
+      "status": "proposed",
       "title": {
-        "ar": "وفق NOS: الحكومة تريد قواعد أشد لإرسال عمال من خارج الاتحاد الأوروبي عبر دولة أوروبية أخرى",
-        "nl": "Volgens NOS: kabinet wil strengere regels voor detacheren van arbeidsmigranten via ander EU-land"
+        "ar": "خطة حكومية لإنهاء إرسال عمال من خارج الاتحاد الأوروبي إلى هولندا مباشرة عبر دولة أوروبية أخرى",
+        "nl": "Kabinet wil sluiproute via ander EU-land voor goedkope arbeidsmigranten sluiten"
       },
       "summary": {
-        "ar": "وفق NOS: على العامل من خارج الاتحاد أن يعمل 3 أشهر أولاً في الدولة الأوروبية الأخرى، بدءاً من 1 يوليو 2027، وترتفع غرامات الدفع دون الحد الأدنى للأجور نحو 22%. خطة حكومية لم تُقر بعد.",
-        "nl": "Volgens NOS: niet-EU-werknemers moeten eerst 3 maanden in het andere EU-land werken; start 1 juli 2027. Boetes voor onderbetaling stijgen ca. 22%. Nog een kabinetsplan, Kamer debatteert nog."
+        "ar": "على العامل من خارج الاتحاد أن يعمل 3 أشهر على الأقل في الدولة الأوروبية الأخرى، وأن تبقى إقامته هناك صالحة أطول من عمله في هولندا. مشاورة عامة من 7 نوفمبر؛ السريان المتوقع يوليو 2027.",
+        "nl": "Niet-EU-werknemers moeten eerst minstens 3 maanden in het andere EU-land werken; hun vergunning daar moet langer gelden dan het werk in NL. Internetconsultatie vanaf 7 november; start naar verwachting juli 2027."
       },
-      "url": "https://nos.nl/artikel/2638357-kabinet-wil-strengere-regels-voor-detacheren-arbeidsmigrant-vanuit-ander-eu-land",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/07/kabinet-maakt-einde-aan-sluiproute-voor-goedkope-arbeidsmigranten",
       "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
       },
-      "tier": "media",
-      "id": "nos-2026-11-06-c006584c"
+      "tier": "official",
+      "id": "szw-2026-11-07-b87605c3"
     },
     {
       "source": "SZW",
@@ -102,31 +102,6 @@
       },
       "tier": "official",
       "id": "tk-2026-11-03-38e0c63d"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-10-30",
-      "firstSeen": "2026-10-31",
-      "category": {
-        "ar": "الأطفال والبدلات",
-        "nl": "Kinderen en toeslagen"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "خطة حكومية لإلغاء kinderopvangtoeslag في 2029 ودمج بدلات الأطفال",
-        "nl": "Kabinet wil kinderopvangtoeslag in 2029 afschaffen en regelingen voor kinderen samenvoegen"
-      },
-      "summary": {
-        "ar": "تعمل الوزيرة Aartsen على نظام تمويل جديد يجعل رعاية الأطفال أرخص سنويًا للوالدين العاملين، بهدف إلغاء kinderopvangtoeslag كليًا في 2029. لاحقًا يُدمج kinderbijslag وkindgebonden budget في نظام واحد. خطة لم تُقر بعد.",
-        "nl": "Minister Aartsen werkt aan nieuwe financiering: opvang wordt jaarlijks goedkoper voor werkende ouders, zodat de kinderopvangtoeslag in 2029 verdwijnt. Later gaan kinderbijslag en kindgebonden budget samen. Nog een plan."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/30/kabinet-wil-vliegende-start-voor-jonge-kinderen",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-10-30-b27896d3"
     },
     {
       "source": "TK",
@@ -231,6 +206,31 @@
     {
       "source": "TOESLAGEN",
       "publishedAt": "2026-10-15",
+      "firstSeen": "2026-11-08",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "من 2027: قواعد أبسط لتحديد شريك البدلات (toeslagpartner)",
+        "nl": "Regels voor toeslagpartners eenvoudiger vanaf 1 januari 2027"
+      },
+      "summary": {
+        "ar": "من 1 يناير 2027 يُعدّ الشخص toeslagpartner فقط عند الزواج أو الشراكة المسجلة، أو عند التسجيل في العنوان نفسه مع عقد مساكنة موثق أو طفل مشترك أو بيت مملوك معاً. يصل المعنيين خطاب نهاية نوفمبر.",
+        "nl": "Vanaf 1 januari 2027 bent u alleen toeslagpartner bij huwelijk of geregistreerd partnerschap, of bij inschrijving op één adres plus bv. samenlevingscontract, kind samen of eigen woning. Brief volgt eind november."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-f11cac34"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
       "firstSeen": "2026-10-28",
       "category": {
         "ar": "البدلات",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-07",
+      "checkedAt": "2026-11-08",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
