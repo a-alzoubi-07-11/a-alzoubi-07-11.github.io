@@ -163,6 +163,12 @@ def check_search_index() -> None:
             bad("search", "assets/search-index.json", f"entry points to missing page: {url}")
 
 
+def check_facts() -> None:
+    r = subprocess.run([sys.executable, "tools/check_facts.py"], cwd=ROOT, capture_output=True, text=True)
+    if r.returncode != 0:
+        bad("facts", "data/facts.json", (r.stdout + r.stderr).strip()[-800:] or "facts check failed")
+
+
 def check_ticker() -> None:
     r = subprocess.run([sys.executable, ".github/scripts/news_ticker_validate.py"], cwd=ROOT,
                        capture_output=True, text=True)
@@ -215,6 +221,7 @@ def main() -> int:
     check_sitemap()
     check_search_index()
     check_ticker()
+    check_facts()
     check_ads_robots()
     check_domain()
     check_secrets(files)

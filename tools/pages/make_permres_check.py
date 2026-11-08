@@ -11,8 +11,8 @@ import make_kindgebondenbudget as k  # noqa: E402
 SLUG = 'permanent-residence-check'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
-k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=3">'
-          '<script src="/assets/permres-check.js?v=4" defer></script>')
+k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=4">'
+          '<script src="/assets/permres-check.js?v=5" defer></script>')
 k.SOURCES = [
     ('IND · Verblijfsvergunning EU-langdurig ingezetene', 'https://ind.nl/nl/verblijfsvergunningen/langdurig-ingezetene-eu/verblijfsvergunning-eu-langdurig-ingezetene'),
     ('IND · Verblijfsvergunning onbepaalde tijd aanvragen (regulier)', 'https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/onbepaalde-tijd/verblijfsvergunning-onbepaalde-tijd-aanvragen'),

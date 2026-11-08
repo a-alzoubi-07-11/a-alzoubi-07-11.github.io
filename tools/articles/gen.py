@@ -48,7 +48,8 @@ def build(slug,lang,spec,date_iso,date_text):
     t=re.sub(r'(<h1><span>).*?(</span></h1>)',lambda m:m.group(1)+esc(title)+m.group(2),t,1,re.S)
     t=re.sub(r'(<li aria-current="page"><span>).*?(</span></li>)',lambda m:m.group(1)+esc(spec.get('crumb',title))+m.group(2),t,1,re.S)
     # meta date
-    t=re.sub(r'<time datetime="[^"]*"><span>[^<]*</span></time>',f'<time datetime="{date_iso}"><span>{date_text}</span></time>',t,1)
+    from verified import label, verified_from_note   # 'sources checked' (from src_note) is separate from 'page edited'
+    t=label(t,lang,verified_from_note(spec.get('src_note','')),date_iso)
     # body
     body=spec['body']
     ids=re.findall(r'<h2 id="([^"]+)">(.*?)</h2>',body,re.S)
