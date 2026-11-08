@@ -128,11 +128,7 @@ TOOLS = {
   ('/calculators/permanent-residence-check.html','فاحص الإقامة الدائمة والجنسية','متى تستحق الإقامة الدائمة أو الجنسية؟ تقييم ملفك وخريطة طريق بالتواريخ','فاحص اقامة دائمة جنسية تجنس الجنسية الهولندية naturalisatie اقامة اوروبية تقييم عقد العمل نسبة القبول IND لجوء ريخولير asiel regulier EU-langdurig onbepaalde tijd 6009 6011'),
   ('/calculators/kindgebonden-budget.html','حاسبة kindgebonden budget 2026','قدّر بدل الأطفال حسب الدخل وعدد الأطفال','حاسبة بدل الأطفال kindgebonden budget kgb حساب بدل اولاد'),
   ('/cv.html','السيرة الذاتية CV','سيرة هولندية في ست خطوات','سي في سيرة ذاتية cv curriculum'),
-<<<<<<< HEAD
-=======
   ('/templates.html','نماذج رسائل هولندية','طلب موعد، طلب وثائق، سؤال للبلدية، إلغاء اشتراك، رسالة لصاحب العمل','نموذج رسالة نماذج رسائل رسالة بالهولندي رسالة للبلدية الغاء اشتراك الغاء عقد موعد طلب وثيقة رسالة لصاحب العمل voorbeeldbrief brief opzeggen afspraak'),
-  ('/beroep/','رسالة الطعن (beroep) على رفض الإقامة الدائمة','اكتب بياناتك وانسخ رسالة الطعن الهولندية للمحكمة (asiel onbepaalde tijd)','طعن الطعن رسالة طعن طعن على رفض رفض الإقامة رفض الاقامة الدائمة رفض الإقامة الدائمة استئناف محكمة القرار رفض اعتراض beroep beroepschrift beroep instellen rechtbank afwijzing asiel onbepaalde tijd'),
->>>>>>> ff3eadf (New: Dutch letter templates (AR/NL) and a motivation letter in the CV builder, with tests)
   ('/#pathway','مخطط المسار الدراسي','من وضعك الحالي إلى الشهادة','مسار دراسي'),
   ('/#levels','مستويات التعليم','VMBO وHAVO وMBO وHBO والجامعة','مستويات vmbo havo vwo'),
   ('/#compare','مقارنة المسارات','قارن مسارين جنباً إلى جنب','مقارنة'),
@@ -149,11 +145,7 @@ TOOLS = {
   ('/nl/calculators/permanent-residence-check.html','Check permanent verblijf en naturalisatie','Wanneer kun je permanent verblijf of het Nederlanderschap krijgen?','naturalisatie nederlanderschap permanent verblijf check EU-langdurig ingezetene onbepaalde tijd asiel regulier 6009 6011 arbeidscontract IND'),
   ('/nl/calculators/kindgebonden-budget.html','Kindgebonden budget berekenen 2026','Schat uw kindgebonden budget per jaar en maand','kindgebonden budget berekenen rekenhulp calculator'),
   ('/nl/cv.html','Maak je cv','Nederlands cv in zes stappen','cv curriculum sollicitatie'),
-<<<<<<< HEAD
-=======
   ('/nl/templates.html','Voorbeeldbrieven','Afspraak, documenten opvragen, gemeente, opzeggen, werkgever','voorbeeldbrief brief schrijven opzeggen abonnement afspraak gemeente werkgever'),
-  ('/nl/beroep/','Beroep instellen: beroepschrift tegen afwijzing asiel onbepaalde tijd','Vul je gegevens in en kopieer je beroepschrift voor de rechtbank','beroep beroepschrift beroep instellen afwijzing rechtbank asiel onbepaalde tijd bezwaar'),
->>>>>>> ff3eadf (New: Dutch letter templates (AR/NL) and a motivation letter in the CV builder, with tests)
   ('/nl/tools.html#routes','Onderwijsroutes','Mbo, hbo en wo naast elkaar','onderwijs routes'),
  ],
 }
