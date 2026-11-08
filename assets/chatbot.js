@@ -44,6 +44,11 @@
     .gids-chat-message{max-width:88%;padding:10px 12px;border-radius:15px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.55}
     .gids-chat-message.bot{align-self:flex-start;background:#fff;border:1px solid var(--gc-border);border-end-start-radius:5px}
     .gids-chat-message.user{align-self:flex-end;background:#e4f4ee;border-end-end-radius:5px}
+    .gids-chat-message a{color:#0b5e49;text-decoration:underline;overflow-wrap:anywhere}
+    .gids-chat-related{margin-top:8px;padding-top:8px;border-top:1px solid var(--gc-border);white-space:normal}
+    .gids-chat-related strong{display:block;font-size:12.5px;color:var(--gc-muted);margin-bottom:2px}
+    .gids-chat-related ul{margin:0;padding-inline-start:18px}
+    .gids-chat-related li{margin:3px 0}
     .gids-chat-privacy{padding:7px 13px 0;color:var(--gc-muted);font-size:10px;line-height:1.4;background:#fff}
     #gids-chat-form{display:flex;align-items:flex-end;gap:8px;padding:10px 12px 12px;background:#fff}
     #gids-chat-input{flex:1;resize:none;max-height:90px;border:1px solid var(--gc-border);border-radius:12px;padding:10px 11px;font:14px inherit;line-height:1.4;outline:none}
@@ -105,12 +110,71 @@
     send.textContent = nl ? "Verstuur" : "إرسال";
   }
 
+  // Replies are plain text; only real http(s) links in the reply become clickable (no generated links).
+  function linkify(text) {
+    const frag = document.createDocumentFragment();
+    const re = /(https?:\/\/[^\s<>"'()]+[^\s<>"'().,،؛:!?])|((?:^|\s)(\/(?:nl\/)?(?:articles|calculators|categories)\/[a-z0-9-]+\.html|\/beroep\/|\/cv\.html|\/tools\.html))/g;
+    let last = 0, m;
+    while ((m = re.exec(text))) {
+      const url = m[1] || m[3], start = m[1] ? m.index : m.index + m[2].indexOf(url);
+      frag.append(text.slice(last, start));
+      const a = document.createElement("a");
+      a.href = url; a.textContent = url.replace(/^https?:\/\/(www\.)?/, "");
+      if (/^https?:/.test(url) && !/^https:\/\/gidsnederland\.nl\//.test(url)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+      frag.append(a);
+      last = start + url.length;
+    }
+    frag.append(text.slice(last));
+    return frag;
+  }
   function addMessage(text, who) {
     const item = document.createElement("div");
     item.className = "gids-chat-message " + who;
-    item.textContent = text;
+    if (who === "bot") item.append(linkify(text)); else item.textContent = text;
     feed.appendChild(item);
     feed.scrollTop = feed.scrollHeight;
+    return item;
+  }
+  // Guides from the site's own search index (real pages only), shown under answers and when the assistant fails.
+  function loadSearch() {
+    if (window.SiteSearch) return window.SiteSearch.load();
+    return new Promise((ok, fail) => { const s = document.createElement("script"); s.src = "/assets/site-search.js?v=2"; s.onload = ok; s.onerror = fail; document.head.append(s); })
+      .then(() => window.SiteSearch.load());
+  }
+  async function related(question, box, title) {
+    try {
+      await loadSearch();
+      const res = window.SiteSearch.search(question, isDutch() ? "nl" : "ar", 3).results;
+      if (!res.length) return false;
+      const wrap = document.createElement("div");
+      wrap.className = "gids-chat-related";
+      if (title) { const h = document.createElement("strong"); h.textContent = title; wrap.append(h); }
+      const ul = document.createElement("ul");
+      res.forEach(r => { const li = document.createElement("li"), a = document.createElement("a"); a.href = r.u; a.textContent = r.t; li.append(a); ul.append(li); });
+      wrap.append(ul); box.append(wrap); feed.scrollTop = feed.scrollHeight;
+      return true;
+    } catch (_) { return false; }
+  }
+  const TIMEOUT_MS = 30000;
+  async function ask(messages) {
+    let lastErr;
+    for (let attempt = 0; attempt < 2; attempt++) {          // one quiet retry for network errors and 5xx
+      const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), TIMEOUT_MS);
+      try {
+        const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages }), signal: ctl.signal });
+        let data = {}; try { data = await response.json(); } catch (_) {}
+        if (response.ok && data.reply) return data.reply;
+        lastErr = { code: response.status === 429 ? "busy" : response.status >= 500 ? "server" : "refused", status: response.status };
+        if (response.status < 500) break;
+      } catch (e) {
+        lastErr = { code: e.name === "AbortError" ? "timeout" : "network" };
+        if (e.name === "AbortError") break;
+      } finally { clearTimeout(timer); }
+    }
+    // technical code only, never the message text
+    console.warn("Gids chat unavailable:", lastErr.code, lastErr.status || "");
+    throw lastErr;
   }
 
   localize();
@@ -157,20 +221,27 @@
     feed.scrollTop = feed.scrollHeight;
 
     try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: history.slice(-8) }),
-      });
-      const data = await response.json();
-      if (!response.ok || !data.reply) throw new Error(data.error || "Request failed");
+      const reply = await ask(history.slice(-8));
       pending.remove();
-      history.push({ role: "assistant", content: data.reply });
-      addMessage(data.reply, "bot");
-    } catch (_) {
-      pending.textContent = isDutch()
-        ? "Ik kan nu niet antwoorden. Probeer het later opnieuw."
-        : "تعذّر الحصول على رد الآن. حاول مرة أخرى بعد قليل.";
+      history.push({ role: "assistant", content: reply });
+      const msg = addMessage(reply, "bot");
+      const context = history.filter(m => m.role === "user").slice(-2).map(m => m.content).join(" ");
+      related(context, msg, isDutch() ? "Gidsen op deze site:" : "أدلة من الموقع:");
+    } catch (err) {
+      history.pop();   // a failed question must not stay in the history (two user turns in a row break the next request)
+      const why = {
+        timeout: ["De assistent reageert nu te traag.", "المساعد يتأخر في الرد الآن."],
+        busy: ["De assistent is nu druk.", "المساعد مشغول الآن."],
+        network: ["Geen verbinding met de assistent.", "لا يوجد اتصال بالمساعد."],
+      }[err && err.code] || ["De assistent kan nu niet antwoorden.", "تعذّر الحصول على رد من المساعد الآن."];
+      pending.textContent = (isDutch() ? why[0] + " Probeer het later opnieuw. Misschien helpt een van deze gidsen:" : why[1] + " حاول بعد قليل. قد يفيدك أحد هذه الأدلة:");
+      const found = await related(text, pending, "");
+      if (!found) {
+        const a = document.createElement("a");
+        a.href = isDutch() ? "/nl/articles.html" : "/articles.html";
+        a.textContent = isDutch() ? "Alle gidsen bekijken" : "تصفح كل الأدلة";
+        pending.append(document.createElement("br"), a);
+      }
     } finally {
       send.disabled = false;
       send.textContent = isDutch() ? "Verstuur" : "إرسال";
