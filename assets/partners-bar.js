@@ -2,21 +2,23 @@
    - Shows only active offers whose dates include today and whose topics match the page.
    - Clearly labelled ("إعلان" / "Advertentie"), separate from the official news card.
    - Arabic text moves left-to-right (so each sentence enters with its first word), Dutch right-to-left.
-   - Pauses on hover/focus and while the tab is hidden; with prefers-reduced-motion it stands still.
+   - Calm: 30 px/s, a pause button, and it stops after 3 passes. Pauses on hover/focus and while the tab is hidden;
+     with prefers-reduced-motion it stands still.
    - The visitor can close it for this browser session. No tracking, no cookies. */
 (()=>{"use strict";
 if(window.__partnersBar)return;window.__partnersBar=true;
 const HOME=/^\/(nl\/)?(index\.html)?$/.test(location.pathname);
 const nl=(document.documentElement.lang||"ar").slice(0,2)==="nl";
-const T=nl?{ad:"Advertentie",code:"Code",close:"Sluiten",visit:"Bekijk",wa:"App via WhatsApp",all:"Alle aanbiedingen"}
-            :{ad:"إعلان",code:"كود الخصم",close:"إغلاق",visit:"زيارة",wa:"راسلهم واتساب",all:"كل العروض"};
+const T=nl?{pause:"Strook pauzeren",play:"Strook afspelen",ad:"Advertentie",code:"Code",close:"Sluiten",visit:"Bekijk",wa:"App via WhatsApp",all:"Alle aanbiedingen"}
+            :{pause:"إيقاف حركة الشريط",play:"تشغيل حركة الشريط",ad:"إعلان",code:"كود الخصم",close:"إغلاق",visit:"زيارة",wa:"راسلهم واتساب",all:"كل العروض"};
 const KEY="gn-partners-closed";
 try{if(sessionStorage.getItem(KEY)==="1")return;}catch(_){}
 const today=new Date().toISOString().slice(0,10);
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okUrl=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
-const SPEED=45; // px per second
+const SPEED=30; // px per second: calm reading speed
+const LOOPS=3;  // then it stands still (moving content must not run forever)
 function live(items){const path=location.pathname.toLowerCase();
   return (items||[]).filter(o=>o&&o.active===true&&okUrl(o.url)&&(!o.start||o.start<=today)&&(!o.end||o.end>=today)
     &&(!Array.isArray(o.topics)||!o.topics.length||o.topics.some(t=>{t=String(t).toLowerCase();return t==="home"?HOME:path.includes(t)})));}
@@ -35,6 +37,9 @@ const css=`
 .pt-code{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.12);border-radius:5px;padding:0 6px;line-height:22px;direction:ltr;unicode-bidi:isolate}
 .pt-go{color:#6cb6ff;font-weight:600}
 .pt-dot{display:inline-block;align-self:center;flex:none;width:5px;height:5px;border-radius:50%;background:#ee731c;margin:0 4px}
+.pt-p{flex:none;display:grid;place-items:center;width:34px!important;height:34px!important;min-width:0;min-height:0;padding:0;border:0;background:transparent;color:#a1a1a6;cursor:pointer}
+.pt-p:hover{color:#fff}.pt-p svg{width:13px;height:13px;fill:currentColor}
+.pt.pt-static .pt-p{display:none}
 .pt-x{flex:none;display:grid;place-items:center;width:34px!important;height:34px!important;min-width:0;min-height:0;padding:0;border:0;background:transparent;color:#a1a1a6;cursor:pointer}
 .pt-x:hover{color:#fff}
 .pt-x svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
@@ -43,6 +48,8 @@ const css=`
 .pt.pt-static .pt-copy:not(:first-child){display:none}
 @media print{.pt{display:none}}
 `;
+const PAUSE='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+const PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
 function item(o){
   const name=nl&&o.partner_nl?o.partner_nl:o.partner,title=(o.title&&(o.title[nl?"nl":"ar"]||o.title.ar||o.title.nl))||"",kind=(o.kind&&(o.kind[nl?"nl":"ar"]||o.kind.ar))||"";
   // strip_link "whatsapp": the strip opens a WhatsApp chat with the partner, with a ready message naming the site and the code
@@ -60,6 +67,7 @@ function render(items){
   const bar=document.createElement("aside");bar.className="pt";bar.dir=nl?"ltr":"rtl";bar.setAttribute("aria-label",T.ad);
   const one=items.map(item).join("");
   bar.innerHTML=`<span class="pt-ad">${T.ad}</span><div class="pt-view"><div class="pt-track"><div class="pt-copy">${one}</div></div></div>`
+    +`<button type="button" class="pt-p" aria-pressed="false" aria-label="${T.pause}">${PAUSE}</button>`
     +`<button type="button" class="pt-x" aria-label="${T.close}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></button>`;
   bar.querySelector(".pt-x").addEventListener("click",()=>{bar.remove();try{sessionStorage.setItem(KEY,"1")}catch(_){}});
   // right under the site header (same header site-chrome.js makes sticky); fall back to the top of <main>/<body>
@@ -78,9 +86,13 @@ function render(items){
     const w=copy.getBoundingClientRect().width,dur=w/SPEED*1000;
     const frames=nl?[{transform:"translateX(0)"},{transform:`translateX(${-w}px)`}]   // Dutch: right-to-left
                    :[{transform:`translateX(${-w}px)`},{transform:"translateX(0)"}];  // Arabic: left-to-right
-    anim=track.animate(frames,{duration:dur,iterations:Infinity,easing:"linear"});
+    anim=track.animate(frames,{duration:dur,iterations:LOOPS,easing:"linear"});
+    anim.onfinish=()=>{anim=null;bar.classList.add("pt-static");track.style.transform="none"};
   }
-  const pause=()=>anim&&anim.pause(),play=()=>anim&&!document.hidden&&anim.play();
+  let userPaused=false;
+  const pause=()=>anim&&anim.pause(),play=()=>anim&&!document.hidden&&!userPaused&&anim.play();
+  const pb=bar.querySelector(".pt-p");
+  pb.addEventListener("click",()=>{userPaused=!userPaused;pb.setAttribute("aria-pressed",String(userPaused));pb.setAttribute("aria-label",userPaused?T.play:T.pause);pb.innerHTML=userPaused?PLAY:PAUSE;userPaused?pause():play()});
   bar.addEventListener("mouseenter",pause);bar.addEventListener("mouseleave",play);
   bar.addEventListener("focusin",pause);bar.addEventListener("focusout",play);
   document.addEventListener("visibilitychange",()=>document.hidden?pause():play());

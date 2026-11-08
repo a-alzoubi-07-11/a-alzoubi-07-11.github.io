@@ -163,3 +163,6 @@ html[lang="nl"] .hm .hm-hero h1{max-width:20ch;letter-spacing:-.02em}
 @keyframes hm-shine-rtl{from{background-position:0% 0}to{background-position:100% 0}}
 @keyframes hm-shine-ltr{from{background-position:100% 0}to{background-position:0% 0}}
 @media(prefers-reduced-motion:reduce){.hm .hm-hero h1{animation:none!important;background:none!important;color:var(--ap-text)!important;-webkit-text-fill-color:currentColor!important}}
+/* search results must sit above the updates strip and later sections */
+.hm .hm-hero{position:relative;z-index:30}
+.hm #news-ticker{z-index:auto}

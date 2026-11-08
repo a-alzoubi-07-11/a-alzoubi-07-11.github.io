@@ -180,13 +180,13 @@ def page(L):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css?v=1">
 <link rel="stylesheet" href="/assets/guide.css?v=1">
-<link rel="stylesheet" href="/assets/apple.css?v=5">
+<link rel="stylesheet" href="/assets/apple.css?v=7">
 <link rel="stylesheet" href="/assets/tool-tiles.css?v=2">
 <link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
 <script src="/beroep/beroep.js?v=5" defer></script>
-<script src="/assets/site-chrome.js?v=8" defer></script>
+<script src="/assets/site-chrome.js?v=10" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>
 <main id="content" class="wrap"><nav class="breadcrumbs" aria-label="مسار التنقل / Kruimelpad"><ol>{crumbs}<li aria-current="page"><span>{t['crumb_here']}</span></li></ol></nav>

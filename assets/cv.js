@@ -311,6 +311,7 @@
       <section class="quality" aria-labelledby="quality-title"><div class="quality-head"><h3 id="quality-title">${x.quality}</h3><span id="quality-score"></span></div><div class="quality-bar"><span id="quality-fill"></span></div><ul id="quality-list" class="quality-list"></ul></section>
       <div id="translation-summary" role="status"></div>
       <div class="finish-preview"><div class="sheet-wrap" data-sheet-wrap><div class="sheet" id="finish-sheet"></div></div></div>
+      <section id="cv-motivation" class="motivation" aria-labelledby="mot-h"></section>
       <div class="download-box"><button type="button" class="primary-large" id="print" data-action="print">${x.print}</button><p class="hint">${x.printHint}</p>
       <div class="backup-row"><button type="button" class="small" data-action="export">${x.backup}</button><label class="upload-button small" for="import-input">${x.importBackup}<input id="import-input" type="file" accept="application/json,.json"></label></div><p class="hint">${x.backupHint}</p><p id="import-status" role="status"></p></div>`;
   }
@@ -336,7 +337,21 @@
       <button type="button" class="preview-fab" data-action="open-preview">${x.preview}</button>
       <div class="preview-overlay" id="preview-overlay" role="dialog" aria-modal="true" aria-label="${x.preview}" hidden><div class="overlay-bar"><strong>${x.preview}</strong><button type="button" class="small" data-action="close-preview">${x.closePreview}</button></div><div class="sheet-wrap" data-sheet-wrap><div class="sheet" id="overlay-sheet"></div></div></div>`;
     textPaths().forEach(p => { paintSlot(p); if (T.hasArabic(output(p)) && !states.has(tkey(p))) schedule(p); });
-    updatePreview(); refreshFinish();
+    updatePreview(); refreshFinish(); mountMotivation();
+  }
+  /* motivation letter: facts from this CV only (assets/cv-motivation.js) */
+  function mountMotivation() {
+    const host = document.getElementById('cv-motivation');
+    if (!host || !window.GNMotivation) return;
+    const yr = d => (d || '').slice(0, 4), clean = v => T.hasArabic(v || '') ? '' : (v || '').trim();
+    const facts = {
+      name: data.name.trim(), phone: data.phone.trim(), email: data.email.trim(),
+      experience: data.experience.map(e => ({ id: e.id, role: clean(output(`exp.${e.id}.role`)) || e.role.trim(), company: e.company.trim(),
+        years: yr(e.start) ? yr(e.start) + '–' + (e.current ? 'heden' : yr(e.end) || '') : '' })).filter(e => e.role),
+      skills: [...data.skills.map(id => S.skills.find(r => r[0] === id)?.[2]), ...data.customSkills.map(c => clean(output(`skill.${c.id}`)))].filter(Boolean),
+      languages: data.languages.map(l => { const n = clean(output(`lang.${l.id}`)); return n ? n + (l.level ? ' (' + l.level + ')' : '') : ''; }).filter(Boolean)
+    };
+    window.GNMotivation.mount(host, facts, ui);
   }
   function changeStep(next) {
     if (next === step) return;

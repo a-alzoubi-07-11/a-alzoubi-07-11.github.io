@@ -320,3 +320,12 @@ body.overlay-open{overflow:hidden}
 .cv-guide ul{padding-inline-start:1.2rem}
 .cv-guide li{margin:.25rem 0}
 .cv-guide a{overflow-wrap:anywhere}
+.motivation{margin:22px 0;padding:18px;border:1px solid #e5e5ea;border-radius:18px;background:#fff}
+.motivation h3{margin:0 0 6px}
+.mot-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.mot-form label{display:block;font-weight:600;font-size:14.5px;margin:10px 0 4px}
+.mot-form input,.mot-form textarea{box-sizing:border-box;width:100%;font:inherit;font-size:16px;padding:9px 11px;border:1px solid #c7c7cc;border-radius:12px}
+.mot-pick{border:0;padding:0;margin:12px 0 0}.mot-pick legend{font-weight:600;font-size:14.5px;padding:0}
+.mot-pick label{display:flex;gap:8px;align-items:center;font-weight:400;margin:6px 0}
+.mot-pre{white-space:pre-wrap;font:14.5px/1.6 system-ui,sans-serif;border:1px solid #d2d2d7;border-radius:12px;padding:14px;margin:0 0 10px;text-align:left;background:#fafafa}
+@media (max-width:760px){.mot-grid{grid-template-columns:1fr}}

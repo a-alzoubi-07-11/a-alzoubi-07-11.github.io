@@ -30,8 +30,8 @@
     checkH: 'تنبيهات على إجاباتك', routeH: 'الإقامة الدائمة: المساران', mapH: 'خريطة طريقك إلى الجنسية',
     adviceH: 'نصيحتنا لك', natH: 'التجنّس: فحص الشروط', contractH: 'تقييم عقد العمل', formH: 'الاستمارة والملاحق الصحيحة',
     docsH: 'الأوراق التي تجهّزها', todoH: 'ما المطلوب منك الآن، بالترتيب', rightsH: 'ما لك وما عليك',
-    disclaimer: 'هذا مؤشر جاهزية تقديري مبني على شروط IND المنشورة، وليس احتمال قبول رسمياً ولا قراراً، والأداة ليست تابعة لـ IND. IND وحده يقرر بعد فحص أوراقك.',
-    ok: 'متحقق', warn: 'يحتاج انتباهاً', fail: 'غير متحقق', na: 'لا ينطبق', done: 'لديك',
+    disclaimer: 'هذا ملخص لما تحقق وما ينقص وما هو غير محسوم من شروط IND المنشورة حسب إجاباتك، وليس نسبة قبول ولا قراراً، والأداة ليست تابعة لـ IND. IND وحده يقرر بعد فحص أوراقك.',
+    ok: 'متحقق', warn: 'غير محسوم', fail: 'غير متحقق', na: 'لا ينطبق', done: 'لديك',
     ready: 'جاهز تقريباً للتقديم', close: 'قريب: عالج النقاط الصفراء', notyet: 'ليس بعد: عالج النقاط الحمراء أولاً',
     eu: 'الإقامة الأوروبية الدائمة', euSub: 'EU-langdurig ingezetene · النوع V',
     reg: 'الإقامة الدائمة العادية', regSub: 'regulier onbepaalde tijd · النوع II',
@@ -109,12 +109,12 @@
       rule5: '5 سنوات إقامة متواصلة', rule3p: '3 سنوات سكن مع شريك هولندي + 3 سنوات إقامة', rule2: 'سنتان إقامة متواصلة + 10 سنوات إجمالاً', rule3s: '3 سنوات (بلا جنسية)',
       natPermitTemp: 'التجنّس يحتاج يوم التقديم إقامة دائمة أو بغرض غير مؤقت. غيّر غرضك أولاً.',
       natAge: 'التجنّس للبالغين؛ القاصر يتجنّس مع والديه (مجاناً تقريباً: 168 يورو لكل طفل).',
-      renRef: 'معفى غالباً: أنت لاجئ.', renMarried: 'معفى: متزوج من هولندي أو بشراكة مسجلة.', renBorn: 'معفى غالباً: وُلدت في هولندا وتسكن فيها.',
-      renSub: 'قد يُطلب منك التخلي عن جنسيتك (حماية ثانوية). الاستثناء ممكن إن كان التخلي مستحيلاً أو مكلفاً بشكل غير معقول، مع إثبات.',
-      renUnk: 'تحقق من قرارك: اللاجئ معفى، وصاحب الحماية الثانوية قد يُطلب منه التخلي.',
-      renDefault: 'يجب عادة التخلي عن جنسيتك الأصلية، إلا إن كان قانون بلدك يمنع ذلك أو كان مكلفاً بشكل غير معقول.',
+      renRef: 'معفى: لديك إقامة لجوء، فلا يطلب IND التخلي عن جنسيتك.', renMarried: 'معفى إن بقيت متزوجاً من هولندي أو شريكاً مسجلاً له يوم توقيع المرسوم الملكي.', renBorn: 'معفى: وُلدت في المملكة الهولندية وتسكن فيها.',
+      renSub: 'معفى: لديك إقامة لجوء (والحماية الثانوية مشمولة)، فلا يطلب IND التخلي عن جنسيتك.',
+      renUnk: 'معفى: لديك إقامة لجوء، فلا يطلب IND التخلي عن جنسيتك.',
+      renDefault: 'غير محسوم: يجب عادة التخلي عن جنسيتك بعد التجنس. لا يُطلب ذلك إن كان قانون بلدك يمنعه، أو كانت جنسيتك لدولة لا تعترف بها هولندا (مثل الأراضي الفلسطينية)، أو حصلت على إعفاء بسبب ضرر جدي تثبته بوثائق.',
       renStateless: 'لا جنسية لديك لتتخلى عنها.',
-      renEU: 'يجب عادة التخلي عن جنسيتك الأوروبية، إلا في الاستثناءات (مثل الزواج من هولندي).'
+      renEU: 'غير محسوم: يجب عادة التخلي عن جنسيتك الأوروبية، إلا في استثناءات IND (مثل الزواج من هولندي يوم توقيع المرسوم الملكي).'
     },
     adv: {
       natBetter: function (d) { return '<b>طريقك الأذكى قد يكون الجنسية مباشرة:</b> دخلك لا يكفي للإقامة الدائمة، لكن التجنّس لا يشترط دخلاً. ركّز على الاندماج (A2) وقدّم للتجنّس عبر البلدية' + (d ? ' من <b>' + d + '</b>' : '') + '.'; },
@@ -196,8 +196,8 @@
     checkH: 'Opmerkingen bij je antwoorden', routeH: 'Permanent verblijf: de twee routes', mapH: 'Je routekaart naar het Nederlanderschap',
     adviceH: 'Ons advies', natH: 'Naturalisatie: de voorwaarden', contractH: 'Beoordeling arbeidscontract', formH: 'Het juiste formulier en de bijlagen',
     docsH: 'Documenten die je klaarlegt', todoH: 'Wat je nu moet doen, op volgorde', rightsH: 'Rechten en plichten',
-    disclaimer: 'Dit is een indicatieve gereedheidsscore op basis van de gepubliceerde IND-voorwaarden, geen officiële slagingskans en geen besluit, en deze hulp is niet van de IND. Alleen de IND beslist na beoordeling van je documenten.',
-    ok: 'Voldaan', warn: 'Let op', fail: 'Niet voldaan', na: 'N.v.t.', done: 'Heb je al',
+    disclaimer: 'Dit is een overzicht van welke gepubliceerde IND-voorwaarden volgens jouw antwoorden voldaan, niet voldaan of nog onzeker zijn. Het is geen slagingskans en geen besluit, en deze hulp is niet van de IND. Alleen de IND beslist na beoordeling van je documenten.',
+    ok: 'Voldaan', warn: 'Nog onzeker', fail: 'Niet voldaan', na: 'N.v.t.', done: 'Heb je al',
     ready: 'Bijna klaar om aan te vragen', close: 'Dichtbij: los de gele punten op', notyet: 'Nog niet: los eerst de rode punten op',
     eu: 'EU-langdurig ingezetene', euSub: 'type V', reg: 'Regulier onbepaalde tijd', regSub: 'type II', nat: 'Nederlanderschap', natSub: 'naturalisatie',
     stars: 'van 5', today: 'Vandaag', now: 'Nu mogelijk', from: 'Vanaf', closed: 'Nog niet', unavail: 'Niet mogelijk', have: 'Heb je al',
@@ -262,11 +262,11 @@
       rule5: '5 jaar onafgebroken verblijf', rule3p: '3 jaar samenwonen met een Nederlandse partner + 3 jaar verblijf', rule2: '2 jaar onafgebroken + 10 jaar in totaal', rule3s: '3 jaar (staatloos)',
       natPermitTemp: 'Bij naturalisatie heb je op de aanvraagdatum een permanente of niet-tijdelijke vergunning nodig. Wijzig eerst je doel.',
       natAge: 'Naturalisatie is voor volwassenen; een kind naturaliseert mee met een ouder (€ 168 per kind).',
-      renRef: 'Meestal vrijgesteld: je bent vluchteling.', renMarried: 'Vrijgesteld: getrouwd of geregistreerd met een Nederlander.', renBorn: 'Meestal vrijgesteld: in Nederland geboren en hier wonend.',
-      renSub: 'Afstand doen kan nodig zijn (subsidiaire bescherming). Uitzondering mogelijk als afstand onmogelijk of onredelijk duur is, met bewijs.',
-      renUnk: 'Controleer je beschikking: een vluchteling is vrijgesteld, bij subsidiaire bescherming kan afstand nodig zijn.',
-      renDefault: 'Meestal moet je afstand doen van je nationaliteit, tenzij je land dat niet toestaat of het onredelijk duur is.',
-      renStateless: 'Je hebt geen nationaliteit om afstand van te doen.', renEU: 'Meestal afstand van je EU-nationaliteit, behalve bij uitzonderingen (zoals huwelijk met een Nederlander).'
+      renRef: 'Vrijgesteld: met een verblijfsvergunning asiel vraagt de IND geen afstand.', renMarried: 'Vrijgesteld als je op de datum van het Koninklijk Besluit getrouwd of geregistreerd partner bent van een Nederlander.', renBorn: 'Vrijgesteld: geboren in het Koninkrijk en je woont er nu.',
+      renSub: 'Vrijgesteld: je hebt een verblijfsvergunning asiel (ook subsidiaire bescherming), dus de IND vraagt geen afstand.',
+      renUnk: 'Vrijgesteld: met een verblijfsvergunning asiel vraagt de IND geen afstand.',
+      renDefault: 'Nog onzeker: meestal moet je na naturalisatie afstand doen. Niet als je land dat niet toestaat, als je nationaliteit van een door Nederland niet erkende staat is (zoals de Palestijnse Gebieden), of als je vrijstelling krijgt wegens ernstige gevolgen die je met documenten aantoont.',
+      renStateless: 'Je hebt geen nationaliteit om afstand van te doen.', renEU: 'Nog onzeker: meestal afstand van je EU-nationaliteit, behalve bij IND-uitzonderingen (zoals huwelijk met een Nederlander op de datum van het Koninklijk Besluit).'
     },
     adv: {
       natBetter: function (d) { return '<b>Je slimste route is misschien direct naturalisatie:</b> je inkomen is te laag voor permanent verblijf, maar naturalisatie heeft geen inkomenseis. Focus op inburgering (A2) en vraag aan via de gemeente' + (d ? ' vanaf <b>' + d + '</b>' : '') + '.'; },
@@ -578,8 +578,8 @@
       else if (dpart === 'married') ren = crit('renounce', 'ok', T.n.renMarried);
       else if (origin === 'born') ren = crit('renounce', 'ok', T.n.renBorn);
       else if (asylum && ground === 'refugee') ren = crit('renounce', 'ok', T.n.renRef);
-      else if (asylum && ground === 'subsidiary') ren = crit('renounce', 'warn', T.n.renSub);
-      else if (asylum) ren = crit('renounce', 'warn', T.n.renUnk);
+      else if (asylum && ground === 'subsidiary') ren = crit('renounce', 'ok', T.n.renSub);
+      else if (asylum) ren = crit('renounce', 'ok', T.n.renUnk);
       else if (p === 'eu_citizen') ren = crit('renounce', 'warn', T.n.renEU);
       else ren = crit('renounce', 'warn', T.n.renDefault);
       nl1.push(ren);
@@ -612,13 +612,17 @@
     for (var i = 1; i <= 5; i++) h += '<span class="' + (s >= i ? 'on' : s >= i - 0.5 ? 'half' : '') + '">★</span>';
     return '<span class="prc-stars" aria-hidden="true">' + h + '</span>';
   }
+  function tally(r) {
+    var ok = r.list.filter(function (c) { return c.st === 'ok'; }).length;
+    return '<p class="prc-tally"><span class="ok">' + T.ok + ': ' + ok + '</span><span class="warn">' + T.warn + ': ' + r.warns + '</span><span class="fail">' + T.fail + ': ' + r.fails + '</span></p>';
+  }
   function badge(st) { return '<span class="prc-badge ' + st + '">' + T[st] + '</span>'; }
   function verdict(r) { return r.fails ? T.notyet : r.warns ? T.close : T.ready; }
   function card(r, name, sub, best) {
     if (!r.avail) return '<div class="prc-route ' + (r.have ? 'ok have' : 'na') + '"><h4>' + name + ' <small lang="nl" dir="ltr">' + sub + '</small></h4><p>' + badge(r.have ? 'ok' : 'na') + ' ' + (r.have ? T.done + '. ' : '') + r.why + '</p></div>';
     var cl = r.fails ? 'fail' : r.warns ? 'warn' : 'ok';
     return '<div class="prc-route ' + cl + (best ? ' best' : '') + '"><h4>' + name + ' <small lang="nl" dir="ltr">' + sub + '</small></h4>'
-      + '<div class="prc-score"><b dir="ltr">' + r.pct + '%</b>' + stars(r.stars) + '<span>' + r.stars + ' ' + T.stars + '</span></div>'
+      + tally(r)
       + '<p class="prc-verdict">' + verdict(r) + '</p><ul class="prc-crit">' + r.list.map(function (c) {
         return '<li class="' + c.st + '">' + badge(c.st) + ' <b>' + T.c[c.id] + '</b>' + (c.note ? '<br><span>' + c.note + '</span>' : '') + '</li>';
       }).join('') + '</ul></div>';
@@ -682,7 +686,7 @@
     // contract
     if (R.contract) {
       var cs = R.contract.score, tip = cs >= 5 ? T.contract.tip5 : cs === 4 ? T.contract.tip4 : cs === 3 ? T.contract.tip3 : T.contract.tip1;
-      h += '<section><h3>' + T.contractH + '</h3><div class="prc-contract"><b>' + T.contract[R.contract.type] + '</b><div class="prc-score">' + stars(cs) + '<span>' + cs + ' ' + T.stars + '</span></div><p>' + tip + (R.contract.low ? ' ' + T.contract.low : '') + '</p></div></section>';
+      h += '<section><h3>' + T.contractH + '</h3><div class="prc-contract"><b>' + T.contract[R.contract.type] + '</b><p>' + tip + (R.contract.low ? ' ' + T.contract.low : '') + '</p></div></section>';
     }
 
     // todo

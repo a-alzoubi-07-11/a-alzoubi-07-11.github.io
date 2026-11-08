@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "_help": "Single source for figures and rules that appear in several guides and tools. verifiedAt = the day the official source was actually read (not the day a page was edited). Update verifiedAt only after re-reading the source. tools/check_facts.py fails the site guard when a page or tool disagrees with this file.",
+  "facts": {
+    "ind.leges.naturalisation": {
+      "year": 2026,
+      "verifiedAt": "2026-11-08",
+      "source": "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
+      "values": {"single": 1139, "withPartner": 1454, "asylumOrStatelessSingle": 847, "asylumOrStatelessWithPartner": 1163, "minorChild": 168}
+    },
+    "ind.leges.permanent": {
+      "year": 2026,
+      "verifiedAt": "2026-11-08",
+      "source": "https://ind.nl/nl/leges-kosten-van-een-aanvraag",
+      "values": {"regularOrEuAdult": 254, "regularOrEuMinor": 85, "asylumDocumentRenewal": 85, "asylumDocumentRenewalMinor": 46}
+    },
+    "ind.naturalisation.renunciationExceptions": {
+      "verifiedAt": "2026-11-08",
+      "source": "https://ind.nl/nl/afstand-nationaliteit",
+      "values": ["married or registered partner of a Dutch national on the date the Koninklijk Besluit is signed",
+                 "verblijfsvergunning asiel (refugee or subsidiary protection)",
+                 "EU long-term resident permit with the international-protection annotation",
+                 "RANOV permit granted in 2007 or 2008",
+                 "born in the Kingdom and living there now",
+                 "nationality of a state the Netherlands does not recognise (e.g. Palestinian Territories, Taiwan)",
+                 "country does not allow renunciation (law or practice)",
+                 "exemption on request for serious consequences, with documents"]
+    },
+    "ind.naturalisation.permitValidity": {
+      "verifiedAt": "2026-11-08",
+      "source": "https://ind.nl/nl/nederlanderschap/nederlander-worden-door-naturalisatie",
+      "values": {"rule": "permit valid at application, during the procedure and on the ceremony day; always renewed on time", "minimumRemainingValidity": null}
+    }
+  }
+}

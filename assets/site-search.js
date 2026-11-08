@@ -103,6 +103,7 @@ function search(query,lang,limit=8){
     else if(qc.length>=5&&doc.compact.includes(qc))score+=5;
     if(doc.it.l===lang)score*=1.6;
     if(doc.it.y==="topic")score*=.7;
+    if(doc.it.y==="tool")score*=1.3;   /* a tool is usually what people want when its name matches */
     scored.push({doc,score});
   }
   scored.sort((a,b)=>b.score-a.score);
@@ -123,8 +124,8 @@ function suggest(query){
 }
 
 /* ---------- UI ---------- */
-const TXT={ar:{ph:"مثلاً: لمّ الشمل، بدل السكن",none:"لم نجد نتيجة مطابقة.",mean:"هل تقصد:",try:"جرّب أحد هذه المواضيع:",guide:"دليل",tool:"أداة",topic:"قسم",page:"صفحة",other:"بالهولندية",hint:"اكتب كلمة أو كلمتين، بالعربية أو الهولندية، ولا تقلق من الأخطاء الإملائية.",pop:"الأكثر بحثاً",count:n=>n+" نتيجة"},
- nl:{ph:"Bijv. huurtoeslag, DigiD",none:"Geen passend resultaat gevonden.",mean:"Bedoel je:",try:"Probeer een van deze onderwerpen:",guide:"Gids",tool:"Hulpmiddel",topic:"Onderwerp",page:"Pagina",other:"in het Arabisch",hint:"Typ een of twee woorden, in het Nederlands of Arabisch. Tikfouten zijn geen probleem.",pop:"Veelgezocht",count:n=>n+" resultaten"}};
+const TXT={ar:{loading:"جارٍ تحميل البحث…",fail:"تعذّر تحميل البحث الآن. تحقق من الاتصال وحاول مرة أخرى، أو تصفح",all:"كل الأدلة",retry:"حاول مرة أخرى",ph:"مثلاً: لمّ الشمل، بدل السكن",none:"لم نجد نتيجة مطابقة.",mean:"هل تقصد:",try:"جرّب أحد هذه المواضيع:",guide:"دليل",tool:"أداة",topic:"قسم",page:"صفحة",other:"بالهولندية",hint:"اكتب كلمة أو كلمتين، بالعربية أو الهولندية، ولا تقلق من الأخطاء الإملائية.",pop:"الأكثر بحثاً",count:n=>n+" نتيجة"},
+ nl:{loading:"Zoeken wordt geladen…",fail:"Zoeken lukt nu niet. Controleer je verbinding en probeer opnieuw, of bekijk",all:"alle gidsen",retry:"Opnieuw proberen",ph:"Bijv. huurtoeslag, DigiD",none:"Geen passend resultaat gevonden.",mean:"Bedoel je:",try:"Probeer een van deze onderwerpen:",guide:"Gids",tool:"Hulpmiddel",topic:"Onderwerp",page:"Pagina",other:"in het Arabisch",hint:"Typ een of twee woorden, in het Nederlands of Arabisch. Tikfouten zijn geen probleem.",pop:"Veelgezocht",count:n=>n+" resultaten"}};
 const POPULAR={ar:["لم الشمل","بدل السكن","zorgtoeslag","الحد الأدنى للأجر","DigiD","الجنسية","تمويل الدراسة","قسيمة الراتب"],
  nl:["gezinshereniging","huurtoeslag","zorgtoeslag","minimumloon","DigiD","naturalisatie","studiefinanciering","loonstrook"]};
 const CSS=`.ss-list{list-style:none;margin:8px 0 0;padding:6px;background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.14);max-height:min(62vh,520px);overflow:auto;text-align:start;font-family:var(--ap-font,system-ui)}
@@ -133,8 +134,8 @@ const CSS=`.ss-list{list-style:none;margin:8px 0 0;padding:6px;background:#fff;b
 .ss-opt{display:block;padding:10px 12px;border-radius:10px;color:#1d1d1f;text-decoration:none;cursor:pointer}
 .ss-opt[aria-selected="true"],.ss-opt:hover{background:#f2f2f5}
 .ss-t{display:block;font-size:15px;font-weight:600;line-height:1.45}
-.ss-m{display:block;font-size:12.5px;color:#6e6e73;margin-top:2px;line-height:1.5}
-.ss-note{padding:10px 12px;font-size:14px;color:#6e6e73;line-height:1.6}
+.ss-m{display:block;font-size:12.5px;color:#5e5e63;margin-top:2px;line-height:1.5}
+.ss-note{padding:10px 12px;font-size:14px;color:#5e5e63;line-height:1.6}
 .ss-note button,.ss-chip{font:inherit;font-size:14px;border:0;background:#f2f2f5;color:#1d1d1f;border-radius:999px;padding:.3rem .8rem;margin:4px 4px 0 0;cursor:pointer}
 .ss-note button.ss-fix{background:none;color:#0066cc;padding:0;margin:0;text-decoration:underline}
 .ss-chip:hover{background:#e8e8ed}
@@ -165,7 +166,14 @@ function attach(input,opts={}){
     list.innerHTML=results.map((r,i)=>`<li role="presentation"><a class="ss-opt" role="option" id="${id}-o${i}" href="${esc(r.u)}"><span class="ss-t">${esc(r.t)}</span><span class="ss-m">${esc([T[r.y]||"",r.c,r.l!==lang?T.other:""].filter(Boolean).join(" · "))}</span></a></li>`).join("");
     live.textContent=T.count(results.length);open(true);mark();
   }
-  function run(){const q=input.value.trim();if(!q){renderEmpty();return}load().then(()=>render(q)).catch(()=>{list.innerHTML=`<li class="ss-note">${esc(T.none)}</li>`;open(true)})}
+  function run(){
+    const q=input.value.trim();if(!q){renderEmpty();return}
+    if(!DATA){list.innerHTML=`<li class="ss-note" role="presentation">${esc(T.loading)}</li>`;items=[];active=-1;open(true);live.textContent=T.loading}
+    load().then(()=>{if(input.value.trim()===q)render(q)}).catch(()=>{
+      LOADING=null;items=[];active=-1;   // allow a new attempt
+      list.innerHTML=`<li class="ss-note" role="presentation">${esc(T.fail)} <a href="${lang==="nl"?"/nl/articles.html":"/articles.html"}">${esc(T.all)}</a>.<div><button type="button" class="ss-chip ss-retry">${esc(T.retry)}</button></div></li>`;
+      live.textContent=T.fail;open(true)});
+  }
   input.addEventListener("input",()=>{clearTimeout(timer);timer=setTimeout(run,70)});
   input.addEventListener("focus",()=>{load();run()});
   input.addEventListener("keydown",e=>{
@@ -175,7 +183,7 @@ function attach(input,opts={}){
     else if(e.key==="Escape"){open(false);opts.onEscape&&opts.onEscape()}
   });
   list.addEventListener("mousedown",e=>{if(e.target.closest("button"))e.preventDefault()});
-  list.addEventListener("click",e=>{const b=e.target.closest("[data-q]");if(b){input.value=b.dataset.q;input.focus();run()}});
+  list.addEventListener("click",e=>{if(e.target.closest(".ss-retry")){input.focus();run();return}const b=e.target.closest("[data-q]");if(b){input.value=b.dataset.q;input.focus();run()}});
   document.addEventListener("click",e=>{if(!opts.keepOpen&&!list.contains(e.target)&&e.target!==input)open(false)});
   return {run,close:()=>open(false)};
 }

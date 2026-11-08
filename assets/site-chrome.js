@@ -61,7 +61,7 @@ if(header){
 
 /* ---- site search: a magnifier in every header opens the forgiving search ---- */
 const L=lang==="nl"?{btn:"Zoeken",close:"Sluiten",label:"Zoek op de website"}:{btn:"بحث",close:"إغلاق",label:"ابحث في الموقع"};
-function loadSearch(){return window.SiteSearch?Promise.resolve():new Promise((ok,fail)=>{const s=document.createElement("script");s.src="/assets/site-search.js?v=1";s.onload=ok;s.onerror=fail;document.head.append(s)})}
+function loadSearch(){return window.SiteSearch?Promise.resolve():new Promise((ok,fail)=>{const s=document.createElement("script");s.src="/assets/site-search.js?v=2";s.onload=ok;s.onerror=fail;document.head.append(s)})}
 let ov=null,lastFocus=null;
 function openSearch(){
   const inline=document.getElementById("siteSearchInput");
@@ -74,7 +74,7 @@ function openSearch(){
     ov.addEventListener("click",e=>{if(e.target===ov)closeSearch()});
     ov.querySelector(".sc-close").addEventListener("click",closeSearch);
     ov.addEventListener("keydown",e=>{if(e.key==="Escape")closeSearch();if(e.key==="Tab"){const f=[...ov.querySelectorAll("input,button,a[href]")].filter(x=>x.offsetParent);if(!f.length)return;const first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
-    loadSearch().then(()=>window.SiteSearch.attach(ov.querySelector("input"),{keepOpen:true,onEscape:closeSearch,container:ov.querySelector(".sc-panel")})).catch(()=>{});
+    loadSearch().then(()=>window.SiteSearch.attach(ov.querySelector("input"),{keepOpen:true,onEscape:closeSearch,container:ov.querySelector(".sc-panel")})).catch(()=>{const p=document.createElement("p");p.className="ss-note";p.setAttribute("role","alert");p.innerHTML=lang==="nl"?'Zoeken lukt nu niet. Bekijk <a href="/nl/articles.html">alle gidsen</a>.':'تعذّر تحميل البحث الآن. تصفح <a href="/articles.html">كل الأدلة</a>.';ov.querySelector(".sc-panel").append(p)});
   }
   ov.hidden=false;document.documentElement.style.overflow="hidden";
   requestAnimationFrame(()=>{ov.classList.add("sc-open");ov.querySelector("input").focus()});
@@ -109,5 +109,5 @@ check();
 void rtl;
 
 /* ---- partner offers bar (only when assets/partners.json has an active offer) ---- */
-if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=9";ps.defer=true;document.head.append(ps);}
+if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=10";ps.defer=true;document.head.append(ps);}
 })();
