@@ -134,8 +134,8 @@ const CSS=`.ss-list{list-style:none;margin:8px 0 0;padding:6px;background:#fff;b
 .ss-opt{display:block;padding:10px 12px;border-radius:10px;color:#1d1d1f;text-decoration:none;cursor:pointer}
 .ss-opt[aria-selected="true"],.ss-opt:hover{background:#f2f2f5}
 .ss-t{display:block;font-size:15px;font-weight:600;line-height:1.45}
-.ss-m{display:block;font-size:12.5px;color:#6e6e73;margin-top:2px;line-height:1.5}
-.ss-note{padding:10px 12px;font-size:14px;color:#6e6e73;line-height:1.6}
+.ss-m{display:block;font-size:12.5px;color:#5e5e63;margin-top:2px;line-height:1.5}
+.ss-note{padding:10px 12px;font-size:14px;color:#5e5e63;line-height:1.6}
 .ss-note button,.ss-chip{font:inherit;font-size:14px;border:0;background:#f2f2f5;color:#1d1d1f;border-radius:999px;padding:.3rem .8rem;margin:4px 4px 0 0;cursor:pointer}
 .ss-note button.ss-fix{background:none;color:#0066cc;padding:0;margin:0;text-decoration:underline}
 .ss-chip:hover{background:#e8e8ed}

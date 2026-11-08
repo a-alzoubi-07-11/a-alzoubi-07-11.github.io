@@ -6,7 +6,7 @@
    mixes dark cards with a light background. */
 :root{
   color-scheme:light;
-  --ap-bg:#f5f5f7; --ap-surface:#fff; --ap-text:#1d1d1f; --ap-text-2:#6e6e73; --ap-text-3:#86868b;
+  --ap-bg:#f5f5f7; --ap-surface:#fff; --ap-text:#1d1d1f; --ap-text-2:#5e5e63; --ap-text-3:#6b6b70;
   --ap-sep:#d2d2d7; --ap-sep-soft:#e8e8ed; --ap-fill:#ececf0; --ap-link:#0066cc; --ap-blue:#0071e3; --ap-blue-h:#0077ed;
   --ap-orange:#ff6b1a; --ap-r:18px;
   --ap-font:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Arabic","Segoe UI","Noto Sans Arabic","Noto Sans",Tahoma,Arial,sans-serif;

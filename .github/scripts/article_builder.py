@@ -96,7 +96,7 @@ def build(lang, a, today):
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(a["title"])}"><meta name="twitter:description" content="{e(a["desc"])}">'
             f'<meta name="twitter:image" content="{SITE}/assets/og-image.png">\n'
             '<meta name="google-site-verification" content="A9hem9lFx7-Zdjg2rwL9IQqAU1kmCPdOonknPoIP_0">\n'
-            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=5"><script src="/assets/guide.js?v=2" defer></script>\n'
+            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=6"><script src="/assets/guide.js?v=2" defer></script>\n'
             f'<link rel="canonical" href="{me}"><link rel="alternate" hreflang="ar" href="{ar_u}"><link rel="alternate" hreflang="nl" href="{nl_u}"><link rel="alternate" hreflang="x-default" href="{ar_u}">\n'
             f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n</head>\n')
     header = re.search(r"<body>.*?</header>", tpl, re.S).group(0)
@@ -118,7 +118,7 @@ def build(lang, a, today):
             f'{video_block(lang, a["videos"])}<section id="faq"><h2>{t["faq_h"]}</h2>\n{faq}\n</section>\n</div>'
             f'<section id="sources"><h2>{t["src_h"]}</h2><p>{t["src_p"].format(d=dt)}</p><ul>{sources}</ul></section>{t["author"]}{t["closing"]}</article>'
             f'<section class="related-guides"><h2>{t["rel_h"]}</h2><ul>{related}</ul><a href="{cat_href}">{t["cat_all"].format(c=cat_name)}</a></section></main>\n')
-    scripts = '<script src="/assets/chatbot.js?v=5" defer></script><script src="/assets/site-chrome.js?v=9" defer></script>\n<script src="/assets/video-embed.js?v=2" defer></script>\n'
+    scripts = '<script src="/assets/chatbot.js?v=5" defer></script><script src="/assets/site-chrome.js?v=10" defer></script>\n<script src="/assets/video-embed.js?v=2" defer></script>\n'
     html_tag = f'<html lang="{lang}" dir="{"rtl" if lang == "ar" else "ltr"}" data-fixed-language="{lang}" data-ad-reviewed="false">'
     head = re.sub(r"<html[^>]*>", html_tag, head, count=1)
     return head + header + "\n" + main + footer + "\n" + scripts + "</body></html>\n"
