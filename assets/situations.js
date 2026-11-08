@@ -67,7 +67,7 @@
       tip: nl ? 'Controleer je loonstrook elke maand: fouten zie je daar eerst.' : 'افحص قسيمة راتبك كل شهر: الأخطاء تظهر فيها أولاً.',
       steps: [
         [nl ? 'Kansrijke beroepen' : 'المهن المطلوبة', nl ? 'Waar is werk in 2026–2027?' : 'أين العمل في 2026–2027؟', A('trending-jobs-2026')],
-        [nl ? 'Maak je Nederlandse cv' : 'اصنع سيرتك الذاتية', nl ? 'In vier stappen, gratis.' : 'بأربع خطوات ومجاناً.', P('cv.html')],
+        [nl ? 'Maak je Nederlandse cv' : 'اصنع سيرتك الذاتية', nl ? 'In zes stappen, gratis.' : 'بست خطوات ومجاناً.', P('cv.html')],
         [nl ? 'Je arbeidscontract' : 'افهم عقد عملك', nl ? 'Rechten, proeftijd en opzegging.' : 'الحقوق وفترة التجربة والإنهاء.', A('employment-contracts-labor-law-2026')],
         [nl ? 'Je loonstrook' : 'اقرأ قسيمة راتبك', nl ? 'Bruto, netto en inhoudingen.' : 'الإجمالي والصافي والاقتطاعات.', A('dutch-payslip-explained')],
         [nl ? 'Minimumloon 2026' : 'الحد الأدنى للأجور 2026', nl ? 'Krijg je genoeg?' : 'هل تحصل على حقك؟', A('minimum-wage-netherlands')]
