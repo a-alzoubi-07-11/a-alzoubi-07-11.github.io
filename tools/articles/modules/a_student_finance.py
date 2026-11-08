@@ -24,7 +24,7 @@ body=(
 +T([['<strong>Basisbeurs</strong>','منحة أساسية، مبلغها يختلف بين من يسكن مع أهله (thuiswonend) ومن يسكن خارجهم (uitwonend).','هبة بشرط الدبلوم خلال 10 سنوات (MBO 3–4 وHBO وجامعة). في MBO مستوى 1 و2 هبة دائماً.'],
 ['<strong>Aanvullende beurs</strong>','منحة إضافية تتوقف على دخل والديك، لا دخلك.','مثل basisbeurs.'],
 ['<strong>Rentedragende lening</strong>','قرض اختياري تطلبه أنت.','دين بفائدة دائماً.'],
-['<strong>Studentenreisproduct</strong>','بطاقة مواصلات مجانية أو مخفّضة.','هبة بشرط الدبلوم خلال 10 سنوات.'],
+['<strong>Studentenreisproduct</strong>','بطاقة مواصلات مجانية أو مخفّضة (<a href="/articles/ns-train-ov-chipkaart-ovpay.html">دليل المواصلات</a>).','هبة بشرط الدبلوم خلال 10 سنوات.'],
 ['<strong>Collegegeldkrediet</strong>','قرض لدفع الرسوم الدراسية في HBO والجامعة فقط.','دين.']],['الجزء','ما هو','هبة أم دين؟'])
 +'<p>طالب MBO دون 18 سنة لا يحصل على منحة ولا قرض، بل على بطاقة المواصلات فقط.</p>'
 '<h2 id="amounts">مبالغ 2026 الشهرية القصوى</h2><p>المبالغ التالية من صفحة «Bedragen» الرسمية لدى DUO، وهي <strong>حدود قصوى</strong> وليست ما يناله كل طالب. الجزء الأقصى من aanvullende beurs لا يناله إلا من كان دخل والديه منخفضاً.</p>'
@@ -71,7 +71,7 @@ body=(
 +T([['<strong>Basisbeurs</strong>','Basisbedrag, verschilt tussen thuiswonend en uitwonend.','Gift als je binnen 10 jaar een diploma haalt (mbo 3–4, hbo, wo). In mbo niveau 1 en 2 altijd een gift.'],
 ['<strong>Aanvullende beurs</strong>','Extra beurs afhankelijk van het inkomen van je ouders.','Zoals basisbeurs.'],
 ['<strong>Rentedragende lening</strong>','Vrijwillige lening die je zelf aanvraagt.','Altijd schuld, met rente.'],
-['<strong>Studentenreisproduct</strong>','Gratis of met korting reizen.','Gift als je binnen 10 jaar een diploma haalt.'],
+['<strong>Studentenreisproduct</strong>','Gratis of met korting reizen (<a href="/nl/articles/ns-train-ov-chipkaart-ovpay.html">ov-gids</a>).','Gift als je binnen 10 jaar een diploma haalt.'],
 ['<strong>Collegegeldkrediet</strong>','Lening voor collegegeld, alleen hbo en wo.','Schuld.']],['Onderdeel','Wat is het','Gift of schuld?'])
 +'<p>Een mbo-student jonger dan 18 krijgt geen beurs of lening, alleen het reisproduct.</p>'
 '<h2 id="amounts">Maximale maandbedragen 2026</h2><p>Onderstaande bedragen komen van de officiële DUO-pagina “Bedragen”. Het zijn <strong>maxima</strong>, niet wat iedere student krijgt. Het maximum van de aanvullende beurs is er alleen bij een laag ouderinkomen.</p>'

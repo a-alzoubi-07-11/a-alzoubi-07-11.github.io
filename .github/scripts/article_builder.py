@@ -87,13 +87,14 @@ def build(lang, a, today):
             {"@type": "ListItem", "position": 2, "name": t["articles"], "item": SITE + ("/articles.html" if lang == "ar" else "/nl/articles.html")},
             {"@type": "ListItem", "position": 3, "name": a["title"], "item": me}]},
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", ans)}} for q, ans in a["faq"]]}]}
-    head = (head_pre + f'<title>{e(a["title"])}</title><meta name="description" content="{e(a["desc"])}">\n'
+    st = a.get("seo_title") or a["title"]  # optional shorter <title>/og/twitter title; H1 keeps the full title
+    head = (head_pre + f'<title>{e(st)}</title><meta name="description" content="{e(a["desc"])}">\n'
             '<meta name="robots" content="index,follow,max-image-preview:large"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f5f5f7">\n'
             f'<meta property="og:type" content="article"><meta property="og:locale" content="{t["og_locale"]}"><meta property="og:locale:alternate" content="{t["og_alt"]}">'
-            f'<meta property="og:site_name" content="{"دليل هولندا بالعربية" if lang == "ar" else "Gids Nederland"}"><meta property="og:title" content="{e(a["title"])}">'
+            f'<meta property="og:site_name" content="{"دليل هولندا بالعربية" if lang == "ar" else "Gids Nederland"}"><meta property="og:title" content="{e(st)}">'
             f'<meta property="og:description" content="{e(a["desc"])}"><meta property="og:url" content="{me}">'
             f'<meta property="og:image" content="{SITE}/assets/og-image.png"><meta property="og:image:alt" content="{e(a["title"])}">'
-            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(a["title"])}"><meta name="twitter:description" content="{e(a["desc"])}">'
+            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(st)}"><meta name="twitter:description" content="{e(a["desc"])}">'
             f'<meta name="twitter:image" content="{SITE}/assets/og-image.png">\n'
             '<meta name="google-site-verification" content="A9hem9lFx7-Zdjg2rwL9IQqAU1kmCPdOonknPoIP_0">\n'
             '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=7"><script src="/assets/guide.js?v=2" defer></script>\n'
