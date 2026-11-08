@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-07T10:27Z",
+ "checked_at": "2026-11-08T10:34Z",
  "external": {
   "total": 622,
   "broken": [],
@@ -461,6 +461,16 @@
   ],
   "redirected": [
    {
+    "url": "https://ind.nl/nl/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "code": 200,
+    "final": "https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis",
+    "soft404": false,
+    "pages": [
+     "articles/dutch-naturalisation-guide.html",
+     "nl/articles/dutch-naturalisation-guide.html"
+    ]
+   },
+   {
     "url": "https://mijn.belastingdienst.nl/",
     "code": 200,
     "final": "https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst",
@@ -528,10 +538,10 @@
   "dead_menu_links": []
  },
  "index": {
-  "sitemap_urls": 176,
+  "sitemap_urls": 178,
   "google": {
    "status": "ok",
-   "checked": 176,
+   "checked": 178,
    "indexed": 131,
    "not_indexed": [
     {
@@ -556,7 +566,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -571,7 +581,7 @@
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -596,7 +606,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -726,7 +736,7 @@
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     },
     {
@@ -757,6 +767,16 @@
     {
      "url": "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
      "state": "Discovered - currently not indexed",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/templates.html",
+     "state": "URL is unknown to Google",
+     "last_crawl": null
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/templates.html",
+     "state": "URL is unknown to Google",
      "last_crawl": null
     }
    ]
