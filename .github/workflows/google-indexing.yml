@@ -1,0 +1,73 @@
+name: Google indexing monitor
+
+on:
+  schedule:
+    - cron: '45 4 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['sitemap.xml', '**/*.html', '.github/scripts/google_indexing.py', '.github/workflows/google-indexing.yml', 'tests/test_google_indexing.py']
+  pull_request:
+    paths: ['.github/scripts/google_indexing.py', '.github/scripts/health_agent.py', '.github/workflows/google-indexing.yml', 'tests/test_google_indexing.py']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: google-indexing-monitor
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check error accounting, submission and cooldowns
+        run: python -m unittest discover -s tests -p 'test_google_indexing.py' -v
+  monitor:
+    needs: checks
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Google authentication client
+        run: pip install -q requests google-auth
+      - name: Inspect pages and submit sitemap when needed
+        id: inspect
+        continue-on-error: true
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_PROPERTY: 'https://gidsnederland.nl/'
+          GSC_LIMIT: '400'
+        run: python .github/scripts/google_indexing.py
+      - name: Keep complete indexing reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-indexing-report
+          path: docs/indexing/
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Save progress for the next check
+        if: always() && hashFiles('docs/indexing/report.json') != ''
+        run: |
+          git config user.name "google-indexing-bot"
+          git config user.email "google-indexing-bot@users.noreply.github.com"
+          git add docs/indexing/
+          if ! git diff --cached --quiet; then
+            git commit -m "Google indexing: update status and submission progress"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Surface API or permission failures
+        if: always() && steps.inspect.outcome == 'failure'
+        run: exit 1

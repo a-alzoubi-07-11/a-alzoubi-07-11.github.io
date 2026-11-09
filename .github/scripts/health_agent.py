@@ -141,15 +141,8 @@ def check_google(urls):
     creds = service_account.Credentials.from_service_account_info(json.loads(raw), scopes=['https://www.googleapis.com/auth/webmasters.readonly'])
     s = AuthorizedSession(creds)
     prop = os.environ.get('GSC_PROPERTY', 'sc-domain:gidsnederland.nl')
-    res, not_indexed = {}, []
-    for u in urls[:int(os.environ.get('GSC_LIMIT', '200'))]:     # API quota ~2000/day
-        r = s.post('https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', json={'inspectionUrl': u, 'siteUrl': prop})
-        if r.status_code != 200:
-            res[u] = f'error {r.status_code}'; continue
-        st = r.json().get('inspectionResult', {}).get('indexStatusResult', {})
-        res[u] = st.get('coverageState', '?')
-        if st.get('verdict') != 'PASS': not_indexed.append({'url': u, 'state': st.get('coverageState'), 'last_crawl': st.get('lastCrawlTime')})
-    return {'status': 'ok', 'checked': len(res), 'indexed': len(res) - len(not_indexed), 'not_indexed': not_indexed}
+    from google_indexing import inspect_urls
+    return inspect_urls(s, urls, prop, int(os.environ.get('GSC_LIMIT', '200')))
 
 def check_bing(urls):
     key = os.environ.get('BING_WEBMASTER_API_KEY', '').strip()
@@ -186,9 +179,9 @@ def report():
     L += ['', f"## Index status ({i.get('sitemap_urls',0)} URLs in sitemap)"]
     for n in ('google', 'bing'):
         g = i.get(n, {})
-        if g.get('status') == 'ok':
-            L.append(f"- {n}: {g['indexed']}/{g['checked']} indexed")
-            for x in g['not_indexed'][:40]: L.append(f"  - not indexed: {x['url']} ({x.get('state')})")
+        if g.get('status') in ('ok', 'partial'):
+            L.append(f"- {n}: {g['indexed']}/{g.get('total', g['checked'])} indexed; {len(g.get('errors', []))} unknown/errors")
+            for x in g['not_indexed']: L.append(f"  - not indexed: {x['url']} ({x.get('state')})")
         else: L.append(f"- {n}: {g.get('status')} — {g.get('how') or g.get('error','')}")
     open('docs/health/REPORT.md', 'w', encoding='utf-8').write('\n'.join(L) + '\n')
     json.dump(out, open('docs/health/report.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1, default=list)
