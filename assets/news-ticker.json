@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-08T06:51:03+01:00",
-  "validUntil": "2026-11-08T18:51:03+01:00",
+  "updatedAt": "2026-11-09T06:56:46+01:00",
+  "validUntil": "2026-11-09T18:56:46+01:00",
   "items": [
     {
       "source": "SZW",
@@ -142,8 +142,8 @@
         "nl": "Leenstelselstudenten krijgen aanvullende tegemoetkoming"
       },
       "summary": {
-        "ar": "أقرّ مجلس الشيوخ (Eerste Kamer) مبلغاً إضافياً قدره 44.50 يورو شهرياً لطلاب hbo/wo في نظام القروض دون basisbeurs. يبدأ الصرف المتوقع من أبريل 2027، وغالباً تلقائياً.",
-        "nl": "De Eerste Kamer stemde in met € 44,50 per maand extra voor leenstelselstudenten (hbo/wo) zonder basisbeurs. Uitbetaling naar verwachting vanaf april 2027, meestal automatisch."
+        "ar": "أقرّ مجلس الشيوخ (Eerste Kamer) مبلغاً إضافياً لطلاب hbo/wo في نظام القروض دون basisbeurs، وقدره 45.92 يورو شهرياً بأرقام 2027. يبدأ الصرف المتوقع من أبريل 2027، وغالباً تلقائياً.",
+        "nl": "De Eerste Kamer stemde in met een aanvullende tegemoetkoming voor leenstelselstudenten (hbo/wo) zonder basisbeurs: € 45,92 per maand (bedrag 2027). Uitbetaling naar verwachting vanaf april 2027, meestal automatisch."
       },
       "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
       "sourceName": {
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://duo.nl/particulier/",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
