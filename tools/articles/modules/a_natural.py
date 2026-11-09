@@ -8,7 +8,7 @@ SRC=[('IND · Becoming a Dutch national through naturalisation','https://ind.nl/
 ('IND · Leges en normbedragen 2026 bekend','https://ind.nl/nl/nieuws/leges-en-normbedragen-2026-bekend'),
 ('Inburgeren.nl · Naturaliseren','https://www.inburgeren.nl/u-gaat-inburgeren/naturaliseren.jsp'),
 ('Rijksoverheid · Kabinet wil naturalisatietermijn verlengen van 5 naar 10 jaar (26-9-2025)','https://www.rijksoverheid.nl/actueel/nieuws/2025/09/26/kabinet-wil-naturalisatietermijn-verlengen-van-5-naar-10-jaar'),
-('IND · Nieuwe wetten en regels asiel en nareis','https://ind.nl/nl/nieuwe-wetten-en-regels-asiel-en-nareis')]
+('IND · Nieuwe wetten en regels asiel en nareis','https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis')]
 
 AR=dict(title='الجنسية الهولندية بالتجنس 2026: شرط 5 سنوات واستثناءاته، الاندماج A2، الرسوم، الإجراءات والحفل، وما هو مقترح فقط (10 سنوات وB1)',
 seo_title='التجنس naturalisatie والجنسية الهولندية',

@@ -2,7 +2,7 @@ from a_student_finance import T
 SLUG='asylum-family-reunification'
 SRC=[('IND · Gezinshereniging asiel (nareis)','https://ind.nl/nl/verblijfsvergunningen/asiel/gezinshereniging-asiel'),
 ('IND · Wanneer begint de IND met mijn nareisaanvraag?','https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/wanneer-begint-de-ind-met-mijn-nareisaanvraag'),
-('IND · Nieuwe wetten en regels asiel en nareis','https://ind.nl/nl/nieuwe-wetten-en-regels-asiel-en-nareis'),
+('IND · Nieuwe wetten en regels asiel en nareis','https://ind.nl/nl/asiel-en-nareis-het-migratiepact-en-andere-ontwikkelingen/nieuwe-wetten-en-regels-asiel-en-nareis'),
 ('Rijksoverheid · Mogen familieleden van asielzoekers naar Nederland komen?','https://www.rijksoverheid.nl/onderwerpen/asielbeleid/vraag-en-antwoord/mogen-familieleden-van-asielzoekers-naar-nederland-komen'),
 ('Eerste Kamer · Wet invoering tweestatusstelsel (36 703)','https://www.eerstekamer.nl/wetsvoorstel/36703_wet_invoering'),
 ('Eerste Kamer · Senaat verwerpt strafbaarstelling (21-4-2026)','https://www.eerstekamer.nl/nieuws/20260421/senaat_verwerpt_strafbaarstelling')]
