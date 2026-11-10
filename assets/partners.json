@@ -1,6 +1,6 @@
 {
-  "_help": "Partner offers shown in the 'partners' bar on every page and on /partners.html. To add an offer copy one item, fill it in and set active to true. Dates are YYYY-MM-DD (the offer shows from start until the end of the end day). topics (optional) = words from the page address, e.g. [\"diploma\", \"syrian-documents\"]; leave it out to show the offer on all pages; \"home\" = the Arabic and Dutch homepages. code is optional. Never publish an offer without the partner's written OK. whatsapp (optional) = number with country code, digits only, e.g. 31612345678. kind (optional) = what the partner does, shown after the name, e.g. {\"ar\": \"مكتب ترجمة أوراق\", \"nl\": \"Vertaalbureau\"}. strip_link (optional) = \"whatsapp\" makes the moving strip open a WhatsApp chat (needs whatsapp) instead of the website.",
-  "updated": "2026-11-07",
+  "_help": "Partner offers shown in the 'partners' bar on every page and on /partners.html. To add an offer copy one item, fill it in and set active to true. Dates are YYYY-MM-DD (the offer shows from start until the end of the end day). topics (optional) = words from the page address, e.g. [\"diploma\", \"syrian-documents\"]; leave it out to show the offer on all pages; \"home\" = the Arabic and Dutch homepages. code is optional. Never publish an offer without the partner's written OK. whatsapp (optional) = number with country code, digits only, e.g. 31612345678. kind (optional) = what the partner does, shown after the name, e.g. {\"ar\": \"مكتب ترجمة أوراق\", \"nl\": \"Vertaalbureau\"}. strip_link (optional) = \"whatsapp\" makes the moving strip open a WhatsApp chat (needs whatsapp) instead of the website. network (optional) = the affiliate network. Awin links use https://www.awin1.com/cread.php?awinmid=<advertiser id>&awinaffid=3113967&ued=<encoded page>. Only add affiliate offers for programmes that approved us, and only claims taken from the advertiser's own briefing.",
+  "updated": "2026-11-10",
   "items": [
     {
       "id": "wolky-tolky-2026",
@@ -58,6 +58,258 @@
         "asylum",
         "inburgering",
         "naturalisation"
+      ]
+    },
+    {
+      "id": "joybuy-1111-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2F",
+      "start": "2026-11-09",
+      "end": "2026-11-11",
+      "title": {
+        "ar": "عرض 11.11: خصم €5 فوق €49 وخصم €30 فوق €199 على منتجات مختارة",
+        "nl": "11.11: €5 korting vanaf €49 en €30 vanaf €199 op geselecteerde producten"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-coupon20-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F4VbxdQpPjMrerPaVxzEhnwM1tEwr",
+      "start": "2026-11-12",
+      "end": "2026-11-13",
+      "title": {
+        "ar": "كوبون خصم €20 على طلب فوق €30 (عدد محدود يومياً)",
+        "nl": "€20 korting vanaf €30 (beperkt aantal coupons per dag)"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-winter-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F2NDuD55NzqcjvRWEbLY5cV3Ptao9",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "title": {
+        "ar": "عروض الشتاء: تخفيضات تصل إلى 90% على منتجات مختارة",
+        "nl": "Winteraanbiedingen: tot 90% korting op geselecteerde producten"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-blackfriday-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2F",
+      "start": "2026-11-16",
+      "end": "2026-11-30",
+      "title": {
+        "ar": "Black Friday: خصم €10 فوق €59 وخصم €40 فوق €199 من 27 إلى 30 نوفمبر",
+        "nl": "Black Friday: €10 korting vanaf €59 en €40 vanaf €199 (27–30 november)"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-christmas-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2F",
+      "start": "2026-12-01",
+      "end": "2026-12-24",
+      "title": {
+        "ar": "عروض الميلاد: خصم €10 فوق €49 وخصم €49 فوق €199",
+        "nl": "Kerstdeals: €10 korting vanaf €49 en €49 vanaf €199"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "samsung-bf-phase1-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Samsung",
+      "partner_nl": "Samsung",
+      "kind": {
+        "ar": "إلكترونيات وأجهزة منزلية",
+        "nl": "Elektronica en huishoudapparaten"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=8330&awinaffid=3113967&ued=https%3A%2F%2Fwww.samsung.com%2Fnl%2Foffer%2Fblack-friday%2F",
+      "start": "2026-11-06",
+      "end": "2026-11-15",
+      "title": {
+        "ar": "Black Friday: 10% إضافية على التلفزيونات والصوت والأجهزة المنزلية والشاشات المختارة",
+        "nl": "Black Friday: 10% extra voordeel op geselecteerde tv's, audio, huishoudapparaten en monitoren"
+      },
+      "code": "BF26",
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "samsung-bf-phase2-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Samsung",
+      "partner_nl": "Samsung",
+      "kind": {
+        "ar": "إلكترونيات وأجهزة منزلية",
+        "nl": "Elektronica en huishoudapparaten"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=8330&awinaffid=3113967&ued=https%3A%2F%2Fwww.samsung.com%2Fnl%2Foffer%2Fblack-friday%2F%3Fcategory%3Dhome-appliances",
+      "start": "2026-11-16",
+      "end": "2026-11-30",
+      "title": {
+        "ar": "Black Friday: 10% إضافية على الأجهزة المنزلية والشاشات المختارة",
+        "nl": "Black Friday: 10% extra voordeel op geselecteerde huishoudapparaten en monitoren"
+      },
+      "code": "BF26",
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "coolblue-bf-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Coolblue",
+      "partner_nl": "Coolblue",
+      "kind": {
+        "ar": "متجر إلكترونيات",
+        "nl": "Elektronicawinkel"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=85161&awinaffid=3113967&ued=https%3A%2F%2Fwww.coolblue.nl%2Fblack-friday",
+      "start": "2026-11-09",
+      "end": "2026-12-01",
+      "title": {
+        "ar": "عروض Black Friday وعروض يومية سريعة حتى نفاد الكمية",
+        "nl": "Black Friday-deals en dagelijkse flashdeals zolang de voorraad strekt"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "lidl-webshop",
+      "active": true,
+      "network": "awin",
+      "partner": "Lidl",
+      "partner_nl": "Lidl",
+      "kind": {
+        "ar": "متجر Lidl الإلكتروني",
+        "nl": "Lidl webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=128189&awinaffid=3113967&ued=https%3A%2F%2Fwww.lidl.nl%2F",
+      "start": "2026-11-10",
+      "title": {
+        "ar": "تصفّح عروض متجر Lidl الإلكتروني",
+        "nl": "Bekijk de aanbiedingen in de Lidl webshop"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "mobiel-nl",
+      "active": false,
+      "network": "awin",
+      "_todo": "ضع رقم برنامج Mobiel.nl (aid) من Awin مكان AID ثم غيّر active إلى true",
+      "partner": "Mobiel.nl",
+      "partner_nl": "Mobiel.nl",
+      "kind": {
+        "ar": "موبايلات واشتراكات",
+        "nl": "Telefoons en abonnementen"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=AID&awinaffid=3113967&ued=https%3A%2F%2Fwww.mobiel.nl%2F",
+      "title": {
+        "ar": "قارن اشتراكات الموبايل والأجهزة قبل ما تشترك",
+        "nl": "Vergelijk telefoons en abonnementen"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "action-weekacties",
+      "active": false,
+      "network": "awin",
+      "_todo": "ضع رقم برنامج Action NL (aid) من Awin مكان AID ثم غيّر active إلى true",
+      "partner": "Action",
+      "partner_nl": "Action",
+      "kind": {
+        "ar": "متجر أسعار منخفضة",
+        "nl": "Discountwinkel"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=AID&awinaffid=3113967&ued=https%3A%2F%2Fwww.action.com%2Fnl-nl%2F",
+      "title": {
+        "ar": "عروض الأسبوع في Action",
+        "nl": "Weekacties bij Action"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
       ]
     }
   ]
