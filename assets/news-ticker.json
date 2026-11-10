@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-09T06:56:46+01:00",
-  "validUntil": "2026-11-09T18:56:46+01:00",
+  "updatedAt": "2026-11-10T06:51:54+01:00",
+  "validUntil": "2026-11-10T18:51:54+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-11-09",
+      "firstSeen": "2026-11-10",
+      "category": {
+        "ar": "الاندماج والعمل",
+        "nl": "Inburgering en werk"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "الوزير Aartsen: العمل أربعة أيام أسبوعياً يصبح القاعدة لحاملي الإقامة خلال inburgering",
+        "nl": "Minister Aartsen: vier dagen werken wordt de norm in de inburgering"
+      },
+      "summary": {
+        "ar": "دروس inburgering قدر الإمكان خارج وقت العمل، ومهلة أطول للامتحان لمن يعمل 28 ساعة أسبوعياً على الأقل دون bijstand. اتفاق مع أرباب العمل؛ الهدف 75,000 قادم جديد إضافي في العمل خلال 4 سنوات.",
+        "nl": "Inburgeringslessen zoveel mogelijk buiten werktijd; wie minstens 28 uur per week werkt zonder bijstand krijgt zo nodig langer voor het examen. Afspraken met werkgevers: over 4 jaar 75.000 nieuwkomers extra aan het werk."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/09/minister-aartsen-vier-dagen-werken-de-norm-in-de-inburgering",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-11-09-1fa8e397"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-07",
@@ -27,31 +52,6 @@
       },
       "tier": "official",
       "id": "szw-2026-11-07-b87605c3"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-11-05",
-      "firstSeen": "2026-11-06",
-      "category": {
-        "ar": "الاندماج",
-        "nl": "Inburgering"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "خطة حكومية: حاملو الإقامة العاملون يحصلون على وقت أطول لإتمام inburgering",
-        "nl": "Kabinet: statushouders die werken krijgen meer tijd om in te burgeren"
-      },
-      "summary": {
-        "ar": "تريد الوزيرة Aartsen تمديد مهلة inburgering (3 سنوات) حتى 3 سنوات إضافية لمن يعمل 28 ساعة أسبوعياً على الأقل، وسنة إضافية كحد أقصى لمن يرعى أطفالاً صغاراً بلا حضانة. القواعد في 2027؛ خطة لم تُقر بعد.",
-        "nl": "Minister Aartsen wil de inburgeringstermijn van 3 jaar met maximaal 3 jaar verlengen voor wie minstens 28 uur per week werkt; max. 1 jaar extra bij zorg voor jonge kinderen zonder opvang. Regels gaan in 2027 gelden."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/05/kabinet-zet-werk-centraal-in-de-inburgering-wie-werkt-krijgt-meer-tijd-om-in-te-burgeren",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-11-05-21f6c803"
     },
     {
       "source": "STAB",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://duo.nl/particulier/",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
