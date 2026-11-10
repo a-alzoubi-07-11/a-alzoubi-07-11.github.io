@@ -270,16 +270,15 @@
     },
     {
       "id": "mobiel-nl",
-      "active": false,
+      "active": true,
       "network": "awin",
-      "_todo": "ضع رقم برنامج Mobiel.nl (aid) من Awin مكان AID ثم غيّر active إلى true",
       "partner": "Mobiel.nl",
       "partner_nl": "Mobiel.nl",
       "kind": {
         "ar": "موبايلات واشتراكات",
         "nl": "Telefoons en abonnementen"
       },
-      "url": "https://www.awin1.com/cread.php?awinmid=AID&awinaffid=3113967&ued=https%3A%2F%2Fwww.mobiel.nl%2F",
+      "url": "https://www.awin1.com/cread.php?awinmid=8373&awinaffid=3113967&ued=https%3A%2F%2Fwww.mobiel.nl%2F",
       "title": {
         "ar": "قارن اشتراكات الموبايل والأجهزة قبل ما تشترك",
         "nl": "Vergelijk telefoons en abonnementen"
@@ -288,20 +287,20 @@
         "home",
         "partners",
         "links"
-      ]
+      ],
+      "start": "2026-11-10"
     },
     {
       "id": "action-weekacties",
-      "active": false,
+      "active": true,
       "network": "awin",
-      "_todo": "ضع رقم برنامج Action NL (aid) من Awin مكان AID ثم غيّر active إلى true",
       "partner": "Action",
       "partner_nl": "Action",
       "kind": {
         "ar": "متجر أسعار منخفضة",
         "nl": "Discountwinkel"
       },
-      "url": "https://www.awin1.com/cread.php?awinmid=AID&awinaffid=3113967&ued=https%3A%2F%2Fwww.action.com%2Fnl-nl%2F",
+      "url": "https://www.awin1.com/cread.php?awinmid=25288&awinaffid=3113967&ued=https%3A%2F%2Fwww.action.com%2Fnl-nl%2F",
       "title": {
         "ar": "عروض الأسبوع في Action",
         "nl": "Weekacties bij Action"
@@ -310,7 +309,8 @@
         "home",
         "partners",
         "links"
-      ]
+      ],
+      "start": "2026-11-10"
     }
   ]
 }
