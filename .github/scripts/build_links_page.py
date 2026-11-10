@@ -17,6 +17,7 @@ ICON = {
     "camera": '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h0"/>',
     "users": '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/>',
     "work": '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/>',
+    "tag": '<path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="8" cy="8" r="1.5"/>',
     "mail": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
 }
 GO = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>'
@@ -27,6 +28,7 @@ LINKS = [
     ("site", "doc", "/beroep/", "/nl/beroep/", "رسالة الطعن على رفض الإقامة الدائمة", "Beroepschrift tegen afwijzing permanent verblijf", "أداة مجانية: رسالة جاهزة + استمارة + الإرسال للمحكمة", "Gratis tool: kant-en-klare brief en formulier", False),
     ("site", "tools", "/tools.html", "/nl/tools.html", "الحاسبات والأدوات", "Rekenhulpen en tools", "zorgtoeslag، kindgebonden budget، فاحص الإقامة والمزيد", "Zorgtoeslag, kindgebonden budget, verblijfscheck en meer", False),
     ("site", "book", "/articles.html", "/nl/articles.html", "كل المقالات", "Alle artikelen", "الإقامة، العمل، الدراسة، البدلات والضرائب", "Verblijf, werk, studie, toeslagen en belasting", False),
+    ("site", "tag", "/partners.html", "/nl/partners.html", "عروض وأكواد خصم", "Aanbiedingen en kortingscodes", "عروض الشركاء والمتاجر (إعلان)", "Aanbiedingen van partners en winkels (advertentie)", False),
     ("social", "play", "https://www.youtube.com/@a.alzoubi.07.11", None, "YouTube", "YouTube", "شروحات بالفيديو خطوة بخطوة", "Stap-voor-stap uitlegvideo's (Arabisch)", False),
     ("social", "music", "https://www.tiktok.com/@a.alzoubi.07.11", None, "TikTok", "TikTok", "@a.alzoubi.07.11", "@a.alzoubi.07.11", False),
     ("social", "camera", "https://www.instagram.com/a.alzoubi.07.11/", None, "Instagram", "Instagram", "@a.alzoubi.07.11", "@a.alzoubi.07.11", False),
@@ -37,11 +39,11 @@ LINKS = [
 TXT = {
     "ar": dict(dir="rtl", title="روابط Ahmad Alzoubi | دليل هولندا بالعربية", desc="كل روابط Ahmad Alzoubi في مكان واحد: موقع دليل هولندا بالعربية، أداة رسالة الطعن، يوتيوب، تيكتوك، إنستغرام ولينكدإن.",
                name="Ahmad Alzoubi — أحمد الزعبي", bio="أشرح الحياة في هولندا بالعربي: الإقامة، الأوراق، العمل والبدلات، خطوة بخطوة.",
-               sec={"site": "الموقع والأدوات", "social": "تابعني", "contact": "تواصل"}, other="Nederlands", other_href="/nl/links/",
+               sec={"offers": "عروض وأكواد خصم", "site": "الموقع والأدوات", "social": "تابعني", "contact": "تواصل"}, other="Nederlands", other_href="/nl/links/",
                foot="دليل هولندا بالعربية · gidsnederland.nl", privacy="الخصوصية", privacy_href="/privacy.html", canon="https://gidsnederland.nl/links/"),
     "nl": dict(dir="ltr", title="Links van Ahmad Alzoubi | Gids Nederland", desc="Alle links van Ahmad Alzoubi op één plek: Gids Nederland, de beroeptool, YouTube, TikTok, Instagram en LinkedIn.",
                name="Ahmad Alzoubi", bio="Ik leg het leven in Nederland uit in het Arabisch: verblijf, papieren, werk en toeslagen, stap voor stap.",
-               sec={"site": "Website en tools", "social": "Volg mij", "contact": "Contact"}, other="العربية", other_href="/links/",
+               sec={"offers": "Aanbiedingen", "site": "Website en tools", "social": "Volg mij", "contact": "Contact"}, other="العربية", other_href="/links/",
                foot="Gids Nederland · gidsnederland.nl", privacy="Privacy", privacy_href="/nl/privacy.html", canon="https://gidsnederland.nl/nl/links/"),
 }
 
@@ -80,10 +82,11 @@ window.gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_p
 <link rel="alternate" hreflang="ar" href="https://gidsnederland.nl/links/"><link rel="alternate" hreflang="nl" href="https://gidsnederland.nl/nl/links/"><link rel="alternate" hreflang="x-default" href="https://gidsnederland.nl/links/">
 <meta property="og:type" content="profile"><meta property="og:title" content="{e(t['title'])}"><meta property="og:description" content="{e(t['desc'])}"><meta property="og:url" content="{t['canon']}"><meta property="og:image" content="https://gidsnederland.nl/assets/og-image.png">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/links.css?v=1">
+<link rel="stylesheet" href="/assets/links.css?v=2">
 <script src="/assets/site-config.js?v=2" defer></script>
 <script src="/assets/consent.js?v=8" defer></script>
-<script src="/assets/partners-bar.js?v=9" defer></script>
+<script src="/assets/partners-bar.js?v=10" defer></script>
+<script src="/assets/links-offers.js?v=1" defer></script>
 </head>
 <body>
 <main class="lk">
@@ -94,6 +97,7 @@ window.gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_p
 <p class="lk-handle">@a.alzoubi.07.11</p>
 <p class="lk-bio">{e(t['bio'])}</p>
 </header>
+<section id="lk-offers" aria-label="{e(t['sec']['offers'])}" hidden></section>
 <nav aria-label="{e(t['title'])}">
 {''.join(sections)}
 </nav>

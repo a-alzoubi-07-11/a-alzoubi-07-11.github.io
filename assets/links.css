@@ -32,3 +32,16 @@ body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-famil
 .lk-foot{margin-top:32px;text-align:center;font-size:13px;color:var(--muted)}
 .lk-foot a{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.lk-a{transition:none}.lk-a:hover{transform:none}}
+/* offers block (filled by links-offers.js from assets/partners.json) */
+.lk-ad{display:inline-block;margin-inline-start:6px;padding:1px 8px;border-radius:999px;background:#ee731c;color:#fff;font-size:11px;letter-spacing:.02em;text-transform:none;vertical-align:1px}
+.lk-offer{display:grid;gap:6px}
+.lk-offer .lk-ic{color:#ee731c}
+.lk-meta{font-size:12px!important;opacity:.85}
+.lk-code{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:8px 14px;border:1.5px dashed #ee731c;border-radius:12px;background:var(--card);color:var(--text);font:inherit;font-size:14px;cursor:pointer}
+.lk-code code{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-weight:700;font-size:15px;letter-spacing:.06em;direction:ltr;unicode-bidi:isolate}
+.lk-code span{color:var(--muted)}
+.lk-code em{margin-inline-start:auto;font-style:normal;font-weight:600;color:var(--blue)}
+.lk-code.ok{border-style:solid;border-color:#34c759}.lk-code.ok em{color:#34c759}
+.lk-code:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.lk-note{margin:10px 2px 0;font-size:12.5px;color:var(--muted)}
+.lk-note a{color:var(--blue)}
