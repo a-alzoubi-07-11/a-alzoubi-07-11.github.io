@@ -85,8 +85,8 @@ window.gtag('consent','default',{{ad_storage:'denied',ad_user_data:'denied',ad_p
 <link rel="stylesheet" href="/assets/links.css?v=2">
 <script src="/assets/site-config.js?v=2" defer></script>
 <script src="/assets/consent.js?v=8" defer></script>
-<script src="/assets/partners-bar.js?v=10" defer></script>
-<script src="/assets/links-offers.js?v=1" defer></script>
+<script src="/assets/partners-bar.js?v=11" defer></script>
+<script src="/assets/links-offers.js?v=2" defer></script>
 </head>
 <body>
 <main class="lk">

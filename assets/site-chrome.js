@@ -109,5 +109,5 @@ check();
 void rtl;
 
 /* ---- partner offers bar (only when assets/partners.json has an active offer) ---- */
-if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=10";ps.defer=true;document.head.append(ps);}
+if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=11";ps.defer=true;document.head.append(ps);}
 })();

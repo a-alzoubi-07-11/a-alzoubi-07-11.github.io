@@ -15,7 +15,7 @@ const KEY="gn-partners-closed";
 try{if(sessionStorage.getItem(KEY)==="1")return;}catch(_){}
 const today=new Date().toISOString().slice(0,10);
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const okUrl=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");
+const okUrl=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");const tag=(u,ref)=>/^https:\/\/www\.awin1\.com\//.test(u)&&!/[?&]clickref=/.test(u)?u+"&clickref="+ref+(nl?"-nl":"-ar"):u;
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
 const SPEED=30; // px per second: calm reading speed
 const LOOPS=3;  // then it stands still (moving content must not run forever)
@@ -56,7 +56,7 @@ function item(o){
   const wa=o.strip_link==="whatsapp"&&/^\d{8,15}$/.test(o.whatsapp||"");
   const msg=nl?`Hallo, ik kom via Gids Nederland (gidsnederland.nl)${o.code?` en wil graag de korting met code ${o.code}`:""}.`
               :`مرحباً، وصلت إليكم من موقع دليل هولندا بالعربية (gidsnederland.nl)${o.code?` وأريد الاستفادة من الخصم بالكود ${o.code}`:""}.`;
-  const href=wa?`https://wa.me/${o.whatsapp}?text=${encodeURIComponent(msg)}`:o.url;
+  const href=wa?`https://wa.me/${o.whatsapp}?text=${encodeURIComponent(msg)}`:tag(o.url,"gn-bar");
   return `<a class="pt-item" dir="${nl?"ltr":"rtl"}" href="${esc(href)}" target="_blank" rel="sponsored noopener">`
     +`<span class="pt-name">${esc(name)}</span>`+(kind?`<span class="pt-kind">${esc(kind)}</span>`:"")+`<span class="pt-sep">·</span><span>${esc(title)}</span>`
     +(o.code?`<span class="pt-sep">·</span><span>${T.code}</span><span class="pt-code">${esc(o.code)}</span>`:"")
