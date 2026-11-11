@@ -16,10 +16,10 @@
     "all_indexed": false
   },
   {
-    "checked_at": "2026-11-11T08:47:40+00:00",
+    "checked_at": "2026-11-11T10:27:52+00:00",
     "total": 178,
-    "indexed": 136,
-    "pending": 42,
+    "indexed": 139,
+    "pending": 39,
     "unknown": 0,
     "all_indexed": false
   }
