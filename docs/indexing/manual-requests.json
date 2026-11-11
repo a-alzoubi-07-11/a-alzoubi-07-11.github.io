@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "property_url": "https://gidsnederland.nl/",
+  "updated_at": "2026-11-11T08:57:13.616Z",
+  "method": "Google Search Console UI: Request indexing",
+  "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
+  "accepted_requests": [
+    {
+      "url": "https://gidsnederland.nl/cv.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:44:53.468Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/templates.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:46:44.532Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/calculators/permanent-residence-check.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:50:01.037Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:50:49.956Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/permanent-residence-asylum-route.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:51:44.508Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/permanent-residence-regular-route.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:52:16.801Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:52:54.357Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/temporary-agency-work-rights.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:53:26.777Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/social-housing-sociale-huurwoning.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:54:38.014Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/adult-learning-finance.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:55:22.858Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/foreign-driving-license-exchange.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-11T08:56:15.945Z"
+    }
+  ],
+  "last_blocker": {
+    "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+    "result": "Quota exceeded",
+    "message": "Daily quota exceeded; Google asks to try again tomorrow.",
+    "checked_at": "2026-11-11T08:57:13.616Z",
+    "accepted_count": 11
+  },
+  "pending_report_checked_at": "2026-11-10T15:33:10+00:00",
+  "deferred_urls": [
+    "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
+    "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
+    "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
+    "https://gidsnederland.nl/nl/articles/student-finance.html",
+    "https://gidsnederland.nl/categories/work.html",
+    "https://gidsnederland.nl/nl/categories/money.html",
+    "https://gidsnederland.nl/articles/trending-jobs-2026.html",
+    "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
+    "https://gidsnederland.nl/articles/aow-aio-pension.html",
+    "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
+    "https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html",
+    "https://gidsnederland.nl/articles/traffic-fines-cjib.html",
+    "https://gidsnederland.nl/articles/bezwaar-objection-letter.html",
+    "https://gidsnederland.nl/articles/legal-aid-lawyer-toevoeging.html",
+    "https://gidsnederland.nl/articles/scams-phishing-netherlands.html",
+    "https://gidsnederland.nl/articles/pregnancy-newborn-care.html",
+    "https://gidsnederland.nl/articles/asylum-two-status-system-2026.html",
+    "https://gidsnederland.nl/articles/dutch-government-terms-glossary.html",
+    "https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html",
+    "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+    "https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html",
+    "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
+    "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
+    "https://gidsnederland.nl/articles/liability-home-insurance.html",
+    "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
+    "https://gidsnederland.nl/beroep/",
+    "https://gidsnederland.nl/nl/beroep/",
+    "https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html",
+    "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
+    "https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html",
+    "https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html",
+    "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
+    "https://gidsnederland.nl/affiliate-disclosure.html",
+    "https://gidsnederland.nl/nl/affiliate-disclosure.html",
+    "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
+    "https://gidsnederland.nl/nl/templates.html"
+  ]
+}
