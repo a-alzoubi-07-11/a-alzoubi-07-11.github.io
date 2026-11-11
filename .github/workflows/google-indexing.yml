@@ -35,10 +35,15 @@ jobs:
     permissions:
       contents: write
     steps:
+      # A queued run must read the report saved by the preceding run.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Validate current main scripts
+        run: python -m unittest discover -s tests -p 'test_google_indexing.py' -v
       - name: Install Google authentication client
         run: pip install -q requests google-auth
       - name: Inspect pages and submit sitemap when needed
@@ -71,3 +76,4 @@ jobs:
       - name: Surface API or permission failures
         if: always() && steps.inspect.outcome == 'failure'
         run: exit 1
+
