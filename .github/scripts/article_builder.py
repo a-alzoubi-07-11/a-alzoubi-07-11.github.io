@@ -75,7 +75,7 @@ def build(lang, a, today):
     ar_u, nl_u = url("ar", a["slug"]), url("nl", a["slug"])
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Article", "headline": a["title"], "description": a["desc"], "inLanguage": lang, "mainEntityOfPage": me,
-         "datePublished": today, "dateModified": today, "image": SITE + "/assets/og-image.png",
+         "datePublished": today, "dateModified": today, "image": SITE + "/assets/og-home.png",
          "author": {"@type": "Person", "name": t["author_name"], "url": SITE + ("/about.html" if lang == "ar" else "/nl/about.html")},
          "publisher": {"@type": "Person", "name": "Ahmad Alzoubi", "url": SITE + "/about.html"},
          "citation": [u for _, _, u in a["sources"]],
@@ -93,13 +93,13 @@ def build(lang, a, today):
             f'<meta property="og:type" content="article"><meta property="og:locale" content="{t["og_locale"]}"><meta property="og:locale:alternate" content="{t["og_alt"]}">'
             f'<meta property="og:site_name" content="{"دليل هولندا بالعربية" if lang == "ar" else "Gids Nederland"}"><meta property="og:title" content="{e(st)}">'
             f'<meta property="og:description" content="{e(a["desc"])}"><meta property="og:url" content="{me}">'
-            f'<meta property="og:image" content="{SITE}/assets/og-image.png"><meta property="og:image:alt" content="{e(a["title"])}">'
+            f'<meta property="og:image" content="{SITE}/assets/og-home.png"><meta property="og:image:alt" content="{e(a["title"])}">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(st)}"><meta name="twitter:description" content="{e(a["desc"])}">'
-            f'<meta name="twitter:image" content="{SITE}/assets/og-image.png">\n'
+            f'<meta name="twitter:image" content="{SITE}/assets/og-home.png">\n'
             '<meta name="google-site-verification" content="A9hem9lFx7-Zdjg2rwL9IQqAU1kmCPdOonknPoIP_0">\n'
-            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=7"><script src="/assets/guide.js?v=2" defer></script>\n'
+            '<link rel="stylesheet" href="/assets/guide.css?v=2"><link rel="stylesheet" href="/assets/apple.css?v=8"><script src="/assets/guide.js?v=2" defer></script>\n'
             f'<link rel="canonical" href="{me}"><link rel="alternate" hreflang="ar" href="{ar_u}"><link rel="alternate" hreflang="nl" href="{nl_u}"><link rel="alternate" hreflang="x-default" href="{ar_u}">\n'
-            f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n</head>\n')
+            f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=2"></head>\n')
     header = re.search(r"<body>.*?</header>", tpl, re.S).group(0)
     header = re.sub(r'<a class="lang-button" href="[^"]*"', f'<a class="lang-button" href="{other}"', header)
     footer = re.search(r'<footer class="wrap">.*?</footer>', tpl, re.S).group(0)

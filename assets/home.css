@@ -11,7 +11,7 @@
   padding:.35rem max(16px,(100% - 1024px)/2);background:rgba(251,251,253,.82);color:var(--ap-text);
   -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
 .hm .tl-brand{display:flex;align-items:center;gap:0;color:var(--ap-text);font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
-.hm .tl-dot{display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--ap-orange);margin-inline-end:8px;box-shadow:none}
+.hm .tl-dot{display:inline-block;width:22px;height:22px;border-radius:0;background:url(/assets/logo.svg) center/contain no-repeat;margin-inline-end:8px;box-shadow:none;animation:none;vertical-align:-6px}
 .hm .hm-topnav{display:flex;gap:2px;margin-inline-start:auto}
 .hm .hm-topnav a{color:var(--ap-text);opacity:.8;text-decoration:none;font-size:13.5px;padding:.3rem .65rem;border-radius:8px;white-space:nowrap}
 .hm .hm-topnav a:hover{opacity:1;background:rgba(0,0,0,.04)}

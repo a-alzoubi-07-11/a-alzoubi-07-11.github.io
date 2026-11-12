@@ -31,7 +31,7 @@ for lang, (title, sub, home, path) in META.items():
            f'<link href="{SITE}{home}"/><link rel="self" type="application/atom+xml" href="{SITE}{path}"/>',
            f'<id>{SITE}{path}</id><updated>{updated}T08:00:00+01:00</updated>',
            '<author><name>Ahmad Alzoubi</name><uri>https://gidsnederland.nl/about.html</uri></author>',
-           f'<icon>{SITE}/assets/apple-touch-icon.png</icon><logo>{SITE}/assets/og-image.png</logo>']
+           f'<icon>{SITE}/assets/apple-touch-icon.png</icon><logo>{SITE}/assets/og-home.png</logo>']
     for mod, pub, e in rows:
         url = SITE + e['u']
         out.append(f'<entry><title>{escape(e["t"])}</title><link href="{url}"/><id>{url}</id>'

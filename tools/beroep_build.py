@@ -177,10 +177,10 @@ def page(L):
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="ar" href="{ar_url}"><link rel="alternate" hreflang="nl" href="{nl_url}"><link rel="alternate" hreflang="x-default" href="{ar_url}">
 <meta property="og:type" content="website"><meta property="og:title" content="{t['title']}"><meta property="og:description" content="{t['desc']}"><meta property="og:url" content="{url}">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
 <link rel="stylesheet" href="/assets/style.css?v=1">
 <link rel="stylesheet" href="/assets/guide.css?v=1">
-<link rel="stylesheet" href="/assets/apple.css?v=7">
+<link rel="stylesheet" href="/assets/apple.css?v=8">
 <link rel="stylesheet" href="/assets/tool-tiles.css?v=2">
 <link rel="stylesheet" href="/beroep/beroep.css?v=4">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
