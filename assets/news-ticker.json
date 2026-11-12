@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T06:51:54+01:00",
-  "validUntil": "2026-11-10T18:51:54+01:00",
+  "updatedAt": "2026-11-12T06:52:24+01:00",
+  "validUntil": "2026-11-12T18:52:24+01:00",
   "items": [
+    {
+      "source": "NOS",
+      "publishedAt": "2026-11-11",
+      "firstSeen": "2026-11-12",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NOS: مجلس الدولة يُلزم وزير اللجوء بإعادة تقييم الوضع الأمني في سوريا",
+        "nl": "Volgens NOS: Raad van State: minister van Asiel moet veiligheid Syrië opnieuw beoordelen"
+      },
+      "summary": {
+        "ar": "وفق NOS: رأى مجلس الدولة (Raad van State) أن سياسة اللجوء الحالية تجاه السوريين غير مبرَّرة بما يكفي. الوزير يدرس الحكم، ولا توجد سياسة جديدة رسمية بعد.",
+        "nl": "Volgens NOS: de Raad van State vindt het huidige asielbeleid voor Syriërs onvoldoende onderbouwd. De minister bestudeert de uitspraak; er is nog geen nieuw beleid."
+      },
+      "url": "https://nos.nl/artikel/2638978-raad-van-state-minister-van-asiel-moet-veiligheid-syrie-opnieuw-beoordelen",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-11-11-0aff6e8b"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-09",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-15-f11cac34"
-    },
-    {
-      "source": "TOESLAGEN",
-      "publishedAt": "2026-10-15",
-      "firstSeen": "2026-10-28",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "حدود ثروة أقل لـ zorgtoeslag وkindgebonden budget في 2027",
-        "nl": "Vanaf 2027 lagere vermogensgrenzen voor zorgtoeslag en kindgebonden budget"
-      },
-      "summary": {
-        "ar": "حد الثروة في 2027: ‏158,748 يورو مع شريك و119,122 يورو بدونه. إذا تجاوزت ثروتك الحد فأبلغ عبر Mijn toeslagen قبل 8 ديسمبر 2026 لتجنّب إعادة البدل.",
-        "nl": "Vermogensgrens 2027: € 158.748 met en € 119.122 zonder toeslagpartner. Te hoog vermogen? Geef dit uiterlijk 8 december 2026 door in Mijn toeslagen om terugbetalen te voorkomen."
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
-      "sourceName": {
-        "ar": "دائرة البدلات (Toeslagen)",
-        "nl": "Dienst Toeslagen"
-      },
-      "tier": "official",
-      "id": "toeslagen-2026-10-15-4a21e9c2"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-12",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
