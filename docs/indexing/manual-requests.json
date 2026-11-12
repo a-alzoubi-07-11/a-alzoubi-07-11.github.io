@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-11T08:57:13.616Z",
+  "updated_at": "2026-11-12T07:55:16.869Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -65,10 +65,10 @@
     "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
     "result": "Quota exceeded",
     "message": "Daily quota exceeded; Google asks to try again tomorrow.",
-    "checked_at": "2026-11-11T08:57:13.616Z",
-    "accepted_count": 11
+    "checked_at": "2026-11-12T07:55:16.869Z",
+    "accepted_count": 0
   },
-  "pending_report_checked_at": "2026-11-10T15:33:10+00:00",
+  "pending_report_checked_at": "2026-11-11T12:11:19+00:00",
   "deferred_urls": [
     "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
     "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
@@ -106,5 +106,23 @@
     "https://gidsnederland.nl/nl/affiliate-disclosure.html",
     "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
     "https://gidsnederland.nl/nl/templates.html"
+  ],
+  "blocker_history": [
+    {
+      "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+      "result": "Quota exceeded",
+      "message": "Daily quota exceeded; Google asks to try again tomorrow.",
+      "checked_at": "2026-11-11T08:57:13.616Z",
+      "accepted_count": 11
+    }
+  ],
+  "run_history": [
+    {
+      "checked_at": "2026-11-12T07:55:16.869Z",
+      "accepted_count": 0,
+      "attempted_url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+      "result": "Quota exceeded",
+      "deferred_count": 36
+    }
   ]
 }
