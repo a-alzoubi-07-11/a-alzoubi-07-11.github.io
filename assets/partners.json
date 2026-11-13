@@ -1,6 +1,6 @@
 {
   "_help": "Partner offers shown in the 'partners' bar on every page and on /partners.html. To add an offer copy one item, fill it in and set active to true. Dates are YYYY-MM-DD (the offer shows from start until the end of the end day). topics (optional) = words from the page address, e.g. [\"diploma\", \"syrian-documents\"]; leave it out to show the offer on all pages; \"home\" = the Arabic and Dutch homepages. code is optional. Never publish an offer without the partner's written OK. whatsapp (optional) = number with country code, digits only, e.g. 31612345678. kind (optional) = what the partner does, shown after the name, e.g. {\"ar\": \"مكتب ترجمة أوراق\", \"nl\": \"Vertaalbureau\"}. strip_link (optional) = \"whatsapp\" makes the moving strip open a WhatsApp chat (needs whatsapp) instead of the website. network (optional) = the affiliate network. Awin links use https://www.awin1.com/cread.php?awinmid=<advertiser id>&awinaffid=3113967&ued=<encoded page>. Only add affiliate offers for programmes that approved us, and only claims taken from the advertiser's own briefing.",
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "items": [
     {
       "id": "wolky-tolky-2026",
@@ -107,8 +107,32 @@
       ]
     },
     {
-      "id": "joybuy-winter-2026",
+      "id": "joybuy-fridayplus-2026",
       "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F4KJJCmgM21CRNBrWG7yf8zuyq1xN",
+      "start": "2026-11-13",
+      "end": "2026-12-31",
+      "title": {
+        "ar": "خصم حتى 50% على قطعة واحدة من المنتجات المشمولة",
+        "nl": "Tot 50% korting op één geschikt artikel"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ],
+      "code": "FRIDAYPLUS"
+    },
+    {
+      "id": "joybuy-winter-2026",
+      "active": false,
       "network": "awin",
       "partner": "Joybuy",
       "partner_nl": "Joybuy",
@@ -139,7 +163,7 @@
         "ar": "متجر إلكتروني",
         "nl": "Webshop"
       },
-      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2F",
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F2AgskJ8M9Kj7ts3UQhryTtbVAfik",
       "start": "2026-11-16",
       "end": "2026-11-30",
       "title": {
@@ -294,6 +318,30 @@
       "code": "PREBLACKWEEK"
     },
     {
+      "id": "lidl-blackweek-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Lidl",
+      "partner_nl": "Lidl",
+      "kind": {
+        "ar": "متجر Lidl الإلكتروني",
+        "nl": "Lidl webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=128189&awinaffid=3113967&ued=https%3A%2F%2Fwww.lidl.nl%2Fc%2Fblack-week%2Fs10080642",
+      "start": "2026-11-19",
+      "title": {
+        "ar": "Black Week: تخفيضات حتى 70% على منتجات مختارة + توصيل مجاني فوق 50 يورو",
+        "nl": "Black Week: tot 70% korting op geselecteerde artikelen + gratis verzending vanaf €50"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ],
+      "end": "2026-11-30",
+      "code": "BLACKWEEK"
+    },
+    {
       "id": "lidl-webshop-2",
       "active": true,
       "network": "awin",
@@ -304,7 +352,7 @@
         "nl": "Lidl webshop"
       },
       "url": "https://www.awin1.com/cread.php?awinmid=128189&awinaffid=3113967&ued=https%3A%2F%2Fwww.lidl.nl%2F",
-      "start": "2026-11-19",
+      "start": "2026-12-01",
       "title": {
         "ar": "تصفّح عروض متجر Lidl الإلكتروني",
         "nl": "Bekijk de aanbiedingen in de Lidl webshop"
