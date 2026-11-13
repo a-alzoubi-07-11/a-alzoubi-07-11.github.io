@@ -186,7 +186,7 @@ def page(L):
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <script>window.BEROEP_TXT={json.dumps(t['js'], ensure_ascii=False)};</script>
 <script src="/beroep/beroep.js?v=5" defer></script>
-<script src="/assets/site-chrome.js?v=10" defer></script>
+<script src="/assets/site-chrome.js?v=11" defer></script>
 </head><body>
 <header class="site-header"><div class="wrap"><div class="header-row"><a class="brand" href="{t['home']}"><span>{t['brand']}</span></a><a class="lang-button" href="{alt}" hreflang="{t['other_lang']}">{t['other_label']}</a></div><nav class="nav" aria-label="التنقل / Navigatie">{links(t['nav'])}</nav></div></header>
 <main id="content" class="wrap"><nav class="breadcrumbs" aria-label="مسار التنقل / Kruimelpad"><ol>{crumbs}<li aria-current="page"><span>{t['crumb_here']}</span></li></ol></nav>

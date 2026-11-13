@@ -59,7 +59,7 @@
         S(t('جهّز وثائقك الشخصية', 'Je documenten regelen'), t('التصديق والترجمة المحلّفة تفيدك لاحقاً.', 'Legaliseren en beëdigd vertalen helpt je later.'),
           [t('شهادة الميلاد والزواج إن وُجدت', 'Geboorte- en huwelijksakte als je die hebt')], t('السفارة ومترجم محلّف', 'Ambassade en beëdigd vertaler'), A('syrian-documents-legalisation-translation'))
       ],
-      maybe: [[t('لمّ شمل العائلة (nareis)', 'Gezin laten overkomen (nareis)'), A('asylum-family-reunification')], [t('الإقامة الدائمة ← افتح مسار «أريد الإقامة الدائمة»', 'Permanent verblijf → kies «Ik wil permanent verblijf»'), '#sit:perm'], [t('الجنسية ← افتح مسار «أريد الجنسية»', 'Naturalisatie → kies «Ik wil Nederlander worden»'), '#sit:nat']],
+      maybe: [[t('تدرّب على أسئلة KNM', 'Oefen KNM-vragen'), P('knm-oefenen.html')], [t('لمّ شمل العائلة (nareis)', 'Gezin laten overkomen (nareis)'), A('asylum-family-reunification')], [t('الإقامة الدائمة ← افتح مسار «أريد الإقامة الدائمة»', 'Permanent verblijf → kies «Ik wil permanent verblijf»'), '#sit:perm'], [t('الجنسية ← افتح مسار «أريد الجنسية»', 'Naturalisatie → kies «Ik wil Nederlander worden»'), '#sit:nat']],
       tool: [t('فاحص الإقامة والجنسية', 'Check permanent verblijf'), C('permanent-residence-check')] },
 
     { id: 'perm', ico: 'home', tone: 'orange', t: t('أريد الإقامة الدائمة', 'Ik wil permanent verblijf'), s: t('حسب نوع إقامتك الحالية', 'Per soort verblijfsvergunning'),
@@ -99,7 +99,7 @@
           S(t('احجز موعداً في البلدية وقدّم الطلب', 'Afspraak bij de gemeente en aanvragen'), t('رسوم 2026: 1,139 يورو، أو 1,454 مع الشريك.', 'Leges 2026: € 1.139, of € 1.454 met partner.'),
             [t('جواز السفر', 'Paspoort'), t('بطاقة الإقامة', 'Verblijfspas'), t('شهادة الاندماج', 'Inburgeringsdiploma'), t('شهادة ميلاد مصدّقة ومترجمة', 'Gelegaliseerde en vertaalde geboorteakte')], GEM, A('dutch-naturalisation-guide'))]}
       ],
-      maybe: [[t('تحتاج وثائق من بلدك؟', 'Documenten uit je land nodig?'), A('syrian-documents-legalisation-translation')], [t('امتحان NT2', 'Staatsexamen Nt2'), A('nt2-b1-exam-guide')]],
+      maybe: [[t('تدرّب على أسئلة KNM', 'Oefen KNM-vragen'), P('knm-oefenen.html')], [t('تحتاج وثائق من بلدك؟', 'Documenten uit je land nodig?'), A('syrian-documents-legalisation-translation')], [t('امتحان NT2', 'Staatsexamen Nt2'), A('nt2-b1-exam-guide')]],
       tool: [t('فاحص الإقامة والجنسية', 'Check naturalisatie'), C('permanent-residence-check')] },
 
     { id: 'letter', ico: 'mail', tone: 'red', t: t('وصلتني رسالة', 'Ik kreeg een brief'), s: t('قرار، غرامة، أو دين', 'Besluit, boete of schuld'),

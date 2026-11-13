@@ -119,7 +119,7 @@ def build(lang, a, today):
             f'{video_block(lang, a["videos"])}<section id="faq"><h2>{t["faq_h"]}</h2>\n{faq}\n</section>\n</div>'
             f'<section id="sources"><h2>{t["src_h"]}</h2><p>{t["src_p"].format(d=dt)}</p><ul>{sources}</ul></section>{t["author"]}{t["closing"]}</article>'
             f'<section class="related-guides"><h2>{t["rel_h"]}</h2><ul>{related}</ul><a href="{cat_href}">{t["cat_all"].format(c=cat_name)}</a></section></main>\n')
-    scripts = '<script src="/assets/chatbot.js?v=5" defer></script><script src="/assets/site-chrome.js?v=10" defer></script>\n<script src="/assets/video-embed.js?v=2" defer></script>\n'
+    scripts = '<script src="/assets/chatbot.js?v=5" defer></script><script src="/assets/site-chrome.js?v=11" defer></script>\n<script src="/assets/video-embed.js?v=2" defer></script>\n'
     html_tag = f'<html lang="{lang}" dir="{"rtl" if lang == "ar" else "ltr"}" data-fixed-language="{lang}" data-ad-reviewed="false">'
     head = re.sub(r"<html[^>]*>", html_tag, head, count=1)
     return head + header + "\n" + main + footer + "\n" + scripts + "</body></html>\n"

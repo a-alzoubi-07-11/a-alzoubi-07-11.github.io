@@ -108,6 +108,9 @@ addEventListener("scroll",()=>{if(!t2){t2=true;requestAnimationFrame(check)}},{p
 check();
 void rtl;
 
+/* ---- share + "did this help?" box at the end of guides and tools ---- */
+if(document.querySelector("main article.reader")&&!document.querySelector('script[src*="engage.js"]')){const es=document.createElement("script");es.src="/assets/engage.js?v=1";es.defer=true;document.head.append(es);}
+
 /* ---- partner offers bar (only when assets/partners.json has an active offer) ---- */
 if(!document.querySelector('script[src*="partners-bar"]')){const ps=document.createElement("script");ps.src="/assets/partners-bar.js?v=11";ps.defer=true;document.head.append(ps);}
 })();
