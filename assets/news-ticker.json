@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T06:52:24+01:00",
-  "validUntil": "2026-11-12T18:52:24+01:00",
+  "updatedAt": "2026-11-13T06:53:16+01:00",
+  "validUntil": "2026-11-13T18:53:16+01:00",
   "items": [
+    {
+      "source": "NOS",
+      "publishedAt": "2026-11-13",
+      "firstSeen": "2026-11-13",
+      "category": {
+        "ar": "تكاليف الرعاية الصحية",
+        "nl": "Zorgkosten"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NOS: أقساط التأمين الصحي 2027 معروفة الآن وترتفع بفروق كبيرة بين الشركات",
+        "nl": "Volgens NOS: zorgpremies 2027 bekend, flinke stijging met grote verschillen"
+      },
+      "summary": {
+        "ar": "وفق NOS: القسط الشهري 2027 مثلاً CZ ‏177.25، DSW ‏173.25، Menzis ‏165.75 يورو. يرتفع eigen risico بـ15 يورو إلى 400 يورو. قيمة zorgtoeslag لعام 2027 لم تُعلن رسمياً بعد.",
+        "nl": "Volgens NOS: maandpremie 2027 o.a. CZ € 177,25, DSW € 173,25, Menzis € 165,75. Het eigen risico stijgt € 15 naar € 400. De zorgtoeslag voor 2027 is nog niet officieel bekend."
+      },
+      "url": "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
+      "sourceName": {
+        "ar": "NOS",
+        "nl": "NOS"
+      },
+      "tier": "media",
+      "id": "nos-2026-11-13-b447ddb1"
+    },
     {
       "source": "NOS",
       "publishedAt": "2026-11-11",
@@ -129,31 +154,6 @@
       "id": "tk-2026-11-03-38e0c63d"
     },
     {
-      "source": "TK",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-11-03",
-      "category": {
-        "ar": "تكاليف الرعاية الصحية",
-        "nl": "Zorgkosten"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "مجلس النواب يطلب من الحكومة عدم رفع eigen risico بمقدار 60 يورو",
-        "nl": "Tweede Kamer vraagt kabinet af te zien van verhoging eigen risico met € 60"
-      },
-      "summary": {
-        "ar": "تبنّى مجلس النواب (Tweede Kamer) في 27 أكتوبر 2026 مقترح النائبة Dobbe (SP) الذي يطلب من الحكومة التراجع عن رفع eigen risico في التأمين الصحي بمقدار 60 يورو. المقترح طلب للحكومة وليس قانوناً بعد.",
-        "nl": "De Tweede Kamer nam op 27 oktober 2026 de motie-Dobbe (SP) aan die het kabinet vraagt af te zien van de verhoging van het eigen risico met € 60. Een motie is een verzoek, nog geen wetswijziging."
-      },
-      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P17133&did=2026P17133",
-      "sourceName": {
-        "ar": "البرلمان (Tweede Kamer)",
-        "nl": "Tweede Kamer"
-      },
-      "tier": "official",
-      "id": "tk-2026-10-27-88677a56"
-    },
-    {
       "source": "DUO",
       "publishedAt": "2026-10-27",
       "firstSeen": "2026-10-27",
@@ -179,31 +179,6 @@
       "id": "duo-2026-10-27-63c38e99"
     },
     {
-      "source": "NOS",
-      "publishedAt": "2026-10-21",
-      "firstSeen": "2026-11-02",
-      "category": {
-        "ar": "تكاليف الرعاية الصحية",
-        "nl": "Zorgkosten"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "وفق NOS: شركة DSW ترفع قسط التأمين الصحي لعام 2027 بمقدار 14.75 يورو شهرياً",
-        "nl": "Volgens NOS: DSW verhoogt zorgpremie 2027 met € 14,75 per maand"
-      },
-      "summary": {
-        "ar": "وفق NOS: قسط التأمين الأساسي لدى DSW في 2027 يصبح 173.25 يورو شهرياً (+9.3%)، ويرتفع zorgtoeslag بـ11 يورو أقل من القسط. أقساط بقية الشركات لم تُعلن بعد، وموعدها حتى 12 نوفمبر.",
-        "nl": "Volgens NOS: de DSW-basispremie 2027 wordt € 173,25 per maand (+9,3%); de zorgtoeslag stijgt € 11 minder. Premies van andere verzekeraars zijn nog niet bekend; die volgen uiterlijk 12 november."
-      },
-      "url": "https://nos.nl/artikel/2636058-grootste-stijging-zorgpremie-in-jaren-dsw-maakt-maandbedrag-2027-bekend",
-      "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
-      },
-      "tier": "media",
-      "id": "nos-2026-10-21-d63165a2"
-    },
-    {
       "source": "BZK",
       "publishedAt": "2026-10-16",
       "firstSeen": "2026-10-29",
@@ -227,6 +202,31 @@
       },
       "tier": "official",
       "id": "bzk-2026-10-16-8b3edba4"
+    },
+    {
+      "source": "TOESLAGEN",
+      "publishedAt": "2026-10-15",
+      "firstSeen": "2026-11-13",
+      "category": {
+        "ar": "البدلات",
+        "nl": "Toeslagen"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "من 2027: حدود ثروة أقل لـ zorgtoeslag و kindgebonden budget",
+        "nl": "Vanaf 2027 lagere vermogensgrenzen voor zorgtoeslag en kindgebonden budget"
+      },
+      "summary": {
+        "ar": "الحد في 2027: ‏158,748 يورو مع toeslagpartner و119,122 يورو دونه. من يتجاوزه يبلّغ عبر Mijn toeslagen قبل 8 ديسمبر 2026 وإلا يرد المبلغ. تصل رسالة للمعنيين نهاية نوفمبر.",
+        "nl": "Grens 2027: € 158.748 met toeslagpartner, € 119.122 zonder. Wie erboven zit, geeft dat uiterlijk 8 december 2026 door in Mijn toeslagen, anders volgt terugbetaling. Brief eind november."
+      },
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
+      "sourceName": {
+        "ar": "دائرة البدلات (Toeslagen)",
+        "nl": "Dienst Toeslagen"
+      },
+      "tier": "official",
+      "id": "toeslagen-2026-10-15-4a21e9c2"
     },
     {
       "source": "TOESLAGEN",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://zoek.officielebekendmakingen.nl",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "new"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-12",
+      "checkedAt": "2026-11-13",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
