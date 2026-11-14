@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-14T08:25:38.996Z",
+  "updated_at": "2026-11-14T08:28:49.810Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -102,18 +102,24 @@
       "result": "Indexing requested — URL added to priority crawl queue",
       "requested_at": "2026-11-14T08:24:57.353Z",
       "accepted_at": "2026-11-14T08:25:12.923Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/categories/work.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:27:10.349Z",
+      "accepted_at": "2026-11-14T08:27:21.071Z"
     }
   ],
   "last_blocker": {
-    "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
-    "result": "Quota exceeded",
-    "message": "Daily quota exceeded; Google asks to try again tomorrow.",
-    "checked_at": "2026-11-12T07:55:16.869Z",
-    "accepted_count": 0
+    "url": "https://gidsnederland.nl/nl/categories/money.html",
+    "result": "Temporary Search Console error",
+    "message": "Something went wrong. If the issue persists, try again in a few hours.",
+    "stage": "URL inspection before requesting indexing",
+    "checked_at": "2026-11-14T08:28:12.994Z",
+    "accepted_count": 8
   },
   "pending_report_checked_at": "2026-11-13T17:47:00+00:00",
   "deferred_urls": [
-    "https://gidsnederland.nl/categories/work.html",
     "https://gidsnederland.nl/nl/categories/money.html",
     "https://gidsnederland.nl/articles/trending-jobs-2026.html",
     "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
@@ -152,6 +158,13 @@
       "message": "Daily quota exceeded; Google asks to try again tomorrow.",
       "checked_at": "2026-11-11T08:57:13.616Z",
       "accepted_count": 11
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+      "result": "Quota exceeded",
+      "message": "Daily quota exceeded; Google asks to try again tomorrow.",
+      "checked_at": "2026-11-12T07:55:16.869Z",
+      "accepted_count": 0
     }
   ],
   "run_history": [
@@ -161,12 +174,20 @@
       "attempted_url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
       "result": "Quota exceeded",
       "deferred_count": 36
+    },
+    {
+      "checked_at": "2026-11-14T08:28:12.994Z",
+      "result": "temporary_search_console_error",
+      "accepted_count": 8,
+      "deferred_count": 30,
+      "attempted_url": "https://gidsnederland.nl/nl/categories/money.html"
     }
   ],
   "last_run": {
-    "checked_at": "2026-11-14T08:25:38.996Z",
-    "result": "in_progress",
-    "accepted_count": 7,
-    "deferred_count": 31
+    "checked_at": "2026-11-14T08:28:12.994Z",
+    "result": "temporary_search_console_error",
+    "accepted_count": 8,
+    "deferred_count": 30,
+    "attempted_url": "https://gidsnederland.nl/nl/categories/money.html"
   }
 }
