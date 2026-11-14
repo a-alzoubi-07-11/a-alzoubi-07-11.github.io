@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-12T07:55:16.869Z",
+  "updated_at": "2026-11-14T08:17:19.970Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -59,6 +59,25 @@
       "url": "https://gidsnederland.nl/articles/foreign-driving-license-exchange.html",
       "result": "Indexing requested — URL added to priority crawl queue",
       "requested_at": "2026-11-11T08:56:15.945Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:10:58.405Z",
+      "accepted_at": "2026-11-14T08:11:47.952Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/knm-oefenen.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:13:18.908Z",
+      "accepted_at": "2026-11-14T08:13:54.222Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/knm-oefenen.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": null,
+      "accepted_at": "2026-11-14T08:15:58.274Z",
+      "timing_note": "Exact send timestamp unavailable; acceptance timestamp recorded. A two-minute interval guard was applied before submission."
     }
   ],
   "last_blocker": {
@@ -68,7 +87,7 @@
     "checked_at": "2026-11-12T07:55:16.869Z",
     "accepted_count": 0
   },
-  "pending_report_checked_at": "2026-11-11T12:11:19+00:00",
+  "pending_report_checked_at": "2026-11-13T17:47:00+00:00",
   "deferred_urls": [
     "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
     "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
@@ -89,7 +108,6 @@
     "https://gidsnederland.nl/articles/asylum-two-status-system-2026.html",
     "https://gidsnederland.nl/articles/dutch-government-terms-glossary.html",
     "https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html",
-    "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
     "https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html",
     "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
     "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
@@ -124,5 +142,11 @@
       "result": "Quota exceeded",
       "deferred_count": 36
     }
-  ]
+  ],
+  "last_run": {
+    "checked_at": "2026-11-14T08:17:19.970Z",
+    "result": "in_progress",
+    "accepted_count": 3,
+    "deferred_count": 35
+  }
 }
