@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-14T08:17:19.970Z",
+  "updated_at": "2026-11-14T08:21:10.228Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -78,6 +78,18 @@
       "requested_at": null,
       "accepted_at": "2026-11-14T08:15:58.274Z",
       "timing_note": "Exact send timestamp unavailable; acceptance timestamp recorded. A two-minute interval guard was applied before submission."
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:18:05.484Z",
+      "accepted_at": "2026-11-14T08:19:04.716Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:20:30.546Z",
+      "accepted_at": "2026-11-14T08:20:50.604Z"
     }
   ],
   "last_blocker": {
@@ -89,8 +101,6 @@
   },
   "pending_report_checked_at": "2026-11-13T17:47:00+00:00",
   "deferred_urls": [
-    "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
-    "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
     "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
     "https://gidsnederland.nl/nl/articles/student-finance.html",
     "https://gidsnederland.nl/categories/work.html",
@@ -144,9 +154,9 @@
     }
   ],
   "last_run": {
-    "checked_at": "2026-11-14T08:17:19.970Z",
+    "checked_at": "2026-11-14T08:21:10.228Z",
     "result": "in_progress",
-    "accepted_count": 3,
-    "deferred_count": 35
+    "accepted_count": 5,
+    "deferred_count": 33
   }
 }
