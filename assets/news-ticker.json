@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T06:53:16+01:00",
-  "validUntil": "2026-11-13T18:53:16+01:00",
+  "updatedAt": "2026-11-14T06:51:15+01:00",
+  "validUntil": "2026-11-14T18:51:15+01:00",
   "items": [
     {
       "source": "NOS",
@@ -27,6 +27,31 @@
       },
       "tier": "media",
       "id": "nos-2026-11-13-b447ddb1"
+    },
+    {
+      "source": "UWV",
+      "publishedAt": "2026-11-11",
+      "firstSeen": "2026-11-14",
+      "category": {
+        "ar": "الإعانات والعمل",
+        "nl": "WW en werk"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "UWV: دخل إضافي في نوفمبر وديسمبر يعني WW أقل أو لا شيء في الشهر التالي",
+        "nl": "UWV: extra inkomsten in november en december, minder of geen WW de maand erna"
+      },
+      "summary": {
+        "ar": "من يعمل بجانب WW ويُدفع له كل 4 أسابيع يتلقى راتبين في نوفمبر، فتقل الإعانة في ديسمبر. مكافأة نهاية السنة تُخفض WW يناير. لا إعانة إذا تجاوز الدخل 87.5% من راتب WW الشهري.",
+        "nl": "Wie naast WW werkt en per 4 weken betaald wordt, krijgt in november 2 lonen en dus minder of geen WW in december. Een eindejaarsuitkering verlaagt de WW in januari. Boven 87,5% van uw WW-maandloon geen uitkering."
+      },
+      "url": "https://www.uwv.nl/nl/actueel/extra-inkomsten-geen-of-minder-ww-in-volgende-maand",
+      "sourceName": {
+        "ar": "UWV",
+        "nl": "UWV"
+      },
+      "tier": "official",
+      "id": "uwv-2026-11-11-d4e5578a"
     },
     {
       "source": "NOS",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "toeslagen-2026-10-15-4a21e9c2"
-    },
-    {
-      "source": "TOESLAGEN",
-      "publishedAt": "2026-10-15",
-      "firstSeen": "2026-11-08",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "من 2027: قواعد أبسط لتحديد شريك البدلات (toeslagpartner)",
-        "nl": "Regels voor toeslagpartners eenvoudiger vanaf 1 januari 2027"
-      },
-      "summary": {
-        "ar": "من 1 يناير 2027 يُعدّ الشخص toeslagpartner فقط عند الزواج أو الشراكة المسجلة، أو عند التسجيل في العنوان نفسه مع عقد مساكنة موثق أو طفل مشترك أو بيت مملوك معاً. يصل المعنيين خطاب نهاية نوفمبر.",
-        "nl": "Vanaf 1 januari 2027 bent u alleen toeslagpartner bij huwelijk of geregistreerd partnerschap, of bij inschrijving op één adres plus bv. samenlevingscontract, kind samen of eigen woning. Brief volgt eind november."
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/regels-toeslagpartners-eenvoudiger-vanaf-1-januari-2027",
-      "sourceName": {
-        "ar": "دائرة البدلات (Toeslagen)",
-        "nl": "Dienst Toeslagen"
-      },
-      "tier": "official",
-      "id": "toeslagen-2026-10-15-f11cac34"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-13",
-      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "checkedAt": "2026-11-14",
+      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-13",
-      "listingUrl": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "checkedAt": "2026-11-14",
+      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-13",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl",
+      "checkedAt": "2026-11-14",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-13",
+      "checkedAt": "2026-11-14",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
