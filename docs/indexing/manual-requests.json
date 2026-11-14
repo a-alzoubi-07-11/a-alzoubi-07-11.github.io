@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-14T08:21:10.228Z",
+  "updated_at": "2026-11-14T08:25:38.996Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -90,6 +90,18 @@
       "result": "Indexing requested — URL added to priority crawl queue",
       "requested_at": "2026-11-14T08:20:30.546Z",
       "accepted_at": "2026-11-14T08:20:50.604Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:22:53.149Z",
+      "accepted_at": "2026-11-14T08:23:43.997Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-14T08:24:57.353Z",
+      "accepted_at": "2026-11-14T08:25:12.923Z"
     }
   ],
   "last_blocker": {
@@ -101,8 +113,6 @@
   },
   "pending_report_checked_at": "2026-11-13T17:47:00+00:00",
   "deferred_urls": [
-    "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
-    "https://gidsnederland.nl/nl/articles/student-finance.html",
     "https://gidsnederland.nl/categories/work.html",
     "https://gidsnederland.nl/nl/categories/money.html",
     "https://gidsnederland.nl/articles/trending-jobs-2026.html",
@@ -154,9 +164,9 @@
     }
   ],
   "last_run": {
-    "checked_at": "2026-11-14T08:21:10.228Z",
+    "checked_at": "2026-11-14T08:25:38.996Z",
     "result": "in_progress",
-    "accepted_count": 5,
-    "deferred_count": 33
+    "accepted_count": 7,
+    "deferred_count": 31
   }
 }
