@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-15T08:02:14.695Z",
+  "updated_at": "2026-11-15T08:10:29.249Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -128,7 +128,15 @@
       "accepted_at": "2026-11-15T08:01:38.030Z"
     }
   ],
-  "last_blocker": null,
+  "last_blocker": {
+    "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
+    "result": "Quota exceeded",
+    "message": "Daily quota exceeded; Google asks to try again tomorrow.",
+    "stage": "Request indexing",
+    "attempted_at": "2026-11-15T08:09:34.571Z",
+    "checked_at": "2026-11-15T08:09:52.724Z",
+    "accepted_count": 3
+  },
   "pending_report_checked_at": "2026-11-14T11:45:56+00:00",
   "deferred_urls": [
     "https://gidsnederland.nl/articles/aow-aio-pension.html",
@@ -197,13 +205,23 @@
       "accepted_count": 8,
       "deferred_count": 30,
       "attempted_url": "https://gidsnederland.nl/nl/categories/money.html"
+    },
+    {
+      "checked_at": "2026-11-15T08:09:52.724Z",
+      "result": "daily_quota_exceeded",
+      "accepted_count": 3,
+      "deferred_count": 27,
+      "attempted_url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
+      "pacing_minutes": 8
     }
   ],
   "last_run": {
-    "checked_at": "2026-11-15T08:02:14.695Z",
-    "result": "in_progress",
+    "checked_at": "2026-11-15T08:09:52.724Z",
+    "result": "daily_quota_exceeded",
     "accepted_count": 3,
-    "deferred_count": 27
+    "deferred_count": 27,
+    "attempted_url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
+    "pacing_minutes": 8
   },
   "last_resolved_blocker": {
     "url": "https://gidsnederland.nl/nl/categories/money.html",
