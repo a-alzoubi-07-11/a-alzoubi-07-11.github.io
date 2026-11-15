@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-14T06:51:15+01:00",
-  "validUntil": "2026-11-14T18:51:15+01:00",
+  "updatedAt": "2026-11-15T06:51:17+01:00",
+  "validUntil": "2026-11-15T18:51:17+01:00",
   "items": [
     {
       "source": "NOS",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-14",
+      "checkedAt": "2026-11-15",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
