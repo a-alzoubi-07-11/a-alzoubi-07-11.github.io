@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-15T07:54:09.754Z",
+  "updated_at": "2026-11-15T08:02:14.695Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -120,12 +120,17 @@
       "result": "Indexing requested — URL added to priority crawl queue",
       "requested_at": "2026-11-15T07:52:57.560Z",
       "accepted_at": "2026-11-15T07:53:18.393Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-15T08:01:17.146Z",
+      "accepted_at": "2026-11-15T08:01:38.030Z"
     }
   ],
   "last_blocker": null,
   "pending_report_checked_at": "2026-11-14T11:45:56+00:00",
   "deferred_urls": [
-    "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
     "https://gidsnederland.nl/articles/aow-aio-pension.html",
     "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
     "https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html",
@@ -195,10 +200,10 @@
     }
   ],
   "last_run": {
-    "checked_at": "2026-11-15T07:54:09.754Z",
+    "checked_at": "2026-11-15T08:02:14.695Z",
     "result": "in_progress",
-    "accepted_count": 2,
-    "deferred_count": 28
+    "accepted_count": 3,
+    "deferred_count": 27
   },
   "last_resolved_blocker": {
     "url": "https://gidsnederland.nl/nl/categories/money.html",
