@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T10:40Z",
+ "checked_at": "2026-11-15T11:14Z",
  "external": {
   "total": 628,
   "broken": [],
@@ -543,12 +543,12 @@
    "status": "ok",
    "checked": 180,
    "total": 180,
-   "indexed": 145,
+   "indexed": 148,
    "not_indexed": [
     {
      "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:44:05+00:00",
+     "checked_at": "2026-11-15T11:17:23+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T12:14:46Z",
@@ -557,12 +557,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FjKYd1l10U1QlYN5f6mM4A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Pk_VfeWZ0ZLr9o_EwlV8gw&utm_medium=link&utm_source=api"
     },
     {
-     "url": "https://gidsnederland.nl/nl/categories/money.html",
+     "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:52:10+00:00",
+     "checked_at": "2026-11-15T11:28:08+00:00",
+     "verdict": "NEUTRAL",
+     "state": "Discovered - currently not indexed",
+     "last_crawl": null,
+     "google_canonical": null,
+     "user_canonical": null,
+     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VYbZMx5CaB2FmG-66zUdlQ&utm_medium=link&utm_source=api"
+    },
+    {
+     "url": "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
+     "status": "not_indexed",
+     "checked_at": "2026-11-15T11:28:51+00:00",
      "verdict": "NEUTRAL",
      "state": "URL is unknown to Google",
      "last_crawl": null,
@@ -571,68 +585,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5AqV8iegMRcgRDJmfz9czA&utm_medium=link&utm_source=api"
-    },
-    {
-     "url": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:53:55+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Crawled - currently not indexed",
-     "last_crawl": "2026-10-18T17:25:52Z",
-     "google_canonical": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
-     "user_canonical": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
-     "robots_state": "ALLOWED",
-     "indexing_state": "INDEXING_ALLOWED",
-     "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Tcjh-vRq5g1u6gti84Znkw&utm_medium=link&utm_source=api"
-    },
-    {
-     "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:54:01+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=O5tBPhCZ6KSIXaHe-c-ITA&utm_medium=link&utm_source=api"
-    },
-    {
-     "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:54:57+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=v0lBzV_lB9poKgdKeQy_iQ&utm_medium=link&utm_source=api"
-    },
-    {
-     "url": "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:55:41+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JUWcaQKVi_awP498K0w_iQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=GbIVICVk-sKeCwbGyESxjQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:55:59+00:00",
+     "checked_at": "2026-11-15T11:29:10+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -641,12 +599,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=su8znN7h9xrt_O1vY96WSg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PeLJHOcG550aYGgAjgEdIQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/adult-learning-finance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:56:12+00:00",
+     "checked_at": "2026-11-15T11:29:23+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:57:24Z",
@@ -655,12 +613,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=AULnVV8Ce5PswrLUn__NQg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FtbQaDSG7N9yod5A-Y178Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/traffic-fines-cjib.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:13+00:00",
+     "checked_at": "2026-11-15T11:30:24+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:48:02Z",
@@ -669,12 +627,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=w-dfLVl4vqqz18KbzML_8Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=sVSj7FUh_frqeddZwKoGrw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/bezwaar-objection-letter.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:26+00:00",
+     "checked_at": "2026-11-15T11:30:36+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:46:03Z",
@@ -683,12 +641,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=lcUCnoDTTpZaOPoLXEXvfg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=lqvrlWV1Z0awF9qXtxQkMA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/legal-aid-lawyer-toevoeging.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:38+00:00",
+     "checked_at": "2026-11-15T11:30:49+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:46:03Z",
@@ -697,12 +655,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=MuDMBX2YNgNbIgfHFNSGwA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=iX2RgW_lwQPrhwd5N3IPXw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/scams-phishing-netherlands.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:51+00:00",
+     "checked_at": "2026-11-15T11:31:01+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:45:35Z",
@@ -711,12 +669,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9Il9xFtS4HSW1HP_I_2FCg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=4tdEPeRSrYWkmhFbtcxg3w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/pregnancy-newborn-care.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:58:03+00:00",
+     "checked_at": "2026-11-15T11:31:14+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:44:44Z",
@@ -725,12 +683,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=S_5bnkSCYQfy5y026upTPg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QeVjfi414PeSG9hlIF2GyA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/asylum-two-status-system-2026.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:58:16+00:00",
+     "checked_at": "2026-11-15T11:31:26+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:59:49Z",
@@ -739,12 +697,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RBfYzliu_urWGSuZa906Sw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9FeDPksXbEQfIaB4_jJ6Xw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/dutch-government-terms-glossary.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:18+00:00",
+     "checked_at": "2026-11-15T11:32:28+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:59:05Z",
@@ -753,12 +711,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FhPjbFmCPvx3DaZYL5yq1A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=H59MQxERPri16cO94I6--A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:25+00:00",
+     "checked_at": "2026-11-15T11:32:34+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:57:34Z",
@@ -767,12 +725,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=890khbcf_Srl8yb4aPFE5A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zi_B8NMUqSU74z3PJyb98Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:31+00:00",
+     "checked_at": "2026-11-15T11:32:40+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-14T08:16:24Z",
@@ -781,12 +739,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ahJVKsltPDH1rQ-39TzcYQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nBa06n8w_Ixe6sUJba4PQQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:37+00:00",
+     "checked_at": "2026-11-15T11:32:47+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:38:35Z",
@@ -795,12 +753,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=i2VONF_PXT73E2xZqXpfzg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=cuuask6ckeZ0s7psvBcTEA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-asylum-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:43+00:00",
+     "checked_at": "2026-11-15T11:32:53+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:54:36Z",
@@ -809,12 +767,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YXtam4c_RhRjpY0fBSmWog&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zmyn2vDxyX9Tb1qPme-OCA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:50+00:00",
+     "checked_at": "2026-11-15T11:32:59+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -823,12 +781,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=1gIyv98QEmZT7qOMcuxH3g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=aZikLLEKHuYQWj4HCXJc6A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-regular-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:56+00:00",
+     "checked_at": "2026-11-15T11:33:06+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:54:36Z",
@@ -837,12 +795,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=3bQfGW8dabHbVnvSN_cG3Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YrNWEGpNHoXtRF6ChzDFQg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:02+00:00",
+     "checked_at": "2026-11-15T11:33:12+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -851,12 +809,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-CoAcfi4oqHB2RijbPNJNw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=X6_B6-ETO6bdOB_elBUEYQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/liability-home-insurance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:14+00:00",
+     "checked_at": "2026-11-15T11:33:24+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -865,54 +823,54 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=AC1Pxb2gqMHQxsG33hbfnA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5vKoac5kwjO0QCeqO7pGPw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:20+00:00",
+     "checked_at": "2026-11-15T11:33:30+00:00",
      "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JWlga0ETq0iFixj3PR62Nw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZkOatf_lt6qXf_t6FxdUYg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/beroep/",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:27+00:00",
+     "checked_at": "2026-11-15T11:33:36+00:00",
      "verdict": "NEUTRAL",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=_zchNvhsMqxQbsbHwdk3yw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5wmVejMnZxN0rug4qdIuRg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:33+00:00",
+     "checked_at": "2026-11-15T11:33:42+00:00",
      "verdict": "NEUTRAL",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=zzpX7qwDiKIBwOBhWoAxfQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2PuJFPdtEaQwgkKbxwRJuw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:46+00:00",
+     "checked_at": "2026-11-15T11:33:55+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -921,12 +879,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QAK-1PFRsGH1rBHQn67eMg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gZSxx6c7YbjdHue0Q3K6eQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:52+00:00",
+     "checked_at": "2026-11-15T11:34:01+00:00",
      "verdict": "NEUTRAL",
      "state": "URL is unknown to Google",
      "last_crawl": null,
@@ -935,12 +893,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JYOJlYcbl5-4TZlhRoFm4g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VHFpHIwH1LOPc_7hROKhNw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:58+00:00",
+     "checked_at": "2026-11-15T11:34:07+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -949,12 +907,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=mQeXf75J7TGDJ5cYYsxxzA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Gt1rGZpnRhoCULsr2ZZhMA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:05+00:00",
+     "checked_at": "2026-11-15T11:34:13+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-03T15:26:53Z",
@@ -963,12 +921,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RRTHK0P8j2zUZ2rJn-5luQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2qRBlg5UzK28SPESbcXx9A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:11+00:00",
+     "checked_at": "2026-11-15T11:34:20+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -977,12 +935,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YsEcG0xov0XCLP1lR-cc0w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RPe5TB5B7z-KQvXtFVEkUg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/affiliate-disclosure.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:17+00:00",
+     "checked_at": "2026-11-15T11:34:26+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -991,12 +949,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pxDEcMupZZX3gFZcZTEYyg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Agxpm5N8QZ9wnxjXWbtWYw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/affiliate-disclosure.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:23+00:00",
+     "checked_at": "2026-11-15T11:34:32+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -1005,12 +963,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=hQnZCWohav2neyDl_z9uMA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=1_1H5xvDAmp7ujc2GpFs5A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:29+00:00",
+     "checked_at": "2026-11-15T11:34:38+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -1019,21 +977,21 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qMTqH-Qy_Z_dvr6YZCZTsg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pxok-g08V4bHmE14Tsbbgg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/templates.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:42+00:00",
+     "checked_at": "2026-11-15T11:34:50+00:00",
      "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=IQkFQLOWlERASStrWKJb-w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=010OL4A9o3kWh4eVgWsASA&utm_medium=link&utm_source=api"
     }
    ],
    "errors": [],
@@ -1041,7 +999,7 @@
     {
      "url": "https://gidsnederland.nl/about.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:15+00:00",
+     "checked_at": "2026-11-15T11:16:33+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-12T07:39:19Z",
@@ -1050,12 +1008,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RaJzm5Vy-fmkdo6odAWT0A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=fzOurUi9kEYQ8Do4KrKbcQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/annual-tax-return-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:21+00:00",
+     "checked_at": "2026-11-15T11:16:39+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T01:00:25Z",
@@ -1064,26 +1022,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5Sv54hA8InfxTo4OD6QzkA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=z-j5oMYK1R4FcHXpDoKN4g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/asylum-family-reunification.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:27+00:00",
+     "checked_at": "2026-11-15T11:16:46+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-18T17:30:37Z",
+     "last_crawl": "2026-11-15T11:05:44Z",
      "google_canonical": "https://gidsnederland.nl/articles/asylum-family-reunification.html",
      "user_canonical": "https://gidsnederland.nl/articles/asylum-family-reunification.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=dl4ueJFn9DJXpb2BPq0deA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=L11OOLJFDZVi2O6QJ2hydg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/bol-bbl-comparison.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:34+00:00",
+     "checked_at": "2026-11-15T11:16:52+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T10:02:14Z",
@@ -1092,12 +1050,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=el6VfrdxNavx8S2HB0RxpQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=yHmJxcOVSo_y8QiDfInU1Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/bsn-municipality-registration.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:40+00:00",
+     "checked_at": "2026-11-15T11:16:58+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T17:27:22Z",
@@ -1106,12 +1064,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=WniIlhKhXRgcQZtfPKnZyA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=urB7thn_Z6WF-z1mf8gfEA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/change-address-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:46+00:00",
+     "checked_at": "2026-11-15T11:17:04+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:04:47Z",
@@ -1120,26 +1078,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=EFNgKhUK6OWHD5OSh9bYvw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=0iIQM7gCe43n0-YQEshvzw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/childcare-allowance-kinderopvangtoeslag.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:52+00:00",
+     "checked_at": "2026-11-15T11:17:10+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-26T16:11:52Z",
+     "last_crawl": "2026-11-15T08:07:50Z",
      "google_canonical": "https://gidsnederland.nl/articles/childcare-allowance-kinderopvangtoeslag.html",
      "user_canonical": "https://gidsnederland.nl/articles/childcare-allowance-kinderopvangtoeslag.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PcTv0fbBk8OeLXZH95wsbA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=CrOfRMnHZ0JtefEd6lfdzg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/digid-registration-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:43:59+00:00",
+     "checked_at": "2026-11-15T11:17:17+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-09T07:04:46Z",
@@ -1148,12 +1106,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZeuOH--U-c3QjmjjrGVDVg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=SWklq-tEmaZLCsy3Q4qezA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/diploma-evaluation-sbb.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:44:05+00:00",
+     "checked_at": "2026-11-15T11:17:23+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T12:14:46Z",
@@ -1162,12 +1120,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FjKYd1l10U1QlYN5f6mM4A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Pk_VfeWZ0ZLr9o_EwlV8gw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/dutch-naturalisation-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:11+00:00",
+     "checked_at": "2026-11-15T11:17:29+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-06T08:49:23Z",
@@ -1176,12 +1134,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Np6O641WDiW01Kwk2MtevQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=3GAtYdVY-Cv7a5524N-WFA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/dutch-payslip-explained.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:17+00:00",
+     "checked_at": "2026-11-15T11:17:35+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-27T08:35:25Z",
@@ -1190,12 +1148,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=m7QNVMsWH3XtfMdcBWbT9g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=bOfMO4PWsvqsugRpZOlQbA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/dutch-school-system-basisschool.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:23+00:00",
+     "checked_at": "2026-11-15T11:17:41+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T13:49:40Z",
@@ -1204,12 +1162,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=iuI_PJTPoR7oGM7MV-t9fQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=yrUQqktY_9ygaRvetKfzfQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/employment-contracts-labor-law-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:30+00:00",
+     "checked_at": "2026-11-15T11:17:48+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T03:49:11Z",
@@ -1218,12 +1176,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Cvt-EW7Qs0i2BT1QmvPPrg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=yMZd0aQM8MBORc6OiLWSNQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/eu-permanent-residence-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:36+00:00",
+     "checked_at": "2026-11-15T11:17:54+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T21:05:30Z",
@@ -1232,26 +1190,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pTQgHE30-zoK801jsj9T2A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QwKepdzToA9EgQ3-eP48xg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/family-reunification-mvv-ind.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:42+00:00",
+     "checked_at": "2026-11-15T11:18:00+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-17T11:56:43Z",
+     "last_crawl": "2026-11-15T08:38:33Z",
      "google_canonical": "https://gidsnederland.nl/articles/family-reunification-mvv-ind.html",
      "user_canonical": "https://gidsnederland.nl/articles/family-reunification-mvv-ind.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=H8r1hHVIm7sjt4Dq9fuZcw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=MhwU31dXlM7Bf1RLpu3VCw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/health-insurance-newcomers.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:48+00:00",
+     "checked_at": "2026-11-15T11:18:07+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T15:56:51Z",
@@ -1260,12 +1218,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Ak6DTuXhcoAWk3Pu3wGqng&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6rUHj1k7sCC_C07ToFyKpw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/housing-rent-allowance-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:44:55+00:00",
+     "checked_at": "2026-11-15T11:18:13+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-16T23:18:33Z",
@@ -1274,12 +1232,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5PEvKCaMYS7nZTbnCofbiw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=yNrp8K5FyflC_zrjxuUdug&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/huisarts-registration.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:01+00:00",
+     "checked_at": "2026-11-15T11:18:19+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-01T15:45:51Z",
@@ -1288,26 +1246,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PAsWhBV3UwThlZE86i0EPA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-iG-p7pP5kq0JfhJdSZRSQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/kinderbijslag-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:07+00:00",
+     "checked_at": "2026-11-15T11:18:25+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-07T17:47:18Z",
+     "last_crawl": "2026-11-15T05:09:15Z",
      "google_canonical": "https://gidsnederland.nl/articles/kinderbijslag-guide.html",
      "user_canonical": "https://gidsnederland.nl/articles/kinderbijslag-guide.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jueFMYK_RZGiWFNOa7Vexw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ox5el3n7SxZnLBled1fFbA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/kindgebonden-budget-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:13+00:00",
+     "checked_at": "2026-11-15T11:18:32+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T12:02:04Z",
@@ -1316,12 +1274,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=q5YZ8JbqUHKPvZpLEw0oWg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NKtNo7ijODl2GP5cENiJTA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-conditions.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:20+00:00",
+     "checked_at": "2026-11-15T11:18:38+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-16T23:18:03Z",
@@ -1330,12 +1288,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=22Vevh9Pq4S_HHWBLtAUNg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=m4zRxuDULTkLH8phlrkn8Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-dutch-language-options.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:26+00:00",
+     "checked_at": "2026-11-15T11:18:44+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T18:55:09Z",
@@ -1344,12 +1302,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9d3FeoDoN97H70Rb3hjLRA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gi5mXAItFEWqnVAAjQ27mQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/mbo-hbo-wo-comparison.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:32+00:00",
+     "checked_at": "2026-11-15T11:18:50+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:55:27Z",
@@ -1358,12 +1316,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=p5A5nWxK3ofNQwa-T4UwiA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=TYTyA62sDh-uX7_6DYdtcA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/minimum-wage-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:39+00:00",
+     "checked_at": "2026-11-15T11:18:56+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-01T12:36:40Z",
@@ -1372,12 +1330,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=uRUlgpH7nhcupi6R55YVyg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Lz-T0Ub98WNrSuMruZ-SmA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/nt2-b1-exam-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:45+00:00",
+     "checked_at": "2026-11-15T11:19:02+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-27T00:55:41Z",
@@ -1386,12 +1344,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VDvhVpZs4ECE5C_YRK2PrA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ApLw9IUOq61kIwtUSxJlgw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/student-finance.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:51+00:00",
+     "checked_at": "2026-11-15T11:19:09+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-08T17:52:38Z",
@@ -1400,12 +1358,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=BIPhdn-nXFGfyH6sSN0ktQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=EFAgwiDHWiyBLuWyZ7yPdA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/temporary-agency-work-rights.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:45:58+00:00",
+     "checked_at": "2026-11-15T11:19:15+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:55:27Z",
@@ -1414,12 +1372,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=v69mGqq5QvGgvYyw11uXUg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6Bpy2k54Y1DBoTLsx4eVqw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/toeslagen-income-update.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:04+00:00",
+     "checked_at": "2026-11-15T11:19:22+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-27T04:06:16Z",
@@ -1428,26 +1386,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NC8QUTkTOkrK4K3D_i9EGw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=CzvVaKpjcaLzFO-27EsKRQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/toeslagpartner-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:10+00:00",
+     "checked_at": "2026-11-15T11:19:28+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-07T16:06:41Z",
+     "last_crawl": "2026-11-15T01:47:44Z",
      "google_canonical": "https://gidsnederland.nl/articles/toeslagpartner-guide.html",
      "user_canonical": "https://gidsnederland.nl/articles/toeslagpartner-guide.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=vQGIqkFfecFD8eel0uq2cA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ecslZP_dDersTBnUFEHs5w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/zero-hours-contract.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:16+00:00",
+     "checked_at": "2026-11-15T11:19:34+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-16T23:18:33Z",
@@ -1456,12 +1414,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=h-Qo2yGDK5KbuyhR3giJQg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=u8tcwZv4YtQchwa-2iiEvw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/zorgtoeslag-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:23+00:00",
+     "checked_at": "2026-11-15T11:19:40+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-04T20:36:03Z",
@@ -1470,12 +1428,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=xG61lM8AfUSmMCeTKjWEAw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Qhjc8VuHSFv0cA0oDltQsg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:29+00:00",
+     "checked_at": "2026-11-15T11:19:46+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:06:56Z",
@@ -1484,26 +1442,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=_EbpjCGJg5jnKdQraGKnuA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YlU7h42Meo_azF22r9ki7w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/contact.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:36+00:00",
+     "checked_at": "2026-11-15T11:19:52+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-09T18:16:19Z",
+     "last_crawl": "2026-11-15T03:04:38Z",
      "google_canonical": "https://gidsnederland.nl/contact.html",
      "user_canonical": "https://gidsnederland.nl/contact.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=N5y73bPMDyfTrk_PAAUOzg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NTQO-VTHHqOsP-6Ca9Yb9A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/cv.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:42+00:00",
+     "checked_at": "2026-11-15T11:19:58+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:44:43Z",
@@ -1512,12 +1470,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7ft6Oo3sgH8j5kAup_VbTw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=IDBqVdloYYvU2zHhGQKR6Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/editorial-policy.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:48+00:00",
+     "checked_at": "2026-11-15T11:20:05+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-10T15:45:42Z",
@@ -1526,12 +1484,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Mn7aKA0ouU9OkxzhaJethQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=zUjDsIvK5-fOU3uOhFDtLA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:46:54+00:00",
+     "checked_at": "2026-11-15T11:20:11+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T10:29:46Z",
@@ -1540,12 +1498,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=GcX2kJ9W_kixUjeSd85giQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=eloNfYZvr2CJUXLTOQqcVQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/about.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:00+00:00",
+     "checked_at": "2026-11-15T11:20:17+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T10:36:27Z",
@@ -1554,12 +1512,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=J8mfI0m8VIA2MdP3m0azug&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=bYgT_G_hvX7_21KQRBLYXg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/annual-tax-return-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:07+00:00",
+     "checked_at": "2026-11-15T11:20:24+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:21:58Z",
@@ -1568,12 +1526,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=75Qry_YGLgJFz_MTgosBKw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Ka6db2Q8iaD_2D_imp-a8Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/asylum-family-reunification.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:13+00:00",
+     "checked_at": "2026-11-15T11:20:30+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T15:35:52Z",
@@ -1582,12 +1540,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ma3yU8_75zrRpP8IKw2uog&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=cYBFSKEQklkWWHHWqLObZQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bol-bbl-comparison.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:19+00:00",
+     "checked_at": "2026-11-15T11:20:36+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:14:23Z",
@@ -1596,12 +1554,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=g8_3ThvtEhPmBN09_uPDfg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=dBbKLujDnLES2F834RwcCQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bsn-municipality-registration.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:26+00:00",
+     "checked_at": "2026-11-15T11:20:42+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:23:15Z",
@@ -1610,12 +1568,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=OsZ9EonZf-1VPRF7TH2E8A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=p-HX-Gpjk8A1jKU5OIlPJg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/change-address-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:32+00:00",
+     "checked_at": "2026-11-15T11:20:48+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T22:48:32Z",
@@ -1624,12 +1582,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=yYam97uJ63enn35zKxXoGA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=V7yIFK52-9hQ0XJqjRF4Jg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/childcare-allowance-kinderopvangtoeslag.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:38+00:00",
+     "checked_at": "2026-11-15T11:20:54+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-29T03:41:33Z",
@@ -1638,12 +1596,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YyE544m0jibymknzm8VS-w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=XKhuGNUwaaX0jhxMG8Squw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/digid-registration-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:45+00:00",
+     "checked_at": "2026-11-15T11:21:01+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:01:01Z",
@@ -1652,12 +1610,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9iCNgBgqAt5BYgcTGc84Tw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jUuIC0glBVm72HBK0eiAEQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/diploma-evaluation-sbb.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:51+00:00",
+     "checked_at": "2026-11-15T11:21:07+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-28T05:19:35Z",
@@ -1666,12 +1624,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6Zgy_T337_GWDqhy_0ysKA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=o5tvYL9r4noKmdInJkvbTQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/dutch-naturalisation-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:47:57+00:00",
+     "checked_at": "2026-11-15T11:21:13+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:31:54Z",
@@ -1680,12 +1638,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=MsCJtMbvpqgGSwQG4bIAAQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=wSGiAb7wMdQ2r3nokNQnZg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/dutch-payslip-explained.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:04+00:00",
+     "checked_at": "2026-11-15T11:21:19+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:07:43Z",
@@ -1694,54 +1652,54 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=G_Cjx39RCQXv8zPiz-_ymA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ck45NzBEq7dIqoA77Tgkdw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/dutch-school-system-basisschool.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:10+00:00",
+     "checked_at": "2026-11-15T11:21:25+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-06T19:15:38Z",
+     "last_crawl": "2026-11-14T22:34:11Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/dutch-school-system-basisschool.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/dutch-school-system-basisschool.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=WQNlfTBgUJo25BaNrwDRnQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=SfvNy268MRR8HB4wpx4OZQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/employment-contracts-labor-law-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:16+00:00",
+     "checked_at": "2026-11-15T11:21:32+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-07T07:35:30Z",
+     "last_crawl": "2026-11-15T10:36:42Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/employment-contracts-labor-law-2026.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/employment-contracts-labor-law-2026.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=W6wTi3NJtEzujMeJEw6-UA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=B9jMXABN1dBCslDQUuJ7xQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/eu-permanent-residence-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:22+00:00",
+     "checked_at": "2026-11-15T11:21:38+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-30T22:49:33Z",
+     "last_crawl": "2026-11-15T07:08:10Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/eu-permanent-residence-netherlands.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/eu-permanent-residence-netherlands.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=woiMRj48el8YfXFu542UBw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=tQTwedb8Fp9lLa8cQfbGDQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/family-reunification-mvv-ind.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:28+00:00",
+     "checked_at": "2026-11-15T11:21:44+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T05:23:18Z",
@@ -1750,12 +1708,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=L4d5VW6suL3d6WtjC-wv6A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nHwXA4Lcp7ipGURkt5OjqQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/health-insurance-newcomers.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:35+00:00",
+     "checked_at": "2026-11-15T11:21:50+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T15:37:34Z",
@@ -1764,12 +1722,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=fvn1fQggcQqexyWR4J_L9w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=uhMwtV1I1ffv9TIP29KN7g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/housing-rent-allowance-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:41+00:00",
+     "checked_at": "2026-11-15T11:21:56+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T17:29:11Z",
@@ -1778,26 +1736,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NddGEljM8MVmrNmFKSbJOg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7TfEAzTWcoPqTuozabAaDw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/huisarts-registration.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:47+00:00",
+     "checked_at": "2026-11-15T11:22:02+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-26T22:21:45Z",
+     "last_crawl": "2026-11-15T05:22:29Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/huisarts-registration.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/huisarts-registration.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Hie6QlRUuS177ykMtDyitg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-85JKIiZxkmnM64vrBq4nw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/kinderbijslag-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:53+00:00",
+     "checked_at": "2026-11-15T11:22:08+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-01T10:09:16Z",
@@ -1806,12 +1764,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=bY5pmbpnLc4vj19UKU2TdQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VeEuLsJ24r0UFYZiQijybQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/kindgebonden-budget-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:48:59+00:00",
+     "checked_at": "2026-11-15T11:22:15+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T19:04:05Z",
@@ -1820,12 +1778,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=O41AVgRuXp7HSVLNTaRt_g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=GCo64-HKCod4q3BD-q-_6g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/mbo-conditions.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:06+00:00",
+     "checked_at": "2026-11-15T11:22:21+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T17:46:16Z",
@@ -1834,12 +1792,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=erqXSwFoFHGP0ZEpeCR85Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=aeV-W_78BTJ2zvGPndw9Kg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/mbo-dutch-language-options.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:12+00:00",
+     "checked_at": "2026-11-15T11:22:27+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T19:14:07Z",
@@ -1848,26 +1806,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=b-85qp-MSzUxAOS7XHP8dw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pa8KlvVjO_6IksPK1Ptumg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/mbo-hbo-wo-comparison.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:18+00:00",
+     "checked_at": "2026-11-15T11:22:34+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-26T16:17:48Z",
+     "last_crawl": "2026-11-15T06:48:16Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/mbo-hbo-wo-comparison.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/mbo-hbo-wo-comparison.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=j5yxz6Xqfc7nDVgDK3-_0g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=CEam62YlWRdg--wIZDE11g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/minimum-wage-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:24+00:00",
+     "checked_at": "2026-11-15T11:22:40+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:05:12Z",
@@ -1876,12 +1834,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ctVsMgudg-BW0bx3LMKjZA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Jlzr4RHPg0AHq7eyVI9NBw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/nt2-b1-exam-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:30+00:00",
+     "checked_at": "2026-11-15T11:22:46+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:02:03Z",
@@ -1890,12 +1848,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=87ns-mO1gJq1tfhclke9_w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=xLL3EWCHJ4eZglzS9YPCZA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/student-finance.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:37+00:00",
+     "checked_at": "2026-11-15T11:22:52+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:31:57Z",
@@ -1904,26 +1862,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=xjuttWiiUFBJPq36KIGDIw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FuauvwkYH9dNA0rxf9kHhA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/temporary-agency-work-rights.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:43+00:00",
+     "checked_at": "2026-11-15T11:22:58+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-06T19:40:31Z",
+     "last_crawl": "2026-11-14T21:26:45Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/temporary-agency-work-rights.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/temporary-agency-work-rights.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=UQBOWknS-MSgMrI2kkSjZA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gY9o4CBd5Zqbd-wWGcvT9w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/toeslagen-income-update.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:49+00:00",
+     "checked_at": "2026-11-15T11:23:05+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:04:46Z",
@@ -1932,12 +1890,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=udMFffN9A4tRdTnBQ9MdZQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=DNOQ96qGjcy21ynGhIYT7g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/toeslagpartner-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:49:56+00:00",
+     "checked_at": "2026-11-15T11:23:11+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-01T03:03:57Z",
@@ -1946,26 +1904,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Z6dmKIOF1YgMGJkT6AGh_w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=aHmRhzRb33DuN17fYA2qOw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/zero-hours-contract.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:02+00:00",
+     "checked_at": "2026-11-15T11:23:17+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-07T10:25:28Z",
+     "last_crawl": "2026-11-15T00:52:58Z",
      "google_canonical": "https://gidsnederland.nl/nl/articles/zero-hours-contract.html",
      "user_canonical": "https://gidsnederland.nl/nl/articles/zero-hours-contract.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gb5h3hVXX8eu8J1-wU8LAQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=XPtPdxZDgZ9c7Uz3mu5OAg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/zorgtoeslag-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:08+00:00",
+     "checked_at": "2026-11-15T11:23:23+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-05T19:59:09Z",
@@ -1974,12 +1932,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6En2SSDl2D6bDy57QuJ-KA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=HTW1r_nGoZtxOWMNBA9AQg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:15+00:00",
+     "checked_at": "2026-11-15T11:23:30+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T18:57:15Z",
@@ -1988,40 +1946,40 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nmdUIpFSUQRUOkdis3aGJw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nGVoBPMpQF8wHcdTYvxojg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/contact.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:21+00:00",
+     "checked_at": "2026-11-15T11:23:36+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-16T23:57:00Z",
+     "last_crawl": "2026-11-15T09:49:35Z",
      "google_canonical": "https://gidsnederland.nl/nl/contact.html",
      "user_canonical": "https://gidsnederland.nl/nl/contact.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QZdij0uvydUbw5BxwklowA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qGe7vgALPesHAJkIu9X0Jw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/cv.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:27+00:00",
+     "checked_at": "2026-11-15T11:23:42+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-29T23:28:01Z",
+     "last_crawl": "2026-11-15T11:07:05Z",
      "google_canonical": "https://gidsnederland.nl/nl/cv.html",
      "user_canonical": "https://gidsnederland.nl/nl/cv.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ASJPDlwKpQAiIMJkTRnwZg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6syNu61XaKrFmJEEbtYwNA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/editorial-policy.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:33+00:00",
+     "checked_at": "2026-11-15T11:23:48+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-27T17:09:33Z",
@@ -2030,68 +1988,68 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=aTwyR9mbk6KfDRmeAjK1Ag&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=o2e8bxL6U97sgIW5SVi5iw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:39+00:00",
+     "checked_at": "2026-11-15T11:23:54+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-06T18:57:09Z",
+     "last_crawl": "2026-11-15T05:46:49Z",
      "google_canonical": "https://gidsnederland.nl/nl/",
      "user_canonical": "https://gidsnederland.nl/nl/",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=m2oi-f9x8WE1rTtqjkYB6Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=wmEyJw5ngpk4hLxTJqxMVA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/privacy.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:45+00:00",
+     "checked_at": "2026-11-15T11:24:01+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-26T16:09:24Z",
+     "last_crawl": "2026-11-15T11:21:36Z",
      "google_canonical": "https://gidsnederland.nl/nl/privacy.html",
      "user_canonical": "https://gidsnederland.nl/nl/privacy.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Beck_aIn5Vch0eKMX86s5Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qiHkad1IRDTdiU1lVvWCZg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/tools.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:52+00:00",
+     "checked_at": "2026-11-15T11:24:07+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-06T18:55:18Z",
+     "last_crawl": "2026-11-14T20:30:36Z",
      "google_canonical": "https://gidsnederland.nl/nl/tools.html",
      "user_canonical": "https://gidsnederland.nl/nl/tools.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=MYVURR2S_ha8usNfAIvMtw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6w_eXs1_iDpV7SwdTQfTIA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/privacy.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:50:58+00:00",
+     "checked_at": "2026-11-15T11:24:13+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-27T17:10:53Z",
+     "last_crawl": "2026-11-15T05:19:35Z",
      "google_canonical": "https://gidsnederland.nl/privacy.html",
      "user_canonical": "https://gidsnederland.nl/privacy.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=P3swK-5J5Ve3mlobzQl3jg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=W4oo2rfBKvrQJ_Oxxn85sQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/tools.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:05+00:00",
+     "checked_at": "2026-11-15T11:24:19+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-28T23:22:45Z",
@@ -2100,12 +2058,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=wVWDAuXFQKth2Eo74V42hQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Z0VnvQ0ZnNly_Q4VvTM7NQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/benefits.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:11+00:00",
+     "checked_at": "2026-11-15T11:24:25+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T05:35:25Z",
@@ -2114,40 +2072,40 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=k9wdAO1EcY5ZYBtckQG1cA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=bb7RrDEvL2SGT5WfIO-f7w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/education.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:17+00:00",
+     "checked_at": "2026-11-15T11:24:32+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-08T06:35:26Z",
+     "last_crawl": "2026-11-14T20:23:44Z",
      "google_canonical": "https://gidsnederland.nl/categories/education.html",
      "user_canonical": "https://gidsnederland.nl/categories/education.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6z-u9ubZpa8ncfM6uyNWzA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=M4qKnpKgpm8M7DKJTQhiGg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/housing.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:23+00:00",
+     "checked_at": "2026-11-15T11:24:38+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-18T17:24:07Z",
+     "last_crawl": "2026-11-15T05:21:32Z",
      "google_canonical": "https://gidsnederland.nl/categories/housing.html",
      "user_canonical": "https://gidsnederland.nl/categories/housing.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZyEv9KXWOKR30IZgoceMUA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jJU8bn8jwNhJBvvbDbO82w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/money.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:32+00:00",
+     "checked_at": "2026-11-15T11:24:44+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-18T17:25:04Z",
@@ -2156,12 +2114,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zz0qiTNF4yk7-s0khStnOQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Z6n3u0EXxXlcb-vhpEvLEg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/residence.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:38+00:00",
+     "checked_at": "2026-11-15T11:24:50+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-18T17:29:51Z",
@@ -2170,12 +2128,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=3Kd-nCUIsXF6jylPh-czNQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=HvwFLOQ1Wq3L6DT3G2p08Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/categories/work.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:44+00:00",
+     "checked_at": "2026-11-15T11:24:56+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:27:30Z",
@@ -2184,12 +2142,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=f2VafWWg-4WDSytX1KQddA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=mxpupQsXjfoFpz6Qf2HCRQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/benefits.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:51+00:00",
+     "checked_at": "2026-11-15T11:25:03+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T00:08:09Z",
@@ -2198,12 +2156,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=arFeEMmRxMLH4wgsz1G5Wg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=evGgIk9CxzOwzKYYWt15wA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/education.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:51:57+00:00",
+     "checked_at": "2026-11-15T11:25:09+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:01:02Z",
@@ -2212,12 +2170,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=u9neoZyrXfYoETpgtjOlFQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=AQJb7ofBmx3pxUxBx9SP2w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/housing.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:03+00:00",
+     "checked_at": "2026-11-15T11:25:15+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T16:39:05Z",
@@ -2226,26 +2184,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZroYIDOMf78peVWMaQNGOg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=8E0B13ZUPzsCEteMp02Skw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/money.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:52:10+00:00",
-     "verdict": "NEUTRAL",
-     "state": "URL is unknown to Google",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5AqV8iegMRcgRDJmfz9czA&utm_medium=link&utm_source=api"
+     "status": "indexed",
+     "checked_at": "2026-11-15T11:25:21+00:00",
+     "verdict": "PASS",
+     "state": "Submitted and indexed",
+     "last_crawl": "2026-11-15T07:48:21Z",
+     "google_canonical": "https://gidsnederland.nl/nl/categories/money.html",
+     "user_canonical": "https://gidsnederland.nl/nl/categories/money.html",
+     "robots_state": "ALLOWED",
+     "indexing_state": "INDEXING_ALLOWED",
+     "fetch_state": "SUCCESSFUL",
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=COLIXDCXaDWFvdf7v3ofXw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/residence.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:16+00:00",
+     "checked_at": "2026-11-15T11:25:27+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T05:15:27Z",
@@ -2254,12 +2212,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9zYUamIXldDTOmHa6jdiiA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=HyHDZ4EiWuIiMAfDhGekuw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/categories/work.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:22+00:00",
+     "checked_at": "2026-11-15T11:25:33+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T18:10:28Z",
@@ -2268,12 +2226,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=WOcV1HVgsCUHaeX0skr9uw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NRiJrDqZCxLTG7tRWGHiSg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/prinsjesdag-2026-changes.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:28+00:00",
+     "checked_at": "2026-11-15T11:25:40+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-08T22:32:07Z",
@@ -2282,12 +2240,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=uYlpweh-mB_5KFuLWptLoQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=tLQ36T9VWh0tCOYn2xs6zw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/prinsjesdag-2026-changes.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:35+00:00",
+     "checked_at": "2026-11-15T11:25:46+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:01:51Z",
@@ -2296,12 +2254,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=IiBhuYypvSlYv545pG5iMg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ChmZlxLJEaIj4QOpPT-L2g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/health-insurance-2027.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:41+00:00",
+     "checked_at": "2026-11-15T11:25:52+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-02T18:51:36Z",
@@ -2310,12 +2268,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=020xdHdrUo_AZih8o5XvIg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gEGzkacUilIdiHepnLBC9Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/health-insurance-2027.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:47+00:00",
+     "checked_at": "2026-11-15T11:25:58+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T18:57:37Z",
@@ -2324,12 +2282,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=LaXiSz5AoKvJ-DkYxYSoSg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jkKxkltlrqbsSWSOHmXl_Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/municipal-taxes-exemption-kwijtschelding.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:53+00:00",
+     "checked_at": "2026-11-15T11:26:04+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-28T03:23:50Z",
@@ -2338,12 +2296,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Q2j0IpGFyW2pgg9GPgS5sQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5LDaHeRK2KCNUajgEYnTYA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/municipal-taxes-exemption-kwijtschelding.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:52:59+00:00",
+     "checked_at": "2026-11-15T11:26:10+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:18:34Z",
@@ -2352,26 +2310,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=O-NXF89VgOqejUC57E3JXw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=EMev1Ka-qdO7B2s-WPzHbw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/energy-contracts-saving-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:05+00:00",
+     "checked_at": "2026-11-15T11:26:17+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
-     "last_crawl": "2026-10-06T20:01:20Z",
+     "last_crawl": "2026-11-15T02:22:15Z",
      "google_canonical": "https://gidsnederland.nl/articles/energy-contracts-saving-2026.html",
      "user_canonical": "https://gidsnederland.nl/articles/energy-contracts-saving-2026.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=xaPHc4fPXuw-nF_a47ZgSg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FYc52suYGNo-Q0Zfu7Lriw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/energy-contracts-saving-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:11+00:00",
+     "checked_at": "2026-11-15T11:26:23+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:11:45Z",
@@ -2380,12 +2338,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=hUAnQXw0uyFWHv7vJKTVpw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=mMOqPeSSa1uBl0ASvP7pMg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/cbr-driving-license-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:17+00:00",
+     "checked_at": "2026-11-15T11:26:29+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T08:10:43Z",
@@ -2394,12 +2352,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zqqty0Swym6N_GOE--JBnw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=l2adT1ysMIa_K56fqgOkrg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/cbr-driving-license-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:24+00:00",
+     "checked_at": "2026-11-15T11:26:35+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:35:55Z",
@@ -2408,12 +2366,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Gdl8Ab8FYCMEkCdeAxdILQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=cjToXkPLJayfSMlaMm5jdA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/kvk-zzp-business-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:30+00:00",
+     "checked_at": "2026-11-15T11:26:41+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T00:04:28Z",
@@ -2422,12 +2380,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=vqJGbrWb8uJcRwOrHa2ocA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-xMk1rr9e_6A5jU7SCApfw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/kvk-zzp-business-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:36+00:00",
+     "checked_at": "2026-11-15T11:26:48+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T04:11:26Z",
@@ -2436,12 +2394,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=CQjtdYBMqB1yc1fD4MyhIw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=TUdxUDBXXK3zeZ4BpDiShg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/inburgering-integration-law-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:42+00:00",
+     "checked_at": "2026-11-15T11:26:54+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:22:46Z",
@@ -2450,12 +2408,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=a2oK6ds5JJYwavB9uemSqQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9xjX02uzud5U3BnLsJvlOg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/inburgering-integration-law-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:53:49+00:00",
+     "checked_at": "2026-11-15T11:27:00+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:38:05Z",
@@ -2464,40 +2422,40 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VsZQMsfd8n2lAfTian485Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=vNnIucoAVct35whs7fch5g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:53:55+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Crawled - currently not indexed",
-     "last_crawl": "2026-10-18T17:25:52Z",
+     "status": "indexed",
+     "checked_at": "2026-11-15T11:27:06+00:00",
+     "verdict": "PASS",
+     "state": "Submitted and indexed",
+     "last_crawl": "2026-11-15T07:54:33Z",
      "google_canonical": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
      "user_canonical": "https://gidsnederland.nl/articles/trending-jobs-2026.html",
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Tcjh-vRq5g1u6gti84Znkw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=N9QjZviWoBiqJaKNR3wyEA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T10:54:01+00:00",
-     "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=O5tBPhCZ6KSIXaHe-c-ITA&utm_medium=link&utm_source=api"
+     "status": "indexed",
+     "checked_at": "2026-11-15T11:27:12+00:00",
+     "verdict": "PASS",
+     "state": "Submitted and indexed",
+     "last_crawl": "2026-11-15T08:19:43Z",
+     "google_canonical": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
+     "user_canonical": "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
+     "robots_state": "ALLOWED",
+     "indexing_state": "INDEXING_ALLOWED",
+     "fetch_state": "SUCCESSFUL",
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-t7lgv8FMegl3iLu9PLJKw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/social-assistance-bijstand.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:08+00:00",
+     "checked_at": "2026-11-15T11:27:19+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-09T01:15:12Z",
@@ -2506,12 +2464,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ikTH3m3b131i9Q1QTTxYbg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9bqZeG3obMh2hfaKSGIgAA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/social-assistance-bijstand.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:14+00:00",
+     "checked_at": "2026-11-15T11:27:25+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:27:03Z",
@@ -2520,12 +2478,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=zyML9CSsUkEhu8KWS1tekw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pS-kcuJrdDGQ7OYNYnXwjg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/special-assistance-bijzondere-bijstand.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:20+00:00",
+     "checked_at": "2026-11-15T11:27:31+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T09:20:23Z",
@@ -2534,12 +2492,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=3p0rfHSkSb8wykFiIHM5FA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=N4U2Gs34dq2wf2zsdoSmMQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/special-assistance-bijzondere-bijstand.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:27+00:00",
+     "checked_at": "2026-11-15T11:27:37+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T18:59:00Z",
@@ -2548,12 +2506,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=TLSvGXbvUu0mtCuY8yP8Yg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pO4F7iqvE561eI9OTwVHHg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/debt-help-schuldhulp.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:33+00:00",
+     "checked_at": "2026-11-15T11:27:43+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T02:55:30Z",
@@ -2562,12 +2520,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=CWj-VIytmYFIcS9k94OJKA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=vZmBlf-Xe7qL6duxsl1SOQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/debt-help-schuldhulp.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:39+00:00",
+     "checked_at": "2026-11-15T11:27:50+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:00:05Z",
@@ -2576,12 +2534,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=52AHS8NoLNEPZ62NPFQxqg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7_lnqpHa9LY2keftCQK12g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/unemployment-benefit-ww.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:45+00:00",
+     "checked_at": "2026-11-15T11:27:56+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T09:28:21Z",
@@ -2590,12 +2548,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Z8z1aQ5g6ghcyY-wZ8X0nw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=hwboLYh_vYKk98oJ530Hsg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/unemployment-benefit-ww.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:54:51+00:00",
+     "checked_at": "2026-11-15T11:28:02+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:02:42Z",
@@ -2604,12 +2562,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=dtAsw-gihvFHFS1wyckzWg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qaJQWD_ivbZ3GXDixtrejQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/aow-aio-pension.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:54:57+00:00",
+     "checked_at": "2026-11-15T11:28:08+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -2618,12 +2576,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=v0lBzV_lB9poKgdKeQy_iQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VYbZMx5CaB2FmG-66zUdlQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/aow-aio-pension.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:03+00:00",
+     "checked_at": "2026-11-15T11:28:14+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:51:17Z",
@@ -2632,12 +2590,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZOwmdZfFbpNTXkRwZHcqtQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=1s8YifZzOEsGI3KFSu4Haw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/wmo-home-support.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:10+00:00",
+     "checked_at": "2026-11-15T11:28:21+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T07:39:14Z",
@@ -2646,12 +2604,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PXRBRMzTMhv8C1kTzvIbCQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=e0Ql_x684jNhTsjAevhT3w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/wmo-home-support.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:16+00:00",
+     "checked_at": "2026-11-15T11:28:27+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:16:11Z",
@@ -2660,12 +2618,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JZqM1FZQIT3074ywfQVHxA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2xxW1Ckhqqn1guT-J8e4Gw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/single-parent-support.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:22+00:00",
+     "checked_at": "2026-11-15T11:28:33+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T07:52:08Z",
@@ -2674,12 +2632,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Z7bsrUsMnEPE6QTEI0794A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NHEFDw-NIfT6mSaJcQcZjg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/single-parent-support.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:28+00:00",
+     "checked_at": "2026-11-15T11:28:39+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:14:52Z",
@@ -2688,12 +2646,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jpnZTLsUYMx2dmr8GBqn9w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=kI3locVyq1ZaDI_81-bJQA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/birth-parental-leave.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:35+00:00",
+     "checked_at": "2026-11-15T11:28:45+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T00:25:59Z",
@@ -2702,26 +2660,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9oXEQxRkM9HE5GrUz1WtXA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Op6q3t7wYtbQ9_97Oj93lw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/birth-parental-leave.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:55:41+00:00",
+     "checked_at": "2026-11-15T11:28:51+00:00",
      "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JUWcaQKVi_awP498K0w_iQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=GbIVICVk-sKeCwbGyESxjQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/energy-emergency-fund-2027.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:47+00:00",
+     "checked_at": "2026-11-15T11:28:57+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T01:59:48Z",
@@ -2730,12 +2688,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=SrMqzkenLKflYTOHf4fvIg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZxOAIgo4b1mElJJtUlEiIA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/energy-emergency-fund-2027.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:55:53+00:00",
+     "checked_at": "2026-11-15T11:29:04+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T19:18:07Z",
@@ -2744,12 +2702,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PYuU_clqUaDax-hbEWyfQA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nI5F9_Oz_JP2cLhXr2h-iw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:55:59+00:00",
+     "checked_at": "2026-11-15T11:29:10+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -2758,12 +2716,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=su8znN7h9xrt_O1vY96WSg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=PeLJHOcG550aYGgAjgEdIQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/sick-pay-ziektewet-wia.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:05+00:00",
+     "checked_at": "2026-11-15T11:29:16+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:32:57Z",
@@ -2772,12 +2730,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Tjra4g_vXdfICl6q8Y-mvg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=o1hHC7YNdTMEK2iI7-ctgQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/adult-learning-finance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:56:12+00:00",
+     "checked_at": "2026-11-15T11:29:23+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:57:24Z",
@@ -2786,12 +2744,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=AULnVV8Ce5PswrLUn__NQg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FtbQaDSG7N9yod5A-Y178Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/adult-learning-finance.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:18+00:00",
+     "checked_at": "2026-11-15T11:29:29+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T04:07:13Z",
@@ -2800,12 +2758,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gPCHFlbTj-6tl02C_-LIMQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RiSqsEG-COgIv42L1A9L8Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/social-housing-sociale-huurwoning.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:24+00:00",
+     "checked_at": "2026-11-15T11:29:35+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:56:11Z",
@@ -2814,12 +2772,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=KEiJMsLNC5Us2r3_PpCxXg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=svHlAQSu0xezVmW36HJfXw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/social-housing-sociale-huurwoning.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:30+00:00",
+     "checked_at": "2026-11-15T11:29:41+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T05:50:28Z",
@@ -2828,12 +2786,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ULPwfL_xsjfxIJn2kAyizA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=IN1tutrzhg6aEyYn1o6UBA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/tenant-rights-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:36+00:00",
+     "checked_at": "2026-11-15T11:29:47+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T09:14:48Z",
@@ -2842,12 +2800,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=wfsQ-8GO8W5SlzgCln6CHg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=6wNlx6jbv2jCRXNJwtHtvQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/tenant-rights-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:42+00:00",
+     "checked_at": "2026-11-15T11:29:53+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T18:23:26Z",
@@ -2856,12 +2814,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=KnzrRhKu_xmm5_wgY8EVWw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=eSik_7w1kUMlF0wUFM_ARg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/year-end-checklist-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:48+00:00",
+     "checked_at": "2026-11-15T11:30:00+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-06T09:03:13Z",
@@ -2870,12 +2828,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2XyJOCV7xfhxB842JgYHIQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=A_g-ReII48XjLqEJ3r8wZg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/year-end-checklist-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:56:55+00:00",
+     "checked_at": "2026-11-15T11:30:06+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-07T03:35:43Z",
@@ -2884,12 +2842,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=jqTODjV-z3aHiDtMGAzHlQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=vFYo4yg3fmOx4N1nuusC3w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/foreign-driving-license-exchange.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:01+00:00",
+     "checked_at": "2026-11-15T11:30:12+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:57:21Z",
@@ -2898,12 +2856,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-J_ZnhmSX6DpMbBdaKNH0w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ReiUfkAggUQBcm2Lr4wMfQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/foreign-driving-license-exchange.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:07+00:00",
+     "checked_at": "2026-11-15T11:30:18+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T00:19:56Z",
@@ -2912,12 +2870,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=z_VZMeJs3AkophO8NkgOUA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=egpLDIBqWvi6Lct7e2cynw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/traffic-fines-cjib.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:13+00:00",
+     "checked_at": "2026-11-15T11:30:24+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:48:02Z",
@@ -2926,12 +2884,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=w-dfLVl4vqqz18KbzML_8Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=sVSj7FUh_frqeddZwKoGrw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/traffic-fines-cjib.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:19+00:00",
+     "checked_at": "2026-11-15T11:30:30+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T00:04:18Z",
@@ -2940,12 +2898,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=tSWeSzF6yump_VgWAR2J7w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VfYQ6bwv0C6gIAfASP0VYA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/bezwaar-objection-letter.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:26+00:00",
+     "checked_at": "2026-11-15T11:30:36+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:46:03Z",
@@ -2954,12 +2912,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=lcUCnoDTTpZaOPoLXEXvfg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=lqvrlWV1Z0awF9qXtxQkMA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/bezwaar-objection-letter.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:32+00:00",
+     "checked_at": "2026-11-15T11:30:42+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T00:42:51Z",
@@ -2968,12 +2926,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NMqXgxv0AbtMaBOZPXfKBA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=SiDkRzcbrJEzIiIgT7JCCQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/legal-aid-lawyer-toevoeging.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:38+00:00",
+     "checked_at": "2026-11-15T11:30:49+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:46:03Z",
@@ -2982,12 +2940,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=MuDMBX2YNgNbIgfHFNSGwA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=iX2RgW_lwQPrhwd5N3IPXw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/legal-aid-lawyer-toevoeging.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:44+00:00",
+     "checked_at": "2026-11-15T11:30:55+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-16T23:54:13Z",
@@ -2996,12 +2954,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=0o4ttRW91dfj0mtlceS8Tg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=NoHm6WaTJ_grLjSc1Vu-gg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/scams-phishing-netherlands.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:57:51+00:00",
+     "checked_at": "2026-11-15T11:31:01+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:45:35Z",
@@ -3010,12 +2968,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9Il9xFtS4HSW1HP_I_2FCg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=4tdEPeRSrYWkmhFbtcxg3w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/scams-phishing-netherlands.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:57:57+00:00",
+     "checked_at": "2026-11-15T11:31:07+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-16T23:28:31Z",
@@ -3024,12 +2982,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=o2nwVkxrO7xZYXIyFprDsg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=t-9zEw6fvFiHQeWtCud6IA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/pregnancy-newborn-care.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:58:03+00:00",
+     "checked_at": "2026-11-15T11:31:14+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:44:44Z",
@@ -3038,12 +2996,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=S_5bnkSCYQfy5y026upTPg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QeVjfi414PeSG9hlIF2GyA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/pregnancy-newborn-care.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:09+00:00",
+     "checked_at": "2026-11-15T11:31:20+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-17T01:09:43Z",
@@ -3052,12 +3010,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=UcaO3cSXW4da378gn7H-qA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2R8hhWWC8nH8c38xwDCTcQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/asylum-two-status-system-2026.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:58:16+00:00",
+     "checked_at": "2026-11-15T11:31:26+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:59:49Z",
@@ -3066,12 +3024,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RBfYzliu_urWGSuZa906Sw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=9FeDPksXbEQfIaB4_jJ6Xw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/asylum-two-status-system-2026.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:22+00:00",
+     "checked_at": "2026-11-15T11:31:32+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:15:03Z",
@@ -3080,12 +3038,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=avYaNIL9FGiVK7i_RqkJTw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=F5vBNcFWicM-ee7u0sf_0w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/syrian-documents-legalisation-translation.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:28+00:00",
+     "checked_at": "2026-11-15T11:31:38+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-27T16:36:01Z",
@@ -3094,12 +3052,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qGLi50PSK46btfAyrRSHGg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=eoOn5_oN4-_gshC-FOrOmg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/syrian-documents-legalisation-translation.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:34+00:00",
+     "checked_at": "2026-11-15T11:31:44+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:17:20Z",
@@ -3108,12 +3066,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VdyvciOPCFm999w73kgQvg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=il4DW37Ro01jVswxUCmIbg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/asylum-residence-hub.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:41+00:00",
+     "checked_at": "2026-11-15T11:31:50+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:15:01Z",
@@ -3122,12 +3080,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=G5a2FXYHC_5sUxu-7f-7rg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=74VXQPp9YLhNjidddY7KEA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/asylum-residence-hub.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:47+00:00",
+     "checked_at": "2026-11-15T11:31:57+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:17:20Z",
@@ -3136,12 +3094,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7_eMf9XHnVYLAqwXvltSGA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=0xqm6fCuVpbwCjIWv34zpQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/calculators/zorgtoeslag.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:58:53+00:00",
+     "checked_at": "2026-11-15T11:32:03+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:18:21Z",
@@ -3150,12 +3108,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RLI1wt83er7Le_cGYtsc2A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=xUmc7jnlm5rsZUyDlfep2g&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/calculators/zorgtoeslag.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:59:00+00:00",
+     "checked_at": "2026-11-15T11:32:09+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-12T07:43:30Z",
@@ -3164,12 +3122,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZpU1Jxud214o8Su6Zw8GQA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Ykte0orqQfV8hfDTOOtY1Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/calculators/kindgebonden-budget.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:59:06+00:00",
+     "checked_at": "2026-11-15T11:32:15+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-26T16:16:57Z",
@@ -3178,12 +3136,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RqPUh_Zqg6Ln35-AR6o8dw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Tu8Of4QN5naK_Q-Y2R-DkA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/calculators/kindgebonden-budget.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T10:59:12+00:00",
+     "checked_at": "2026-11-15T11:32:22+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-10-08T20:23:31Z",
@@ -3192,12 +3150,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2EWVCZnMOYSXqZnQ_LdW7Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7yLXEPpi3NnUkNjY2rCzMw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/dutch-government-terms-glossary.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:18+00:00",
+     "checked_at": "2026-11-15T11:32:28+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:59:05Z",
@@ -3206,12 +3164,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=FhPjbFmCPvx3DaZYL5yq1A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=H59MQxERPri16cO94I6--A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:25+00:00",
+     "checked_at": "2026-11-15T11:32:34+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-08T11:57:34Z",
@@ -3220,12 +3178,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=890khbcf_Srl8yb4aPFE5A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zi_B8NMUqSU74z3PJyb98Q&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:31+00:00",
+     "checked_at": "2026-11-15T11:32:40+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-14T08:16:24Z",
@@ -3234,12 +3192,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ahJVKsltPDH1rQ-39TzcYQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=nBa06n8w_Ixe6sUJba4PQQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/diploma-recognition-by-education-level.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:37+00:00",
+     "checked_at": "2026-11-15T11:32:47+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-10-12T07:38:35Z",
@@ -3248,12 +3206,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=i2VONF_PXT73E2xZqXpfzg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=cuuask6ckeZ0s7psvBcTEA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-asylum-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:43+00:00",
+     "checked_at": "2026-11-15T11:32:53+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:54:36Z",
@@ -3262,12 +3220,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YXtam4c_RhRjpY0fBSmWog&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Zmyn2vDxyX9Tb1qPme-OCA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:50+00:00",
+     "checked_at": "2026-11-15T11:32:59+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3276,12 +3234,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=1gIyv98QEmZT7qOMcuxH3g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=aZikLLEKHuYQWj4HCXJc6A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/permanent-residence-regular-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T10:59:56+00:00",
+     "checked_at": "2026-11-15T11:33:06+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-11T08:54:36Z",
@@ -3290,12 +3248,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=3bQfGW8dabHbVnvSN_cG3Q&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YrNWEGpNHoXtRF6ChzDFQg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:02+00:00",
+     "checked_at": "2026-11-15T11:33:12+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3304,12 +3262,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=-CoAcfi4oqHB2RijbPNJNw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=X6_B6-ETO6bdOB_elBUEYQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/calculators/permanent-residence-check.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T11:00:08+00:00",
+     "checked_at": "2026-11-15T11:33:18+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:48:43Z",
@@ -3318,12 +3276,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=HHp7YmykqPqontTfH9qRsA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=dUH3Q_A5liuwpGHoIfdj7w&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/liability-home-insurance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:14+00:00",
+     "checked_at": "2026-11-15T11:33:24+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3332,12 +3290,26 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=AC1Pxb2gqMHQxsG33hbfnA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5vKoac5kwjO0QCeqO7pGPw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/liability-home-insurance.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:20+00:00",
+     "checked_at": "2026-11-15T11:33:30+00:00",
+     "verdict": "NEUTRAL",
+     "state": "URL is unknown to Google",
+     "last_crawl": null,
+     "google_canonical": null,
+     "user_canonical": null,
+     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=ZkOatf_lt6qXf_t6FxdUYg&utm_medium=link&utm_source=api"
+    },
+    {
+     "url": "https://gidsnederland.nl/beroep/",
+     "status": "not_indexed",
+     "checked_at": "2026-11-15T11:33:36+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3346,40 +3318,26 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JWlga0ETq0iFixj3PR62Nw&utm_medium=link&utm_source=api"
-    },
-    {
-     "url": "https://gidsnederland.nl/beroep/",
-     "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:27+00:00",
-     "verdict": "NEUTRAL",
-     "state": "URL is unknown to Google",
-     "last_crawl": null,
-     "google_canonical": null,
-     "user_canonical": null,
-     "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
-     "indexing_state": "INDEXING_STATE_UNSPECIFIED",
-     "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=_zchNvhsMqxQbsbHwdk3yw&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=5wmVejMnZxN0rug4qdIuRg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/beroep/",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:33+00:00",
+     "checked_at": "2026-11-15T11:33:42+00:00",
      "verdict": "NEUTRAL",
-     "state": "URL is unknown to Google",
+     "state": "Discovered - currently not indexed",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=zzpX7qwDiKIBwOBhWoAxfQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2PuJFPdtEaQwgkKbxwRJuw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/ing-bank-app-card-guide.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T11:00:39+00:00",
+     "checked_at": "2026-11-15T11:33:48+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-03T15:23:19Z",
@@ -3388,12 +3346,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=D-OgunTc7H4EOFpf7Zzt9A&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Cc8XMk1moQskP9FXgCm8kw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:46+00:00",
+     "checked_at": "2026-11-15T11:33:55+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3402,12 +3360,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=QAK-1PFRsGH1rBHQn67eMg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=gZSxx6c7YbjdHue0Q3K6eQ&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/internet-phone-contract-cancel.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:52+00:00",
+     "checked_at": "2026-11-15T11:34:01+00:00",
      "verdict": "NEUTRAL",
      "state": "URL is unknown to Google",
      "last_crawl": null,
@@ -3416,12 +3374,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=JYOJlYcbl5-4TZlhRoFm4g&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=VHFpHIwH1LOPc_7hROKhNw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:00:58+00:00",
+     "checked_at": "2026-11-15T11:34:07+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3430,12 +3388,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=mQeXf75J7TGDJ5cYYsxxzA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Gt1rGZpnRhoCULsr2ZZhMA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:05+00:00",
+     "checked_at": "2026-11-15T11:34:13+00:00",
      "verdict": "NEUTRAL",
      "state": "Crawled - currently not indexed",
      "last_crawl": "2026-11-03T15:26:53Z",
@@ -3444,12 +3402,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RRTHK0P8j2zUZ2rJn-5luQ&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=2qRBlg5UzK28SPESbcXx9A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:11+00:00",
+     "checked_at": "2026-11-15T11:34:20+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3458,12 +3416,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YsEcG0xov0XCLP1lR-cc0w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=RPe5TB5B7z-KQvXtFVEkUg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/affiliate-disclosure.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:17+00:00",
+     "checked_at": "2026-11-15T11:34:26+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3472,12 +3430,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pxDEcMupZZX3gFZcZTEYyg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=Agxpm5N8QZ9wnxjXWbtWYw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/affiliate-disclosure.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:23+00:00",
+     "checked_at": "2026-11-15T11:34:32+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3486,12 +3444,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=hQnZCWohav2neyDl_z9uMA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=1_1H5xvDAmp7ujc2GpFs5A&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:29+00:00",
+     "checked_at": "2026-11-15T11:34:38+00:00",
      "verdict": "NEUTRAL",
      "state": "Discovered - currently not indexed",
      "last_crawl": null,
@@ -3500,12 +3458,12 @@
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=qMTqH-Qy_Z_dvr6YZCZTsg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=pxok-g08V4bHmE14Tsbbgg&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/templates.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T11:01:36+00:00",
+     "checked_at": "2026-11-15T11:34:44+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-11T08:48:43Z",
@@ -3514,26 +3472,26 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=L6fomQbZ8clF64xFvj0NpA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=WlINrScklkPzhl6BDPRByA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/templates.html",
      "status": "not_indexed",
-     "checked_at": "2026-11-14T11:01:42+00:00",
+     "checked_at": "2026-11-15T11:34:50+00:00",
      "verdict": "NEUTRAL",
-     "state": "Discovered - currently not indexed",
+     "state": "URL is unknown to Google",
      "last_crawl": null,
      "google_canonical": null,
      "user_canonical": null,
      "robots_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
      "indexing_state": "INDEXING_STATE_UNSPECIFIED",
      "fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=IQkFQLOWlERASStrWKJb-w&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=010OL4A9o3kWh4eVgWsASA&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/knm-oefenen.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T11:01:48+00:00",
+     "checked_at": "2026-11-15T11:34:57+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:15:26Z",
@@ -3542,12 +3500,12 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=suA0s-LqYPfEyk7MnquMsA&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=7ToyrJo3pCpBfUh1j6v7Hw&utm_medium=link&utm_source=api"
     },
     {
      "url": "https://gidsnederland.nl/nl/knm-oefenen.html",
      "status": "indexed",
-     "checked_at": "2026-11-14T11:01:54+00:00",
+     "checked_at": "2026-11-15T11:35:03+00:00",
      "verdict": "PASS",
      "state": "Submitted and indexed",
      "last_crawl": "2026-11-14T08:18:48Z",
@@ -3556,7 +3514,7 @@
      "robots_state": "ALLOWED",
      "indexing_state": "INDEXING_ALLOWED",
      "fetch_state": "SUCCESSFUL",
-     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=V2eX6SF6MaNmAyy0qKJlBg&utm_medium=link&utm_source=api"
+     "inspection_link": "https://search.google.com/search-console/inspect?resource_id=https://gidsnederland.nl/&id=YD7rKxUvqllFMUHlMIyekQ&utm_medium=link&utm_source=api"
     }
    ]
   },
