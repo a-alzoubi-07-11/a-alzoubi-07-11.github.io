@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "property_url": "https://gidsnederland.nl/",
-  "updated_at": "2026-11-14T08:28:49.810Z",
+  "updated_at": "2026-11-15T07:46:03.666Z",
   "method": "Google Search Console UI: Request indexing",
   "note": "Accepted requests mean added to Google's priority crawl queue. They do not confirm indexing. The API inspection report remains authoritative for confirmed indexing counts.",
   "accepted_requests": [
@@ -108,19 +108,17 @@
       "result": "Indexing requested — URL added to priority crawl queue",
       "requested_at": "2026-11-14T08:27:10.349Z",
       "accepted_at": "2026-11-14T08:27:21.071Z"
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/categories/money.html",
+      "result": "Indexing requested — URL added to priority crawl queue",
+      "requested_at": "2026-11-15T07:44:33.729Z",
+      "accepted_at": "2026-11-15T07:44:54.986Z"
     }
   ],
-  "last_blocker": {
-    "url": "https://gidsnederland.nl/nl/categories/money.html",
-    "result": "Temporary Search Console error",
-    "message": "Something went wrong. If the issue persists, try again in a few hours.",
-    "stage": "URL inspection before requesting indexing",
-    "checked_at": "2026-11-14T08:28:12.994Z",
-    "accepted_count": 8
-  },
-  "pending_report_checked_at": "2026-11-13T17:47:00+00:00",
+  "last_blocker": null,
+  "pending_report_checked_at": "2026-11-14T11:45:56+00:00",
   "deferred_urls": [
-    "https://gidsnederland.nl/nl/categories/money.html",
     "https://gidsnederland.nl/articles/trending-jobs-2026.html",
     "https://gidsnederland.nl/nl/articles/trending-jobs-2026.html",
     "https://gidsnederland.nl/articles/aow-aio-pension.html",
@@ -165,6 +163,14 @@
       "message": "Daily quota exceeded; Google asks to try again tomorrow.",
       "checked_at": "2026-11-12T07:55:16.869Z",
       "accepted_count": 0
+    },
+    {
+      "url": "https://gidsnederland.nl/nl/categories/money.html",
+      "result": "Temporary Search Console error",
+      "message": "Something went wrong. If the issue persists, try again in a few hours.",
+      "stage": "URL inspection before requesting indexing",
+      "checked_at": "2026-11-14T08:28:12.994Z",
+      "accepted_count": 8
     }
   ],
   "run_history": [
@@ -184,10 +190,18 @@
     }
   ],
   "last_run": {
+    "checked_at": "2026-11-15T07:46:03.666Z",
+    "result": "in_progress",
+    "accepted_count": 1,
+    "deferred_count": 29
+  },
+  "last_resolved_blocker": {
+    "url": "https://gidsnederland.nl/nl/categories/money.html",
+    "result": "Temporary Search Console error",
+    "message": "Something went wrong. If the issue persists, try again in a few hours.",
+    "stage": "URL inspection before requesting indexing",
     "checked_at": "2026-11-14T08:28:12.994Z",
-    "result": "temporary_search_console_error",
     "accepted_count": 8,
-    "deferred_count": 30,
-    "attempted_url": "https://gidsnederland.nl/nl/categories/money.html"
+    "resolved_at": "2026-11-15T07:46:03.666Z"
   }
 }
