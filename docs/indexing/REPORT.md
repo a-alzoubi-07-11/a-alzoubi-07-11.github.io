@@ -1,4 +1,4 @@
-# Google indexing follow-up — 2026-11-15T12:16:46+00:00
+# Google indexing follow-up — 2026-11-16T05:47:41+00:00
 
 - Eligible URLs: 180
 - Confirmed indexed: 148
@@ -7,7 +7,7 @@
 - Intentionally excluded (noindex): 0
 - All eligible URLs confirmed indexed: False
 - Sitemap submission: cooldown
-- Newly indexed: 3; lost indexing: 0
+- Newly indexed: 0; lost indexing: 0
 
 Sitemap submission is discovery, not a guarantee of indexing. Ordinary articles cannot use the Google Indexing API.
 No dates, page content, appeal-letter tools, or intentional noindex directives are changed by this workflow.
@@ -18,7 +18,7 @@ No dates, page content, appeal-letter tools, or intentional noindex directives a
 |---|---|---|
 | [معادلة الشهادة الأجنبية diplomawaardering   دليل هولندا بالعربية](https://gidsnederland.nl/articles/diploma-evaluation-sbb.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [التقاعد AOW وتكملة AIO 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/aow-aio-pension.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Zwangerschapsverlof en ouderschapsverlof 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/birth-parental-leave.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Zwangerschapsverlof en ouderschapsverlof 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/birth-parental-leave.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [راتب المرض Ziektewet وWIA في هولندا 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [قرض الدراسة للكبار Levenlanglerenkrediet   دليل هولندا بالعربية](https://gidsnederland.nl/articles/adult-learning-finance.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [المخالفات المرورية وCJIB: الدفع والاعتراض   دليل هولندا بالعربية](https://gidsnederland.nl/articles/traffic-fines-cjib.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
@@ -35,8 +35,8 @@ No dates, page content, appeal-letter tools, or intentional noindex directives a
 | [Van asielvergunning naar permanent verblijf 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [الإقامة الدائمة لأصحاب إقامة regulier 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/permanent-residence-regular-route.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Permanent verblijf met een reguliere vergunning 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [تأمين المسؤولية وتأمين البيت   دليل هولندا بالعربية](https://gidsnederland.nl/articles/liability-home-insurance.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [AVP en inboedelverzekering uitgelegd   Gids Nederland](https://gidsnederland.nl/nl/articles/liability-home-insurance.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [تأمين المسؤولية وتأمين البيت   دليل هولندا بالعربية](https://gidsnederland.nl/articles/liability-home-insurance.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [AVP en inboedelverzekering uitgelegd   Gids Nederland](https://gidsnederland.nl/nl/articles/liability-home-insurance.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [رسالة الطعن على رفض الإقامة الدائمة   دليل هولندا بالعربية](https://gidsnederland.nl/beroep/) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Beroepschrift tegen afwijzing asiel onbepaalde tijd   Gids Nederland](https://gidsnederland.nl/nl/beroep/) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [ING App: activeren, overzetten naar nieuwe telefoon en pas blokkeren](https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
