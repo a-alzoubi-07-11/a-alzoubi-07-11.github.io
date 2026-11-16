@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T06:51:17+01:00",
-  "validUntil": "2026-11-15T18:51:17+01:00",
+  "updatedAt": "2026-11-16T06:50:57+01:00",
+  "validUntil": "2026-11-16T18:50:57+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-11-13",
+      "firstSeen": "2026-11-16",
+      "category": {
+        "ar": "التقاعد",
+        "nl": "AOW"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "سن التقاعد AOW لن يرتفع في 2032 ويبقى 67 سنة و3 أشهر",
+        "nl": "AOW-leeftijd stijgt niet in 2032: blijft 67 jaar en 3 maanden"
+      },
+      "summary": {
+        "ar": "سن AOW هو 67 سنة حتى نهاية 2027، و67 سنة و3 أشهر من 2028، ويبقى كذلك في 2032. المولودون بين 1 أكتوبر 1964 و30 سبتمبر 1965 يعرفون الآن موعد بدء AOW.",
+        "nl": "De AOW-leeftijd is 67 jaar t/m 2027 en 67 jaar en 3 maanden vanaf 2028; dat blijft zo in 2032. Wie geboren is tussen 1 oktober 1964 en 30 september 1965 weet nu wanneer de AOW start."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/13/aow-leeftijd-stijgt-niet-in-2032",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-11-13-9691a8f0"
+    },
     {
       "source": "NOS",
       "publishedAt": "2026-11-13",
@@ -102,31 +127,6 @@
       },
       "tier": "official",
       "id": "szw-2026-11-09-1fa8e397"
-    },
-    {
-      "source": "SZW",
-      "publishedAt": "2026-11-07",
-      "firstSeen": "2026-11-08",
-      "category": {
-        "ar": "العمل",
-        "nl": "Werk"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "خطة حكومية لإنهاء إرسال عمال من خارج الاتحاد الأوروبي إلى هولندا مباشرة عبر دولة أوروبية أخرى",
-        "nl": "Kabinet wil sluiproute via ander EU-land voor goedkope arbeidsmigranten sluiten"
-      },
-      "summary": {
-        "ar": "على العامل من خارج الاتحاد أن يعمل 3 أشهر على الأقل في الدولة الأوروبية الأخرى، وأن تبقى إقامته هناك صالحة أطول من عمله في هولندا. مشاورة عامة من 7 نوفمبر؛ السريان المتوقع يوليو 2027.",
-        "nl": "Niet-EU-werknemers moeten eerst minstens 3 maanden in het andere EU-land werken; hun vergunning daar moet langer gelden dan het werk in NL. Internetconsultatie vanaf 7 november; start naar verwachting juli 2027."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/07/kabinet-maakt-einde-aan-sluiproute-voor-goedkope-arbeidsmigranten",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-11-07-b87605c3"
     },
     {
       "source": "STAB",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-15",
+      "checkedAt": "2026-11-16",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
