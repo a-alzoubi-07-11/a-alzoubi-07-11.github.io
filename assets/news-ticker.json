@@ -1,8 +1,83 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T06:50:57+01:00",
-  "validUntil": "2026-11-16T18:50:57+01:00",
+  "updatedAt": "2026-11-17T06:51:52+01:00",
+  "validUntil": "2026-11-17T18:51:52+01:00",
   "items": [
+    {
+      "source": "IND",
+      "publishedAt": "2026-11-16",
+      "firstSeen": "2026-11-17",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "IND تستأنف معالجة طلبات اللجوء المقدَّمة من إيرانيين",
+        "nl": "IND hervat behandeling asielaanvragen van Iraniërs"
+      },
+      "summary": {
+        "ar": "لم يُمدَّد وقف القرارات والترحيل (besluit- en vertrekmoratorium) لإيران. السياسة الجديدة تسري فوراً على كل الطلبات الجارية والجديدة، والطلبات المقدَّمة قبل 12 يونيو 2026 تُعالج وفق خطة العمل الخاصة.",
+        "nl": "Het besluit- en vertrekmoratorium voor Iran is niet verlengd. Het nieuwe landenbeleid geldt direct voor alle lopende en nieuwe aanvragen; aanvragen van vóór 12 juni 2026 volgen het plan van aanpak."
+      },
+      "url": "https://ind.nl/nl/nieuws/ind-hervat-behandeling-asielaanvragen-iran",
+      "sourceName": {
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
+      },
+      "tier": "official",
+      "id": "ind-2026-11-16-e81158ce"
+    },
+    {
+      "source": "IND",
+      "publishedAt": "2026-11-16",
+      "firstSeen": "2026-11-17",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "announced",
+      "title": {
+        "ar": "IND: أصحاب طلبات اللجوء المقدَّمة قبل 12 يونيو يتلقون شرحاً للخطوات التالية حتى 12 ديسمبر",
+        "nl": "IND: asielaanvragers van vóór 12 juni krijgen uiterlijk 12 december uitleg over vervolgstappen"
+      },
+      "summary": {
+        "ar": "في 1 نوفمبر بقي نحو 44.000 طلب لجوء مقدَّم قبل 12 يونيو مفتوحاً. يتلقى أصحابها حتى 12 ديسمبر شرحاً للخطوات التالية، وفي بداية 2027 تريد IND توضيح موعد دور كل متقدم تقريباً.",
+        "nl": "Op 1 november stonden nog ca. 44.000 asielaanvragen van vóór 12 juni open. Uiterlijk 12 december krijgen deze aanvragers uitleg over vervolgstappen; begin 2027 wil de IND tonen wanneer zij ongeveer aan de beurt zijn."
+      },
+      "url": "https://ind.nl/nl/nieuws/ind-behandelt-asielaanvragen-sneller-en-zorgvuldiger",
+      "sourceName": {
+        "ar": "دائرة الهجرة IND",
+        "nl": "IND"
+      },
+      "tier": "official",
+      "id": "ind-2026-11-16-6b1b711c"
+    },
+    {
+      "source": "NU",
+      "publishedAt": "2026-11-16",
+      "firstSeen": "2026-11-17",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NU.nl: هولندا وأربع دول أوروبية تخطط لمركز عودة في رواندا لطالبي اللجوء المرفوضين",
+        "nl": "Volgens NU.nl: Nederland wil afgewezen asielzoekers naar terugkeerhub in Rwanda sturen"
+      },
+      "summary": {
+        "ar": "وفق NU.nl: المركز يتسع لـ100 شخص من الرجال البالغين الوحيدين الذين استنفدوا إجراءات اللجوء. ليس رسمياً بعد: الاتفاق يُوقَّع بداية 2027، والموقع غير معروف، وقد تستغرق القضايا أمام المحاكم سنوات.",
+        "nl": "Volgens NU.nl: plek voor 100 uitgeprocedeerde, alleenreizende mannen. Nog niet officieel: de afspraken worden begin 2027 vastgelegd, de locatie is onbekend en rechtszaken kunnen jaren duren."
+      },
+      "url": "https://www.nu.nl/politiek/6416671/nederland-gaat-afgewezen-asielzoekers-naar-rwanda-sturen.html",
+      "sourceName": {
+        "ar": "NU.nl",
+        "nl": "NU.nl"
+      },
+      "tier": "media",
+      "id": "nu-2026-11-16-2abef9a2"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-13",
@@ -177,153 +252,78 @@
       },
       "tier": "official",
       "id": "tk-2026-11-03-38e0c63d"
-    },
-    {
-      "source": "DUO",
-      "publishedAt": "2026-10-27",
-      "firstSeen": "2026-10-27",
-      "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "موافقة مجلس الشيوخ على تعويض إضافي لطلاب نظام القروض",
-        "nl": "Leenstelselstudenten krijgen aanvullende tegemoetkoming"
-      },
-      "summary": {
-        "ar": "أقرّ مجلس الشيوخ (Eerste Kamer) مبلغاً إضافياً لطلاب hbo/wo في نظام القروض دون basisbeurs، وقدره 45.92 يورو شهرياً بأرقام 2027. يبدأ الصرف المتوقع من أبريل 2027، وغالباً تلقائياً.",
-        "nl": "De Eerste Kamer stemde in met een aanvullende tegemoetkoming voor leenstelselstudenten (hbo/wo) zonder basisbeurs: € 45,92 per maand (bedrag 2027). Uitbetaling naar verwachting vanaf april 2027, meestal automatisch."
-      },
-      "url": "https://duo.nl/particulier/home/actueel/leenstelselstudenten-krijgen-aanvullende-tegemoetkoming.jsp",
-      "sourceName": {
-        "ar": "DUO",
-        "nl": "DUO"
-      },
-      "tier": "official",
-      "id": "duo-2026-10-27-63c38e99"
-    },
-    {
-      "source": "BZK",
-      "publishedAt": "2026-10-16",
-      "firstSeen": "2026-10-29",
-      "category": {
-        "ar": "السكن",
-        "nl": "Wonen"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "اتفاقات لتسريع توفير السكن للمحتاجين بشكل عاجل ومنهم حاملو الإقامة",
-        "nl": "Afspraken om huisvesting voor mensen in de knel te versnellen"
-      },
-      "summary": {
-        "ar": "تعتمد الحكومة والبلديات وشركات الإسكان على مساكن مرنة ومبانٍ شاغرة محوّلة وسكن مشترك. والهدف إنهاء انتظار حاملي الإقامة (statushouders) في مراكز اللجوء خلال سنة ونصف.",
-        "nl": "Rijk, gemeenten en corporaties zetten in op flexwoningen, omgebouwde leegstaande panden en gedeelde woonvormen. De wachtrij van statushouders in azc's moet binnen 1,5 jaar weg zijn."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/rijk-overheden-en-corporaties-versnellen-huisvesting-voor-mensen-in-de-knel",
-      "sourceName": {
-        "ar": "وزارة الداخلية (BZK)",
-        "nl": "Ministerie van BZK"
-      },
-      "tier": "official",
-      "id": "bzk-2026-10-16-8b3edba4"
-    },
-    {
-      "source": "TOESLAGEN",
-      "publishedAt": "2026-10-15",
-      "firstSeen": "2026-11-13",
-      "category": {
-        "ar": "البدلات",
-        "nl": "Toeslagen"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "من 2027: حدود ثروة أقل لـ zorgtoeslag و kindgebonden budget",
-        "nl": "Vanaf 2027 lagere vermogensgrenzen voor zorgtoeslag en kindgebonden budget"
-      },
-      "summary": {
-        "ar": "الحد في 2027: ‏158,748 يورو مع toeslagpartner و119,122 يورو دونه. من يتجاوزه يبلّغ عبر Mijn toeslagen قبل 8 ديسمبر 2026 وإلا يرد المبلغ. تصل رسالة للمعنيين نهاية نوفمبر.",
-        "nl": "Grens 2027: € 158.748 met toeslagpartner, € 119.122 zonder. Wie erboven zit, geeft dat uiterlijk 8 december 2026 door in Mijn toeslagen, anders volgt terugbetaling. Brief eind november."
-      },
-      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/toeslagen/lagere-vermogensgrenzen-zorgtoeslag-kindgebonden-budget-vanaf-1-januari-2027",
-      "sourceName": {
-        "ar": "دائرة البدلات (Toeslagen)",
-        "nl": "Dienst Toeslagen"
-      },
-      "tier": "official",
-      "id": "toeslagen-2026-10-15-4a21e9c2"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
-      "result": "new"
-    },
-    {
-      "source": "IND",
-      "checkedAt": "2026-11-16",
-      "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
+      "source": "IND",
+      "checkedAt": "2026-11-17",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "new"
+    },
+    {
       "source": "DUO",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-16",
+      "checkedAt": "2026-11-17",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
