@@ -1,9 +1,7 @@
-# Site health report — 2026-11-16T11:44Z
+# Site health report — 2026-11-17T12:05Z
 
-## External links: 628 checked · 3 broken · 6 redirected · 52 bot-blocked
-- BROKEN 504 https://zoek.officielebekendmakingen.nl/stb-2022-386.html  (in articles/childcare-allowance-kinderopvangtoeslag.html, nl/articles/childcare-allowance-kinderopvangtoeslag.html)
-- BROKEN 504 https://zoek.officielebekendmakingen.nl/stb-2026-105.html  (in articles/asylum-two-status-system-2026.html, nl/articles/asylum-two-status-system-2026.html)
-- BROKEN 504 https://zoek.officielebekendmakingen.nl/stcrt-2025-42977.html  (in calculators/zorgtoeslag.html, nl/calculators/zorgtoeslag.html)
+## External links: 628 checked · 1 broken · 6 redirected · 45 bot-blocked
+- BROKEN 404 https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/aangifte-geboorte-en-naamskeuze-kind/aangifte-geboorte  (in articles/pregnancy-newborn-care.html, nl/articles/pregnancy-newborn-care.html)
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
 - MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
@@ -11,7 +9,8 @@
 - MOVED https://www.belastingdienst.nl → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 - MOVED https://www.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 
-## Buttons & menus: 24 page views · 0 problems · 0 dead menu links
+## Buttons & menus: 24 page views · 0 problems · 1 dead menu links
+- dead menu link 503 https://gidsnederland.nl/nl/
 
 ## Index status (180 URLs in sitemap)
 - google: 148/180 indexed; 0 unknown/errors
@@ -39,7 +38,7 @@
   - not indexed: https://gidsnederland.nl/beroep/ (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/beroep/ (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/internet-phone-contract-cancel.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/articles/internet-phone-contract-cancel.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html (Discovered - currently not indexed)
