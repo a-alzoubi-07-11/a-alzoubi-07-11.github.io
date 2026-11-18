@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T06:51:52+01:00",
-  "validUntil": "2026-11-17T18:51:52+01:00",
+  "updatedAt": "2026-11-18T07:02:58+01:00",
+  "validUntil": "2026-11-18T19:02:58+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-11-16",
+      "firstSeen": "2026-11-18",
+      "category": {
+        "ar": "العمل والإقامة",
+        "nl": "Werk en verblijf"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "مشروع قانون: لا تصريح عمل وإقامة لعمال من خارج الاتحاد الأوروبي عبر جهات إعارة بلا ترخيص",
+        "nl": "Internetconsultatie: geen werk- en verblijfsvergunning voor arbeidsmigranten via uitleners zonder toelating"
+      },
+      "summary": {
+        "ar": "وفق المقترح لا يُمنح تصريح العمل والإقامة لعامل من خارج الاتحاد الأوروبي تُعيره جهة بلا ترخيص (toelating)، ويُسحب إذا سُحب الترخيص. قانون Wtta يسري من 1 يناير 2027، والتعليق مفتوح حتى 11 ديسمبر.",
+        "nl": "Geen werk- en verblijfsvergunning voor niet-EU-arbeidsmigranten die een uitlener zonder toelating uitleent; vervalt de toelating, dan ook de vergunning. De Wtta geldt vanaf 1 januari 2027; reageren kan tot 11 december."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/16/internetconsultatie-uitleners-zonder-toelating-krijgen-geen-werk-en-verblijfsvergunning-voor-arbeidsmigranten-van-buiten-de-eu",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-11-16-1d9ab2a1"
+    },
     {
       "source": "IND",
       "publishedAt": "2026-11-16",
@@ -179,31 +204,6 @@
       "id": "nos-2026-11-11-0aff6e8b"
     },
     {
-      "source": "SZW",
-      "publishedAt": "2026-11-09",
-      "firstSeen": "2026-11-10",
-      "category": {
-        "ar": "الاندماج والعمل",
-        "nl": "Inburgering en werk"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "الوزير Aartsen: العمل أربعة أيام أسبوعياً يصبح القاعدة لحاملي الإقامة خلال inburgering",
-        "nl": "Minister Aartsen: vier dagen werken wordt de norm in de inburgering"
-      },
-      "summary": {
-        "ar": "دروس inburgering قدر الإمكان خارج وقت العمل، ومهلة أطول للامتحان لمن يعمل 28 ساعة أسبوعياً على الأقل دون bijstand. اتفاق مع أرباب العمل؛ الهدف 75,000 قادم جديد إضافي في العمل خلال 4 سنوات.",
-        "nl": "Inburgeringslessen zoveel mogelijk buiten werktijd; wie minstens 28 uur per week werkt zonder bijstand krijgt zo nodig langer voor het examen. Afspraken met werkgevers: over 4 jaar 75.000 nieuwkomers extra aan het werk."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/09/minister-aartsen-vier-dagen-werken-de-norm-in-de-inburgering",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-11-09-1fa8e397"
-    },
-    {
       "source": "STAB",
       "publishedAt": "2026-11-05",
       "firstSeen": "2026-11-06",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
-      "result": "no-change"
-    },
-    {
-      "source": "IND",
-      "checkedAt": "2026-11-17",
-      "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "new"
     },
     {
+      "source": "IND",
+      "checkedAt": "2026-11-18",
+      "listingUrl": "https://ind.nl/nl/nieuws",
+      "result": "no-change"
+    },
+    {
       "source": "DUO",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "no-change"
+      "result": "error"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-17",
+      "checkedAt": "2026-11-18",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
