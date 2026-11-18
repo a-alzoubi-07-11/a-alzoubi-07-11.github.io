@@ -1,7 +1,7 @@
 {
   "submission": {
-    "digest": "a1417b0f5492c085c1a167f78171d46216a0137632910e7696ae96a2a89c590e",
-    "submitted_at": "2026-11-13T18:05:59+00:00",
+    "digest": "23b7b25590edf7757dec4e9389b98921fad1a0cac42cedcb14b67adc53ac1be6",
+    "submitted_at": "2026-11-18T07:06:23+00:00",
     "url": "https://gidsnederland.nl/sitemap.xml"
   },
   "statuses": {
@@ -184,6 +184,8 @@
     "https://gidsnederland.nl/templates.html": "indexed",
     "https://gidsnederland.nl/nl/templates.html": "not_indexed",
     "https://gidsnederland.nl/knm-oefenen.html": "indexed",
-    "https://gidsnederland.nl/nl/knm-oefenen.html": "indexed"
+    "https://gidsnederland.nl/nl/knm-oefenen.html": "indexed",
+    "https://gidsnederland.nl/articles/hbo-wo-university-newcomers.html": "not_indexed",
+    "https://gidsnederland.nl/nl/articles/hbo-wo-university-newcomers.html": "not_indexed"
   }
 }
