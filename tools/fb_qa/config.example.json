@@ -1,0 +1,25 @@
+{
+  "groups": [
+    "https://www.facebook.com/groups/EXAMPLE_GROUP_ID"
+  ],
+  "max_posts_per_group": 15,
+  "max_scrolls_per_group": 12,
+  "stop_after_known_posts": 8,
+  "max_runs_per_day": 2,
+  "chronological_feed": true,
+
+  "gemini_model": "gemini-2.5-flash",
+  "llm_min_seconds_between_calls": 7,
+  "llm_max_calls_per_run": 150,
+
+  "min_questions_for_article": 3,
+  "reply_max_age_days": 3,
+
+  "official_domains": [
+    "ind.nl", "rijksoverheid.nl", "government.nl", "overheid.nl", "uwv.nl",
+    "belastingdienst.nl", "duo.nl", "svb.nl", "cak.nl", "cjib.nl", "rdw.nl",
+    "werk.nl", "zorginstituutnederland.nl", "juridischloket.nl", "coa.nl",
+    "amsterdam.nl", "rotterdam.nl", "denhaag.nl", "utrecht.nl", "eindhoven.nl",
+    "groningen.nl", "tilburg.nl", "almere.nl", "breda.nl", "nijmegen.nl"
+  ]
+}
