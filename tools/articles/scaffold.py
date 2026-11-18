@@ -178,6 +178,13 @@ NEW.update({
    related=['tenant-rights-netherlands', 'legal-aid-lawyer-toevoeging', 'traffic-fines-cjib', 'scams-phishing-netherlands']),
 })
 
+NEW.update({
+ 'hbo-wo-university-newcomers': dict(tpl='diploma-evaluation-sbb', cat='education', listing='education',
+   ar=('الدراسة في HBO والجامعة للقادمين الجدد', 'من الشهادة الأجنبية إلى أول يوم دراسة: من يقيّم الشهادة، لغة NT2 برنامج II، Studielink حتى 1 مايو أو 15 يناير، رسوم 2,694 يورو، التمويل دون 30 سنة، ودعم UAF.'),
+   nl=('Hbo of universiteit als nieuwkomer', 'Van buitenlands diploma tot eerste lesdag: wie waardeert, Nt2 programma II, Studielink vóór 1 mei of 15 januari, collegegeld € 2.694, studiefinanciering onder 30 en het UAF.'),
+   related=['mbo-hbo-wo-comparison', 'diploma-recognition-by-education-level', 'student-finance', 'nt2-b1-exam-guide']),
+})
+
 def short_titles():
     m = {}
     for lang, pat in (('ar', 'categories/*.html'), ('nl', 'nl/categories/*.html')):
