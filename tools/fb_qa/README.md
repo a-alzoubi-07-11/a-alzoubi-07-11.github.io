@@ -10,7 +10,20 @@ Gemini API free tier. This folder is under `tools/`, which `_config.yml` exclude
 website. All scraped data, screenshots, drafts and the login profile are git-ignored, so they
 are never committed or published.
 
-## Setup (once)
+## Install on Windows: one line
+
+Open **PowerShell** (Start menu → type `PowerShell` → Enter) and paste:
+
+```powershell
+irm https://raw.githubusercontent.com/a-alzoubi-07-11/a-alzoubi-07-11.github.io/claude/exciting-mayer-zodik4/tools/fb_qa/install.ps1 | iex
+```
+
+It installs Python if needed, then the program in `%USERPROFILE%\fb_qa`. It asks for your group
+links and your free Gemini key, opens Facebook once so you can log in, creates the daily task
+(08:50), and puts three shortcuts on the desktop: *results*, *run now* and *status*.
+Paste the same line again later to update; settings and data are kept.
+
+## Manual setup
 
 ```bash
 cd tools/fb_qa

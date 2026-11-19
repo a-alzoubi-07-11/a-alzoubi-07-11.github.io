@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+import urllib.request
 from functools import lru_cache
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -18,10 +19,27 @@ YT = re.compile(r"(?:youtube\.com/(?:watch\?v=|embed/)|youtu\.be/)([\w-]{11})")
 HREF = re.compile(r'href="(https?://[^"]+)"')
 
 
+# Inside the repo the local files are used; when only tools/fb_qa is installed on a
+# computer (install.ps1), the live website is read instead, so new guides are always seen.
+LOCAL = (SITE_ROOT / "assets" / "search-index.json").exists()
+
+
+def _get(url_path: str) -> str:
+    req = urllib.request.Request(SITE + url_path, headers={"User-Agent": "fb-qa"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.read().decode("utf-8", "replace")
+    except Exception:
+        return ""
+
+
 @lru_cache(maxsize=1)
 def items() -> list[dict]:
-    p = SITE_ROOT / "assets" / "search-index.json"
-    data = json.loads(p.read_text(encoding="utf-8"))
+    if LOCAL:
+        raw = (SITE_ROOT / "assets" / "search-index.json").read_text(encoding="utf-8")
+    else:
+        raw = _get("/assets/search-index.json") or '{"items": []}'
+    data = json.loads(raw)
     out = []
     for it in data["items"]:
         if it.get("l") != "ar" or it.get("y") not in ("guide", "topic", "tool"):
@@ -54,8 +72,10 @@ def page_file(url_path: str) -> Path:
 
 @lru_cache(maxsize=256)
 def page_html(url_path: str) -> str:
-    f = page_file(url_path)
-    return f.read_text(encoding="utf-8") if f.exists() else ""
+    if LOCAL:
+        f = page_file(url_path)
+        return f.read_text(encoding="utf-8") if f.exists() else ""
+    return _get(url_path)
 
 
 def videos(url_path: str) -> list[str]:

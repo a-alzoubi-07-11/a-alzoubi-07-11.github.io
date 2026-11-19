@@ -54,7 +54,9 @@ def load_config() -> dict:
     cfg = dict(DEFAULTS)
     p = HERE / "config.json"
     if p.exists():
-        cfg.update(json.loads(p.read_text(encoding="utf-8")))
+        cfg.update(json.loads(p.read_text(encoding="utf-8-sig")))   # -sig: tolerate a BOM (Notepad)
+    if isinstance(cfg.get("groups"), str):
+        cfg["groups"] = [cfg["groups"]]
     gfile = HERE / "groups.txt"          # the original handoff used groups.txt; still honoured
     if gfile.exists():
         extra = [l.strip() for l in gfile.read_text(encoding="utf-8").splitlines()

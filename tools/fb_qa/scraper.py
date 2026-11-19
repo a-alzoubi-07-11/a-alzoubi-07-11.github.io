@@ -325,11 +325,28 @@ def run_session(con, cfg: dict, quota: int) -> int:
     return total
 
 
+def login_only():
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        ctx = p.chromium.launch_persistent_context(str(PROFILE), headless=False,
+                                                   viewport={"width": 1280, "height": 900}, locale="ar")
+        page = ctx.pages[0] if ctx.pages else ctx.new_page()
+        page.goto("https://www.facebook.com")
+        if not logged_in(ctx):
+            input("Log in to Facebook in the opened window, then press Enter here... ")
+        print("Logged in." if logged_in(ctx) else "Not logged in.")
+        ctx.close()
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--now", action="store_true", help="one session right now (inside the daily limit)")
     ap.add_argument("--plan-only", action="store_true", help="print today's random plan and exit")
+    ap.add_argument("--login", action="store_true", help="only open the browser to log in to Facebook")
     args = ap.parse_args(argv)
+    if args.login:
+        login_only()
+        return
 
     cfg = load_config()
     if not cfg["groups"]:
