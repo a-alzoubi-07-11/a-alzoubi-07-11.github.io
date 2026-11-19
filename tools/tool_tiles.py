@@ -10,6 +10,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # (icon, colour, ar_href, ar_title, ar_sub, nl_href, nl_title, nl_sub, is_new)
 TILES = [
+    ("<i class=gi-home aria-hidden=true></i>", "green", "/calculators/mijn-gemeente.html", "بلديتي", "من رمزك البريدي: البلدية وأقرب محطة وخطة أول 30 يوم",
+     "/nl/calculators/mijn-gemeente.html", "Mijn gemeente", "Gemeente, station en eerste 30 dagen", True),
     ("<i class=gi-check aria-hidden=true></i>", "blue", "/calculators/kenteken-check.html", "فحص السيارة", "من رقم اللوحة: الفحص الدوري والعداد قبل الشراء",
      "/nl/calculators/kenteken-check.html", "Kentekencheck", "APK, tellerstand en terugroepacties", True),
     ("<i class=gi-calc aria-hidden=true></i>", "orange", "/calculators/ov-reiskosten.html", "حاسبة المواصلات", "قطار أو باص؟ كم السعر وأي اشتراك يوفّر عليك",

@@ -509,6 +509,7 @@
     try {
       var q = new URLSearchParams(location.search);
       var pt = function (s) { var a = (s || '').split(',').map(parseFloat); return a.length === 2 && isFinite(a[0]) && isFinite(a[1]) && a[0] > 50 && a[0] < 54 && a[1] > 3 && a[1] < 8 ? a : null; };
+      if (q.get('f') && !q.get('t')) { fFrom.input.value = q.get('f').slice(0, 120); fFrom.pt = pt(q.get('fx')); fTo.input.focus(); }
       if (q.get('f') && q.get('t')) {
         fFrom.input.value = q.get('f').slice(0, 120); fFrom.pt = pt(q.get('fx'));
         fTo.input.value = q.get('t').slice(0, 120); fTo.pt = pt(q.get('tx'));
