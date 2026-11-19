@@ -1,8 +1,58 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T07:02:58+01:00",
-  "validUntil": "2026-11-18T19:02:58+01:00",
+  "updatedAt": "2026-11-19T06:51:48+01:00",
+  "validUntil": "2026-11-19T18:51:48+01:00",
   "items": [
+    {
+      "source": "STAB",
+      "publishedAt": "2026-11-18",
+      "firstSeen": "2026-11-19",
+      "category": {
+        "ar": "السكن والإيجار",
+        "nl": "Wonen en huur"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "قانون Wet toekomstbestendige huurcommissie يسري من 1 يناير 2027",
+        "nl": "Wet toekomstbestendige huurcommissie gaat in op 1 januari 2027"
+      },
+      "summary": {
+        "ar": "حدّد مرسوم 4 نوفمبر 2026 بدء سريان القانون الخاص بـ Huurcommissie في 1 يناير 2027. ومن التاريخ نفسه يمكن للوزير وضع قواعد لرسوم (leges) متفاوتة تغطي تكاليف Huurcommissie.",
+        "nl": "Een besluit van 4 november 2026 bepaalt dat de Wet toekomstbestendige huurcommissie op 1 januari 2027 ingaat. Vanaf dan kan de minister regels stellen voor gedifferentieerde, kostendekkende leges van de Huurcommissie."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-388.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-11-18-35a5cdee"
+    },
+    {
+      "source": "NU",
+      "publishedAt": "2026-11-17",
+      "firstSeen": "2026-11-19",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NU.nl: وزير اللجوء يعيد تقييم سوريا ويعتبرها آمنة للعودة",
+        "nl": "Volgens NU.nl: asielminister vindt Syrië na nieuwe beoordeling veilig voor terugkeer"
+      },
+      "summary": {
+        "ar": "وفق NU.nl: بعد حكم مجلس الدولة أبقى الوزير Van den Brink في رسالة للبرلمان على تقييم سوريا آمنة. السياسة لا تتغير: الإقامة فقط لمن يثبت خطراً شخصياً. موقف المحاكم من التعليل الجديد غير معروف بعد.",
+        "nl": "Volgens NU.nl: na de uitspraak van de Raad van State houdt minister Van den Brink in een Kamerbrief vast aan 'Syrië veilig'. Alleen bij persoonlijk risico een status. Oordeel van de rechter is nog onbekend."
+      },
+      "url": "https://www.nu.nl/politiek/6416916/asielminister-van-den-brink-vindt-syrie-veilig-voor-terugkeer-in-nieuwe-beoordeling.html",
+      "sourceName": {
+        "ar": "NU.nl",
+        "nl": "NU.nl"
+      },
+      "tier": "media",
+      "id": "nu-2026-11-17-b30c5a46"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-16",
@@ -179,31 +229,6 @@
       "id": "uwv-2026-11-11-d4e5578a"
     },
     {
-      "source": "NOS",
-      "publishedAt": "2026-11-11",
-      "firstSeen": "2026-11-12",
-      "category": {
-        "ar": "اللجوء",
-        "nl": "Asiel"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "وفق NOS: مجلس الدولة يُلزم وزير اللجوء بإعادة تقييم الوضع الأمني في سوريا",
-        "nl": "Volgens NOS: Raad van State: minister van Asiel moet veiligheid Syrië opnieuw beoordelen"
-      },
-      "summary": {
-        "ar": "وفق NOS: رأى مجلس الدولة (Raad van State) أن سياسة اللجوء الحالية تجاه السوريين غير مبرَّرة بما يكفي. الوزير يدرس الحكم، ولا توجد سياسة جديدة رسمية بعد.",
-        "nl": "Volgens NOS: de Raad van State vindt het huidige asielbeleid voor Syriërs onvoldoende onderbouwd. De minister bestudeert de uitspraak; er is nog geen nieuw beleid."
-      },
-      "url": "https://nos.nl/artikel/2638978-raad-van-state-minister-van-asiel-moet-veiligheid-syrie-opnieuw-beoordelen",
-      "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
-      },
-      "tier": "media",
-      "id": "nos-2026-11-11-0aff6e8b"
-    },
-    {
       "source": "STAB",
       "publishedAt": "2026-11-05",
       "firstSeen": "2026-11-06",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "stab-2026-11-05-3f910561"
-    },
-    {
-      "source": "TK",
-      "publishedAt": "2026-11-03",
-      "firstSeen": "2026-11-05",
-      "category": {
-        "ar": "تمويل الدراسة",
-        "nl": "Studiefinanciering"
-      },
-      "status": "proposed",
-      "title": {
-        "ar": "مجلس النواب يرفض سقف 2.5% لفائدة قروض الدراسة ويطلب رفع basisbeurs",
-        "nl": "Tweede Kamer: geen rentemaximum van 2,5% op studieschuld, geld naar hogere basisbeurs"
-      },
-      "summary": {
-        "ar": "رفض مجلس النواب في 3 نوفمبر 2026 سقف 2.5% لفائدة قروض الدراسة، وتبنّى مقترح Rooderkerk لاستخدام 40 مليون يورو لرفع basisbeurs وإعادة les- en cursusgeld. طلب وليس قانوناً بعد.",
-        "nl": "De Kamer verwierp op 3 november 2026 een rentemaximum van 2,5% op studieschuld. Aangenomen: motie-Rooderkerk om € 40 miljoen te gebruiken voor een hogere basisbeurs en teruggave van lesgeld. Nog geen wet."
-      },
-      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P17772&did=2026P17772",
-      "sourceName": {
-        "ar": "البرلمان (Tweede Kamer)",
-        "nl": "Tweede Kamer"
-      },
-      "tier": "official",
-      "id": "tk-2026-11-03-38e0c63d"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
-      "result": "error"
+      "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "no-change"
+      "result": "new"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-18",
+      "checkedAt": "2026-11-19",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
