@@ -140,10 +140,18 @@ try {
 }
 
 # ---------------------------------------------------------------- 6. Facebook login (once)
-if (-not (Test-Path (Join-Path $Dir 'fb_profile'))) {
+$chromePaths = @("$env:ProgramFiles\Google\Chrome\Application\chrome.exe",
+                 "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe",
+                 "$env:LOCALAPPDATA\Google\Chrome\Application\chrome.exe")
+if (-not ($chromePaths | Where-Object { Test-Path $_ })) {
+    Step 'Installing Google Chrome (needed: Google refuses sign-in in automated Chromium)'
+    winget install -e --id Google.Chrome --accept-package-agreements --accept-source-agreements
+}
+if (-not (Test-Path (Join-Path $Dir 'chrome_profile\Default'))) {
     Step 'Log in to Facebook (once)'
-    Write-Host 'A browser window opens. Log in to YOUR Facebook account there,'
-    Write-Host 'then come back to this window and press Enter.'
+    Write-Host 'A NORMAL Chrome window opens (a separate profile, only for this tool).'
+    Write-Host 'Log in to Facebook there. If it asks, click "Verify with Google" and sign in.'
+    Write-Host 'When you see your Facebook home page, CLOSE that Chrome window.'
     & $VPy (Join-Path $Dir 'scraper.py') --login
 }
 

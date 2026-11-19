@@ -26,7 +26,11 @@ import random
 import sys
 import time
 
-from common import PROFILE, SHOTS, db, load_config, now, sha, today
+import os
+import subprocess
+from pathlib import Path
+
+from common import CHROME_PROFILE, PROFILE, SHOTS, db, load_config, now, sha, today
 
 SEE_MORE = ["See more", "عرض المزيد", "Meer weergeven", "Lees meer"]
 MORE_COMMENTS = [r"^View (\d+ )?more comments?", r"^View (all )?\d+ (more )?(comments|replies)",
@@ -296,16 +300,11 @@ def run_session(con, cfg: dict, quota: int) -> int:
     con.commit()
     total = 0
     with sync_playwright() as p:
-        ctx = p.chromium.launch_persistent_context(str(PROFILE), headless=False,
-                                                   viewport={"width": 1280, "height": 900},
-                                                   locale="ar")
+        ctx = open_browser(p)
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
         try:
             if not logged_in(ctx):
-                page.goto("https://www.facebook.com")
-                input("Log in to Facebook in the opened window, then press Enter here... ")
-                if not logged_in(ctx):
-                    sys.exit("Still not logged in; stopping.")
+                sys.exit("Not logged in to Facebook. Run login.bat (python scraper.py --login) first.")
             for i, g in enumerate(groups):
                 if total >= quota:
                     break
@@ -325,17 +324,64 @@ def run_session(con, cfg: dict, quota: int) -> int:
     return total
 
 
+def find_chrome() -> str | None:
+    """Path of the normal Google Chrome installed on this computer (Windows/macOS/Linux)."""
+    cands = []
+    for env in ("PROGRAMFILES", "PROGRAMFILES(X86)", "LOCALAPPDATA"):
+        base = os.environ.get(env)
+        if base:
+            cands.append(Path(base) / "Google" / "Chrome" / "Application" / "chrome.exe")
+    cands += [Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+              Path("/usr/bin/google-chrome"), Path("/usr/bin/google-chrome-stable")]
+    for c in cands:
+        if c.exists():
+            return str(c)
+    return None
+
+
+def open_browser(p):
+    """Your installed Google Chrome (own profile for this tool); bundled Chromium only as fallback."""
+    if find_chrome():
+        return p.chromium.launch_persistent_context(str(CHROME_PROFILE), channel="chrome", headless=False,
+                                                    viewport={"width": 1280, "height": 900})
+    print("Google Chrome not found - using Playwright's Chromium (Google sign-in may be refused there).")
+    return p.chromium.launch_persistent_context(str(PROFILE), headless=False,
+                                                viewport={"width": 1280, "height": 900})
+
+
 def login_only():
+    """Open the normal Google Chrome - NOT controlled by this tool - so you can log in to
+    Facebook and pass "verify with Google" exactly as in everyday browsing. The login is
+    saved in chrome_profile/ and used by the reading sessions afterwards."""
+    chrome = find_chrome()
+    if not chrome:
+        print("Google Chrome is not installed: install it from https://www.google.com/chrome/ and run this again.")
+        print("Trying with Playwright's Chromium instead...")
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            ctx = open_browser(p)
+            page = ctx.pages[0] if ctx.pages else ctx.new_page()
+            page.goto("https://www.facebook.com")
+            if not logged_in(ctx):
+                input("Log in to Facebook in the opened window, then press Enter here... ")
+            print("Logged in." if logged_in(ctx) else "Not logged in.")
+            ctx.close()
+        return
+    CHROME_PROFILE.mkdir(parents=True, exist_ok=True)
+    print("A normal Chrome window opens (separate profile for this tool).")
+    print("1. Log in to Facebook there. If Facebook asks, click 'Verify with Google' and sign in.")
+    print("2. When you see your Facebook home page, CLOSE that Chrome window.")
+    proc = subprocess.Popen([chrome, f"--user-data-dir={CHROME_PROFILE}", "--no-first-run",
+                             "--no-default-browser-check", "--new-window", "https://www.facebook.com/"])
+    proc.wait()
+    time.sleep(2)
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
-        ctx = p.chromium.launch_persistent_context(str(PROFILE), headless=False,
-                                                   viewport={"width": 1280, "height": 900}, locale="ar")
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        page.goto("https://www.facebook.com")
-        if not logged_in(ctx):
-            input("Log in to Facebook in the opened window, then press Enter here... ")
-        print("Logged in." if logged_in(ctx) else "Not logged in.")
+        ctx = open_browser(p)
+        ok = logged_in(ctx)
         ctx.close()
+    print("Logged in - the tool is ready." if ok else
+          "Not logged in yet. Run login.bat again and finish the login before closing Chrome.")
 
 
 def main(argv=None):

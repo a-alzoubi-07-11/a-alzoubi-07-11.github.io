@@ -19,7 +19,8 @@ DATA = HERE / "data"
 SHOTS = DATA / "screenshots"
 DRAFTS = HERE / "drafts"
 OUT = HERE / "out"
-PROFILE = HERE / "fb_profile"
+PROFILE = HERE / "fb_profile"            # used only if Google Chrome is not installed
+CHROME_PROFILE = HERE / "chrome_profile"  # login + reading profile in your installed Google Chrome
 DB_PATH = DATA / "fb_groups.db"
 
 DEFAULTS = {

@@ -37,8 +37,11 @@ cp config.example.json config.json      # Windows: copy config.example.json conf
    environment variable, never in a file:
    - Windows: `setx GEMINI_API_KEY "your-key"` (then open a new terminal)
    - macOS/Linux: `export GEMINI_API_KEY=your-key` in `~/.bashrc`
-3. First run: `python scraper.py`. A Chromium window opens; log in to Facebook by hand. The
-   session is saved in `fb_profile/`, so later runs start logged in.
+3. Log in once: `python scraper.py --login` (or `login.bat`). This opens your **normal Google
+   Chrome** with a separate profile, not under the tool's control, so Facebook's "verify with Google"
+   works. Log in, then close that window. The login is saved in `chrome_profile/`. Reading sessions
+   then run in your installed Chrome with that profile. Google refuses sign-in inside Playwright's
+   own Chromium ("this browser may not be secure"), which is why it is not used for login.
 
 ## Daily use
 
