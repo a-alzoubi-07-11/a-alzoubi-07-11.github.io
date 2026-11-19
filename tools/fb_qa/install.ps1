@@ -116,11 +116,12 @@ Write-Bat 'run_daily.bat'  "title fb_qa - running today's plan (do not close)`r`
 Write-Bat 'run_now.bat'    "title fb_qa - one session now`r`n`".venv\Scripts\python.exe`" run_daily.py --now`r`npause"
 Write-Bat 'login.bat'      "`".venv\Scripts\python.exe`" scraper.py --login`r`npause"
 Write-Bat 'results.bat'    "if not exist out mkdir out`r`nif not exist drafts mkdir drafts`r`nstart `"`" explorer out`r`nstart `"`" explorer drafts"
-Write-Bat 'stats.bat'      "`".venv\Scripts\python.exe`" manage.py stats`r`n`".venv\Scripts\python.exe`" scraper.py --plan-only`r`npause"
+Write-Bat 'stats.bat'      "`".venv\Scripts\python.exe`" manage.py stats`r`n`".venv\Scripts\python.exe`" manage.py check-key`r`n`".venv\Scripts\python.exe`" scraper.py --plan-only`r`npause"
+Write-Bat 'replies.bat'    "title fb_qa - replies page (close when done)`r`n`".venv\Scripts\python.exe`" replies_ui.py"
 
 $ws = New-Object -ComObject WScript.Shell
 $desk = [Environment]::GetFolderPath('Desktop')
-foreach ($s in @(@('fb_qa - results', 'results.bat'), @('fb_qa - run now', 'run_now.bat'), @('fb_qa - status', 'stats.bat'))) {
+foreach ($s in @(@('fb_qa - replies', 'replies.bat'), @('fb_qa - results', 'results.bat'), @('fb_qa - run now', 'run_now.bat'), @('fb_qa - status', 'stats.bat'))) {
     $lnk = $ws.CreateShortcut((Join-Path $desk ($s[0] + '.lnk')))
     $lnk.TargetPath = Join-Path $Dir $s[1]
     $lnk.WorkingDirectory = $Dir
@@ -159,5 +160,5 @@ Step 'Done'
 Write-Host "Installed in: $Dir"
 Write-Host "Every day at $RunAt it plans 3-5 sessions at random times and reads at most 15 new posts."
 Write-Host 'Keep the computer on and logged in; a small black window stays open during the day - do not close it.'
-Write-Host "Desktop shortcuts: 'fb_qa - results' (articles, replies, video ideas), 'fb_qa - run now', 'fb_qa - status'."
+Write-Host "Desktop shortcuts: 'fb_qa - replies' (copy/open/posted page), 'fb_qa - results' (articles, video ideas), 'fb_qa - run now', 'fb_qa - status'."
 Read-Host "`nPress Enter to close"

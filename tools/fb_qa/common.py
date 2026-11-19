@@ -126,6 +126,10 @@ def db(path: Path | None = None) -> sqlite3.Connection:
     con = sqlite3.connect(path)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    have = {r[1] for r in con.execute("PRAGMA table_info(posts)")}
+    for col in ("reply_text", "replied_at"):          # added later: upgrade old databases
+        if col not in have:
+            con.execute(f"ALTER TABLE posts ADD COLUMN {col} TEXT")
     return con
 
 

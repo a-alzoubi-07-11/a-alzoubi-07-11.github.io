@@ -6,8 +6,8 @@ Writes out/replies_<date>.md: for each recent unanswered question post, the post
 link, the question and a short ready-to-paste Arabic reply with the guide and/or
 YouTube link. YOU post them by hand (automatic link posting gets accounts banned).
 
-After posting:   python manage.py posted <post_id>
-To skip one:     python manage.py skip <post_id>
+Easiest: open the replies page (replies_ui.py / "fb_qa - replies" shortcut) and use its
+Copy / Open post / Posted buttons. Or by hand:  python manage.py posted|skip <post_id>
 No LLM calls: replies come from varied templates, so this step costs nothing.
 """
 from __future__ import annotations
@@ -56,9 +56,10 @@ def run(con=None, cfg=None, seed=None) -> str | None:
     for r in rows:
         lines += [f"## {r['question']}", "",
                   f"- post: {r['post_url'] or r['group_url']}",
-                  f"- topic [{r['cid']}]: {r['title']}", f"- post_id: `{r['id']}`", "", "```text",
-                  compose(r["article_url"], r["video_url"], rnd), "```", ""]
-        con.execute("UPDATE posts SET reply_status='drafted' WHERE id=?", (r["id"],))
+                  f"- topic [{r['cid']}]: {r['title']}", f"- post_id: `{r['id']}`", "", "```text"]
+        text = compose(r["article_url"], r["video_url"], rnd)
+        lines += [text, "```", ""]
+        con.execute("UPDATE posts SET reply_status='drafted', reply_text=? WHERE id=?", (text, r["id"]))
     con.commit()
     path = write_text(OUT / f"replies_{today()}.md", "\n".join(lines))
     print(f"{len(rows)} reply drafts -> {path}")

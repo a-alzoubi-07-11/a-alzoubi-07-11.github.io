@@ -61,7 +61,7 @@ the browser is closed. When the last session ends, the analysis steps run.
 | 2 | `analyze.py`: question? clear Arabic question, comments sorted into rule / experience / noise with anonymized summaries, questions grouped into topics, topics matched to site guides and videos | yes | database |
 | 3 | `verify.py`: fetches official pages (links cited in the matching guide first, then allowlisted domains only), writes the official answer, marks comments match / contradict / not_covered | yes | `out/contradictions_<date>.md` |
 | 4 | `articles.py`: Arabic draft for verified topics asked ≥ 3 times | yes | `drafts/<slug>.md` + private `drafts/<slug>.review.md` |
-| 5 | `replies.py`: reply drafts for new posts on topics you already cover | no | `out/replies_<date>.md` |
+| 5 | `replies.py`: reply drafts for new posts on topics you already cover. Post them from the **replies page** (`replies_ui.py`, *fb_qa - replies* shortcut): copy, open post, mark as posted. It warns after 3 link replies per group per day | no | `out/replies_<date>.md` + local page |
 | 6 | `gaps.py`: topics with no guide/video, most-asked first | no | `out/gaps_<date>.md` / `.csv` |
 
 Each module also runs on its own (`python verify.py --topic 12`, `python articles.py --topic 12`, ...).

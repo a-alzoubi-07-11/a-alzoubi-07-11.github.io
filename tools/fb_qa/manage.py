@@ -1,6 +1,7 @@
 """Small admin commands.
 
     python manage.py stats
+    python manage.py check-key                  test the Gemini API key with one tiny request
     python manage.py topics [N]                 list the N most-asked topics (default 30)
     python manage.py show <topic_id>            questions + answers of one topic
     python manage.py set-video <topic_id> <youtube_url>
@@ -16,6 +17,21 @@ from __future__ import annotations
 import sys
 
 from common import DATA, db
+
+
+def check_key():
+    import os
+    from llm import Gemini, LLMError
+    if not os.environ.get("GEMINI_API_KEY"):
+        print("Gemini key: NOT SET. Get a free key at https://aistudio.google.com/apikey and run the installer again.")
+        return
+    try:
+        g = Gemini()
+        g.gap = 0
+        ans = g.json('Return JSON {"ok": true}')
+        print("Gemini key: OK" if isinstance(ans, dict) and ans.get("ok") else f"Gemini key: odd answer {ans}")
+    except LLMError as e:
+        print(f"Gemini key: PROBLEM - {e}")
 
 
 def main(argv):
@@ -35,6 +51,9 @@ def main(argv):
                      ("verified topics", "SELECT COUNT(*) FROM clusters WHERE confidence IN ('high','medium')"),
                      ("screenshots", "SELECT COUNT(*) FROM comments WHERE screenshot IS NOT NULL")]:
             print(f"{t:20} {con.execute(q).fetchone()[0]}")
+    elif cmd == "check-key":
+        check_key()
+        return
     elif cmd == "topics":
         n = int(args[0]) if args else 30
         for r in con.execute("SELECT * FROM clusters ORDER BY n_questions DESC LIMIT ?", (n,)):
@@ -69,7 +88,7 @@ def main(argv):
         con.execute("UPDATE clusters SET n_questions=(SELECT COUNT(*) FROM questions WHERE cluster_id=?) WHERE id=?",
                     (keep, keep))
     elif cmd in ("posted", "skip"):
-        n = con.execute("UPDATE posts SET reply_status=? WHERE id=?",
+        n = con.execute("UPDATE posts SET reply_status=?, replied_at=datetime('now','localtime') WHERE id=?",
                         ("posted" if cmd == "posted" else "skipped", args[0])).rowcount
         print("ok" if n else "no such post")
     elif cmd == "purge-old":
