@@ -1,0 +1,29 @@
+/* بلديتي / Mijn gemeente tool (calculators/mijn-gemeente.html). Site tokens from style.css/main.css. */
+#mijn-gemeente form{display:grid;gap:.8rem;margin-block:1rem;max-width:520px}
+#mijn-gemeente form label{display:grid;gap:.35rem}
+#mijn-gemeente form label span{font-weight:650}
+#mijn-gemeente form input{min-height:56px;font-size:1.15rem}
+#mijn-gemeente .tool-button.primary[type=submit]{font-size:1.1rem;min-height:56px;justify-content:center}
+.mg-card{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.5rem 1rem .8rem;margin-block:.8rem}
+.mg-card h3{margin:.6rem 0 .3rem;font-size:1.15rem}
+.mg-main{border-width:2px;border-color:var(--accent)}
+.mg-kicker{margin:.5rem 0 0;color:var(--muted);font-weight:650}
+.mg-main h3{font-size:1.45rem}
+.mg-dl{margin:.4rem 0 .8rem}
+.mg-dl div{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.mg-dl div:last-child{border-bottom:0}
+.mg-dl dt{color:var(--muted)}.mg-dl dd{margin:0;font-weight:650;text-align:end;overflow-wrap:anywhere}
+.mg-list{list-style:none;padding:0;margin:.4rem 0 .8rem}
+.mg-list li{padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.mg-list li:last-child{border-bottom:0}
+.mg-steps{padding-inline-start:1.4rem;margin:.4rem 0}
+.mg-steps li{padding:.4rem 0}
+.mg-steps small{color:var(--muted)}
+.mg-help{list-style:none;padding:0;margin:.4rem 0}
+.mg-help li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;padding:.55rem 0;border-bottom:1px dashed var(--line)}
+.mg-help li:last-child{border-bottom:0}
+.mg-help small{color:var(--muted)}
+.mg-help-a{display:flex;gap:.8rem;flex-wrap:wrap}
+.mg-help-a a{white-space:nowrap}
+@media(max-width:640px){.mg-dl div{flex-direction:column;gap:.1rem}.mg-dl dd{text-align:start}}
+@media print{#mijn-gemeente form,.mg-share{display:none}}
