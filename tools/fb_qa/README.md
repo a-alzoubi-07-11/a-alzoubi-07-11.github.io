@@ -30,12 +30,18 @@ cp config.example.json config.json      # Windows: copy config.example.json conf
 ## Daily use
 
 ```bash
-python run_daily.py --jitter 45
+python run_daily.py
 ```
+
+Start it **once a day, in the morning**. It makes a random plan for the day, for example
+`10:42 (4), 13:17 (6), 18:55 (2), 21:08 (3)`: 3–5 short sessions at random times between 09:00 and
+23:00, at least 45 minutes apart, reading **15 new posts in total, never more**. Between sessions
+the browser is closed. When the last session ends, the analysis steps run.
+`python scraper.py --plan-only` shows today's plan; `python scraper.py --now` runs one session now.
 
 | Step | Module | LLM? | Output |
 |---|---|---|---|
-| 1 | `scraper.py`: new posts and comments (max 15 new per group, stops at known posts, 20–60 s between groups, max 2 runs/day) | no | `data/fb_groups.db`, `data/screenshots/` |
+| 1 | `scraper.py`: new posts and comments. **Max 15 new posts per day across all groups** (no override), 3–5 sessions at random times, 1–2 random groups per session, 25–90 s per post, sometimes a 2–5 min break, 3–10 min when switching group, posts read before are not clicked again | no | `data/fb_groups.db`, `data/screenshots/` |
 | 2 | `analyze.py`: question? clear Arabic question, comments sorted into rule / experience / noise with anonymized summaries, questions grouped into topics, topics matched to site guides and videos | yes | database |
 | 3 | `verify.py`: fetches official pages (links cited in the matching guide first, then allowlisted domains only), writes the official answer, marks comments match / contradict / not_covered | yes | `out/contradictions_<date>.md` |
 | 4 | `articles.py`: Arabic draft for verified topics asked ≥ 3 times | yes | `drafts/<slug>.md` + private `drafts/<slug>.review.md` |
@@ -52,9 +58,10 @@ so topics link to them.
 
 ### Scheduling (Windows Task Scheduler)
 
-Create a basic task, daily, at for example 10:00 and 19:00. Action: start a program.
+Create a basic task, daily, **once**, at for example 08:50. The script picks the random session
+times itself. Action: start a program.
 - Program: `python`
-- Arguments: `run_daily.py --jitter 45`
+- Arguments: `run_daily.py`
 - Start in: `C:\path\to\repo\tools\fb_qa`
 
 Keep "Run only when user is logged on" ticked. The browser must open visibly on your desktop
@@ -71,12 +78,14 @@ Keep "Run only when user is logged on" ticked. The browser must open visibly on 
   confidence, get no draft.
 - Drafts are Markdown for review. To publish, turn one into a guide module following
   `tools/articles/README.md`, which keeps the site's rules: both languages, sources, labelled examples.
+- **Daily limit:** `max_posts_per_day` (15) counts every new post saved today, in all groups and
+  all runs together. Running the script again the same day only uses what is left.
 - Free-tier pacing: about 8 LLM calls per minute, at most 150 per run (set in `config.json`).
 
 ## Things to know
 
 - **Facebook terms:** automated reading is against Facebook's terms even with your own account.
-  The slow limits make problems unlikely but not impossible (a "checkpoint" or temporary block).
+  The 15-posts-a-day limit and random timing make problems unlikely but not impossible (a "checkpoint" or temporary block).
   If Facebook asks for verification, the scraper stops; log in by hand and lower the limits.
 - **Privacy:** the database and screenshots contain other people's comments. They stay on your
   computer only. Run `python manage.py purge-old 90` now and then to delete raw text and

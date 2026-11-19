@@ -1,8 +1,13 @@
 """Step 1: read new posts + comments from Facebook groups, slowly, with your own login.
 
-    python scraper.py              # normal run (refuses a 3rd run on the same day)
-    python scraper.py --force      # ignore the daily run limit
-    python scraper.py --jitter 30  # wait a random 0-30 minutes first (for scheduled runs)
+    python scraper.py              # plan today: 3-5 sessions at random times, 15 new posts in total
+    python scraper.py --now        # one short session right now (still inside today's 15)
+    python scraper.py --plan-only  # just print today's random plan
+
+Daily limit: at most max_posts_per_day (15) NEW posts per day across all groups and
+all runs - there is no override. Sessions start at random times inside active_hours,
+read a random share of the 15 from 1-2 random groups, pause 25-90 s per post, and
+close the browser in between. Posts already read are not clicked or expanded again.
 
 First run: a Chromium window opens; log in to Facebook by hand. The session is
 saved in ./fb_profile (git-ignored) so later runs start logged in.
@@ -16,6 +21,7 @@ Nothing is posted, liked or clicked apart from "See more" / "More comments".
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import random
 import sys
 import time
@@ -109,8 +115,44 @@ def pause(a: float = 2, b: float = 5):
     time.sleep(random.uniform(a, b))
 
 
-def runs_today(con) -> int:
-    return con.execute("SELECT COUNT(*) FROM runs WHERE day=? AND kind='scrape'", (today(),)).fetchone()[0]
+def pause_cfg(rng):
+    pause(*rng)
+
+
+def posts_today(con) -> int:
+    return con.execute("SELECT COUNT(*) FROM posts WHERE substr(scraped_at, 1, 10) = ?", (today(),)).fetchone()[0]
+
+
+def quota_left(con, cfg) -> int:
+    return max(0, int(cfg["max_posts_per_day"]) - posts_today(con))
+
+
+def plan_day(cfg: dict, start: dt.datetime, remaining: int, rnd: random.Random | None = None):
+    """Random session times today (from `start` until the end of active_hours) and how many
+    new posts each may read. Quotas add up to `remaining`, each at least 1."""
+    rnd = rnd or random.Random()
+    if remaining <= 0:
+        return []
+    h0, h1 = cfg["active_hours"]
+    day = start.replace(hour=0, minute=0, second=0, microsecond=0)
+    lo = max(start + dt.timedelta(minutes=1), day + dt.timedelta(hours=h0))
+    hi = day + dt.timedelta(hours=h1)
+    if lo >= hi:
+        return []
+    gap = dt.timedelta(minutes=cfg["min_minutes_between_sessions"])
+    n = rnd.randint(*cfg["sessions_per_day"])
+    n = max(1, min(n, remaining, int((hi - lo) / gap) + 1))
+    span = (hi - lo).total_seconds()
+    times = []
+    for _ in range(200):                      # random times, spaced at least `gap` apart
+        times = sorted(lo + dt.timedelta(seconds=rnd.uniform(0, span)) for _ in range(n))
+        if all(b - a >= gap for a, b in zip(times, times[1:])):
+            break
+    else:
+        times = [lo + i * gap for i in range(n)]
+    cuts = sorted(rnd.sample(range(1, remaining), n - 1)) if n > 1 else []
+    quotas = [b - a for a, b in zip([0] + cuts, cuts + [remaining])]
+    return list(zip(times, quotas))
 
 
 def logged_in(ctx) -> bool:
@@ -178,30 +220,39 @@ def _save_comments(con, page, pid: str, comments: list[dict]) -> int:
     return new
 
 
-def scrape_group(page, con, url: str, cfg: dict) -> int:
+def scrape_group(page, con, url: str, cfg: dict, quota: int) -> int:
+    """Read up to `quota` NEW posts from one group (never more than today's limit)."""
     page.goto(feed_url(url, cfg["chronological_feed"]), wait_until="domcontentloaded")
-    pause(4, 8)
+    pause(5, 12)
     if "login" in page.url or "checkpoint" in page.url:
         raise SystemExit("Facebook asks for login/verification. Run again and log in by hand.")
     done: set[str] = set()
     new = known_streak = 0
-    for _ in range(cfg["max_scrolls_per_group"]):
+    for _ in range(cfg["max_scrolls_per_session"]):
         for mark in page.evaluate(JS_MARK_POSTS):
             if mark in done:
                 continue
             done.add(mark)
+            if new >= quota or quota_left(con, cfg) <= 0:
+                return new
             art = page.query_selector(f'div[data-fbqa-p="{mark}"]')
             if not art:
                 continue
             try:
                 art.scroll_into_view_if_needed(timeout=5000)
-                pause(0.8, 2)
+                pause(1.5, 4)
+                first = page.evaluate(JS_EXTRACT, art)          # look only, no clicks yet
+                if is_known(con, url, first):
+                    known_streak += 1
+                    if known_streak >= cfg["stop_after_known_posts"]:
+                        return new                              # reached what we read before
+                    continue
                 if page.evaluate(JS_CLICK, [art, SEE_MORE, []]):
-                    pause(1, 2)
+                    pause(1.5, 3)
                 for _ in range(MAX_COMMENT_EXPANDS):
                     if not page.evaluate(JS_CLICK, [art, [], MORE_COMMENTS]):
                         break
-                    pause(1.5, 3)
+                    pause(2, 4)
                     close_dialogs(page)
                 data = page.evaluate(JS_EXTRACT, art)
             except Exception as e:                      # element vanished / FB re-rendered
@@ -210,63 +261,107 @@ def scrape_group(page, con, url: str, cfg: dict) -> int:
             if save_post(con, page, url, art, data):
                 new += 1
                 known_streak = 0
-            elif (data.get("body") or "").strip():
-                known_streak += 1
-            if new >= cfg["max_posts_per_group"] or known_streak >= cfg["stop_after_known_posts"]:
-                return new
-        page.mouse.wheel(0, random.randint(1200, 2200))
-        pause(3, 6)
+                print(f"  +1 post ({posts_today(con)}/{cfg['max_posts_per_day']} today)")
+                pause_cfg(cfg["post_pause_seconds"])            # "reading time"
+                if random.random() < 0.15:
+                    pause(120, 300)                             # occasional longer break
+        page.mouse.wheel(0, random.randint(900, 1800))
+        pause(4, 9)
     return new
+
+
+def is_known(con, group_url: str, data: dict) -> bool:
+    body = (data.get("body") or "").strip()
+    link = data.get("link") or ""
+    if not link and len(body) < MIN_POST_CHARS:
+        return False
+    if link:
+        return con.execute("SELECT 1 FROM posts WHERE id=?", (sha(link),)).fetchone() is not None
+    # no permalink: compare the start of the text (before "See more" cut it off)
+    head = body[:80].replace("%", "").replace("_", "")
+    return con.execute("SELECT 1 FROM posts WHERE group_url=? AND text LIKE ?",
+                       (group_url, head + "%")).fetchone() is not None
+
+
+def run_session(con, cfg: dict, quota: int) -> int:
+    """One short browsing session: 1-2 random groups, at most `quota` new posts."""
+    quota = min(quota, quota_left(con, cfg))
+    if quota <= 0:
+        print("Daily limit reached.")
+        return 0
+    from playwright.sync_api import sync_playwright
+    groups = random.sample(cfg["groups"], k=min(len(cfg["groups"]), random.choice([1, 1, 2])))
+    con.execute("INSERT INTO runs(day, started_at, kind, note) VALUES(?,?, 'scrape', ?)",
+                (today(), now(), f"quota {quota}"))
+    con.commit()
+    total = 0
+    with sync_playwright() as p:
+        ctx = p.chromium.launch_persistent_context(str(PROFILE), headless=False,
+                                                   viewport={"width": 1280, "height": 900},
+                                                   locale="ar")
+        page = ctx.pages[0] if ctx.pages else ctx.new_page()
+        try:
+            if not logged_in(ctx):
+                page.goto("https://www.facebook.com")
+                input("Log in to Facebook in the opened window, then press Enter here... ")
+                if not logged_in(ctx):
+                    sys.exit("Still not logged in; stopping.")
+            for i, g in enumerate(groups):
+                if total >= quota:
+                    break
+                if i:
+                    pause_cfg(cfg["group_pause_seconds"])
+                try:
+                    n = scrape_group(page, con, g, cfg, quota - total)
+                except SystemExit:
+                    raise
+                except Exception as e:
+                    print(f"{g}: error {type(e).__name__}: {e}")
+                    n = 0
+                total += n
+                print(f"{g}: {n} new posts")
+        finally:
+            ctx.close()
+    return total
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--force", action="store_true", help="ignore max_runs_per_day")
-    ap.add_argument("--jitter", type=int, default=0, help="wait a random 0..N minutes before starting")
+    ap.add_argument("--now", action="store_true", help="one session right now (inside the daily limit)")
+    ap.add_argument("--plan-only", action="store_true", help="print today's random plan and exit")
     args = ap.parse_args(argv)
 
     cfg = load_config()
     if not cfg["groups"]:
         sys.exit("No groups configured. Copy config.example.json to config.json and fill in \"groups\".")
     con = db()
-    if not args.force and runs_today(con) >= cfg["max_runs_per_day"]:
-        sys.exit(f"Already {runs_today(con)} scrape runs today (limit {cfg['max_runs_per_day']}). Use --force to override.")
-    if args.jitter:
-        w = random.uniform(0, args.jitter * 60)
-        print(f"Waiting {w / 60:.1f} minutes before starting...")
-        time.sleep(w)
+    left = quota_left(con, cfg)
+    print(f"{posts_today(con)}/{cfg['max_posts_per_day']} new posts read today, {left} left.")
+    if left <= 0:
+        return
 
-    from playwright.sync_api import sync_playwright
-    con.execute("INSERT INTO runs(day, started_at, kind) VALUES(?,?, 'scrape')", (today(), now()))
-    con.commit()
-    groups = cfg["groups"][:]
-    random.shuffle(groups)
-    with sync_playwright() as p:
-        ctx = p.chromium.launch_persistent_context(str(PROFILE), headless=False,
-                                                   viewport={"width": 1280, "height": 900},
-                                                   locale="ar")
-        page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        if not logged_in(ctx):
-            page.goto("https://www.facebook.com")
-            input("Log in to Facebook in the opened window, then press Enter here... ")
-            if not logged_in(ctx):
-                ctx.close()
-                sys.exit("Still not logged in; stopping.")
-        total = 0
-        for i, g in enumerate(groups):
-            try:
-                n = scrape_group(page, con, g, cfg)
-            except SystemExit:
-                raise
-            except Exception as e:
-                print(f"{g}: error {type(e).__name__}: {e}")
-                n = 0
-            total += n
-            print(f"{g}: {n} new posts")
-            if i < len(groups) - 1:
-                pause(20, 60)                           # long human-like gap between groups
-        ctx.close()
-    print(f"Done: {total} new posts.")
+    if args.now:
+        n = run_session(con, cfg, random.randint(max(1, left // 3), left))
+        print(f"Session done: {n} new posts.")
+        return
+
+    plan = plan_day(cfg, dt.datetime.now(), left)
+    if not plan:
+        print(f"Outside active hours {cfg['active_hours']}; nothing planned for today.")
+        return
+    print("Today's plan: " + ", ".join(f"{t:%H:%M} ({q})" for t, q in plan))
+    if args.plan_only:
+        return
+    for t, q in plan:
+        wait = (t - dt.datetime.now()).total_seconds()
+        if wait > 0:
+            print(f"Next session at {t:%H:%M}, sleeping {wait / 60:.0f} min...")
+            time.sleep(wait)
+        n = run_session(con, cfg, q)
+        print(f"Session {t:%H:%M} done: {n} new posts ({posts_today(con)}/{cfg['max_posts_per_day']} today).")
+        if quota_left(con, cfg) <= 0:
+            break
+    print("Done for today.")
 
 
 if __name__ == "__main__":

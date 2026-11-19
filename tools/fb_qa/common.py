@@ -24,10 +24,14 @@ DB_PATH = DATA / "fb_groups.db"
 
 DEFAULTS = {
     "groups": [],
-    "max_posts_per_group": 15,
-    "max_scrolls_per_group": 12,
-    "stop_after_known_posts": 8,
-    "max_runs_per_day": 2,
+    "max_posts_per_day": 15,              # hard cap: new posts per day, all groups together
+    "sessions_per_day": [3, 5],           # the 15 are split over this many short sessions
+    "active_hours": [9, 23],              # sessions only start between these hours
+    "min_minutes_between_sessions": 45,
+    "post_pause_seconds": [25, 90],       # "reading time" after each post
+    "group_pause_seconds": [180, 600],    # pause when switching group inside a session
+    "max_scrolls_per_session": 8,
+    "stop_after_known_posts": 3,
     "chronological_feed": True,
     "gemini_model": "gemini-2.5-flash",
     "llm_min_seconds_between_calls": 7,

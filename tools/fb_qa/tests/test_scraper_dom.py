@@ -89,6 +89,25 @@ class ScraperDomTest(unittest.TestCase):
                 art2 = page.query_selector(f'div[data-fbqa-p="{marks[1]}"]')
                 d2 = page.evaluate(scraper.JS_EXTRACT, art2)
                 self.assertEqual(d2["link"], "https://www.facebook.com/groups/123/permalink/999/")
+                self.assertTrue(scraper.is_known(con, "g", data))
+                self.assertFalse(scraper.is_known(con, "g", d2))
+
+                # scrape_group: stops at the quota and never clicks known posts
+                cfg = dict(common.DEFAULTS, post_pause_seconds=[0, 0], max_scrolls_per_session=1,
+                           chronological_feed=False)
+                scraper.pause = lambda a=0, b=0: None
+                page.goto = lambda *a, **k: page.set_content(FEED)
+                orig_random = scraper.random.random
+                scraper.random.random = lambda: 1.0                    # no long breaks in tests
+                try:
+                    con2 = common.db(tmp / "t2.db")
+                    self.assertEqual(scraper.scrape_group(page, con2, "g", cfg, quota=1), 1)
+                    self.assertEqual(scraper.posts_today(con2), 1)
+                    self.assertEqual(scraper.scrape_group(page, con2, "g", cfg, quota=5), 1)  # the other one
+                    self.assertEqual(scraper.scrape_group(page, con2, "g", cfg, quota=5), 0)  # all known
+                    con2.close()
+                finally:
+                    scraper.random.random = orig_random
                 b.close()
         except Exception as e:
             if "Executable doesn't exist" in str(e):

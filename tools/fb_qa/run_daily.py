@@ -1,8 +1,10 @@
-"""Run the whole pipeline once (schedule this 1-2 times a day).
+"""Run the whole pipeline for one day (schedule this ONCE a day, in the morning).
 
-    python run_daily.py                 # scrape -> analyze -> verify -> articles -> replies -> gaps
+    python run_daily.py                 # start it once in the morning: reads up to 15 new posts in
+                                        # 3-5 sessions at random times today, then analyze -> verify
+                                        # -> articles -> replies -> gaps
+    python run_daily.py --now           # one reading session now instead of the day plan
     python run_daily.py --no-scrape     # only process what is already in the database
-    python run_daily.py --jitter 45     # random 0-45 min delay first (recommended for scheduled runs)
 
 Needs GEMINI_API_KEY in the environment for the analyze/verify/articles steps.
 If the key is missing, scraping, replies and gaps still run.
@@ -18,12 +20,11 @@ import scraper
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--no-scrape", action="store_true")
-    ap.add_argument("--jitter", type=int, default=0)
-    ap.add_argument("--force", action="store_true", help="ignore the daily scrape limit")
+    ap.add_argument("--now", action="store_true", help="one session now instead of today's random plan")
     a = ap.parse_args()
 
     if not a.no_scrape:
-        argv = (["--force"] if a.force else []) + (["--jitter", str(a.jitter)] if a.jitter else [])
+        argv = ["--now"] if a.now else []
         try:
             scraper.main(argv)
         except SystemExit as e:
