@@ -34,6 +34,7 @@ TOPIC = {
  'zorgtoeslag-guide':'benefits','housing-rent-allowance-2026':'benefits','kinderbijslag-guide':'benefits',
  'kindgebonden-budget-guide':'benefits بدل الأطفال الإضافي فلوس الأولاد من الضرائب kindgebonden budget bedrag 2026','childcare-allowance-kinderopvangtoeslag':'benefits','toeslagpartner-guide':'benefits',
  'toeslagen-income-update':'benefits تحديث الدخل البدلات ارجاع البدلات دين البدلات inkomen doorgeven voorschot','annual-tax-return-2026':'money','municipal-taxes-exemption-kwijtschelding':'money',
+ 'essential-apps-netherlands':'تطبيقات تطبيق برامج الموبايل ابلكيشن ديجي دي ديجيد تطبيق digid تطبيق 9292 تطبيق ns تطبيق القطار ovpay mijnoverheid berichtenbox صندوق رسائل الحكومة thuisarts nl-alert ان ال الرت تطبيقات هولندا apps app downloaden handige apps nieuwkomers',
  'prinsjesdag-2026-changes':'money ميزانية الحكومة التغييرات القادمة قرارات الميزانية الضرائب الجديدة miljoenennota begroting 2027 wat verandert',
 }
 TOPIC_LABEL = {

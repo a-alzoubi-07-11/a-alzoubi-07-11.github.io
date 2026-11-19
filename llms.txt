@@ -6,6 +6,10 @@ Publisher: Ahmad Alzoubi (independent, not a government body). Content is inform
 
 ## Arabic guides (العربية)
 
+### أخرى
+
+- [تطبيقات لازم تنزّلها أول ما توصل هولندا: DigiD والحكومة والمواصلات والصحة والطوارئ](https://gidsnederland.nl/articles/essential-apps-netherlands.html): أهم التطبيقات للقادمين الجدد في هولندا: تطبيق DigiD وMijnOverheid و9292 وNS وOVpay وThuisarts وNL-Alert، شو بتعمل فيها وأول إعداد لازم تعمله، مع تنبيهات مهمة.
+
 ### الإعانات والبدلات
 
 - [Huurtoeslag 2026](https://gidsnederland.nl/articles/housing-rent-allowance-2026.html): بدل الإيجار huurtoeslag 2026: لا سقف للإيجار كشرط بعد الآن، لكن الحساب على إيجار أقصى 932.93 يورو، وحد الأصول 38,479 يورو للساكن. الشروط والأمثلة.
@@ -111,6 +115,10 @@ Publisher: Ahmad Alzoubi (independent, not a government body). Content is inform
 - [Oplichting en phishing in Nederland 2026](https://gidsnederland.nl/nl/articles/scams-phishing-netherlands.html): Phishing en oplichting: valse berichten van Belastingdienst en DigiD, ‘hoi mam’- en bankhelpdeskfraude. Erin getuind? Bel je bank en de Fraudehelpdesk.
 - [Prinsjesdag 2026](https://gidsnederland.nl/nl/articles/prinsjesdag-2026-changes.html): Prinsjesdag 2026 (15 september): de plannen voor 2027 voor belasting, toeslagen, eigen risico € 400 en einde salderen, en wat nog door het parlement moet.
 - [Verkeersboetes en het CJIB in 2026](https://gidsnederland.nl/nl/articles/traffic-fines-cjib.html): Verkeersboete van het CJIB: 8 weken om te betalen, dan ×1,5 en ×3, beroep binnen 6 weken en een betalingsregeling vanaf € 75 tot 36 maanden.
+
+### Overig
+
+- [Apps die je als nieuwkomer in Nederland meteen downloadt: DigiD, overheid, ov, gezondheid en noodgevallen](https://gidsnederland.nl/nl/articles/essential-apps-netherlands.html): De belangrijkste apps voor nieuwkomers: DigiD app, MijnOverheid, 9292, NS, OVpay, Thuisarts en NL-Alert. Wat je ermee doet, wat je als eerste instelt en waar je op let.
 
 ### Studie en onderwijs
 
