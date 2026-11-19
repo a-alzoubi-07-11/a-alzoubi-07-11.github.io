@@ -1,0 +1,46 @@
+/* OV route-cost tool (calculators/ov-reiskosten.html). Uses the site tokens from style.css/main.css. */
+#ov-planner form{display:grid;gap:1rem;margin-block:1rem}
+.ovp-places{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:.6rem;align-items:end}
+.ovp-field{display:grid;gap:.35rem;position:relative;min-width:0}
+.ovp-field>span{font-weight:650}
+.ovp-field input{width:100%;min-height:52px;font-size:1.05rem}
+.ovp-swap{min-height:52px;min-width:52px;justify-content:center;font-size:1.2rem}
+.ovp-list{position:absolute;inset-inline:0;top:100%;z-index:20;margin:.2rem 0 0;padding:.3rem;list-style:none;background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.12);max-height:320px;overflow:auto}
+.ovp-list li{padding:.65rem .7rem;border-radius:8px;cursor:pointer;line-height:1.35}
+.ovp-list li:hover,.ovp-list li[aria-selected=true]{background:var(--soft)}
+.ovp-opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.ovp-opts label{display:grid;gap:.35rem;min-width:0}
+.ovp-opts label>span{font-weight:650}
+.ovp-opts select,.ovp-opts input{min-height:48px}
+#ov-planner .tool-button.primary[type=submit]{font-size:1.1rem;min-height:56px;justify-content:center}
+.ovp-legs{list-style:none;margin:0 0 1rem;padding:0;display:grid;gap:.6rem}
+.ovp-leg{display:grid;grid-template-columns:44px minmax(0,1fr);gap:.7rem;align-items:start;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.75rem}
+.ovp-leg-ico{font-size:1.6rem;line-height:44px;text-align:center;background:var(--soft);border-radius:12px}
+.ovp-leg-h{font-weight:700;margin:.15rem 0}
+.ovp-leg-m{margin:.15rem 0;color:var(--muted)}
+.ovp-rail{border-color:#ffc917;box-shadow:inset 4px 0 0 #ffc917}
+html[dir=rtl] .ovp-rail{box-shadow:inset -4px 0 0 #ffc917}
+.ovp-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.45rem}
+.ovp-chip{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;min-height:40px;text-decoration:none;color:var(--text);background:var(--soft);font-weight:650}
+.ovp-chip small{font-weight:400;color:var(--muted)}
+.ovp-chip-rail{background:#fff6cc;color:#1a1a1a;border-color:#f0d36b}
+.ovp-chip-rail small{color:#444}
+.ovp-warn{flex-basis:100%;margin:.2rem 0;color:#b42318;font-weight:650}
+.ovp-totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin-block:1rem}
+.ovp-totals div{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.7rem;text-align:center}
+.ovp-totals>div>span{display:block;color:var(--muted);font-size:.92rem}
+#ov-planner .ovp-totals strong{font-size:1.45rem;text-align:center;display:block}
+.ovp-card{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.4rem 1rem;margin-block:.8rem}
+.ovp-card h3{margin:.6rem 0 .3rem;font-size:1.1rem}
+.ovp-best{background:#e8f7ee;color:#0b5c2d;border-radius:10px;padding:.6rem .8rem}
+.ovp-subs{list-style:none;padding:0;margin:.5rem 0}
+.ovp-subs li{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.ovp-subs b{white-space:nowrap}
+.ovp-subs li:last-child{border-bottom:0;color:var(--muted)}
+.ovp-links-h{font-weight:650;margin-bottom:.3rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .ovp-best{background:#123d26;color:#c9f2d8}:root:not([data-theme=light]) .ovp-chip-rail{background:#3b3310;color:#fff3c4;border-color:#6b5a1a}:root:not([data-theme=light]) .ovp-chip-rail small{color:#e8dca8}}
+:root[data-theme=dark] .ovp-best{background:#123d26;color:#c9f2d8}
+:root[data-theme=dark] .ovp-chip-rail{background:#3b3310;color:#fff3c4;border-color:#6b5a1a}
+:root[data-theme=dark] .ovp-chip-rail small{color:#e8dca8}
+@media(max-width:640px){.ovp-places{grid-template-columns:1fr}.ovp-swap{justify-self:center;transform:rotate(90deg)}.ovp-opts{grid-template-columns:1fr}.ovp-totals{grid-template-columns:1fr 1fr}.ovp-totals div:last-child{grid-column:1/-1}}
+@media print{#ov-planner form,.ovp-share{display:none}}
