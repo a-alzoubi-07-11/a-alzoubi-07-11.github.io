@@ -24,13 +24,19 @@ HREF = re.compile(r'href="(https?://[^"]+)"')
 LOCAL = (SITE_ROOT / "assets" / "search-index.json").exists()
 
 
+RAW = "https://raw.githubusercontent.com/a-alzoubi-07-11/a-alzoubi-07-11.github.io/main"
+
+
 def _get(url_path: str) -> str:
-    req = urllib.request.Request(SITE + url_path, headers={"User-Agent": "fb-qa"})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.read().decode("utf-8", "replace")
-    except Exception:
-        return ""
+    """Read a page of the live site; fall back to the same file on GitHub."""
+    for base in (SITE, RAW):
+        req = urllib.request.Request(base + url_path, headers={"User-Agent": "Mozilla/5.0 (fb-qa)"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception:
+            continue
+    return ""
 
 
 @lru_cache(maxsize=1)
