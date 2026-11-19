@@ -1,7 +1,7 @@
 {
   "submission": {
-    "digest": "cf55e22c3102b7d5ad8d9cc5cfb6fa9828bccd5ee19eb93f4a1acb6cd0865827",
-    "submitted_at": "2026-11-19T13:35:35+00:00",
+    "digest": "4fb0a8517ca1cbd17db2e2367a2bac0eb27f9ead79473affa1f3840f253b8b72",
+    "submitted_at": "2026-11-19T20:33:39+00:00",
     "url": "https://gidsnederland.nl/sitemap.xml"
   },
   "statuses": {
@@ -155,6 +155,8 @@
     "https://gidsnederland.nl/nl/articles/syrian-documents-legalisation-translation.html": "indexed",
     "https://gidsnederland.nl/articles/asylum-residence-hub.html": "indexed",
     "https://gidsnederland.nl/nl/articles/asylum-residence-hub.html": "indexed",
+    "https://gidsnederland.nl/calculators/mijn-gemeente.html": "not_indexed",
+    "https://gidsnederland.nl/nl/calculators/mijn-gemeente.html": "not_indexed",
     "https://gidsnederland.nl/calculators/kenteken-check.html": "not_indexed",
     "https://gidsnederland.nl/nl/calculators/kenteken-check.html": "not_indexed",
     "https://gidsnederland.nl/calculators/ov-reiskosten.html": "not_indexed",
