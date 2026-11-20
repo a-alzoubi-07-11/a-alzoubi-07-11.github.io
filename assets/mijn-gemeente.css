@@ -16,6 +16,7 @@
 .mg-list{list-style:none;padding:0;margin:.4rem 0 .8rem}
 .mg-list li{padding:.45rem 0;border-bottom:1px dashed var(--line)}
 .mg-list li:last-child{border-bottom:0}
+.mg-card h4{margin:.8rem 0 .2rem;font-size:1rem}
 .mg-steps{padding-inline-start:1.4rem;margin:.4rem 0}
 .mg-steps li{padding:.4rem 0}
 .mg-steps small{color:var(--muted)}

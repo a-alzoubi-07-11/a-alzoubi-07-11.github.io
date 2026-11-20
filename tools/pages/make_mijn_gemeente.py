@@ -12,15 +12,17 @@ from build_page import page, SITE  # noqa: E402
 SLUG = 'mijn-gemeente'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
-HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/mijn-gemeente.css?v=1">'
+HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/mijn-gemeente.css?v=2">'
         '<link rel="preconnect" href="https://api.pdok.nl" crossorigin>'
-        '<script src="/assets/mijn-gemeente.js?v=1" defer></script>')
+        '<script src="/assets/mijn-gemeente.js?v=2" defer></script>')
 
 SOURCES = [
     ('Organisaties.overheid.nl · Gemeenten (contactgegevens, CC0)', 'https://organisaties.overheid.nl/Gemeenten/'),
     ('PDOK · Locatieserver (adressen en gemeentecode)', 'https://www.pdok.nl/introductie/-/article/pdok-locatieserver'),
     ('Rijksoverheid · Wanneer moet ik mij inschrijven in de BRP?', 'https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/privacy-en-persoonsgegevens/wanneer-in-brp-inschrijven'),
     ('Rijksoverheid · Hoe kan ik mijn verhuizing doorgeven aan de gemeente?', 'https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/gemeenten/hoe-kan-ik-mijn-verhuizing-doorgeven-aan-de-gemeente'),
+    ('DUO · Open onderwijsdata: adressen van scholen', 'https://duo.nl/open_onderwijsdata/'),
+    ('Scholen op de kaart (PO-Raad en VO-raad)', 'https://scholenopdekaart.nl/'),
     ('Juridisch Loket · Gratis juridisch advies', 'https://www.juridischloket.nl/'),
     ('VluchtelingenWerk Nederland', 'https://www.vluchtelingenwerk.nl/'),
 ]
@@ -42,8 +44,8 @@ AR = dict(
     lang='ar', home='/', home_t='الرئيسية', tools='/tools.html', tools_t='أدوات عملية للحياة في هولندا',
     title='بلديتي: كل شي عن بلديتك من رمزك البريدي',
     page_title='بلديتي: اكتب رمزك البريدي فتعرف بلديتك وعنوانها وتلفونها، وأقرب محطة، وخطة أول 30 يوم',
-    desc='للقادمين الجدد واللاجئين في هولندا: اكتب رمزك البريدي أو عنوانك فتعرف بلديتك وعنوانها وتلفونها وموقعها، وأقرب محطات القطار، وخطة أول 30 يوم بالعربي، والمساعدات اللي فيك تسأل عنها بلديتك.',
-    summary='وصلت على بيت جديد أو بلدية جديدة؟ اكتب رمزك البريدي بس. بتعرف بلديتك وكيف تتواصل معها، وأقرب محطة قطار، وشو لازم تعمل بأول 30 يوم خطوة بخطوة، وأي مساعدات فيك تطلبها من البلدية.',
+    desc='للقادمين الجدد واللاجئين في هولندا: اكتب رمزك البريدي فتعرف بلديتك وعنوانها وتلفونها، وأقرب محطات القطار والمدارس، وخطة أول 30 يوم بالعربي، والمساعدات اللي فيك تسأل عنها بلديتك.',
+    summary='وصلت على بيت جديد أو بلدية جديدة؟ اكتب رمزك البريدي بس. بتعرف بلديتك وكيف تتواصل معها، وأقرب محطة قطار وأقرب مدارس لولادك، وشو لازم تعمل بأول 30 يوم خطوة بخطوة، وأي مساعدات فيك تطلبها من البلدية.',
     form_h='اعرف بلديتك',
     noscript='الأداة تحتاج JavaScript. ابحث عن بلديتك على organisaties.overheid.nl.',
     f_q='رمزك البريدي أو عنوانك', ph='مثلاً 3511 AB 10 أو Utrecht', btn='اعرض بلديتي',
@@ -54,7 +56,7 @@ NL = dict(
     title='Mijn gemeente: alles over je gemeente vanaf je postcode',
     page_title='Mijn gemeente: vul je postcode in en zie je gemeente, adres en telefoon, het dichtstbijzijnde station en een plan voor de eerste 30 dagen',
     desc='Voor nieuwkomers en statushouders: vul je postcode of adres in en zie je gemeente met adres, telefoon en website, de dichtstbijzijnde treinstations, een plan voor de eerste 30 dagen en regelingen om naar te vragen.',
-    summary='Net verhuisd of nieuw in een gemeente? Vul alleen je postcode in. Je ziet je gemeente en hoe je contact opneemt, het dichtstbijzijnde station, wat je in de eerste 30 dagen regelt en naar welke regelingen je bij de gemeente kunt vragen.',
+    summary='Net verhuisd of nieuw in een gemeente? Vul alleen je postcode in. Je ziet je gemeente en hoe je contact opneemt, het dichtstbijzijnde station en scholen in de buurt, wat je in de eerste 30 dagen regelt en naar welke regelingen je bij de gemeente kunt vragen.',
     form_h='Vind je gemeente',
     noscript='Deze tool vraagt JavaScript. Zoek je gemeente op organisaties.overheid.nl.',
     f_q='Je postcode of adres', ph='Bijvoorbeeld 3511 AB 10 of Utrecht', btn='Toon mijn gemeente',
