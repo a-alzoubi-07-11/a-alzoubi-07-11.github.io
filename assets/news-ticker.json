@@ -1,8 +1,58 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T06:51:48+01:00",
-  "validUntil": "2026-11-19T18:51:48+01:00",
+  "updatedAt": "2026-11-20T06:51:00+01:00",
+  "validUntil": "2026-11-20T18:51:00+01:00",
   "items": [
+    {
+      "source": "STAB",
+      "publishedAt": "2026-11-19",
+      "firstSeen": "2026-11-20",
+      "category": {
+        "ar": "رعاية الأطفال",
+        "nl": "Kinderopvang"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "زيادة kinderopvangtoeslag من 1 يناير 2027: نسب أعلى وحق لطلاب الدكتوراه",
+        "nl": "Kinderopvangtoeslag omhoog vanaf 1 januari 2027: hogere percentages en recht voor promovendi"
+      },
+      "summary": {
+        "ar": "من 1 يناير 2027 ترتفع النسبة الدنيا للطفل الأول من 36.5% إلى 39.1%، ومن دخله حتى 71.903 يورو يحصل على 96%. ترتفع نسب الطفل الثاني 1.5 نقطة، ويحق لطلاب الدكتوراه (promovendi) الحصول على الدعم.",
+        "nl": "Vanaf 1 januari 2027 stijgt de vaste voet voor het eerste kind van 36,5% naar 39,1%; tot € 71.903 toetsingsinkomen 96%. Tweede kind +1,5 procentpunt en promovendi krijgen recht op de toeslag."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-391.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-11-19-86a19b7a"
+    },
+    {
+      "source": "NU",
+      "publishedAt": "2026-11-19",
+      "firstSeen": "2026-11-20",
+      "category": {
+        "ar": "العمل والأجور",
+        "nl": "Werk en loon"
+      },
+      "status": "reported",
+      "title": {
+        "ar": "وفق NU.nl: قانون Wet Loontransparantie لن يبدأ في 1 يناير 2027 والهدف الجديد 1 يوليو 2027",
+        "nl": "Volgens NU.nl: Wet Loontransparantie niet per 1 januari 2027, nieuw doel is 1 juli 2027"
+      },
+      "summary": {
+        "ar": "وفق NU.nl: لن يحق لصاحب العمل السؤال عن راتبك السابق، وعليه إظهار فروق الأجور بين الرجال والنساء. ليس رسمياً بعد: يجب أن يوافق مجلسا البرلمان، و1 يوليو 2027 موعد مستهدف فقط.",
+        "nl": "Volgens NU.nl: werkgevers mogen niet meer naar uw vorige salaris vragen en moeten loonverschillen tussen mannen en vrouwen tonen. Nog niet officieel: beide Kamers moeten nog instemmen; 1 juli is een streefdatum."
+      },
+      "url": "https://www.nu.nl/economie/6417116/ook-uitgestelde-deadline-voor-aanpak-loonkloof-blijkt-onhaalbaar.html",
+      "sourceName": {
+        "ar": "NU.nl",
+        "nl": "NU.nl"
+      },
+      "tier": "media",
+      "id": "nu-2026-11-19-95769f1b"
+    },
     {
       "source": "STAB",
       "publishedAt": "2026-11-18",
@@ -129,31 +179,6 @@
       "id": "ind-2026-11-16-6b1b711c"
     },
     {
-      "source": "NU",
-      "publishedAt": "2026-11-16",
-      "firstSeen": "2026-11-17",
-      "category": {
-        "ar": "اللجوء",
-        "nl": "Asiel"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "وفق NU.nl: هولندا وأربع دول أوروبية تخطط لمركز عودة في رواندا لطالبي اللجوء المرفوضين",
-        "nl": "Volgens NU.nl: Nederland wil afgewezen asielzoekers naar terugkeerhub in Rwanda sturen"
-      },
-      "summary": {
-        "ar": "وفق NU.nl: المركز يتسع لـ100 شخص من الرجال البالغين الوحيدين الذين استنفدوا إجراءات اللجوء. ليس رسمياً بعد: الاتفاق يُوقَّع بداية 2027، والموقع غير معروف، وقد تستغرق القضايا أمام المحاكم سنوات.",
-        "nl": "Volgens NU.nl: plek voor 100 uitgeprocedeerde, alleenreizende mannen. Nog niet officieel: de afspraken worden begin 2027 vastgelegd, de locatie is onbekend en rechtszaken kunnen jaren duren."
-      },
-      "url": "https://www.nu.nl/politiek/6416671/nederland-gaat-afgewezen-asielzoekers-naar-rwanda-sturen.html",
-      "sourceName": {
-        "ar": "NU.nl",
-        "nl": "NU.nl"
-      },
-      "tier": "media",
-      "id": "nu-2026-11-16-2abef9a2"
-    },
-    {
       "source": "SZW",
       "publishedAt": "2026-11-13",
       "firstSeen": "2026-11-16",
@@ -227,103 +252,78 @@
       },
       "tier": "official",
       "id": "uwv-2026-11-11-d4e5578a"
-    },
-    {
-      "source": "STAB",
-      "publishedAt": "2026-11-05",
-      "firstSeen": "2026-11-06",
-      "category": {
-        "ar": "الإعانات",
-        "nl": "Uitkeringen"
-      },
-      "status": "announced",
-      "title": {
-        "ar": "نشر قانون Wet handhaving sociale zekerheid: عقوبات أخف على متلقي الإعانات",
-        "nl": "Wet handhaving sociale zekerheid gepubliceerd: passender sancties bij uitkeringen"
-      },
-      "summary": {
-        "ar": "بعد بدء السريان يمكن للجهات المانحة توجيه إنذار كتابي بدل العقوبة، وتُلغى العقوبة إن لم يكن هناك لوم. استرداد الإعانة محدود بخمس سنوات (أحياناً 20). موعد السريان بمرسوم ملكي.",
-        "nl": "Na inwerkingtreding kunnen uitkeringsinstanties een schriftelijke waarschuwing geven in plaats van een sanctie; zonder verwijtbaarheid vervalt de sanctie. Terugvorderen max. 5 jaar terug (soms 20). Datum volgt bij KB."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-372.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-11-05-3f910561"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "new"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "new"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-19",
+      "checkedAt": "2026-11-20",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
