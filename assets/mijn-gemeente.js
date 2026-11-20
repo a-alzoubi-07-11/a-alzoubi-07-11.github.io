@@ -33,6 +33,9 @@
         ['essential-apps-netherlands', 'نزّل التطبيقات الأساسية', 'DigiD و9292 والتأمين والبنك.']
       ],
       second: 'ومدرسة الولاد',
+      schools_h: 'مدارس قريبة منك', po: 'مدارس ابتدائية (basisschool)', vo: 'مدارس ثانوية (vmbo / havo / vwo)', more: 'شوف كل المدارس على الخريطة وقارن بينها',
+      schools_note: 'مرتبة حسب قرب الرمز البريدي، داخل بلديتك. سجّل ولدك بالمدرسة مباشرة؛ الابتدائية من عمر 4 سنين، والدوام إلزامي من 5.', school_guide: 'شرح نظام المدارس',
+      school_src: 'بيانات المدارس: DUO (وزارة التعليم)، العنوان الرئيسي لكل مدرسة ابتدائية.',
       help: [['bijzondere bijstand', 'مساعدة خاصة لمصاريف ضرورية', 'special-assistance-bijzondere-bijstand'], ['kwijtschelding', 'إعفاء من ضرائب البلدية', 'municipal-taxes-exemption-kwijtschelding'],
         ['bijstand', 'مساعدة الدخل الأساسية', 'social-assistance-bijstand'], ['schuldhulp', 'مساعدة بالديون مجاناً', 'debt-help-schuldhulp'],
         ['minimaregeling', 'مساعدات أصحاب الدخل القليل (بطاقة المدينة، نشاطات الولاد)', null], ['wmo', 'مساعدة بالبيت والتنقل (Wmo)', 'wmo-home-support']],
@@ -64,6 +67,9 @@
         ['essential-apps-netherlands', 'De belangrijkste apps', 'DigiD, 9292, verzekeraar en bank.']
       ],
       second: 'en school',
+      schools_h: 'Scholen in de buurt', po: 'Basisscholen', vo: 'Middelbare scholen (vmbo / havo / vwo)', more: 'Bekijk alle scholen op de kaart en vergelijk',
+      schools_note: 'Gesorteerd op afstand van de postcode, binnen je gemeente. Je schrijft je kind rechtstreeks in bij de school; de basisschool vanaf 4 jaar, leerplichtig vanaf 5.', school_guide: 'Uitleg schoolsysteem',
+      school_src: 'Schoolgegevens: DUO, hoofdvestiging van elke basisschool.',
       help: [['bijzondere bijstand', 'Bijzondere bijstand voor noodzakelijke kosten', 'special-assistance-bijzondere-bijstand'], ['kwijtschelding', 'Kwijtschelding gemeentelijke belastingen', 'municipal-taxes-exemption-kwijtschelding'],
         ['bijstand', 'Bijstandsuitkering', 'social-assistance-bijstand'], ['schuldhulp', 'Gratis schuldhulp', 'debt-help-schuldhulp'],
         ['minimaregeling', 'Minimaregelingen (stadspas, kindpakket)', null], ['wmo', 'Wmo: hulp thuis en vervoer', 'wmo-home-support']],
@@ -110,6 +116,29 @@
 
   function host(u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
 
+  function pc4(pc) { var m = /^(\d{4})\s?([A-Z]{2})?/i.exec(pc || ''); return m ? [parseInt(m[1], 10), (m[2] || '').toUpperCase()] : null; }
+  function schoolsHtml(place) {
+    var me = pc4((place.label.match(/\d{4}\s?[A-Z]{2}/i) || [''])[0]);
+    function near(list, n) {
+      return list.map(function (s) { var p = pc4(s[2]); var d = me && p ? Math.abs(p[0] - me[0]) * 10 + (p[1] === me[1] ? 0 : p[1].slice(0, 1) === me[1].slice(0, 1) ? 1 : 3) : 999; return [d, s]; })
+        .sort(function (a, b) { return a[0] - b[0]; }).slice(0, n).map(function (x) { return x[1]; });
+    }
+    function li(s, extra) {
+      var name = s[5] ? '<a href="' + esc(s[5]) + '" rel="noopener nofollow" target="_blank">' + esc(s[0]) + '</a>' : esc(s[0]);
+      return '<li><b dir="ltr">' + name + '</b><br><small dir="ltr">' + esc(s[1] + ', ' + s[2] + ' ' + s[3]) + (extra ? ' · ' + esc(extra) : '') + '</small></li>';
+    }
+    var S = place.schools, h = '<div class="mg-card"><h3>🏫 ' + T.schools_h + '</h3><p class="muted">' + T.schools_note + '</p>';
+    if (S.po.length) h += '<h4>' + T.po + '</h4><ul class="mg-list">' + near(S.po, 6).map(function (s) { return li(s, s[4]); }).join('') + '</ul>';
+    if (S.vo.length) {
+      var seen = {}, vo = near(S.vo, 12).filter(function (s) { var k = s[0] + s[1]; if (seen[k]) return false; seen[k] = 1; return true; }).slice(0, 4);
+      h += '<h4>' + T.vo + '</h4><ul class="mg-list">' + vo.map(function (s) { return li(s, s[4]); }).join('') + '</ul>';
+    }
+    h += '<div class="tool-actions"><a class="tool-button" rel="noopener" target="_blank" href="https://scholenopdekaart.nl/">🗺️ ' + T.more + '</a>'
+      + '<a class="tool-button" href="' + PRE + '/articles/dutch-school-system-basisschool.html">📖 ' + T.school_guide + '</a></div>'
+      + '<p class="muted">' + T.school_src + '</p></div>';
+    return h;
+  }
+
   function render(place, D) {
     var g = D.g[place.code], html = '';
     html += '<div class="mg-card mg-main"><p class="mg-kicker">📍 ' + T.your + '</p><h3>' + esc(g ? g.n : place.name) + '</h3>'
@@ -144,6 +173,9 @@
       var q = new URLSearchParams({ f: place.label, fx: place.pt[0].toFixed(5) + ',' + place.pt[1].toFixed(5) });
       html += '<a class="tool-button" href="' + PRE + '/calculators/ov-reiskosten.html?' + q.toString() + '#ov-planner">🧮 ' + T.plan + '</a></div>';
     }
+
+    // schools
+    if (place.schools) html += schoolsHtml(place);
 
     // plan
     html += '<div class="mg-card"><h3>✅ ' + T.plan_h + '</h3><p class="muted">' + T.plan_note + '</p><ol class="mg-steps">' + T.steps.map(function (s) {
@@ -181,6 +213,8 @@
       if (q.length < 3) { out.innerHTML = '<p class="notice">' + T.bad + '</p>'; return; }
       out.innerHTML = '<p>' + T.loading + '</p>';
       Promise.all([lookup(q), loadData()]).then(function (r) {
+        return getJSON('/assets/scholen/' + r[0].code + '.json?v=1').catch(function () { return null; }).then(function (sc) { r[0].schools = sc; return r; });
+      }).then(function (r) {
         out.innerHTML = render(r[0], r[1]);
         try { history.replaceState(null, '', location.pathname + '?q=' + encodeURIComponent(q) + '#mijn-gemeente'); } catch (e) { /* ignore */ }
         var sh = out.querySelector('.mg-share');
