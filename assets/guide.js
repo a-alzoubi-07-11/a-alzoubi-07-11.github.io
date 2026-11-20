@@ -5,3 +5,16 @@ function render(){document.documentElement.lang=language;document.documentElemen
 function filter(){const input=document.getElementById('guide-search');if(!input)return;const q=input.value.trim().toLocaleLowerCase();const topic=document.getElementById('guide-topic')?.value||'all';let count=0;document.querySelectorAll('[data-guide-card]').forEach(card=>{const text=(card.dataset.search||card.textContent).toLocaleLowerCase();const show=(!q||text.includes(q))&&(topic==='all'||card.dataset.topic===topic);card.hidden=!show;if(show)count++});const status=document.getElementById('guide-search-status');if(status)status.textContent=language==='ar'?`${count} دليل مطابق`:`${count} passende gidsen`;document.querySelectorAll('[data-cluster]').forEach(section=>{section.hidden=!section.querySelector('[data-guide-card]:not([hidden])')})}
 document.getElementById('guide-search')?.addEventListener('input',filter);document.getElementById('guide-topic')?.addEventListener('change',filter);render();})();
 
+/* 🔊 Dutch pronunciation buttons: glossary tables (header «النطق» or «Begrip») and any [data-say] element.
+   Uses the browser's own speech engine (speechSynthesis, nl-NL); nothing is sent to us. */
+(function(){if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance!=='function')return;
+var ar=(document.documentElement.lang||'').slice(0,2)!=='nl',label=ar?'استمع للفظ بالهولندي':'Luister naar de uitspraak',voice=null;
+function pick(){var v=speechSynthesis.getVoices().filter(function(x){return /^nl(-|_|$)/i.test(x.lang)});voice=v.filter(function(x){return /nl.NL/i.test(x.lang)})[0]||v[0]||null}
+pick();if(speechSynthesis.addEventListener)speechSynthesis.addEventListener('voiceschanged',pick);
+function say(t,btn){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t.replace(/[…«»"]/g,' ').trim());u.lang='nl-NL';u.rate=.85;if(voice)u.voice=voice;
+if(btn){btn.classList.add('say-on');u.onend=u.onerror=function(){btn.classList.remove('say-on')}}speechSynthesis.speak(u)}catch(e){}}
+function add(el,text){if(!text||el.querySelector('.say-btn'))return;var b=document.createElement('button');b.type='button';b.className='say-btn';b.setAttribute('aria-label',label+': '+text);b.title=label;b.textContent='🔊';
+b.addEventListener('click',function(e){e.preventDefault();say(text,b)});el.appendChild(document.createTextNode(' '));el.appendChild(b)}
+document.querySelectorAll('table').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent.trim()});
+if(h.indexOf('النطق')<0&&h[0]!=='Begrip')return;t.querySelectorAll('tbody tr').forEach(function(r){var c=r.cells[0];if(!c)return;var s=c.querySelector('strong')||c;add(c,s.textContent.trim())})});
+document.querySelectorAll('[data-say]').forEach(function(el){add(el,el.getAttribute('data-say')||el.textContent.trim())});})();

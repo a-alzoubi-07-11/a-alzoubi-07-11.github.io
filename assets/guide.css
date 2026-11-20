@@ -18,3 +18,7 @@
 .cv-note{font-size:.85rem;color:var(--muted,#6e6e73);margin:.75rem 0 0}
 .cv figcaption{margin-top:.4rem;font-size:.9rem}
 @media print{.cv{display:none}}
+.say-btn{display:inline-flex;align-items:center;justify-content:center;min-width:34px;min-height:34px;margin-inline-start:.25rem;padding:0 .35rem;border:1px solid var(--line,#ddd);border-radius:999px;background:var(--soft,#f5f5f7);cursor:pointer;font-size:1rem;line-height:1;vertical-align:middle}
+.say-btn:hover,.say-btn:focus-visible{border-color:var(--accent,#0071e3)}
+.say-btn.say-on{background:var(--accent,#0071e3);color:#fff}
+@media print{.say-btn{display:none}}
