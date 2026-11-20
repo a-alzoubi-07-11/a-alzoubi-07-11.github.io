@@ -1,0 +1,8 @@
+# Private, local-only data: never commit (contains scraped posts, screenshots, login session).
+config.json
+data/
+drafts/
+out/
+fb_profile/
+__pycache__/
+chrome_profile/
