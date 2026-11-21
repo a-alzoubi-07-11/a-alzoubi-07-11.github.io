@@ -167,8 +167,8 @@
       "start": "2026-11-16",
       "end": "2026-11-30",
       "title": {
-        "ar": "Black Friday: خصم €10 فوق €59 وخصم €40 فوق €199 من 27 إلى 30 نوفمبر",
-        "nl": "Black Friday: €10 korting vanaf €59 en €40 vanaf €199 (27–30 november)"
+        "ar": "Black Friday: خصم €10 فوق €59 وخصم €40 فوق €199 على منتجات مختارة",
+        "nl": "Black Friday: €10 korting vanaf €59 en €40 vanaf €199 op geselecteerde producten"
       },
       "topics": [
         "home",
@@ -190,8 +190,8 @@
       "start": "2026-11-19",
       "end": "2026-11-30",
       "title": {
-        "ar": "أكل آسيوي: تخفيضات حتى 50% وخصم 20 يورو على طلب فوق 30 يورو على منتجات مختارة",
-        "nl": "Aziatische favorieten: tot 50% korting en €20 korting vanaf €30 op geselecteerde producten"
+        "ar": "أكل آسيوي: تخفيضات حتى 50% على منتجات مختارة",
+        "nl": "Aziatische favorieten: tot 50% korting op geselecteerde producten"
       },
       "topics": [
         "home",
@@ -215,6 +215,52 @@
       "title": {
         "ar": "ألعاب الأطفال: اشترِ واحدة والتانية ببلاش على ألعاب مختارة",
         "nl": "Speelgoed: 1+1 gratis op geselecteerd speelgoed"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-beauty-fashion-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2FHnntrRYY8AF3RNSVm53CGFd9BPn",
+      "start": "2026-11-21",
+      "end": "2026-12-31",
+      "title": {
+        "ar": "جمال وأزياء: تخفيضات حتى 80% + خصم €5 فوق €30 على منتجات مختارة",
+        "nl": "Beauty & fashion: tot 80% korting + €5 korting vanaf €30 op geselecteerde producten"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-fragrance-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fs-for-addon%3Ftype%3D0%26promotionId%3D80012275435%26skuId%3D102708998%26traceShowSkuIds%3D102708998%26shipmentType%3D66",
+      "start": "2026-11-21",
+      "end": "2026-12-30",
+      "title": {
+        "ar": "معطرات البيت: اشترِ 2 والتالتة ببلاش على منتجات مختارة",
+        "nl": "Huisgeuren: 3 halen, 2 betalen op geselecteerde producten"
       },
       "topics": [
         "home",
