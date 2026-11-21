@@ -94,5 +94,13 @@
     "pending": 42,
     "unknown": 0,
     "all_indexed": false
+  },
+  {
+    "checked_at": "2026-11-21T13:01:48+00:00",
+    "total": 190,
+    "indexed": 148,
+    "pending": 42,
+    "unknown": 0,
+    "all_indexed": false
   }
 ]
