@@ -1,89 +1,29 @@
 {
- "generated": "2026-11-16",
- "pages_checked": 138,
- "links_checked": 548,
- "broken_links": {
-  "https://www.uwv.nl/nl/klacht-melding-bezwaar/bezwaar/bezwaarprocedure": 404,
-  "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon": 404,
-  "https://www.uwv.nl/nl/ww/ziek-tijdens-ww": 404
- },
+ "generated": "2026-11-23",
+ "pages_checked": 142,
+ "links_checked": 566,
+ "broken_links": {},
  "queue": [
-  {
-   "page": "articles/sick-pay-ziektewet-wia.html",
-   "lang": "ar",
-   "title": "راتب المرض Ziektewet وWIA في هولندا 2026 | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 50,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "source link broken (404): https://www.uwv.nl/nl/ww/ziek-tijdens-ww"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/meer-mensen-moeten-langer-wachten-op-arbeidsongeschiktheidsuitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/wia/wia-hoogte-uitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/wia/wia-recht-op-uitkering",
-    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/beslistermijn-wia-verlengd-naar-16-weken",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/wajong/hoogte-wajong",
-    "https://www.uwv.nl/nl/wia/vervroegde-wia",
-    "https://www.uwv.nl/nl/wia/wga/loongerelateerde-uitkering",
-    "https://www.uwv.nl/nl/wia/wia-aanvragen",
-    "https://www.uwv.nl/nl/ww/ziek-tijdens-ww",
-    "https://www.uwv.nl/nl/ziek/loondoorbetaling/plan-van-aanpak",
-    "https://www.uwv.nl/nl/ziek/uitzend-oproep-flexibel-contract/uitzendkracht-ziek",
-    "https://www.uwv.nl/nl/ziek/wachtdagen",
-    "https://www.uwv.nl/nl/ziek/ziek-uit-dienst/4-weken",
-    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/hoogte-zw",
-    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/verwachting-zw"
-   ]
-  },
-  {
-   "page": "nl/articles/sick-pay-ziektewet-wia.html",
-   "lang": "nl",
-   "title": "Ziektewet en WIA 2026: loon bij ziekte | Gids Nederland",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 50,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "source link broken (404): https://www.uwv.nl/nl/ww/ziek-tijdens-ww"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/meer-mensen-moeten-langer-wachten-op-arbeidsongeschiktheidsuitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/wia/wia-hoogte-uitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/wia/wia-recht-op-uitkering",
-    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/beslistermijn-wia-verlengd-naar-16-weken",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/wajong/hoogte-wajong",
-    "https://www.uwv.nl/nl/wia/vervroegde-wia",
-    "https://www.uwv.nl/nl/wia/wga/loongerelateerde-uitkering",
-    "https://www.uwv.nl/nl/wia/wia-aanvragen",
-    "https://www.uwv.nl/nl/ww/ziek-tijdens-ww",
-    "https://www.uwv.nl/nl/ziek/loondoorbetaling/plan-van-aanpak",
-    "https://www.uwv.nl/nl/ziek/uitzend-oproep-flexibel-contract/uitzendkracht-ziek",
-    "https://www.uwv.nl/nl/ziek/wachtdagen",
-    "https://www.uwv.nl/nl/ziek/ziek-uit-dienst/4-weken",
-    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/hoogte-zw",
-    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/verwachting-zw"
-   ]
-  },
   {
    "page": "articles/tenant-rights-netherlands.html",
    "lang": "ar",
    "title": "حقوق المستأجر huurrechten 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-15",
-   "age_days": 32,
-   "score": 30,
+   "age_days": 39,
+   "score": 40,
    "reasons": [
-    "date passed 15 days ago (2026-11-01): rewrite tense and check the new rule"
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "date passed 22 days ago (2026-11-01): rewrite tense and check the new rule"
    ],
    "milestones": [
     {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "ذلك، أو عقد قبل 1 يوليو 2024 بإيجار بداية فوق حد التحرير آنذاك 4.4% (من 1 يناير 2026 حتى 1 يناير 2027)، وبحسب بند الزيادة في العقد المهم هو إيجار البداية وتاريخ"
+    },
+    {
      "date": "2026-11-01",
-     "days": -15,
+     "days": -22,
      "context": "تفق مع المالك فاطلب حكم اللجنة خلال 4 أشهر بعد تاريخ الزيادة (زيادة في 1 يوليو 2026 ← حتى 1 نوفمبر 2026). في القطاع الحر، وحتى 1 مايو 2029، لا يجوز للمالك أن يعرض"
     }
    ],
@@ -115,16 +55,22 @@
    "lang": "nl",
    "title": "Uitzendbureau 2026: je rechten als uitzendkracht | Gids Nederland",
    "dateModified": "2026-10-04",
-   "age_days": 43,
-   "score": 30,
+   "age_days": 50,
+   "score": 40,
    "reasons": [
-    "date passed 15 days ago (2026-11-01): rewrite tense and check the new rule"
+    "date passed 22 days ago (2026-11-01): rewrite tense and check the new rule",
+    "milestone in 39 days (2027-01-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-11-01",
-     "days": -15,
+     "days": -22,
      "context": "cao met fases geldt dan niet. Toelatingsplicht voor uitleners (Wtta) Datum Wat er gebeurt 1 november 2026 – 1 januari 2027 Uitleners die gebruik willen maken van het"
+    },
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "t dan niet. Toelatingsplicht voor uitleners (Wtta) Datum Wat er gebeurt 1 november 2026 – 1 januari 2027 Uitleners die gebruik willen maken van het overgangsrecht m"
     }
    ],
    "sources": [
@@ -142,15 +88,21 @@
    "lang": "nl",
    "title": "Huurrechten 2026: huurverhoging en waarborgsom | Gids Nederland",
    "dateModified": "2026-10-15",
-   "age_days": 32,
-   "score": 30,
+   "age_days": 39,
+   "score": 40,
    "reasons": [
-    "date passed 15 days ago (2026-11-01): rewrite tense and check the new rule"
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "date passed 22 days ago (2026-11-01): rewrite tense and check the new rule"
    ],
    "milestones": [
     {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "juli 2024 met aanvangshuur boven de toenmalige liberalisatiegrens 4,4% (1 januari 2026 – 1 januari 2027), volgens het verhogingsbeding Bepalend is de aanvangshuur"
+    },
+    {
      "date": "2026-11-01",
-     "days": -15,
+     "days": -22,
      "context": "een uitspraak binnen 4 maanden na de ingangsdatum (verhoging per 1 juli 2026 → uiterlijk 1 november 2026). In de vrije sector mag de verhuurder tot 1 mei 2029 geen"
     }
    ],
@@ -182,21 +134,27 @@
    "lang": "ar",
    "title": "عقد الكهرباء والغاز energiecontract 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-11-01",
-   "age_days": 15,
-   "score": 26,
+   "age_days": 22,
+   "score": 39,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update",
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 38 days (2026-12-31): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "تقال لمنزل آخر من أين تتكوّن فاتورتك؟ ضريبة الطاقة 2026 الألواح الشمسية: نهاية المقاصة في 1 يناير 2027 الدفعة الشهرية (termijnbedrag) والفاتورة السنوية قائمة التب"
+    },
+    {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "27 تحددها ACM في ديسمبر. الألواح الشمسية: نهاية المقاصة في 1 يناير 2027 القانون نافذ: حتى 31 ديسمبر 2026 تُخصم الكهرباء التي تردّها للشبكة من استهلاكك (salderen). م"
     },
     {
      "date": "2026-12-01",
-     "days": 15,
+     "days": 8,
      "context": "تاليان بمتوسط تحت الصفر). صندوق طوارئ الطاقة 2026–2027 البند التفاصيل التحضير والتواصل من 1 ديسمبر 2026 الطلبات من 4 يناير حتى 7 مايو 2027 من يستحق دخل إجمالي حتى"
     }
    ],
@@ -221,21 +179,27 @@
    "lang": "nl",
    "title": "Energiecontract 2026–2027: vast of variabel | Gids Nederland",
    "dateModified": "2026-11-01",
-   "age_days": 15,
-   "score": 26,
+   "age_days": 22,
+   "score": 39,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update",
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 38 days (2026-12-31): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update"
    ],
    "milestones": [
     {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "ding Verhuizen Opbouw van je rekening en energiebelasting Zonnepanelen: einde salderen op 1 januari 2027 Termijnbedrag en jaarafrekening Veilig overstappen (ACM) Ku"
+    },
+    {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "ber vast. Zonnepanelen: einde salderen op 1 januari 2027 Wettelijk vastgelegd: tot en met 31 december 2026 kun je salderen, vanaf 1 januari 2027 niet meer. Je krijgt"
     },
     {
      "date": "2026-12-01",
-     "days": 15,
+     "days": 8,
      "context": "middeld onder 0 graden). Noodfonds Energie 2026–2027 Onderdeel Details Voorbereiden Vanaf 1 december 2026 Aanvragen 4 januari tot en met 7 mei 2027 Voorwaarden Bruto"
     }
    ],
@@ -256,170 +220,32 @@
    ]
   },
   {
-   "page": "articles/bezwaar-objection-letter.html",
-   "lang": "ar",
-   "title": "الاعتراض على قرار حكومي bezwaar 2026 | دليل هولندا بالعربية",
-   "dateModified": "2026-11-06",
-   "age_days": 10,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/klacht-melding-bezwaar/bezwaar/bezwaarprocedure"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://ind.nl/nl/na-uw-aanvraag/bezwaar-maken-of-in-beroep-gaan",
-    "https://ondernemersplein.overheid.nl/wetten-en-regels/bezwaar-en-beroep-tegen-beslissing-van-de-overheid/",
-    "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/bezwaar-voor-particulieren",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/mijn-toeslag-klopt-niet",
-    "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "https://www.juridischloket.nl/contact/",
-    "https://www.rechtspraak.nl/naar-de-rechter/kosten-rechtszaak/griffierecht/griffierecht-bestuursrecht",
-    "https://www.rechtspraak.nl/organisatie-en-contact/rechtsgebieden/bestuursrecht/procedures/beroepsprocedure",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/beslissing-aanvraag-bezwaar-te-laat",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/bezwaar-tegen-beslissing-overheid",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/na-een-bezwaar",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/kwaliteit-en-integriteit-overheidsinstanties/hoe-kan-ik-een-klacht-indienen-bij-de-nationale-ombudsman",
-    "https://www.uwv.nl/nl/klacht-melding-bezwaar/bezwaar/bezwaarprocedure"
-   ]
-  },
-  {
-   "page": "articles/birth-parental-leave.html",
-   "lang": "ar",
-   "title": "إجازة الحمل والولادة والأبوة 2026 | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zwangerschap-en-geboorte/aanvragen-zwangerschapsverlof-en-zwangerschapsuitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zwangerschap-en-geboorte/wanneer-heb-ik-recht-op-betaald-ouderschapsverlof",
-    "https://www.rijksoverheid.nl/themas/werk/geboorteverlof-en-partnerverlof/geboorteverlof-voor-partners",
-    "https://www.uwv.nl/nl/aanvullend-geboorteverlof/hoogte-uitkering-aanvullend-geboorteverlof-betaald-ouderschapsverlof",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/zwangerschapsverlof-bevallingsverlof"
-   ]
-  },
-  {
-   "page": "articles/unemployment-benefit-ww.html",
-   "lang": "ar",
-   "title": "إعانة البطالة WW-uitkering 2026 | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/ww-uitkering/hoe-lang-heb-ik-recht-op-een-ww-uitkering",
-    "https://www.uwv.nl/en/individuals/unemployment-benefit/about",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/toeslag",
-    "https://www.uwv.nl/nl/ww/hoelang-ww",
-    "https://www.uwv.nl/nl/ww/hoogte-ww",
-    "https://www.uwv.nl/nl/ww/sollicitatieplicht",
-    "https://www.uwv.nl/nl/ww/ww-aanvragen",
-    "https://www.uwv.nl/nl/ww/ww-na-ontslag"
-   ]
-  },
-  {
-   "page": "nl/articles/bezwaar-objection-letter.html",
-   "lang": "nl",
-   "title": "Bezwaar maken tegen een overheidsbesluit 2026 | Gids Nederland",
-   "dateModified": "2026-10-08",
-   "age_days": 39,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/klacht-melding-bezwaar/bezwaar/bezwaarprocedure"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://ind.nl/nl/na-uw-aanvraag/bezwaar-maken-of-in-beroep-gaan",
-    "https://ondernemersplein.overheid.nl/wetten-en-regels/bezwaar-en-beroep-tegen-beslissing-van-de-overheid/",
-    "https://wetten.overheid.nl/BWBR0005537/2026-01-01",
-    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/programmas_en_formulieren/bezwaar-voor-particulieren",
-    "https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/mijn-toeslag-klopt-niet",
-    "https://www.cjib.nl/direct-regelen/ik-wil-graag/bezwaar-maken/ik-ben-het-niet-eens-met-een-verkeersboete",
-    "https://www.juridischloket.nl/contact/",
-    "https://www.rechtspraak.nl/naar-de-rechter/kosten-rechtszaak/griffierecht/griffierecht-bestuursrecht",
-    "https://www.rechtspraak.nl/organisatie-en-contact/rechtsgebieden/bestuursrecht/procedures/beroepsprocedure",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/beslissing-aanvraag-bezwaar-te-laat",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/bezwaar-tegen-beslissing-overheid",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bezwaar-en-beroep/na-een-bezwaar",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/kwaliteit-en-integriteit-overheidsinstanties/hoe-kan-ik-een-klacht-indienen-bij-de-nationale-ombudsman",
-    "https://www.uwv.nl/nl/klacht-melding-bezwaar/bezwaar/bezwaarprocedure"
-   ]
-  },
-  {
-   "page": "nl/articles/birth-parental-leave.html",
-   "lang": "nl",
-   "title": "Zwangerschapsverlof en ouderschapsverlof 2026 | Gids Nederland",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zwangerschap-en-geboorte/aanvragen-zwangerschapsverlof-en-zwangerschapsuitkering",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zwangerschap-en-geboorte/wanneer-heb-ik-recht-op-betaald-ouderschapsverlof",
-    "https://www.rijksoverheid.nl/themas/werk/geboorteverlof-en-partnerverlof/geboorteverlof-voor-partners",
-    "https://www.uwv.nl/nl/aanvullend-geboorteverlof/hoogte-uitkering-aanvullend-geboorteverlof-betaald-ouderschapsverlof",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/zwangerschapsverlof-bevallingsverlof"
-   ]
-  },
-  {
-   "page": "nl/articles/unemployment-benefit-ww.html",
-   "lang": "nl",
-   "title": "WW-uitkering 2026: voorwaarden, duur en hoogte | Gids Nederland",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
-   "score": 25,
-   "reasons": [
-    "source link broken (404): https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon"
-   ],
-   "milestones": [],
-   "sources": [
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/ww-uitkering/hoe-lang-heb-ik-recht-op-een-ww-uitkering",
-    "https://www.uwv.nl/en/individuals/unemployment-benefit/about",
-    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon",
-    "https://www.uwv.nl/nl/toeslag",
-    "https://www.uwv.nl/nl/ww/hoelang-ww",
-    "https://www.uwv.nl/nl/ww/hoogte-ww",
-    "https://www.uwv.nl/nl/ww/sollicitatieplicht",
-    "https://www.uwv.nl/nl/ww/ww-aanvragen",
-    "https://www.uwv.nl/nl/ww/ww-na-ontslag"
-   ]
-  },
-  {
    "page": "articles/year-end-checklist-2026.html",
    "lang": "ar",
    "title": "قائمة نهاية السنة 2026 قبل 31 ديسمبر | دليل هولندا بالعربية",
    "dateModified": "2026-11-13",
-   "age_days": 3,
-   "score": 20,
+   "age_days": 10,
+   "score": 30,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update",
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update",
+    "milestone in 39 days (2027-01-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "ذا؟ أخطاء شائعة القائمة النهائية أسئلة شائعة التقويم: ماذا ومتى؟ التاريخ ماذا تفعل الآن – 31 ديسمبر 2026 اطلب البدلات عن 2025 إن نسيتها (zorgtoeslag وhuurtoeslag وk"
     },
     {
      "date": "2026-12-01",
-     "days": 15,
+     "days": 8,
      "context": "beschikking) للبدلات لـ2027 (في العام الماضي: 21 نوفمبر – 14 ديسمبر، وأول دفعة 20 ديسمبر) 1 ديسمبر 2026 يمكن التواصل مع صندوق الطاقة (Noodfonds Energie) بالأسئلة 3"
+    },
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "طاقة (Noodfonds Energie) بالأسئلة 31 ديسمبر 2026 آخر يوم لعقد تأمين صحي جديد يبدأ 1 يناير 1 يناير 2027 eigen risico الجديد (400 يورو)، وقانون لجنة الإيجار الجديد"
     }
    ],
    "sources": [
@@ -445,22 +271,28 @@
    "lang": "nl",
    "title": "Checklist jaareinde 2026: vóór 31 december | Gids Nederland",
    "dateModified": "2026-11-13",
-   "age_days": 3,
-   "score": 20,
+   "age_days": 10,
+   "score": 30,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update",
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update",
+    "milestone in 39 days (2027-01-01): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "oet wat doen? Veelgemaakte fouten Checklist Veelgestelde vragen Kalender Datum Actie Nu – 31 december 2026 Toeslagen over 2025 aanvragen (zorgtoeslag, huurtoeslag, ki"
     },
     {
      "date": "2026-12-01",
-     "days": 15,
+     "days": 8,
      "context": "kking toeslagen 2027 (vorig jaar: 21 november – 14 december, eerste betaling 20 december) 1 december 2026 Noodfonds Energie bereikbaar voor vragen 31 december 2026 L"
+    },
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "bereikbaar voor vragen 31 december 2026 Laatste dag nieuwe zorgverzekering per 1 januari 1 januari 2027 Nieuw eigen risico (€ 400); nieuwe wet Huurcommissie 4 janu"
     }
    ],
    "sources": [
@@ -482,19 +314,260 @@
    ]
   },
   {
+   "page": "articles/municipal-taxes-exemption-kwijtschelding.html",
+   "lang": "ar",
+   "title": "إعفاء ضرائب البلدية kwijtschelding 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 26,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 42 days (2027-01-04): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "هذا الاستئناف لا تُعرض على المحكمة، لكن يمكن تقديم شكوى لأمين المظالم الوطني. ملاحظة: من 1 يناير 2027 يتغير هذا الطريق للضرائب الوطنية فقط؛ للضرائب المحلية يستمر"
+    },
+    {
+     "date": "2027-01-04",
+     "days": 42,
+     "context": "و الكهرباء يجب أن تساعدك البلدية خلال 3 أيام . الطاقة: صندوق طوارئ الطاقة يفتح للطلبات من 4 يناير 2027 ( دليل الطاقة ). الدعم في البيت: المساعدة المنزلية أو تعديل"
+    }
+   ],
+   "sources": [
+    "https://gblt.nl/kwijtschelding",
+    "https://gbtwente.nl/Alles-over/Kwijtschelding",
+    "https://gbtwente.nl/Alles-over/Kwijtschelding-enschede",
+    "https://lokaleregelgeving.overheid.nl/CVDR749442/1",
+    "https://wetten.overheid.nl/BWBR0004766/",
+    "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
+    "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
+    "https://www.nationaleombudsman.nl/vraag-en-antwoord/ik-heb-vragen-over-kwijtschelding-van-gemeentelijke-enof-waterschapsbelastingen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijzondere-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/gemeenten/wanneer-kom-ik-in-aanmerking-voor-kwijtschelding-van-gemeentelijke-belastingen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/schulden/schuldhulpverlening-aanvragen"
+   ]
+  },
+  {
+   "page": "articles/prinsjesdag-2026-changes.html",
+   "lang": "ar",
+   "title": "Prinsjesdag 2026: ما الذي يتغير في 2027 | دليل هولندا بالعربية",
+   "dateModified": "2026-11-13",
+   "age_days": 10,
+   "score": 26,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "تعني نافذ (definitief) قانون أو قرار مقرر مسبقاً. مثال: نهاية المقاصة للألواح الشمسية في 1 يناير 2027. مقترح (voorstel) خطة الحكومة التي يناقشها البرلمان. قد تتغ"
+    },
+    {
+     "date": "2026-12-01",
+     "days": 8,
+     "context": "رح صندوق طوارئ الطاقة (Noodfonds Energie) 193 مليون يورو لهذا الشتاء. التحضير والتواصل من 1 ديسمبر 2026، والطلبات من 4 يناير حتى 7 مايو 2027 ، دون مبدأ «من يسبق»."
+    }
+   ],
+   "sources": [
+    "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
+    "https://www.dsw.nl/consumenten/zorgverzekering/wijzigingen-2027",
+    "https://www.eerstekamer.nl/overig/20260918/fiscale_sleuteltabel_2027/document",
+    "https://www.eerstekamer.nl/wetsvoorstel/37022_belastingplan_2027",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+    "https://www.rijksoverheid.nl/documenten/2026/09/15/factsheetbundel",
+    "https://www.rijksoverheid.nl/documenten/2026/09/15/fiscale-sleuteltabel-2027",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan",
+    "https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling",
+    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag",
+    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag/koopkracht"
+   ]
+  },
+  {
+   "page": "nl/articles/municipal-taxes-exemption-kwijtschelding.html",
+   "lang": "nl",
+   "title": "Kwijtschelding gemeentelijke belastingen 2026 | Gids Nederland",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 26,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 42 days (2027-01-04): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "g. De uitkomst kun je niet aan de rechter voorleggen, wel aan de Nationale ombudsman. Per 1 januari 2027 verandert deze route alleen voor rijksbelastingen; voor gem"
+    },
+    {
+     "date": "2027-01-04",
+     "days": 42,
+     "context": "de gemeente binnen 3 dagen helpen. Energie: het Noodfonds Energie opent voor aanvragen op 4 januari 2027 ( gids energie ). Hulp thuis: huishoudelijke hulp of een wo"
+    }
+   ],
+   "sources": [
+    "https://gblt.nl/kwijtschelding",
+    "https://gbtwente.nl/Alles-over/Kwijtschelding",
+    "https://gbtwente.nl/Alles-over/Kwijtschelding-enschede",
+    "https://lokaleregelgeving.overheid.nl/CVDR749442/1",
+    "https://wetten.overheid.nl/BWBR0004766/",
+    "https://wetten.overheid.nl/BWBR0024096/2026-07-01/0",
+    "https://wetten.overheid.nl/BWBR0047157/2022-09-17/0",
+    "https://www.nationaleombudsman.nl/vraag-en-antwoord/ik-heb-vragen-over-kwijtschelding-van-gemeentelijke-enof-waterschapsbelastingen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijzondere-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/gemeenten/wanneer-kom-ik-in-aanmerking-voor-kwijtschelding-van-gemeentelijke-belastingen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/schulden/schuldhulpverlening-aanvragen"
+   ]
+  },
+  {
+   "page": "nl/articles/prinsjesdag-2026-changes.html",
+   "lang": "nl",
+   "title": "Prinsjesdag 2026: wat verandert er in 2027 | Gids Nederland",
+   "dateModified": "2026-11-13",
+   "age_days": 10,
+   "score": 26,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update",
+    "milestone in 8 days (2026-12-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "abels: Status Betekenis Definitief Wet of eerder genomen besluit, bijv. einde salderen op 1 januari 2027. Voorstel Plan van het kabinet dat het parlement nog behand"
+    },
+    {
+     "date": "2026-12-01",
+     "days": 8,
+     "context": "zamer afgebouwd. Voorstel Noodfonds Energie € 193 miljoen deze winter; voorbereiden vanaf 1 december 2026, aanvragen van 4 januari tot en met 7 mei 2027 , geen «op i"
+    }
+   ],
+   "sources": [
+    "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
+    "https://www.dsw.nl/consumenten/zorgverzekering/wijzigingen-2027",
+    "https://www.eerstekamer.nl/overig/20260918/fiscale_sleuteltabel_2027/document",
+    "https://www.eerstekamer.nl/wetsvoorstel/37022_belastingplan_2027",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+    "https://www.rijksoverheid.nl/documenten/2026/09/15/factsheetbundel",
+    "https://www.rijksoverheid.nl/documenten/2026/09/15/fiscale-sleuteltabel-2027",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan",
+    "https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling",
+    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag",
+    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag/koopkracht"
+   ]
+  },
+  {
+   "page": "articles/energy-emergency-fund-2027.html",
+   "lang": "ar",
+   "title": "صندوق الطاقة Noodfonds Energie 2027 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 20,
+   "reasons": [
+    "milestone in 8 days (2026-12-01): prepare the update",
+    "milestone in 42 days (2027-01-04): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2026-12-01",
+     "days": 8,
+     "context": "warming)، شبكة تدفئة (warmtenet)، البروبان، والطلاب. المواعيد المهمة التاريخ ماذا يحدث من 1 ديسمبر 2026 التحضير: جمع الأوراق والتواصل مع الصندوق 4 يناير 2027 بدء ا"
+    },
+    {
+     "date": "2027-01-04",
+     "days": 42,
+     "context": "مواعيد المهمة التاريخ ماذا يحدث من 1 ديسمبر 2026 التحضير: جمع الأوراق والتواصل مع الصندوق 4 يناير 2027 بدء التقديم 7 مايو 2027 آخر يوم للتقديم بعد نحو 4–6 أسابيع"
+    }
+   ],
+   "sources": [
+    "https://www.noodfondsenergie.nl/",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/koopkracht/hoe-krijg-ik-geld-terug-uit-het-noodfonds-energie"
+   ]
+  },
+  {
+   "page": "nl/articles/energy-emergency-fund-2027.html",
+   "lang": "nl",
+   "title": "Noodfonds Energie 2027: voorwaarden en aanvragen | Gids Nederland",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 20,
+   "reasons": [
+    "milestone in 8 days (2026-12-01): prepare the update",
+    "milestone in 42 days (2027-01-04): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2026-12-01",
+     "days": 8,
+     "context": "ok voor blokverwarming, warmtenet, propaan en studenten. Belangrijke data Datum Wat Vanaf 1 december 2026 Voorbereiden en contact 4 januari 2027 Start aanvragen 7 me"
+    },
+    {
+     "date": "2027-01-04",
+     "days": 42,
+     "context": "an en studenten. Belangrijke data Datum Wat Vanaf 1 december 2026 Voorbereiden en contact 4 januari 2027 Start aanvragen 7 mei 2027 Laatste dag Ca. 4–6 weken na toe"
+    }
+   ],
+   "sources": [
+    "https://www.noodfondsenergie.nl/",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/koopkracht/hoe-krijg-ik-geld-terug-uit-het-noodfonds-energie"
+   ]
+  },
+  {
+   "page": "articles/dutch-payslip-explained.html",
+   "lang": "ar",
+   "title": "قسيمة الراتب loonstrook سطراً سطراً 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 13,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "eidskorting 2026 خصم لمن يعمل؛ حده الأقصى 5,685 يورو سنوياً، ويتناقص مع الدخل المرتفع. من 1 يناير 2027 لن تُطبق arbeidskorting على الإعانات التي تُدفع عبر صاحب ال"
+    }
+   ],
+   "sources": [
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene_heffingskorting/algemene_heffingskorting",
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/arbeidskorting/arbeidskorting",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/loonheffingskorting-meerdere-inkomens",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/loonheffingskorting-toepassen-of-stoppen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wat-staat-er-op-mijn-loonstrook",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-een-heffingskorting-en-welke-heffingskortingen-zijn-er",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026",
+    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/arbeidskorting-over-uitkering-stopt-per-1-januari-2027"
+   ]
+  },
+  {
    "page": "articles/eu-permanent-residence-netherlands.html",
    "lang": "ar",
    "title": "الإقامة الأوروبية الدائمة في هولندا 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "عليه التأمينات، ويُسمّى أحياناً heffingsloon في قسيمة الراتب. المبالغ المطلوبة (1 يوليو – 31 ديسمبر 2026) الحالة بدون vakantiegeld مع vakantiegeld تثبت الدخل بنفسك"
     }
    ],
@@ -514,15 +587,15 @@
    "lang": "ar",
    "title": "لمّ الشمل مع الشريك: الدخل وMVV 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-08",
-   "age_days": 39,
+   "age_days": 46,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "أن يساوي دخل المعيل المبلغ المطلوب أو يزيد عليه. الأرقام من جدول IND وتسري من 1 يوليو إلى 31 ديسمبر 2026 ، وتتغير كل نصف سنة (يناير ويوليو). وضع المعيل إجمالي SV شه"
     }
    ],
@@ -540,15 +613,15 @@
    "lang": "ar",
    "title": "التأمين الصحي zorgverzekering 2027 | دليل هولندا بالعربية",
    "dateModified": "2026-11-13",
-   "age_days": 3,
+   "age_days": 10,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "القسط، نوع البوليصة (natura/restitutie)، المستشفيات المتعاقد معها، والتأمين الإضافي. حتى 31 ديسمبر 2026 ألغِ تأمينك بنفسك، أو اشترك في تأمين جديد قبل هذا التاريخ ف"
     }
    ],
@@ -573,19 +646,43 @@
    ]
   },
   {
+   "page": "articles/minimum-wage-netherlands.html",
+   "lang": "ar",
+   "title": "الحد الأدنى للأجر minimumloon 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 13,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "2027؟ أعلنت الحكومة في 17 أبريل 2026 رفع الحد الأدنى للشباب من 16 إلى 20 سنة اعتباراً من 1 يناير 2027 . النسب الحالية والجديدة من الأجر الكامل: العمر النسبة الحا"
+    }
+   ],
+   "sources": [
+    "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
+   ]
+  },
+  {
    "page": "articles/permanent-residence-asylum-route.html",
    "lang": "ar",
    "title": "إقامة اللجوء إلى الإقامة الدائمة 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "90 يورو sv-loon شهرياً بدون vakantiegeld (1.766,77 يورو مع vakantiegeld )، من 1 يوليو حتى 31 ديسمبر 2026. مع الشريك 2.337,00 يورو للدخلين معاً، إن كنتما متزوجين أو"
     }
    ],
@@ -605,15 +702,15 @@
    "lang": "ar",
    "title": "الإقامة الدائمة لأصحاب إقامة regulier 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "هولندا بعد 12 شهراً ببطاقة زرقاء في دولة أوروبية أخرى. الدخل وعقد العمل الحالة (1 يوليو – 31 ديسمبر 2026) بدون vakantiegeld مع vakantiegeld تثبت الدخل بنفسك 1.635,9"
     }
    ],
@@ -630,52 +727,19 @@
    ]
   },
   {
-   "page": "articles/prinsjesdag-2026-changes.html",
-   "lang": "ar",
-   "title": "Prinsjesdag 2026: ما الذي يتغير في 2027 | دليل هولندا بالعربية",
-   "dateModified": "2026-11-13",
-   "age_days": 3,
-   "score": 13,
-   "reasons": [
-    "milestone in 15 days (2026-12-01): prepare the update"
-   ],
-   "milestones": [
-    {
-     "date": "2026-12-01",
-     "days": 15,
-     "context": "رح صندوق طوارئ الطاقة (Noodfonds Energie) 193 مليون يورو لهذا الشتاء. التحضير والتواصل من 1 ديسمبر 2026، والطلبات من 4 يناير حتى 7 مايو 2027 ، دون مبدأ «من يسبق»."
-    }
-   ],
-   "sources": [
-    "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
-    "https://www.dsw.nl/consumenten/zorgverzekering/wijzigingen-2027",
-    "https://www.eerstekamer.nl/overig/20260918/fiscale_sleuteltabel_2027/document",
-    "https://www.eerstekamer.nl/wetsvoorstel/37022_belastingplan_2027",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/documenten/2026/09/15/factsheetbundel",
-    "https://www.rijksoverheid.nl/documenten/2026/09/15/fiscale-sleuteltabel-2027",
-    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan",
-    "https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling",
-    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag",
-    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag/koopkracht"
-   ]
-  },
-  {
    "page": "articles/toeslagen-income-update.html",
    "lang": "ar",
    "title": "تحديث الدخل في Toeslagen 2026 | دليل هولندا بالعربية",
    "dateModified": "2026-10-08",
-   "age_days": 39,
+   "age_days": 46,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "mulatief» واضبط التقدير لبقية السنة. ديسمبر آخر فرصة لطلب بدل السنة الماضية (بدل 2025 حتى 31 ديسمبر 2026). مساعدة مجانية Toeslagenservicepunt : نقاط مساعدة مجانية ف"
     }
    ],
@@ -694,19 +758,48 @@
    ]
   },
   {
+   "page": "nl/articles/dutch-payslip-explained.html",
+   "lang": "nl",
+   "title": "Loonstrook uitgelegd: van bruto naar netto 2026 | Gids Nederland",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 13,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "nd €78.400 nul. Arbeidskorting 2026 Maximaal €5.685 ; neemt af bij hogere inkomens. Vanaf 1 januari 2027 Volgens UWV geen arbeidskorting meer over uitkeringen die v"
+    }
+   ],
+   "sources": [
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/algemene_heffingskorting/algemene_heffingskorting",
+    "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/heffingskortingen/arbeidskorting/arbeidskorting",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/loonheffingskorting-meerdere-inkomens",
+    "https://www.belastingdienst.nl/wps/wcm/connect/nl/werk-en-inkomen/content/loonheffingskorting-toepassen-of-stoppen",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wat-staat-er-op-mijn-loonstrook",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/inkomstenbelasting/wat-is-een-heffingskorting-en-welke-heffingskortingen-zijn-er",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/vakantiedagen-en-vakantiegeld/hoe-hoog-is-mijn-vakantiegeld",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026",
+    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/arbeidskorting-over-uitkering-stopt-per-1-januari-2027"
+   ]
+  },
+  {
    "page": "nl/articles/eu-permanent-residence-netherlands.html",
    "lang": "nl",
    "title": "EU-langdurig ingezetene 2026: voorwaarden en contract | Gids Nederland",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "De IND kijkt naar je sv-loon (soms heffingsloon op je loonstrook). Normbedragen (1 juli – 31 december 2026) Situatie Zonder vakantiegeld Met vakantiegeld Je toont zel"
     }
    ],
@@ -726,15 +819,15 @@
    "lang": "nl",
    "title": "Gezinshereniging partner: inkomenseis 2026 | Gids Nederland",
    "dateModified": "2026-10-08",
-   "age_days": 39,
+   "age_days": 46,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "aan het normbedrag. Deze bedragen komen van de IND-tabel en gelden van 1 juli tot en met 31 december 2026 ; ze wijzigen halfjaarlijks (januari en juli). Situatie ref"
     }
    ],
@@ -752,15 +845,15 @@
    "lang": "nl",
    "title": "Zorgverzekering 2027: eigen risico en premie | Gids Nederland",
    "dateModified": "2026-11-13",
-   "age_days": 3,
+   "age_days": 10,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "ember Vergelijk premie, polisvorm, gecontracteerde zorg en aanvullende dekking. Uiterlijk 31 december 2026 Zelf opzeggen, of vóór die datum een nieuwe polis afsluiten"
     }
    ],
@@ -785,19 +878,43 @@
    ]
   },
   {
+   "page": "nl/articles/minimum-wage-netherlands.html",
+   "lang": "nl",
+   "title": "Minimumloon 2026: uurloon per leeftijd | Gids Nederland",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 13,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "et maakte op 17 april 2026 bekend dat het minimumjeugdloon voor 16 tot en met 20 jaar per 1 januari 2027 stijgt. Percentages van het volledige minimumloon: Leeftijd"
+    }
+   ],
+   "sources": [
+    "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026"
+   ]
+  },
+  {
    "page": "nl/articles/permanent-residence-asylum-route.html",
    "lang": "nl",
    "title": "Van asielvergunning naar permanent verblijf 2026 | Gids Nederland",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "€ 1.635,90 sv-loon per maand zonder vakantiegeld (€ 1.766,77 met), van 1 juli tot en met 31 december 2026. Met partner Samen € 2.337,00 als jullie getrouwd of geregi"
     }
    ],
@@ -817,15 +934,15 @@
    "lang": "nl",
    "title": "Permanent verblijf met een reguliere vergunning 2026 | Gids Nederland",
    "dateModified": "2026-10-19",
-   "age_days": 28,
+   "age_days": 35,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "d na 12 maanden blauwe kaart in een ander EU-land. Inkomen en contract Situatie (1 juli – 31 december 2026) Zonder vakantiegeld Met vakantiegeld Eigen inkomen € 1.635"
     }
    ],
@@ -842,52 +959,19 @@
    ]
   },
   {
-   "page": "nl/articles/prinsjesdag-2026-changes.html",
-   "lang": "nl",
-   "title": "Prinsjesdag 2026: wat verandert er in 2027 | Gids Nederland",
-   "dateModified": "2026-11-13",
-   "age_days": 3,
-   "score": 13,
-   "reasons": [
-    "milestone in 15 days (2026-12-01): prepare the update"
-   ],
-   "milestones": [
-    {
-     "date": "2026-12-01",
-     "days": 15,
-     "context": "zamer afgebouwd. Voorstel Noodfonds Energie € 193 miljoen deze winter; voorbereiden vanaf 1 december 2026, aanvragen van 4 januari tot en met 7 mei 2027 , geen «op i"
-    }
-   ],
-   "sources": [
-    "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
-    "https://www.dsw.nl/consumenten/zorgverzekering/wijzigingen-2027",
-    "https://www.eerstekamer.nl/overig/20260918/fiscale_sleuteltabel_2027/document",
-    "https://www.eerstekamer.nl/wetsvoorstel/37022_belastingplan_2027",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/kabinet-zet-in-op-gezondheid-en-op-zorg-die-klaar-is-voor-de-toekomst",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/15/prinsjesdag-2026-maatregelen-op-het-gebied-van-szw",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/documenten/2026/09/15/factsheetbundel",
-    "https://www.rijksoverheid.nl/documenten/2026/09/15/fiscale-sleuteltabel-2027",
-    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/belastingplan",
-    "https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/energie-thuis/salderingsregeling",
-    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag",
-    "https://www.rijksoverheid.nl/themas/overheid-en-democratie/prinsjesdag/koopkracht"
-   ]
-  },
-  {
    "page": "nl/articles/toeslagen-income-update.html",
    "lang": "nl",
    "title": "Inkomen doorgeven bij Toeslagen 2026 | Gids Nederland",
    "dateModified": "2026-10-08",
-   "age_days": 39,
+   "age_days": 46,
    "score": 13,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "en en schatting bijstellen. December Laatste kans voor toeslag over vorig jaar (2025: tot 31 december 2026). Gratis hulp Toeslagenservicepunt : gratis hulp op locatie"
     }
    ],
@@ -910,15 +994,15 @@
    "lang": "ar",
    "title": "قرض الدراسة للكبار Levenlanglerenkrediet | دليل هولندا بالعربية",
    "dateModified": "2026-11-06",
-   "age_days": 10,
+   "age_days": 17,
    "score": 10,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": "تقنية، بناء، طاقة، رعاية أطفال، تعليم، زراعة/بيئة، ICT) مفتوح لأصحاب العمل من 26 مايو حتى 31 ديسمبر 2026 — اطلب من صاحب عملك UWV أثناء WW من يتلقى WW UWV يدفع فقط إ"
     }
    ],
@@ -939,26 +1023,178 @@
    ]
   },
   {
-   "page": "articles/energy-emergency-fund-2027.html",
+   "page": "articles/bol-bbl-comparison.html",
    "lang": "ar",
-   "title": "صندوق الطاقة Noodfonds Energie 2027 | دليل هولندا بالعربية",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
+   "title": "BOL أم BBL في MBO: الفرق والراتب والتكلفة | دليل هولندا بالعربية",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
    "score": 10,
    "reasons": [
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 39 days (2027-01-01): prepare the update"
    ],
    "milestones": [
     {
-     "date": "2026-12-01",
-     "days": 15,
-     "context": "warming)، شبكة تدفئة (warmtenet)، البروبان، والطلاب. المواعيد المهمة التاريخ ماذا يحدث من 1 ديسمبر 2026 التحضير: جمع الأوراق والتواصل مع الصندوق 4 يناير 2027 بدء ا"
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "5.92 16 5.07 5.17 وأعلنت الحكومة (17 أبريل 2026) أنها ستساوي حد BBL للشباب بالحد العام من 1 يناير 2027 (خطة معلنة، تحقق عند التنفيذ). التفاصيل في دليل الحد الأدنى"
     }
    ],
    "sources": [
-    "https://www.noodfondsenergie.nl/",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/koopkracht/hoe-krijg-ik-geld-terug-uit-het-noodfonds-energie"
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/middelbaar-beroepsonderwijs/hoogte-lesgeld-en-cursusgeld-mbo",
+    "https://www.rijksoverheid.nl/themas/onderwijs/studiefinanciering/studiefinanciering-mbo",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
+    "https://www.s-bb.nl/bedrijven/wat-is-een-leerbedrijf/verschil-bol-en-bbl"
+   ]
+  },
+  {
+   "page": "articles/legal-aid-lawyer-toevoeging.html",
+   "lang": "ar",
+   "title": "المحامي المدعوم toevoeging 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-11-06",
+   "age_days": 17,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "ً عادةً بلا مساهمة إنهاء السلطة الأبوية أو أول إخراج للطفل من البيت محامٍ مجاني (مؤقت حتى 1 يناير 2027) مجاني لديك حجز على الراتب (loonbeslag) غالباً أدنى مساهمة"
+    }
+   ],
+   "sources": [
+    "https://ind.nl/en/asylum-procedures-in-the-netherlands",
+    "https://www.juridischloket.nl/actueel/advocaat-gezag/",
+    "https://www.juridischloket.nl/actueel/loonbeslag-lagere-eigen-bijdrage/",
+    "https://www.juridischloket.nl/contact/",
+    "https://www.juridischloket.nl/hoe-we-werken/advocaat-nodig/",
+    "https://www.juridischloket.nl/hoe-we-werken/toevoeging-advocaat/",
+    "https://www.juridischloket.nl/politie-en-justitie/justitie/kosten-rechtszaak/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/eigen-bijdrage/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/peiljaarverlegging/",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/rechtspraak-en-geschiloplossing/hoe-verloopt-het-aanvragen-van-gesubsidieerde-rechtsbijstand"
+   ]
+  },
+  {
+   "page": "articles/sick-pay-ziektewet-wia.html",
+   "lang": "ar",
+   "title": "راتب المرض Ziektewet وWIA في هولندا 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-11-18",
+   "age_days": 5,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": ". UWV يعفي من استرداد هذه السلف منذ منتصف 2021، والحكومة تريد تثبيت ذلك بقانون ابتداءً من 1 يناير 2027 (مشروع القانون أمام البرلمان؛ ليس نهائياً بعد). أخطاء شائعة"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/03/27/advies-bedrijfsarts-wordt-leidend-bij-re-integratietoets-zieke-werknemer",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/21/regeling-voor-kwijtschelden-wia-voorschotten-in-consultatie",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/meer-mensen-moeten-langer-wachten-op-arbeidsongeschiktheidsuitkering",
+    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/beslistermijn-wia-verlengd-naar-16-weken",
+    "https://www.uwv.nl/nl/nieuws/uwv-concentreert-zich-de-komende-tijd-op-wia-en-wajong-beoordelingen",
+    "https://www.uwv.nl/nl/premies-bedragen/dagloon-berekenen",
+    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon?friendlyurl=/maximumdagloon",
+    "https://www.uwv.nl/nl/wajong/hoogte-wajong",
+    "https://www.uwv.nl/nl/wia/hoogte-wia",
+    "https://www.uwv.nl/nl/wia/voorschot-wia",
+    "https://www.uwv.nl/nl/wia/wga/loongerelateerde-uitkering",
+    "https://www.uwv.nl/nl/wia/wia-aanvragen",
+    "https://www.uwv.nl/nl/wia/wia-beoordeling",
+    "https://www.uwv.nl/nl/ww/ziek-tijdens-ww",
+    "https://www.uwv.nl/nl/ziek/loondoorbetaling",
+    "https://www.uwv.nl/nl/ziek/uitzend-oproep-flexibel-contract/uitzendkracht-ziek",
+    "https://www.uwv.nl/nl/ziek/wachtdagen",
+    "https://www.uwv.nl/nl/ziek/ziek-uit-dienst/4-weken",
+    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/hoogte-zw",
+    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/verwachting-zw"
+   ]
+  },
+  {
+   "page": "articles/social-assistance-bijstand.html",
+   "lang": "ar",
+   "title": "المساعدة الاجتماعية bijstand 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "كل الوثائق من جديد؛ رعاية قريب (mantelzorg) لا تخفض المساعدة؛ 15% من أجر الشباب يبقى لهم. 1 يناير 2027 هامش حتى 1,000 يورو سنوياً لمن دخله متقلب (عمل جزئي)؛ اعترا"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/11/uitkeringsbedragen-per-1-juli-2026",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wat-is-de-taaleis-in-de-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wat-zijn-mijn-rechten-en-plichten-in-de-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/welke-regels-gelden-er-voor-de-bijstand-voor-jongeren",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/bijstand/nieuwe-regels-bijstand-2026-en-2027",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/bijstand/regels-voor-bijstand"
+   ]
+  },
+  {
+   "page": "articles/temporary-agency-work-rights.html",
+   "lang": "ar",
+   "title": "العمل عبر وكالة توظيف uitzendbureau 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "toelating terbeschikkingstelling van arbeidskrachten): التاريخ ماذا يحدث 1 نوفمبر 2026 – 1 يناير 2027 الوكالات التي تريد الاستفادة من الفترة الانتقالية تسجل نفسه"
+    }
+   ],
+   "sources": [
+    "https://www.nlarbeidsinspectie.nl/onderwerpen/ik-wil-iets-melden",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2025/04/24/vanaf-2027-strengere-regels-uitzendbureaus",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/07/08/meer-zekerheid-voor-mensen-met-een-flexcontract",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/wanneer-verandert-mijn-tijdelijke-arbeidscontract-in-een-vast-contract",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-payrollkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/welke-arbeidsvoorwaarden-heb-ik-als-uitzendkracht",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/ziekteverzuim-van-het-werk/wordt-mijn-loon-doorbetaald-als-ik-als-uitzendkracht-ziek-ben"
+   ]
+  },
+  {
+   "page": "articles/wmo-home-support.html",
+   "lang": "ar",
+   "title": "دعم Wmo من البلدية في البيت 2026 | دليل هولندا بالعربية",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "تية في 2026: 21.80 يورو شهرياً لمعظم دعم Wmo، لمن عمره 18 سنة فأكثر، تجمعها هيئة CAK . من 1 يناير 2027 (مقترح): مساهمة حسب الدخل والمال؛ تحتاج موافقة البرلمان. إن"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/bezwaar-beslissing-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/eigen-bijdrage-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015-aanvragen"
    ]
   },
   {
@@ -966,15 +1202,15 @@
    "lang": "nl",
    "title": "Levenlanglerenkrediet 2026: studeren na je 30e | Gids Nederland",
    "dateModified": "2026-10-23",
-   "age_days": 24,
+   "age_days": 31,
    "score": 10,
    "reasons": [
-    "milestone in 45 days (2026-12-31): prepare the update"
+    "milestone in 38 days (2026-12-31): prepare the update"
    ],
    "milestones": [
     {
      "date": "2026-12-31",
-     "days": 45,
+     "days": 38,
      "context": ", bouw, energie, kinderopvang, onderwijs, groen, ICT) Open voor werkgevers van 26 mei t/m 31 december 2026 — vraag je werkgever UWV tijdens WW WW-gerechtigden UWV bet"
     }
    ],
@@ -995,26 +1231,179 @@
    ]
   },
   {
-   "page": "nl/articles/energy-emergency-fund-2027.html",
+   "page": "nl/articles/bol-bbl-comparison.html",
    "lang": "nl",
-   "title": "Noodfonds Energie 2027: voorwaarden en aanvragen | Gids Nederland",
-   "dateModified": "2026-10-05",
-   "age_days": 42,
+   "title": "Bol of bbl: verschil, loon en kosten | Gids Nederland",
+   "dateModified": "2026-10-04",
+   "age_days": 50,
    "score": 10,
    "reasons": [
-    "milestone in 15 days (2026-12-01): prepare the update"
+    "milestone in 39 days (2027-01-01): prepare the update"
    ],
    "milestones": [
     {
-     "date": "2026-12-01",
-     "days": 15,
-     "context": "ok voor blokverwarming, warmtenet, propaan en studenten. Belangrijke data Datum Wat Vanaf 1 december 2026 Voorbereiden en contact 4 januari 2027 Start aanvragen 7 me"
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "17 5,81 5,92 16 5,07 5,17 Het kabinet kondigde op 17 april 2026 aan het bbl-jeugdloon per 1 januari 2027 gelijk te trekken met het reguliere jeugdloon (aangekondigd"
     }
    ],
    "sources": [
-    "https://www.noodfondsenergie.nl/",
-    "https://www.rijksoverheid.nl/actueel/nieuws/2026/09/29/noodfonds-energie-gaat-open",
-    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/koopkracht/hoe-krijg-ik-geld-terug-uit-het-noodfonds-energie"
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/17/hoger-minimumjeugdloon-vanaf-2027",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/middelbaar-beroepsonderwijs/hoogte-lesgeld-en-cursusgeld-mbo",
+    "https://www.rijksoverheid.nl/themas/onderwijs/studiefinanciering/studiefinanciering-mbo",
+    "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon-bbl-opleiding/bedragen-minimumloon-bbl-2026",
+    "https://www.s-bb.nl/bedrijven/wat-is-een-leerbedrijf/verschil-bol-en-bbl"
+   ]
+  },
+  {
+   "page": "nl/articles/essential-apps-netherlands.html",
+   "lang": "nl",
+   "title": "Handige apps voor nieuwkomers in Nederland",
+   "dateModified": "2026-11-19",
+   "age_days": 4,
+   "score": 10,
+   "reasons": [
+    "milestone in 14 days (2026-12-07): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2026-12-07",
+     "days": 14,
+     "context": "r zendt de overheid rond 12.00 uur een testbericht uit. De volgende uitzending is maandag 7 december 2026 . Bank-app en betalen Je bank-app heb je voor bijna alles n"
+    }
+   ],
+   "sources": [
+    "https://9292.nl/app-en-website/download-de-app/",
+    "https://mijn.overheid.nl/",
+    "https://www.digid.nl/inlogmethodes/digid-app",
+    "https://www.nl-alert.nl/",
+    "https://www.ns.nl/en/travel/ns-app",
+    "https://www.ov-chipkaart.nl/",
+    "https://www.ovpay.nl/",
+    "https://www.thuisarts.nl/"
+   ]
+  },
+  {
+   "page": "nl/articles/legal-aid-lawyer-toevoeging.html",
+   "lang": "nl",
+   "title": "Advocaat met toevoeging 2026: grenzen en kosten | Gids Nederland",
+   "dateModified": "2026-10-07",
+   "age_days": 47,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "ge Beëindiging ouderlijk gezag of eerste uithuisplaatsing Gratis advocaat (tijdelijk, tot 1 januari 2027) Gratis Loonbeslag of beslag op vermogen Meestal laagste ei"
+    }
+   ],
+   "sources": [
+    "https://ind.nl/en/asylum-procedures-in-the-netherlands",
+    "https://www.juridischloket.nl/actueel/advocaat-gezag/",
+    "https://www.juridischloket.nl/actueel/loonbeslag-lagere-eigen-bijdrage/",
+    "https://www.juridischloket.nl/contact/",
+    "https://www.juridischloket.nl/hoe-we-werken/advocaat-nodig/",
+    "https://www.juridischloket.nl/hoe-we-werken/toevoeging-advocaat/",
+    "https://www.juridischloket.nl/politie-en-justitie/justitie/kosten-rechtszaak/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/eigen-bijdrage/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/geen-eigen-bijdrage/",
+    "https://www.rechtsbijstand.nl/mediation-rechtsbijstand/hoeveel-betalen/peiljaarverlegging/",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/rechtspraak-en-geschiloplossing/hoe-verloopt-het-aanvragen-van-gesubsidieerde-rechtsbijstand"
+   ]
+  },
+  {
+   "page": "nl/articles/sick-pay-ziektewet-wia.html",
+   "lang": "nl",
+   "title": "Ziektewet en WIA 2026: loon bij ziekte | Gids Nederland",
+   "dateModified": "2026-11-18",
+   "age_days": 5,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "heldt deze voorschotten sinds medio 2021 kwijt; het kabinet wil dit wettelijk regelen per 1 januari 2027 (wetsvoorstel ligt bij de Tweede Kamer, nog niet definitief"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/03/27/advies-bedrijfsarts-wordt-leidend-bij-re-integratietoets-zieke-werknemer",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/04/21/regeling-voor-kwijtschelden-wia-voorschotten-in-consultatie",
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/23/meer-mensen-moeten-langer-wachten-op-arbeidsongeschiktheidsuitkering",
+    "https://www.uwv.nl/nl/magazines-nieuwsbrieven/nieuwsbrief-werkgevers/beslistermijn-wia-verlengd-naar-16-weken",
+    "https://www.uwv.nl/nl/nieuws/uwv-concentreert-zich-de-komende-tijd-op-wia-en-wajong-beoordelingen",
+    "https://www.uwv.nl/nl/premies-bedragen/dagloon-berekenen",
+    "https://www.uwv.nl/nl/premies-bedragen/maximum-dagloon?friendlyurl=/maximumdagloon",
+    "https://www.uwv.nl/nl/wajong/hoogte-wajong",
+    "https://www.uwv.nl/nl/wia/hoogte-wia",
+    "https://www.uwv.nl/nl/wia/voorschot-wia",
+    "https://www.uwv.nl/nl/wia/wga/loongerelateerde-uitkering",
+    "https://www.uwv.nl/nl/wia/wia-aanvragen",
+    "https://www.uwv.nl/nl/wia/wia-beoordeling",
+    "https://www.uwv.nl/nl/ww/ziek-tijdens-ww",
+    "https://www.uwv.nl/nl/ziek/loondoorbetaling",
+    "https://www.uwv.nl/nl/ziek/uitzend-oproep-flexibel-contract/uitzendkracht-ziek",
+    "https://www.uwv.nl/nl/ziek/wachtdagen",
+    "https://www.uwv.nl/nl/ziek/ziek-uit-dienst/4-weken",
+    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/hoogte-zw",
+    "https://www.uwv.nl/nl/ziek/ziektewet-uitkering/verwachting-zw"
+   ]
+  },
+  {
+   "page": "nl/articles/social-assistance-bijstand.html",
+   "lang": "nl",
+   "title": "Bijstand 2026: bedragen, voorwaarden en plichten | Gids Nederland",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "e bewijsstukken; mantelzorg verlaagt de uitkering niet; jongeren houden 15% van hun loon. 1 januari 2027 Buffer tot € 1.000 per jaar bij schommelend inkomen; ruimer"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/actueel/nieuws/2026/06/11/uitkeringsbedragen-per-1-juli-2026",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/hoe-hoog-is-mijn-bijstandsuitkering",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wanneer-heb-ik-recht-op-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wat-is-de-taaleis-in-de-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/wat-zijn-mijn-rechten-en-plichten-in-de-bijstand",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/bijstand/welke-regels-gelden-er-voor-de-bijstand-voor-jongeren",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/bijstand/nieuwe-regels-bijstand-2026-en-2027",
+    "https://www.rijksoverheid.nl/themas/belastingen-uitkeringen-en-toeslagen/bijstand/regels-voor-bijstand"
+   ]
+  },
+  {
+   "page": "nl/articles/wmo-home-support.html",
+   "lang": "nl",
+   "title": "Wmo 2026: hulp van de gemeente thuis | Gids Nederland",
+   "dateModified": "2026-10-05",
+   "age_days": 49,
+   "score": 10,
+   "reasons": [
+    "milestone in 39 days (2027-01-01): prepare the update"
+   ],
+   "milestones": [
+    {
+     "date": "2027-01-01",
+     "days": 39,
+     "context": "age 2026: € 21,80 per maand voor de meeste Wmo-ondersteuning, voor 18+, via het CAK . Per 1 januari 2027 (voornemen): inkomens- en vermogensafhankelijke bijdrage; p"
+    }
+   ],
+   "sources": [
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/bezwaar-beslissing-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/eigen-bijdrage-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015",
+    "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/zorg-en-ondersteuning-thuis/ondersteuning-gemeente-wmo-2015-aanvragen"
    ]
   }
  ]
