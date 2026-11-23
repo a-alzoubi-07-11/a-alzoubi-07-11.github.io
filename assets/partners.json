@@ -269,6 +269,75 @@
       ]
     },
     {
+      "id": "joybuy-ricecooker-w48",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "سعر خاص لمتابعينا",
+        "nl": "Speciale prijs voor onze volgers"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fdp%2F100699794%3FactChannelId%3D100469",
+      "start": "2026-11-23",
+      "end": "2026-12-15",
+      "title": {
+        "ar": "طنجرة رز ذكية Joyami (1.6 لتر) بحوالي €29.99 — مرة وحدة لكل زبون",
+        "nl": "Joyami slimme rijstkoker (1,6 L) voor ca. €29,99 — één keer per klant"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-steamer-w48",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "سعر خاص لمتابعينا",
+        "nl": "Speciale prijs voor onze volgers"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fdp%2F10226920%3FactChannelId%3D100469",
+      "start": "2026-11-23",
+      "end": "2026-12-15",
+      "title": {
+        "ar": "مكواة بخار يدوية Xiaomi بحوالي €23.96 — مرة وحدة لكل زبون",
+        "nl": "Xiaomi handheld kledingstomer voor ca. €23,96 — één keer per klant"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-babycam-w48",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "سعر خاص لمتابعينا",
+        "nl": "Speciale prijs voor onze volgers"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fdp%2F100008230098139%3FactChannelId%3D100469",
+      "start": "2026-11-23",
+      "end": "2026-12-15",
+      "title": {
+        "ar": "كاميرا داخلية aosu 2K لغرفة الطفل بحوالي €23.99 — مرة وحدة لكل زبون",
+        "nl": "aosu 2K binnencamera (babykamer) voor ca. €23,99 — één keer per klant"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
       "id": "joybuy-christmas-2026",
       "active": true,
       "network": "awin",
