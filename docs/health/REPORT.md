@@ -1,10 +1,10 @@
-# Site health report — 2026-11-23T13:16Z
+# Site health report — 2026-11-24T13:57Z
 
-## External links: 666 checked · 0 broken · 6 redirected · 56 bot-blocked
+## External links: 666 checked · 0 broken · 6 redirected · 50 bot-blocked
 - MOVED https://mijn.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst
 - MOVED https://myadcenter.google.com/ → https://myaccount.google.com/not-supported
-- MOVED https://wetten.overheid.nl/BWBR0004766/ → https://wetten.overheid.nl/BWBR0004766/2026-01-01
-- MOVED https://wetten.overheid.nl/BWBR0031331/ → https://wetten.overheid.nl/BWBR0031331/2026-07-01
+- MOVED https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Geconstateerde-Gebreken/a34c-vvps → https://opendata.rdw.nl/Keuringen/Open-Data-RDW-Geconstateerde-Gebreken/a34c-vvps
+- MOVED https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Terugroep_actie_status/t49b-isb7 → https://opendata.rdw.nl/Terugroepacties/Open-Data-RDW-Terugroep_actie_status/t49b-isb7
 - MOVED https://www.belastingdienst.nl → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 - MOVED https://www.belastingdienst.nl/ → https://www.belastingdienst.nl/wps/wcm/connect/nl/home/home
 
@@ -24,11 +24,11 @@
   - not indexed: https://gidsnederland.nl/articles/pregnancy-newborn-care.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/asylum-two-status-system-2026.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/calculators/mijn-gemeente.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/calculators/mijn-gemeente.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/calculators/mijn-gemeente.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/calculators/kenteken-check.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/calculators/kenteken-check.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/calculators/ov-reiskosten.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/calculators/ov-reiskosten.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/calculators/ov-reiskosten.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/dutch-government-terms-glossary.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/diploma-recognition-by-education-level.html (Crawled - currently not indexed)
@@ -36,21 +36,21 @@
   - not indexed: https://gidsnederland.nl/articles/permanent-residence-asylum-route.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-asylum-route.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/permanent-residence-regular-route.html (Crawled - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/articles/liability-home-insurance.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/articles/liability-home-insurance.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/liability-home-insurance.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/beroep/ (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/beroep/ (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/beroep/ (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/beroep/ (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/articles/internet-phone-contract-cancel.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html (Crawled - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/affiliate-disclosure.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/nl/affiliate-disclosure.html (URL is unknown to Google)
-  - not indexed: https://gidsnederland.nl/nl/calculators/permanent-residence-check.html (URL is unknown to Google)
+  - not indexed: https://gidsnederland.nl/nl/affiliate-disclosure.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/nl/calculators/permanent-residence-check.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/templates.html (Discovered - currently not indexed)
-  - not indexed: https://gidsnederland.nl/articles/hbo-wo-university-newcomers.html (Discovered - currently not indexed)
+  - not indexed: https://gidsnederland.nl/articles/hbo-wo-university-newcomers.html (URL is unknown to Google)
   - not indexed: https://gidsnederland.nl/nl/articles/hbo-wo-university-newcomers.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/articles/essential-apps-netherlands.html (Discovered - currently not indexed)
   - not indexed: https://gidsnederland.nl/nl/articles/essential-apps-netherlands.html (Discovered - currently not indexed)
