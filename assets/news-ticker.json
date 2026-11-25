@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T06:51:00+01:00",
-  "validUntil": "2026-11-20T18:51:00+01:00",
+  "updatedAt": "2026-11-23T06:50:32+01:00",
+  "validUntil": "2026-11-23T18:50:32+01:00",
   "items": [
+    {
+      "source": "SZW",
+      "publishedAt": "2026-11-20",
+      "firstSeen": "2026-11-21",
+      "category": {
+        "ar": "عمل ومساعدات",
+        "nl": "Werk en bijstand"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "الحكومة تريد جعل العمل والمشاركة محور قانون المساعدة الاجتماعية (Participatiewet)",
+        "nl": "Kabinet zet werk en meedoen centraal in de Participatiewet (bijstand)"
+      },
+      "summary": {
+        "ar": "خطة في رسالة إلى البرلمان: الشباب الحاصلون على الإقامة يشكّلون 30% من الشباب في الـbijstand، وعبر برنامج Werk en Meedoen Nieuwkomers ستُقدَّم مساعدة أكبر نحو الدراسة أو العمل.",
+        "nl": "Plan in een Kamerbrief: jonge statushouders zijn 30% van de jongeren in de bijstand. Via de aanpak Werk en Meedoen Nieuwkomers komt meer steun richting opleiding of werk."
+      },
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/20/kabinet-zet-werk-en-meedoen-centraal-in-de-participatiewet",
+      "sourceName": {
+        "ar": "وزارة الشؤون الاجتماعية (SZW)",
+        "nl": "Ministerie van SZW"
+      },
+      "tier": "official",
+      "id": "szw-2026-11-20-2f5c1460"
+    },
     {
       "source": "STAB",
       "publishedAt": "2026-11-19",
@@ -179,31 +204,6 @@
       "id": "ind-2026-11-16-6b1b711c"
     },
     {
-      "source": "SZW",
-      "publishedAt": "2026-11-13",
-      "firstSeen": "2026-11-16",
-      "category": {
-        "ar": "التقاعد",
-        "nl": "AOW"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "سن التقاعد AOW لن يرتفع في 2032 ويبقى 67 سنة و3 أشهر",
-        "nl": "AOW-leeftijd stijgt niet in 2032: blijft 67 jaar en 3 maanden"
-      },
-      "summary": {
-        "ar": "سن AOW هو 67 سنة حتى نهاية 2027، و67 سنة و3 أشهر من 2028، ويبقى كذلك في 2032. المولودون بين 1 أكتوبر 1964 و30 سبتمبر 1965 يعرفون الآن موعد بدء AOW.",
-        "nl": "De AOW-leeftijd is 67 jaar t/m 2027 en 67 jaar en 3 maanden vanaf 2028; dat blijft zo in 2032. Wie geboren is tussen 1 oktober 1964 en 30 september 1965 weet nu wanneer de AOW start."
-      },
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/13/aow-leeftijd-stijgt-niet-in-2032",
-      "sourceName": {
-        "ar": "وزارة الشؤون الاجتماعية (SZW)",
-        "nl": "Ministerie van SZW"
-      },
-      "tier": "official",
-      "id": "szw-2026-11-13-9691a8f0"
-    },
-    {
       "source": "NOS",
       "publishedAt": "2026-11-13",
       "firstSeen": "2026-11-13",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-20",
-      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters[0][type]=all",
+      "checkedAt": "2026-11-23",
+      "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters%5B0%5D%5Btype%5D=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
       "result": "no-change"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
-      "result": "new"
+      "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-20",
+      "checkedAt": "2026-11-23",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
