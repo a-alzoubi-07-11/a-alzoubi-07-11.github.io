@@ -18,6 +18,7 @@
       stations: 'أقرب محطات قطار', km: 'كم', plan: 'احسب رحلتك وسعرها',
       plan_h: 'خطتك لأول 30 يوم', plan_note: 'رتّبناها حسب الأولوية. اضغط على كل خطوة لتقرأ الشرح الكامل بالعربي.',
       help_h: 'مساعدات اسأل عنها بلديتك', help_note: 'كل بلدية إلها قواعدها ومبالغها. الأزرار بتبحث بموقع بلديتك مباشرة.',
+      share_msg: 'وصلت جديد على هولندا أو انتقلت لبيت جديد؟ اكتب رمزك البريدي واعرف بلديتك وأقرب محطة ومدرسة، وخطة أول 30 يوم. أداة مجانية بالعربي:', share_note: 'رابط المشاركة فيه الرمز البريدي اللي كتبته.',
       free_h: 'مساعدة مجانية بشرية', share: 'شارك', copied: 'تم نسخ الرابط',
       src: 'المصادر: خدمة العناوين الحكومية PDOK، ودليل الجهات الحكومية Organisaties.overheid.nl، وبيانات المواصلات المفتوحة. تأكد دائماً من موقع بلديتك.',
       steps: [
@@ -52,6 +53,7 @@
       stations: 'Dichtstbijzijnde treinstations', km: 'km', plan: 'Bereken je reis en de prijs',
       plan_h: 'Jouw plan voor de eerste 30 dagen', plan_note: 'Op volgorde van belangrijkheid. Klik op een stap voor de volledige uitleg.',
       help_h: 'Regelingen om bij je gemeente naar te vragen', help_note: 'Elke gemeente heeft eigen regels en bedragen. De knoppen zoeken direct op de website van jouw gemeente.',
+      share_msg: 'Nieuw in Nederland of net verhuisd? Vul je postcode in en zie je gemeente, het dichtstbijzijnde station en scholen, en een plan voor de eerste 30 dagen. Gratis hulpmiddel:', share_note: 'De deellink bevat de postcode die je invulde.',
       free_h: 'Gratis hulp van mensen', share: 'Delen', copied: 'Link gekopieerd',
       src: 'Bronnen: PDOK Locatieserver, Organisaties.overheid.nl en open ov-dienstregelingsdata. Controleer altijd de website van je gemeente.',
       steps: [
@@ -204,6 +206,23 @@
     return html;
   }
 
+
+  // share a result: WhatsApp + native share/copy, with a result-specific message (also used by the page share bar)
+  function shareResult(out, sel, text, note) {
+    var url = location.href, sh = out.querySelector(sel);
+    if (window.gnShare) window.gnShare.set(text, url);
+    if (!sh) return;
+    var wa = document.createElement('a');
+    wa.className = 'tool-button'; wa.target = '_blank'; wa.rel = 'noopener';
+    wa.href = 'https://wa.me/?text=' + encodeURIComponent(text + '\n' + url);
+    wa.textContent = LANG === 'nl' ? 'WhatsApp' : 'واتساب';
+    sh.parentNode.insertBefore(wa, sh);
+    if (note) { var p = document.createElement('p'); p.className = 'muted'; p.textContent = note; sh.parentNode.parentNode.insertBefore(p, sh.parentNode.nextSibling); }
+    sh.addEventListener('click', function () {
+      if (navigator.share) { navigator.share({ title: document.title, text: text, url: url }).catch(function () {}); return; }
+      (navigator.clipboard ? navigator.clipboard.writeText(text + '\n' + url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
+    });
+  }
   function init() {
     var root = document.getElementById('mijn-gemeente');
     if (!root) return;
@@ -217,12 +236,7 @@
       }).then(function (r) {
         out.innerHTML = render(r[0], r[1]);
         try { history.replaceState(null, '', location.pathname + '?q=' + encodeURIComponent(q) + '#mijn-gemeente'); } catch (e) { /* ignore */ }
-        var sh = out.querySelector('.mg-share');
-        if (sh) sh.addEventListener('click', function () {
-          var url = location.href;
-          if (navigator.share) { navigator.share({ title: document.title, url: url }).catch(function () {}); return; }
-          (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
-        });
+        shareResult(out, '.mg-share', T.share_msg, T.share_note);
         if (window.gtag) window.gtag('event', 'mijn_gemeente_result');
       }).catch(function (e) {
         out.innerHTML = '<p class="notice">' + (e && e.message === 'nf' ? T.nf : T.neterr) + '</p>';

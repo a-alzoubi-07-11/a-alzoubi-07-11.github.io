@@ -62,6 +62,7 @@
       peak_warn: 'خصم Dal Voordeel لا ينطبق في أوقات الذروة (أيام العمل 06:30–09:00 و16:00–18:30).',
       none_rail: 'لا توجد محطة قطار قريبة مفيدة لهذه الرحلة؛ الأفضل باص أو ترام مباشرة.',
       long_access: 'المحطة الأقرب بعيدة عن نقطة الانطلاق؛ قد تكون الدراجة أو سيارة الأقارب للوصول إلى المحطة أوفر.',
+      share_msg: 'حسبتُ رحلتي بالمواصلات في هولندا: حوالي {x} للرحلة', share_save: '، ويمكن توفير حوالي {y} شهرياً باشتراك مناسب', share_end: '. جرّب الحاسبة المجانية بالعربي:', share_note: 'رابط المشاركة فيه العناوين اللي كتبتها، لحتى اللي بيفتحه يشوف نفس النتيجة.',
       bike: 'دراجة أو مشي', trips_label: 'رحلاتك', rail_month: 'القطار فقط، بدون اشتراك'
     },
     nl: {
@@ -87,6 +88,7 @@
       peak_warn: 'Dal Voordeel-korting geldt niet in de spits (werkdagen 06:30–09:00 en 16:00–18:30).',
       none_rail: 'Er is geen nuttig treinstation in de buurt voor deze reis; bus of tram is de beste keuze.',
       long_access: 'Het dichtstbijzijnde station ligt ver van uw vertrekpunt; met de fiets naar het station is vaak voordeliger.',
+      share_msg: 'Ik heb mijn ov-reis in Nederland berekend: ongeveer {x} per rit', share_save: ', en ongeveer {y} per maand besparen met een passend abonnement', share_end: '. Probeer de gratis rekenhulp:', share_note: 'De deellink bevat de adressen die u invulde, zodat de ontvanger dezelfde uitkomst ziet.',
       bike: 'Fiets of lopen', trips_label: 'Uw reizen', rail_month: 'Alleen trein, zonder abonnement'
     }
   }[LANG];
@@ -459,6 +461,23 @@
     return html;
   }
 
+
+  // share a result: WhatsApp + native share/copy, with a result-specific message (also used by the page share bar)
+  function shareResult(out, sel, text, note) {
+    var url = location.href, sh = out.querySelector(sel);
+    if (window.gnShare) window.gnShare.set(text, url);
+    if (!sh) return;
+    var wa = document.createElement('a');
+    wa.className = 'tool-button'; wa.target = '_blank'; wa.rel = 'noopener';
+    wa.href = 'https://wa.me/?text=' + encodeURIComponent(text + '\n' + url);
+    wa.textContent = LANG === 'nl' ? 'WhatsApp' : 'واتساب';
+    sh.parentNode.insertBefore(wa, sh);
+    if (note) { var p = document.createElement('p'); p.className = 'muted'; p.textContent = note; sh.parentNode.parentNode.insertBefore(p, sh.parentNode.nextSibling); }
+    sh.addEventListener('click', function () {
+      if (navigator.share) { navigator.share({ title: document.title, text: text, url: url }).catch(function () {}); return; }
+      (navigator.clipboard ? navigator.clipboard.writeText(text + '\n' + url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
+    });
+  }
   // ---------- wiring ----------
   function init() {
     var root = document.getElementById('ov-planner');
@@ -491,12 +510,8 @@
           var q = new URLSearchParams({ f: inp.fromLabel, fx: pts[0].map(function (x) { return x.toFixed(5); }).join(','), t: inp.toLabel, tx: pts[1].map(function (x) { return x.toFixed(5); }).join(','), n: inp.trips, w: inp.offpeak ? 'o' : 'p', a: inp.age });
           history.replaceState(null, '', location.pathname + '?' + q.toString() + '#ov-planner');
         } catch (e) { /* ignore */ }
-        var sh = out.querySelector('.ovp-share');
-        if (sh) sh.addEventListener('click', function () {
-          var url = location.href, title = document.title;
-          if (navigator.share) { navigator.share({ title: title, url: url }).catch(function () {}); return; }
-          (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
-        });
+        var stxt = T.share_msg.replace('{x}', eur(p.best.fare)) + (res.best && inp.age !== 'student' ? T.share_save.replace('{y}', eur(res.best.save)) : '') + T.share_end;
+        shareResult(out, '.ovp-share', stxt, T.share_note);
         if (window.gtag) window.gtag('event', 'ov_planner_result', { mode: p.best.kind });
       }).catch(function (e) {
         var msg = e && e.message === 'nf' ? T.notfound : (e && e.message === 'pdok' || e instanceof TypeError) ? T.neterr : T.pick;

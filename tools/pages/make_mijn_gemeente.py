@@ -14,7 +14,7 @@ AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
 HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/mijn-gemeente.css?v=2">'
         '<link rel="preconnect" href="https://api.pdok.nl" crossorigin>'
-        '<script src="/assets/mijn-gemeente.js?v=2" defer></script>')
+        '<script src="/assets/mijn-gemeente.js?v=3" defer></script>')
 
 SOURCES = [
     ('Organisaties.overheid.nl · Gemeenten (contactgegevens, CC0)', 'https://organisaties.overheid.nl/Gemeenten/'),
