@@ -15,7 +15,7 @@ AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
 HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/ov-planner.css?v=1">'
         '<link rel="preconnect" href="https://api.pdok.nl" crossorigin>'
-        '<script src="/assets/ov-planner.js?v=2" defer></script>')
+        '<script src="/assets/ov-planner.js?v=3" defer></script>')
 
 NS_PDF = 'https://ocp.ns.nl/caas/v1/media/92530/data/fa92c1f442da6fc8e87bd9b6773ddfbc/ns-prijslijst-2026-nl.pdf'
 SOURCES = [

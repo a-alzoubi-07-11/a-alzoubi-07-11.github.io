@@ -14,7 +14,7 @@ AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
 HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/kenteken-check.css?v=1">'
         '<link rel="preconnect" href="https://opendata.rdw.nl" crossorigin>'
-        '<script src="/assets/kenteken-check.js?v=1" defer></script>')
+        '<script src="/assets/kenteken-check.js?v=2" defer></script>')
 
 SOURCES = [
     ('RDW Open Data · Gekentekende voertuigen', 'https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2'),

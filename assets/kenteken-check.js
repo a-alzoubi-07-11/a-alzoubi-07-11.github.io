@@ -30,6 +30,7 @@
       history: 'سجل الفحوصات APK', defects: 'عيب', no_hist: 'لا يوجد سجل فحوصات منشور.', nl_note: 'وصف العيوب من RDW باللغة الهولندية.',
       milieu: 'المناطق البيئية (milieuzone)', milieu_txt: 'بعض المدن تمنع سيارات الديزل القديمة. تحقق من فئة الانبعاثات على موقع milieuzones.nl قبل الشراء.',
       tax: 'ضريبة الطريق', tax_txt: 'تُحسب حسب الوزن والوقود والمقاطعة. احسبها على موقع Belastingdienst.',
+      share_msg: 'قبل ما تشتري سيارة مستعملة، افحصها برقم اللوحة من سجل RDW الرسمي: الفحص الدوري والعداد والاستدعاءات. أداة مجانية بالعربي:',
       buy_h: 'قبل أن تشتري: 5 خطوات', official: 'افتح الفحص الرسمي على موقع RDW', share: 'شارك النتيجة', copied: 'تم نسخ الرابط',
       src: 'المصدر: بيانات RDW المفتوحة. المعلومات عامة ولا تُظهر الأضرار أو الحوادث أو الديون على السيارة.',
       kinds: { 'Personenauto': 'سيارة ركاب', 'Bedrijfsauto': 'سيارة تجارية (فان)', 'Motorfiets': 'دراجة نارية', 'Bromfiets': 'دراجة آلية (سكوتر)', 'Aanhangwagen': 'مقطورة', 'Oplegger': 'نصف مقطورة', 'Driewielig motorrijtuig': 'مركبة بثلاث عجلات', 'Bus': 'باص', 'Land- of bosb tractor': 'جرار زراعي' },
@@ -69,6 +70,7 @@
       history: 'APK-historie', defects: 'gebrek(en)', no_hist: 'Geen keuringshistorie gepubliceerd.', nl_note: '',
       milieu: 'Milieuzones', milieu_txt: 'Sommige steden weren oudere diesels. Controleer de emissieklasse op milieuzones.nl voordat u koopt.',
       tax: 'Motorrijtuigenbelasting', tax_txt: 'Hangt af van gewicht, brandstof en provincie. Bereken het bij de Belastingdienst.',
+      share_msg: 'Voordat je een tweedehands auto koopt: controleer het kenteken in het officiële RDW-register (APK, tellerstand, terugroepacties). Gratis kentekencheck:',
       buy_h: 'Voordat u koopt: 5 stappen', official: 'Open de officiële kentekencheck van de RDW', share: 'Deel de uitkomst', copied: 'Link gekopieerd',
       src: 'Bron: RDW Open Data. Dit zijn openbare gegevens; schade, ongelukken of schulden op het voertuig ziet u hier niet.',
       kinds: {}, colors: {}, fuels: {}, odoTxt: {},
@@ -225,6 +227,23 @@
     return html;
   }
 
+
+  // share a result: WhatsApp + native share/copy, with a result-specific message (also used by the page share bar)
+  function shareResult(out, sel, text, note) {
+    var url = location.href, sh = out.querySelector(sel);
+    if (window.gnShare) window.gnShare.set(text, url);
+    if (!sh) return;
+    var wa = document.createElement('a');
+    wa.className = 'tool-button'; wa.target = '_blank'; wa.rel = 'noopener';
+    wa.href = 'https://wa.me/?text=' + encodeURIComponent(text + '\n' + url);
+    wa.textContent = LANG === 'nl' ? 'WhatsApp' : 'واتساب';
+    sh.parentNode.insertBefore(wa, sh);
+    if (note) { var p = document.createElement('p'); p.className = 'muted'; p.textContent = note; sh.parentNode.parentNode.insertBefore(p, sh.parentNode.nextSibling); }
+    sh.addEventListener('click', function () {
+      if (navigator.share) { navigator.share({ title: document.title, text: text, url: url }).catch(function () {}); return; }
+      (navigator.clipboard ? navigator.clipboard.writeText(text + '\n' + url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
+    });
+  }
   function init() {
     var root = document.getElementById('kenteken-check');
     if (!root) return;
@@ -241,12 +260,7 @@
         out.innerHTML = render(k, res);
         input.value = pretty(k);
         try { history.replaceState(null, '', location.pathname + '?k=' + encodeURIComponent(k) + '#kenteken-check'); } catch (e) { /* ignore */ }
-        var sh = out.querySelector('.kc-share');
-        if (sh) sh.addEventListener('click', function () {
-          var url = location.href;
-          if (navigator.share) { navigator.share({ title: document.title, url: url }).catch(function () {}); return; }
-          (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { sh.textContent = '✅ ' + T.copied; }).catch(function () { window.prompt(T.share, url); });
-        });
+        shareResult(out, '.kc-share', T.share_msg, '');
         if (window.gtag) window.gtag('event', 'kenteken_check_result');
       }).catch(function (e) {
         out.innerHTML = '<p class="notice">' + (e && e.message === 'nf' ? T.nf : T.neterr) + '</p>';
