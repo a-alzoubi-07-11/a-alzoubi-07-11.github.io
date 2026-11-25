@@ -98,3 +98,26 @@ faq=[('Heeft elke student met een verblijfsvergunning recht op financiering?','N
 ('Wat als ik niet binnen 10 jaar afstudeer?','De ontvangen beurs wordt een schuld. Reken vooraf je realistische studieduur uit.'),
 ('Kan ik minder krijgen dan het maximum?','Ja. De aanvullende beurs hangt af van het ouderinkomen en de lening is vrijwillig; jij bepaalt het bedrag.')],
 src_note='Bronnen geraadpleegd op 4 oktober 2026. Voorwaarden en bedragen kunnen wijzigen; gebruik altijd de actuele pagina.')
+#deepen-2026-11-25 (DUO pages re-read 25-11-2026)
+AR['faq']+=[
+('أدرس MBO وعمري 17، هل أحصل على شيء؟','منتج السفر الطلابي (studentenreisproduct) نعم، حتى قبل 18. أما المنحة والقرض فمن عمر 18، ويبدآن من الربع الذي يلي عيد ميلادك الـ18.'),
+('هل يوجد حد أدنى للعمر في HBO والجامعة؟','لا. في HBO والجامعة لا يوجد حد أدنى للعمر.'),
+('ماذا يحدث عندما أبلغ 30 سنة؟','يستمر التمويل الذي بدأ قبل 30. لكن إذا أوقفته بعد 30 لا يمكنك تشغيله من جديد.'),
+('أدرس BBL أو دوام جزئي، هل أستحق؟','لا. التمويل للدراسة بدوام كامل أو الدراسة المزدوجة (duaal) في MBO BOL وHBO والجامعة فقط، وليس لـBBL أو الدوام الجزئي.'),
+('ما زلت أنتظر قرار الإقامة، ماذا أفعل؟','بحسب DUO: قدّم الطلب الآن، فيصلك رفض لأن شرط الإقامة غير متوفر. بعد أن تستلم الإقامة، تواصل مع DUO خلال 6 أسابيع، فإذا كانت كل الشروط متوفرة يمكن أن يُمنح لك التمويل بأثر رجعي.'),
+('عندي إقامة من النوع I، هل أستحق؟','ربما. DUO تطلب أن تستعمل «voorwaardenhulp» (أداة الشروط) على موقعها لتعرف إن كان لك حق.'),
+('متى يبدأ التمويل؟','يجب أن تكون مسجلاً في المدرسة يوم 1 من الشهر. إذا سُجّلت بعد يوم 1، يبدأ التمويل في الشهر التالي.'),
+('دراستي 4 سنوات، كم سنة أحصل على تمويل؟','7 سنوات: السنوات الأخيرة الثلاث قرض فقط، بدون منحة أساسية أو إضافية (مرحلة القرض leenfase).'),
+('حصلت على منحة إضافية أقل من الحد الأقصى، هل أستطيع تعويض الفرق؟','نعم، تستطيع استدانة الفرق فوق القرض العادي.')]
+AR['src_note']=AR['src_note'].rstrip('.')+'. وأعدنا قراءة صفحتي الشروط والمبالغ عند DUO في 25 نوفمبر 2026.'
+NL['faq']+=[
+('Ik doe mbo en ben 17. Krijg ik iets?','Het studentenreisproduct wel, ook vóór je 18e. Een beurs of lening pas vanaf 18; die gaat in vanaf het kwartaal na je 18e verjaardag.'),
+('Is er een minimumleeftijd voor hbo en universiteit?','Nee, voor hbo en universiteit geldt geen minimumleeftijd.'),
+('Wat gebeurt er als ik 30 word?','Studiefinanciering die vóór je 30e is ingegaan, loopt door. Zet je haar na je 30e stop, dan kun je niet opnieuw starten.'),
+('Ik doe bbl of deeltijd. Heb ik recht?','Nee. Studiefinanciering is alleen voor voltijd of duaal: mbo-bol, hbo en universiteit. Niet voor bbl of deeltijd.'),
+('Ik wacht nog op mijn verblijfsvergunning. Wat nu?','Volgens DUO: vraag het nu al aan; je krijgt een afwijzing omdat je niet aan de nationaliteitsvoorwaarde voldoet. Neem binnen 6 weken nadat je de vergunning hebt ontvangen contact op met DUO; voldoe je dan aan alle voorwaarden, dan kan het alsnog worden toegekend.'),
+('Ik heb een verblijfsvergunning type I. Heb ik recht?','Misschien. DUO vraagt je de voorwaardenhulp op de website te gebruiken om dat te bepalen.'),
+('Wanneer gaat het in?','Je moet op de 1e van de maand ingeschreven staan. Word je na de 1e ingeschreven, dan gaat je studiefinanciering een maand later in.'),
+('Mijn opleiding duurt 4 jaar. Hoe lang krijg ik studiefinanciering?','7 jaar; de laatste 3 jaar kun je alleen nog lenen, zonder basis- of aanvullende beurs (leenfase).'),
+('Ik krijg minder dan de maximale aanvullende beurs. Kan ik het verschil bijlenen?','Ja, je kunt het ontbrekende bedrag extra lenen bovenop de gewone rentedragende lening.')]
+NL['src_note']=NL['src_note'].rstrip('.')+'. Voorwaarden en bedragen bij DUO opnieuw gelezen op 25 november 2026.'

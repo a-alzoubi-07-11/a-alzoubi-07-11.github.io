@@ -54,3 +54,40 @@ src_note='SVB-pagina’s geraadpleegd op 4 oktober 2026 (bedragen 2026). Bedrage
 #xlink
 AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p>'
 NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p>'
+#deepen-2026-11-25 (SVB pages re-read 25-11-2026)
+AR['body']+=('<h2 id="first">متى تصلك أول دفعة؟ (أمثلة توضيحية)</h2>'
+'<p>تقول SVB: إذا وُلد الطفل في <strong>اليوم الأول</strong> من الربع (1 يناير أو 1 أبريل أو 1 يوليو أو 1 أكتوبر) تبدأ kinderbijslag من ذلك الربع. إذا وُلد <strong>بعد اليوم الأول</strong> تبدأ من الربع التالي، وتُدفع بعد انتهاء ذلك الربع.</p>'
+'<p><strong>أمثلة توضيحية وليست حالات أشخاص حقيقيين.</strong></p><ul>'
+'<li><strong>طفل وُلد في 15 أغسطس 2026:</strong> وُلد بعد بداية الربع الثالث، فتبدأ kinderbijslag من الربع الرابع (أكتوبر إلى ديسمبر)، وأول دفعة في <strong>4 يناير 2027</strong>: 298.40 يورو.</li>'
+'<li><strong>طفل وُلد في 1 أكتوبر 2026:</strong> وُلد في اليوم الأول من الربع، فتبدأ من الربع الرابع نفسه، وأول دفعة أيضاً في 4 يناير 2027.</li>'
+'<li><strong>طفل يكمل 6 سنوات في 20 فبراير 2027:</strong> في 1 أبريل 2027 (بداية الربع الثاني) يكون عمره 6، فيحصل على مبلغ فئة 6–11 عن الربع الثاني، ويُدفع في 1 يوليو 2027.</li></ul>'
+'<h2 id="pay2027">مواعيد الدفع القادمة</h2><p>بحسب SVB: <strong>4 يناير 2027</strong> (الربع الرابع 2026)، و<strong>1 أبريل 2027</strong> (الربع الأول)، و<strong>1 يوليو 2027</strong> (الربع الثاني)، و<strong>4 أكتوبر 2027</strong> (الربع الثالث). وقت وصول المال إلى حسابك بنفس اليوم يعتمد على بنكك.</p>'
+'<h2 id="baby">بعد ولادة طفل: ماذا تفعل خطوة بخطوة؟</h2><ol><li>سجّل الطفل في البلدية.</li><li><strong>الطفل الأول:</strong> انتظر من 3 إلى 6 أسابيع رسالة من SVB، ثم اطلب kinderbijslag عبر Mijn SVB. إذا لم تصلك رسالة بعد 6 أسابيع، تواصل مع SVB.</li><li><strong>الطفل الثاني أو التالي:</strong> إذا سجّلته في البلدية فلا تحتاج أن تفعل شيئاً؛ SVB تعدّل المبلغ وحدها وترسل لك رسالة.</li><li>سجّل الطفل عند شركة التأمين الصحي خلال <strong>4 أشهر</strong> من الولادة، حتى لو وُلد خارج هولندا، وإلا قد لا تُعوَّض مصاريفه الطبية.</li></ol>')
+AR['faq']+=[
+('طفلي وُلد في منتصف الربع، فهل أخسر هذا الربع؟','نعم، تبدأ kinderbijslag من الربع التالي، إلا إذا وُلد الطفل في اليوم الأول من الربع. مثلاً طفل وُلد في 15 أغسطس تبدأ مخصصاته من 1 أكتوبر.'),
+('رزقت بطفل ثانٍ، هل أقدّم طلباً جديداً؟','لا تحتاج عادةً. إذا سجّلت الطفل في البلدية تعدّل SVB المبلغ وحدها وترسل لك رسالة.'),
+('انفصلت عن زوجي، لمن تُدفع kinderbijslag؟','للوالد الذي يسكن عنده الطفل. إذا كان الطفل عندك ولست مقدّم الطلب، اطلبها عبر Mijn SVB.'),
+('عندنا رعاية مشتركة (co-ouderschap)، كيف تُقسم؟','تتفقان على طريقة التقسيم. إذا لم تتفقا، يحصل كل واحد على النصف.'),
+('هل تتأثر kinderbijslag إذا أخذ ابني (17 سنة) تمويل دراسة أو منتج السفر الطلابي؟','لا. بحسب SVB، تمويل الدراسة ومنتج السفر الطلابي من DUO لا يؤثران على kinderbijslag.'),
+('ابني عمره 16 ويسكن عند أقاربه بمدينة أخرى للدراسة، هل أستحق؟','نعم، إذا أنفقت 540 يورو على الأقل في الربع على معيشته، بحسب صفحة SVB الحالية.'),
+('متى تتوقف kinderbijslag؟','عندما يبلغ الطفل 18 سنة. الدفعة الأخيرة تأتي بعد انتهاء الربع الذي بلغ فيه 18، لأن الدفع يكون دائماً بعد انتهاء الربع.'),
+('ولد طفلي خارج هولندا ثم جاء إلينا، ماذا أفعل؟','اطلب kinderbijslag عبر Mijn SVB، وسجّل الطفل في البلدية، وأضفه إلى تأمينك الصحي خلال 4 أشهر.')]
+AR['src_note']='راجعنا صفحات SVB (المبالغ، مواعيد الدفع حتى أكتوبر 2027، الطلب، الأطفال 16 و17 سنة) في 25 نوفمبر 2026. المبالغ تتغير عادة مرتين في السنة؛ تحقق من الصفحة الحالية.'
+NL['body']+=('<h2 id="first">Wanneer komt de eerste betaling? (illustratieve voorbeelden)</h2>'
+'<p>Volgens de SVB: is je kind op de <strong>eerste dag</strong> van een kwartaal geboren (1 januari, 1 april, 1 juli of 1 oktober), dan gaat de kinderbijslag in vanaf dat kwartaal. Is je kind <strong>na de eerste dag</strong> geboren, dan vanaf het volgende kwartaal, uitbetaald na afloop van dat kwartaal.</p>'
+'<p><strong>Illustratief, geen echte personen.</strong></p><ul>'
+'<li><strong>Kind geboren op 15 augustus 2026:</strong> na de start van het 3e kwartaal, dus kinderbijslag vanaf het 4e kwartaal; eerste betaling op <strong>4 januari 2027</strong>: € 298,40.</li>'
+'<li><strong>Kind geboren op 1 oktober 2026:</strong> op de eerste dag van het kwartaal, dus vanaf het 4e kwartaal zelf; eerste betaling ook op 4 januari 2027.</li>'
+'<li><strong>Kind wordt 6 op 20 februari 2027:</strong> op 1 april 2027 (start 2e kwartaal) is het 6, dus het bedrag voor 6–11 jaar over het 2e kwartaal, betaald op 1 juli 2027.</li></ul>'
+'<h2 id="pay2027">Volgende betaaldagen</h2><p>Volgens de SVB: <strong>4 januari 2027</strong> (4e kwartaal 2026), <strong>1 april 2027</strong> (1e kwartaal), <strong>1 juli 2027</strong> (2e kwartaal) en <strong>4 oktober 2027</strong> (3e kwartaal). Hoe laat het geld op je rekening staat, hangt af van je bank.</p>'
+'<h2 id="baby">Na de geboorte: stap voor stap</h2><ol><li>Geef de geboorte aan bij de gemeente.</li><li><strong>Eerste kind:</strong> wacht 3 tot 6 weken op een bericht van de SVB en vraag dan kinderbijslag aan via Mijn SVB. Na 6 weken nog niets? Neem contact op met de SVB.</li><li><strong>Tweede of volgend kind:</strong> staat het ingeschreven bij de gemeente, dan hoef je niets te doen; de SVB past het bedrag aan en stuurt een brief.</li><li>Meld je kind binnen <strong>4 maanden</strong> na de geboorte aan bij je zorgverzekeraar, ook als het buiten Nederland is geboren.</li></ol>')
+NL['faq']+=[
+('Mijn kind is midden in een kwartaal geboren. Mis ik dat kwartaal?','Ja, kinderbijslag gaat in vanaf het volgende kwartaal, behalve als je kind op de eerste dag van het kwartaal is geboren. Geboren op 15 augustus? Dan vanaf 1 oktober.'),
+('Ons tweede kind is geboren. Moet ik opnieuw aanvragen?','Meestal niet. Staat je kind ingeschreven bij de gemeente, dan past de SVB het bedrag vanzelf aan en stuurt een brief.'),
+('We zijn uit elkaar. Wie krijgt de kinderbijslag?','De ouder bij wie het kind woont. Woont je kind bij jou en ben jij niet de aanvrager, vraag het dan aan via Mijn SVB.'),
+('Hoe wordt het verdeeld bij co-ouderschap?','Jullie spreken samen een verdeling af. Maken jullie geen afspraak, dan krijgt ieder de helft.'),
+('Heeft studiefinanciering of het studentenreisproduct van mijn kind van 17 invloed?','Nee. Volgens de SVB hebben studiefinanciering en het studentenreisproduct van DUO geen gevolgen voor de kinderbijslag.'),
+('Mijn kind van 16 woont voor school bij familie in een andere stad. Heb ik recht?','Ja, als je minstens € 540 per kwartaal aan het onderhoud besteedt, volgens de huidige SVB-pagina.'),
+('Wanneer stopt de kinderbijslag?','Als je kind 18 wordt. De laatste betaling volgt na afloop van het kwartaal waarin het 18 werd, omdat altijd achteraf wordt betaald.'),
+('Mijn kind is buiten Nederland geboren en komt nu bij ons wonen. Wat moet ik doen?','Vraag kinderbijslag aan via Mijn SVB, schrijf je kind in bij de gemeente en meld het binnen 4 maanden aan bij je zorgverzekeraar.')]
+NL['src_note']='SVB-pagina’s (bedragen, betaaldagen t/m oktober 2027, aanvragen, kinderen van 16 en 17) geraadpleegd op 25 november 2026. Bedragen wijzigen meestal twee keer per jaar; controleer de actuele pagina.'

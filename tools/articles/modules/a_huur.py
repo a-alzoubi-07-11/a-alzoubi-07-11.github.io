@@ -49,3 +49,38 @@ faq=[('Krijg ik geen huurtoeslag meer bij een te hoge huur?','Dat is vanaf 2026 
 ('Telt het inkomen van mijn huisgenoot mee?','Meestal wel, behalve dat van een onderhuurder.'),
 ('Hoeveel krijg ik precies?','Dat hangt af van huur, inkomen en huishouden. Gebruik de officiële proefberekening.')],
 src_note='Dienst Toeslagen geraadpleegd op 4 oktober 2026 (cijfers 2026). Inkomensgrenzen zijn per situatie verschillend; gebruik de officiële proefberekening.')
+#deepen-2026-11-25 (Dienst Toeslagen pages re-read 25-11-2026)
+AR['body']+=('<h2 id="y2027">ماذا يتغيّر في 2027؟</h2><p>نشرت Dienst Toeslagen أرقام 2027:</p>'
++T([['الإيجار الأقصى الذي يُحسب عليه البدل','932.93 يورو','959.71 يورو'],['نفس الحد إذا كان كل السكان دون 21 سنة','498.20 يورو','517.14 يورو'],['حد المدخرات لكل ساكن (في 1 يناير)','38,479 يورو','39,480 يورو'],['حد المدخرات للشريكين معاً','76,958 يورو','78,960 يورو']],['البند','2026','2027'])
++'<p>دائماً تدفع جزءاً من الإيجار بنفسك (نحو <strong>210 يورو</strong> بحسب Dienst Toeslagen)، ولا تحصل على بدل عن الجزء الذي يزيد على الإيجار الأقصى.</p>'
+'<h2 id="examples2">أمثلة توضيحية إضافية</h2><p><strong>أمثلة توضيحية وليست حالات أشخاص حقيقيين.</strong></p><ul>'
+'<li><strong>إيجار أساسي 1,000 يورو في 2026:</strong> البدل يُحسب كأن الإيجار 932.93 يورو؛ الـ67.07 يورو الزائدة تدفعها كاملة بنفسك. في 2027 يُحسب على 959.71 يورو.</li>'
+'<li><strong>شابان عمرهما 20 و25 يسكنان معاً:</strong> تُعتمد سنّ أكبر ساكن (25)، فيُحسب على الحد العادي وليس حد من هم دون 21.</li>'
+'<li><strong>إيجار 750 يورو منها 50 يورو servicekosten:</strong> من 2026 يُعتمد الإيجار الأساسي فقط، أي 700 يورو.</li>'
+'<li><strong>طفل دون 18 عنده مدخرات في حسابه:</strong> هذا المبلغ يُضاف إلى مدخراتك أنت في الحساب.</li></ul>')
+AR['faq']+=[
+('هل أحصل على huurtoeslag تلقائياً؟','لا. تطلبه بنفسك عبر Mijn toeslagen بـDigiD.'),
+('ما هو البيت «المستقل» (zelfstandig)؟','له باب مدخل خاص يُقفل، ومطبخ وحمّام (wc) خاصان، ومنذ 1 مارس 2024 أيضاً مكان استحمام خاص (دوش أو بانيو). لبعض الغرف غير المستقلة يمكن الحصول على البدل استثناءً.'),
+('هل أحصل على البدل لقارب سكني أو بيت عطلات؟','لا للقارب السكني (woonboot)، وغالباً لا لبيت العطلات (recreatiewoning).'),
+('هل يُدفع لي الإيجار كاملاً إذا كان دخلي قليلاً جداً؟','لا. تدفع دائماً جزءاً بنفسك، نحو 210 يورو بحسب Dienst Toeslagen.'),
+('عمري 20 سنة، ما الحد الذي يُطبَّق عليّ؟','من 2026 حد الشباب لمن هم دون 21 سنة: 498.20 يورو في 2026 و517.14 يورو في 2027. إذا كان معك ساكن عمره 21 أو أكثر يُطبَّق الحد العادي.'),
+('ما أرقام 2027؟','الإيجار الأقصى للحساب 959.71 يورو (517.14 لمن هم كلهم دون 21)، وحد المدخرات 39,480 يورو للشخص و78,960 للشريكين في 1 يناير 2027.'),
+('من يستلم البدل إذا كنا عدة سكان؟','مقدّم الطلب يستلم البدل عن البيت كله، لكن دخل ومدخرات السكان الآخرين يُحتسبان غالباً.')]
+AR['src_note']='راجعنا صفحات Dienst Toeslagen (الشروط، المبلغ، تغييرات 2026، أرقام 2027) في 25 نوفمبر 2026. احسب حالتك بالحساب التجريبي الرسمي.'
+NL['body']+=('<h2 id="y2027">Wat verandert er in 2027?</h2><p>Dienst Toeslagen heeft de bedragen voor 2027 gepubliceerd:</p>'
++T([['Maximale huur waarover huurtoeslag wordt berekend','€ 932,93','€ 959,71'],['Idem als alle bewoners jonger zijn dan 21','€ 498,20','€ 517,14'],['Vermogensgrens per bewoner (1 januari)','€ 38.479','€ 39.480'],['Vermogensgrens partners samen','€ 76.958','€ 78.960']],['Onderdeel','2026','2027'])
++'<p>Je betaalt altijd een deel van de huur zelf (ongeveer <strong>€ 210</strong> volgens Dienst Toeslagen), en over het deel boven de maximale huur krijg je geen huurtoeslag.</p>'
+'<h2 id="examples2">Meer illustratieve voorbeelden</h2><p><strong>Illustratief, geen echte personen.</strong></p><ul>'
+'<li><strong>Kale huur € 1.000 in 2026:</strong> de toeslag wordt berekend alsof de huur € 932,93 is; de € 67,07 daarboven betaal je volledig zelf. In 2027 wordt gerekend met € 959,71.</li>'
+'<li><strong>Twee jongeren van 20 en 25 wonen samen:</strong> de leeftijd van de oudste bewoner (25) telt, dus geldt de gewone grens en niet die voor jongeren onder 21.</li>'
+'<li><strong>Huur € 750 waarvan € 50 servicekosten:</strong> vanaf 2026 telt alleen de kale huur, dus € 700.</li>'
+'<li><strong>Thuiswonend kind onder 18 met spaargeld:</strong> dat bedrag telt mee bij jouw vermogen.</li></ul>')
+NL['faq']+=[
+('Krijg ik huurtoeslag automatisch?','Nee. Je vraagt het zelf aan in Mijn toeslagen met DigiD.'),
+('Wat is een zelfstandige woning?','Een woning met een eigen afsluitbare toegangsdeur, eigen keuken en wc, en sinds 1 maart 2024 ook een eigen douche of bad. Voor sommige onzelfstandige woningen kan het bij uitzondering wel.'),
+('Krijg ik huurtoeslag voor een woonboot of recreatiewoning?','Niet voor een woonboot, en meestal niet voor een recreatiewoning.'),
+('Wordt bij een heel laag inkomen de hele huur vergoed?','Nee. Je betaalt altijd een deel zelf, ongeveer € 210 volgens Dienst Toeslagen.'),
+('Ik ben 20. Welke grens geldt voor mij?','Vanaf 2026 geldt de jongerengrens tot 21 jaar: € 498,20 in 2026 en € 517,14 in 2027. Woont er iemand van 21 of ouder bij je, dan geldt de gewone grens.'),
+('Wat zijn de bedragen voor 2027?','Maximale huur voor de berekening € 959,71 (€ 517,14 als iedereen jonger is dan 21) en een vermogensgrens van € 39.480 per persoon en € 78.960 voor partners op 1 januari 2027.'),
+('Wie krijgt de toeslag als we met meer mensen wonen?','De aanvrager krijgt de huurtoeslag voor de hele woning, maar inkomen en vermogen van medebewoners tellen meestal mee.')]
+NL['src_note']='Pagina’s van Dienst Toeslagen (voorwaarden, bedrag, wijzigingen 2026, bedragen 2027) geraadpleegd op 25 november 2026. Maak voor je eigen situatie de officiële proefberekening.'

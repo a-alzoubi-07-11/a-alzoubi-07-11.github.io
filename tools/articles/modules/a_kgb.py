@@ -50,3 +50,28 @@ src_note='Dienst Toeslagen geraadpleegd op 4 oktober 2026. Bedragen per gezin zi
 #xlink
 AR['body']+='<p><strong>جرّب الحاسبة:</strong> <a href="/calculators/kindgebonden-budget.html">حاسبة kindgebonden budget 2026</a> تقدّر المبلغ حسب الدخل وعدد الأطفال وأعمارهم.</p>'
 NL['body']+='<p><strong>Probeer de rekenhulp:</strong> <a href="/nl/calculators/kindgebonden-budget.html">Kindgebonden budget berekenen 2026</a> geeft een schatting per jaar en maand.</p>'
+#deepen-2026-11-25 (Dienst Toeslagen pages re-read 25-11-2026)
+AR['body']+=('<h2 id="example-single">مثال توضيحي: والد وحيد بطفل واحد</h2><p><strong>أمثلة توضيحية وليست حالات أشخاص حقيقيين.</strong> بأرقام Dienst Toeslagen لعام 2026 (نفس أرقام <a href="/calculators/kindgebonden-budget.html">الحاسبة</a>):</p>'
+'<ul><li>أم وحيدة بلا شريك بدلات، عندها طفل عمره 8 سنوات، ودخلها السنوي 35,000 يورو.</li><li>المبلغ الأقصى لطفل واحد مع زيادة الوالد الوحيد: <strong>5,996</strong> يورو في السنة.</li><li>حد الدخل للوالد الوحيد 29,736 يورو، والتخفيض 7.6% مما فوقه: 7.6% × (35,000 − 29,736) = <strong>400.06</strong> يورو.</li><li>الصافي: 5,996 − 400.06 = <strong>5,595.94</strong> يورو في السنة، أي نحو <strong>466</strong> يورو في الشهر.</li></ul>'
+'<p>عندما يبلغ الطفل 12 سنة يرتفع المبلغ، والزيادة تبدأ <strong>بعد الشهر</strong> الذي أتم فيه 12 (أو 16) سنة.</p>')
+AR['faq']+=[
+('هل يجب أن أطلب kindgebonden budget بنفسي؟','ليس دائماً. إذا كنت تحصل على kinderopvangtoeslag أو huurtoeslag أو zorgtoeslag، تصلك رسالة من Dienst Toeslagen وحدها إن كان لك حق. وإلا تطلبه بنفسك عبر Mijn toeslagen.'),
+('متى تبدأ الزيادة عندما يبلغ طفلي 12 أو 16 سنة؟','بعد الشهر الذي أتم فيه 12 أو 16 سنة. مثلاً طفل يكمل 12 في 10 مارس، تبدأ الزيادة من أبريل.'),
+('أنا والد وحيد، هل أحصل على أكثر؟','نعم. الوالد الوحيد بلا شريك بدلات يحصل على زيادة (ALO-kop) فوق المبلغ العادي.'),
+('من يحصل على kindgebonden budget بعد الطلاق؟','الوالد الذي تُسجَّل kinderbijslag باسمه. إذا تغيّر هذا عند SVB، يتغيّر kindgebonden budget أيضاً.'),
+('طفلي عمره 17، هل يستمر المبلغ؟','نعم، ما دام عمره أقل من 18 والشروط الأخرى متوفرة. لطفل 16 أو 17 سنة لا تشترط Dienst Toeslagen دائماً وجود kinderbijslag؛ راجع شروط SVB.'),
+('ماذا لو قدّرت دخلي أقل من الحقيقة؟','عند الحساب النهائي بعد انتهاء السنة قد تضطر لإرجاع جزء من المبلغ. عدّل دخلك المتوقع في Mijn toeslagen حالما يتغير.'),
+('هل أحتاج DigiD للطلب؟','نعم، الطلب وتعديل البيانات عبر Mijn toeslagen يحتاجان DigiD.')]
+AR['src_note']='راجعنا صفحات Dienst Toeslagen (الشروط، المبلغ، الزيادة عند 12 و16 سنة) في 25 نوفمبر 2026. الأرقام لعام 2026؛ استخدم الحساب التجريبي الرسمي لحالتك.'
+NL['body']+=('<h2 id="example-single">Illustratief voorbeeld: alleenstaande ouder met één kind</h2><p><strong>Illustratief, geen echte personen.</strong> Met de bedragen van Dienst Toeslagen voor 2026 (dezelfde als in de <a href="/nl/calculators/kindgebonden-budget.html">rekenhulp</a>):</p>'
+'<ul><li>Alleenstaande moeder zonder toeslagpartner, kind van 8, inkomen € 35.000 per jaar.</li><li>Maximum voor 1 kind inclusief alleenstaande-ouderkop: <strong>€ 5.996</strong> per jaar.</li><li>Inkomensdrempel alleenstaande ouder € 29.736; vermindering 7,6% van het meerdere: 7,6% × (35.000 − 29.736) = <strong>€ 400,06</strong>.</li><li>Netto: 5.996 − 400,06 = <strong>€ 5.595,94</strong> per jaar, ongeveer <strong>€ 466</strong> per maand.</li></ul>'
+'<p>Wordt het kind 12, dan stijgt het bedrag; de verhoging gaat in <strong>na de maand</strong> waarin het kind 12 (of 16) wordt.</p>')
+NL['faq']+=[
+('Moet ik kindgebonden budget zelf aanvragen?','Niet altijd. Krijg je kinderopvangtoeslag, huurtoeslag of zorgtoeslag, dan krijg je vanzelf bericht van Dienst Toeslagen als je recht hebt. Anders vraag je het aan in Mijn toeslagen.'),
+('Wanneer gaat de verhoging bij 12 of 16 jaar in?','Na de maand waarin je kind 12 of 16 wordt. Wordt je kind 12 op 10 maart, dan vanaf april.'),
+('Ik ben alleenstaande ouder. Krijg ik meer?','Ja. Zonder toeslagpartner krijg je een extra bedrag (alleenstaande-ouderkop) bovenop het gewone bedrag.'),
+('Wie krijgt kindgebonden budget na een scheiding?','De ouder die de kinderbijslag op zijn naam heeft. Verandert dat bij de SVB, dan verandert ook het kindgebonden budget.'),
+('Mijn kind is 17. Loopt het door?','Ja, zolang je kind jonger is dan 18 en je aan de andere voorwaarden voldoet. Voor kinderen van 16 en 17 is kinderbijslag niet altijd nodig; lees de voorwaarden van de SVB.'),
+('Wat als ik mijn inkomen te laag heb ingeschat?','Bij de definitieve berekening na afloop van het jaar moet je dan mogelijk terugbetalen. Pas je verwachte inkomen aan in Mijn toeslagen zodra het verandert.'),
+('Heb ik DigiD nodig?','Ja, aanvragen en wijzigen in Mijn toeslagen gaat met DigiD.')]
+NL['src_note']='Pagina’s van Dienst Toeslagen (voorwaarden, bedrag, verhoging bij 12 en 16 jaar) geraadpleegd op 25 november 2026. Bedragen voor 2026; maak voor je eigen situatie de officiële proefberekening.'
