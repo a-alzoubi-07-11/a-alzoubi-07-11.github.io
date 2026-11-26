@@ -1,8 +1,58 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T06:50:32+01:00",
-  "validUntil": "2026-11-23T18:50:32+01:00",
+  "updatedAt": "2026-11-26T06:52:02+01:00",
+  "validUntil": "2026-11-26T18:52:02+01:00",
   "items": [
+    {
+      "source": "TK",
+      "publishedAt": "2026-11-24",
+      "firstSeen": "2026-11-26",
+      "category": {
+        "ar": "اللجوء",
+        "nl": "Asiel"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "البرلمان يطلب خطة منحة مغادرة بقيمة 10.000 يورو للسوريين ذوي الإقامة المؤقتة",
+        "nl": "Tweede Kamer vraagt regeling met vertrekpremie van € 10.000 voor Syriërs met tijdelijke verblijfsvergunning"
+      },
+      "summary": {
+        "ar": "اعتمد البرلمان في 24 نوفمبر مذكرة (motie) تطلب من الحكومة إعداد الخطة: تُدفع على أقساط وعند المغادرة الفعلية فقط. ليست قانوناً بعد ولا يوجد موعد بدء. ورُفض اقتراح وقف اللجوء الكامل.",
+        "nl": "Op 24 november nam de Kamer een motie aan: het kabinet moet een regeling uitwerken, uitbetaald in delen en alleen bij echt vertrek. Nog geen wet of startdatum. Een volledige asielstop werd verworpen."
+      },
+      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P19394&did=2026P19394",
+      "sourceName": {
+        "ar": "البرلمان (Tweede Kamer)",
+        "nl": "Tweede Kamer"
+      },
+      "tier": "official",
+      "id": "tk-2026-11-24-95c3f7a8"
+    },
+    {
+      "source": "TK",
+      "publishedAt": "2026-11-24",
+      "firstSeen": "2026-11-26",
+      "category": {
+        "ar": "الاندماج والجنسية",
+        "nl": "Inburgering en naturalisatie"
+      },
+      "status": "proposed",
+      "title": {
+        "ar": "البرلمان يطلب تقديم مشروع قانون رفع شرط اللغة للتجنس إلى B1 قبل أبريل 2027",
+        "nl": "Kamer wil vóór april 2027 een wetsvoorstel voor taaleis B1 bij naturalisatie"
+      },
+      "summary": {
+        "ar": "مذكرة اعتُمدت في 24 نوفمبر، ويُطلب أيضاً دراسة نموذج تدريجي (ingroeimodel) للحق في الضمان الاجتماعي للقادمين الجدد. لا شيء ساري المفعول بعد. ورُفض اقتراحا الإقامة 20 عاماً وشرط B2 للتجنس.",
+        "nl": "Motie aangenomen op 24 november; ook moet het kabinet een ingroeimodel voor sociale zekerheid voor nieuwkomers verkennen. Nog niets van kracht. Verworpen: 20 jaar verblijf en B2 voor naturalisatie."
+      },
+      "url": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen/detail?id=2026P19387&did=2026P19387",
+      "sourceName": {
+        "ar": "البرلمان (Tweede Kamer)",
+        "nl": "Tweede Kamer"
+      },
+      "tier": "official",
+      "id": "tk-2026-11-24-5a102b85"
+    },
     {
       "source": "SZW",
       "publishedAt": "2026-11-20",
@@ -202,128 +252,78 @@
       },
       "tier": "official",
       "id": "ind-2026-11-16-6b1b711c"
-    },
-    {
-      "source": "NOS",
-      "publishedAt": "2026-11-13",
-      "firstSeen": "2026-11-13",
-      "category": {
-        "ar": "تكاليف الرعاية الصحية",
-        "nl": "Zorgkosten"
-      },
-      "status": "reported",
-      "title": {
-        "ar": "وفق NOS: أقساط التأمين الصحي 2027 معروفة الآن وترتفع بفروق كبيرة بين الشركات",
-        "nl": "Volgens NOS: zorgpremies 2027 bekend, flinke stijging met grote verschillen"
-      },
-      "summary": {
-        "ar": "وفق NOS: القسط الشهري 2027 مثلاً CZ ‏177.25، DSW ‏173.25، Menzis ‏165.75 يورو. يرتفع eigen risico بـ15 يورو إلى 400 يورو. قيمة zorgtoeslag لعام 2027 لم تُعلن رسمياً بعد.",
-        "nl": "Volgens NOS: maandpremie 2027 o.a. CZ € 177,25, DSW € 173,25, Menzis € 165,75. Het eigen risico stijgt € 15 naar € 400. De zorgtoeslag voor 2027 is nog niet officieel bekend."
-      },
-      "url": "https://nos.nl/artikel/2639241-zorgpremies-stijgen-volgend-jaar-flink-maar-er-zijn-grote-verschillen",
-      "sourceName": {
-        "ar": "NOS",
-        "nl": "NOS"
-      },
-      "tier": "media",
-      "id": "nos-2026-11-13-b447ddb1"
-    },
-    {
-      "source": "UWV",
-      "publishedAt": "2026-11-11",
-      "firstSeen": "2026-11-14",
-      "category": {
-        "ar": "الإعانات والعمل",
-        "nl": "WW en werk"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "UWV: دخل إضافي في نوفمبر وديسمبر يعني WW أقل أو لا شيء في الشهر التالي",
-        "nl": "UWV: extra inkomsten in november en december, minder of geen WW de maand erna"
-      },
-      "summary": {
-        "ar": "من يعمل بجانب WW ويُدفع له كل 4 أسابيع يتلقى راتبين في نوفمبر، فتقل الإعانة في ديسمبر. مكافأة نهاية السنة تُخفض WW يناير. لا إعانة إذا تجاوز الدخل 87.5% من راتب WW الشهري.",
-        "nl": "Wie naast WW werkt en per 4 weken betaald wordt, krijgt in november 2 lonen en dus minder of geen WW in december. Een eindejaarsuitkering verlaagt de WW in januari. Boven 87,5% van uw WW-maandloon geen uitkering."
-      },
-      "url": "https://www.uwv.nl/nl/actueel/extra-inkomsten-geen-of-minder-ww-in-volgende-maand",
-      "sourceName": {
-        "ar": "UWV",
-        "nl": "UWV"
-      },
-      "tier": "official",
-      "id": "uwv-2026-11-11-d4e5578a"
     }
   ],
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters%5B0%5D%5Btype%5D=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-23",
-      "listingUrl": "https://www.tweedekamer.nl/nieuws/kamernieuws",
-      "result": "no-change"
+      "checkedAt": "2026-11-26",
+      "listingUrl": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen",
+      "result": "new"
     },
     {
       "source": "STAB",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
       "source": "NOS",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-23",
+      "checkedAt": "2026-11-26",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
