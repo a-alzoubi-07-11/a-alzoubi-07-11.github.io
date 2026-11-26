@@ -11,8 +11,8 @@ import make_kindgebondenbudget as k  # noqa: E402
 SLUG = 'permanent-residence-check'
 AR_PATH = f'calculators/{SLUG}.html'
 NL_PATH = f'nl/calculators/{SLUG}.html'
-k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=4">'
-          '<script src="/assets/permres-check.js?v=5" defer></script>')
+k.HEAD = ('<link rel="stylesheet" href="/assets/tools.css?v=1"><link rel="stylesheet" href="/assets/permres-check.css?v=5">'
+          '<script src="/assets/permres-check.js?v=6" defer></script>')
 k.SOURCES = [
     ('IND · Verblijfsvergunning EU-langdurig ingezetene', 'https://ind.nl/nl/verblijfsvergunningen/langdurig-ingezetene-eu/verblijfsvergunning-eu-langdurig-ingezetene'),
     ('IND · Verblijfsvergunning onbepaalde tijd aanvragen (regulier)', 'https://ind.nl/nl/vervangen-verlengen-vernieuwen-en-wijzigen/onbepaalde-tijd/verblijfsvergunning-onbepaalde-tijd-aanvragen'),
@@ -128,13 +128,13 @@ AR = dict(lang='ar', home='/', home_t='الرئيسية', tools='/tools.html', t
     title='فاحص الإقامة الدائمة والجنسية',
     page_title='فاحص الإقامة الدائمة والجنسية: ماذا يقول ملفك، ومتى تستحق EU-langdurig أو الجنسية؟',
     desc='أداة مجانية بالعربية: تقرأ نوع إقامتك (asiel أو regulier) وتطبّق عليه شروط IND، فتعطيك تقييماً من 5، والتواريخ المتوقعة للإقامة الدائمة والجنسية، والاستمارة الصحيحة 6009 أو 6011.',
-    summary='أجب عن أربع خطوات قصيرة، فيقرأ الفاحص ملفك كما يقرؤه موظف ملفات: يشرح نوع إقامتك وما يعنيه، ويفحص كل شرط، ويرسم لك <b>خريطة طريق بالتواريخ</b> من إقامتك الحالية إلى الإقامة الدائمة ثم <b>الجنسية الهولندية</b>، مع نصائح مبنية على إجاباتك، والاستمارة والأوراق الصحيحة.',
+    summary='جاوب على أسئلة قصيرة، كبسة وحدة لكل سؤال وبدون كتابة، وبتعرف فوراً: بتقدر تقدّم على <b>الإقامة الدائمة</b> أو <b>الجنسية الهولندية</b> هلق؟ وإذا لا، شو ناقصك ومن أي تاريخ بتقدر تقدّم. ولمين بدو تفاصيل أكتر، في فحص كامل مع الاستمارات والأوراق المطلوبة.',
     how_h='كيف يفكّر الفاحص؟',
     how=('يبدأ بنوع إقامتك لأن كل شيء يُبنى عليه: إقامة اللجوء تقدّم بالاستمارة 6011 للإقامة الأوروبية فقط، والإقامة العادية بالاستمارة 6009 للمسارين، '
          'والغرض المؤقت يغلق الطريق. ثم يحسب المدة من تاريخ بدء إقامتك (الدراسة بالنصف للأوروبية)، ويفحص الغياب والاندماج والدخل حسب نوع العقد، '
          'ويحسب متى يُفتح كل باب: الإقامة الأوروبية، والإقامة العادية الدائمة، والتجنّس، الذي لا يشترط دخلاً، ويُفتح بعد 3 سنوات مع شريك هولندي. '
          'ويكتشف الإجابات المتناقضة وينبّهك إليها. كل شيء يُحسب في متصفحك ولا نحفظ أي إجابة.'),
-    form_h='افحص ملفك',
+    form_h='افحص وضعك',
     noscript='الفاحص يحتاج JavaScript. اقرأ الشروط في الجداول أدناه أو في دليل الإقامة الأوروبية الدائمة.',
     F=dict(private='لا نحفظ إجاباتك', next='التالي', back='السابق', go='اقرأ ملفي',
         s1='1. وضعك القانوني', s2='2. منذ متى أنت هنا؟', s3='3. الاندماج', s4='4. الدخل وعقد العمل',
@@ -211,7 +211,7 @@ NL = dict(lang='nl', home='/nl/', home_t='Home', tools='/nl/tools.html', tools_t
     title='Check permanent verblijf en naturalisatie',
     page_title='Check permanent verblijf en naturalisatie: wat zegt jouw dossier en wanneer kun je EU-langdurig of Nederlander worden?',
     desc='Gratis check: leest je verblijfsvergunning (asiel of regulier), past de IND-voorwaarden toe en geeft een score van 5, de verwachte data voor permanent verblijf en naturalisatie, en het juiste formulier 6009 of 6011.',
-    summary='Beantwoord vier korte stappen en de check leest je dossier zoals een behandelaar dat doet: uitleg over je vergunning, elke voorwaarde getoetst, een <b>routekaart met data</b> van je huidige vergunning naar permanent verblijf en <b>het Nederlanderschap</b>, persoonlijk advies, en het juiste formulier met documenten.',
+    summary='Beantwoord korte vragen, één tik per vraag en niets typen, en je ziet meteen: kun je nu <b>permanent verblijf</b> of het <b>Nederlanderschap</b> aanvragen? Zo niet, wat ontbreekt er en vanaf welke datum kan het wel. Wil je meer detail, dan is er een volledige check met formulieren en documenten.',
     how_h='Hoe denkt de check?',
     how=('Alles begint bij je vergunning: met een asielvergunning vraag je met formulier 6011 alleen EU-langdurig aan, met een reguliere vergunning met 6009 beide routes, '
          'en een tijdelijk doel sluit de weg af. Daarna rekenen we vanaf de startdatum van je verblijf (studie telt half voor EU-langdurig), toetsen afwezigheid, inburgering en inkomen per soort contract, '

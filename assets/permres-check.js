@@ -737,6 +737,222 @@
   }
   function actions() { return '<div class="tool-actions"><button type="button" class="tool-button prc-again">' + T.again + '</button><button type="button" class="tool-button primary prc-print">' + T.print + '</button></div>'; }
 
+  // ---------- quick check: one question per screen, big buttons, no typing. Fills the detailed form and reuses the same engine.
+  var Y0 = NOW.getFullYear();
+  var Q = AR ? {
+    title: 'الفحص السريع', sub: 'أسئلة قصيرة، كبسة وحدة لكل سؤال. ما في كتابة.', qn: function (a, b) { return 'سؤال ' + a + ' من ' + b; },
+    back: '→ رجوع', full: 'بدك فحص مفصّل وأدق؟ افتح الفحص الكامل', quick: '← ارجع للفحص السريع', private: 'ما منحفظ أجوبتك',
+    resH: 'النتيجة باختصار', approx: 'هاي نتيجة تقريبية حسب أجوبتك. لنتيجة أدق (مثلاً إذا عندك جنسية تركية، أو بلا جنسية، أو عندك حكم أو قضية) استعمل الفحص الكامل.',
+    have: '✅ عندك ياها', na: '🚫 مش متاحة لنوع إقامتك', ready: '✅ تقريباً جاهز، بتقدر تقدّم هلق', from: function (d) { return '⏳ بتقدر تقدّم من ' + d; },
+    notyet: '❌ لسا', close: '🟡 قريب، في نقاط لازم تتأكد منها', miss: 'ناقصك: ', also: '، والمدة بتكتمل في ',
+    todoH: 'شو لازم تعمل هلق؟', more: 'شوف التقرير الكامل (الشروط، الاستمارات، الأوراق)', again: 'ابدأ من جديد', print: 'اطبع أو احفظ PDF',
+    monthNote: 'ما حددت الشهر، فحسبنا البداية من آخر السنة احتياطاً. التاريخ الحقيقي ممكن يكون أبكر.',
+    rows: { eu: 'الإقامة الدائمة الأوروبية', reg: 'الإقامة الدائمة العادية', nat: 'الجنسية الهولندية' },
+    months: ['كانون الثاني (1)', 'شباط (2)', 'آذار (3)', 'نيسان (4)', 'أيار (5)', 'حزيران (6)', 'تموز (7)', 'آب (8)', 'أيلول (9)', 'تشرين الأول (10)', 'تشرين الثاني (11)', 'كانون الأول (12)'],
+    q: {
+      permit: ['شو نوع إقامتك هلق؟', 'شوف بطاقة الإقامة (verblijfsdocument). النوع مكتوب عليها.'],
+      purpose: ['ليش أعطوك هالإقامة؟', 'مكتوب على البطاقة تحت «verblijfsdoel» أو بالرسالة من IND.'],
+      year: ['من أي سنة عندك إقامة بهولندا بدون انقطاع؟', 'السنة اللي بلشت فيها أول إقامة، وما انقطعت بعدها.'],
+      month: ['بأي شهر تقريباً؟', 'إذا ما بتذكر، اكبس «ما بتذكر».'],
+      age: ['قديش عمرك؟', ''],
+      travel: ['سافرت برا هولندا خلال السنين الأخيرة؟', 'احسب كل السفرات من وقت ما أخدت الإقامة.'],
+      gap: ['صار مرة انتهت إقامتك وما جددتها بالوقت؟', ''],
+      inb: ['شو وضعك بالاندماج (inburgering)؟', ''],
+      src: ['من وين دخلك الأساسي؟', ''],
+      contract: ['شو نوع عقد الشغل؟', ''],
+      hist: ['كان راتبك كافي آخر 3 سنين بدون ولا شهر فاضي؟', 'يعني اشتغلت كل الوقت وما نزل راتبك تحت الحد.'],
+      dur: ['صرلك أكتر من سنة ونص على هالدخل؟', ''],
+      salary: ['قديش راتبك الإجمالي بالشهر (brutto)؟', 'المبلغ قبل الضرايب، بدون بدل العطلة (vakantiegeld). مكتوب على قسيمة الراتب.'],
+      partner: ['عايش مع زوج أو زوجة أو شريك؟', ''],
+      dpYears: ['صرلكم ساكنين سوا قديش؟', ''],
+      pInc: ['زوجك أو شريكك بيشتغل؟ قديش راتبه الإجمالي بالشهر؟', 'بيساعد إذا راتبك لحالك ما بيكفي. لازم يكون عقده سنة أو أكتر.']
+    },
+    o: {
+      permit: [['asiel_bt', 'إقامة لجوء مؤقتة', 'asiel bepaalde tijd · النوع III'], ['asiel_ot', 'إقامة لجوء دائمة', 'asiel onbepaalde tijd · النوع IV'],
+        ['reg_bt', 'إقامة لمّ شمل أو زواج أو شغل أو دراسة', 'regulier bepaalde tijd · النوع I'], ['reg_ot', 'إقامة عادية دائمة', 'regulier onbepaalde tijd · النوع II'],
+        ['eu_lt', 'إقامة أوروبية دائمة', 'EU-langdurig ingezetene · النوع V'], ['none', 'ما عندي إقامة هلق', '']],
+      purpose: [['partner', 'لأعيش مع زوجي أو عيلتي', 'verblijf bij partner / gezinslid'], ['arbeid', 'للشغل', 'arbeid in loondienst / kennismigrant'],
+        ['studie', 'للدراسة', 'studie'], ['other_t', 'سبب تاني مؤقت', 'مثلاً علاج أو تدريب أو au pair']],
+      age: [['16', 'أقل من 18', ''], ['35', 'من 18 لـ 66', ''], ['70', '67 أو أكبر', '']],
+      travel: [['ok', 'لا، أو سفرات قصيرة بس', 'كلها مع بعض أقل من 10 أشهر'], ['tot', 'سفرات كتير', 'مع بعض أكتر من 10 أشهر بآخر 5 سنين'], ['long', 'غبت أكتر من 6 أشهر ورا بعض', 'مرة وحدة على الأقل']],
+      gap: [['no', 'لا، دايماً جددت بالوقت', ''], ['yes', 'نعم، صار فترة بلا إقامة', '']],
+      inb: [['diploma', 'نجحت وأخدت الشهادة', 'inburgeringsdiploma أو certificaat أو Z-route'], ['exempt_other', 'معفى', 'إعفاء طبي أو غيره من DUO'], ['busy', 'عم أدرس هلق', ''], ['none', 'لسا ما بلشت', '']],
+      src: [['loon', 'شغل بعقد عند شركة', ''], ['uitzend', 'شغل عن طريق وكالة', 'uitzendbureau'], ['zzp', 'شغل حر', 'zzp / eenmanszaak'], ['ww_zw', 'إعانة بطالة أو مرض', 'WW أو ZW'],
+        ['aow', 'تقاعد', 'AOW أو pensioen'], ['bijstand', 'مساعدة من البلدية', 'bijstand / uitkering gemeente'], ['none', 'ما عندي دخل', 'زوجي أو شريكي بيشتغل']],
+      contract: [['vast', 'عقد دائم', 'vast / onbepaalde tijd'], ['t12', 'عقد مؤقت باقي منه سنة أو أكتر', ''], ['t6', 'عقد مؤقت باقي منه أقل من سنة', ''], ['flex', 'عقد ساعات متغيرة أو صفر ساعات', 'oproep / nuluren / min-max']],
+      hist: [['yes', 'نعم', ''], ['no', 'لا، أو ما بعرف', '']],
+      dur: [['yes', 'نعم', ''], ['no', 'لا', '']],
+      salary: [['1500', 'أقل من 1,600 يورو', ''], ['1700', 'من 1,600 لـ 1,750 يورو', ''], ['2000', 'من 1,750 لـ 2,300 يورو', ''], ['2500', 'أكتر من 2,300 يورو', '']],
+      partner: [['no', 'لا', ''], ['married', 'نعم، متزوج من شخص هولندي الجنسية', ''], ['cohab', 'نعم، ساكن مع شريك هولندي بدون زواج', ''], ['other', 'نعم، شريكي مش هولندي', '']],
+      dpYears: [['0.5', 'أقل من سنة', ''], ['1', 'سنة', ''], ['2', 'سنتين', ''], ['3', '3 سنين أو أكتر', '']],
+      pInc: [['0', 'لا، ما بيشتغل', ''], ['700', 'نعم، أقل من 1,000 يورو', ''], ['1500', 'نعم، من 1,000 لـ 2,000 يورو', ''], ['2200', 'نعم، أكتر من 2,000 يورو', '']]
+    }
+  } : {
+    title: 'Snelle check', sub: 'Korte vragen, één tik per vraag. Niets typen.', qn: function (a, b) { return 'Vraag ' + a + ' van ' + b; },
+    back: '← Terug', full: 'Liever een uitgebreide, preciezere check? Open de volledige check', quick: '← Terug naar de snelle check', private: 'We bewaren je antwoorden niet',
+    resH: 'De uitkomst in het kort', approx: 'Dit is een schatting op basis van je antwoorden. Voor een preciezere uitkomst (bijvoorbeeld met de Turkse nationaliteit, staatloos, of met een veroordeling of lopende zaak) gebruik je de volledige check.',
+    have: '✅ Heb je al', na: '🚫 Niet mogelijk met jouw vergunning', ready: '✅ Bijna klaar, je kunt nu aanvragen', from: function (d) { return '⏳ Aanvragen vanaf ' + d; },
+    notyet: '❌ Nog niet', close: '🟡 Dichtbij, een paar punten moet je nagaan', miss: 'Je mist: ', also: ', en de termijn is vol in ',
+    todoH: 'Wat moet je nu doen?', more: 'Bekijk het volledige rapport (voorwaarden, formulieren, documenten)', again: 'Opnieuw beginnen', print: 'Print of bewaar als pdf',
+    monthNote: 'Je koos geen maand; we rekenen voor de zekerheid vanaf eind dat jaar. De echte datum kan eerder zijn.',
+    rows: { eu: 'EU-langdurig ingezetene', reg: 'Regulier onbepaalde tijd', nat: 'Nederlanderschap' },
+    months: ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'],
+    q: {
+      permit: ['Welke verblijfsvergunning heb je nu?', 'Kijk op je verblijfsdocument; het type staat erop.'],
+      purpose: ['Waarvoor kreeg je deze vergunning?', 'Dit staat op je pas bij het verblijfsdoel of in de brief van de IND.'],
+      year: ['Sinds welk jaar woon je onafgebroken legaal in Nederland?', 'Het jaar van je eerste vergunning, zonder onderbreking daarna.'],
+      month: ['In welke maand ongeveer?', 'Weet je het niet meer? Tik op «Weet ik niet».'],
+      age: ['Hoe oud ben je?', ''],
+      travel: ['Ben je de laatste jaren in het buitenland geweest?', 'Tel alle reizen sinds je vergunning.'],
+      gap: ['Is je vergunning ooit verlopen voordat je verlengde?', ''],
+      inb: ['Hoe staat het met je inburgering?', ''],
+      src: ['Waar komt je inkomen vooral vandaan?', ''],
+      contract: ['Wat voor arbeidscontract heb je?', ''],
+      hist: ['Was je inkomen de laatste 3 jaar steeds genoeg, zonder lege maanden?', 'Je werkte de hele tijd en je loon zakte niet onder de norm.'],
+      dur: ['Heb je dit inkomen al langer dan anderhalf jaar?', ''],
+      salary: ['Hoeveel is je brutoloon per maand?', 'Vóór belasting, zonder vakantiegeld. Staat op je loonstrook.'],
+      partner: ['Woon je samen met een partner?', ''],
+      dpYears: ['Hoe lang wonen jullie al samen?', ''],
+      pInc: ['Werkt je partner? Hoeveel bruto per maand?', 'Telt mee als jouw inkomen alleen niet genoeg is. Het contract moet een jaar of langer zijn.']
+    },
+    o: {
+      permit: [['asiel_bt', 'Asiel bepaalde tijd', 'type III'], ['asiel_ot', 'Asiel onbepaalde tijd', 'type IV'], ['reg_bt', 'Gezinshereniging, partner, werk of studie', 'regulier bepaalde tijd · type I'],
+        ['reg_ot', 'Regulier onbepaalde tijd', 'type II'], ['eu_lt', 'EU-langdurig ingezetene', 'type V'], ['none', 'Ik heb nu geen vergunning', '']],
+      purpose: [['partner', 'Bij mijn partner of gezin', 'verblijf bij partner / gezinslid'], ['arbeid', 'Werk', 'arbeid in loondienst / kennismigrant'], ['studie', 'Studie', ''], ['other_t', 'Ander tijdelijk doel', 'bijv. medische behandeling, stage, au pair']],
+      age: [['16', 'Jonger dan 18', ''], ['35', '18 tot en met 66', ''], ['70', '67 of ouder', '']],
+      travel: [['ok', 'Nee, of alleen korte reizen', 'samen minder dan 10 maanden'], ['tot', 'Veel reizen', 'samen meer dan 10 maanden in de laatste 5 jaar'], ['long', 'Ooit langer dan 6 maanden aaneen weg', '']],
+      gap: [['no', 'Nee, altijd op tijd verlengd', ''], ['yes', 'Ja, er was een periode zonder vergunning', '']],
+      inb: [['diploma', 'Geslaagd', 'inburgeringsdiploma, certificaat of Z-route'], ['exempt_other', 'Vrijgesteld', 'medisch of anders, via DUO'], ['busy', 'Ik ben bezig', ''], ['none', 'Nog niet begonnen', '']],
+      src: [['loon', 'Werk in loondienst', ''], ['uitzend', 'Werk via een uitzendbureau', ''], ['zzp', 'Zelfstandige', 'zzp / eenmanszaak'], ['ww_zw', 'WW- of ZW-uitkering', ''],
+        ['aow', 'AOW of pensioen', ''], ['bijstand', 'Bijstand', ''], ['none', 'Geen inkomen', 'mijn partner werkt']],
+      contract: [['vast', 'Vast contract', ''], ['t12', 'Tijdelijk, nog 12 maanden of langer', ''], ['t6', 'Tijdelijk, nog korter dan 12 maanden', ''], ['flex', 'Oproep, nuluren of min-max', '']],
+      hist: [['yes', 'Ja', ''], ['no', 'Nee of weet ik niet', '']],
+      dur: [['yes', 'Ja', ''], ['no', 'Nee', '']],
+      salary: [['1500', 'Minder dan € 1.600', ''], ['1700', '€ 1.600 tot € 1.750', ''], ['2000', '€ 1.750 tot € 2.300', ''], ['2500', 'Meer dan € 2.300', '']],
+      partner: [['no', 'Nee', ''], ['married', 'Ja, getrouwd met een Nederlander', ''], ['cohab', 'Ja, ongehuwd samen met een Nederlander', ''], ['other', 'Ja, mijn partner is geen Nederlander', '']],
+      dpYears: [['0.5', 'Korter dan een jaar', ''], ['1', 'Een jaar', ''], ['2', 'Twee jaar', ''], ['3', 'Drie jaar of langer', '']],
+      pInc: [['0', 'Nee', ''], ['700', 'Ja, minder dan € 1.000', ''], ['1500', 'Ja, € 1.000 tot € 2.000', ''], ['2200', 'Ja, meer dan € 2.000', '']]
+    }
+  };
+  (function () {
+    var years = []; for (var y = Y0; y > Y0 - 15; y--) years.push([String(y), String(y), '']);
+    years.push([String(Y0 - 16), AR ? 'قبل ' + (Y0 - 14) : 'Vóór ' + (Y0 - 14), '']);
+    Q.o.year = years;
+    Q.o.month = Q.months.map(function (m, i) { return [String(i + 1), m, '']; }).concat([['x', AR ? 'ما بتذكر' : 'Weet ik niet', '']]);
+  })();
+  var A = {};
+  var FLOW = [
+    ['permit'], ['purpose', function () { return A.permit === 'reg_bt'; }],
+    ['year', function () { return A.permit !== 'none'; }], ['month', function () { return A.permit !== 'none'; }],
+    ['age', function () { return A.permit !== 'none'; }], ['travel', function () { return A.permit !== 'none'; }], ['gap', function () { return A.permit !== 'none'; }],
+    ['inb', function () { return A.permit !== 'none'; }], ['src', function () { return A.permit !== 'none'; }],
+    ['contract', function () { return A.src === 'loon' || A.src === 'uitzend'; }],
+    ['hist', function () { return (A.src === 'loon' || A.src === 'uitzend') && (A.contract === 't6' || A.contract === 'flex'); }],
+    ['dur', function () { return A.src === 'zzp' || A.src === 'ww_zw'; }],
+    ['salary', function () { return ['loon', 'uitzend', 'zzp', 'ww_zw', 'aow'].indexOf(A.src) >= 0; }],
+    ['partner', function () { return A.permit !== 'none'; }],
+    ['dpYears', function () { return A.partner === 'married' || A.partner === 'cohab'; }],
+    ['pInc', function () { return A.partner && A.partner !== 'no'; }]
+  ];
+  var hist = [];
+  var qbox = document.createElement('div'); qbox.className = 'prq';
+  root.insertBefore(qbox, root.querySelector('.prc-head'));
+  var toFull = document.createElement('p'); toFull.className = 'prq-switch';
+  toFull.innerHTML = '<button type="button" class="prq-link">' + Q.full + '</button>';
+  root.insertBefore(toFull, root.querySelector('.prc-head'));
+  function active(k) { return !FLOW[k][1] || FLOW[k][1](); }
+  function nextIdx(i) { for (var k = i + 1; k < FLOW.length; k++) if (active(k)) return k; return -1; }
+  function total() { var n = 0; for (var k = 0; k < FLOW.length; k++) if (active(k)) n++; return n; }
+  function setv(n, v) {
+    var el = form.elements[n]; if (!el) return;
+    if (el.length && !el.tagName) { for (var i = 0; i < el.length; i++) el[i].checked = el[i].value === v; }
+    else if (el.type === 'checkbox') el.checked = !!v; else el.value = v;
+  }
+  function fill() {
+    form.reset();
+    var abs = { ok: [1, 2], tot: [3, 11], long: [7, 7] }[A.travel || 'ok'];
+    var m = A.month === 'x' || !A.month ? 12 : +A.month, yv = A.year || String(Y0);
+    if (+yv === Y0 && m > NOW.getMonth() + 1) m = NOW.getMonth() + 1;
+    var V = { permit: A.permit, purpose: A.purpose || '', nat: 'other', age: A.age || '35', origin: 'adult', startMonth: String(m), startYear: yv,
+      studyYears: A.purpose === 'studie' ? '0' : '0', absLong: String(abs[0]), absTotal: String(abs[1]), gap: A.gap || 'no', brp: 'yes', crime: 'no',
+      inb: A.inb || 'none', src: A.src || 'none', contract: A.contract || 'vast', hist12: A.hist || 'no', hist36: A.hist || 'no', bij3: 'no',
+      salary: A.salary || '0', vg: 'yearly', zzpMonths: A.dur === 'yes' ? '24' : '6', zzpProfit: A.salary || '0', benMonths: A.dur === 'yes' ? '24' : '6',
+      dpartner: A.partner === 'married' || A.partner === 'cohab' ? A.partner : 'no', dpYears: A.dpYears || '0',
+      partner: A.pInc && A.pInc !== '0' ? 'yes' : 'no', pDur: 'yes', pIncome: A.pInc || '0' };
+    if (V.purpose === 'other_t') V.purpose = 'medisch';
+    Object.keys(V).forEach(function (k) { setv(k, V[k]); });
+    refresh();
+  }
+  function ask(i) {
+    var key = FLOW[i][0], q = Q.q[key], opts = Q.o[key], n = hist.length + 1;
+    qbox.innerHTML = '<div class="prq-top"><span>' + Q.qn(n, n + Math.max(0, total() - n)) + '</span><span><i class=gi-lock aria-hidden=true></i> ' + Q.private + '</span></div>'
+      + '<div class="prc-progress prq-bar" aria-hidden="true"><span style="width:' + Math.round(n / total() * 100) + '%"></span></div>'
+      + '<h3 class="prq-q" tabindex="-1">' + q[0] + '</h3>' + (q[1] ? '<p class="prq-h">' + q[1] + '</p>' : '')
+      + '<div class="prq-opts' + (key === 'year' || key === 'month' ? ' grid' : '') + '">' + opts.map(function (o) {
+        return '<button type="button" class="prq-o' + (A[key] === o[0] ? ' on' : '') + '" data-v="' + o[0] + '"><b>' + o[1] + '</b>' + (o[2] ? '<small>' + o[2] + '</small>' : '') + '</button>';
+      }).join('') + '</div>'
+      + (hist.length ? '<button type="button" class="prq-back">' + Q.back + '</button>' : '');
+    [].forEach.call(qbox.querySelectorAll('.prq-o'), function (b) {
+      b.addEventListener('click', function () {
+        A[key] = b.getAttribute('data-v'); hist.push(i);
+        var nx = nextIdx(i);
+        if (nx < 0) finish(); else ask(nx);
+      });
+    });
+    var bk = qbox.querySelector('.prq-back');
+    if (bk) bk.addEventListener('click', function () { ask(hist.pop()); });
+    var h = qbox.querySelector('.prq-q'); if (hist.length) { h.focus({ preventScroll: true }); qbox.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+  }
+  function row(r, name, due) {
+    var t;
+    if (!r.avail) t = r.have ? Q.have : Q.na;
+    else {
+      var onlyYears = r.fails && r.list.every(function (c) { return c.st !== 'fail' || c.id === 'years'; });
+      var yearsFail = r.list.some(function (c) { return c.id === 'years' && c.st === 'fail'; });
+      var miss = []; var mp = { permit: T.map.permit, absence: T.map.absence, brp: T.map.brp, inb: T.map.inb, zelf: T.map.income, duur: T.map.income, vold: T.map.income, age: '18+' };
+      r.list.forEach(function (c) { if (c.st === 'fail' && mp[c.id] && miss.indexOf(mp[c.id]) < 0) miss.push(mp[c.id]); });
+      if (!r.fails && due <= NOWM + 3) t = r.warns ? Q.close : Q.ready;
+      else if (onlyYears) t = Q.from(mdate(due));
+      else if (!r.fails) t = Q.from(mdate(due));
+      else t = Q.notyet + ' · ' + Q.miss + miss.join(AR ? '، ' : ', ') + (yearsFail && due > NOWM ? Q.also + mdate(due) : '');
+    }
+    var cl = !r.avail ? (r.have ? 'ok' : 'na') : (t === Q.ready ? 'ok' : t === Q.close || t.indexOf('⏳') === 0 ? 'warn' : 'fail');
+    return '<li class="prq-r ' + cl + '"><b>' + name + '</b><span>' + t + '</span></li>';
+  }
+  function finish() {
+    fill();
+    var R = evaluate();
+    var h = '<section class="prq-res"><h3>' + Q.resH + '</h3>';
+    if (R.p === 'none') h += '<p class="prq-big">' + T.permit.none.d + '</p>';
+    else {
+      h += '<ul class="prq-rows">';
+      if (R.eu) h += row(R.eu, Q.rows.eu, R.permanent ? NOWM : R.euDue);
+      if (R.reg) h += row(R.reg, Q.rows.reg, R.regDue);
+      if (R.nat) h += row(R.nat, Q.rows.nat, R.natDue);
+      h += '</ul>';
+      if (A.month === 'x') h += '<p class="prc-small">' + Q.monthNote + '</p>';
+      if (R.advice.length) h += '<h4>' + Q.todoH + '</h4><ol class="prq-todo">' + R.advice.slice(0, 3).map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ol>';
+    }
+    h += '<p class="prc-note">' + Q.approx + '</p>'
+      + '<div class="tool-actions"><button type="button" class="tool-button prq-again">' + Q.again + '</button><button type="button" class="tool-button secondary prq-print">' + Q.print + '</button></div>'
+      + '<details class="prq-more"><summary>' + Q.more + '</summary>' + render(R) + '</details></section>';
+    qbox.innerHTML = h;
+    var more = qbox.querySelector('.prq-more .tool-actions'); if (more) more.remove();
+    qbox.querySelector('.prq-again').addEventListener('click', function () { A = {}; hist = []; ask(0); qbox.scrollIntoView({ block: 'start', behavior: 'smooth' }); });
+    qbox.querySelector('.prq-print').addEventListener('click', function () { var d = qbox.querySelector('.prq-more'); if (d) d.open = true; window.print(); });
+    qbox.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    if (window.gtag) window.gtag('event', 'permres_quick_result');
+  }
+  function showFull(on) {
+    qbox.hidden = on;
+    form.hidden = !on; root.querySelector('.prc-nav').hidden = !on; root.querySelector('.prc-head').hidden = !on; root.querySelector('.prc-progress:not(.prq-bar)').hidden = !on;
+    out.hidden = true;
+    toFull.firstChild.textContent = on ? Q.quick : Q.full;
+    if (on) { go(0); top(); }
+  }
+  toFull.firstChild.addEventListener('click', function () { showFull(qbox.hidden === false); });
+
   refresh(); go(0);
-  root.querySelector('.prc-nav').hidden = false; form.hidden = false;
+  showFull(false);
+  ask(0);
 })();
