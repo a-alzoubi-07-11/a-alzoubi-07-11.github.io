@@ -125,8 +125,8 @@ NL_FAQ = [
     ('Werkt het ook voor motoren, scooters en aanhangers?', 'Ja, voor elk voertuig met een Nederlands kenteken dat bij de RDW geregistreerd is.'),
 ]
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي، والبيانات تأتي مباشرة من سجل RDW المفتوح. النتيجة معلومات عامة وليست تقرير فحص فني.',
-    'nl': 'Deze check is gemaakt met hulp van AI; de gegevens komen rechtstreeks uit het open RDW-register. De uitkomst is openbare informatie, geen technisch keuringsrapport.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 
