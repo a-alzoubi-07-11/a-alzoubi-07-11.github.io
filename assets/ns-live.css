@@ -1,0 +1,33 @@
+/* Treintijden live tool. Site tokens from style.css/main.css. */
+#ns-live .ns-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin:.8rem 0}
+#ns-live .ns-tabs button{min-height:44px;padding:0 1rem;border-radius:999px;border:1px solid var(--line);background:var(--soft);color:var(--text);font:inherit;font-weight:650;cursor:pointer}
+#ns-live .ns-tabs button[aria-selected=true]{background:#003082;color:#fff;border-color:#003082}
+#ns-live form{display:grid;gap:.8rem;margin:.8rem 0;max-width:560px}
+#ns-live .ns-f{display:grid;gap:.3rem;position:relative}
+#ns-live .ns-f span{font-weight:650}
+#ns-live .ns-f input{min-height:52px;font-size:1.05rem}
+#ns-live .ns-list{position:absolute;inset-inline:0;top:100%;z-index:20;margin:.2rem 0 0;padding:.3rem;list-style:none;background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.12);max-height:300px;overflow:auto}
+#ns-live .ns-list li{padding:.6rem .7rem;border-radius:8px;cursor:pointer}
+#ns-live .ns-list li:hover,#ns-live .ns-list li[aria-selected=true]{background:var(--soft)}
+#ns-live .tool-button.primary[type=submit]{min-height:54px;justify-content:center;font-size:1.05rem}
+.ns-trips{list-style:none;padding:0;margin:.6rem 0;display:grid;gap:.6rem}
+.ns-trip{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.7rem .9rem;border-inline-start:5px solid #ffc917}
+.ns-trip-h{display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:baseline}
+.ns-time{font-size:1.3rem}
+.ns-meta{color:var(--muted)}
+.ns-fare{margin-inline-start:auto}
+.ns-legs{list-style:none;padding:0;margin:.4rem 0 0;font-size:.95rem}
+.ns-legs li{padding:.25rem 0;border-top:1px dashed var(--line);text-align:left}
+.ns-late{color:#b42318;font-weight:700}
+.ns-bad{background:#b42318;color:#fff;border-radius:6px;padding:0 .35rem;font-size:.85rem}
+.ns-cx{opacity:.75}
+.ns-board{width:100%;border-collapse:collapse;font-size:.95rem}
+.ns-board th,.ns-board td{padding:.45rem .35rem;border-bottom:1px solid var(--line);text-align:start}
+.ns-msg td{font-size:.85rem;color:var(--muted);border-bottom:1px solid var(--line)}
+.ns-dis{list-style:none;padding:0;display:grid;gap:.5rem}
+.ns-dis li{background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;padding:.5rem .8rem}
+.ns-dis p{margin:.15rem 0}
+.ns-tag{display:inline-block;border-radius:6px;padding:0 .45rem;font-size:.85rem;font-weight:700;background:#fff4e0;color:#7a4b00}
+.ns-d-disruption .ns-tag{background:#fdecea;color:#8a1c12}.ns-d-calamity .ns-tag{background:#8a1c12;color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .ns-tag{background:#4a3410;color:#ffe7b8}:root:not([data-theme=light]) .ns-d-disruption .ns-tag{background:#4a1712;color:#ffd9d4}}
+@media(max-width:560px){.ns-fare{margin-inline-start:0;flex-basis:100%}}
