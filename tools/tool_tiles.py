@@ -10,6 +10,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # (icon, colour, ar_href, ar_title, ar_sub, nl_href, nl_title, nl_sub, is_new)
 TILES = [
+    ("<i class=gi-calendar aria-hidden=true></i>", "blue", "/calculators/schoolvakanties.html", "العطل المدرسية", "العطلة الجاية بمنطقتك وكل المواعيد حتى 2030",
+     "/nl/calculators/schoolvakanties.html", "Schoolvakanties", "Volgende vakantie in jouw regio, tot 2030", True),
     ("<i class=gi-euro aria-hidden=true></i>", "orange", "/calculators/stroomprijs-vandaag.html", "أرخص ساعات الكهرباء", "سعر الكهرباء كل ساعة اليوم وبكرا",
      "/nl/calculators/stroomprijs-vandaag.html", "Stroomprijs vandaag", "Goedkoopste uren vandaag en morgen", True),
     ("<i class=gi-home aria-hidden=true></i>", "green", "/calculators/mijn-gemeente.html", "بلديتي", "من رمزك البريدي: البلدية وأقرب محطة وخطة أول 30 يوم",
