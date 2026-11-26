@@ -14,7 +14,7 @@ const SCEN=[
 (async()=>{const b=await chromium.launch();let fail=0;
  for(const s of SCEN){const p=await b.newPage();
   await p.route(/googlesyndication|googletagmanager|doubleclick|fundingchoices|workers\.dev/,r=>r.abort());
-  await p.goto(`http://localhost:8765${s.lang}/calculators/permanent-residence-check.html`);await p.waitForSelector("form");
+  await p.goto(`http://localhost:8765${s.lang}/calculators/permanent-residence-check.html`);await p.waitForSelector("#prc form",{state:"attached"});
   const r=await p.evaluate(f=>{const form=document.querySelector(".prc form, form");
    for(const [k,v] of Object.entries(f)){const el=form.elements[k];if(!el)continue;if(el.length&&!el.tagName){for(const o of el)o.checked=o.value===v}else el.value=v;el.dispatchEvent?.(new Event("change",{bubbles:true}))}
    form.dispatchEvent(new Event("change",{bubbles:true}));form.requestSubmit();
