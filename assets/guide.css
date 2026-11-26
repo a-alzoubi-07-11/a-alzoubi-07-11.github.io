@@ -22,3 +22,37 @@
 .say-btn:hover,.say-btn:focus-visible{border-color:var(--accent,#0071e3)}
 .say-btn.say-on{background:var(--accent,#0071e3);color:#fff}
 @media print{.say-btn{display:none}}
+/* step-by-step guide system: stations, labelled boxes, sources, checklist */
+.st-route{list-style:none;padding:0;margin:1.2rem 0;display:flex;gap:.45rem;overflow-x:auto;scrollbar-width:thin}
+.st-route li{flex:1 0 auto}
+.st-route a{display:flex;flex-direction:column;align-items:center;gap:.15rem;min-width:84px;padding:.55rem .5rem;border:1px solid var(--line,#ddd);border-radius:14px;text-decoration:none;color:inherit;background:var(--card,#fff);font-size:.9rem;font-weight:650;text-align:center}
+.st-route a b{display:inline-flex;align-items:center;justify-content:center;width:1.9rem;height:1.9rem;border-radius:999px;background:var(--accent,#0071e3);color:#fff;font-size:.95rem}
+.st-route a:hover,.st-route a:focus-visible{border-color:var(--accent,#0071e3)}
+.st-legend{display:grid;gap:.4rem;margin:1rem 0;padding:.8rem 1rem;border:1px dashed var(--line,#ccc);border-radius:14px;font-size:.95rem}
+.st-legend span{display:flex;gap:.5rem;align-items:baseline}
+.st-num{display:block;font-size:.85rem;font-weight:700;color:var(--accent,#0071e3);letter-spacing:.02em;margin-bottom:.15rem}
+.box-rule,.box-tip,.box-open{border-radius:14px;padding:.75rem 1rem;margin:1rem 0;border-inline-start:6px solid}
+.box-rule{background:#eef4fd;border-color:#1b5fa8}
+.box-tip{background:#e9f7ee;border-color:#16803c}
+.box-open{background:#fff5dd;border-color:#b26a00}
+.box-rule>b:first-child,.box-tip>b:first-child,.box-open>b:first-child{display:block;font-size:.85rem;margin-bottom:.2rem}
+.box-rule>b:first-child{color:#1b5fa8}.box-tip>b:first-child{color:#16803c}.box-open>b:first-child{color:#8a5200}
+.st-src{font-size:.85rem;color:var(--muted,#6e6e73);border-top:1px solid var(--line,#e3e3e8);padding-top:.5rem;margin-top:1rem}
+.st-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.st-flow>div{border:1px solid var(--line,#ddd);border-radius:14px;padding:.8rem 1rem;background:var(--card,#fff)}
+.st-flow h3{margin:.1rem 0 .4rem;font-size:1.05rem}
+.st-flow .st-form{display:inline-block;font-size:1.4rem;font-weight:800;color:var(--accent,#0071e3)}
+.st-steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:.5rem}
+.st-steps>li{counter-increment:s;position:relative;padding:.6rem .8rem;padding-inline-start:3rem;border:1px solid var(--line,#e3e3e8);border-radius:12px;background:var(--card,#fff)}
+.st-steps>li::before{content:counter(s);position:absolute;inset-inline-start:.7rem;top:.55rem;width:1.7rem;height:1.7rem;border-radius:999px;background:var(--accent,#0071e3);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.gn-check{list-style:none;padding:0;margin:.4rem 0 1rem;display:grid;gap:.35rem}
+.gn-check label{display:flex;gap:.6rem;align-items:flex-start;padding:.5rem .7rem;border:1px solid var(--line,#e3e3e8);border-radius:10px;cursor:pointer;background:var(--card,#fff)}
+.gn-check input{width:20px;height:20px;flex:none;margin-top:.15rem;accent-color:#16803c}
+.gn-check label:has(input:checked){background:#e9f7ee;border-color:#9fd6b2}
+.gn-check-bar{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin:.5rem 0 1rem;font-weight:650}
+@media (max-width:560px){.st-flow{grid-template-columns:1fr}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .box-rule{background:#16243a}:root:not([data-theme=light]) .box-tip{background:#132a1d}:root:not([data-theme=light]) .box-open{background:#2c2410}:root:not([data-theme=light]) .gn-check label:has(input:checked){background:#132a1d;border-color:#245c3a}:root:not([data-theme=light]) .box-rule>b:first-child{color:#8cc2ff}:root:not([data-theme=light]) .box-tip>b:first-child{color:#8fe0ad}:root:not([data-theme=light]) .box-open>b:first-child{color:#f3c56b}}
+:root[data-theme=dark] .box-rule{background:#16243a}:root[data-theme=dark] .box-tip{background:#132a1d}:root[data-theme=dark] .box-open{background:#2c2410}:root[data-theme=dark] .gn-check label:has(input:checked){background:#132a1d;border-color:#245c3a}
+@media print{.st-route,.gn-check-bar button{display:none}.gn-check label{break-inside:avoid}}
+.st-route a,.st-route a:hover{text-decoration:none!important}
+.eur{white-space:nowrap;unicode-bidi:isolate}
