@@ -1,0 +1,39 @@
+/* Schoolvakanties tool. Site tokens from style.css/main.css. */
+#schoolvakanties .sv-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin:.8rem 0}
+#schoolvakanties .sv-r{min-height:64px;font-size:1.1rem;font-weight:700;border-radius:14px;border:2px solid var(--line);background:var(--card,#fff);color:inherit;cursor:pointer;padding:.4rem;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.15rem;line-height:1.25}
+#schoolvakanties .sv-r small{display:block;font-weight:500;font-size:.8rem;color:var(--muted)}
+#schoolvakanties .sv-r:hover,#schoolvakanties .sv-r:focus-visible{border-color:#1b5fa8}
+#schoolvakanties .sv-or{margin:.8rem 0 .3rem;font-weight:650}
+#schoolvakanties form{display:flex;gap:.5rem;flex-wrap:wrap;align-items:stretch}
+#schoolvakanties form input{flex:1 1 200px;min-height:50px;font-size:1.05rem}
+#schoolvakanties .sv-loc{margin-top:.6rem}
+.sv-head{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:.6rem 0}
+.sv-pill{background:#e8f0fb;color:#0d3a6b;border-radius:999px;padding:.35rem .9rem;font-weight:700}
+.sv-change{background:none;border:0;color:#1b5fa8;text-decoration:underline;cursor:pointer;font:inherit;padding:.3rem}
+.sv-big{background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:.8rem 1rem;margin:.8rem 0}
+.sv-big p{margin:.2rem 0}
+.sv-big .sv-k{font-weight:650;color:var(--muted)}
+.sv-big .sv-n{font-size:1.35rem;font-weight:800}
+.sv-big .sv-c{font-size:1.6rem;font-weight:800;color:#1b5fa8}
+.sv-now{background:#e8f7ee;border-color:#bfe5cc}
+.sv-now .sv-c{color:#0b5c2d}
+.sv-years{display:flex;gap:.4rem;overflow-x:auto;padding:.2rem 0 .5rem;margin-top:1rem}
+.sv-y{flex:0 0 auto;border:1px solid var(--line);background:var(--card,#fff);color:inherit;border-radius:999px;padding:.45rem .9rem;cursor:pointer;font:inherit;min-height:44px}
+.sv-y.on{background:#1b5fa8;border-color:#1b5fa8;color:#fff;font-weight:700}
+.sv-past{opacity:.55}
+@media (max-width:420px){#schoolvakanties .sv-r{font-size:1rem;min-height:58px}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .sv-now{background:#123d26;border-color:#1f5a38}:root:not([data-theme=light]) .sv-pill{background:#1c2f47;color:#cfe2fb}:root:not([data-theme=light]) .sv-big .sv-c{color:#8cc2ff}:root:not([data-theme=light]) .sv-now .sv-c{color:#9fe0b6}}
+:root[data-theme=dark] .sv-now{background:#123d26;border-color:#1f5a38}
+:root[data-theme=dark] .sv-pill{background:#1c2f47;color:#cfe2fb}
+:root[data-theme=dark] .sv-big .sv-c{color:#8cc2ff}
+:root[data-theme=dark] .sv-now .sv-c{color:#9fe0b6}
+@media print{#schoolvakanties .sv-pick,.sv-change,.sv-years,.tool-actions{display:none}}
+#schoolvakanties .tool-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+#schoolvakanties .tool-actions .tool-button{width:auto;white-space:nowrap}
+.sv-cap{font-size:1.05rem;margin:.6rem 0 .4rem}
+.sv-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+.sv-list li{border:1px solid var(--line);border-radius:12px;padding:.55rem .8rem;background:var(--card,#fff)}
+.sv-list p{margin:.1rem 0}
+.sv-ln{font-weight:700}
+.sv-dt{font-size:1rem}
+.sv-bd{font-size:.88rem;color:var(--muted)}
