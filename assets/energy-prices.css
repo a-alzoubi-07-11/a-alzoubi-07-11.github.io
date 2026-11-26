@@ -1,0 +1,22 @@
+/* Stroomprijs vandaag tool. Site tokens from style.css/main.css. */
+#energy-prices .ep-ctl{display:grid;gap:.35rem;max-width:420px;margin:1rem 0}
+#energy-prices .ep-ctl span{font-weight:650}
+#energy-prices .ep-ctl select{min-height:52px;font-size:1.05rem}
+.ep-now-box{display:grid;gap:.2rem;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin:.8rem 0}
+.ep-now-box strong{font-size:2rem;line-height:1.1}
+.ep-now-box small{font-size:.95rem;font-weight:500;color:var(--muted)}
+.ep-negnote{color:#0b5c2d;font-weight:650}
+.ep-best-box{background:#e8f7ee;color:#0b3d20;border-radius:14px;padding:.4rem 1rem .6rem;margin:.8rem 0}
+.ep-best-box h3{margin:.5rem 0 .2rem;font-size:1.1rem}
+.ep-big{font-size:1.25rem;margin:.3rem 0}
+.ep-fig{margin:1rem 0;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:.6rem}
+.ep-fig figcaption{font-weight:650;margin:.1rem .3rem .4rem}
+.ep-fig svg{width:100%;height:auto;display:block}
+.ep-b{fill:#9db7d8}.ep-best{fill:#2e9d5b}.ep-neg{fill:#7fc4a0}.ep-now{stroke:#d23b2f;stroke-width:2}
+.ep-zero{stroke:#888;stroke-width:1}.ep-day{stroke:#bbb;stroke-dasharray:3 3}
+.ep-ax{font-size:22px;fill:#6e6e73;text-anchor:middle}
+.ep-sum{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin:.6rem 0}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .ep-best-box{background:#123d26;color:#c9f2d8}:root:not([data-theme=light]) .ep-b{fill:#4c6a91}}
+:root[data-theme=dark] .ep-best-box{background:#123d26;color:#c9f2d8}
+:root[data-theme=dark] .ep-b{fill:#4c6a91}
+@media print{#energy-prices .ep-ctl{display:none}}
