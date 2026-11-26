@@ -93,8 +93,8 @@ NL_FAQ = [
     ('Hoeveel bespaar ik met de wasmachine op het goedkoopste moment?', 'De tool toont het verschil per kWh tussen het goedkoopste en duurste moment van dezelfde duur. Eén wasbeurt verbruikt vaak ongeveer één kWh of meer, afhankelijk van temperatuur en apparaat.'),
 ]
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي. الأسعار من Energy-Charts (رخصة CC BY 4.0) وتُحدَّث تلقائياً؛ هي أسعار سوق تقديرية وليست فاتورتك.',
-    'nl': 'Deze tool is gemaakt met hulp van AI. De prijzen komen van Energy-Charts (licentie CC BY 4.0) en worden automatisch bijgewerkt; het zijn marktprijzen, niet je rekening.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 

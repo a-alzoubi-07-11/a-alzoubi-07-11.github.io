@@ -96,8 +96,8 @@ NL_FAQ = [
     ('Zit de bus en tram erin?', 'Deze tool is voor treinen van NS en andere vervoerders op het spoor. Voor deur-tot-deur met bus en tram gebruik je de OV-reiskosten rekenhulp of 9292.'),
 ]
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي. المعلومات مباشرة من NS؛ تحقق دائماً من شاشات المحطة.',
-    'nl': 'Deze tool is gemaakt met hulp van AI. De informatie komt rechtstreeks van NS; let altijd op de borden op het station.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 

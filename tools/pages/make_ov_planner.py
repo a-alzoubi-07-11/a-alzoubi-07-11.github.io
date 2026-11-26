@@ -198,8 +198,8 @@ NL_FAQ = [
     ('Worden mijn adressen bewaard?', 'Nee. Uw adres gaat alleen naar de adresservice van de overheid (PDOK) om de locatie te vinden; de berekening gebeurt in uw browser.'),
 ]
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي وراجعناها مقابل قائمة أسعار NS الرسمية لعام 2026 وتعرفة شركات الباص. النتيجة تقديرية وليست تذكرة أو سعراً رسمياً.',
-    'nl': 'Deze rekenhulp is gemaakt met hulp van AI en gecontroleerd met de officiële NS-prijslijst 2026 en de bustarieven van vervoerders. De uitkomst is een schatting, geen kaartje of officiële prijs.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 

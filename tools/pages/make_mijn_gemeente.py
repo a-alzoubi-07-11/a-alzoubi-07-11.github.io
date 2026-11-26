@@ -118,8 +118,8 @@ NL_FAQ = [
     ('Bewaren jullie mijn adres?', 'Nee. Je adres gaat alleen naar PDOK om de gemeente te bepalen; wij bewaren niets.'),
 ]
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي. بيانات البلديات من دليل الجهات الحكومية الرسمي، وقد تتغير؛ تأكد دائماً من موقع بلديتك.',
-    'nl': 'Deze tool is gemaakt met hulp van AI. De gegevens van gemeenten komen uit de officiële overheidsgids en kunnen veranderen; controleer altijd de website van je gemeente.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 

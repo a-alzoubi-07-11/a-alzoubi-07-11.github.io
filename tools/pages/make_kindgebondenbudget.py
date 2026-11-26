@@ -206,8 +206,8 @@ NL_FAQ = [
 ]
 
 AI = {
-    'ar': 'أُعدّت هذه الأداة بمساعدة الذكاء الاصطناعي وراجعناها مقابل المصادر الرسمية؛ النتيجة تقديرية وليست قراراً رسمياً.',
-    'nl': 'Deze tool is gemaakt met hulp van AI en gecontroleerd aan de hand van officiële bronnen; de uitkomst is een schatting, geen officieel besluit.',
+    'ar': 'راجع الناشر أحمد الزعبي هذه الأداة ومصادر بياناتها. النتيجة تقديرية وليست قراراً رسمياً.',
+    'nl': 'De uitgever Ahmad Alzoubi heeft deze tool en de databronnen gecontroleerd. De uitkomst is een schatting, geen officieel besluit.',
 }
 
 
