@@ -18,3 +18,14 @@ b.addEventListener('click',function(e){e.preventDefault();say(text,b)});el.appen
 document.querySelectorAll('table').forEach(function(t){var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent.trim()});
 if(h.indexOf('النطق')<0&&h[0]!=='Begrip')return;t.querySelectorAll('tbody tr').forEach(function(r){var c=r.cells[0];if(!c)return;var s=c.querySelector('strong')||c;add(c,s.textContent.trim())})});
 document.querySelectorAll('[data-say]').forEach(function(el){add(el,el.getAttribute('data-say')||el.textContent.trim())});})();
+/* checklist: ticks are kept in this browser only */
+(function(){var lists=document.querySelectorAll('.gn-check[data-key]');if(!lists.length)return;
+var ar=(document.documentElement.lang||'ar').slice(0,2)!=='nl';
+lists.forEach(function(ul){var key='gn_chk_'+ul.getAttribute('data-key'),st={};try{st=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
+var boxes=ul.querySelectorAll('input[type=checkbox]');var bar=document.createElement('p');bar.className='gn-check-bar';var cnt=document.createElement('span');
+var rs=document.createElement('button');rs.type='button';rs.className='tool-button secondary';rs.textContent=ar?'امسح العلامات':'Vinkjes wissen';
+var pr=document.createElement('button');pr.type='button';pr.className='tool-button secondary';pr.textContent=ar?'اطبع القائمة':'Lijst printen';
+function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++});cnt.textContent=(ar?'جاهز: ':'Klaar: ')+n+' / '+boxes.length;try{localStorage.setItem(key,JSON.stringify(st))}catch(e){}}
+boxes.forEach(function(b,i){b.checked=!!st[i];b.addEventListener('change',function(){st[i]=b.checked;upd()})});
+rs.addEventListener('click',function(){st={};boxes.forEach(function(b){b.checked=false});upd()});pr.addEventListener('click',function(){window.print()});
+bar.appendChild(cnt);bar.appendChild(rs);bar.appendChild(pr);ul.parentNode.insertBefore(bar,ul);upd()})})();
