@@ -1,0 +1,55 @@
+name: Energy prices bot
+
+# Keeps assets/energy/nl-prices.json (Dutch day-ahead electricity prices for today and tomorrow)
+# fresh for the «أرخص ساعات الكهرباء / Stroomprijs vandaag» tool. Tomorrow's prices appear
+# around 13:00 Amsterdam time, hence the runs around midday.
+
+on:
+  schedule:
+    - cron: '7 5 * * *'      # morning: today's prices
+    - cron: '17 12 * * *'    # after publication of tomorrow's prices (winter time)
+    - cron: '47 12 * * *'
+    - cron: '27 13 * * *'
+    - cron: '7 15 * * *'     # safety net
+    - cron: '37 22 * * *'    # day change
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: energy-prices-bot
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'a-alzoubi-07-11/a-alzoubi-07-11.github.io'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch prices
+        id: fetch
+        run: |
+          python .github/scripts/energy_prices.py
+          if git diff --quiet -- assets/energy/nl-prices.json && git ls-files --error-unmatch assets/energy/nl-prices.json >/dev/null 2>&1; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Commit
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/energy/nl-prices.json
+          git commit -m "Energy prices bot: update day-ahead prices"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep 5
+          done
