@@ -177,6 +177,76 @@
       ]
     },
     {
+      "id": "joybuy-dji-bf-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F33i7SJzg3ixQCGmGSFWGEQeNWdRt",
+      "start": "2026-11-27",
+      "end": "2026-11-30",
+      "title": {
+        "ar": "كاميرات DJI وInsta360: حتى 80% + كود €50 فوق €200 (وفي كمان NLBF20: €20 فوق €50، وNLBF30: €30 فوق €100)",
+        "nl": "DJI & Insta360: tot 80% + code €50 korting vanaf €200 (ook NLBF20: €20 vanaf €50, NLBF30: €30 vanaf €100)"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ],
+      "code": "NLBF50"
+    },
+    {
+      "id": "joybuy-sport-bf-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fs-for-addon%3Ftype%3D1%26couponId%3D447721725%26batchId%3D13552097%26beginTime%3D1795647600000%26endTime%3D1796079599000%26shipmentType%3D66",
+      "start": "2026-11-27",
+      "end": "2026-11-30",
+      "title": {
+        "ar": "ملابس وأحذية رياضية: خصم €40 على طلب فوق €99 (كوبون من صفحة العرض)",
+        "nl": "Sportkleding & schoenen: €40 korting vanaf €99 (coupon op de actiepagina)"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
+      "id": "joybuy-bigdeal-2026",
+      "active": true,
+      "network": "awin",
+      "partner": "Joybuy",
+      "partner_nl": "Joybuy",
+      "kind": {
+        "ar": "متجر إلكتروني",
+        "nl": "Webshop"
+      },
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F3U5oX4yaMizdtbXiWtcxVAk9DSkj",
+      "start": "2026-11-27",
+      "end": "2026-11-30",
+      "title": {
+        "ar": "Big Deal: تخفيضات حتى 60% على منتجات مختارة (أطفال، تنظيف البيت، ألعاب)",
+        "nl": "Big Deal: tot 60% korting op geselecteerde producten (baby, schoonmaak, speelgoed)"
+      },
+      "topics": [
+        "home",
+        "partners",
+        "links"
+      ]
+    },
+    {
       "id": "joybuy-asianfood-2026",
       "active": true,
       "network": "awin",
@@ -347,12 +417,12 @@
         "ar": "متجر إلكتروني",
         "nl": "Webshop"
       },
-      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2F",
+      "url": "https://www.awin1.com/cread.php?awinmid=123930&awinaffid=3113967&ued=https%3A%2F%2Fwww.joybuy.nl%2Fcampaign%2Factive%2F2b9vs5qaoJmBi2dqEWVVNGdp8Mrq",
       "start": "2026-12-01",
-      "end": "2026-12-24",
+      "end": "2026-12-31",
       "title": {
-        "ar": "عروض الميلاد: خصم €10 فوق €49 وخصم €49 فوق €199",
-        "nl": "Kerstdeals: €10 korting vanaf €49 en €49 vanaf €199"
+        "ar": "عروض الميلاد: خصم €10 فوق €59 وخصم €40 فوق €199 على منتجات مختارة",
+        "nl": "Kerstdeals: €10 korting vanaf €59 en €40 vanaf €199 op geselecteerde producten"
       },
       "topics": [
         "home",
