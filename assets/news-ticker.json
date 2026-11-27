@@ -1,8 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-26T06:52:02+01:00",
-  "validUntil": "2026-11-26T18:52:02+01:00",
+  "updatedAt": "2026-11-27T06:50:48+01:00",
+  "validUntil": "2026-11-27T18:50:48+01:00",
   "items": [
+    {
+      "source": "STAB",
+      "publishedAt": "2026-11-26",
+      "firstSeen": "2026-11-27",
+      "category": {
+        "ar": "عمل ومساعدات",
+        "nl": "Werk en bijstand"
+      },
+      "status": "confirmed",
+      "title": {
+        "ar": "قواعد جديدة للمساعدة الاجتماعية (bijstand) والرقابة عليها تسري من 1 يناير 2027",
+        "nl": "Nieuwe regels bijstand en handhaving sociale zekerheid gaan in op 1 januari 2027"
+      },
+      "summary": {
+        "ar": "حدّد مرسوم 24 نوفمبر أن قانون Wet handhaving sociale zekerheid وأجزاء من Participatiewet in balans تسري من 1 يناير 2027: قواعد العقوبات وواجب الإبلاغ والمشاركة الاجتماعية وإلغاء الـtegenprestatie.",
+        "nl": "Besluit van 24 november: de Wet handhaving sociale zekerheid en delen van de Participatiewet in balans gaan op 1 januari 2027 in: maatregelen, inlichtingenplicht, participatie en geen tegenprestatie meer."
+      },
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-421.html",
+      "sourceName": {
+        "ar": "الجريدة الرسمية",
+        "nl": "Officiële bekendmakingen"
+      },
+      "tier": "official",
+      "id": "stab-2026-11-26-ccdadbd0"
+    },
     {
       "source": "TK",
       "publishedAt": "2026-11-24",
@@ -129,31 +154,6 @@
       "id": "nu-2026-11-19-95769f1b"
     },
     {
-      "source": "STAB",
-      "publishedAt": "2026-11-18",
-      "firstSeen": "2026-11-19",
-      "category": {
-        "ar": "السكن والإيجار",
-        "nl": "Wonen en huur"
-      },
-      "status": "confirmed",
-      "title": {
-        "ar": "قانون Wet toekomstbestendige huurcommissie يسري من 1 يناير 2027",
-        "nl": "Wet toekomstbestendige huurcommissie gaat in op 1 januari 2027"
-      },
-      "summary": {
-        "ar": "حدّد مرسوم 4 نوفمبر 2026 بدء سريان القانون الخاص بـ Huurcommissie في 1 يناير 2027. ومن التاريخ نفسه يمكن للوزير وضع قواعد لرسوم (leges) متفاوتة تغطي تكاليف Huurcommissie.",
-        "nl": "Een besluit van 4 november 2026 bepaalt dat de Wet toekomstbestendige huurcommissie op 1 januari 2027 ingaat. Vanaf dan kan de minister regels stellen voor gedifferentieerde, kostendekkende leges van de Huurcommissie."
-      },
-      "url": "https://zoek.officielebekendmakingen.nl/stb-2026-388.html",
-      "sourceName": {
-        "ar": "الجريدة الرسمية",
-        "nl": "Officiële bekendmakingen"
-      },
-      "tier": "official",
-      "id": "stab-2026-11-18-35a5cdee"
-    },
-    {
       "source": "NU",
       "publishedAt": "2026-11-17",
       "firstSeen": "2026-11-19",
@@ -257,73 +257,73 @@
   "checkedSources": [
     {
       "source": "BZK",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters%5B0%5D%5Btype%5D=all",
       "result": "no-change"
     },
     {
       "source": "SZW",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.rijksoverheid.nl/actueel/nieuws?filters[0][field]=ministry&filters[0][values][0]=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters[0][type]=all",
       "result": "no-change"
     },
     {
       "source": "IND",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://ind.nl/nl/nieuws",
       "result": "no-change"
     },
     {
       "source": "DUO",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://duo.nl/particulier/",
       "result": "no-change"
     },
     {
       "source": "UWV",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.uwv.nl/nl/actueel",
       "result": "no-change"
     },
     {
       "source": "SVB",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.svb.nl/nl/pers-en-nieuws/nieuws",
       "result": "no-change"
     },
     {
       "source": "TOESLAGEN",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.belastingdienst.nl/wps/wcm/connect/nl/productenoverzicht/?product=nws",
       "result": "no-change"
     },
     {
       "source": "TK",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.tweedekamer.nl/kamerstukken/stemmingsuitslagen",
-      "result": "new"
-    },
-    {
-      "source": "STAB",
-      "checkedAt": "2026-11-26",
-      "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
       "result": "no-change"
     },
     {
+      "source": "STAB",
+      "checkedAt": "2026-11-27",
+      "listingUrl": "https://zoek.officielebekendmakingen.nl/resultaten?q=(c.product-area==%22officielepublicaties%22)and(w.publicatienaam==%22Staatsblad%22)&col=Staatsblad&svel=Publicatiedatum&svol=Aflopend",
+      "result": "new"
+    },
+    {
       "source": "NOS",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://feeds.nos.nl/nosnieuwspolitiek",
       "result": "no-change"
     },
     {
       "source": "NU",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.nu.nl/rss/Politiek",
       "result": "no-change"
     },
     {
       "source": "RTL",
-      "checkedAt": "2026-11-26",
+      "checkedAt": "2026-11-27",
       "listingUrl": "https://www.rtl.nl/nieuws/politiek",
       "result": "no-change"
     }
