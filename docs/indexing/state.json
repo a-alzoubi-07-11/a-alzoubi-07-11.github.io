@@ -1,7 +1,7 @@
 {
   "submission": {
-    "digest": "9692c312394d1f91a30be32a997e36580a00b5a5bdabc8c6e752a37dbaf633f6",
-    "submitted_at": "2026-11-26T03:59:05+00:00",
+    "digest": "eaf43116fbe4ae17d86ada8a6051d96ad23f8f8216609a533bd2546e3d2c32c9",
+    "submitted_at": "2026-11-26T16:57:56+00:00",
     "url": "https://gidsnederland.nl/sitemap.xml"
   },
   "statuses": {
@@ -191,7 +191,7 @@
     "https://gidsnederland.nl/affiliate-disclosure.html": "not_indexed",
     "https://gidsnederland.nl/nl/affiliate-disclosure.html": "not_indexed",
     "https://gidsnederland.nl/nl/calculators/permanent-residence-check.html": "not_indexed",
-    "https://gidsnederland.nl/templates.html": "indexed",
+    "https://gidsnederland.nl/templates.html": "not_indexed",
     "https://gidsnederland.nl/nl/templates.html": "not_indexed",
     "https://gidsnederland.nl/knm-oefenen.html": "indexed",
     "https://gidsnederland.nl/nl/knm-oefenen.html": "indexed",
