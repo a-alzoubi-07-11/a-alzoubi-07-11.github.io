@@ -1,13 +1,13 @@
-# Google indexing follow-up — 2026-11-27T14:21:43+00:00
+# Google indexing follow-up — 2026-11-28T13:37:08+00:00
 
 - Eligible URLs: 194
-- Confirmed indexed: 147
-- Confirmed not indexed: 47
+- Confirmed indexed: 149
+- Confirmed not indexed: 45
 - Unknown / API failures / unchecked: 0
 - Intentionally excluded (noindex): 0
 - All eligible URLs confirmed indexed: False
 - Sitemap submission: cooldown
-- Newly indexed: 0; lost indexing: 1
+- Newly indexed: 2; lost indexing: 0
 
 Sitemap submission is discovery, not a guarantee of indexing. Ordinary articles cannot use the Google Indexing API.
 No dates, page content, appeal-letter tools, or intentional noindex directives are changed by this workflow.
@@ -16,9 +16,8 @@ No dates, page content, appeal-letter tools, or intentional noindex directives a
 
 | Page | Google state / error | Technical issues |
 |---|---|---|
-| [معادلة الشهادة الأجنبية diplomawaardering   دليل هولندا بالعربية](https://gidsnederland.nl/articles/diploma-evaluation-sbb.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [التقاعد AOW وتكملة AIO 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/aow-aio-pension.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Zwangerschapsverlof en ouderschapsverlof 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/birth-parental-leave.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Zwangerschapsverlof en ouderschapsverlof 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/birth-parental-leave.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [راتب المرض Ziektewet وWIA في هولندا 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/sick-pay-ziektewet-wia.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [قرض الدراسة للكبار Levenlanglerenkrediet   دليل هولندا بالعربية](https://gidsnederland.nl/articles/adult-learning-finance.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [المخالفات المرورية وCJIB: الدفع والاعتراض   دليل هولندا بالعربية](https://gidsnederland.nl/articles/traffic-fines-cjib.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
@@ -28,14 +27,14 @@ No dates, page content, appeal-letter tools, or intentional noindex directives a
 | [الحمل والولادة في هولندا وkraamzorg   دليل هولندا بالعربية](https://gidsnederland.nl/articles/pregnancy-newborn-care.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [نظام الحالتين للجوء في هولندا 2026: ماذا يتغير؟   دليل هولندا](https://gidsnederland.nl/articles/asylum-two-status-system-2026.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [العطل المدرسية في هولندا   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/schoolvakanties.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Schoolvakanties per regio   Gids Nederland](https://gidsnederland.nl/nl/calculators/schoolvakanties.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Schoolvakanties per regio   Gids Nederland](https://gidsnederland.nl/nl/calculators/schoolvakanties.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [أرخص ساعات الكهرباء اليوم   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/stroomprijs-vandaag.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Stroomprijs vandaag: goedkoopste uren   Gids Nederland](https://gidsnederland.nl/nl/calculators/stroomprijs-vandaag.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Stroomprijs vandaag: goedkoopste uren   Gids Nederland](https://gidsnederland.nl/nl/calculators/stroomprijs-vandaag.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [بلديتي: كل شي عن بلديتك من رمزك البريدي   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/mijn-gemeente.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Mijn gemeente: alles over je gemeente vanaf je postcode   Gids Nederland](https://gidsnederland.nl/nl/calculators/mijn-gemeente.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [فحص السيارة من رقم اللوحة   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/kenteken-check.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Kentekencheck   Gids Nederland](https://gidsnederland.nl/nl/calculators/kenteken-check.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [حاسبة المواصلات في هولندا   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/ov-reiskosten.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [فحص السيارة من رقم اللوحة   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/kenteken-check.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Kentekencheck   Gids Nederland](https://gidsnederland.nl/nl/calculators/kenteken-check.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [حاسبة المواصلات في هولندا   دليل هولندا بالعربية](https://gidsnederland.nl/calculators/ov-reiskosten.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [OV-reiskosten berekenen   Gids Nederland](https://gidsnederland.nl/nl/calculators/ov-reiskosten.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [قاموس المصطلحات الحكومية الهولندية بالعربي   دليل هولندا بالعربية](https://gidsnederland.nl/articles/dutch-government-terms-glossary.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Overheidstaal uitgelegd: 141 begrippen   Gids Nederland](https://gidsnederland.nl/nl/articles/dutch-government-terms-glossary.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
@@ -46,20 +45,19 @@ No dates, page content, appeal-letter tools, or intentional noindex directives a
 | [الإقامة الدائمة لأصحاب إقامة regulier 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/permanent-residence-regular-route.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Permanent verblijf met een reguliere vergunning 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/permanent-residence-regular-route.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [تأمين المسؤولية وتأمين البيت   دليل هولندا بالعربية](https://gidsnederland.nl/articles/liability-home-insurance.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [AVP en inboedelverzekering uitgelegd   Gids Nederland](https://gidsnederland.nl/nl/articles/liability-home-insurance.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [AVP en inboedelverzekering uitgelegd   Gids Nederland](https://gidsnederland.nl/nl/articles/liability-home-insurance.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [رسالة الطعن على رفض الإقامة الدائمة   دليل هولندا بالعربية](https://gidsnederland.nl/beroep/) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Beroepschrift tegen afwijzing asiel onbepaalde tijd   Gids Nederland](https://gidsnederland.nl/nl/beroep/) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [ING App: activeren, overzetten naar nieuwe telefoon en pas blokkeren](https://gidsnederland.nl/nl/articles/ing-bank-app-card-guide.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [إلغاء اشتراك الإنترنت أو الهاتف في هولندا: الموعد وإرجاع الراوتر](https://gidsnederland.nl/articles/internet-phone-contract-cancel.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [إلغاء اشتراك الإنترنت أو الهاتف في هولندا: الموعد وإرجاع الراوتر](https://gidsnederland.nl/articles/internet-phone-contract-cancel.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Internet- of telefoonabonnement opzeggen: opzegtermijn en modem](https://gidsnederland.nl/nl/articles/internet-phone-contract-cancel.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [المواصلات في هولندا: تذاكر NS وOV-chipkaart وOVpay والدراجة](https://gidsnederland.nl/articles/ns-train-ov-chipkaart-ovpay.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Trein en ov: NS-kaartje, OV-chipkaart, OVpay en fiets mee](https://gidsnederland.nl/nl/articles/ns-train-ov-chipkaart-ovpay.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [الإفصاح عن الروابط الإعلانية   دليل هولندا بالعربية](https://gidsnederland.nl/affiliate-disclosure.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [الإفصاح عن الروابط الإعلانية   دليل هولندا بالعربية](https://gidsnederland.nl/affiliate-disclosure.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Affiliate-verklaring   Gids Nederland](https://gidsnederland.nl/nl/affiliate-disclosure.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Check permanent verblijf en naturalisatie   Gids Nederland](https://gidsnederland.nl/nl/calculators/permanent-residence-check.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [نماذج رسائل هولندية جاهزة   دليل هولندا بالعربية](https://gidsnederland.nl/templates.html) | Crawled - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Voorbeeldbrieven in het Nederlands   Gids Nederland](https://gidsnederland.nl/nl/templates.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [الدراسة في HBO والجامعة للقادمين الجدد 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/hbo-wo-university-newcomers.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [الدراسة في HBO والجامعة للقادمين الجدد 2026   دليل هولندا بالعربية](https://gidsnederland.nl/articles/hbo-wo-university-newcomers.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [Hbo of universiteit als nieuwkomer: toelating 2026   Gids Nederland](https://gidsnederland.nl/nl/articles/hbo-wo-university-newcomers.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
 | [تطبيقات لازم تنزّلها أول ما توصل هولندا](https://gidsnederland.nl/articles/essential-apps-netherlands.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
-| [Handige apps voor nieuwkomers in Nederland](https://gidsnederland.nl/nl/articles/essential-apps-netherlands.html) | URL is unknown to Google | No obvious HTTP/meta/canonical blocker; review content and internal links. |
+| [Handige apps voor nieuwkomers in Nederland](https://gidsnederland.nl/nl/articles/essential-apps-netherlands.html) | Discovered - currently not indexed | No obvious HTTP/meta/canonical blocker; review content and internal links. |
